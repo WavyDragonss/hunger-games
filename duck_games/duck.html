@@ -40,6 +40,7 @@
             <label class="settings-row"><input id="povOnly" type="checkbox" /> Filter to selected character POV</label>
           </div>
         </details>
+        <button class="text-btn" id="helpBtn" type="button" aria-expanded="false" aria-controls="helpPanel">Help</button>
       </div>
     </div>
   </section>
@@ -47,6 +48,11 @@
   <main>
     <div class="reader-wrap">
       <p class="status" id="status">Loading files...</p>
+      <section class="help-panel hidden" id="helpPanel" aria-label="Help information">
+        <p>Press on the name of a character to focus on it and to unfocus press on the same character once or twice on a different character.</p>
+        <p>DO NOT USE LIGHT MODE IF YOU LIKE TO SEE.</p>
+        <p>For any technical help or bugs contact WavyDragons (wavydragons1).</p>
+      </section>
       <div class="reader" id="reader"></div>
       <div class="bottom-next-wrap" id="bottomNextWrap">
         <button class="mode-btn" id="nextDayBottom" type="button">Next Day -></button>

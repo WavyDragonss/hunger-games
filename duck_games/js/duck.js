@@ -80,6 +80,8 @@
       var navWrap = document.getElementById("navWrap");
       var bottomNextWrap = document.getElementById("bottomNextWrap");
       var settings = document.getElementById("settings");
+      var helpBtn = document.getElementById("helpBtn");
+      var helpPanel = document.getElementById("helpPanel");
       var modeInputs = document.querySelectorAll("input[name='viewMode']");
       var povOnlyInput = document.getElementById("povOnly");
 
@@ -153,6 +155,12 @@
           goToNextDay();
         });
 
+        helpBtn.addEventListener("click", function () {
+          var nowOpen = helpPanel.classList.contains("hidden");
+          helpPanel.classList.toggle("hidden", !nowOpen);
+          helpBtn.setAttribute("aria-expanded", nowOpen ? "true" : "false");
+        });
+
         readerEl.addEventListener("click", function (event) {
           var target = event.target;
           if (!(target instanceof HTMLElement) || !target.classList.contains("name")) {
@@ -192,6 +200,10 @@
           }
           if (!settings.contains(target) && settings.open) {
             settings.open = false;
+          }
+          if (!helpPanel.contains(target) && !helpBtn.contains(target)) {
+            helpPanel.classList.add("hidden");
+            helpBtn.setAttribute("aria-expanded", "false");
           }
         });
 
