@@ -48,17 +48,26 @@
   <main>
     <div class="reader-wrap">
       <p class="status" id="status">Loading files...</p>
-      <section class="help-panel hidden" id="helpPanel" aria-label="Help information">
-        <p>Press on the name of a character to focus on it and to unfocus press on the same character once or twice on a different character.</p>
-        <p>DO NOT USE LIGHT MODE IF YOU LIKE TO SEE.</p>
-        <p>For any technical help or bugs contact WavyDragons (wavydragons1).</p>
-      </section>
       <div class="reader" id="reader"></div>
       <div class="bottom-next-wrap" id="bottomNextWrap">
         <button class="mode-btn" id="nextDayBottom" type="button">Next Day -></button>
       </div>
     </div>
   </main>
+
+  <div class="help-modal hidden" id="helpPanel" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <div class="help-dialog">
+      <div class="help-header">
+        <h2 id="helpTitle">Help</h2>
+        <button class="text-btn help-close" id="helpCloseBtn" type="button" aria-label="Close Help">Close</button>
+      </div>
+      <div class="help-body">
+        <p>Press on the name of a character to focus on it and to unfocus press on the same character once or twice on a different character.</p>
+        <p>DO NOT USE LIGHT MODE IF YOU LIKE TO SEE.</p>
+        <p>For any technical help or bugs contact WavyDragons (wavydragons1).</p>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/duck.js" defer></script>
 </body>

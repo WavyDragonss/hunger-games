@@ -82,6 +82,7 @@
       var settings = document.getElementById("settings");
       var helpBtn = document.getElementById("helpBtn");
       var helpPanel = document.getElementById("helpPanel");
+      var helpCloseBtn = document.getElementById("helpCloseBtn");
       var modeInputs = document.querySelectorAll("input[name='viewMode']");
       var povOnlyInput = document.getElementById("povOnly");
 
@@ -156,9 +157,17 @@
         });
 
         helpBtn.addEventListener("click", function () {
-          var nowOpen = helpPanel.classList.contains("hidden");
-          helpPanel.classList.toggle("hidden", !nowOpen);
-          helpBtn.setAttribute("aria-expanded", nowOpen ? "true" : "false");
+          openHelp();
+        });
+
+        helpCloseBtn.addEventListener("click", function () {
+          closeHelp();
+        });
+
+        helpPanel.addEventListener("click", function (event) {
+          if (event.target === helpPanel) {
+            closeHelp();
+          }
         });
 
         readerEl.addEventListener("click", function (event) {
@@ -201,14 +210,26 @@
           if (!settings.contains(target) && settings.open) {
             settings.open = false;
           }
-          if (!helpPanel.contains(target) && !helpBtn.contains(target)) {
-            helpPanel.classList.add("hidden");
-            helpBtn.setAttribute("aria-expanded", "false");
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            closeHelp();
           }
         });
 
         window.addEventListener("scroll", onScrollOrResize, { passive: true });
         window.addEventListener("resize", onScrollOrResize);
+      }
+
+      function openHelp() {
+        helpPanel.classList.remove("hidden");
+        helpBtn.setAttribute("aria-expanded", "true");
+      }
+
+      function closeHelp() {
+        helpPanel.classList.add("hidden");
+        helpBtn.setAttribute("aria-expanded", "false");
       }
 
       function onScrollOrResize() {

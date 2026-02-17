@@ -271,27 +271,64 @@
       font-size: 0.92rem;
     }
 
-    .help-panel {
-      margin: 0 0 12px;
-      padding: 10px 12px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: var(--surface-2);
-      color: var(--text);
-      font-size: 0.9rem;
-      line-height: 1.5;
+    .help-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      background: rgba(5, 10, 20, 0.66);
+      backdrop-filter: blur(2px);
     }
 
-    .help-panel p {
+    .help-modal.hidden {
+      display: none;
+    }
+
+    .help-dialog {
+      width: min(680px, 100%);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .help-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface-2);
+    }
+
+    .help-header h2 {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .help-close {
+      min-height: 34px;
+      padding: 6px 10px;
+    }
+
+    .help-body {
+      padding: 12px;
+      color: var(--text);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .help-body p {
       margin: 0;
     }
 
-    .help-panel p + p {
-      margin-top: 7px;
-    }
-
-    .help-panel.hidden {
-      display: none;
+    .help-body p + p {
+      margin-top: 8px;
     }
 
     .reader {
