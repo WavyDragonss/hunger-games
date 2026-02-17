@@ -1,0 +1,1114 @@
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hunger Games Reader</title>
+  <style>
+    :root {
+      --content-width: 760px;
+      --font-scale: 1;
+      --line-height: 1.72;
+      --shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+      --ease: 150ms ease;
+    }
+
+    body[data-width-mode="wide"] {
+      --content-width: 980px;
+    }
+
+    body[data-theme="dark"] {
+      --bg-grad-1: #0f1624;
+      --bg-grad-2: #0b0f17;
+      --text: #e5ecf5;
+      --muted: #9db0c8;
+      --surface: #111826;
+      --surface-2: #151f31;
+      --border: #253750;
+      --accent: #7db4ff;
+      --warn-bg: #453913;
+      --warn-border: #b89437;
+      --warn-text: #ffe8a6;
+      --log-bg: #2a1114;
+      --log-border: #8f2f3a;
+      --log-text: #ffb5bf;
+      --night-bg: #090c12;
+      --night-border: #3d4a64;
+      --name-bg: rgba(125, 180, 255, 0.2);
+      --name-border: rgba(125, 180, 255, 0.48);
+      --dramatic: #ffd7d7;
+    }
+
+    body[data-theme="light"] {
+      --bg-grad-1: #f9fbff;
+      --bg-grad-2: #eef2fa;
+      --text: #1e2a3a;
+      --muted: #5d6d82;
+      --surface: #ffffff;
+      --surface-2: #f3f6fc;
+      --border: #d5dfef;
+      --accent: #1d63cc;
+      --warn-bg: #fff4cc;
+      --warn-border: #d3ad45;
+      --warn-text: #5e4706;
+      --log-bg: #ffe9ec;
+      --log-border: #d97885;
+      --log-text: #6e1320;
+      --night-bg: #e4ecf9;
+      --night-border: #a6b7d6;
+      --name-bg: rgba(29, 99, 204, 0.14);
+      --name-border: rgba(29, 99, 204, 0.35);
+      --dramatic: #5b0915;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 100%);
+      color: var(--text);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-size: calc(16px * var(--font-scale));
+    }
+
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      border-bottom: 1px solid var(--border);
+      background: rgba(17, 24, 38, 0.92);
+      backdrop-filter: blur(8px);
+    }
+
+    body[data-theme="light"] .app-header {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .header-inner,
+    .toolbar-inner,
+    .reader-wrap {
+      width: min(var(--content-width), calc(100% - 24px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 0;
+    }
+
+    .brand-title {
+      margin: 0;
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+    }
+
+    .brand-subtitle {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .icon-btn,
+    .text-btn,
+    .mode-btn {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: var(--surface);
+      border-radius: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform var(--ease), border-color var(--ease), box-shadow var(--ease), background var(--ease);
+    }
+
+    .icon-btn:hover,
+    .text-btn:hover,
+    .mode-btn:hover {
+      border-color: var(--accent);
+    }
+
+    .icon-btn:active,
+    .text-btn:active,
+    .mode-btn:active {
+      transform: translateY(1px);
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 64px;
+      z-index: 35;
+      border-bottom: 1px solid var(--border);
+      background: rgba(21, 31, 49, 0.9);
+      backdrop-filter: blur(8px);
+    }
+
+    body[data-theme="light"] .toolbar {
+      background: rgba(243, 246, 252, 0.95);
+    }
+
+    .toolbar-inner {
+      min-height: 64px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px 14px;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .toolbar-left,
+    .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .search {
+      width: min(360px, 100%);
+      min-height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      padding: 0 12px;
+      outline: none;
+    }
+
+    .search:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(125, 180, 255, 0.3);
+    }
+
+    body[data-theme="light"] .search:focus {
+      box-shadow: 0 0 0 3px rgba(29, 99, 204, 0.2);
+    }
+
+    .toolbar-chip {
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--muted);
+      background: var(--surface);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .settings {
+      position: relative;
+    }
+
+    .settings summary {
+      list-style: none;
+      cursor: pointer;
+      user-select: none;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
+      background: var(--surface);
+      font-weight: 600;
+    }
+
+    .settings summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .settings-panel {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 8px);
+      width: min(300px, 88vw);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .settings-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .settings-row input {
+      margin: 0;
+    }
+
+    main {
+      padding: 12px 0 28px;
+    }
+
+    .reader-wrap {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      padding: clamp(10px, 2vw, 18px);
+    }
+
+    .status {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .reader {
+      display: grid;
+      gap: 18px;
+    }
+
+    .day-separator {
+      margin: 22px 0 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      text-align: center;
+      padding: 12px 10px;
+      color: var(--muted);
+      line-height: 1.5;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      white-space: pre-line;
+    }
+
+    .day-section {
+      display: grid;
+      gap: 10px;
+      padding-top: 4px;
+    }
+
+    .day-heading {
+      margin: 0;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+      font-size: clamp(1.18rem, 2.3vw, 1.46rem);
+      line-height: 1.3;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .story-block {
+      display: grid;
+      gap: 2px;
+      border-radius: 10px;
+      padding: 4px 6px;
+    }
+
+    .story-block.rules {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      color: var(--warn-text);
+    }
+
+    .story-block.log {
+      background: var(--log-bg);
+      border: 1px solid var(--log-border);
+      color: var(--log-text);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.96em;
+    }
+
+    .story-block.night {
+      background: var(--night-bg);
+      border: 1px solid var(--night-border);
+    }
+
+    .story-line {
+      margin: 0;
+      border-radius: 8px;
+      padding: 6px 8px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      line-height: var(--line-height);
+      transition: opacity var(--ease), background-color var(--ease), filter var(--ease);
+    }
+
+    .story-line.blank {
+      min-height: 10px;
+      padding: 0;
+    }
+
+    .story-line.dramatic {
+      text-align: center;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--dramatic);
+      text-shadow: 0 0 10px rgba(255, 215, 215, 0.25);
+    }
+
+    body[data-theme="light"] .story-line.dramatic {
+      text-shadow: 0 0 8px rgba(91, 9, 21, 0.18);
+    }
+
+    .story-line.is-hidden {
+      display: none;
+    }
+
+    .story-line.dimmed {
+      opacity: 0.35;
+      filter: saturate(0.75);
+    }
+
+    .story-line.name-hit {
+      background: rgba(125, 180, 255, 0.22);
+    }
+
+    body[data-theme="light"] .story-line.name-hit {
+      background: rgba(29, 99, 204, 0.12);
+    }
+
+    .name {
+      display: inline-block;
+      padding: 0.03em 0.46em;
+      border-radius: 999px;
+      background: var(--name-bg);
+      border: 1px solid var(--name-border);
+      font-weight: 650;
+      cursor: pointer;
+      transition: box-shadow var(--ease), transform var(--ease);
+    }
+
+    .name:hover,
+    .name:focus-visible {
+      box-shadow: 0 0 0 2px rgba(125, 180, 255, 0.45);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    body[data-theme="light"] .name:hover,
+    body[data-theme="light"] .name:focus-visible {
+      box-shadow: 0 0 0 2px rgba(29, 99, 204, 0.4);
+    }
+
+    .name.selected {
+      box-shadow: 0 0 0 2px rgba(125, 180, 255, 0.62);
+    }
+
+    body[data-theme="light"] .name.selected {
+      box-shadow: 0 0 0 2px rgba(29, 99, 204, 0.52);
+    }
+
+    .nav-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-wrap.hidden {
+      display: none;
+    }
+
+    @media (max-width: 860px) {
+      .header-inner,
+      .toolbar-inner,
+      .reader-wrap {
+        width: min(var(--content-width), calc(100% - 14px));
+      }
+
+      .toolbar {
+        top: 62px;
+      }
+
+      .toolbar-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark" data-width-mode="narrow">
+  <header class="app-header" role="banner">
+    <div class="header-inner">
+      <div>
+        <h1 class="brand-title">Hunger Games Story Reader</h1>
+        <p class="brand-subtitle" id="subtitle">Loading day files...</p>
+      </div>
+      <button class="icon-btn" id="themeToggle" type="button">☀ Light</button>
+    </div>
+  </header>
+
+  <section class="toolbar" aria-label="Reader tools">
+    <div class="toolbar-inner">
+      <div class="toolbar-left">
+        <button class="text-btn" id="fontDown" type="button">A−</button>
+        <button class="text-btn" id="fontUp" type="button">A+</button>
+        <button class="text-btn" id="widthToggle" type="button">Width: Narrow</button>
+        <input class="search" id="searchInput" type="search" placeholder="Search text..." autocomplete="off" spellcheck="false" />
+      </div>
+      <div class="toolbar-right">
+        <div class="toolbar-chip" id="focusLabel">Character: none</div>
+        <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
+        <div class="nav-wrap" id="navWrap">
+          <button class="mode-btn" id="prevDay" type="button">← Previous Day</button>
+          <button class="mode-btn" id="nextDay" type="button">Next Day →</button>
+        </div>
+        <details class="settings" id="settings">
+          <summary>Settings</summary>
+          <div class="settings-panel">
+            <label class="settings-row"><input type="radio" name="viewMode" value="paged" /> Paged mode</label>
+            <label class="settings-row"><input type="radio" name="viewMode" value="infinite" /> Infinite mode</label>
+            <label class="settings-row"><input id="povOnly" type="checkbox" /> Filter to selected character POV</label>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="reader-wrap">
+      <p class="status" id="status">Loading files...</p>
+      <div class="reader" id="reader"></div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var DAY_FILES = ["day1.txt", "day2.txt", "day3.txt"];
+      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT)\]\]\s*$/i;
+      var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
+
+      var STORE = {
+        theme: "duck_theme",
+        mode: "duck_mode",
+        fontScale: "duck_font_scale",
+        width: "duck_width_mode",
+        povOnly: "duck_pov_only"
+      };
+
+      var state = {
+        days: [],
+        mode: readStore(STORE.mode, "paged"),
+        currentDay: 0,
+        query: "",
+        selectedName: "",
+        povOnly: readStore(STORE.povOnly, "false") === "true",
+        fontScale: clamp(parseFloat(readStore(STORE.fontScale, "1")), 0.85, 1.3),
+        widthMode: readStore(STORE.width, "narrow"),
+        theme: readStore(STORE.theme, "dark"),
+        rafPending: false
+      };
+
+      var subtitleEl = document.getElementById("subtitle");
+      var statusEl = document.getElementById("status");
+      var readerEl = document.getElementById("reader");
+      var searchInput = document.getElementById("searchInput");
+      var progressLabel = document.getElementById("progressLabel");
+      var focusLabel = document.getElementById("focusLabel");
+      var themeToggle = document.getElementById("themeToggle");
+      var widthToggle = document.getElementById("widthToggle");
+      var fontDown = document.getElementById("fontDown");
+      var fontUp = document.getElementById("fontUp");
+      var prevDayBtn = document.getElementById("prevDay");
+      var nextDayBtn = document.getElementById("nextDay");
+      var navWrap = document.getElementById("navWrap");
+      var settings = document.getElementById("settings");
+      var modeInputs = document.querySelectorAll("input[name='viewMode']");
+      var povOnlyInput = document.getElementById("povOnly");
+
+      init();
+
+      function init() {
+        applyTheme(state.theme);
+        applyWidthMode(state.widthMode);
+        applyFontScale(state.fontScale);
+        povOnlyInput.checked = state.povOnly;
+        selectModeInput(state.mode);
+        bindEvents();
+        loadAllDays();
+      }
+
+      function bindEvents() {
+        themeToggle.addEventListener("click", function () {
+          var next = state.theme === "dark" ? "light" : "dark";
+          applyTheme(next);
+          writeStore(STORE.theme, next);
+        });
+
+        widthToggle.addEventListener("click", function () {
+          var next = state.widthMode === "narrow" ? "wide" : "narrow";
+          applyWidthMode(next);
+          writeStore(STORE.width, next);
+        });
+
+        fontDown.addEventListener("click", function () {
+          applyFontScale(clamp(state.fontScale - 0.05, 0.85, 1.3));
+          writeStore(STORE.fontScale, String(state.fontScale));
+        });
+
+        fontUp.addEventListener("click", function () {
+          applyFontScale(clamp(state.fontScale + 0.05, 0.85, 1.3));
+          writeStore(STORE.fontScale, String(state.fontScale));
+        });
+
+        searchInput.addEventListener("input", function () {
+          state.query = searchInput.value.trim().toLowerCase();
+          applyFilters();
+          updateProgress();
+        });
+
+        modeInputs.forEach(function (input) {
+          input.addEventListener("change", function () {
+            if (!input.checked) {
+              return;
+            }
+            state.mode = input.value;
+            writeStore(STORE.mode, state.mode);
+            renderDays();
+          });
+        });
+
+        povOnlyInput.addEventListener("change", function () {
+          state.povOnly = povOnlyInput.checked;
+          writeStore(STORE.povOnly, String(state.povOnly));
+          applyFilters();
+        });
+
+        prevDayBtn.addEventListener("click", function () {
+          if (state.currentDay <= 0) {
+            return;
+          }
+          state.currentDay -= 1;
+          renderDays();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        nextDayBtn.addEventListener("click", function () {
+          if (state.currentDay >= state.days.length - 1) {
+            return;
+          }
+          state.currentDay += 1;
+          renderDays();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        readerEl.addEventListener("click", function (event) {
+          var target = event.target;
+          if (!(target instanceof HTMLElement) || !target.classList.contains("name")) {
+            return;
+          }
+          var name = target.getAttribute("data-name") || "";
+          if (!name) {
+            return;
+          }
+          state.selectedName = state.selectedName === name ? "" : name;
+          applyNameSelectionVisuals();
+          applyFilters();
+        });
+
+        readerEl.addEventListener("keydown", function (event) {
+          var target = event.target;
+          if (!(target instanceof HTMLElement) || !target.classList.contains("name")) {
+            return;
+          }
+          if (event.key !== "Enter" && event.key !== " ") {
+            return;
+          }
+          event.preventDefault();
+          target.click();
+        });
+
+        document.addEventListener("click", function (event) {
+          var target = event.target;
+          if (!(target instanceof Node)) {
+            return;
+          }
+          if (!settings.contains(target) && settings.open) {
+            settings.open = false;
+          }
+        });
+
+        window.addEventListener("scroll", onScrollOrResize, { passive: true });
+        window.addEventListener("resize", onScrollOrResize);
+      }
+
+      function onScrollOrResize() {
+        if (state.rafPending) {
+          return;
+        }
+        state.rafPending = true;
+        window.requestAnimationFrame(function () {
+          state.rafPending = false;
+          updateProgress();
+        });
+      }
+
+      function loadAllDays() {
+        statusEl.textContent = "Loading day1.txt, day2.txt, day3.txt...";
+        Promise.all(
+          DAY_FILES.map(function (file, idx) {
+            return fetch(file, { cache: "no-store" }).then(function (res) {
+              if (!res.ok) {
+                throw new Error(file + " returned HTTP " + res.status);
+              }
+              return res.text().then(function (text) {
+                return parseDayText(text, idx + 1, file);
+              });
+            });
+          })
+        )
+          .then(function (parsedDays) {
+            state.days = parsedDays;
+            subtitleEl.textContent = "Loaded 3 days";
+            statusEl.textContent = "Ready. Click a name to focus dialogue. Use Settings for view mode.";
+            renderDays();
+          })
+          .catch(function (err) {
+            statusEl.textContent = "Could not load day files. Serve via HTTP/GitHub Pages. Error: " + err.message;
+            subtitleEl.textContent = "Load failed";
+          });
+      }
+
+      function parseDayText(rawText, dayNumber, fileName) {
+        var text = normalizeNewlines(rawText);
+        var lines = text.split("\n");
+        var blocks = [];
+        var currentMode = "narrative";
+        var pendingDayTitle = false;
+        var title = "Day " + dayNumber;
+
+        lines.forEach(function (line) {
+          var tagMatch = line.match(TAG_RE);
+          if (tagMatch) {
+            var tag = tagMatch[1].toUpperCase();
+            if (tag === "DAY") {
+              currentMode = "narrative";
+              pendingDayTitle = true;
+            } else if (tag === "RULES") {
+              currentMode = "rules";
+            } else if (tag === "LOG") {
+              currentMode = "log";
+            } else if (tag === "NIGHT") {
+              currentMode = "night";
+            }
+            return;
+          }
+
+          if (pendingDayTitle && line.trim()) {
+            title = stripMarkup(line.trim());
+            blocks.push({
+              type: "dayHeading",
+              lines: [makeLineData(line)]
+            });
+            pendingDayTitle = false;
+            return;
+          }
+
+          appendLineToBlock(blocks, currentMode, line);
+        });
+
+        if (!blocks.length) {
+          appendLineToBlock(blocks, "narrative", "");
+        }
+
+        return {
+          title: title,
+          dayNumber: dayNumber,
+          fileName: fileName,
+          blocks: blocks
+        };
+      }
+
+      function appendLineToBlock(blocks, type, line) {
+        var last = blocks[blocks.length - 1];
+        if (!last || last.type !== type) {
+          last = { type: type, lines: [] };
+          blocks.push(last);
+        }
+        last.lines.push(makeLineData(line));
+      }
+
+      function makeLineData(raw) {
+        var clean = stripMarkup(raw);
+        return {
+          raw: raw,
+          text: clean,
+          textLower: clean.toLowerCase(),
+          dramatic: DRAMATIC_RE.test(clean)
+        };
+      }
+
+      function renderDays() {
+        readerEl.replaceChildren();
+        if (!state.days.length) {
+          return;
+        }
+
+        if (state.mode === "paged") {
+          state.currentDay = clamp(state.currentDay, 0, state.days.length - 1);
+          renderDaySection(state.days[state.currentDay], state.currentDay, false);
+          navWrap.classList.remove("hidden");
+        } else {
+          state.days.forEach(function (day, idx) {
+            renderDaySection(day, idx, true);
+          });
+          navWrap.classList.add("hidden");
+        }
+
+        prevDayBtn.disabled = state.currentDay <= 0;
+        nextDayBtn.disabled = state.currentDay >= state.days.length - 1;
+        applyNameSelectionVisuals();
+        applyFilters();
+        updateProgress();
+      }
+
+      function renderDaySection(dayData, dayIndex, withSeparator) {
+        if (withSeparator) {
+          var sep = document.createElement("div");
+          sep.className = "day-separator";
+          sep.textContent = "══════════════════\nDAY " + dayData.dayNumber + "\n══════════════════";
+          readerEl.appendChild(sep);
+        }
+
+        var section = document.createElement("section");
+        section.className = "day-section";
+        section.setAttribute("data-day-index", String(dayIndex));
+        section.setAttribute("data-day-title", dayData.title);
+
+        dayData.blocks.forEach(function (block) {
+          if (block.type === "dayHeading") {
+            var headingLine = block.lines[0] ? block.lines[0].raw : dayData.title;
+            var h2 = document.createElement("h2");
+            h2.className = "day-heading";
+            h2.textContent = stripMarkup(headingLine) || dayData.title;
+            section.appendChild(h2);
+            return;
+          }
+
+          var blockEl = document.createElement("div");
+          blockEl.className = "story-block " + block.type;
+
+          block.lines.forEach(function (line) {
+            blockEl.appendChild(renderLine(line, dayIndex));
+          });
+
+          section.appendChild(blockEl);
+        });
+
+        readerEl.appendChild(section);
+      }
+
+      function renderLine(lineData, dayIndex) {
+        var lineEl = document.createElement("p");
+        lineEl.className = "story-line";
+        lineEl.setAttribute("data-day-index", String(dayIndex));
+        lineEl.setAttribute("data-text", lineData.textLower);
+
+        if (!lineData.raw.trim()) {
+          lineEl.classList.add("blank");
+          lineEl.setAttribute("aria-hidden", "true");
+          return lineEl;
+        }
+
+        if (lineData.dramatic) {
+          lineEl.classList.add("dramatic");
+        }
+
+        var tokens = tokenizeLine(lineData.raw);
+        var foundNames = [];
+        tokens.forEach(function (token) {
+          if (token.type === "name") {
+            var normalized = normalizeName(token.value);
+            if (!normalized) {
+              lineEl.appendChild(document.createTextNode(token.value));
+              return;
+            }
+            foundNames.push(normalized);
+            var nameEl = document.createElement("span");
+            nameEl.className = "name";
+            nameEl.setAttribute("tabindex", "0");
+            nameEl.setAttribute("data-name", normalized);
+            nameEl.textContent = token.value;
+            lineEl.appendChild(nameEl);
+            return;
+          }
+          lineEl.appendChild(document.createTextNode(token.value));
+        });
+
+        lineEl.setAttribute("data-names", unique(foundNames).join("|"));
+        return lineEl;
+      }
+
+      function tokenizeLine(rawLine) {
+        var explicitTokens = extractExplicitNameSpanTokens(rawLine);
+        var output = [];
+
+        explicitTokens.forEach(function (token) {
+          if (token.type === "name") {
+            output.push(token);
+            return;
+          }
+          var withSpeaker = splitSpeakerPrefix(token.value);
+          withSpeaker.forEach(function (partialToken) {
+            if (partialToken.type === "name") {
+              output.push(partialToken);
+              return;
+            }
+            splitByMentions(partialToken.value).forEach(function (mentionToken) {
+              output.push(mentionToken);
+            });
+          });
+        });
+
+        return output;
+      }
+
+      function extractExplicitNameSpanTokens(line) {
+        var re = /<span\s+class=["']name["']\s*>(.*?)<\/span>/gi;
+        var tokens = [];
+        var last = 0;
+        while (true) {
+          var match = re.exec(line);
+          if (!match) {
+            break;
+          }
+          if (match.index > last) {
+            tokens.push({ type: "text", value: line.slice(last, match.index) });
+          }
+          tokens.push({ type: "name", value: stripMarkup(match[1]).trim() });
+          last = match.index + match[0].length;
+        }
+        if (last < line.length || line.length === 0) {
+          tokens.push({ type: "text", value: line.slice(last) });
+        }
+        return tokens;
+      }
+
+      function splitSpeakerPrefix(text) {
+        var colon = text.indexOf(":");
+        if (colon < 2 || colon > 42) {
+          return [{ type: "text", value: text }];
+        }
+        var prefix = text.slice(0, colon);
+        if (!/[A-Za-z]/.test(prefix)) {
+          return [{ type: "text", value: text }];
+        }
+        if (/^\s*(DAY|NIGHT|DEATH LOG|INJURY LOG)\b/i.test(prefix)) {
+          return [{ type: "text", value: text }];
+        }
+        return [
+          { type: "name", value: prefix.trim() },
+          { type: "text", value: text.slice(colon) }
+        ];
+      }
+
+      function splitByMentions(text) {
+        var re = /@[A-Za-z0-9_.-]+/g;
+        var out = [];
+        var last = 0;
+        while (true) {
+          var match = re.exec(text);
+          if (!match) {
+            break;
+          }
+          if (match.index > last) {
+            out.push({ type: "text", value: text.slice(last, match.index) });
+          }
+          out.push({ type: "name", value: match[0] });
+          last = match.index + match[0].length;
+        }
+        if (last < text.length || text.length === 0) {
+          out.push({ type: "text", value: text.slice(last) });
+        }
+        return out;
+      }
+
+      function applyFilters() {
+        var lines = readerEl.querySelectorAll(".story-line");
+        var query = state.query;
+        var focus = state.selectedName;
+        var visibleCount = 0;
+
+        lines.forEach(function (lineEl) {
+          lineEl.classList.remove("is-hidden", "dimmed", "name-hit");
+          if (lineEl.classList.contains("blank")) {
+            if (query || (focus && state.povOnly)) {
+              lineEl.classList.add("is-hidden");
+            }
+            return;
+          }
+
+          var lineText = lineEl.getAttribute("data-text") || "";
+          var lineNames = (lineEl.getAttribute("data-names") || "").split("|").filter(Boolean);
+          var matchesSearch = !query || lineText.indexOf(query) !== -1;
+          var hasFocusedName = focus ? lineNames.indexOf(focus) !== -1 : false;
+          var visible = matchesSearch;
+
+          if (focus) {
+            if (state.povOnly) {
+              visible = visible && hasFocusedName;
+            } else if (visible) {
+              if (hasFocusedName) {
+                lineEl.classList.add("name-hit");
+              } else {
+                lineEl.classList.add("dimmed");
+              }
+            }
+          }
+
+          if (!visible) {
+            lineEl.classList.add("is-hidden");
+            return;
+          }
+          visibleCount += 1;
+        });
+
+        statusEl.textContent = "Showing " + visibleCount + " matching lines.";
+        updateProgress();
+      }
+
+      function applyNameSelectionVisuals() {
+        var selected = state.selectedName;
+        var names = readerEl.querySelectorAll(".name");
+        names.forEach(function (nameEl) {
+          nameEl.classList.toggle("selected", (nameEl.getAttribute("data-name") || "") === selected);
+        });
+        focusLabel.textContent = "Character: " + (selected || "none");
+      }
+
+      function updateProgress() {
+        if (!state.days.length) {
+          progressLabel.textContent = "Day 1 - 0%";
+          return;
+        }
+
+        if (state.mode === "paged") {
+          var section = readerEl.querySelector(".day-section");
+          var pct = section ? getSectionProgress(section) : 0;
+          progressLabel.textContent = "Day " + (state.currentDay + 1) + " - " + pct + "%";
+          return;
+        }
+
+        var sections = Array.from(readerEl.querySelectorAll(".day-section"));
+        if (!sections.length) {
+          progressLabel.textContent = "Day 1 - 0%";
+          return;
+        }
+
+        var pivot = window.innerHeight * 0.36;
+        var active = sections[0];
+        for (var i = 0; i < sections.length; i += 1) {
+          var rect = sections[i].getBoundingClientRect();
+          if (rect.top <= pivot) {
+            active = sections[i];
+          } else {
+            break;
+          }
+        }
+
+        var activeIdx = parseInt(active.getAttribute("data-day-index") || "0", 10);
+        var activePct = getSectionProgress(active);
+        progressLabel.textContent = "Day " + (activeIdx + 1) + " - " + activePct + "%";
+      }
+
+      function getSectionProgress(sectionEl) {
+        var rect = sectionEl.getBoundingClientRect();
+        var sectionTop = rect.top + window.scrollY;
+        var sectionHeight = Math.max(1, sectionEl.offsetHeight);
+        var viewMid = window.scrollY + window.innerHeight * 0.5;
+        var progress = ((viewMid - sectionTop) / sectionHeight) * 100;
+        return Math.round(clamp(progress, 0, 100));
+      }
+
+      function applyTheme(theme) {
+        state.theme = theme === "light" ? "light" : "dark";
+        document.body.setAttribute("data-theme", state.theme);
+        themeToggle.textContent = state.theme === "dark" ? "☀ Light" : "🌙 Dark";
+      }
+
+      function applyWidthMode(mode) {
+        state.widthMode = mode === "wide" ? "wide" : "narrow";
+        document.body.setAttribute("data-width-mode", state.widthMode);
+        widthToggle.textContent = "Width: " + (state.widthMode === "wide" ? "Wide" : "Narrow");
+      }
+
+      function applyFontScale(scale) {
+        state.fontScale = clamp(scale, 0.85, 1.3);
+        document.documentElement.style.setProperty("--font-scale", String(state.fontScale));
+      }
+
+      function selectModeInput(mode) {
+        modeInputs.forEach(function (input) {
+          input.checked = input.value === mode;
+        });
+      }
+
+      function normalizeName(raw) {
+        return raw.replace(/^@+/, "").trim().toLowerCase();
+      }
+
+      function normalizeNewlines(text) {
+        return String(text).replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+      }
+
+      function stripMarkup(text) {
+        return String(text).replace(/<[^>]+>/g, "");
+      }
+
+      function readStore(key, fallback) {
+        try {
+          var value = window.localStorage.getItem(key);
+          return value === null ? fallback : value;
+        } catch (err) {
+          return fallback;
+        }
+      }
+
+      function writeStore(key, value) {
+        try {
+          window.localStorage.setItem(key, value);
+        } catch (err) {
+          // Ignore storage errors and keep runtime state.
+        }
+      }
+
+      function clamp(value, min, max) {
+        if (Number.isNaN(value)) {
+          return min;
+        }
+        return Math.max(min, Math.min(max, value));
+      }
+
+      function unique(arr) {
+        return Array.from(new Set(arr));
+      }
+    })();
+  </script>
+</body>
+</html>
