@@ -22,6 +22,9 @@
       --warn-bg: #453913;
       --warn-border: #b89437;
       --warn-text: #ffe8a6;
+      --author-bg: #1f203f;
+      --author-border: #7874ff;
+      --author-text: #d8d6ff;
       --log-bg: #2a1114;
       --log-border: #8f2f3a;
       --log-text: #ffb5bf;
@@ -44,6 +47,9 @@
       --warn-bg: #fff4cc;
       --warn-border: #d3ad45;
       --warn-text: #5e4706;
+      --author-bg: #eef0ff;
+      --author-border: #8e94ff;
+      --author-text: #31308f;
       --log-bg: #ffe9ec;
       --log-border: #d97885;
       --log-text: #6e1320;
@@ -374,14 +380,14 @@
     }
 
     .story-block.rules {
-      background: var(--warn-bg);
-      border: 1px solid var(--warn-border);
+      background: transparent;
+      border: 0;
       color: var(--warn-text);
     }
 
     .story-block.log {
-      background: var(--log-bg);
-      border: 1px solid var(--log-border);
+      background: transparent;
+      border: 0;
       color: var(--log-text);
       font-family: Consolas, "Courier New", monospace;
       font-size: 0.96em;
@@ -392,6 +398,11 @@
       border: 1px solid var(--night-border);
     }
 
+    .story-block.author-note {
+      background: transparent;
+      border: 0;
+    }
+
     .story-line {
       margin: 0;
       border-radius: 8px;
@@ -400,6 +411,41 @@
       overflow-wrap: anywhere;
       line-height: var(--line-height);
       transition: opacity var(--ease), background-color var(--ease), filter var(--ease);
+    }
+
+    .story-block.rules .story-line,
+    .story-block.log .story-line {
+      display: inline-block;
+      width: fit-content;
+      max-width: 100%;
+    }
+
+    .story-block.rules .story-line {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      color: var(--warn-text);
+    }
+
+    .story-block.log .story-line {
+      background: var(--log-bg);
+      border: 1px solid var(--log-border);
+      color: var(--log-text);
+    }
+
+    .story-block.author-note .story-line {
+      display: inline-block;
+      width: fit-content;
+      max-width: 100%;
+      background: var(--author-bg);
+      border: 1px solid var(--author-border);
+      color: var(--author-text);
+      font-style: italic;
+    }
+
+    .story-block.rules .story-line.blank,
+    .story-block.log .story-line.blank,
+    .story-block.author-note .story-line.blank {
+      display: none;
     }
 
     .story-line.blank {

@@ -1,8 +1,8 @@
 ﻿(function () {
       "use strict";
 
-      var DAY_FILES = ["./content/day1.txt", "./content/day2.txt", "./content/day3.txt"];
-      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT)\]\]\s*$/i;
+      var DAY_FILES = ["./content/day1.txt", "./content/day2.txt", "./content/day3.txt", "./content/day4.txt"];
+      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
         "GalaxyTwentea Dinosaur",
@@ -18,6 +18,7 @@
         "Smart2004",
         "Acoustyx",
         "Snowlaris",
+        "Polaris",
         "Revenant",
         "lumallie",
         "Duccarian",
@@ -244,7 +245,7 @@
       }
 
       function loadAllDays() {
-        statusEl.textContent = "Loading day1.txt, day2.txt, day3.txt...";
+        statusEl.textContent = "Loading day1.txt, day2.txt, day3.txt, day4.txt...";
         Promise.all(
           DAY_FILES.map(function (file, idx) {
             return fetch(file, { cache: "no-store" }).then(function (res) {
@@ -259,7 +260,7 @@
         )
           .then(function (parsedDays) {
             state.days = parsedDays;
-            subtitleEl.textContent = "Loaded 3 days";
+            subtitleEl.textContent = "Loaded " + parsedDays.length + " days";
             statusEl.textContent = "Ready. Click a name to focus dialogue. Use Settings for view mode.";
             renderDays();
           })
@@ -290,6 +291,8 @@
               currentMode = "log";
             } else if (tag === "NIGHT") {
               currentMode = "night";
+            } else if (tag === "AUTHOR NOTE") {
+              currentMode = "author-note";
             }
             return;
           }
@@ -734,7 +737,11 @@
       }
 
       function normalizeName(raw) {
-        return raw.replace(/^@+/, "").trim().toLowerCase();
+        var name = raw.replace(/^@+/, "").trim().toLowerCase();
+        if (name === "polaris") {
+          return "snowlaris";
+        }
+        return name;
       }
 
       function normalizeNewlines(text) {
