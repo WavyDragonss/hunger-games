@@ -64,6 +64,7 @@ If a door locks, it is locked for a reason.
 Teams are absolute. Helping the opposing team counts as sabotage.
 
 You may speak, bargain, threaten, or pray. The pond does not care.
+[[NARRATIVE]]
 
 Rally lowers the paper. “That’s it. No exit clause. No mercy clause.”
 
@@ -279,9 +280,23 @@ They always stay bright.
 [[LOG]]
 DEATH LOG
 
-Schwonkey — Drowned (lost footing during ambush)
-Godly_Aura — Drowned (slipped during rescue attempt)
-janhk. — Suffocated (trapped in sealed tunnel)
+Golden — rubber tile spring (instant kill)
+
+Toad — boiling water + drop (cooked)
+
+CrystalWolf — rubber tile spring (instant kill)
+
+Akarimmu — boiling water + drop (cooked)
+
+Ninnginni — rubber tile spring (instant kill)
+
+NinjaFlout — boiling water + drop (cooked)
+
+INJURY LOG
+
+space_fan — broken ankle
+
+JIKOSU — dislocated/broken shoulder
 
 [[NIGHT]]
 NIGHT 2

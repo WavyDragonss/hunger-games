@@ -2,7 +2,7 @@
       "use strict";
 
       var DAY_FILES = ["./content/day1.txt", "./content/day2.txt", "./content/day3.txt", "./content/day4.txt"];
-      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE)\]\]\s*$/i;
+      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
         "GalaxyTwentea Dinosaur",
@@ -293,6 +293,8 @@
               currentMode = "night";
             } else if (tag === "AUTHOR NOTE") {
               currentMode = "author-note";
+            } else if (tag === "NARRATIVE") {
+              currentMode = "narrative";
             }
             return;
           }
