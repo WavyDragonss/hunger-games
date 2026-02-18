@@ -1,59 +1,59 @@
-[[DAY]]
-DAY 4 — FREEZE TAG
+﻿[[DAY]]
+DAY 4 â€” FREEZE TAG
 
-A harsh alarm drills through the dorms. Not the usual static—this one is sharp, mechanical, impatient.
+A harsh alarm drills through the dorms. Not the usual staticâ€”this one is sharp, mechanical, impatient.
 
 Everyone sits up at once.
 
-And for the first time since Day 1, there’s something new on the wall:
+And for the first time since Day 1, thereâ€™s something new on the wall:
 
 A huge red digital clock.
 
 12:00 PM.
 
-Elv squints at it. “A clock… now?”
-WavyDragons rubs his eyes. “So they can tell time when they want.”
-Rally stares without blinking. “That means schedules. That means pacing.”
-Polaris keeps her voice low to kiwi. “It feels like a countdown.”
-kiwi nods once. “Or a threat.”
+Elv squints at it. â€œA clockâ€¦ now?â€
+WavyDragons rubs his eyes. â€œSo they can tell time when they want.â€
+Rally stares without blinking. â€œThat means schedules. That means pacing.â€
+Polaris keeps her voice low to kiwi. â€œIt feels like a countdown.â€
+kiwi nods once. â€œOr a threat.â€
 
 The speakers crackle.
 
-Duccarian: “Clean up. Reset. You’ve earned the privilege of pretending you’re normal.”
+Duccarian: â€œClean up. Reset. Youâ€™ve earned the privilege of pretending youâ€™re normal.â€
 
 A dispensing bin opens with a hiss.
 
-Nightmare shoves his old clothes in like he’s throwing away a bad memory.
-Vanarknees 🇦🇷 drops his in without looking. “I’m not letting this place keep pieces of me.”
-lumallie folds her shirt once before tossing it. “It’s collecting. That bin is a mouth.”
-Acoustyx watches the bin a second too long. “Don’t put your hand in.”
+Nightmare shoves his old clothes in like heâ€™s throwing away a bad memory.
+Vanarknees ðŸ‡¦ðŸ‡· drops his in without looking. â€œIâ€™m not letting this place keep pieces of me.â€
+lumallie folds her shirt once before tossing it. â€œItâ€™s collecting. That bin is a mouth.â€
+Acoustyx watches the bin a second too long. â€œDonâ€™t put your hand in.â€
 
-They’re directed one at a time into a dressing room.
+Theyâ€™re directed one at a time into a dressing room.
 
-space_fan limps in first, jaw tight, and comes out in clean clothes that don’t fit the pain.
-KennBlueDragon goes next, rolling his shoulders. “Fresh fabric, same prison.”
-CharliSpirit comes out quieter than she went in. “This feels like they’re dressing us for a photo.”
+space_fan limps in first, jaw tight, and comes out in clean clothes that donâ€™t fit the pain.
+KennBlueDragon goes next, rolling his shoulders. â€œFresh fabric, same prison.â€
+CharliSpirit comes out quieter than she went in. â€œThis feels like theyâ€™re dressing us for a photo.â€
 Lysrix checks her sleeves twice, like they might be marked.
-GalaxyTwentea Dinosaur comes out holding his clean shirt like it’s evidence. “This is way too organized.”
-Shroud says nothing—only looks at the clock again, and again.
+GalaxyTwentea Dinosaur comes out holding his clean shirt like itâ€™s evidence. â€œThis is way too organized.â€
+Shroud says nothingâ€”only looks at the clock again, and again.
 
-Food arrives. Better. Not favorites. Not a trap-feast. Just… decent.
+Food arrives. Better. Not favorites. Not a trap-feast. Justâ€¦ decent.
 
-Smart2004 eats fast, eyes scanning. “They’re refueling us for something.”
-Bofa pushes his tray away, then forces himself to eat anyway. “Fine. I’m not giving them the satisfaction.”
-Loyal2Schwalb murmurs, “This is the first normal bite I’ve had in days.”
+Smart2004 eats fast, eyes scanning. â€œTheyâ€™re refueling us for something.â€
+Bofa pushes his tray away, then forces himself to eat anyway. â€œFine. Iâ€™m not giving them the satisfaction.â€
+Loyal2Schwalb murmurs, â€œThis is the first normal bite Iâ€™ve had in days.â€
 Ut exhales like he forgot food could taste like food.
-Axlot taps the table. “If they’re feeding us, they want us running.”
-Revenant nods once. “Or screaming.”
+Axlot taps the table. â€œIf theyâ€™re feeding us, they want us running.â€
+Revenant nods once. â€œOr screaming.â€
 
 The day crawls.
 
 No games. No announcements. Just the clock burning red.
 
-12:00… 1:00… 2:00… 3:00… 4:00…
+12:00â€¦ 1:00â€¦ 2:00â€¦ 3:00â€¦ 4:00â€¦
 
-Polaris catches herself staring at the reflection in the clock’s glossy casing—just for a second—like she expects to see something behind her.
-kiwi notices and doesn’t ask. He just shifts closer.
+Polaris catches herself staring at the reflection in the clockâ€™s glossy casingâ€”just for a secondâ€”like she expects to see something behind her.
+kiwi notices and doesnâ€™t ask. He just shifts closer.
 
 Then the clock flips.
 
@@ -61,15 +61,17 @@ Then the clock flips.
 
 The alarm slams down again.
 
-The lights snap off—only guiding floor-lights remain.
+The lights snap offâ€”only guiding floor-lights remain.
 
 The second voice slides in, calm and delighted.
 
-“Freeze Tag.”
+â€œFreeze Tag.â€
 
 Silence. Then it begins laying rules like bricks.
 
-RULES — FREEZE TAG
+[[RULES]]
+
+RULES â€” FREEZE TAG
 
 Four Catchers. Everyone else: Runners.
 
@@ -87,7 +89,7 @@ No hiding. No crawling into vents. No leaving the arena.
 
 Catchers may not camp a frozen Runner. Keep moving.
 
-Catchers may not freeze everyone at once. One tag at a time—spread the pressure.
+Catchers may not freeze everyone at once. One tag at a timeâ€”spread the pressure.
 
 If you have been tagged once, you cannot be tagged again for three minutes after being unfrozen.
 
@@ -97,13 +99,15 @@ Every 20 minutes, Catchers and Runners may agree to a 5-minute truce. During tru
 
 Reach the end of the hour alive.
 
+[[NARRATIVE]]
+
 A pause.
 
-“Begin.”
+â€œBegin.â€
 
 The doors open.
 
-They’re guided into a massive indoor arena—bright, sterile, wrong.
+Theyâ€™re guided into a massive indoor arenaâ€”bright, sterile, wrong.
 
 Inflatable duck barriers. Tall foam reeds. Glossy floor lanes that funnel movement. Duck-faced cameras watching from above.
 
@@ -111,63 +115,63 @@ A panel lights up with roles.
 
 CATCHERS (4):
 Nightmare
-Vanarknees 🇦🇷
+Vanarknees ðŸ‡¦ðŸ‡·
 lumallie
 Acoustyx
 
-Nightmare cracks his neck. “Alright.”
-Vanarknees 🇦🇷 smiles without warmth. “Run.”
-lumallie whispers, “Don’t blame me. Blame the rules.”
-Acoustyx says quietly, “Keep your hands to yourself. I won’t warn twice.”
+Nightmare cracks his neck. â€œAlright.â€
+Vanarknees ðŸ‡¦ðŸ‡· smiles without warmth. â€œRun.â€
+lumallie whispers, â€œDonâ€™t blame me. Blame the rules.â€
+Acoustyx says quietly, â€œKeep your hands to yourself. I wonâ€™t warn twice.â€
 
 RUNNERS:
 Elv, Rally, WavyDragons, KennBlueDragon, space_fan, Smart2004, Bofa, GalaxyTwentea Dinosaur, CharliSpirit, Lysrix, Revenant, BLEUG!, Loyal2Schwalb, kiwi, Polaris, JIKOSU, Ut, Axlot, Shroud
 
-Rally exhales. “One hour.”
-JIKOSU flexes his bad shoulder. “I’m cooked if I get tagged.”
-space_fan tightens her brace. “If I go down, don’t stop for me.”
-Polaris snaps back, “Don’t say that.”
-kiwi points to lanes. “We rotate. We don’t bunch.”
-Elv nods. “Pair system. Always two.”
-Shroud murmurs, “They want panic traffic jams.”
-Lysrix swallows. “Then we don’t give them one.”
-GalaxyTwentea Dinosaur looks around for a duck with a name and finds none. “This place hates joy.”
-CharliSpirit whispers, “I hate that I’m already counting seconds.”
-Revenant raises his voice. “If someone freezes—call it. Loud.”
+Rally exhales. â€œOne hour.â€
+JIKOSU flexes his bad shoulder. â€œIâ€™m cooked if I get tagged.â€
+space_fan tightens her brace. â€œIf I go down, donâ€™t stop for me.â€
+Polaris snaps back, â€œDonâ€™t say that.â€
+kiwi points to lanes. â€œWe rotate. We donâ€™t bunch.â€
+Elv nods. â€œPair system. Always two.â€
+Shroud murmurs, â€œThey want panic traffic jams.â€
+Lysrix swallows. â€œThen we donâ€™t give them one.â€
+GalaxyTwentea Dinosaur looks around for a duck with a name and finds none. â€œThis place hates joy.â€
+CharliSpirit whispers, â€œI hate that Iâ€™m already counting seconds.â€
+Revenant raises his voice. â€œIf someone freezesâ€”call it. Loud.â€
 
 A horn blares.
 
-Nightmare launches first—fast, direct. Vanarknees 🇦🇷 cuts angles. lumallie stalks like a shadow. Acoustyx moves like he already knows where people will run.
+Nightmare launches firstâ€”fast, direct. Vanarknees ðŸ‡¦ðŸ‡· cuts angles. lumallie stalks like a shadow. Acoustyx moves like he already knows where people will run.
 
 They scatter.
 
-BLEUG! misjudges the first lane change—Nightmare’s hand taps her shoulder.
+BLEUG! misjudges the first lane changeâ€”Nightmareâ€™s hand taps her shoulder.
 
 She locks solid mid-step.
 
-BLEUG! yells, “UNFREEZE—” and her eyes flick wildly as the seconds start eating her.
+BLEUG! yells, â€œUNFREEZEâ€”â€ and her eyes flick wildly as the seconds start eating her.
 
-Smart2004 runs for her, but Vanarknees 🇦🇷 slides between like a wall.
+Smart2004 runs for her, but Vanarknees ðŸ‡¦ðŸ‡· slides between like a wall.
 
-Smart2004 snarls, “Move.”
-Vanarknees 🇦🇷 laughs once. “Can’t camp. I’m just… passing by.”
+Smart2004 snarls, â€œMove.â€
+Vanarknees ðŸ‡¦ðŸ‡· laughs once. â€œCanâ€™t camp. Iâ€™m justâ€¦ passing by.â€
 
-Polaris starts toward BLEUG!—then lumallie appears, forcing her to veer.
+Polaris starts toward BLEUG!â€”then lumallie appears, forcing her to veer.
 
-Polaris breathes, “No—no—”
-kiwi grabs her sleeve. “Not you. If you go frozen too, it’s two gone.”
+Polaris breathes, â€œNoâ€”noâ€”â€
+kiwi grabs her sleeve. â€œNot you. If you go frozen too, itâ€™s two gone.â€
 
 BLEUG! hits 30 seconds.
 
 A duck-camera clicks. A cold hiss bursts from overhead.
 
-BLEUG! is flash-frozen into a brittle statue—then collapses into glittering shards that melt into nothing.
+BLEUG! is flash-frozen into a brittle statueâ€”then collapses into glittering shards that melt into nothing.
 
-The second voice purrs: “Eliminated.”
+The second voice purrs: â€œEliminated.â€
 
-space_fan flinches hard. “They’re not ‘out.’ They’re dead.”
+space_fan flinches hard. â€œTheyâ€™re not â€˜out.â€™ Theyâ€™re dead.â€
 
-WavyDragons backs up. “Okay. Okay. No mistakes.”
+WavyDragons backs up. â€œOkay. Okay. No mistakes.â€
 
 Smart2004 tries to take command again, shouting routes.
 
@@ -175,11 +179,11 @@ Acoustyx tags him mid-sentence.
 
 Smart2004 freezes with one hand still raised like he can command time itself.
 
-Revenant sprints in. “I’ve got you—”
+Revenant sprints in. â€œIâ€™ve got youâ€”â€
 
-Smart2004 tries to point while frozen—just a twitch.
+Smart2004 tries to point while frozenâ€”just a twitch.
 
-The second voice cuts in instantly: “Moving while frozen is forbidden.”
+The second voice cuts in instantly: â€œMoving while frozen is forbidden.â€
 
 A duck nozzle snaps toward Smart2004.
 
@@ -187,131 +191,131 @@ The same cold hiss.
 
 Smart2004 is erased in a heartbeat.
 
-Revenant staggers back, horrified. “He barely moved.”
+Revenant staggers back, horrified. â€œHe barely moved.â€
 
-Rally mutters, “It doesn’t care how small.”
-Shroud says quietly, “It cares that it can.”
+Rally mutters, â€œIt doesnâ€™t care how small.â€
+Shroud says quietly, â€œIt cares that it can.â€
 
 Bofa sees lumallie cornering CharliSpirit and loses it.
 
-Bofa lunges—an attack.
+Bofa lungesâ€”an attack.
 
-Acoustyx doesn’t even have to move.
+Acoustyx doesnâ€™t even have to move.
 
-The second voice speaks like a judge: “Attacking a Catcher is forbidden.”
+The second voice speaks like a judge: â€œAttacking a Catcher is forbidden.â€
 
-Bofa freezes in place without being touched—like the arena itself grabbed him.
+Bofa freezes in place without being touchedâ€”like the arena itself grabbed him.
 
-Bofa spits, “Are you kidding—”
+Bofa spits, â€œAre you kiddingâ€”â€
 
-He doesn’t get the rest out.
+He doesnâ€™t get the rest out.
 
 Cold hiss. Click. Gone.
 
-CharliSpirit whispers, “Bofa—” and forces herself to keep running.
+CharliSpirit whispers, â€œBofaâ€”â€ and forces herself to keep running.
 
 At 20 minutes, the horn blares twice.
 
-Nightmare slows. “Truce?”
+Nightmare slows. â€œTruce?â€
 
-Elv shouts from across the arena, breath ragged. “Yes. Truce.”
+Elv shouts from across the arena, breath ragged. â€œYes. Truce.â€
 
-Vanarknees 🇦🇷 rolls his shoulders. “Five minutes. Don’t waste it.”
+Vanarknees ðŸ‡¦ðŸ‡· rolls his shoulders. â€œFive minutes. Donâ€™t waste it.â€
 
-The lights shift slightly—like even the arena relaxes.
+The lights shift slightlyâ€”like even the arena relaxes.
 
-JIKOSU drops to one knee, clutching his shoulder. “I’m not making another forty minutes like this.”
-Lysrix sits hard against a barrier. “I can’t feel my hands.”
-GalaxyTwentea Dinosaur wipes his face. “This is cardio for nightmares.”
-Polaris checks kiwi’s face. “You okay?”
-kiwi nods, but his eyes flick once to a corner where a duck-shaped camera seems angled too perfectly. “Yeah. I’m okay.”
+JIKOSU drops to one knee, clutching his shoulder. â€œIâ€™m not making another forty minutes like this.â€
+Lysrix sits hard against a barrier. â€œI canâ€™t feel my hands.â€
+GalaxyTwentea Dinosaur wipes his face. â€œThis is cardio for nightmares.â€
+Polaris checks kiwiâ€™s face. â€œYou okay?â€
+kiwi nods, but his eyes flick once to a corner where a duck-shaped camera seems angled too perfectly. â€œYeah. Iâ€™m okay.â€
 
-space_fan adjusts her ankle brace tighter. “If I get tagged, don’t hesitate. Count fast.”
-KennBlueDragon answers, “I won’t hesitate.”
+space_fan adjusts her ankle brace tighter. â€œIf I get tagged, donâ€™t hesitate. Count fast.â€
+KennBlueDragon answers, â€œI wonâ€™t hesitate.â€
 
 Truce ends.
 
 The chase restarts.
 
-Loyal2Schwalb gets clipped by Vanarknees 🇦🇷 at a lane intersection.
+Loyal2Schwalb gets clipped by Vanarknees ðŸ‡¦ðŸ‡· at a lane intersection.
 
 He freezes, eyes wide.
 
-Loyal2Schwalb says, “Please—” like it matters.
+Loyal2Schwalb says, â€œPleaseâ€”â€ like it matters.
 
 Polaris and kiwi both move at once.
 
-Acoustyx cuts off kiwi’s approach.
+Acoustyx cuts off kiwiâ€™s approach.
 
-Acoustyx: “Keep running.”
+Acoustyx: â€œKeep running.â€
 kiwi grits his teeth and pivots away, furious.
 
-Polaris tries to reach Loyal2Schwalb—but Nightmare’s path forces her to break away or be tagged too.
+Polaris tries to reach Loyal2Schwalbâ€”but Nightmareâ€™s path forces her to break away or be tagged too.
 
-Polaris hisses, “I’m sorry—”
+Polaris hisses, â€œIâ€™m sorryâ€”â€
 
 30 seconds.
 
 Loyal2Schwalb is gone in cold glitter.
 
-CharliSpirit covers her mouth. “No…”
+CharliSpirit covers her mouth. â€œNoâ€¦â€
 
-Ut gets tagged next—lumallie taps him with almost gentle precision.
+Ut gets tagged nextâ€”lumallie taps him with almost gentle precision.
 
 Ut freezes mid-stride.
 
-Revenant calls out, “UT, HOLD—HOLD—”
+Revenant calls out, â€œUT, HOLDâ€”HOLDâ€”â€
 
 But everyone is too far, lanes too chaotic, fear too loud.
 
-Ut’s eyes dart as his timer runs.
+Utâ€™s eyes dart as his timer runs.
 
-Rally starts toward him—then Vanarknees 🇦🇷 angles in, forcing Rally to retreat.
+Rally starts toward himâ€”then Vanarknees ðŸ‡¦ðŸ‡· angles in, forcing Rally to retreat.
 
-Rally mutters, “Nice.”
-Vanarknees 🇦🇷 grins. “Thanks.”
+Rally mutters, â€œNice.â€
+Vanarknees ðŸ‡¦ðŸ‡· grins. â€œThanks.â€
 
 Ut hits 30.
 
 Gone.
 
-Axlot tries to be clever—baiting Nightmare, juking, laughing once like it’s still a game.
+Axlot tries to be cleverâ€”baiting Nightmare, juking, laughing once like itâ€™s still a game.
 
 Nightmare tags him.
 
-Axlot freezes—and immediately tries to force a step anyway, panic overriding logic.
+Axlot freezesâ€”and immediately tries to force a step anyway, panic overriding logic.
 
-The second voice doesn’t hesitate.
+The second voice doesnâ€™t hesitate.
 
 Axlot is eliminated on the spot.
 
-WavyDragons swears under his breath. “Don’t. Move.”
+WavyDragons swears under his breath. â€œDonâ€™t. Move.â€
 
 KennBlueDragon gets tagged while helping space_fan over a slick lane.
 
 He freezes with his hand still half-reached toward her, like a promise interrupted.
 
-space_fan spins back, “No—no—”
+space_fan spins back, â€œNoâ€”noâ€”â€
 
 Polaris limps toward him as fast as her own pain allows.
 
-Vanarknees 🇦🇷 cuts her off with a smile. “Wrong direction.”
+Vanarknees ðŸ‡¦ðŸ‡· cuts her off with a smile. â€œWrong direction.â€
 
-kiwi tries to flank—but Acoustyx mirrors him.
+kiwi tries to flankâ€”but Acoustyx mirrors him.
 
-KennBlueDragon’s eyes lock on space_fan.
+KennBlueDragonâ€™s eyes lock on space_fan.
 
-KennBlueDragon: “Don’t stop. Don’t waste it.”
+KennBlueDragon: â€œDonâ€™t stop. Donâ€™t waste it.â€
 
-space_fan’s voice breaks. “I can’t—”
+space_fanâ€™s voice breaks. â€œI canâ€™tâ€”â€
 
 KennBlueDragon hits 30 seconds.
 
-He’s gone.
+Heâ€™s gone.
 
 Polaris goes very still for a beat, then forces herself to move again.
 
-Polaris, barely audible: “We’re not letting this eat us.”
+Polaris, barely audible: â€œWeâ€™re not letting this eat us.â€
 
 At 40 minutes, the horn blares again.
 
@@ -319,28 +323,28 @@ Another truce is offered.
 
 This time, nobody speaks.
 
-Nightmare finally says, “Truce.”
+Nightmare finally says, â€œTruce.â€
 
-Elv answers immediately. “Truce.”
+Elv answers immediately. â€œTruce.â€
 
 Five minutes of breathing. Five minutes of grief swallowed.
 
-GalaxyTwentea Dinosaur whispers, “We’re down a lot.”
-Shroud replies, “We’re down the loud ones.”
+GalaxyTwentea Dinosaur whispers, â€œWeâ€™re down a lot.â€
+Shroud replies, â€œWeâ€™re down the loud ones.â€
 
-Lysrix looks at Polaris and kiwi. “You two… you’re watching corners like you see something.”
-Polaris lies smoothly. “Just counting exits.”
-kiwi adds, “Just learning angles.”
+Lysrix looks at Polaris and kiwi. â€œYou twoâ€¦ youâ€™re watching corners like you see something.â€
+Polaris lies smoothly. â€œJust counting exits.â€
+kiwi adds, â€œJust learning angles.â€
 
 Truce ends.
 
-Revenant spends the last stretch playing hero—unfreezing two people back-to-back, counting fast, burning his own safety.
+Revenant spends the last stretch playing heroâ€”unfreezing two people back-to-back, counting fast, burning his own safety.
 
-Revenant shouts, “THREE—MOVE!”
+Revenant shouts, â€œTHREEâ€”MOVE!â€
 JIKOSU staggers free, gasping.
 Lysrix gets tapped free seconds later by Elv.
 
-Revenant turns—and lumallie is already there.
+Revenant turnsâ€”and lumallie is already there.
 
 lumallie tags him.
 
@@ -348,10 +352,10 @@ Revenant freezes standing, still facing forward like he refuses to look defeated
 
 Elv tries to reach him but Nightmare forces Elv to dodge.
 
-Polaris starts toward Revenant—then hesitates, seeing the angle is death.
+Polaris starts toward Revenantâ€”then hesitates, seeing the angle is death.
 
-Revenant says calmly, “Don’t.”
-Revenant’s eyes flick to the clock. “Live.”
+Revenant says calmly, â€œDonâ€™t.â€
+Revenantâ€™s eyes flick to the clock. â€œLive.â€
 
 No one reaches him.
 
@@ -359,15 +363,15 @@ No one reaches him.
 
 Revenant is eliminated.
 
-The second voice hums, pleased: “Eight.”
+The second voice hums, pleased: â€œEight.â€
 
 The horn blares long and final.
 
-“One hour complete.”
+â€œOne hour complete.â€
 
 The arena lights soften.
 
-Survivors stand trembling, sweaty, hollow-eyed—counting who remains like it’s a prayer they don’t believe in.
+Survivors stand trembling, sweaty, hollow-eyedâ€”counting who remains like itâ€™s a prayer they donâ€™t believe in.
 
 Polaris finds kiwi again immediately. kiwi finds Polaris just as fast.
 
@@ -378,49 +382,49 @@ Not yet.
 [[LOG]]
 DEATH LOG (FREEZE TAG)
 
-BLEUG! — Eliminated (not unfrozen within 30 seconds)
-Smart2004 — Eliminated (moved while frozen)
-Bofa — Eliminated (attacked a Catcher)
-Loyal2Schwalb — Eliminated (not unfrozen within 30 seconds)
-Ut — Eliminated (not unfrozen within 30 seconds)
-Axlot — Eliminated (moved while frozen)
-KennBlueDragon — Eliminated (not unfrozen within 30 seconds)
-Revenant — Eliminated (not unfrozen within 30 seconds)
+BLEUG! â€” Eliminated (not unfrozen within 30 seconds)
+Smart2004 â€” Eliminated (moved while frozen)
+Bofa â€” Eliminated (attacked a Catcher)
+Loyal2Schwalb â€” Eliminated (not unfrozen within 30 seconds)
+Ut â€” Eliminated (not unfrozen within 30 seconds)
+Axlot â€” Eliminated (moved while frozen)
+KennBlueDragon â€” Eliminated (not unfrozen within 30 seconds)
+Revenant â€” Eliminated (not unfrozen within 30 seconds)
 
 [[NIGHT]]
-NIGHT 4 — THE DOME
+NIGHT 4 â€” THE DOME
 
-The game ends, but the arena doesn’t feel finished with them.
+The game ends, but the arena doesnâ€™t feel finished with them.
 
-Vanarknees 🇦🇷 stands with his hands on his knees, breathing hard, and when he looks up his face is tight with something close to regret.
-lumallie won’t meet anyone’s eyes at all—her jaw keeps working…like she’s chewing guilt.
+Vanarknees ðŸ‡¦ðŸ‡· stands with his hands on his knees, breathing hard, and when he looks up his face is tight with something close to regret.
+lumallie wonâ€™t meet anyoneâ€™s eyes at allâ€”her jaw keeps workingâ€¦like sheâ€™s chewing guilt.
 Acoustyx wipes his hands on his pants like he can scrub the rules off his skin.
 
-Nightmare doesn’t do any of that.
+Nightmare doesnâ€™t do any of that.
 
-Nightmare looks… satisfied.
+Nightmare looksâ€¦ satisfied.
 
-No one really notices. They’re too busy counting who didn’t make it. Too busy swallowing names.
+No one really notices. Theyâ€™re too busy counting who didnâ€™t make it. Too busy swallowing names.
 
-The second voice interrupts the grief like it’s background noise.
+The second voice interrupts the grief like itâ€™s background noise.
 
-“Rest. Now.”
+â€œRest. Now.â€
 
 Instantly, the lights drop.
 
-The path-lights on the floor ignite again—cold, guiding.
+The path-lights on the floor ignite againâ€”cold, guiding.
 
-They follow without arguing. Not because they agree, but because they’ve learned what disobedience costs.
+They follow without arguing. Not because they agree, but because theyâ€™ve learned what disobedience costs.
 
 space_fan limps in silence, her brace tight, refusing help until her foot wobbles and she accepts it anyway.
 Elv stays beside her, steady pace, not talking.
 Rally keeps his eyes forward, shoulders tense, as if the path might change beneath him.
-WavyDragons mutters, “I hate that we just… do what it says.”
-CharliSpirit whispers, “I hate that I’m relieved to be told what to do.”
+WavyDragons mutters, â€œI hate that we justâ€¦ do what it says.â€
+CharliSpirit whispers, â€œI hate that Iâ€™m relieved to be told what to do.â€
 
 They expect dorm doors.
 
-They don’t get dorm doors.
+They donâ€™t get dorm doors.
 
 The path carries them into a massive glass dome.
 
@@ -428,63 +432,63 @@ And everyone stops.
 
 Outside the dome is not darkness.
 
-Outside the dome is water—an endless ocean pressed against the glass, full of slow-moving shadows and pale drifting shapes. Sea creatures glide past like this place is an aquarium the size of a world.
+Outside the dome is waterâ€”an endless ocean pressed against the glass, full of slow-moving shadows and pale drifting shapes. Sea creatures glide past like this place is an aquarium the size of a world.
 
 For a moment, grief loosens its grip.
 
-GalaxyTwentea Dinosaur presses his palm to the glass. “No way…”
-He shifts, and a small duck sits tucked under his arm like a pet. “Deino, you seeing this?”
-Lysrix actually smiles for half a second. “Okay… that’s insane.”
-Shroud tilts his head, quiet. “They built an ocean around us.”
-Vanarknees 🇦🇷 exhales, almost awed despite himself. “That’s… beautiful.”
-lumallie whispers, “Don’t let it distract you. That’s the point.”
-Acoustyx scans the seams of the dome. “Still a cage.”
-Nightmare just watches the water like it’s entertainment. “Yeah. Nice view.”
+GalaxyTwentea Dinosaur presses his palm to the glass. â€œNo wayâ€¦â€
+He shifts, and a small duck sits tucked under his arm like a pet. â€œDeino, you seeing this?â€
+Lysrix actually smiles for half a second. â€œOkayâ€¦ thatâ€™s insane.â€
+Shroud tilts his head, quiet. â€œThey built an ocean around us.â€
+Vanarknees ðŸ‡¦ðŸ‡· exhales, almost awed despite himself. â€œThatâ€™sâ€¦ beautiful.â€
+lumallie whispers, â€œDonâ€™t let it distract you. Thatâ€™s the point.â€
+Acoustyx scans the seams of the dome. â€œStill a cage.â€
+Nightmare just watches the water like itâ€™s entertainment. â€œYeah. Nice view.â€
 
-They’re wowing, breathing, almost forgetting—
+Theyâ€™re wowing, breathing, almost forgettingâ€”
 
 until kiwi and Polaris see it.
 
 A rubber duck figure floats outside the dome, perfectly still in the ocean-dark. Not drifting like the others. Not bobbing.
 
-It’s upright.
+Itâ€™s upright.
 
-And somehow… its beak is angled directly at them.
+And somehowâ€¦ its beak is angled directly at them.
 
 Polaris goes cold.
-kiwi’s stomach drops.
+kiwiâ€™s stomach drops.
 
-And then the flashbacks hit—hard, wrong, vivid.
+And then the flashbacks hitâ€”hard, wrong, vivid.
 
 Day 1. Floodlights. The platform. The crowd.
 
-In the memory, the duck figure was there the whole time—standing behind the lights, watching them.
-In the memory, it was closer than it should’ve been.
+In the memory, the duck figure was there the whole timeâ€”standing behind the lights, watching them.
+In the memory, it was closer than it shouldâ€™ve been.
 In the memory, it was looking at them exactly like this.
 
-Polaris whispers without moving her lips, “That wasn’t there.”
-kiwi breathes, “I remember it.”
-Polaris’ eyes flick to him. “So do I.”
+Polaris whispers without moving her lips, â€œThat wasnâ€™t there.â€
+kiwi breathes, â€œI remember it.â€
+Polarisâ€™ eyes flick to him. â€œSo do I.â€
 
-They don’t tell anyone. They choose silence like it’s armor.
+They donâ€™t tell anyone. They choose silence like itâ€™s armor.
 
-A table rises from the floor with a soft mechanical sigh—desserts laid out neatly, almost cheerful.
+A table rises from the floor with a soft mechanical sighâ€”desserts laid out neatly, almost cheerful.
 
-Duccarian’s voice returns like nothing is wrong.
+Duccarianâ€™s voice returns like nothing is wrong.
 
-“Feast. You’ve earned sugar.”
+â€œFeast. Youâ€™ve earned sugar.â€
 
-WavyDragons stares at the desserts like they’re a trap with frosting. “I hate that I want it.”
-Rally takes a piece anyway. “Eat. We need energy.”
-space_fan lowers herself into a seat carefully. “If it’s poison, it’s late.”
+WavyDragons stares at the desserts like theyâ€™re a trap with frosting. â€œI hate that I want it.â€
+Rally takes a piece anyway. â€œEat. We need energy.â€
+space_fan lowers herself into a seat carefully. â€œIf itâ€™s poison, itâ€™s late.â€
 Elv hands her a napkin without a word.
-CharliSpirit takes a small bite and closes her eyes. “Okay… okay, that’s good.”
-GalaxyTwentea Dinosaur nudges Deino closer to the table like he’s sharing the moment. “Don’t judge me, Deino.”
-Lysrix laughs once, breathy and tired. “We’re bonding with ducks. Great.”
-Shroud watches Nightmare instead of the food. “You’re too calm.”
-Nightmare finally looks away from the dome. “I’m fine.”
+CharliSpirit takes a small bite and closes her eyes. â€œOkayâ€¦ okay, thatâ€™s good.â€
+GalaxyTwentea Dinosaur nudges Deino closer to the table like heâ€™s sharing the moment. â€œDonâ€™t judge me, Deino.â€
+Lysrix laughs once, breathy and tired. â€œWeâ€™re bonding with ducks. Great.â€
+Shroud watches Nightmare instead of the food. â€œYouâ€™re too calm.â€
+Nightmare finally looks away from the dome. â€œIâ€™m fine.â€
 
-When they finish, they feel it before it happens—the familiar dim, the shift in air.
+When they finish, they feel it before it happensâ€”the familiar dim, the shift in air.
 
 The dome lights fade.
 
@@ -498,8 +502,8 @@ They walk back slower now, guiding the injured without needing to be told.
 
 Elv keeps space_fan steady by the elbow.
 Rally stays near JIKOSU, watching his shoulder like it might fail.
-Vanarknees 🇦🇷 hangs back, face unreadable.
-lumallie walks with her hands clenched, like she’s trying not to remember.
+Vanarknees ðŸ‡¦ðŸ‡· hangs back, face unreadable.
+lumallie walks with her hands clenched, like sheâ€™s trying not to remember.
 Acoustyx keeps scanning corners out of habit.
 GalaxyTwentea Dinosaur carries Deino carefully.
 CharliSpirit stays close to Lysrix.
@@ -513,8 +517,8 @@ They sleep.
 
 Or at least, most of them do.
 
-Because in the dark, kiwi’s dreams return him to Day 1—floodlights, platform, and that upright duck watching from the glare.
-And Polaris wakes with her heart pounding, certain she heard a squeak that didn’t come from any speaker.
+Because in the dark, kiwiâ€™s dreams return him to Day 1â€”floodlights, platform, and that upright duck watching from the glare.
+And Polaris wakes with her heart pounding, certain she heard a squeak that didnâ€™t come from any speaker.
 
 Neither of them says a word.
 

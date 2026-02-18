@@ -192,6 +192,8 @@ INJURY LOG
 space_fan — broken ankle
 
 JIKOSU — dislocated/broken shoulder
+[[NARRATIVE]]
+
 They reach the far platform at 24 minutes—not because the bridge got kinder, but because the survivors finally stopped guessing and started solving.
 
 At Row 28, Acoustyx freezes mid-step, head tilted. “The ducks… they click before the bad tile triggers.”
