@@ -94,7 +94,7 @@ Duccarian speaks again.
 
 A clock descends from the ceiling.
 
-**2:00:00**
+2:00:00
 
 It begins counting down.
 
@@ -113,7 +113,7 @@ Not because they’re relaxed.
 
 Because it’s the only good thing left.
 
-At **0:15:00** remaining, Rally stands.
+At 0:15:00 remaining, Rally stands.
 
 “Enough.”
 
@@ -125,7 +125,7 @@ Polaris hesitates half a second—watching corners—then presses.
 
 kiwi presses last.
 
-The clock hits **0:14:32**.
+The clock hits 0:14:32.
 
 The lights flicker.
 
