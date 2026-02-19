@@ -46,7 +46,7 @@ Duccarian’s voice arrives without the usual bite—quiet, almost gentle.
 
 A pause, like he’s savoring the shape of it.
 
-“You showed signs of kindness. Teamwork. Strength. Steadiness.”
+“You showed signs of kindness. Teamwork. Strength. Steadiness. He repeats himself.”
 
 The words land wrong. Not because they’re untrue, but because they’re being used like labels on jars.
 
@@ -91,7 +91,7 @@ A mechanical click echoes overhead.
 And the rules arrive—short, final, merciless.
 
 [[RULES]]
-RULES — NO PEACE
+RULES 
 
 NO PEACE
 
