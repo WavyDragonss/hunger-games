@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Maze Runner Reader</title>
-  <link rel="stylesheet" href="./css/duck.css" />
+  <link rel="stylesheet" href="./css/maze.css" />
 </head>
 <body data-theme="dark" data-width-mode="narrow">
   <header class="app-header" role="banner">
@@ -13,14 +13,14 @@
         <h1 class="brand-title">Maze Runner Story Reader</h1>
         <p class="brand-subtitle" id="subtitle">Loading day files...</p>
       </div>
-      <button class="icon-btn" id="themeToggle" type="button">☀ Light</button>
+      <button class="icon-btn" id="themeToggle" type="button">Light</button>
     </div>
   </header>
 
   <section class="toolbar" aria-label="Reader tools">
     <div class="toolbar-inner">
       <div class="toolbar-left">
-        <button class="text-btn" id="fontDown" type="button">A−</button>
+        <button class="text-btn" id="fontDown" type="button">A-</button>
         <button class="text-btn" id="fontUp" type="button">A+</button>
         <button class="text-btn" id="widthToggle" type="button">Width: Narrow</button>
         <input class="search" id="searchInput" type="search" placeholder="Search text..." autocomplete="off" spellcheck="false" />
@@ -29,8 +29,8 @@
         <div class="toolbar-chip" id="focusLabel">Character: none</div>
         <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
         <div class="nav-wrap" id="navWrap">
-          <button class="mode-btn" id="prevDay" type="button">← Previous Day</button>
-          <button class="mode-btn" id="nextDay" type="button">Next Day →</button>
+          <button class="mode-btn" id="prevDay" type="button"><- Previous Day</button>
+          <button class="mode-btn" id="nextDay" type="button">Next Day -></button>
         </div>
         <details class="settings" id="settings">
           <summary>Settings</summary>
@@ -62,13 +62,13 @@
         <button class="text-btn help-close" id="helpCloseBtn" type="button" aria-label="Close Help">Close</button>
       </div>
       <div class="help-body">
-        <p>Press on the name of a character to focus on it and to unfocus press on the same character once or twice on a different character.</p>
-        <p>DO NOT USE LIGHT MODE IF YOU LIKE TO SEE.</p>
+        <p>Press a character name to focus their lines. Press the same name again, or another name, to change or clear focus.</p>
+        <p>Use this as your Maze Runner chronicle viewer. Keep day files in the content folder with proper tags.</p>
         <p>For any technical help or bugs contact WavyDragons (wavydragons1).</p>
       </div>
     </div>
   </div>
 
-  <script src="./js/duck.js" defer></script>
+  <script src="./js/maze.js" defer></script>
 </body>
 </html>

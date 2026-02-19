@@ -1,7 +1,7 @@
 ﻿(function () {
       "use strict";
 
-      var DAY_FILES = ["./content/day1.txt"];
+      var MAX_DAY_FILES = 30;
       var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
@@ -45,11 +45,11 @@
       var MEMBER_MATCHERS = buildMemberMatchers(MEMBER_NAMES);
 
       var STORE = {
-        theme: "duck_theme",
-        mode: "duck_mode",
-        fontScale: "duck_font_scale",
-        width: "duck_width_mode",
-        povOnly: "duck_pov_only"
+        theme: "maze_theme",
+        mode: "maze_mode",
+        fontScale: "maze_font_scale",
+        width: "maze_width_mode",
+        povOnly: "maze_pov_only"
       };
 
       var state = {
@@ -246,28 +246,50 @@
       }
 
       function loadAllDays() {
-        statusEl.textContent = "Loading day1.txt, day2.txt, day3.txt, day4.txt...";
-        Promise.all(
-          DAY_FILES.map(function (file, idx) {
-            return fetch(file, { cache: "no-store" }).then(function (res) {
-              if (!res.ok) {
-                throw new Error(file + " returned HTTP " + res.status);
-              }
-              return res.text().then(function (text) {
-                return parseDayText(text, idx + 1, file);
-              });
-            });
-          })
-        )
-          .then(function (parsedDays) {
-            state.days = parsedDays;
-            subtitleEl.textContent = "Loaded " + parsedDays.length + " days";
+        statusEl.textContent = "Scanning maze day files...";
+        loadExistingDayFiles(MAX_DAY_FILES)
+          .then(function (loadedDays) {
+            if (!loadedDays.length) {
+              throw new Error("No day files found in ./content (expected day1.txt, day2.txt, ...).");
+            }
+            state.days = loadedDays;
+            subtitleEl.textContent = "Loaded " + loadedDays.length + " maze days";
             statusEl.textContent = "Ready. Click a name to focus dialogue. Use Settings for view mode.";
             renderDays();
           })
           .catch(function (err) {
             statusEl.textContent = "Could not load day files. Serve via HTTP/GitHub Pages. Error: " + err.message;
             subtitleEl.textContent = "Load failed";
+          });
+      }
+
+      function loadExistingDayFiles(maxDays) {
+        var requests = [];
+        for (var i = 1; i <= maxDays; i += 1) {
+          requests.push(loadSingleDay(i));
+        }
+        return Promise.all(requests).then(function (results) {
+          return results
+            .filter(Boolean)
+            .sort(function (a, b) {
+              return a.dayNumber - b.dayNumber;
+            });
+        });
+      }
+
+      function loadSingleDay(dayNumber) {
+        var file = "./content/day" + dayNumber + ".txt";
+        return fetch(file, { cache: "no-store" })
+          .then(function (res) {
+            if (!res.ok) {
+              return null;
+            }
+            return res.text().then(function (text) {
+              return parseDayText(text, dayNumber, file);
+            });
+          })
+          .catch(function () {
+            return null;
           });
       }
 
@@ -719,7 +741,7 @@
       function applyTheme(theme) {
         state.theme = theme === "light" ? "light" : "dark";
         document.body.setAttribute("data-theme", state.theme);
-        themeToggle.textContent = state.theme === "dark" ? "☀ Light" : "🌙 Dark";
+        themeToggle.textContent = state.theme === "dark" ? "Light" : "Dark";
       }
 
       function applyWidthMode(mode) {
@@ -783,4 +805,3 @@
         return Array.from(new Set(arr));
       }
     })();
-
