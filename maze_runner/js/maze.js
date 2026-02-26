@@ -50,7 +50,8 @@
         fontScale: clamp(parseFloat(readStore(STORE.fontScale, "1")), 0.85, 1.3),
         widthMode: readStore(STORE.width, "narrow"),
         theme: readStore(STORE.theme, "dark"),
-        rafPending: false
+        rafPending: false,
+        sessionMaxProgressByDay: {}
       };
 
       var subtitleEl = document.getElementById("subtitle");
@@ -818,8 +819,10 @@
 
         if (state.mode === "paged") {
           var section = readerEl.querySelector(".day-section");
+          var dayIdx = state.currentDay;
           var pct = section ? getSectionProgress(section) : 0;
-          progressLabel.textContent = "Day " + (state.currentDay + 1) + " - " + pct + "%";
+          var maxPct = trackMaxProgress(dayIdx, pct);
+          progressLabel.textContent = "Day " + (state.currentDay + 1) + " - " + maxPct + "%";
           return;
         }
 
@@ -842,7 +845,21 @@
 
         var activeIdx = parseInt(active.getAttribute("data-day-index") || "0", 10);
         var activePct = getSectionProgress(active);
-        progressLabel.textContent = "Day " + (activeIdx + 1) + " - " + activePct + "%";
+        var activeMaxPct = trackMaxProgress(activeIdx, activePct);
+        progressLabel.textContent = "Day " + (activeIdx + 1) + " - " + activeMaxPct + "%";
+      }
+
+      function trackMaxProgress(dayIndex, nextPct) {
+        if (!Number.isFinite(dayIndex) || dayIndex < 0) {
+          return clamp(Math.round(nextPct || 0), 0, 100);
+        }
+        var key = String(dayIndex);
+        var prev = state.sessionMaxProgressByDay[key];
+        var safePrev = Number.isFinite(prev) ? prev : 0;
+        var safeNext = clamp(Math.round(nextPct || 0), 0, 100);
+        var maxPct = Math.max(safePrev, safeNext);
+        state.sessionMaxProgressByDay[key] = maxPct;
+        return maxPct;
       }
 
       function getSectionProgress(sectionEl) {
