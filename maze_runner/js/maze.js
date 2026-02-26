@@ -2,7 +2,7 @@
       "use strict";
 
       var MAX_DAY_FILES = 30;
-      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE)\]\]\s*$/i;
+      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE|TITLE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
         "Rally mally",
@@ -305,6 +305,8 @@
               currentMode = "author-note";
             } else if (tag === "NARRATIVE") {
               currentMode = "narrative";
+            } else if (tag === "TITLE") {
+              currentMode = "title";
             }
             return;
           }
@@ -350,13 +352,15 @@
 
       function makeLineData(raw) {
         var clean = stripMarkup(raw);
+        var plain = stripInlineStoryFormatting(clean);
         return {
           raw: raw,
+          display: clean,
           text: clean,
-          textLower: clean.toLowerCase(),
-          dramatic: DRAMATIC_RE.test(clean),
+          textLower: plain.toLowerCase(),
+          dramatic: DRAMATIC_RE.test(plain),
           subheading: isNarrativeSubheading(raw),
-          midday: /^\s*midday\s*:/i.test(clean)
+          midday: /^\s*midday\s*:/i.test(plain)
         };
       }
 
@@ -465,7 +469,7 @@
         }
 
         var foundNames = [];
-        appendHighlightedMembers(lineEl, lineData.text, foundNames);
+        appendInlineFormattedMembers(lineEl, lineData.display, foundNames);
 
         lineEl.setAttribute("data-names", unique(foundNames).join("|"));
         return lineEl;
@@ -518,6 +522,118 @@
         if (!text.length) {
           lineEl.appendChild(document.createTextNode(""));
         }
+      }
+
+      function appendInlineFormattedMembers(lineEl, text, foundNames) {
+        var segments = parseInlineFormatting(text);
+        segments.forEach(function (segment) {
+          appendHighlightedMembersWithStyle(lineEl, segment.text, foundNames, segment.bold, segment.italic);
+        });
+      }
+
+      function appendHighlightedMembersWithStyle(lineEl, text, foundNames, isBold, isItalic) {
+        var lowerText = text.toLowerCase();
+        var cursor = 0;
+
+        while (cursor < text.length) {
+          var bestIndex = -1;
+          var bestMatcher = null;
+
+          MEMBER_MATCHERS.forEach(function (matcher) {
+            var idx = lowerText.indexOf(matcher.lower, cursor);
+            while (idx !== -1) {
+              var end = idx + matcher.length;
+              if (hasNameBoundary(text, idx, end)) {
+                if (bestIndex === -1 || idx < bestIndex || (idx === bestIndex && matcher.length > bestMatcher.length)) {
+                  bestIndex = idx;
+                  bestMatcher = matcher;
+                }
+                break;
+              }
+              idx = lowerText.indexOf(matcher.lower, idx + 1);
+            }
+          });
+
+          if (bestIndex === -1 || !bestMatcher) {
+            appendStyledText(lineEl, text.slice(cursor), isBold, isItalic);
+            return;
+          }
+
+          if (bestIndex > cursor) {
+            appendStyledText(lineEl, text.slice(cursor, bestIndex), isBold, isItalic);
+          }
+
+          var matchedText = text.slice(bestIndex, bestIndex + bestMatcher.length);
+          var nameEl = document.createElement("span");
+          nameEl.className = "name";
+          if (isBold) {
+            nameEl.classList.add("fmt-bold");
+          }
+          if (isItalic) {
+            nameEl.classList.add("fmt-italic");
+          }
+          nameEl.setAttribute("tabindex", "0");
+          nameEl.setAttribute("data-name", bestMatcher.normalized);
+          nameEl.textContent = matchedText;
+          lineEl.appendChild(nameEl);
+          foundNames.push(bestMatcher.normalized);
+
+          cursor = bestIndex + bestMatcher.length;
+        }
+
+        if (!text.length) {
+          lineEl.appendChild(document.createTextNode(""));
+        }
+      }
+
+      function appendStyledText(parent, text, isBold, isItalic) {
+        if (!text) {
+          return;
+        }
+        if (!isBold && !isItalic) {
+          parent.appendChild(document.createTextNode(text));
+          return;
+        }
+
+        var span = document.createElement("span");
+        if (isBold) {
+          span.classList.add("fmt-bold");
+        }
+        if (isItalic) {
+          span.classList.add("fmt-italic");
+        }
+        span.textContent = text;
+        parent.appendChild(span);
+      }
+
+      function parseInlineFormatting(text) {
+        var re = /(\*\*[^*\n]+\*\*|\*[^*\n]+\*)/g;
+        var segments = [];
+        var last = 0;
+
+        while (true) {
+          var match = re.exec(text);
+          if (!match) {
+            break;
+          }
+          if (match.index > last) {
+            segments.push({ text: text.slice(last, match.index), bold: false, italic: false });
+          }
+
+          var token = match[0];
+          if (token.slice(0, 2) === "**") {
+            segments.push({ text: token.slice(2, -2), bold: true, italic: false });
+          } else {
+            segments.push({ text: token.slice(1, -1), bold: false, italic: true });
+          }
+          last = match.index + token.length;
+        }
+
+        if (last < text.length || text.length === 0) {
+          segments.push({ text: text.slice(last), bold: false, italic: false });
+        }
+
+        return segments;
       }
 
       function hasNameBoundary(text, start, end) {
@@ -733,8 +849,17 @@
         var rect = sectionEl.getBoundingClientRect();
         var sectionTop = rect.top + window.scrollY;
         var sectionHeight = Math.max(1, sectionEl.offsetHeight);
-        var viewMid = window.scrollY + window.innerHeight * 0.5;
-        var progress = ((viewMid - sectionTop) / sectionHeight) * 100;
+        var sectionBottom = sectionTop + sectionHeight;
+        var viewportTop = window.scrollY;
+        var viewportHeight = Math.max(1, window.innerHeight || document.documentElement.clientHeight || 1);
+
+        if (sectionHeight <= viewportHeight) {
+          return viewportTop >= sectionTop ? 100 : 0;
+        }
+
+        var trackStart = sectionTop;
+        var trackEnd = Math.max(trackStart + 1, sectionBottom - viewportHeight);
+        var progress = ((viewportTop - trackStart) / (trackEnd - trackStart)) * 100;
         return Math.round(clamp(progress, 0, 100));
       }
 
@@ -805,6 +930,12 @@
 
       function stripMarkup(text) {
         return String(text).replace(/<[^>]+>/g, "");
+      }
+
+      function stripInlineStoryFormatting(text) {
+        return String(text)
+          .replace(/\*\*([^*\n]+)\*\*/g, "$1")
+          .replace(/\*([^*\n]+)\*/g, "$1");
       }
 
       function readStore(key, fallback) {

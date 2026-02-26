@@ -403,6 +403,18 @@
       border: 0;
     }
 
+    .story-block.title {
+      margin: 10px 0 4px;
+      border-radius: 12px;
+      border: 1px solid var(--accent);
+      background: linear-gradient(180deg, rgba(125, 180, 255, 0.18) 0%, rgba(125, 180, 255, 0.08) 100%);
+      padding: 8px 10px;
+    }
+
+    body[data-theme="light"] .story-block.title {
+      background: linear-gradient(180deg, rgba(29, 99, 204, 0.15) 0%, rgba(29, 99, 204, 0.06) 100%);
+    }
+
     .story-block.subheading {
       background: transparent;
       border: 0;
@@ -446,6 +458,25 @@
       background: var(--author-bg);
       border: 1px solid var(--author-border);
       color: var(--author-text);
+      font-style: italic;
+    }
+
+    .story-block.title .story-line {
+      padding: 6px 4px;
+      text-align: center;
+      font-size: clamp(1.22rem, 2.8vw, 1.72rem);
+      line-height: 1.25;
+      letter-spacing: 0.05em;
+      font-weight: 900;
+      color: var(--text);
+      text-shadow: 0 0 10px rgba(125, 180, 255, 0.28);
+    }
+
+    .fmt-bold {
+      font-weight: 800;
+    }
+
+    .fmt-italic {
       font-style: italic;
     }
 
