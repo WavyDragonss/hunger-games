@@ -5,6 +5,12 @@
       var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
+        "pinkfml",
+        "Doomfox",
+        "Popcorn Rya",
+        "Rabbit",
+        "SomeDucks",
+        "HeyNoQuest",
         "GalaxyTwentea Dinosaur",
         "Trxty",
         "Vanarknees 🇦🇷",
