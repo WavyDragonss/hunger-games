@@ -5,6 +5,18 @@
       var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
+        "Schwalbe",
+        "Elvvusz",
+        "space fan",
+        "DRUG!",
+        "-MAD$-",
+        "BDLoyal",
+        "Sloomba",
+        "Mainthemainstar",
+        "hollow Camillia",
+        "Cyrus",
+        "GalaxyTwentea",
+        "Lord Kalameet",
         "pinkfml",
         "Doomfox",
         "Popcorn Rya",
