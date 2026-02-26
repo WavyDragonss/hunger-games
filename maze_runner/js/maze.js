@@ -5,60 +5,29 @@
       var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
-        "Schwalbe",
-        "Elvvusz",
-        "space fan",
-        "DRUG!",
-        "-MAD$-",
-        "BDLoyal",
-        "Sloomba",
-        "Mainthemainstar",
-        "hollow Camillia",
-        "Cyrus",
-        "GalaxyTwentea",
-        "Lord Kalameet",
-        "pinkfml",
-        "Doomfox",
-        "Popcorn Rya",
-        "Rabbit",
-        "SomeDucks",
-        "HeyNoQuest",
-        "GalaxyTwentea Dinosaur",
-        "Trxty",
-        "Vanarknees 🇦🇷",
-        "Loyal2Schwalb",
-        "KennBlueDragon",
-        "WavyDragons",
-        "CrystalWolf",
-        "Godly_Aura",
-        "NinjaFlout",
-        "CharliSpirit",
-        "Schwonkey",
-        "Smart2004",
-        "Acoustyx",
-        "Snowlaris",
-        "Polaris",
-        "Revenant",
-        "lumallie",
-        "Duccarian",
-        "Ninnginni",
-        "space_fan",
-        "Golden",
-        "JIKOSU",
-        "BLEUG!",
-        "Lysrix",
-        "Akarimmu",
-        "Nightmare",
-        "Axlot",
-        "Shroud",
+        "Rally mally",
         "Rally",
-        "Toad",
-        "janhk.",
+        "Nightmare",
+        "Elvvusz",
+        "Elv",
+        "Duccarian",
+        "Alter(Kiwi)",
+        "Alter",
         "kiwi",
         "Kiwi",
+        "GalaxyTwentea(dino enthusiast)",
+        "GalaxyTwentea",
+        "Galaxy",
+        "-MAD$-",
+        "janhk.",
+        "Ninnginni",
         "Ut",
-        "Elv",
-        "Bofa"
+        "Axlot",
+        "Popcorn Rya",
+        "pinkfml",
+        "space fan",
+        "space_fan",
+        "Lysrix"
       ];
       var MEMBER_MATCHERS = buildMemberMatchers(MEMBER_NAMES);
 
@@ -350,6 +319,11 @@
             return;
           }
 
+          if (currentMode === "narrative" && isNarrativeSubheading(line)) {
+            appendLineToBlock(blocks, "subheading", line);
+            return;
+          }
+
           appendLineToBlock(blocks, currentMode, line);
         });
 
@@ -380,7 +354,9 @@
           raw: raw,
           text: clean,
           textLower: clean.toLowerCase(),
-          dramatic: DRAMATIC_RE.test(clean)
+          dramatic: DRAMATIC_RE.test(clean),
+          subheading: isNarrativeSubheading(raw),
+          midday: /^\s*midday\s*:/i.test(clean)
         };
       }
 
@@ -480,6 +456,12 @@
 
         if (lineData.dramatic) {
           lineEl.classList.add("dramatic");
+        }
+        if (lineData.subheading) {
+          lineEl.classList.add("subheading");
+        }
+        if (lineData.midday) {
+          lineEl.classList.add("midday");
         }
 
         var foundNames = [];
@@ -781,10 +763,40 @@
 
       function normalizeName(raw) {
         var name = raw.replace(/^@+/, "").trim().toLowerCase();
-        if (name === "polaris") {
-          return "snowlaris";
-        }
         return name;
+      }
+
+      function isNarrativeSubheading(line) {
+        var text = stripMarkup(line).trim();
+        if (!text) {
+          return false;
+        }
+
+        if (/^(midday|morning|afternoon|evening|night|dawn|dusk)\s*:/i.test(text)) {
+          return true;
+        }
+
+        if (/^the first [^:]{1,70}:/i.test(text)) {
+          return true;
+        }
+
+        if (/^small human moments in an inhuman place$/i.test(text)) {
+          return true;
+        }
+
+        if (text.length > 96) {
+          return false;
+        }
+
+        if (/["'.,!?]$/.test(text)) {
+          return false;
+        }
+
+        if (/[:]/.test(text)) {
+          return true;
+        }
+
+        return /^[A-Z][A-Za-z0-9 "'()\-]+$/.test(text) && text.split(/\s+/).length <= 12;
       }
 
       function normalizeNewlines(text) {
