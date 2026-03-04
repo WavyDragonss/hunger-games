@@ -6,6 +6,8 @@
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
         "Cyrus",
+        "SomeDucks",
+        "Schwalbe",
         "Doomfox",
         "Rally mally",
         "Rally",
