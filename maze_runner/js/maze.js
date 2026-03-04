@@ -34,13 +34,18 @@
         "Lysrix"
       ];
       var MEMBER_MATCHERS = buildMemberMatchers(MEMBER_NAMES);
+      var RELEASE_SYSTEM = window.HungerReleaseSystem || null;
+      var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
+      var RELEASE_TICK_MS = 1000;
+      var releaseIntervalId = null;
 
       var STORE = {
         theme: "maze_theme",
         mode: "maze_mode",
         fontScale: "maze_font_scale",
         width: "maze_width_mode",
-        povOnly: "maze_pov_only"
+        povOnly: "maze_pov_only",
+        lastOpenedDay: "maze_last_opened_day"
       };
 
       var state = {
@@ -55,7 +60,8 @@
         widthMode: readStore(STORE.width, "narrow"),
         theme: readStore(STORE.theme, "dark"),
         rafPending: false,
-        sessionMaxProgressByDay: {}
+        sessionMaxProgressByDay: {},
+        previewBypass: false
       };
 
       var subtitleEl = document.getElementById("subtitle");
@@ -63,6 +69,7 @@
       var readerEl = document.getElementById("reader");
       var searchInput = document.getElementById("searchInput");
       var progressLabel = document.getElementById("progressLabel");
+      var nextUnlockLabel = document.getElementById("nextUnlockLabel");
       var focusLabel = document.getElementById("focusLabel");
       var themeToggle = document.getElementById("themeToggle");
       var widthToggle = document.getElementById("widthToggle");
@@ -83,6 +90,7 @@
       init();
 
       function init() {
+        state.previewBypass = !!(RELEASE_SYSTEM && RELEASE_SYSTEM.isPreviewEnabled(RELEASE_CONFIG));
         applyTheme(state.theme);
         applyWidthMode(state.widthMode);
         applyFontScale(state.fontScale);
@@ -239,13 +247,17 @@
 
       function loadAllDays() {
         statusEl.textContent = "Scanning maze day files...";
-        loadExistingDayFiles(MAX_DAY_FILES)
+        loadExistingDayFiles(resolveDayLimit())
           .then(function (loadedDays) {
             if (!loadedDays.length) {
               throw new Error("No day files found in ./content (expected day1.txt, day2.txt, ...).");
             }
             state.days = loadedDays;
+            restoreLastOpenedDay();
             subtitleEl.textContent = "Loaded " + loadedDays.length + " maze days";
+            if (state.previewBypass) {
+              subtitleEl.textContent += " (preview mode enabled)";
+            }
             statusEl.textContent = "Ready. Click a name to focus dialogue. Use Settings for view mode.";
             renderDays();
           })
@@ -266,7 +278,15 @@
             .sort(function (a, b) {
               return a.dayNumber - b.dayNumber;
             });
-        });
+            });
+      }
+
+      function resolveDayLimit() {
+        var configuredTotal = parseInt(RELEASE_CONFIG.totalDays, 10);
+        if (Number.isFinite(configuredTotal) && configuredTotal > 0) {
+          return Math.min(MAX_DAY_FILES, configuredTotal);
+        }
+        return MAX_DAY_FILES;
       }
 
       function loadSingleDay(dayNumber) {
@@ -370,19 +390,22 @@
       }
 
       function renderDays() {
+        stopReleaseTicker();
         readerEl.replaceChildren();
         if (!state.days.length) {
+          updateNextUnlockLabel();
           return;
         }
 
         if (state.mode === "paged") {
           state.currentDay = clamp(state.currentDay, 0, state.days.length - 1);
-          renderDaySection(state.days[state.currentDay], state.currentDay, false);
+          persistLastOpenedDay();
+          renderDayContainer(state.days[state.currentDay], state.currentDay, false);
           navWrap.classList.remove("hidden");
           bottomNextWrap.classList.remove("hidden");
         } else {
           state.days.forEach(function (day, idx) {
-            renderDaySection(day, idx, true);
+            renderDayContainer(day, idx, true);
           });
           navWrap.classList.add("hidden");
           bottomNextWrap.classList.add("hidden");
@@ -395,6 +418,8 @@
         applyNameSelectionVisuals();
         applyFilters();
         updateProgress();
+        updateNextUnlockLabel();
+        startReleaseTicker();
       }
 
       function goToPrevDay() {
@@ -402,6 +427,7 @@
           return;
         }
         state.currentDay -= 1;
+        persistLastOpenedDay();
         renderDays();
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -411,8 +437,19 @@
           return;
         }
         state.currentDay += 1;
+        persistLastOpenedDay();
         renderDays();
         window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function renderDayContainer(dayData, dayIndex, withSeparator) {
+        var dayNumber = dayData.dayNumber || dayIndex + 1;
+        var releaseState = getReleaseState(dayNumber);
+        if (releaseState.locked) {
+          renderLockedDaySection(dayData, dayIndex, withSeparator, releaseState);
+          return;
+        }
+        renderDaySection(dayData, dayIndex, withSeparator);
       }
 
       function renderDaySection(dayData, dayIndex, withSeparator) {
@@ -448,6 +485,47 @@
           section.appendChild(blockEl);
         });
 
+        readerEl.appendChild(section);
+      }
+
+      function renderLockedDaySection(dayData, dayIndex, withSeparator, releaseState) {
+        if (withSeparator) {
+          var sep = document.createElement("div");
+          sep.className = "day-separator";
+          sep.textContent = "══════════════════\nDAY " + dayData.dayNumber + "\n══════════════════";
+          readerEl.appendChild(sep);
+        }
+
+        var section = document.createElement("section");
+        section.className = "day-section day-locked";
+        section.setAttribute("data-day-index", String(dayIndex));
+        section.setAttribute("data-day-number", String(dayData.dayNumber || (dayIndex + 1)));
+        section.setAttribute("data-unlock-ms", String(releaseState.unlockMs));
+
+        var heading = document.createElement("h2");
+        heading.className = "day-heading";
+        heading.textContent = dayData.title || ("Day " + (dayIndex + 1));
+        section.appendChild(heading);
+
+        var panel = document.createElement("div");
+        panel.className = "lock-panel";
+
+        var lockTitle = document.createElement("p");
+        lockTitle.className = "lock-title";
+        lockTitle.textContent = "This episode is locked.";
+
+        var lockDate = document.createElement("p");
+        lockDate.className = "lock-meta";
+        lockDate.textContent = "Unlocks at " + formatUnlockDate(releaseState.unlockMs);
+
+        var lockCountdown = document.createElement("p");
+        lockCountdown.className = "lock-countdown";
+        lockCountdown.textContent = "Time remaining: " + formatDuration(releaseState.msRemaining);
+
+        panel.appendChild(lockTitle);
+        panel.appendChild(lockDate);
+        panel.appendChild(lockCountdown);
+        section.appendChild(panel);
         readerEl.appendChild(section);
       }
 
@@ -762,11 +840,121 @@
         return out;
       }
 
+      function getReleaseState(dayNumber) {
+        if (!RELEASE_SYSTEM) {
+          return {
+            locked: false,
+            unlockMs: NaN,
+            msRemaining: 0
+          };
+        }
+        return RELEASE_SYSTEM.getDayState(dayNumber, RELEASE_CONFIG, Date.now());
+      }
+
+      function startReleaseTicker() {
+        if (!RELEASE_SYSTEM || releaseIntervalId !== null) {
+          return;
+        }
+        if (!readerEl.querySelector(".day-locked")) {
+          return;
+        }
+        releaseIntervalId = window.setInterval(function () {
+          var now = Date.now();
+          var lockSections = Array.from(readerEl.querySelectorAll(".day-locked"));
+          var shouldRefresh = false;
+
+          lockSections.forEach(function (section) {
+            var unlockMs = parseInt(section.getAttribute("data-unlock-ms") || "0", 10);
+            if (!Number.isFinite(unlockMs) || unlockMs <= 0) {
+              return;
+            }
+            var remaining = Math.max(0, unlockMs - now);
+            var countdownEl = section.querySelector(".lock-countdown");
+            if (countdownEl) {
+              countdownEl.textContent = "Time remaining: " + formatDuration(remaining);
+            }
+            if (remaining === 0) {
+              shouldRefresh = true;
+            }
+          });
+
+          updateNextUnlockLabel();
+
+          if (shouldRefresh) {
+            renderDays();
+          }
+        }, RELEASE_TICK_MS);
+      }
+
+      function stopReleaseTicker() {
+        if (releaseIntervalId === null) {
+          return;
+        }
+        window.clearInterval(releaseIntervalId);
+        releaseIntervalId = null;
+      }
+
+      function updateNextUnlockLabel() {
+        if (!nextUnlockLabel) {
+          return;
+        }
+        if (!RELEASE_SYSTEM) {
+          nextUnlockLabel.textContent = "Next unlock: schedule inactive";
+          return;
+        }
+        if (state.previewBypass) {
+          nextUnlockLabel.textContent = "Next unlock: preview mode";
+          return;
+        }
+
+        var info = RELEASE_SYSTEM.getNextUnlockInfo(state.days.length, RELEASE_CONFIG, Date.now());
+        if (!info) {
+          nextUnlockLabel.textContent = "Next unlock: all released";
+          return;
+        }
+
+        var prefix = RELEASE_CONFIG.nextUnlockLabelPrefix || "Next unlock";
+        nextUnlockLabel.textContent = prefix + ": Day " + info.dayNumber + " in " + formatDuration(info.msRemaining);
+      }
+
+      function formatUnlockDate(unlockMs) {
+        if (!RELEASE_SYSTEM) {
+          return "Unknown";
+        }
+        return RELEASE_SYSTEM.formatDateTime(unlockMs, RELEASE_CONFIG.locale || "en-US");
+      }
+
+      function formatDuration(ms) {
+        if (!RELEASE_SYSTEM) {
+          return "--";
+        }
+        return RELEASE_SYSTEM.formatDuration(ms).text;
+      }
+
+      function restoreLastOpenedDay() {
+        var stored = parseInt(readStore(STORE.lastOpenedDay, "1"), 10);
+        if (!Number.isFinite(stored)) {
+          return;
+        }
+        state.currentDay = clamp(stored - 1, 0, Math.max(0, state.days.length - 1));
+      }
+
+      function persistLastOpenedDay() {
+        writeStore(STORE.lastOpenedDay, String(state.currentDay + 1));
+      }
+
       function applyFilters() {
         var lines = readerEl.querySelectorAll(".story-line");
         var query = state.query;
         var focus = state.selectedName;
         var visibleCount = 0;
+
+        if (!lines.length) {
+          if (readerEl.querySelector(".day-locked")) {
+            statusEl.textContent = "Episode locked. Countdown is active.";
+          }
+          return;
+        }
 
         lines.forEach(function (lineEl) {
           lineEl.classList.remove("is-hidden", "dimmed", "name-hit");
