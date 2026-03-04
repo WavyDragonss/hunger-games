@@ -5,6 +5,7 @@
       var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE|TITLE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
+        "Doomfox",
         "Rally mally",
         "Rally",
         "Nightmare",
