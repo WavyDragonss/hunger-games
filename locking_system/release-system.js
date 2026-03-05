@@ -74,12 +74,13 @@
   function isPreviewEnabled(config) {
     var cfg = config || {};
     var paramName = cfg.previewParam || "preview";
+    var enableToken = String(cfg.previewEnableToken || "1");
     var storageKey = cfg.previewStorageKey || "hunger_preview_mode";
 
     try {
       var params = new URLSearchParams(window.location.search || "");
       var q = params.get(paramName);
-      if (q === "1" || q === "true") {
+      if (q === enableToken) {
         window.localStorage.setItem(storageKey, "true");
         return true;
       }
