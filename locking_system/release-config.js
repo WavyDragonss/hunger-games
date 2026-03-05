@@ -10,5 +10,5 @@ window.HUNGER_RELEASE_CONFIG = {
   previewStorageKey: "hunger_preview_mode",
   nextUnlockLabelPrefix: "Next unlock",
   // Optional anti-cheat source; leave empty to use device clock only.
-  serverTimeUrl: ""
+  serverTimeUrl: "https://time.now/developer/api/ip"
 };

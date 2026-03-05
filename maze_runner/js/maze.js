@@ -91,17 +91,25 @@
 
       function init() {
         state.previewBypass = !!(RELEASE_SYSTEM && RELEASE_SYSTEM.isPreviewEnabled(RELEASE_CONFIG));
-        if (RELEASE_SYSTEM && typeof RELEASE_SYSTEM.syncServerTime === "function") {
-          RELEASE_SYSTEM.syncServerTime(RELEASE_CONFIG).then(function () {
-            updateNextUnlockLabel();
-          });
-        }
         applyTheme(state.theme);
         applyWidthMode(state.widthMode);
         applyFontScale(state.fontScale);
         povOnlyInput.checked = state.povOnly;
         selectModeInput(state.mode);
         bindEvents();
+
+        if (RELEASE_SYSTEM && typeof RELEASE_SYSTEM.syncServerTime === "function" && RELEASE_CONFIG && RELEASE_CONFIG.serverTimeUrl) {
+          statusEl.textContent = "Syncing trusted server time...";
+          RELEASE_SYSTEM.syncServerTime(RELEASE_CONFIG)
+            .catch(function () {
+              // Sync failure falls back to local time.
+            })
+            .then(function () {
+              loadAllDays();
+            });
+          return;
+        }
+
         loadAllDays();
       }
 
