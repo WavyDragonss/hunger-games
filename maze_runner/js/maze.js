@@ -37,6 +37,7 @@
       var RELEASE_SYSTEM = window.HungerReleaseSystem || null;
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
+      var IMPORTANT_DAY_NUMBER = 6;
       var releaseIntervalId = null;
 
       var STORE = {
@@ -45,7 +46,9 @@
         fontScale: "maze_font_scale",
         width: "maze_width_mode",
         povOnly: "maze_pov_only",
-        lastOpenedDay: "maze_last_opened_day"
+        lastOpenedDay: "maze_last_opened_day",
+        resumeEnabled: "maze_resume_enabled",
+        resumeSnapshot: "maze_resume_snapshot"
       };
 
       var state = {
@@ -61,7 +64,10 @@
         theme: readStore(STORE.theme, "dark"),
         rafPending: false,
         sessionMaxProgressByDay: {},
-        previewBypass: false
+        previewBypass: false,
+        resumeEnabled: readStore(STORE.resumeEnabled, "false") === "true",
+        resumeRestoreInFlight: false,
+        resumeWriteTimer: 0
       };
 
       var subtitleEl = document.getElementById("subtitle");
@@ -86,6 +92,8 @@
       var helpCloseBtn = document.getElementById("helpCloseBtn");
       var modeInputs = document.querySelectorAll("input[name='viewMode']");
       var povOnlyInput = document.getElementById("povOnly");
+      var resumeReadingInput = document.getElementById("resumeReading");
+      var resumeResetBtn = document.getElementById("resumeReset");
 
       init();
 
@@ -95,6 +103,10 @@
         applyWidthMode(state.widthMode);
         applyFontScale(state.fontScale);
         povOnlyInput.checked = state.povOnly;
+        if (resumeReadingInput) {
+          resumeReadingInput.checked = state.resumeEnabled;
+        }
+        updateResumeResetButtonState();
         selectModeInput(state.mode);
         bindEvents();
 
@@ -158,6 +170,25 @@
           writeStore(STORE.povOnly, String(state.povOnly));
           applyFilters();
         });
+
+        if (resumeReadingInput) {
+          resumeReadingInput.addEventListener("change", function () {
+            state.resumeEnabled = resumeReadingInput.checked;
+            writeStore(STORE.resumeEnabled, String(state.resumeEnabled));
+            if (state.resumeEnabled) {
+              scheduleResumeSnapshotWrite(0);
+            }
+            updateResumeResetButtonState();
+          });
+        }
+
+        if (resumeResetBtn) {
+          resumeResetBtn.addEventListener("click", function () {
+            clearResumeSnapshot();
+            statusEl.textContent = "Saved reading checkpoint reset.";
+            updateResumeResetButtonState();
+          });
+        }
 
         prevDayBtn.addEventListener("click", function () {
           goToPrevDay();
@@ -248,6 +279,7 @@
       }
 
       function onScrollOrResize() {
+        scheduleResumeSnapshotWrite(220);
         if (state.rafPending) {
           return;
         }
@@ -267,12 +299,19 @@
             }
             state.days = loadedDays;
             restoreLastOpenedDay();
+            var resumeSnapshot = getResumeSnapshot();
+            if (state.resumeEnabled && resumeSnapshot) {
+              applyResumeSnapshotState(resumeSnapshot);
+            }
             subtitleEl.textContent = "Loaded " + loadedDays.length + " maze days";
             if (state.previewBypass) {
               subtitleEl.textContent += " (preview mode enabled)";
             }
             statusEl.textContent = "Ready. Click a name to focus dialogue. Use Settings for view mode.";
             renderDays();
+            if (state.resumeEnabled && resumeSnapshot) {
+              restoreReadingPosition(resumeSnapshot);
+            }
           })
           .catch(function (err) {
             statusEl.textContent = "Could not load day files. Serve via HTTP/GitHub Pages. Error: " + err.message;
@@ -433,6 +472,7 @@
         updateProgress();
         updateNextUnlockLabel();
         startReleaseTicker();
+        scheduleResumeSnapshotWrite(0);
       }
 
       function goToPrevDay() {
@@ -443,6 +483,7 @@
         persistLastOpenedDay();
         renderDays();
         window.scrollTo({ top: 0, behavior: "smooth" });
+        scheduleResumeSnapshotWrite(250);
       }
 
       function goToNextDay() {
@@ -453,6 +494,7 @@
         persistLastOpenedDay();
         renderDays();
         window.scrollTo({ top: 0, behavior: "smooth" });
+        scheduleResumeSnapshotWrite(250);
       }
 
       function renderDayContainer(dayData, dayIndex, withSeparator) {
@@ -477,6 +519,9 @@
         section.className = "day-section";
         section.setAttribute("data-day-index", String(dayIndex));
         section.setAttribute("data-day-title", dayData.title);
+        if (isImportantDay(dayData.dayNumber || (dayIndex + 1))) {
+          section.classList.add("day-important");
+        }
 
         dayData.blocks.forEach(function (block) {
           if (block.type === "dayHeading") {
@@ -484,6 +529,7 @@
             var h2 = document.createElement("h2");
             h2.className = "day-heading";
             h2.textContent = stripMarkup(headingLine) || dayData.title;
+            appendImportantBadgeIfNeeded(h2, dayData.dayNumber || (dayIndex + 1));
             section.appendChild(h2);
             return;
           }
@@ -514,10 +560,14 @@
         section.setAttribute("data-day-index", String(dayIndex));
         section.setAttribute("data-day-number", String(dayData.dayNumber || (dayIndex + 1)));
         section.setAttribute("data-unlock-unix", String(releaseState.unlockUnix));
+        if (isImportantDay(dayData.dayNumber || (dayIndex + 1))) {
+          section.classList.add("day-important");
+        }
 
         var heading = document.createElement("h2");
         heading.className = "day-heading";
         heading.textContent = dayData.title || ("Day " + (dayIndex + 1));
+        appendImportantBadgeIfNeeded(heading, dayData.dayNumber || (dayIndex + 1));
         section.appendChild(heading);
 
         var panel = document.createElement("div");
@@ -730,6 +780,21 @@
         }
 
         return segments;
+      }
+
+      function isImportantDay(dayNumber) {
+        return dayNumber === IMPORTANT_DAY_NUMBER;
+      }
+
+      function appendImportantBadgeIfNeeded(headingEl, dayNumber) {
+        if (!isImportantDay(dayNumber)) {
+          return;
+        }
+        headingEl.appendChild(document.createTextNode(" "));
+        var badge = document.createElement("span");
+        badge.className = "important-badge";
+        badge.textContent = "IMPORTANT";
+        headingEl.appendChild(badge);
       }
 
       function hasNameBoundary(text, start, end) {
@@ -1052,6 +1117,158 @@
         var activePct = getSectionProgress(active);
         var activeMaxPct = trackMaxProgress(activeIdx, activePct);
         progressLabel.textContent = "Day " + (activeIdx + 1) + " - " + activeMaxPct + "%";
+      }
+
+      function applyResumeSnapshotState(snapshot) {
+        if (snapshot.mode === "paged" || snapshot.mode === "infinite") {
+          state.mode = snapshot.mode;
+          selectModeInput(state.mode);
+        }
+        if (Number.isFinite(snapshot.dayIndex)) {
+          state.currentDay = clamp(snapshot.dayIndex, 0, Math.max(0, state.days.length - 1));
+        }
+      }
+
+      function restoreReadingPosition(snapshot) {
+        state.resumeRestoreInFlight = true;
+        window.requestAnimationFrame(function () {
+          if (state.mode === "infinite" && Number.isFinite(snapshot.scrollTop) && snapshot.scrollTop >= 0) {
+            window.scrollTo({ top: snapshot.scrollTop, behavior: "auto" });
+          } else {
+            scrollToSnapshotProgress(snapshot);
+          }
+          state.resumeRestoreInFlight = false;
+          scheduleResumeSnapshotWrite(120);
+        });
+      }
+
+      function scrollToSnapshotProgress(snapshot) {
+        var targetDayIndex = Number.isFinite(snapshot.dayIndex)
+          ? clamp(snapshot.dayIndex, 0, Math.max(0, state.days.length - 1))
+          : state.currentDay;
+        var pct = clamp(parseFloat(snapshot.progressPct || 0), 0, 100);
+        var section = findSectionByDayIndex(targetDayIndex);
+        if (!section) {
+          return;
+        }
+
+        var sectionRect = section.getBoundingClientRect();
+        var sectionTop = sectionRect.top + window.scrollY;
+        var sectionHeight = Math.max(1, section.offsetHeight);
+        var viewportHeight = Math.max(1, window.innerHeight || document.documentElement.clientHeight || 1);
+
+        if (sectionHeight <= viewportHeight) {
+          window.scrollTo({ top: sectionTop, behavior: "auto" });
+          return;
+        }
+
+        var trackStart = sectionTop;
+        var trackEnd = Math.max(trackStart + 1, (sectionTop + sectionHeight) - viewportHeight);
+        var targetTop = trackStart + (pct / 100) * (trackEnd - trackStart);
+        window.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
+      }
+
+      function scheduleResumeSnapshotWrite(delayMs) {
+        if (!state.resumeEnabled || state.resumeRestoreInFlight || !state.days.length) {
+          return;
+        }
+        if (state.resumeWriteTimer) {
+          window.clearTimeout(state.resumeWriteTimer);
+        }
+        state.resumeWriteTimer = window.setTimeout(function () {
+          state.resumeWriteTimer = 0;
+          persistResumeSnapshot();
+        }, Math.max(0, delayMs || 0));
+      }
+
+      function persistResumeSnapshot() {
+        if (!state.resumeEnabled || !state.days.length) {
+          return;
+        }
+
+        var activeSection = getActiveDaySection();
+        var dayIndex = activeSection
+          ? parseInt(activeSection.getAttribute("data-day-index") || String(state.currentDay), 10)
+          : state.currentDay;
+        dayIndex = Number.isFinite(dayIndex)
+          ? clamp(dayIndex, 0, Math.max(0, state.days.length - 1))
+          : state.currentDay;
+
+        var progressPct = activeSection ? getSectionProgress(activeSection) : 0;
+        var snapshot = {
+          mode: state.mode,
+          dayIndex: dayIndex,
+          progressPct: clamp(Math.round(progressPct), 0, 100),
+          scrollTop: Math.max(0, Math.round(window.scrollY || 0)),
+          savedAt: Date.now()
+        };
+        writeStore(STORE.resumeSnapshot, JSON.stringify(snapshot));
+        updateResumeResetButtonState();
+      }
+
+      function getResumeSnapshot() {
+        var raw = readStore(STORE.resumeSnapshot, "");
+        if (!raw) {
+          return null;
+        }
+        try {
+          var parsed = JSON.parse(raw);
+          if (!parsed || typeof parsed !== "object") {
+            return null;
+          }
+          return parsed;
+        } catch (err) {
+          return null;
+        }
+      }
+
+      function clearResumeSnapshot() {
+        if (state.resumeWriteTimer) {
+          window.clearTimeout(state.resumeWriteTimer);
+          state.resumeWriteTimer = 0;
+        }
+        try {
+          window.localStorage.removeItem(STORE.resumeSnapshot);
+        } catch (err) {
+          // Ignore storage errors and keep runtime state.
+        }
+      }
+
+      function updateResumeResetButtonState() {
+        if (!resumeResetBtn) {
+          return;
+        }
+        var hasSnapshot = !!getResumeSnapshot();
+        resumeResetBtn.disabled = !state.resumeEnabled || !hasSnapshot;
+      }
+
+      function getActiveDaySection() {
+        var sections = Array.from(readerEl.querySelectorAll(".day-section"));
+        if (!sections.length) {
+          return null;
+        }
+        if (state.mode === "paged") {
+          return sections[0];
+        }
+
+        var pivot = window.innerHeight * 0.36;
+        var active = sections[0];
+        for (var i = 0; i < sections.length; i += 1) {
+          var rect = sections[i].getBoundingClientRect();
+          if (rect.top <= pivot) {
+            active = sections[i];
+          } else {
+            break;
+          }
+        }
+        return active;
+      }
+
+      function findSectionByDayIndex(dayIndex) {
+        if (state.mode === "paged") {
+          return readerEl.querySelector(".day-section");
+        }
+        return readerEl.querySelector('.day-section[data-day-index="' + dayIndex + '"]');
       }
 
       function trackMaxProgress(dayIndex, nextPct) {
