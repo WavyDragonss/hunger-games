@@ -91,6 +91,11 @@
 
       function init() {
         state.previewBypass = !!(RELEASE_SYSTEM && RELEASE_SYSTEM.isPreviewEnabled(RELEASE_CONFIG));
+        if (RELEASE_SYSTEM && typeof RELEASE_SYSTEM.syncServerTime === "function") {
+          RELEASE_SYSTEM.syncServerTime(RELEASE_CONFIG).then(function () {
+            updateNextUnlockLabel();
+          });
+        }
         applyTheme(state.theme);
         applyWidthMode(state.widthMode);
         applyFontScale(state.fontScale);
@@ -500,7 +505,7 @@
         section.className = "day-section day-locked";
         section.setAttribute("data-day-index", String(dayIndex));
         section.setAttribute("data-day-number", String(dayData.dayNumber || (dayIndex + 1)));
-        section.setAttribute("data-unlock-ms", String(releaseState.unlockMs));
+        section.setAttribute("data-unlock-unix", String(releaseState.unlockUnix));
 
         var heading = document.createElement("h2");
         heading.className = "day-heading";
@@ -516,11 +521,11 @@
 
         var lockDate = document.createElement("p");
         lockDate.className = "lock-meta";
-        lockDate.textContent = "Unlocks at " + formatUnlockDate(releaseState.unlockMs);
+        lockDate.textContent = "Unlocks at " + formatUnlockDate(releaseState.unlockUnix);
 
         var lockCountdown = document.createElement("p");
         lockCountdown.className = "lock-countdown";
-        lockCountdown.textContent = "Time remaining: " + formatDuration(releaseState.msRemaining);
+        lockCountdown.textContent = "Time remaining: " + formatDuration(releaseState.secondsRemaining);
 
         panel.appendChild(lockTitle);
         panel.appendChild(lockDate);
@@ -844,11 +849,11 @@
         if (!RELEASE_SYSTEM) {
           return {
             locked: false,
-            unlockMs: NaN,
-            msRemaining: 0
+            unlockUnix: NaN,
+            secondsRemaining: 0
           };
         }
-        return RELEASE_SYSTEM.getDayState(dayNumber, RELEASE_CONFIG, Date.now());
+        return RELEASE_SYSTEM.getDayState(dayNumber, RELEASE_CONFIG);
       }
 
       function startReleaseTicker() {
@@ -859,16 +864,16 @@
           return;
         }
         releaseIntervalId = window.setInterval(function () {
-          var now = Date.now();
+          var nowUnix = RELEASE_SYSTEM.getCurrentUnix ? RELEASE_SYSTEM.getCurrentUnix() : Math.floor(Date.now() / 1000);
           var lockSections = Array.from(readerEl.querySelectorAll(".day-locked"));
           var shouldRefresh = false;
 
           lockSections.forEach(function (section) {
-            var unlockMs = parseInt(section.getAttribute("data-unlock-ms") || "0", 10);
-            if (!Number.isFinite(unlockMs) || unlockMs <= 0) {
+            var unlockUnix = parseInt(section.getAttribute("data-unlock-unix") || "0", 10);
+            if (!Number.isFinite(unlockUnix) || unlockUnix <= 0) {
               return;
             }
-            var remaining = Math.max(0, unlockMs - now);
+            var remaining = Math.max(0, unlockUnix - nowUnix);
             var countdownEl = section.querySelector(".lock-countdown");
             if (countdownEl) {
               countdownEl.textContent = "Time remaining: " + formatDuration(remaining);
@@ -907,28 +912,28 @@
           return;
         }
 
-        var info = RELEASE_SYSTEM.getNextUnlockInfo(state.days.length, RELEASE_CONFIG, Date.now());
+        var info = RELEASE_SYSTEM.getNextUnlockInfo(state.days.length, RELEASE_CONFIG);
         if (!info) {
           nextUnlockLabel.textContent = "Next unlock: all released";
           return;
         }
 
         var prefix = RELEASE_CONFIG.nextUnlockLabelPrefix || "Next unlock";
-        nextUnlockLabel.textContent = prefix + ": Day " + info.dayNumber + " in " + formatDuration(info.msRemaining);
+        nextUnlockLabel.textContent = prefix + ": Day " + info.dayNumber + " in " + formatDuration(info.secondsRemaining);
       }
 
-      function formatUnlockDate(unlockMs) {
+      function formatUnlockDate(unlockUnix) {
         if (!RELEASE_SYSTEM) {
           return "Unknown";
         }
-        return RELEASE_SYSTEM.formatDateTime(unlockMs, RELEASE_CONFIG.locale || "en-US");
+        return RELEASE_SYSTEM.formatDateTime(unlockUnix, RELEASE_CONFIG.locale || "en-US");
       }
 
-      function formatDuration(ms) {
+      function formatDuration(seconds) {
         if (!RELEASE_SYSTEM) {
           return "--";
         }
-        return RELEASE_SYSTEM.formatDuration(ms).text;
+        return RELEASE_SYSTEM.formatDuration(seconds).text;
       }
 
       function restoreLastOpenedDay() {

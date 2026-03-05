@@ -1,71 +1,60 @@
 (function () {
   "use strict";
 
-  var DAY_MS = 24 * 60 * 60 * 1000;
+  var DEFAULT_SECONDS_PER_DAY = 86400;
+  var serverOffsetSeconds = 0;
+  var serverSyncInFlight = null;
 
-  function parseStartMoment(config) {
-    if (config.startMomentISO) {
-      var isoDate = new Date(config.startMomentISO);
-      if (!Number.isNaN(isoDate.getTime())) {
-        return isoDate.getTime();
-      }
+  function resolveStartUnix(config) {
+    var cfg = config || {};
+    var parsed = parseInt(cfg.startUnix, 10);
+    return Number.isFinite(parsed) ? parsed : NaN;
+  }
+
+  function resolveSecondsPerDay(config) {
+    var cfg = config || {};
+    var parsed = parseInt(cfg.secondsPerDay, 10);
+    if (!Number.isFinite(parsed) || parsed <= 0) {
+      return DEFAULT_SECONDS_PER_DAY;
     }
-
-    if (!config.startDate) {
-      return NaN;
-    }
-
-    var dateMatch = String(config.startDate).match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if (!dateMatch) {
-      return NaN;
-    }
-
-    var year = parseInt(dateMatch[1], 10);
-    var month = parseInt(dateMatch[2], 10) - 1;
-    var day = parseInt(dateMatch[3], 10);
-    var hour = parseInt(config.dailyUnlockHour, 10);
-    var minute = parseInt(config.dailyUnlockMinute, 10);
-
-    var safeHour = Number.isFinite(hour) ? clamp(hour, 0, 23) : 0;
-    var safeMinute = Number.isFinite(minute) ? clamp(minute, 0, 59) : 0;
-
-    return new Date(year, month, day, safeHour, safeMinute, 0, 0).getTime();
+    return parsed;
   }
 
   function getUnlockTime(dayNumber, config) {
-    var start = parseStartMoment(config || {});
-    if (!Number.isFinite(start) || dayNumber < 1) {
+    var startUnix = resolveStartUnix(config);
+    var secondsPerDay = resolveSecondsPerDay(config);
+    if (!Number.isFinite(startUnix) || dayNumber < 1) {
       return NaN;
     }
-    return start + (dayNumber - 1) * DAY_MS;
+    return startUnix + (dayNumber - 1) * secondsPerDay;
   }
 
-  function getDayState(dayNumber, config, nowMs) {
-    var unlockMs = getUnlockTime(dayNumber, config);
-    var now = Number.isFinite(nowMs) ? nowMs : Date.now();
-    if (!Number.isFinite(unlockMs)) {
+  function getDayState(dayNumber, config, nowUnix) {
+    var unlockUnix = getUnlockTime(dayNumber, config);
+    var now = Number.isFinite(nowUnix) ? Math.floor(nowUnix) : getCurrentUnix();
+    if (!Number.isFinite(unlockUnix)) {
       return {
         valid: false,
         locked: true,
-        unlockMs: NaN,
-        msRemaining: NaN
+        unlockUnix: NaN,
+        secondsRemaining: NaN
       };
     }
 
     var bypass = isPreviewEnabled(config);
-    var msRemaining = unlockMs - now;
+    var secondsRemaining = unlockUnix - now;
     return {
       valid: true,
-      locked: bypass ? false : msRemaining > 0,
-      unlockMs: unlockMs,
-      msRemaining: Math.max(0, msRemaining),
+      locked: bypass ? false : secondsRemaining > 0,
+      unlockUnix: unlockUnix,
+      secondsRemaining: Math.max(0, secondsRemaining),
       bypass: bypass
     };
   }
 
-  function getNextUnlockInfo(totalDays, config, nowMs) {
+  function getNextUnlockInfo(totalDays, config, nowUnix) {
     var safeTotal = Math.max(0, parseInt(totalDays, 10) || 0);
-    var now = Number.isFinite(nowMs) ? nowMs : Date.now();
+    var now = Number.isFinite(nowUnix) ? Math.floor(nowUnix) : getCurrentUnix();
     if (isPreviewEnabled(config)) {
       return null;
     }
@@ -74,8 +63,8 @@
       if (state.valid && state.locked) {
         return {
           dayNumber: i,
-          unlockMs: state.unlockMs,
-          msRemaining: state.msRemaining
+          unlockUnix: state.unlockUnix,
+          secondsRemaining: state.secondsRemaining
         };
       }
     }
@@ -109,8 +98,8 @@
     }
   }
 
-  function formatDateTime(ms, locale) {
-    var date = new Date(ms);
+  function formatDateTime(unixSeconds, locale) {
+    var date = new Date(toMillis(unixSeconds));
     if (Number.isNaN(date.getTime())) {
       return "Invalid date";
     }
@@ -123,9 +112,8 @@
     }).format(date);
   }
 
-  function formatDuration(msInput) {
-    var ms = Math.max(0, Math.floor(msInput || 0));
-    var totalSeconds = Math.floor(ms / 1000);
+  function formatDuration(totalSecondsInput) {
+    var totalSeconds = Math.max(0, Math.floor(totalSecondsInput || 0));
     var days = Math.floor(totalSeconds / 86400);
     var hours = Math.floor((totalSeconds % 86400) / 3600);
     var minutes = Math.floor((totalSeconds % 3600) / 60);
@@ -144,8 +132,94 @@
     return value < 10 ? "0" + value : String(value);
   }
 
-  function clamp(value, min, max) {
-    return Math.max(min, Math.min(max, value));
+  function getCurrentUnix() {
+    return Math.floor(Date.now() / 1000) + serverOffsetSeconds;
+  }
+
+  function syncServerTime(config) {
+    if (serverSyncInFlight) {
+      return serverSyncInFlight;
+    }
+
+    var cfg = config || {};
+    var url = String(cfg.serverTimeUrl || "").trim();
+    if (!url) {
+      serverOffsetSeconds = parseInt(cfg.serverUnixOffset, 10) || 0;
+      return Promise.resolve({ synced: false, offsetSeconds: serverOffsetSeconds });
+    }
+
+    serverSyncInFlight = fetch(url, { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) {
+          throw new Error("Time endpoint returned " + res.status);
+        }
+        return res.json();
+      })
+      .then(function (data) {
+        var serverUnix = extractUnixFromPayload(data);
+        if (!Number.isFinite(serverUnix)) {
+          throw new Error("Server response did not include a unix timestamp.");
+        }
+        var localUnix = Math.floor(Date.now() / 1000);
+        serverOffsetSeconds = serverUnix - localUnix;
+        return {
+          synced: true,
+          offsetSeconds: serverOffsetSeconds,
+          serverUnix: serverUnix
+        };
+      })
+      .catch(function () {
+        return {
+          synced: false,
+          offsetSeconds: serverOffsetSeconds
+        };
+      })
+      .finally(function () {
+        serverSyncInFlight = null;
+      });
+
+    return serverSyncInFlight;
+  }
+
+  function extractUnixFromPayload(data) {
+    if (!data || typeof data !== "object") {
+      return NaN;
+    }
+
+    var candidates = [data.unixtime, data.unixTime, data.unix, data.timestamp, data.epoch];
+    for (var i = 0; i < candidates.length; i += 1) {
+      var parsed = parseNumberish(candidates[i]);
+      if (!Number.isFinite(parsed)) {
+        continue;
+      }
+      if (parsed > 1000000000000) {
+        return Math.floor(parsed / 1000);
+      }
+      return Math.floor(parsed);
+    }
+
+    return NaN;
+  }
+
+  function parseNumberish(value) {
+    if (typeof value === "number") {
+      return value;
+    }
+    if (typeof value === "string" && value.trim()) {
+      var parsed = Number(value);
+      return Number.isFinite(parsed) ? parsed : NaN;
+    }
+    return NaN;
+  }
+
+  function toMillis(unixSeconds) {
+    if (!Number.isFinite(unixSeconds)) {
+      return NaN;
+    }
+    if (unixSeconds > 1000000000000) {
+      return unixSeconds;
+    }
+    return Math.floor(unixSeconds) * 1000;
   }
 
   window.HungerReleaseSystem = {
@@ -153,6 +227,8 @@
     getDayState: getDayState,
     getNextUnlockInfo: getNextUnlockInfo,
     isPreviewEnabled: isPreviewEnabled,
+    getCurrentUnix: getCurrentUnix,
+    syncServerTime: syncServerTime,
     formatDateTime: formatDateTime,
     formatDuration: formatDuration
   };
