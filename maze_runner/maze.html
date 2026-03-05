@@ -22,7 +22,10 @@
       <div class="toolbar-left">
         <button class="text-btn" id="fontDown" type="button">A-</button>
         <button class="text-btn" id="fontUp" type="button">A+</button>
-        <button class="text-btn" id="widthToggle" type="button">Width: Narrow</button>
+        <div class="toolbar-resume">
+          <label class="settings-inline-toggle"><input id="resumeReading" type="checkbox" /> Resume reading <span class="beta-badge">BETA</span></label>
+          <button class="settings-mini-btn" id="resumeReset" type="button">Reset spot</button>
+        </div>
         <input class="search" id="searchInput" type="search" placeholder="Search text..." autocomplete="off" spellcheck="false" />
       </div>
       <div class="toolbar-right">
@@ -39,10 +42,7 @@
             <label class="settings-row"><input type="radio" name="viewMode" value="paged" /> Paged mode</label>
             <label class="settings-row"><input type="radio" name="viewMode" value="infinite" /> Infinite mode</label>
             <label class="settings-row"><input id="povOnly" type="checkbox" /> Filter to selected character POV</label>
-            <div class="settings-row settings-row-beta">
-              <label class="settings-inline-toggle"><input id="resumeReading" type="checkbox" /> Resume where you left off <span class="beta-badge">BETA</span></label>
-              <button class="settings-mini-btn" id="resumeReset" type="button">Reset saved spot</button>
-            </div>
+            <button class="settings-mini-btn" id="widthToggle" type="button">Width: Narrow</button>
           </div>
         </details>
         <button class="text-btn" id="helpBtn" type="button" aria-expanded="false" aria-controls="helpPanel">Help</button>
