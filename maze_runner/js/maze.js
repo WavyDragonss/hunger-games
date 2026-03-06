@@ -7,6 +7,7 @@
       var MEMBER_NAMES = [
         "Cyrus",
         "SomeDucks",
+        "Toad",
         "Schwalbe",
         "Doomfox",
         "Rally mally",
