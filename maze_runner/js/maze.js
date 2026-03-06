@@ -598,8 +598,16 @@
         lineEl.className = "story-line";
         lineEl.setAttribute("data-day-index", String(dayIndex));
         lineEl.setAttribute("data-text", lineData.textLower);
+        var trimmedRaw = lineData.raw.trim();
 
-        if (!lineData.raw.trim()) {
+        if (trimmedRaw === "---") {
+          lineEl.classList.add("line-divider");
+          lineEl.setAttribute("aria-hidden", "true");
+          lineEl.setAttribute("data-text", "");
+          return lineEl;
+        }
+
+        if (!trimmedRaw) {
           lineEl.classList.add("blank");
           lineEl.setAttribute("aria-hidden", "true");
           return lineEl;

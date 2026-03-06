@@ -617,6 +617,20 @@
       padding: 0;
     }
 
+    .story-line.line-divider {
+      min-height: 16px;
+      padding: 7px 0;
+    }
+
+    .story-line.line-divider::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, transparent 0%, #4a95ff 18%, #71b8ff 50%, #4a95ff 82%, transparent 100%);
+    }
+
     .story-line.dramatic {
       text-align: center;
       letter-spacing: 0.08em;
