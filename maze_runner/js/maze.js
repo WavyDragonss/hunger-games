@@ -38,7 +38,7 @@
       var RELEASE_SYSTEM = window.HungerReleaseSystem || null;
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
-      var IMPORTANT_DAY_NUMBER = 6;
+      var IMPORTANT_DAY_NUMBER = 8;
       var releaseIntervalId = null;
 
       var STORE = {
