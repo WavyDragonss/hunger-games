@@ -419,7 +419,6 @@ But something inside is learning exactly how to reach them anyway.
 [[NIGHT]]
 NIGHT 6 — THE EARLY HUNTER
 
-[[NARRATIVE]]
 The light cools fully, and the camp does not speak about it like a sunset.
 
 It is a switch.
@@ -617,3 +616,4 @@ Frodge shifts once in SomeDucks’ arms, then settles, warm and real.
 And that small warmth is the only thing in Aurora’s Rest that feels like it does not belong to the Maze.
 
 Which makes it the most dangerous hope of all.
+[[NARRATIVE]]
