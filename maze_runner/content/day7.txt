@@ -448,7 +448,6 @@ And somewhere in the corridors, the walls grind into a new configuration, and so
 [[NIGHT]]
 NIGHT 7 — THE MESSAGE BEFORE THE STORM
 
-[[NARRATIVE]]
 The burial changes the quality of the dark.
 
 It is the same dark as every other night in Aurora's Rest, the same artificial ceiling, the same 90 meter walls holding the black in place. But the camp feels it differently. Like the orchard soil is still warm from the day's work and the warmth is the wrong kind.
@@ -694,6 +693,7 @@ NIGHT STATUS
 No Quigg contact. No C A R L activity. Maze shifted once in early hours. All Peeps present and alive.
 
 [[NARRATIVE]]
+[[NIGHT]]
 Night 7 ends quietly.
 
 But quiet in Aurora's Rest has started to mean something different.
@@ -709,3 +709,4 @@ Day 8 is coming.
 And for the first time, the Maze has told them exactly what it wants from them.
 
 That is the part that should worry them most.
+[[NARRATIVE]]
