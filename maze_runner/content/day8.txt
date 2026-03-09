@@ -431,7 +431,6 @@ Kiwi answers without opening his eyes. "The Maze is reorganizing."
 
 "After today."
 
-"After today."
 
 Cyrus, half asleep, says, "That should be reassuring and it is not."
 
@@ -481,45 +480,29 @@ space fan crosses the distance and crouches. Pulse check. Breathing. Skull and n
 
 Lysrix looks at the note.
 
-Rally mally picks it up. He unfolds it. He reads it once to himself and something happens in his face that is not fully readable in the dark. He holds the note for a moment without speaking. Then he hands it to Duccarian.
+Something in his face shifts, not quite readable in the dark, somewhere between unease and the particular feeling of being watched by something that has been watching for longer than y
 
 Duccarian reads it aloud, Frodge tucked in one arm, the note in his other hand.
 
-Hello Peeps.
-
-Tomorrow is a big day for you.
-
-You will see beacons of light.
-
-Three to be exact.
-
-Rising from the Maze.
-
-They are supply drops that you WILL have to retrieve by Day 8.
-
-And in case I don't see ya.
-
+Well done, Peeps.
+You went in. You came back out. You lost people and you kept moving anyway.
+That is exactly what I needed to see.
+The beacons were not a gift. They were a question. And you answered it correctly.
+Aurora's Rest is yours for now. Rest while you can.
+The Maze has more questions coming.
 Good morning.
-
-Good evening.
-
+Good evening. 
 And good night.
 
-P.S. The supply drops are guarded. You might want to bring some friends.
+— Schwalbe
 
 Duccarian stops reading.
 
 The camp is very quiet.
 
-Kiwi says, after a moment, "That is the same note."
+Kiwi says, after a moment, "It was watching us the whole time."
 
-Rabbit looks between the faces around him. "What do you mean the same note."
-
-"The note from last night," Kiwi says. "On JIKOSU's elevator. Word for word."
-
-Rabbit processes this. "The mission we already completed."
-
-"Today," Kiwi says. "Yes."
+Rabbit reads it twice. "It knew what we did. Inside the Maze. All of it."
 
 The silence that follows is not the silence of fear or exhaustion. It is the silence of people standing at the edge of something they cannot fully see, understanding that the drop is real even if the bottom is not visible.
 
@@ -597,8 +580,8 @@ Golden — Arrived via elevator during Night 8. Unconscious on arrival. Conditio
 
 EVENT LOG
 Elevator activated during night hours for the second time.
-Note recovered. Contents identical to Night 7 note. Describes Day 8 supply mission already completed.
-Timing of identical note interpreted as deliberate by camp. Purpose unclear.
+Note recovered. Signed Schwalbe. Congratulatory in tone. References Day 8 supply mission with apparent knowledge of events inside the Maze.
+Camp confirmed Schwalbe has observation capability beyond Aurora's Rest perimeter. Extent unknown.
 No Quigg contact during night. Maze activity minimal. Patrols appear repositioned following Day 8 expedition.
 
 NIGHT STATUS
@@ -610,9 +593,11 @@ Night 8 ends with the Maze quiet and the medic hut full and a folded note lying 
 
 The note already did what it came to do.
 
-Nobody is sure yet what that was.
+It told them they were never unobserved.
 
 But the Maze knows.
 
 And it is not in a hurry to explain.
+
+Nobody noticed Ninnginni's absence during the day...
 [[NARRATIVE]]
