@@ -32,7 +32,8 @@
         "pinkfml",
         "space fan",
         "space_fan",
-        "Lysrix"
+        "Lysrix",
+        "Rabbit"
       ];
       var MEMBER_MATCHERS = buildMemberMatchers(MEMBER_NAMES);
       var RELEASE_SYSTEM = window.HungerReleaseSystem || null;
