@@ -25,6 +25,7 @@
         "Galaxy",
         "-MAD$-",
         "janhk.",
+        "JIKOSU",
         "Ninnginni",
         "Ut",
         "Axlot",
