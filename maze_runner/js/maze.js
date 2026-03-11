@@ -33,6 +33,7 @@
         "pinkfml",
         "space fan",
         "space_fan",
+        "Golden",
         "Trxty",
         "Lord Kalameet",
         "Lysrix",
