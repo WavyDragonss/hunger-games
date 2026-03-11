@@ -45,6 +45,7 @@
             <button class="settings-mini-btn" id="widthToggle" type="button">Width: Narrow</button>
           </div>
         </details>
+        <button class="text-btn" id="feedbackBtn" type="button" aria-expanded="false" aria-controls="feedbackPanel">Feedback</button>
         <button class="text-btn" id="helpBtn" type="button" aria-expanded="false" aria-controls="helpPanel">Help</button>
       </div>
     </div>
@@ -70,6 +71,35 @@
         <p>Press a character name to focus their lines. Press the same name again, or another name, to change or clear focus.</p>
         <p>Use this as your Maze Runner chronicle viewer. Keep day files in the content folder with proper tags.</p>
         <p>For any technical help or bugs contact WavyDragons (wavydragons1).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="help-modal hidden" id="feedbackPanel" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle">
+    <div class="help-dialog feedback-dialog">
+      <div class="help-header">
+        <h2 id="feedbackTitle">Send Feedback</h2>
+        <button class="text-btn help-close" id="feedbackCloseBtn" type="button" aria-label="Close Feedback">Close</button>
+      </div>
+      <div class="help-body">
+        <form id="feedbackForm" class="feedback-form" action="https://formspree.io/f/xojkdnkn" method="POST">
+          <label class="feedback-label" for="feedbackDiscord">Discord tag</label>
+          <input class="feedback-input" id="feedbackDiscord" type="text" name="discordTag" required autocomplete="off" placeholder="example_user" />
+
+          <label class="feedback-label" for="feedbackTitleInput">Issue title</label>
+          <input class="feedback-input" id="feedbackTitleInput" type="text" name="issueTitle" required autocomplete="off" placeholder="Short title for the problem" />
+
+          <label class="feedback-label" for="feedbackDescription">Description</label>
+          <textarea class="feedback-textarea" id="feedbackDescription" name="description" required placeholder="Describe what happened, expected behavior, and steps to reproduce."></textarea>
+
+          <p class="feedback-status" id="feedbackStatus" aria-live="polite"></p>
+          <button class="mode-btn feedback-submit" id="feedbackSubmitBtn" type="submit">Send</button>
+        </form>
+
+        <div class="feedback-thanks hidden" id="feedbackThanks" aria-live="polite">
+          <p>Thank you for the feedback. It has been received.</p>
+          <button class="text-btn" id="feedbackSendAnotherBtn" type="button">Send another report</button>
+        </div>
       </div>
     </div>
   </div>

@@ -405,6 +405,79 @@
       margin-top: 8px;
     }
 
+    .feedback-dialog {
+      width: min(720px, 100%);
+    }
+
+    .feedback-form {
+      display: grid;
+      gap: 8px;
+    }
+
+    .feedback-label {
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .feedback-input,
+    .feedback-textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface-2);
+      color: var(--text);
+      padding: 10px 11px;
+      font: inherit;
+      transition: border-color var(--ease), box-shadow var(--ease);
+    }
+
+    .feedback-input:focus,
+    .feedback-textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(125, 180, 255, 0.3);
+    }
+
+    body[data-theme="light"] .feedback-input:focus,
+    body[data-theme="light"] .feedback-textarea:focus {
+      box-shadow: 0 0 0 3px rgba(29, 99, 204, 0.2);
+    }
+
+    .feedback-textarea {
+      min-height: 130px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    .feedback-status {
+      min-height: 1.2em;
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .feedback-status.error {
+      color: #ff8e9c;
+    }
+
+    body[data-theme="light"] .feedback-status.error {
+      color: #a2172d;
+    }
+
+    .feedback-submit {
+      justify-self: start;
+      margin-top: 2px;
+    }
+
+    .feedback-thanks {
+      display: grid;
+      gap: 10px;
+    }
+
+    .feedback-thanks p {
+      margin: 0;
+    }
+
     .reader {
       display: grid;
       gap: 18px;

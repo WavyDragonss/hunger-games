@@ -96,6 +96,14 @@
       var helpBtn = document.getElementById("helpBtn");
       var helpPanel = document.getElementById("helpPanel");
       var helpCloseBtn = document.getElementById("helpCloseBtn");
+      var feedbackBtn = document.getElementById("feedbackBtn");
+      var feedbackPanel = document.getElementById("feedbackPanel");
+      var feedbackCloseBtn = document.getElementById("feedbackCloseBtn");
+      var feedbackForm = document.getElementById("feedbackForm");
+      var feedbackStatus = document.getElementById("feedbackStatus");
+      var feedbackSubmitBtn = document.getElementById("feedbackSubmitBtn");
+      var feedbackThanks = document.getElementById("feedbackThanks");
+      var feedbackSendAnotherBtn = document.getElementById("feedbackSendAnotherBtn");
       var modeInputs = document.querySelectorAll("input[name='viewMode']");
       var povOnlyInput = document.getElementById("povOnly");
       var resumeReadingInput = document.getElementById("resumeReading");
@@ -222,6 +230,29 @@
           }
         });
 
+        feedbackBtn.addEventListener("click", function () {
+          openFeedback();
+        });
+
+        feedbackCloseBtn.addEventListener("click", function () {
+          closeFeedback();
+        });
+
+        feedbackPanel.addEventListener("click", function (event) {
+          if (event.target === feedbackPanel) {
+            closeFeedback();
+          }
+        });
+
+        feedbackForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          submitFeedbackForm();
+        });
+
+        feedbackSendAnotherBtn.addEventListener("click", function () {
+          resetFeedbackView();
+        });
+
         readerEl.addEventListener("click", function (event) {
           var target = event.target;
           if (!(target instanceof HTMLElement) || !target.classList.contains("name")) {
@@ -267,6 +298,7 @@
         document.addEventListener("keydown", function (event) {
           if (event.key === "Escape") {
             closeHelp();
+            closeFeedback();
           }
         });
 
@@ -282,6 +314,59 @@
       function closeHelp() {
         helpPanel.classList.add("hidden");
         helpBtn.setAttribute("aria-expanded", "false");
+      }
+
+      function openFeedback() {
+        closeHelp();
+        feedbackPanel.classList.remove("hidden");
+        feedbackBtn.setAttribute("aria-expanded", "true");
+      }
+
+      function closeFeedback() {
+        feedbackPanel.classList.add("hidden");
+        feedbackBtn.setAttribute("aria-expanded", "false");
+      }
+
+      function submitFeedbackForm() {
+        if (!feedbackForm.reportValidity()) {
+          return;
+        }
+
+        feedbackStatus.textContent = "Sending feedback...";
+        feedbackStatus.classList.remove("error");
+        feedbackSubmitBtn.disabled = true;
+
+        fetch(feedbackForm.action, {
+          method: "POST",
+          headers: {
+            "Accept": "application/json"
+          },
+          body: new FormData(feedbackForm)
+        })
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error("Request failed");
+            }
+            feedbackForm.classList.add("hidden");
+            feedbackThanks.classList.remove("hidden");
+            feedbackStatus.textContent = "";
+            feedbackForm.reset();
+            statusEl.textContent = "Thanks for the feedback submission.";
+          })
+          .catch(function () {
+            feedbackStatus.textContent = "Could not send feedback right now. Please try again.";
+            feedbackStatus.classList.add("error");
+          })
+          .finally(function () {
+            feedbackSubmitBtn.disabled = false;
+          });
+      }
+
+      function resetFeedbackView() {
+        feedbackThanks.classList.add("hidden");
+        feedbackForm.classList.remove("hidden");
+        feedbackStatus.textContent = "";
+        feedbackStatus.classList.remove("error");
       }
 
       function onScrollOrResize() {
