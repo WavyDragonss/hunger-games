@@ -1,5 +1,5 @@
-[[DAY]]
-DAY 7 — THE VILLAGE AND THE WATER
+﻿[[DAY]]
+DAY 7 â€” THE VILLAGE AND THE WATER
 
 [[NARRATIVE]]
 Day 7 arrives like it does not know what happened.
@@ -198,7 +198,7 @@ At one point pinkfml asks space fan a question in a flat, careful voice.
 
 "Did he scream for long."
 
-space fan does not pretend not to understand. "pinkfml—"
+space fan does not pretend not to understand. "pinkfmlâ€”"
 
 "Doomfox." Still flat. Still careful. "When the Quigg took him. Did it last long."
 
@@ -238,7 +238,7 @@ Rally mally nods. "Name."
 
 "You follow rules and you eat. Then you help."
 
-Rabbit glances at Galaxy moving across the camp with a beam under one arm. "Is that—"
+Rabbit glances at Galaxy moving across the camp with a beam under one arm. "Is thatâ€”"
 
 "One of us," Rally mally says. "He cannot speak. He understands everything. Treat him accordingly."
 
@@ -421,7 +421,7 @@ The Maze does not care which word they use.
 
 [[LOG]]
 DEATH LOG
-pinkfml — Slipped on wet stone at the waterfall basin edge. Head injury. Died on site. Buried in the orchard zone, eastern row.
+pinkfml â€” Slipped on wet stone at the waterfall basin edge. Head injury. Died on site. Buried in the orchard zone, eastern row.
 
 INJURY LOG
 None.
@@ -446,7 +446,7 @@ It simply continues.
 And somewhere in the corridors, the walls grind into a new configuration, and something patient and enormous adjusts its understanding of the place, and the people in it, and how much more it has to teach them.
 
 [[NIGHT]]
-NIGHT 7 — THE MESSAGE BEFORE THE STORM
+NIGHT 7 â€” THE MESSAGE BEFORE THE STORM
 
 The burial changes the quality of the dark.
 
@@ -597,7 +597,7 @@ Rally mally does not confirm or deny. He looks at the note and then at the Maze 
 
 "Three beacons," he says. "Inside the Maze. Guarded. We do not know by what or how many." He pauses. "That is tomorrow's problem. Tonight's problem is rest."
 
-Ut says, "I need an hour before sleep to start the route plan—"
+Ut says, "I need an hour before sleep to start the route planâ€”"
 
 "Rest first," Rally mally says. Not harsh. Final.
 
@@ -673,7 +673,7 @@ Now it is asking them in.
 
 [[LOG]]
 ARRIVAL LOG
-JIKOSU — Arrived via elevator during Night 7. Unconscious on arrival. Condition stable. Suspected sedation effect. Located in medic hut pending recovery.
+JIKOSU â€” Arrived via elevator during Night 7. Unconscious on arrival. Condition stable. Suspected sedation effect. Located in medic hut pending recovery.
 
 EVENT LOG
 Elevator activated during night hours. First recorded night activation. Considered anomalous.

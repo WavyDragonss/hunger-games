@@ -1,5 +1,5 @@
-[[DAY]]
-DAY 6 — THE WATER THAT NEVER ENDS
+﻿[[DAY]]
+DAY 6 â€” THE WATER THAT NEVER ENDS
 
 [[NARRATIVE]]
 Day 6 arrives like the place is pretending to be generous.
@@ -33,9 +33,9 @@ Toad.
 
 He blinks hard, takes in the orchard, the forest, the cage, the tired faces, and then exhales like he expected this nightmare and hates being right. He looks at Rally mally first, as if leaders have a smell.
 
-Rally mally speaks gently, but firm. “Name.”
-Toad answers. “Toad.”
-Rally mally nods. “You follow rules and you eat. Then you help.”
+Rally mally speaks gently, but firm. â€œName.â€
+Toad answers. â€œToad.â€
+Rally mally nods. â€œYou follow rules and you eat. Then you help.â€
 
 A crate rises with him.
 
@@ -46,22 +46,22 @@ Toad reads it aloud because nobody wants mysteries in their pockets anymore.
 It says
 Make something worth waiting for.
 
-Ninnginni squints. “That is either hopeful or evil.”
-Duccarian replies, “Both can be true.”
-Nightmare mutters, “Finally. Someone useful.”
+Ninnginni squints. â€œThat is either hopeful or evil.â€
+Duccarian replies, â€œBoth can be true.â€
+Nightmare mutters, â€œFinally. Someone useful.â€
 
-Toad sets the pot down carefully. “If we get real water, I can make something that tastes like a reason to breathe.”
-SomeDucks tilts his head, curious. “You mean tea.”
-Toad smiles once. “I mean beer.”
+Toad sets the pot down carefully. â€œIf we get real water, I can make something that tastes like a reason to breathe.â€
+SomeDucks tilts his head, curious. â€œYou mean tea.â€
+Toad smiles once. â€œI mean beer.â€
 pinkfml looks up, a flicker of almost warmth in her eyes, then she hides it again.
 
 Rally mally does not let the mood float too high.
 
-He points toward the Maze doors. “Lever run today. We unlock the third zone. We do it fast and we do it smart.”
+He points toward the Maze doors. â€œLever run today. We unlock the third zone. We do it fast and we do it smart.â€
 
-Nightmare steps forward immediately. “Send me.”
-Rally mally shakes his head. “No. I need you here if something comes early. You watch the doors.”
-Nightmare’s expression turns annoyed, then satisfied, like being trusted with control is still a win.
+Nightmare steps forward immediately. â€œSend me.â€
+Rally mally shakes his head. â€œNo. I need you here if something comes early. You watch the doors.â€
+Nightmareâ€™s expression turns annoyed, then satisfied, like being trusted with control is still a win.
 
 Rally mally chooses the runner team.
 
@@ -70,11 +70,11 @@ janhk. for seams and traps.
 Kiwi for patterns and instincts.
 Doomfox because he is fast, and he has been trying too hard to prove he belongs.
 
-space fan speaks before they leave. “If anything stings or clicks, you stop. You come back.”
-Lysrix adds, “If the corridor loops, mark it. Do not chase momentum.”
-Duccarian says quietly, “The Maze does not punish bravery. It punishes assumption.”
-Toad hands Ut a strip of cloth. “Tie this at turns. We do not lose people in stone.”
-SomeDucks watches the team and says softly, “Do not let pride pick your footsteps.”
+space fan speaks before they leave. â€œIf anything stings or clicks, you stop. You come back.â€
+Lysrix adds, â€œIf the corridor loops, mark it. Do not chase momentum.â€
+Duccarian says quietly, â€œThe Maze does not punish bravery. It punishes assumption.â€
+Toad hands Ut a strip of cloth. â€œTie this at turns. We do not lose people in stone.â€
+SomeDucks watches the team and says softly, â€œDo not let pride pick your footsteps.â€
 Toad just nods once, absorbing everything like he stores it for later.
 
 They go.
@@ -87,17 +87,17 @@ Ut leads at a measured pace, counting steps, listening for the faintest shift in
 
 They pass two silent pressure plates that janhk. spots by the way dust refuses to settle on certain stones.
 
-Doomfox whispers, “How do you see that.”
-janhk. whispers back, “Because the Maze wants you to miss it.”
+Doomfox whispers, â€œHow do you see that.â€
+janhk. whispers back, â€œBecause the Maze wants you to miss it.â€
 
 They reach a junction that should lead somewhere new.
 
 Instead, it loops.
 
-Ut stops instantly. “We just walked the same wall mark twice.”
-Kiwi nods. “It is feeding us circles.”
-Doomfox swears under his breath. “So we are lost.”
-janhk. points at a seam line that is thinner than the others. “Not lost. Redirected.”
+Ut stops instantly. â€œWe just walked the same wall mark twice.â€
+Kiwi nods. â€œIt is feeding us circles.â€
+Doomfox swears under his breath. â€œSo we are lost.â€
+janhk. points at a seam line that is thinner than the others. â€œNot lost. Redirected.â€
 
 They take the seam line corridor.
 
@@ -107,14 +107,14 @@ Then they find the lever.
 
 It is not hidden in an alcove like the others. It is almost casual, bolted into the wall with a grip that looks too clean.
 
-Ut stares at it. “Too easy.”
-Kiwi whispers, “That is the warning.”
-janhk. checks the floor. Checks the mount. Checks the surrounding seam. “No pressure plate. No needle slot. But the handle housing is strange.”
-Doomfox steps forward anyway, chest rising like he is about to win something. “I can do it. I will do it.”
+Ut stares at it. â€œToo easy.â€
+Kiwi whispers, â€œThat is the warning.â€
+janhk. checks the floor. Checks the mount. Checks the surrounding seam. â€œNo pressure plate. No needle slot. But the handle housing is strange.â€
+Doomfox steps forward anyway, chest rising like he is about to win something. â€œI can do it. I will do it.â€
 
-Ut hesitates, then nods once. “Pull and step back.”
-Kiwi adds, “Do not stand under it.”
-janhk. says, “Hands only. No body weight.”
+Ut hesitates, then nods once. â€œPull and step back.â€
+Kiwi adds, â€œDo not stand under it.â€
+janhk. says, â€œHands only. No body weight.â€
 
 Doomfox grips the lever.
 
@@ -134,13 +134,13 @@ He does not even scream at first. He just makes a broken sound of surprise, like
 
 Then he screams.
 
-Ut grabs him under the arms immediately and drags him back from the lever housing. Kiwi yanks Doomfox’s collar hard to keep him from falling forward into the mechanism again. janhk. stares at the spikes and whispers, “It was the lever. It was always the lever.”
+Ut grabs him under the arms immediately and drags him back from the lever housing. Kiwi yanks Doomfoxâ€™s collar hard to keep him from falling forward into the mechanism again. janhk. stares at the spikes and whispers, â€œIt was the lever. It was always the lever.â€
 
-Blood pours down Doomfox’s calves.
+Blood pours down Doomfoxâ€™s calves.
 
-Doomfox gasps, “I pulled it. I pulled it. We did it.”
-Kiwi’s voice is tight. “Yes. Now we leave.”
-Ut looks down the corridor. “Fast. Before something hears this.”
+Doomfox gasps, â€œI pulled it. I pulled it. We did it.â€
+Kiwiâ€™s voice is tight. â€œYes. Now we leave.â€
+Ut looks down the corridor. â€œFast. Before something hears this.â€
 
 They half carry, half drag Doomfox back.
 
@@ -150,7 +150,7 @@ The Maze feels louder now. The corridors echo their breathing. The stone seems t
 
 They reach the entrance as the light outside looks a fraction cooler, not night yet, but shifting.
 
-Back in Aurora’s Rest, the alarm tone reaches the camp and the third zone unlocks.
+Back in Auroraâ€™s Rest, the alarm tone reaches the camp and the third zone unlocks.
 
 The smog barrier clears.
 
@@ -162,32 +162,32 @@ Not a normal one.
 
 It drops too far, too clean, too perfect, a sheet of water pouring down into a dark basin that should fill and overflow but never does. The fall looks infinite, like the water is falling into nowhere.
 
-Cyrus stares. “That is impossible.”
-Duccarian murmurs, “No. That is engineered.”
-Toad whispers, almost reverent, “That is water.”
-Toad says, “That is survival.”
+Cyrus stares. â€œThat is impossible.â€
+Duccarian murmurs, â€œNo. That is engineered.â€
+Toad whispers, almost reverent, â€œThat is water.â€
+Toad says, â€œThat is survival.â€
 
 The runner team bursts out with Doomfox between them.
 
-space fan runs to them and drops to her knees, hands already moving. “Lay him down. Now.”
-Lysrix kneels too, calm hands, sharp eyes. “Pressure first. Then clean.”
+space fan runs to them and drops to her knees, hands already moving. â€œLay him down. Now.â€
+Lysrix kneels too, calm hands, sharp eyes. â€œPressure first. Then clean.â€
 pinkfml flinches at the blood and forces herself to stay, to watch, to not run.
-Popcorn Rya grips her own sleeves and whispers, “He did it. He did it and it still punished him.”
-Ninnginni mutters, “The Maze does not do gratitude.”
+Popcorn Rya grips her own sleeves and whispers, â€œHe did it. He did it and it still punished him.â€
+Ninnginni mutters, â€œThe Maze does not do gratitude.â€
 Nightmare watches the blood and looks almost annoyed that the pain is not happening to him.
 
-Ut explains fast. “Lever was easy. Trap fired after confirmation. Spikes through both legs.”
-janhk. adds, “Mechanism was inside the lever housing. No external tell.”
-Kiwi looks at Rally mally. “If it is easy, it is bait.”
+Ut explains fast. â€œLever was easy. Trap fired after confirmation. Spikes through both legs.â€
+janhk. adds, â€œMechanism was inside the lever housing. No external tell.â€
+Kiwi looks at Rally mally. â€œIf it is easy, it is bait.â€
 
-Rally mally nods once, jaw tight. “We still needed it. We still paid.”
+Rally mally nods once, jaw tight. â€œWe still needed it. We still paid.â€
 
 They stabilize Doomfox as best they can with what they have.
 
 space fan binds tight.
 Lysrix keeps Doomfox talking so he does not drift.
-Doomfox shakes, trying to smile through pain. “At least I was useful.”
-SomeDucks answers softly, wise and sad, “Being useful should not cost you your legs.”
+Doomfox shakes, trying to smile through pain. â€œAt least I was useful.â€
+SomeDucks answers softly, wise and sad, â€œBeing useful should not cost you your legs.â€
 Toad sets the pot down beside the shelter line and looks at the waterfall zone like it is the first real promise they have seen.
 
 They go to the water.
@@ -208,14 +208,14 @@ The waterfall zone is beautiful in the way a display is beautiful.
 
 The water crashes down in a smooth sheet, and the basin below is crystal clear, but the surface never rises. The flow never changes. The sound never shifts.
 
-Kiwi kneels near the edge and watches foam patterns. “It loops.”
-Ut nods. “Recirculating.”
-Duccarian, from a distance, calls softly, “Infinite fall effect.”
-Cyrus rubs his temples. “We are living inside a machine.”
+Kiwi kneels near the edge and watches foam patterns. â€œIt loops.â€
+Ut nods. â€œRecirculating.â€
+Duccarian, from a distance, calls softly, â€œInfinite fall effect.â€
+Cyrus rubs his temples. â€œWe are living inside a machine.â€
 
-Toad kneels and tastes the water with a careful finger. “Clean.”
-Toad says, “We boil anyway.”
-Toad nods. “Of course.”
+Toad kneels and tastes the water with a careful finger. â€œClean.â€
+Toad says, â€œWe boil anyway.â€
+Toad nods. â€œOf course.â€
 
 Then SomeDucks spots something near the basin edge.
 
@@ -227,24 +227,24 @@ A real living duck, damp feathers, bright eyes, sitting in the spray like it bel
 
 SomeDucks crouches slowly, hands open, posture calm, the way you approach something that can choose to leave.
 
-Ninnginni whispers, “Is that real.”
-Cyrus whispers back, “Do not scare it.”
+Ninnginni whispers, â€œIs that real.â€
+Cyrus whispers back, â€œDo not scare it.â€
 Nightmare watches, confused and irritated by anything that looks gentle.
 
 The duck waddles closer to SomeDucks on its own.
 
 SomeDucks looks stunned, then quietly pleased, like he has been handed a fragile truth.
 
-He speaks to it softly. “Hello.”
+He speaks to it softly. â€œHello.â€
 The duck tilts its head.
-SomeDucks smiles. “You are the first thing here that looks like it wants to live.”
+SomeDucks smiles. â€œYou are the first thing here that looks like it wants to live.â€
 
-Kiwi watches the duck, then watches SomeDucks. “It picked you.”
-SomeDucks answers, almost embarrassed. “Or I picked it by not trying to own it.”
+Kiwi watches the duck, then watches SomeDucks. â€œIt picked you.â€
+SomeDucks answers, almost embarrassed. â€œOr I picked it by not trying to own it.â€
 
-Toad laughs once, surprised. “The philosopher of Aurora’s Rest has a disciple.”
-SomeDucks glances at him. “Do not start calling me that.”
-Ninnginni grins. “Too late.”
+Toad laughs once, surprised. â€œThe philosopher of Auroraâ€™s Rest has a disciple.â€
+SomeDucks glances at him. â€œDo not start calling me that.â€
+Ninnginni grins. â€œToo late.â€
 
 SomeDucks lifts the duck gently, expecting it to flap away.
 
@@ -254,27 +254,27 @@ He holds it like it is a piece of sanity.
 
 Then he pauses, like naming it would be a promise.
 
-Ut says, “Name it.”
-janhk. adds, “Names matter.”
-Kiwi says, “Names make things real.”
+Ut says, â€œName it.â€
+janhk. adds, â€œNames matter.â€
+Kiwi says, â€œNames make things real.â€
 
 SomeDucks looks down at the duck, thinking too hard, making suspense out of silence.
 
-Cyrus offers, “Pond.”
-Ninnginni offers, “Dave Two.”
-Nightmare mutters, “Bait.”
-Toad smiles. “Blessing.”
-Toad says, “Do not waste time. Water first.”
+Cyrus offers, â€œPond.â€
+Ninnginni offers, â€œDave Two.â€
+Nightmare mutters, â€œBait.â€
+Toad smiles. â€œBlessing.â€
+Toad says, â€œDo not waste time. Water first.â€
 SomeDucks ignores them all, still staring at the duck like it is listening.
 
 Then he speaks, certain.
 
-“Frodge.”
+â€œFrodge.â€
 
 The duck makes a small sound that is not quite a quack, and it stays tucked against his arm like agreement.
 
-Kiwi exhales, the tension in his shoulders dropping a fraction. “Frodge is a terrible name.”
-SomeDucks answers calmly, “Frodge is perfect.”
+Kiwi exhales, the tension in his shoulders dropping a fraction. â€œFrodge is a terrible name.â€
+SomeDucks answers calmly, â€œFrodge is perfect.â€
 Lysrix, from far back near the shelters, cannot hear the name, but she sees the way Kiwi briefly looks like a normal person again.
 
 They bring water back in containers they improvise.
@@ -283,10 +283,10 @@ Toad immediately starts planning.
 
 He sets the pot over a safe heat source, boils water, then starts assembling a crude fermentation setup with cloth, twine, and whatever sugars they can spare from rations and orchard scraps.
 
-He speaks quietly as he works. “Give me time and I can make morale.”
-Duccarian replies, “Morale is a resource.”
-Nightmare mutters, “Beer does not stop Quiggs.”
-Toad answers, “No. It stops people from breaking before Quiggs arrive.”
+He speaks quietly as he works. â€œGive me time and I can make morale.â€
+Duccarian replies, â€œMorale is a resource.â€
+Nightmare mutters, â€œBeer does not stop Quiggs.â€
+Toad answers, â€œNo. It stops people from breaking before Quiggs arrive.â€
 
 As the day pushes toward the light cooling, the camp becomes busy and tense.
 
@@ -296,14 +296,14 @@ Ut and janhk. begin marking safe approach paths to the waterfall zone.
 Kiwi keeps glancing at the Maze doors.
 SomeDucks keeps Frodge close, speaking to it under his breath like the duck is a confession booth.
 space fan sits beside pinkfml and tries to talk about anything else.
-pinkfml nods, not really hearing, eyes stuck on Doomfox’s bandaged legs.
-space fan checks Doomfox’s pulse again and again.
+pinkfml nods, not really hearing, eyes stuck on Doomfoxâ€™s bandaged legs.
+space fan checks Doomfoxâ€™s pulse again and again.
 Lysrix stays beside her, steady, refusing to leave the injured.
 
-Doomfox tries to lift his head. “I can still walk.”
-space fan answers firmly, “No. You can still live.”
-Lysrix adds, “If we keep you here.”
-Doomfox whispers, desperate, “If they close the doors and I am not inside, I am done.”
+Doomfox tries to lift his head. â€œI can still walk.â€
+space fan answers firmly, â€œNo. You can still live.â€
+Lysrix adds, â€œIf we keep you here.â€
+Doomfox whispers, desperate, â€œIf they close the doors and I am not inside, I am done.â€
 
 The light cools faster than expected.
 
@@ -311,15 +311,15 @@ The Maze doors begin their closing cycle.
 
 Stone shifts. A grinding roar rolls outward.
 
-Rally mally shouts, “Everyone inside the shelter line. Now. Doomfox stays central.”
+Rally mally shouts, â€œEveryone inside the shelter line. Now. Doomfox stays central.â€
 
 They try to drag Doomfox farther from the entrance, but he fights, panic turning his strength ugly.
 
-“I will not be left behind.”
+â€œI will not be left behind.â€
 
 And then something moves near the Maze doors.
 
-Not inside Aurora’s Rest.
+Not inside Auroraâ€™s Rest.
 
 Just there, at the stone lip, where the corridor breathes cold air into the clearing.
 
@@ -333,16 +333,16 @@ It prowls the threshold, sniffing, head tilting, listening to heartbeats like th
 
 Everyone freezes.
 
-Nightmare whispers, almost admiring. “Early.”
-Duccarian murmurs, “Schedule glitch.”
-janhk. breathes, “Do not move.”
-Ut’s voice is barely there. “It is smelling the blood.”
+Nightmare whispers, almost admiring. â€œEarly.â€
+Duccarian murmurs, â€œSchedule glitch.â€
+janhk. breathes, â€œDo not move.â€
+Utâ€™s voice is barely there. â€œIt is smelling the blood.â€
 
 Doomfox makes a small sound of terror.
 
 The Quigg turns toward him like the sound is a hook.
 
-It lunges without crossing into Aurora’s Rest, stretching forward from the stone lip, claws catching Doomfox’s legs with brutal efficiency.
+It lunges without crossing into Auroraâ€™s Rest, stretching forward from the stone lip, claws catching Doomfoxâ€™s legs with brutal efficiency.
 
 Doomfox screams and grabs at the dirt, trying to pull himself back.
 
@@ -354,9 +354,9 @@ Because the doors are grinding.
 
 Because one wrong move could pull more than Doomfox into the corridor.
 
-space fan shouts, “Doomfox hold on.”
-Lysrix grabs space fan’s arm hard. “No. You do not trade.”
-Kiwi’s eyes go wide, helpless rage and fear fighting in his face.
+space fan shouts, â€œDoomfox hold on.â€
+Lysrix grabs space fanâ€™s arm hard. â€œNo. You do not trade.â€
+Kiwiâ€™s eyes go wide, helpless rage and fear fighting in his face.
 SomeDucks clutches Frodge tight, whispering like prayer.
 Cyrus takes a half step, then freezes, understanding too late that courage cannot beat geometry.
 
@@ -379,23 +379,23 @@ The sound is final.
 The camp does not move for a long time.
 
 space fan sinks to her knees, shaking, staring at where Doomfox was.
-Lysrix sits beside her, face tight, voice low. “You did everything you could.”
+Lysrix sits beside her, face tight, voice low. â€œYou did everything you could.â€
 Kiwi looks at the closed doors like he wants to burn through stone with will.
 Nightmare stands still, satisfied in the worst way, like the night proved him right about everything.
 Duccarian watches the group and says nothing, because nothing fits.
 
-SomeDucks finally speaks, voice quiet, wise and broken. “The Maze takes who it wants, and it teaches us to call it logic.”
+SomeDucks finally speaks, voice quiet, wise and broken. â€œThe Maze takes who it wants, and it teaches us to call it logic.â€
 
 Frodge shifts in his arms, warm and alive, and for a second the softness makes the loss hit harder.
 
 [[LOG]]
 DEATH LOG
 
-Doomfox — Legs impaled by lever trap then taken by an early Quigg at the Maze threshold and killed off screen
+Doomfox â€” Legs impaled by lever trap then taken by an early Quigg at the Maze threshold and killed off screen
 
 INJURY LOG
 
-Doomfox — Severe leg wounds from lever trap prior to death
+Doomfox â€” Severe leg wounds from lever trap prior to death
 
 [[NARRATIVE]]
 Day 6 ends with water in their hands and blood in their mouths.
@@ -417,7 +417,7 @@ Nothing climbs out.
 But something inside is learning exactly how to reach them anyway.
 
 [[NIGHT]]
-NIGHT 6 — THE EARLY HUNTER
+NIGHT 6 â€” THE EARLY HUNTER
 
 The light cools fully, and the camp does not speak about it like a sunset.
 
@@ -425,7 +425,7 @@ It is a switch.
 
 A mode change.
 
-Aurora’s Rest holds its shape under the 90 meter walls, but the sound from the Maze changes everything. Grinding stone starts again, longer than Night 5, deeper than Night 4, like the whole structure is settling into a new configuration.
+Auroraâ€™s Rest holds its shape under the 90 meter walls, but the sound from the Maze changes everything. Grinding stone starts again, longer than Night 5, deeper than Night 4, like the whole structure is settling into a new configuration.
 
 No one goes near the Maze doors.
 
@@ -437,31 +437,31 @@ space fan sits near the shelter line with her hands still stained, even after wa
 
 Kiwi stands with Ut and janhk. in the center of camp, watching the orchard shadows and listening to the Maze, trying to hear the difference between patrol and approach.
 
-Toad controls the tools like a ritual. “Axes stay put. Rope stays coiled. Nobody grabs anything unless Rally mally says.”
+Toad controls the tools like a ritual. â€œAxes stay put. Rope stays coiled. Nobody grabs anything unless Rally mally says.â€
 Rally mally nods once and stays standing, eyes open, posture locked. He looks like someone who refuses to blink first.
 
-Toad tends his setup by the faint camp glow, checking the cloth seal and the pot, then stepping away. “It needs time. Quiet time.”
-Ninnginni snorts softly. “Everything here needs quiet time and never gets it.”
-Duccarian watches the beer pot and says, “Fermentation is survival with patience.”
-Nightmare replies, “Patience does not stop teeth.”
+Toad tends his setup by the faint camp glow, checking the cloth seal and the pot, then stepping away. â€œIt needs time. Quiet time.â€
+Ninnginni snorts softly. â€œEverything here needs quiet time and never gets it.â€
+Duccarian watches the beer pot and says, â€œFermentation is survival with patience.â€
+Nightmare replies, â€œPatience does not stop teeth.â€
 
 SomeDucks sits with Frodge tucked into his arms like a living shield. The duck stays calm, warm against his chest, blinking slow. SomeDucks whispers to it, barely audible, like the duck is the only thing that will not judge him for trembling.
 
-Cyrus watches the Maze doors, jaw tight. “It was early. That means it can be early again.”
-Ut answers, “Yes.”
-janhk. adds, “And it chose blood.”
-Kiwi whispers, “It will remember that blood lives here.”
+Cyrus watches the Maze doors, jaw tight. â€œIt was early. That means it can be early again.â€
+Ut answers, â€œYes.â€
+janhk. adds, â€œAnd it chose blood.â€
+Kiwi whispers, â€œIt will remember that blood lives here.â€
 
 GalaxyTwentea(dino enthusiast) shifts inside the cage and scratches into the dirt. The letters are rough, but readable.
 
 DOOR. WAIT. LISTEN.
 
-Lysrix looks toward the cage. “He is warning us.”
-Duccarian murmurs, “Or describing his memory.”
-Nightmare looks at the raptor and says, “Or enjoying being important.”
-space fan snaps, voice sharp through exhaustion. “Do not.”
-Nightmare turns to her, amused. “Do not what.”
-space fan shakes, but holds her ground. “Do not make him the enemy. We have enough enemies.”
+Lysrix looks toward the cage. â€œHe is warning us.â€
+Duccarian murmurs, â€œOr describing his memory.â€
+Nightmare looks at the raptor and says, â€œOr enjoying being important.â€
+space fan snaps, voice sharp through exhaustion. â€œDo not.â€
+Nightmare turns to her, amused. â€œDo not what.â€
+space fan shakes, but holds her ground. â€œDo not make him the enemy. We have enough enemies.â€
 
 The first Quigg screams start an hour into the cool.
 
@@ -469,24 +469,24 @@ They come in waves, echoing through corridors, bouncing off stone, multiplying u
 
 The screams are followed by the mechanical rasp, a scrape and click rhythm that travels along walls.
 
-Ninnginni whispers, “I hate how you can hear the tail.”
-Toad answers, “It sounds like a tool dragging on stone.”
-Toad replies, “Everything here is a tool.”
+Ninnginni whispers, â€œI hate how you can hear the tail.â€
+Toad answers, â€œIt sounds like a tool dragging on stone.â€
+Toad replies, â€œEverything here is a tool.â€
 Rally mally lifts his hand and everyone goes quieter.
 
 A scream cuts close, then stops abruptly.
 
 Silence returns, too sharp.
 
-Kiwi feels it in his stomach first. “That one is near the doors.”
-Ut nods, eyes narrowed. “It is at the entrance corridor.”
-janhk. whispers, “Do not move. Let it pass.”
+Kiwi feels it in his stomach first. â€œThat one is near the doors.â€
+Ut nods, eyes narrowed. â€œIt is at the entrance corridor.â€
+janhk. whispers, â€œDo not move. Let it pass.â€
 
 They hear it.
 
 A Quigg crawls along the inside of the corridor, claws scraping stone, tail clicking like a metronome. It pauses, then scrapes again, closer, then stops.
 
-Frodge shifts in SomeDucks’ arms, unsettled by the vibration, and SomeDucks tightens his hold, whispering, “Quiet. Quiet.”
+Frodge shifts in SomeDucksâ€™ arms, unsettled by the vibration, and SomeDucks tightens his hold, whispering, â€œQuiet. Quiet.â€
 
 space fan swallows hard. Lysrix places a steady hand on her shoulder without looking at her, a silent command to breathe.
 
@@ -502,9 +502,9 @@ A third.
 
 It is testing the barrier from the wrong side, like it does not understand why a door is allowed to refuse it.
 
-Nightmare’s eyes glitter in the dark. “It is learning.”
-Duccarian answers, “Everything learns.”
-Rally mally speaks low. “We stay boring. We stay quiet. We do not teach it patterns.”
+Nightmareâ€™s eyes glitter in the dark. â€œIt is learning.â€
+Duccarian answers, â€œEverything learns.â€
+Rally mally speaks low. â€œWe stay boring. We stay quiet. We do not teach it patterns.â€
 
 The thumping stops.
 
@@ -522,11 +522,11 @@ Something heavier.
 
 The camp goes still in a different way, like their bodies recognize danger without needing sight.
 
-Kiwi whispers, “No.”
-Ut’s voice is tight. “Do not say it.”
-janhk. closes his eyes for a second. “It is not supposed to be out.”
-Duccarian murmurs, “Schedules break.”
-Nightmare smiles faintly. “Or schedules evolve.”
+Kiwi whispers, â€œNo.â€
+Utâ€™s voice is tight. â€œDo not say it.â€
+janhk. closes his eyes for a second. â€œIt is not supposed to be out.â€
+Duccarian murmurs, â€œSchedules break.â€
+Nightmare smiles faintly. â€œOr schedules evolve.â€
 
 They do not see it clearly, not fully.
 
@@ -536,12 +536,12 @@ The sound it makes is not a patrol sound.
 
 It is ownership.
 
-SomeDucks presses his face into Frodge’s feathers for one second like he is trying to hide inside softness. Frodge stays still, eyes wide.
+SomeDucks presses his face into Frodgeâ€™s feathers for one second like he is trying to hide inside softness. Frodge stays still, eyes wide.
 
-Cyrus whispers, “Is that…”
-Rally mally cuts him off quietly. “No names.”
-Lysrix watches the entrance, eyes unblinking. “If it is what I think it is, it does not need a name.”
-Kiwi’s hands shake slightly. “It feels like the night opened its mouth.”
+Cyrus whispers, â€œIs thatâ€¦â€
+Rally mally cuts him off quietly. â€œNo names.â€
+Lysrix watches the entrance, eyes unblinking. â€œIf it is what I think it is, it does not need a name.â€
+Kiwiâ€™s hands shake slightly. â€œIt feels like the night opened its mouth.â€
 
 GalaxyTwentea(dino enthusiast) scratches violently in the cage dirt now, claws digging deep.
 
@@ -549,7 +549,7 @@ HIDE. LOW. QUIET.
 
 The heavy silhouette shifts.
 
-It does not cross into Aurora’s Rest.
+It does not cross into Auroraâ€™s Rest.
 
 It stays at the doors, just far enough to remain inside the Maze side, but close enough for everyone to feel watched.
 
@@ -563,7 +563,7 @@ No one says it aloud.
 
 But every chest tightens like the word is inside them anyway.
 
-The ground trembles under the creature’s weight as it moves away from the doors, slow and certain. For a second, it feels like it is circling, checking angles, counting.
+The ground trembles under the creatureâ€™s weight as it moves away from the doors, slow and certain. For a second, it feels like it is circling, checking angles, counting.
 
 Then it leaves the entrance area entirely.
 
@@ -575,12 +575,12 @@ More directed.
 
 Like patrols taking instruction.
 
-Toad breathes out slowly, voice barely there. “That was the top of the food chain.”
-Duccarian answers, “Yes.”
-Nightmare’s voice is calm, almost satisfied. “And it did not want us tonight.”
-Rally mally replies, “Or it is saving us.”
-Lysrix adds, “Or it is waiting for a better moment.”
-Kiwi whispers, “It wanted us to know it exists.”
+Toad breathes out slowly, voice barely there. â€œThat was the top of the food chain.â€
+Duccarian answers, â€œYes.â€
+Nightmareâ€™s voice is calm, almost satisfied. â€œAnd it did not want us tonight.â€
+Rally mally replies, â€œOr it is saving us.â€
+Lysrix adds, â€œOr it is waiting for a better moment.â€
+Kiwi whispers, â€œIt wanted us to know it exists.â€
 
 The rest of the night is endurance.
 
@@ -592,10 +592,10 @@ pinkfml sits with her knees up and does not cry tonight. Her eyes are dry and wi
 
 Cyrus keeps staring at the Maze doors as if he expects them to open by force. SomeDucks murmurs to Frodge in tiny sentences that sound like philosophy because they have nothing else.
 
-Ninnginni whispers once to Kiwi, “Do you ever think the walls are the only reason we are alive.”
-Kiwi answers, “I think the walls are the only reason we are still pretending this is a place.”
-Ut adds quietly, “It is not a place. It is a system.”
-janhk. nods, tired. “And systems escalate.”
+Ninnginni whispers once to Kiwi, â€œDo you ever think the walls are the only reason we are alive.â€
+Kiwi answers, â€œI think the walls are the only reason we are still pretending this is a place.â€
+Ut adds quietly, â€œIt is not a place. It is a system.â€
+janhk. nods, tired. â€œAnd systems escalate.â€
 
 Near the end of the night, the Quigg screams fade to a distant rhythm again, and the grinding slows.
 
@@ -605,15 +605,15 @@ Not comfort.
 
 Just the signal that the mode is switching again.
 
-Rally mally finally sits down, but he does not relax. “Morning soon. Day 7 soon. We build more. We do not break.”
+Rally mally finally sits down, but he does not relax. â€œMorning soon. Day 7 soon. We build more. We do not break.â€
 
-Nightmare watches the sky that is not a sky. “We break anyway.”
-Duccarian answers, “Then we choose how.”
-Lysrix whispers, almost to herself, “Or it chooses for us.”
+Nightmare watches the sky that is not a sky. â€œWe break anyway.â€
+Duccarian answers, â€œThen we choose how.â€
+Lysrix whispers, almost to herself, â€œOr it chooses for us.â€
 
-Frodge shifts once in SomeDucks’ arms, then settles, warm and real.
+Frodge shifts once in SomeDucksâ€™ arms, then settles, warm and real.
 
-And that small warmth is the only thing in Aurora’s Rest that feels like it does not belong to the Maze.
+And that small warmth is the only thing in Auroraâ€™s Rest that feels like it does not belong to the Maze.
 
 Which makes it the most dangerous hope of all.
 [[NARRATIVE]]

@@ -1,5 +1,5 @@
-[[DAY]]
-DAY 9 — THE MISSING VARIABLE
+﻿[[DAY]]
+DAY 9 â€” THE MISSING VARIABLE
 
 [[NARRATIVE]]
 Morning comes in heavier than usual.
@@ -141,12 +141,12 @@ He says nothing.
 
 [[LOG]]
 ARRIVAL LOG
-Lord Kalameet — Arrived via elevator earlier Day 9. Conscious. No sedation. Integrated into camp.
-Trxty — Arrived via elevator earlier Day 9 alongside Lord Kalameet. Conscious. No sedation. Integrated into camp.
+Lord Kalameet â€” Arrived via elevator earlier Day 9. Conscious. No sedation. Integrated into camp.
+Trxty â€” Arrived via elevator earlier Day 9 alongside Lord Kalameet. Conscious. No sedation. Integrated into camp.
 
 MISSING LOG
-Ninnginni — Absent from morning headcount. Search conducted across full Aurora's Rest perimeter. No body found. Disturbed soil and broken marker near Maze wall perimeter. Pressed grass near far wall corner. No conclusive evidence of cause.
-Status — Missing. Presumed present somewhere. Not confirmed dead.
+Ninnginni â€” Absent from morning headcount. Search conducted across full Aurora's Rest perimeter. No body found. Disturbed soil and broken marker near Maze wall perimeter. Pressed grass near far wall corner. No conclusive evidence of cause.
+Status â€” Missing. Presumed present somewhere. Not confirmed dead.
 
 EVENT LOG
 Golden influence escalates within camp. Ideological conflict with Rally mally regarding leadership approach. Friction with multiple Peeps.
