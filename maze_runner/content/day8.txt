@@ -1,5 +1,5 @@
 ﻿[[DAY]]
-DAY 8 â€” THE BEACONS
+DAY 8 - THE BEACONS
 
 [[NARRATIVE]]
 Nobody waits to be called this morning.
@@ -64,7 +64,7 @@ The first beacon is located faster than expected, the corridor route relatively 
 
 The crate is unmarked. Functional. Cold to the touch.
 
-Toad checks the anchor pins while janhk. checks the surrounding floor. "No plate pressure on the crate itself," janhk. says. "But the corridor behind usâ€”"
+Toad checks the anchor pins while janhk. checks the surrounding floor. "No plate pressure on the crate itself," janhk. says. "But the corridor behind us-"
 
 He does not finish the sentence.
 
@@ -120,7 +120,7 @@ The second beacon chamber is wider than the first. High ceiling. Four wall tunne
 
 That detail registers in the wrong part of Kiwi's mind at the wrong moment.
 
-He says, "The tunnelsâ€”"
+He says, "The tunnels-"
 
 Three Quiggs drop from the ceiling.
 
@@ -362,18 +362,18 @@ And that, more than anything else today, is the thing that nobody knows what to 
 
 [[LOG]]
 DEATH LOG
-Ut â€” Killed by Quigg ambush in second beacon corridor. Body not recovered.
-janhk. â€” Killed by Quigg tail strike in same corridor ambush. Body not recovered.
+Ut - Killed by Quigg ambush in second beacon corridor. Body not recovered.
+janhk. - Killed by Quigg tail strike in same corridor ambush. Body not recovered.
 
 INJURY LOG
-Galaxy â€” Deep claw wound left shoulder. Forearm laceration from Quigg tail joint. Treated by space fan. Stable.
-JIKOSU â€” Impact injuries from Quigg strike against stone platform. Bruising and rib stress. Treated. Stable.
-SomeDucks â€” Carl trap needle sting, second beacon chamber floor seam. Symptoms included sweating, tremors, confusion, aggression. Treated with unidentified injector pen. Stabilized. Unconscious.
+Galaxy - Deep claw wound left shoulder. Forearm laceration from Quigg tail joint. Treated by space fan. Stable.
+JIKOSU - Impact injuries from Quigg strike against stone platform. Bruising and rib stress. Treated. Stable.
+SomeDucks - Carl trap needle sting, second beacon chamber floor seam. Symptoms included sweating, tremors, confusion, aggression. Treated with unidentified injector pen. Stabilized. Unconscious.
 
 SUPPLY LOG
-Crate One â€” Bandages, reinforced rope, food rations, two flare sticks.
-Crate Two â€” Medical supplies, unidentified injector pens, energy packs, metal climbing hooks.
-Crate Three â€” Advanced medical supplies, additional injector pens, compact tools, signal flare.
+Crate One - Bandages, reinforced rope, food rations, two flare sticks.
+Crate Two - Medical supplies, unidentified injector pens, energy packs, metal climbing hooks.
+Crate Three - Advanced medical supplies, additional injector pens, compact tools, signal flare.
 
 EVENT LOG
 Three supply beacons retrieved from Maze interior. All crates confirmed guarded by Quigg patrols.
@@ -399,7 +399,7 @@ And the Maze is watching all of it.
 And it is not finished yet.
 
 [[NIGHT]]
-NIGHT 8 â€” THE MIDNIGHT ARRIVAL
+NIGHT 8 - THE MIDNIGHT ARRIVAL
 
 The camp does not so much settle into night as collapse into it.
 
@@ -494,7 +494,7 @@ Good morning.
 Good evening. 
 And good night.
 
-â€” Schwalbe
+- Schwalbe
 
 Duccarian stops reading.
 
@@ -576,7 +576,7 @@ And somewhere in the corridors beyond the closed doors and the 90 meter walls, s
 [[NARRATIVE]]
 [[LOG]]
 ARRIVAL LOG
-Golden â€” Arrived via elevator during Night 8. Unconscious on arrival. Condition stable. Suspected sedation. Located in medic hut alongside JIKOSU.
+Golden - Arrived via elevator during Night 8. Unconscious on arrival. Condition stable. Suspected sedation. Located in medic hut alongside JIKOSU.
 
 EVENT LOG
 Elevator activated during night hours for the second time.
@@ -601,3 +601,6 @@ And it is not in a hurry to explain.
 
 Nobody noticed Ninnginni's absence during the day...
 [[NARRATIVE]]
+
+
+
