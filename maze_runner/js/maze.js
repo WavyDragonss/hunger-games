@@ -33,6 +33,8 @@
         "pinkfml",
         "space fan",
         "space_fan",
+        "Trxty",
+        "Lord Kalameet",
         "Lysrix",
         "Rabbit"
       ];
