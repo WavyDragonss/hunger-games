@@ -82,7 +82,7 @@
         <button class="text-btn help-close" id="feedbackCloseBtn" type="button" aria-label="Close Feedback">Close</button>
       </div>
       <div class="help-body">
-        <form id="feedbackForm" class="feedback-form" action="https://formspree.io/f/xojkdnkn" method="POST">
+        <form id="feedbackForm" class="feedback-form" action="https://formspree.io/f/xojkdnkn" method="POST" enctype="multipart/form-data">
           <label class="feedback-label" for="feedbackDiscord">Discord tag</label>
           <input class="feedback-input" id="feedbackDiscord" type="text" name="discordTag" required autocomplete="off" placeholder="example_user" />
 
@@ -92,13 +92,15 @@
           <label class="feedback-label" for="feedbackDescription">Description</label>
           <textarea class="feedback-textarea" id="feedbackDescription" name="description" required placeholder="Describe what happened, expected behavior, and steps to reproduce."></textarea>
 
+          <label class="feedback-label" for="feedbackScreenshot">Optional screenshot</label>
+          <input class="feedback-input" id="feedbackScreenshot" type="file" name="upload" accept="image/*" />
+
           <p class="feedback-status" id="feedbackStatus" aria-live="polite"></p>
           <button class="mode-btn feedback-submit" id="feedbackSubmitBtn" type="submit">Send</button>
         </form>
 
         <div class="feedback-thanks hidden" id="feedbackThanks" aria-live="polite">
-          <p>Thank you for the feedback. It has been received.</p>
-          <button class="text-btn" id="feedbackSendAnotherBtn" type="button">Send another report</button>
+          <p id="feedbackThanksMessage">Thank you for the feedback. It has been received.</p>
         </div>
       </div>
     </div>

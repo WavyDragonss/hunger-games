@@ -154,6 +154,14 @@
       transform: translateY(1px);
     }
 
+    .icon-btn:disabled,
+    .text-btn:disabled,
+    .mode-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      filter: grayscale(0.55);
+    }
+
     .toolbar {
       position: sticky;
       top: 64px;
