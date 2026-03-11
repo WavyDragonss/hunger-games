@@ -245,7 +245,11 @@
         });
 
         feedbackForm.addEventListener("submit", function (event) {
+          // Block native submit navigation; sending is handled through fetch only.
           event.preventDefault();
+        });
+
+        feedbackSubmitBtn.addEventListener("click", function () {
           submitFeedbackForm();
         });
 
