@@ -101,7 +101,6 @@
       var helpCloseBtn = document.getElementById("helpCloseBtn");
       var feedbackBtn = document.getElementById("feedbackBtn");
       var feedbackPanel = document.getElementById("feedbackPanel");
-      var feedbackCloseBtn = document.getElementById("feedbackCloseBtn");
       var feedbackForm = document.getElementById("feedbackForm");
       var feedbackStatus = document.getElementById("feedbackStatus");
       var feedbackSubmitBtn = document.getElementById("feedbackSubmitBtn");
@@ -239,12 +238,8 @@
           openFeedback();
         });
 
-        feedbackCloseBtn.addEventListener("click", function () {
-          closeFeedback();
-        });
-
         feedbackPanel.addEventListener("click", function (event) {
-          if (event.target === feedbackPanel) {
+          if (event.target === feedbackPanel && !isFeedbackCoolingDown()) {
             closeFeedback();
           }
         });
@@ -299,7 +294,9 @@
         document.addEventListener("keydown", function (event) {
           if (event.key === "Escape") {
             closeHelp();
-            closeFeedback();
+            if (!isFeedbackCoolingDown()) {
+              closeFeedback();
+            }
           }
         });
 
@@ -422,6 +419,7 @@
             window.clearInterval(feedbackCooldownTimerId);
             feedbackCooldownTimerId = null;
             resetFeedbackView();
+            closeFeedback();
           }
         }, 1000);
       }

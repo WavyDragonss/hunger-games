@@ -417,6 +417,11 @@
       width: min(720px, 100%);
     }
 
+    .feedback-dialog .help-body {
+      position: relative;
+      min-height: 280px;
+    }
+
     .feedback-form {
       display: grid;
       gap: 8px;
@@ -478,8 +483,20 @@
     }
 
     .feedback-thanks {
+      position: absolute;
+      inset: 0;
       display: grid;
+      place-content: center;
       gap: 10px;
+      padding: 16px;
+      text-align: center;
+      background: rgba(35, 41, 55, 0.78);
+      backdrop-filter: blur(1px);
+      pointer-events: auto;
+    }
+
+    body[data-theme="light"] .feedback-thanks {
+      background: rgba(185, 193, 208, 0.72);
     }
 
     .feedback-thanks p {
