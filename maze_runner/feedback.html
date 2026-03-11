@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maze Runner Feedback</title>
+  <link rel="stylesheet" href="./css/feedback.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <a class="back-link" href="./maze.html">Back to Reader</a>
+
+    <main class="feedback-card" aria-labelledby="feedbackTitle">
+      <h1 id="feedbackTitle">Send Feedback</h1>
+      <form id="feedbackForm" action="https://formspree.io/f/xojkdnkn" method="POST" enctype="multipart/form-data" novalidate>
+        <fieldset id="feedbackFieldset">
+          <label for="discordTag">Discord tag</label>
+          <input id="discordTag" name="discordTag" type="text" required autocomplete="off" placeholder="example_user" />
+
+          <label for="issueTitle">Issue title</label>
+          <input id="issueTitle" name="issueTitle" type="text" required autocomplete="off" placeholder="Short title for the problem" />
+
+          <label for="description">Description</label>
+          <textarea id="description" name="description" required placeholder="Describe what happened, expected behavior, and steps to reproduce."></textarea>
+
+          <label for="upload">Optional screenshot</label>
+          <input id="upload" name="upload" type="file" accept="image/*" />
+
+          <p id="feedbackStatus" class="feedback-status" aria-live="polite"></p>
+          <button id="sendBtn" type="button">Send</button>
+        </fieldset>
+      </form>
+
+      <div id="cooldownOverlay" class="cooldown-overlay hidden" aria-live="polite">
+        <p class="thanks">Thank you for the feedback. It has been received.</p>
+        <p class="timer">Cooldown: <span id="cooldownSeconds">20</span>s</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/feedback.js" defer></script>
+</body>
+</html>

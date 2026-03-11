@@ -44,10 +44,7 @@
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
       var IMPORTANT_DAY_NUMBER = 8;
-      var FEEDBACK_COOLDOWN_SECONDS = 20;
       var releaseIntervalId = null;
-      var feedbackCooldownTimerId = null;
-      var feedbackCooldownUntilMs = 0;
 
       var STORE = {
         theme: "maze_theme",
@@ -99,14 +96,6 @@
       var helpBtn = document.getElementById("helpBtn");
       var helpPanel = document.getElementById("helpPanel");
       var helpCloseBtn = document.getElementById("helpCloseBtn");
-      var feedbackBtn = document.getElementById("feedbackBtn");
-      var feedbackPanel = document.getElementById("feedbackPanel");
-      var feedbackForm = document.getElementById("feedbackForm");
-      var feedbackStatus = document.getElementById("feedbackStatus");
-      var feedbackSubmitBtn = document.getElementById("feedbackSubmitBtn");
-      var feedbackThanks = document.getElementById("feedbackThanks");
-      var feedbackThanksMessage = document.getElementById("feedbackThanksMessage");
-      var feedbackBtnDefaultText = feedbackBtn ? feedbackBtn.textContent : "Feedback";
       var modeInputs = document.querySelectorAll("input[name='viewMode']");
       var povOnlyInput = document.getElementById("povOnly");
       var resumeReadingInput = document.getElementById("resumeReading");
@@ -125,7 +114,6 @@
         }
         updateResumeResetButtonState();
         selectModeInput(state.mode);
-        updateFeedbackCooldownUi();
         bindEvents();
 
         if (RELEASE_SYSTEM && typeof RELEASE_SYSTEM.syncServerTime === "function" && RELEASE_CONFIG && RELEASE_CONFIG.serverTimeUrl) {
@@ -234,25 +222,6 @@
           }
         });
 
-        feedbackBtn.addEventListener("click", function () {
-          openFeedback();
-        });
-
-        feedbackPanel.addEventListener("click", function (event) {
-          if (event.target === feedbackPanel && !isFeedbackCoolingDown()) {
-            closeFeedback();
-          }
-        });
-
-        feedbackForm.addEventListener("submit", function (event) {
-          // Block native submit navigation; sending is handled through fetch only.
-          event.preventDefault();
-        });
-
-        feedbackSubmitBtn.addEventListener("click", function () {
-          submitFeedbackForm();
-        });
-
         readerEl.addEventListener("click", function (event) {
           var target = event.target;
           if (!(target instanceof HTMLElement) || !target.classList.contains("name")) {
@@ -298,9 +267,6 @@
         document.addEventListener("keydown", function (event) {
           if (event.key === "Escape") {
             closeHelp();
-            if (!isFeedbackCoolingDown()) {
-              closeFeedback();
-            }
           }
         });
 
@@ -316,154 +282,6 @@
       function closeHelp() {
         helpPanel.classList.add("hidden");
         helpBtn.setAttribute("aria-expanded", "false");
-      }
-
-      function openFeedback() {
-        if (isFeedbackCoolingDown()) {
-          return;
-        }
-        closeHelp();
-        resetFeedbackView();
-        feedbackPanel.classList.remove("hidden");
-        feedbackBtn.setAttribute("aria-expanded", "true");
-      }
-
-      function closeFeedback() {
-        feedbackPanel.classList.add("hidden");
-        feedbackBtn.setAttribute("aria-expanded", "false");
-      }
-
-      function submitFeedbackForm() {
-        if (isFeedbackCoolingDown()) {
-          return;
-        }
-        if (!feedbackForm.reportValidity()) {
-          return;
-        }
-
-        feedbackStatus.textContent = "Sending feedback...";
-        feedbackStatus.classList.remove("error");
-        feedbackSubmitBtn.disabled = true;
-
-        var discordTagInput = document.getElementById("feedbackDiscord");
-        var issueTitleInput = document.getElementById("feedbackTitleInput");
-        var descriptionInput = document.getElementById("feedbackDescription");
-        var screenshotInput = document.getElementById("feedbackScreenshot");
-        var formData = new FormData();
-        formData.append("discordTag", discordTagInput ? discordTagInput.value.trim() : "");
-        formData.append("issueTitle", issueTitleInput ? issueTitleInput.value.trim() : "");
-        formData.append("description", descriptionInput ? descriptionInput.value.trim() : "");
-        formData.append("_subject", "Maze Runner feedback: " + (issueTitleInput ? issueTitleInput.value.trim() : ""));
-        if (screenshotInput && screenshotInput.files && screenshotInput.files.length) {
-          formData.append("upload", screenshotInput.files[0]);
-        }
-
-        fetch(feedbackForm.action, {
-          method: "POST",
-          headers: {
-            "Accept": "application/json"
-          },
-          body: formData
-        })
-          .then(function (response) {
-            return response.json().catch(function () {
-              return {};
-            }).then(function (data) {
-              return {
-                ok: response.ok,
-                data: data
-              };
-            });
-          })
-          .then(function (result) {
-            var response = result;
-            if (!response.ok) {
-              var errors = Array.isArray(response.data && response.data.errors)
-                ? response.data.errors
-                : [];
-              var firstError = errors.length ? String(errors[0].message || errors[0].field || "Request failed") : "Request failed";
-              throw new Error(firstError);
-            }
-            feedbackForm.classList.add("hidden");
-            feedbackThanks.classList.remove("hidden");
-            feedbackStatus.textContent = "";
-            feedbackForm.reset();
-            startFeedbackCooldown(FEEDBACK_COOLDOWN_SECONDS);
-            statusEl.textContent = "Thanks for the feedback submission. Feedback cooldown active for 20 seconds.";
-          })
-          .catch(function (err) {
-            var details = err && err.message ? err.message : "Could not send feedback right now.";
-            if (window.location && window.location.protocol === "file:") {
-              details += " Open the reader through a local web server instead of file://.";
-            }
-            feedbackStatus.textContent = details;
-            feedbackStatus.classList.add("error");
-          })
-          .finally(function () {
-            feedbackSubmitBtn.disabled = isFeedbackCoolingDown();
-          });
-      }
-
-      function resetFeedbackView() {
-        feedbackThanks.classList.add("hidden");
-        feedbackForm.classList.remove("hidden");
-        feedbackStatus.textContent = "";
-        feedbackStatus.classList.remove("error");
-      }
-
-      function startFeedbackCooldown(seconds) {
-        feedbackCooldownUntilMs = Date.now() + (Math.max(1, seconds) * 1000);
-        if (feedbackCooldownTimerId !== null) {
-          window.clearInterval(feedbackCooldownTimerId);
-        }
-        updateFeedbackCooldownUi();
-        feedbackCooldownTimerId = window.setInterval(function () {
-          updateFeedbackCooldownUi();
-          if (!isFeedbackCoolingDown()) {
-            window.clearInterval(feedbackCooldownTimerId);
-            feedbackCooldownTimerId = null;
-            resetFeedbackView();
-            closeFeedback();
-          }
-        }, 1000);
-      }
-
-      function isFeedbackCoolingDown() {
-        return getFeedbackCooldownSecondsRemaining() > 0;
-      }
-
-      function getFeedbackCooldownSecondsRemaining() {
-        if (!feedbackCooldownUntilMs) {
-          return 0;
-        }
-        var remainingMs = feedbackCooldownUntilMs - Date.now();
-        if (remainingMs <= 0) {
-          return 0;
-        }
-        return Math.ceil(remainingMs / 1000);
-      }
-
-      function updateFeedbackCooldownUi() {
-        var remaining = getFeedbackCooldownSecondsRemaining();
-        var coolingDown = remaining > 0;
-
-        if (feedbackBtn) {
-          feedbackBtn.disabled = coolingDown;
-          feedbackBtn.textContent = coolingDown
-            ? (feedbackBtnDefaultText + " (" + remaining + "s)")
-            : feedbackBtnDefaultText;
-          feedbackBtn.setAttribute("aria-disabled", coolingDown ? "true" : "false");
-        }
-
-        if (feedbackSubmitBtn) {
-          feedbackSubmitBtn.disabled = coolingDown;
-        }
-
-        if (feedbackThanksMessage) {
-          feedbackThanksMessage.textContent = coolingDown
-            ? ("Thank you for the feedback. You can submit another report in " + remaining + " seconds.")
-            : "Thank you for the feedback. It has been received.";
-        }
       }
 
       function onScrollOrResize() {
