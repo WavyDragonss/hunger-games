@@ -14,6 +14,9 @@
       <h1 id="feedbackTitle">Send Feedback</h1>
       <form id="feedbackForm" action="https://formspree.io/f/xojkdnkn" method="POST" enctype="multipart/form-data" novalidate>
         <fieldset id="feedbackFieldset">
+          <label for="email">Email (optional)</label>
+          <input id="email" name="email" type="email" autocomplete="off" placeholder="you@example.com" />
+
           <label for="discordTag">Discord tag</label>
           <input id="discordTag" name="discordTag" type="text" required autocomplete="off" placeholder="example_user" />
 

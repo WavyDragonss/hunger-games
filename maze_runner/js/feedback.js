@@ -2,6 +2,7 @@
   "use strict";
 
   var COOLDOWN_SECONDS = 20;
+  var COOLDOWN_STORE_KEY = "maze_feedback_cooldown_until";
   var cooldownUntilMs = 0;
   var cooldownTimerId = null;
 
@@ -15,6 +16,8 @@
   if (!form || !fieldset || !statusEl || !sendBtn || !overlay || !cooldownSecondsEl) {
     return;
   }
+
+  restoreCooldown();
 
   form.addEventListener("submit", function (event) {
     // Always block native navigation; feedback is sent with fetch.
@@ -38,15 +41,29 @@
     sendBtn.disabled = true;
 
     var formData = new FormData();
+    var email = document.getElementById("email");
     var discordTag = document.getElementById("discordTag");
     var issueTitle = document.getElementById("issueTitle");
     var description = document.getElementById("description");
     var upload = document.getElementById("upload");
 
-    formData.append("discordTag", discordTag ? discordTag.value.trim() : "");
-    formData.append("issueTitle", issueTitle ? issueTitle.value.trim() : "");
-    formData.append("description", description ? description.value.trim() : "");
-    formData.append("_subject", "Maze Runner feedback: " + (issueTitle ? issueTitle.value.trim() : ""));
+    var discordTagValue = discordTag ? discordTag.value.trim() : "";
+    var issueTitleValue = issueTitle ? issueTitle.value.trim() : "";
+    var descriptionValue = description ? description.value.trim() : "";
+    var emailValue = email ? email.value.trim() : "";
+    var composedMessage = [
+      "Discord tag: " + discordTagValue,
+      "Issue title: " + issueTitleValue,
+      "Description:",
+      descriptionValue
+    ].join("\n");
+
+    formData.append("email", emailValue);
+    formData.append("message", composedMessage);
+    formData.append("discordTag", discordTagValue);
+    formData.append("issueTitle", issueTitleValue);
+    formData.append("description", descriptionValue);
+    formData.append("_subject", "Maze Runner feedback: " + issueTitleValue);
 
     if (upload && upload.files && upload.files.length) {
       formData.append("upload", upload.files[0]);
@@ -95,6 +112,7 @@
 
   function startCooldown(seconds) {
     cooldownUntilMs = Date.now() + (Math.max(1, seconds) * 1000);
+    persistCooldownUntil();
     fieldset.disabled = true;
     overlay.classList.remove("hidden");
     updateCooldownUi();
@@ -119,6 +137,7 @@
     overlay.classList.add("hidden");
     cooldownSecondsEl.textContent = String(COOLDOWN_SECONDS);
     cooldownUntilMs = 0;
+    clearPersistedCooldown();
   }
 
   function isCoolingDown() {
@@ -138,5 +157,58 @@
 
   function updateCooldownUi() {
     cooldownSecondsEl.textContent = String(getRemainingSeconds());
+  }
+
+  function restoreCooldown() {
+    var persisted = readPersistedCooldownUntil();
+    if (!persisted) {
+      return;
+    }
+
+    cooldownUntilMs = persisted;
+    if (isCoolingDown()) {
+      fieldset.disabled = true;
+      sendBtn.disabled = true;
+      overlay.classList.remove("hidden");
+      updateCooldownUi();
+
+      cooldownTimerId = window.setInterval(function () {
+        updateCooldownUi();
+        if (!isCoolingDown()) {
+          window.clearInterval(cooldownTimerId);
+          cooldownTimerId = null;
+          endCooldown();
+        }
+      }, 1000);
+      return;
+    }
+
+    endCooldown();
+  }
+
+  function persistCooldownUntil() {
+    try {
+      window.localStorage.setItem(COOLDOWN_STORE_KEY, String(cooldownUntilMs));
+    } catch (err) {
+      // Ignore storage failures and keep runtime cooldown behavior.
+    }
+  }
+
+  function readPersistedCooldownUntil() {
+    try {
+      var raw = window.localStorage.getItem(COOLDOWN_STORE_KEY);
+      var parsed = parseInt(raw || "0", 10);
+      return Number.isFinite(parsed) ? parsed : 0;
+    } catch (err) {
+      return 0;
+    }
+  }
+
+  function clearPersistedCooldown() {
+    try {
+      window.localStorage.removeItem(COOLDOWN_STORE_KEY);
+    } catch (err) {
+      // Ignore storage failures and keep runtime cooldown behavior.
+    }
   }
 })();
