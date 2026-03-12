@@ -403,6 +403,7 @@ NIGHT STATUS
 No fatalities. Kiwi critical. All other Peeps present. Ninnginni status unchanged. Frodge behaviorally anomalous through night, settled at dawn.
 
 [[NARRATIVE]]
+[[NIGHT]]
 Night 9 ends with Kiwi breathing.
 
 That is more than Quigg venom was designed to allow.
