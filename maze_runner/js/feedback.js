@@ -43,36 +43,35 @@
     var discordTag = document.getElementById("discordTag");
     var issueTitle = document.getElementById("issueTitle");
     var description = document.getElementById("description");
-    var upload = document.getElementById("upload");
 
     var discordTagValue = discordTag ? discordTag.value.trim() : "";
     var issueTitleValue = issueTitle ? issueTitle.value.trim() : "";
     var descriptionValue = description ? description.value.trim() : "";
+    var safeTitle = issueTitleValue || "Untitled issue";
 
-    var message = "Discord: " + discordTagValue + "\nTitle: " + issueTitleValue + "\n\n" + descriptionValue;
+    var message = [
+      "Maze Runner Feedback",
+      "====================",
+      "Issue Title: " + safeTitle,
+      "Discord Tag: " + (discordTagValue || "Not provided"),
+      "Submitted At: " + new Date().toISOString(),
+      "",
+      "Description",
+      "-----------",
+      descriptionValue || "No description provided"
+    ].join("\n");
 
-    var hasFile = upload && upload.files && upload.files.length;
-    var body;
-    var headers = { "Accept": "application/json" };
-
-    if (hasFile) {
-      body = new FormData();
-      body.append("message", message);
-      body.append("discordTag", discordTagValue);
-      body.append("issueTitle", issueTitleValue);
-      body.append("description", descriptionValue);
-      body.append("_subject", "Maze Runner feedback: " + issueTitleValue);
-      body.append("upload", upload.files[0]);
-    } else {
-      headers["Content-Type"] = "application/x-www-form-urlencoded";
-      body = new URLSearchParams({
-        message: message,
-        discordTag: discordTagValue,
-        issueTitle: issueTitleValue,
-        description: descriptionValue,
-        _subject: "Maze Runner feedback: " + issueTitleValue
-      }).toString();
-    }
+    var headers = {
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    };
+    var body = new URLSearchParams({
+      message: message,
+      discordTag: discordTagValue,
+      issueTitle: issueTitleValue,
+      description: descriptionValue,
+      _subject: "Maze Runner feedback: " + safeTitle
+    }).toString();
 
     fetch(form.action, {
       method: "POST",
