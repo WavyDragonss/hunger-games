@@ -85,6 +85,7 @@
         }).then(function (data) {
           return {
             ok: response.ok,
+            status: response.status,
             data: data
           };
         });
@@ -93,7 +94,7 @@
         if (!result.ok) {
           var errors = Array.isArray(result.data && result.data.errors) ? result.data.errors : [];
           var firstError = errors.length ? String(errors[0].message || "Request failed") : "Request failed";
-          throw new Error(firstError);
+          throw createSubmissionError(firstError, result.status);
         }
 
         form.reset();
@@ -101,16 +102,50 @@
         startCooldown(COOLDOWN_SECONDS);
       })
       .catch(function (err) {
-        var details = err && err.message ? err.message : "Could not send feedback right now.";
-        if (window.location && window.location.protocol === "file:") {
-          details += " Open this page through a local web server instead of file://.";
-        }
-        statusEl.textContent = details;
+        statusEl.textContent = buildTroubleshootingText(err);
         statusEl.classList.add("error");
       })
       .finally(function () {
         sendBtn.disabled = isCoolingDown();
       });
+  }
+
+  function createSubmissionError(message, status) {
+    var err = new Error(message || "Request failed");
+    err.status = status || 0;
+    return err;
+  }
+
+  function buildTroubleshootingText(err) {
+    var baseMessage = err && err.message ? err.message : "Could not send feedback right now.";
+    var status = err && err.status ? err.status : 0;
+    var hints = [];
+
+    if (status === 403 || /inactive|confirm|verify|unverified/i.test(baseMessage)) {
+      hints.push("Verify your Formspree account email and confirm that this form endpoint is active.");
+    }
+
+    if (status === 422) {
+      hints.push("Check required fields and make sure each submitted field has a name attribute.");
+    }
+
+    if (status === 429) {
+      hints.push("Too many requests were sent. Wait a moment, then try again.");
+    }
+
+    if (status >= 500) {
+      hints.push("Formspree may be having an outage. Check https://status.formspree.io");
+    }
+
+    if (window.location && window.location.protocol === "file:") {
+      hints.push("Open this page through a local web server instead of file://.");
+    }
+
+    if (!hints.length) {
+      hints.push("Double-check the form action endpoint, method=POST, spam/junk folders, and sender unblocking at https://formspree.io/unblock/<your@email.com>.");
+    }
+
+    return baseMessage + " " + hints.join(" ");
   }
 
   function startCooldown(seconds) {
