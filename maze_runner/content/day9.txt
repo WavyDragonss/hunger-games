@@ -173,7 +173,6 @@ And that silence feels intentional.
 [[NIGHT]]
 NIGHT 9 — THE STING THAT SHOULD NOT BE SURVIVED
 
-[[NARRATIVE]]
 The night settles over Aurora's Rest like something lowering itself carefully into position.
 
 Not dramatic. Not loud. Just deliberate. The kind of settling that has intention behind it.
@@ -425,3 +424,4 @@ Which means it wanted them to know.
 Which is the part that should keep everyone awake.
 
 It will.
+[[NARRATIVE]]
