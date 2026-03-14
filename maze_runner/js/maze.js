@@ -533,6 +533,8 @@
           section.classList.add("day-important");
         }
 
+        var dayLineNumber = 0;
+
         dayData.blocks.forEach(function (block) {
           if (block.type === "dayHeading") {
             var headingLine = block.lines[0] ? block.lines[0].raw : dayData.title;
@@ -548,7 +550,12 @@
           blockEl.className = "story-block " + block.type;
 
           block.lines.forEach(function (line) {
-            blockEl.appendChild(renderLine(line, dayIndex));
+            var lineNumber = 0;
+            if (hasLineText(line)) {
+              dayLineNumber += 1;
+              lineNumber = dayLineNumber;
+            }
+            blockEl.appendChild(renderLine(line, dayIndex, lineNumber));
           });
 
           section.appendChild(blockEl);
@@ -602,7 +609,7 @@
         readerEl.appendChild(section);
       }
 
-      function renderLine(lineData, dayIndex) {
+      function renderLine(lineData, dayIndex, lineNumber) {
         var lineEl = document.createElement("p");
         lineEl.className = "story-line";
         lineEl.setAttribute("data-day-index", String(dayIndex));
@@ -632,11 +639,24 @@
           lineEl.classList.add("midday");
         }
 
+        if (lineNumber > 0) {
+          var numberEl = document.createElement("span");
+          numberEl.className = "line-number";
+          numberEl.setAttribute("aria-hidden", "true");
+          numberEl.textContent = String(lineNumber) + ".";
+          lineEl.appendChild(numberEl);
+        }
+
         var foundNames = [];
         appendInlineFormattedMembers(lineEl, lineData.display, foundNames);
 
         lineEl.setAttribute("data-names", unique(foundNames).join("|"));
         return lineEl;
+      }
+
+      function hasLineText(lineData) {
+        var trimmedRaw = lineData.raw.trim();
+        return !!trimmedRaw && trimmedRaw !== "---";
       }
 
       function appendHighlightedMembers(lineEl, text, foundNames) {
@@ -1150,7 +1170,9 @@
       function restoreReadingPosition(snapshot) {
         state.resumeRestoreInFlight = true;
         window.requestAnimationFrame(function () {
-          if (state.mode === "infinite" && Number.isFinite(snapshot.scrollTop) && snapshot.scrollTop >= 0) {
+          if (scrollToSnapshotLineAnchor(snapshot)) {
+            // Restored using precise line anchor.
+          } else if (state.mode === "infinite" && Number.isFinite(snapshot.scrollTop) && snapshot.scrollTop >= 0) {
             window.scrollTo({ top: snapshot.scrollTop, behavior: "auto" });
           } else {
             scrollToSnapshotProgress(snapshot);
@@ -1158,6 +1180,54 @@
           state.resumeRestoreInFlight = false;
           scheduleResumeSnapshotWrite(120);
         });
+      }
+
+      function scrollToSnapshotLineAnchor(snapshot) {
+        var anchor = snapshot && snapshot.lineAnchor;
+        if (!anchor || typeof anchor !== "object") {
+          return false;
+        }
+
+        var targetDayIndex = Number.isFinite(anchor.dayIndex)
+          ? clamp(anchor.dayIndex, 0, Math.max(0, state.days.length - 1))
+          : (Number.isFinite(snapshot.dayIndex)
+            ? clamp(snapshot.dayIndex, 0, Math.max(0, state.days.length - 1))
+            : state.currentDay);
+        var section = findSectionByDayIndex(targetDayIndex);
+        if (!section) {
+          return false;
+        }
+
+        var lines = getReadableLinesInSection(section);
+        if (!lines.length) {
+          return false;
+        }
+
+        var rawIndex = parseInt(anchor.lineIndex, 10);
+        var lineIndex = Number.isFinite(rawIndex) ? clamp(rawIndex, 0, lines.length - 1) : 0;
+        var lineEl = lines[lineIndex];
+        var lineRect = lineEl.getBoundingClientRect();
+        var lineTop = lineRect.top + window.scrollY;
+        var lineHeight = Math.max(1, lineEl.offsetHeight || lineRect.height || 1);
+
+        var rawOffsetPct = Number.isFinite(anchor.lineOffsetPct) ? anchor.lineOffsetPct : 0;
+        var lineOffset = clamp(rawOffsetPct, 0, 100) / 100;
+        var viewportHeight = Math.max(1, window.innerHeight || document.documentElement.clientHeight || 1);
+        var targetY = lineTop + (lineHeight * lineOffset);
+        var targetTop = Math.max(0, targetY - (viewportHeight * 0.22));
+
+        var sectionRect = section.getBoundingClientRect();
+        var sectionTop = sectionRect.top + window.scrollY;
+        var sectionHeight = Math.max(1, section.offsetHeight || sectionRect.height || 1);
+        if (sectionHeight <= viewportHeight) {
+          targetTop = sectionTop;
+        } else {
+          var maxTop = Math.max(sectionTop, (sectionTop + sectionHeight) - viewportHeight);
+          targetTop = clamp(targetTop, sectionTop, maxTop);
+        }
+
+        window.scrollTo({ top: targetTop, behavior: "auto" });
+        return true;
       }
 
       function scrollToSnapshotProgress(snapshot) {
@@ -1213,15 +1283,66 @@
           : state.currentDay;
 
         var progressPct = activeSection ? getSectionProgress(activeSection) : 0;
+        var lineAnchor = activeSection ? getSectionLineAnchor(activeSection, dayIndex) : null;
         var snapshot = {
           mode: state.mode,
           dayIndex: dayIndex,
           progressPct: clamp(Math.round(progressPct), 0, 100),
           scrollTop: Math.max(0, Math.round(window.scrollY || 0)),
+          lineAnchor: lineAnchor,
           savedAt: Date.now()
         };
         writeStore(STORE.resumeSnapshot, JSON.stringify(snapshot));
         updateResumeResetButtonState();
+      }
+
+      function getSectionLineAnchor(sectionEl, dayIndex) {
+        var lines = getReadableLinesInSection(sectionEl);
+        if (!lines.length) {
+          return null;
+        }
+
+        var viewportTop = Math.max(0, window.scrollY || 0);
+        var viewportHeight = Math.max(1, window.innerHeight || document.documentElement.clientHeight || 1);
+        var probeY = viewportTop + (viewportHeight * 0.22);
+        var bestIdx = 0;
+        var bestDistance = Number.POSITIVE_INFINITY;
+
+        for (var i = 0; i < lines.length; i += 1) {
+          var rect = lines[i].getBoundingClientRect();
+          var top = rect.top + window.scrollY;
+          var height = Math.max(1, lines[i].offsetHeight || rect.height || 1);
+          var bottom = top + height;
+          if (probeY >= top && probeY <= bottom) {
+            bestIdx = i;
+            bestDistance = 0;
+            break;
+          }
+          var distance = Math.min(Math.abs(probeY - top), Math.abs(probeY - bottom));
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            bestIdx = i;
+          }
+        }
+
+        var anchorLine = lines[bestIdx];
+        var anchorRect = anchorLine.getBoundingClientRect();
+        var anchorTop = anchorRect.top + window.scrollY;
+        var anchorHeight = Math.max(1, anchorLine.offsetHeight || anchorRect.height || 1);
+        var lineOffsetPct = clamp(Math.round(((probeY - anchorTop) / anchorHeight) * 100), 0, 100);
+
+        return {
+          dayIndex: dayIndex,
+          lineIndex: bestIdx,
+          lineOffsetPct: lineOffsetPct,
+          sectionProgressPct: clamp(Math.round(getSectionProgress(sectionEl)), 0, 100)
+        };
+      }
+
+      function getReadableLinesInSection(sectionEl) {
+        return Array.from(sectionEl.querySelectorAll(".story-line")).filter(function (lineEl) {
+          return !lineEl.classList.contains("blank") && !lineEl.classList.contains("line-divider");
+        });
       }
 
       function getResumeSnapshot() {

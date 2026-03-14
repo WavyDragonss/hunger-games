@@ -660,6 +660,19 @@
       transition: opacity var(--ease), background-color var(--ease), filter var(--ease);
     }
 
+    .line-number {
+      display: inline-block;
+      min-width: 3.2ch;
+      margin-right: 10px;
+      color: var(--muted);
+      opacity: 0.78;
+      text-align: right;
+      user-select: none;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.92em;
+      line-height: 1;
+    }
+
     .story-block.rules .story-line,
     .story-block.log .story-line {
       display: inline-block;
