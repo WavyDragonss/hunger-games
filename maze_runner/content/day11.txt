@@ -174,7 +174,6 @@ What burns first is no longer certain.
 [[NIGHT]]
 NIGHT 11 — THE FALL OF AURORA
 
-[[NARRATIVE]]
 The Maze doors do not close.
 
 That is the first thing.
@@ -482,6 +481,7 @@ Rally mally. Lysrix. space fan. Toad. Duccarian. SomeDucks. Galaxy. JIKOSU. Rabb
 Total — 12 Peeps surviving. 1 non-human ally. 1 duck.
 
 [[NARRATIVE]]
+[[NIGHT]]
 Night 11 ends with Aurora's Rest in ashes and twelve survivors in the canopy above it.
 
 The waterfall still runs.
@@ -501,3 +501,4 @@ Aurora's Rest is dead.
 The Maze is the battlefield now.
 
 And the twelve people in the canopy have until morning to decide what that means for who they are going to become.
+[[NARRATIVE]]
