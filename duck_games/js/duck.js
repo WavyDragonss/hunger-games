@@ -97,6 +97,7 @@
         povOnlyInput.checked = state.povOnly;
         selectModeInput(state.mode);
         bindEvents();
+        updateTopBarScrollState();
         loadAllDays();
       }
 
@@ -241,8 +242,13 @@
         state.rafPending = true;
         window.requestAnimationFrame(function () {
           state.rafPending = false;
+          updateTopBarScrollState();
           updateProgress();
         });
+      }
+
+      function updateTopBarScrollState() {
+        document.body.classList.toggle("is-scrolled", window.scrollY > 8);
       }
 
       function loadAllDays() {

@@ -4,6 +4,7 @@
       --line-height: 1.72;
       --shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
       --ease: 150ms ease;
+      --header-height: 64px;
     }
 
     body[data-width-mode="wide"] {
@@ -88,6 +89,7 @@
       border-bottom: 1px solid var(--border);
       background: rgba(17, 24, 38, 0.92);
       backdrop-filter: blur(8px);
+      transition: background var(--ease), border-color var(--ease), box-shadow var(--ease);
     }
 
     body[data-theme="light"] .app-header {
@@ -102,12 +104,13 @@
     }
 
     .header-inner {
-      min-height: 64px;
+      min-height: var(--header-height);
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
       padding: 8px 0;
+      transition: min-height var(--ease), padding var(--ease);
     }
 
     .brand-title {
@@ -115,12 +118,16 @@
       font-size: clamp(1.1rem, 2.5vw, 1.4rem);
       line-height: 1.2;
       letter-spacing: 0.01em;
+      transition: font-size var(--ease), letter-spacing var(--ease);
     }
 
     .brand-subtitle {
       margin: 3px 0 0;
       color: var(--muted);
       font-size: 0.9rem;
+      transition: opacity var(--ease), max-height var(--ease), margin var(--ease);
+      max-height: 1.8em;
+      overflow: hidden;
     }
 
     .icon-btn,
@@ -150,11 +157,12 @@
 
     .toolbar {
       position: sticky;
-      top: 64px;
+      top: var(--header-height);
       z-index: 35;
       border-bottom: 1px solid var(--border);
       background: rgba(21, 31, 49, 0.9);
       backdrop-filter: blur(8px);
+      transition: top var(--ease), background var(--ease), border-color var(--ease);
     }
 
     body[data-theme="light"] .toolbar {
@@ -168,6 +176,35 @@
       gap: 10px 14px;
       align-items: center;
       padding: 10px 0;
+      transition: min-height var(--ease), padding var(--ease);
+    }
+
+    body.is-scrolled {
+      --header-height: 50px;
+    }
+
+    body.is-scrolled .app-header {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    body.is-scrolled .header-inner {
+      padding: 4px 0;
+    }
+
+    body.is-scrolled .brand-title {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      letter-spacing: 0;
+    }
+
+    body.is-scrolled .brand-subtitle {
+      opacity: 0;
+      max-height: 0;
+      margin-top: 0;
+    }
+
+    body.is-scrolled .toolbar-inner {
+      min-height: 56px;
+      padding: 8px 0;
     }
 
     .toolbar-left,
@@ -535,14 +572,18 @@
     }
 
     @media (max-width: 860px) {
+      :root {
+        --header-height: 62px;
+      }
+
       .header-inner,
       .toolbar-inner,
       .reader-wrap {
         width: min(var(--content-width), calc(100% - 14px));
       }
 
-      .toolbar {
-        top: 62px;
+      body.is-scrolled {
+        --header-height: 46px;
       }
 
       .toolbar-inner {

@@ -119,6 +119,7 @@
         updateResumeResetButtonState();
         selectModeInput(state.mode);
         bindEvents();
+        updateTopBarScrollState();
 
         if (RELEASE_SYSTEM && typeof RELEASE_SYSTEM.syncServerTime === "function" && RELEASE_CONFIG && RELEASE_CONFIG.serverTimeUrl) {
           statusEl.textContent = "Syncing trusted server time...";
@@ -296,8 +297,13 @@
         state.rafPending = true;
         window.requestAnimationFrame(function () {
           state.rafPending = false;
+          updateTopBarScrollState();
           updateProgress();
         });
+      }
+
+      function updateTopBarScrollState() {
+        document.body.classList.toggle("is-scrolled", window.scrollY > 8);
       }
 
       function loadAllDays() {
