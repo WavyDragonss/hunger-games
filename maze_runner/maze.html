@@ -29,6 +29,9 @@
         <input class="search" id="searchInput" type="search" placeholder="Search text..." autocomplete="off" spellcheck="false" />
       </div>
       <div class="toolbar-right">
+        <select class="character-picker" id="characterPicker" aria-label="Pick character from current day">
+          <option value="">Character: none</option>
+        </select>
         <div class="toolbar-chip" id="focusLabel">Character: none</div>
         <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
         <div class="toolbar-chip" id="nextUnlockLabel">Next unlock: --</div>
@@ -43,6 +46,10 @@
             <label class="settings-row"><input type="radio" name="viewMode" value="infinite" /> Infinite mode</label>
             <label class="settings-row"><input id="povOnly" type="checkbox" /> Filter to selected character POV</label>
             <label class="settings-row"><input id="compactHeaderOnScroll" type="checkbox" /> Minimal top bar on scroll</label>
+            <div class="settings-actions">
+              <button class="settings-mini-btn" id="collapseAllDays" type="button">Collapse all days</button>
+              <button class="settings-mini-btn" id="expandAllDays" type="button">Expand all days</button>
+            </div>
             <button class="settings-mini-btn" id="widthToggle" type="button">Width: Narrow</button>
           </div>
         </details>

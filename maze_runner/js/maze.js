@@ -79,13 +79,15 @@
         previewBypass: false,
         resumeEnabled: readStore(STORE.resumeEnabled, "false") === "true",
         resumeRestoreInFlight: false,
-        resumeWriteTimer: 0
+        resumeWriteTimer: 0,
+        characterPickerDayIndex: -1
       };
 
       var subtitleEl = document.getElementById("subtitle");
       var statusEl = document.getElementById("status");
       var readerEl = document.getElementById("reader");
       var searchInput = document.getElementById("searchInput");
+      var characterPicker = document.getElementById("characterPicker");
       var progressLabel = document.getElementById("progressLabel");
       var nextUnlockLabel = document.getElementById("nextUnlockLabel");
       var focusLabel = document.getElementById("focusLabel");
@@ -107,6 +109,8 @@
       var compactHeaderOnScrollInput = document.getElementById("compactHeaderOnScroll");
       var resumeReadingInput = document.getElementById("resumeReading");
       var resumeResetBtn = document.getElementById("resumeReset");
+      var collapseAllDaysBtn = document.getElementById("collapseAllDays");
+      var expandAllDaysBtn = document.getElementById("expandAllDays");
 
       init();
 
@@ -171,6 +175,21 @@
           updateProgress();
         });
 
+        if (characterPicker) {
+          characterPicker.addEventListener("change", function () {
+            var selected = characterPicker.value;
+            if (!selected) {
+              state.selectedName = "";
+              state.selectedNameLabel = "";
+            } else {
+              state.selectedName = selected;
+              state.selectedNameLabel = getDisplayNameForNormalized(selected);
+            }
+            applyNameSelectionVisuals();
+            applyFilters();
+          });
+        }
+
         modeInputs.forEach(function (input) {
           input.addEventListener("change", function () {
             if (!input.checked) {
@@ -212,6 +231,18 @@
             clearResumeSnapshot();
             statusEl.textContent = "Saved reading checkpoint reset.";
             updateResumeResetButtonState();
+          });
+        }
+
+        if (collapseAllDaysBtn) {
+          collapseAllDaysBtn.addEventListener("click", function () {
+            setAllDaySectionsExpanded(false);
+          });
+        }
+
+        if (expandAllDaysBtn) {
+          expandAllDaysBtn.addEventListener("click", function () {
+            setAllDaySectionsExpanded(true);
           });
         }
 
@@ -312,6 +343,7 @@
         window.requestAnimationFrame(function () {
           state.rafPending = false;
           updateTopBarScrollState();
+          updateCharacterPickerForActiveDay(false);
           updateProgress();
         });
       }
@@ -503,6 +535,7 @@
         nextDayBtn.disabled = atLastDay;
         nextDayBottomBtn.disabled = atLastDay;
         applyNameSelectionVisuals();
+        updateCharacterPickerForActiveDay(true);
         applyFilters();
         updateProgress();
         updateNextUnlockLabel();
@@ -550,29 +583,58 @@
           readerEl.appendChild(sep);
         }
 
-        var section = document.createElement("section");
-        section.className = "day-section";
+        var section = document.createElement("details");
+        section.className = "day-section day-collapsible";
         section.setAttribute("data-day-index", String(dayIndex));
         section.setAttribute("data-day-title", dayData.title);
+        section.open = true;
         if (isImportantDay(dayData.dayNumber || (dayIndex + 1))) {
           section.classList.add("day-important");
         }
+
+        var dayHeadingBlock = dayData.blocks.find(function (block) {
+          return block.type === "dayHeading";
+        });
+        var dayHeadingLine = dayHeadingBlock && dayHeadingBlock.lines[0]
+          ? dayHeadingBlock.lines[0].raw
+          : dayData.title;
+
+        var summary = document.createElement("summary");
+        summary.className = "day-heading day-summary";
+        summary.textContent = stripMarkup(dayHeadingLine) || dayData.title;
+        appendImportantBadgeIfNeeded(summary, dayData.dayNumber || (dayIndex + 1));
+        section.appendChild(summary);
+
+        var content = document.createElement("div");
+        content.className = "day-content";
 
         var dayLineNumber = 0;
 
         dayData.blocks.forEach(function (block) {
           if (block.type === "dayHeading") {
-            var headingLine = block.lines[0] ? block.lines[0].raw : dayData.title;
-            var h2 = document.createElement("h2");
-            h2.className = "day-heading";
-            h2.textContent = stripMarkup(headingLine) || dayData.title;
-            appendImportantBadgeIfNeeded(h2, dayData.dayNumber || (dayIndex + 1));
-            section.appendChild(h2);
             return;
           }
 
-          var blockEl = document.createElement("div");
-          blockEl.className = "story-block " + block.type;
+          var blockEl;
+          var blockBodyEl;
+          if (block.type === "night") {
+            blockEl = document.createElement("details");
+            blockEl.className = "story-block night night-collapsible";
+            blockEl.open = true;
+
+            var nightSummary = document.createElement("summary");
+            nightSummary.className = "night-summary";
+            nightSummary.textContent = "Night section";
+            blockEl.appendChild(nightSummary);
+
+            blockBodyEl = document.createElement("div");
+            blockBodyEl.className = "night-content";
+            blockEl.appendChild(blockBodyEl);
+          } else {
+            blockEl = document.createElement("div");
+            blockEl.className = "story-block " + block.type;
+            blockBodyEl = blockEl;
+          }
 
           block.lines.forEach(function (line) {
             var lineNumber = 0;
@@ -580,12 +642,13 @@
               dayLineNumber += 1;
               lineNumber = dayLineNumber;
             }
-            blockEl.appendChild(renderLine(line, dayIndex, lineNumber));
+            blockBodyEl.appendChild(renderLine(line, dayIndex, lineNumber));
           });
 
-          section.appendChild(blockEl);
+          content.appendChild(blockEl);
         });
 
+        section.appendChild(content);
         readerEl.appendChild(section);
       }
 
@@ -1142,6 +1205,118 @@
           nameEl.classList.toggle("selected", (nameEl.getAttribute("data-name") || "") === selected);
         });
         focusLabel.textContent = "Character: " + (state.selectedNameLabel || "none");
+        syncCharacterPickerSelection();
+      }
+
+      function setAllDaySectionsExpanded(isExpanded) {
+        var sections = readerEl.querySelectorAll(".day-collapsible");
+        sections.forEach(function (section) {
+          section.open = !!isExpanded;
+        });
+      }
+
+      function updateCharacterPickerForActiveDay(force) {
+        if (!characterPicker) {
+          return;
+        }
+        var dayIndex = getCharacterPickerDayIndex();
+        if (!force && dayIndex === state.characterPickerDayIndex) {
+          syncCharacterPickerSelection();
+          return;
+        }
+        state.characterPickerDayIndex = dayIndex;
+
+        var availableNames = getAvailableCharactersForDay(dayIndex);
+        renderCharacterPickerOptions(availableNames);
+
+        if (state.selectedName && availableNames.indexOf(state.selectedName) === -1) {
+          state.selectedName = "";
+          state.selectedNameLabel = "";
+          applyNameSelectionVisuals();
+          applyFilters();
+          return;
+        }
+
+        syncCharacterPickerSelection();
+      }
+
+      function getCharacterPickerDayIndex() {
+        if (!state.days.length) {
+          return -1;
+        }
+        if (state.mode === "paged") {
+          return clamp(state.currentDay, 0, Math.max(0, state.days.length - 1));
+        }
+        var activeSection = getActiveDaySection();
+        if (!activeSection) {
+          return clamp(state.currentDay, 0, Math.max(0, state.days.length - 1));
+        }
+        var parsed = parseInt(activeSection.getAttribute("data-day-index") || String(state.currentDay), 10);
+        return Number.isFinite(parsed)
+          ? clamp(parsed, 0, Math.max(0, state.days.length - 1))
+          : clamp(state.currentDay, 0, Math.max(0, state.days.length - 1));
+      }
+
+      function getAvailableCharactersForDay(dayIndex) {
+        if (!Number.isFinite(dayIndex) || dayIndex < 0) {
+          return [];
+        }
+        var section = findSectionByDayIndex(dayIndex);
+        if (!section) {
+          return [];
+        }
+        var set = {};
+        var lines = section.querySelectorAll(".story-line");
+        lines.forEach(function (lineEl) {
+          var names = (lineEl.getAttribute("data-names") || "").split("|").filter(Boolean);
+          names.forEach(function (name) {
+            set[name] = true;
+          });
+        });
+        return Object.keys(set).sort(function (a, b) {
+          return getDisplayNameForNormalized(a).localeCompare(getDisplayNameForNormalized(b));
+        });
+      }
+
+      function renderCharacterPickerOptions(availableNames) {
+        if (!characterPicker) {
+          return;
+        }
+        characterPicker.replaceChildren();
+
+        var noneOption = document.createElement("option");
+        noneOption.value = "";
+        noneOption.textContent = "Character: none";
+        characterPicker.appendChild(noneOption);
+
+        availableNames.forEach(function (name) {
+          var option = document.createElement("option");
+          option.value = name;
+          option.textContent = getDisplayNameForNormalized(name);
+          characterPicker.appendChild(option);
+        });
+
+        characterPicker.disabled = availableNames.length === 0;
+      }
+
+      function syncCharacterPickerSelection() {
+        if (!characterPicker) {
+          return;
+        }
+        var selected = state.selectedName || "";
+        var hasSelectedOption = Array.from(characterPicker.options).some(function (option) {
+          return option.value === selected;
+        });
+        characterPicker.value = hasSelectedOption ? selected : "";
+      }
+
+      function getDisplayNameForNormalized(normalizedName) {
+        for (var i = 0; i < MEMBER_MATCHERS.length; i += 1) {
+          if (MEMBER_MATCHERS[i].normalized === normalizedName) {
+            return MEMBER_MATCHERS[i].raw;
+          }
+        }
+        return normalizedName;
       }
 
       function updateProgress() {
