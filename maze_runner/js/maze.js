@@ -55,6 +55,7 @@
         mode: "maze_mode",
         fontScale: "maze_font_scale",
         width: "maze_width_mode",
+        compactHeaderOnScroll: "maze_compact_header_on_scroll",
         povOnly: "maze_pov_only",
         lastOpenedDay: "maze_last_opened_day",
         resumeEnabled: "maze_resume_enabled",
@@ -69,6 +70,7 @@
         selectedName: "",
         selectedNameLabel: "",
         povOnly: readStore(STORE.povOnly, "false") === "true",
+        compactHeaderOnScroll: readStore(STORE.compactHeaderOnScroll, "true") !== "false",
         fontScale: clamp(parseFloat(readStore(STORE.fontScale, "1")), 0.85, 1.3),
         widthMode: readStore(STORE.width, "narrow"),
         theme: readStore(STORE.theme, "dark"),
@@ -102,6 +104,7 @@
       var helpCloseBtn = document.getElementById("helpCloseBtn");
       var modeInputs = document.querySelectorAll("input[name='viewMode']");
       var povOnlyInput = document.getElementById("povOnly");
+      var compactHeaderOnScrollInput = document.getElementById("compactHeaderOnScroll");
       var resumeReadingInput = document.getElementById("resumeReading");
       var resumeResetBtn = document.getElementById("resumeReset");
 
@@ -113,6 +116,9 @@
         applyWidthMode(state.widthMode);
         applyFontScale(state.fontScale);
         povOnlyInput.checked = state.povOnly;
+        if (compactHeaderOnScrollInput) {
+          compactHeaderOnScrollInput.checked = state.compactHeaderOnScroll;
+        }
         if (resumeReadingInput) {
           resumeReadingInput.checked = state.resumeEnabled;
         }
@@ -181,6 +187,14 @@
           writeStore(STORE.povOnly, String(state.povOnly));
           applyFilters();
         });
+
+        if (compactHeaderOnScrollInput) {
+          compactHeaderOnScrollInput.addEventListener("change", function () {
+            state.compactHeaderOnScroll = compactHeaderOnScrollInput.checked;
+            writeStore(STORE.compactHeaderOnScroll, String(state.compactHeaderOnScroll));
+            updateTopBarScrollState();
+          });
+        }
 
         if (resumeReadingInput) {
           resumeReadingInput.addEventListener("change", function () {
@@ -303,7 +317,12 @@
       }
 
       function updateTopBarScrollState() {
-        document.body.classList.toggle("is-scrolled", window.scrollY > 8);
+        if (!state.compactHeaderOnScroll) {
+          document.body.classList.remove("is-scrolled");
+          return;
+        }
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+        document.body.classList.toggle("is-scrolled", scrollTop > 8);
       }
 
       function loadAllDays() {
