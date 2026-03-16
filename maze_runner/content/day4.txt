@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 4 - THE RAPTOR
 
 [[NARRATIVE]]
@@ -177,6 +177,7 @@ C A R L is out there somewhere.
 
 And if C A R L can turn a person into a raptor, then this place can turn anything into anything.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 4 THE EXILE
 

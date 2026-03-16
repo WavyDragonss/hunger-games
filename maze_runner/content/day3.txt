@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 3 - THE SECOND LEVER
 
 [[NARRATIVE]]
@@ -173,6 +173,7 @@ Because the day feels like progress.
 
 And progress in this place always means the system is preparing something else.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 3 THE NEW PEET AND THE CAGE
 

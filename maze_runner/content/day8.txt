@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 8 - THE BEACONS
 
 [[NARRATIVE]]
@@ -398,6 +398,7 @@ And the Maze is watching all of it.
 
 And it is not finished yet.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 8 - THE MIDNIGHT ARRIVAL
 

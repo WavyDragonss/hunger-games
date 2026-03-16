@@ -610,6 +610,7 @@
 
         var dayLineNumber = 0;
         var nightSectionCount = 0;
+        var reachedNight = false;
 
         dayData.blocks.forEach(function (block) {
           if (block.type === "dayHeading") {
@@ -619,6 +620,7 @@
           var blockEl;
           var blockBodyEl;
           if (block.type === "night") {
+            reachedNight = true;
             nightSectionCount += 1;
             blockEl = document.createElement("section");
             blockEl.className = "story-block night night-section";
@@ -636,6 +638,8 @@
             blockEl.className = "story-block " + block.type;
             blockBodyEl = blockEl;
           }
+
+          blockEl.classList.add(reachedNight ? "phase-night" : "phase-day");
 
           block.lines.forEach(function (line) {
             var lineNumber = 0;

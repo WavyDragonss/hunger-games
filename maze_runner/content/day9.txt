@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 9 - THE MISSING VARIABLE
 
 [[NARRATIVE]]
@@ -170,6 +170,7 @@ The Maze has not made a sound all day.
 
 And that silence feels intentional.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 9 — THE STING THAT SHOULD NOT BE SURVIVED
 

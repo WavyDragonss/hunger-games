@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 1 - HOW DID WE GET HERE?
 
 [[NARRATIVE]]
@@ -393,6 +393,7 @@ That's part of the eerieness.
 
 Because they can already feel it in their teeth, it saves its movement for the dark-when they'll hear stone grinding against stone and know the walls can rearrange the world while they're trapped inside it.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 1 THE FIRST SHIFT
 

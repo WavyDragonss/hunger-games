@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 6 - THE WATER THAT NEVER ENDS
 
 [[NARRATIVE]]
@@ -416,6 +416,7 @@ Nothing climbs out.
 
 But something inside is learning exactly how to reach them anyway.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 6 - THE EARLY HUNTER
 

@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 7 - THE VILLAGE AND THE WATER
 
 [[NARRATIVE]]
@@ -445,6 +445,7 @@ It simply continues.
 
 And somewhere in the corridors, the walls grind into a new configuration, and something patient and enormous adjusts its understanding of the place, and the people in it, and how much more it has to teach them.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 7 - THE MESSAGE BEFORE THE STORM
 

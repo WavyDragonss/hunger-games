@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 5 - AFTER THE ROAR
 
 [[NARRATIVE]]
@@ -135,6 +135,7 @@ Because it already ate last night.
 
 And it will want to eat again.
 
+[[NARRATIVE]]
 [[NIGHT]]
 NIGHT 5 ACCEPTING THE RAPTOR
 
