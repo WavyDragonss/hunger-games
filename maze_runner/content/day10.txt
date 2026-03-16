@@ -204,7 +204,7 @@ Galaxy showed anomalous hesitation response to hollow Camila specifically.
 Frodge used as messenger by external party. Note received and delivered to Duccarian.
 Note content confirmed Schwalbe active escalation signal. Contents withheld from general camp by Rally mally and Duccarian.
 
-[[NARRATIVE]]
+[[/LOG]]
 Day 10 ends with nineteen people in Aurora's Rest and a note in Rally mally's pocket and a duck asleep against a philosopher's side.
 
 The settlement supplies are stacked and sorted.
@@ -393,6 +393,7 @@ Mainthemainstar — Sedated. Injury stable.
 NIGHT STATUS
 No fatalities. No Quigg contact. C A R L presence confirmed via roar. Forest fortification incomplete. All Peeps present except Ninnginni.
 
+[[/LOG]]
 [[NARRATIVE]]
 [[NIGHT]]
 Night 10 ends with Aurora's Rest looking upward for the first time.

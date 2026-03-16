@@ -2,7 +2,7 @@
       "use strict";
 
       var MAX_DAY_FILES = 30;
-      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|NIGHT|AUTHOR NOTE|NARRATIVE|TITLE)\]\]\s*$/i;
+      var TAG_RE = /^\s*\[\[(DAY|RULES|LOG|\/LOG|NIGHT|AUTHOR NOTE|NARRATIVE|TITLE)\]\]\s*$/i;
       var DRAMATIC_RE = /(horn|alarm|match start|game ends)/i;
       var MEMBER_NAMES = [
         "-MAD$-",
@@ -443,6 +443,8 @@
               currentMode = "rules";
             } else if (tag === "LOG") {
               currentMode = "log";
+            } else if (tag === "/LOG") {
+              currentMode = "narrative";
             } else if (tag === "NIGHT") {
               currentMode = "night";
             } else if (tag === "AUTHOR NOTE") {

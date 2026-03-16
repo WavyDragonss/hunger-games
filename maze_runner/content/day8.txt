@@ -381,7 +381,7 @@ Galaxy kills three Quiggs across two encounters.
 C A R L confirmed to command Quigg movement. Quigg withdrawal in third chamber attributed to C A R L intervention.
 Maze allowed group egress without final pursuit. Interpreted as deliberate.
 
-[[NARRATIVE]]
+[[/LOG]]
 Day 8 ends with the Maze doors closed and nine Peeps in Aurora's Rest instead of eleven.
 
 The beacons are dark now.
@@ -588,6 +588,7 @@ No Quigg contact during night. Maze activity minimal. Patrols appear repositione
 NIGHT STATUS
 No contact. No C A R L activity. All Peeps present and alive. Two in medic hut. Galaxy recovering. SomeDucks stable.
 
+[[/LOG]]
 [[NARRATIVE]]
 [[NIGHT]]
 Night 8 ends with the Maze quiet and the medic hut full and a folded note lying on the stone beside a sleeping philosopher and his duck.

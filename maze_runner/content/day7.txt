@@ -434,7 +434,7 @@ Water transport planning begun by Ut and janhk.
 Orchard planting started.
 Beer fermentation ongoing. Estimated three days to completion.
 
-[[NARRATIVE]]
+[[/LOG]]
 Day 7 ends with the waterfall sounding like it always has.
 
 The Maze does not celebrate.
@@ -684,6 +684,7 @@ Three supply drop beacons will rise from the Maze at Day 8 light. Retrieval requ
 NIGHT STATUS
 No Quigg contact. No C A R L activity. Maze shifted once in early hours. All Peeps present and alive.
 
+[[/LOG]]
 [[NARRATIVE]]
 [[NIGHT]]
 Night 7 ends quietly.

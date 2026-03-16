@@ -397,7 +397,7 @@ INJURY LOG
 
 Doomfox - Severe leg wounds from lever trap prior to death
 
-[[NARRATIVE]]
+[[/LOG]]
 Day 6 ends with water in their hands and blood in their mouths.
 
 They have a waterfall that never runs out.

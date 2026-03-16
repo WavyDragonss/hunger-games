@@ -1,4 +1,4 @@
-﻿[[DAY]]
+[[DAY]]
 DAY 12 — THE ASH THAT REMAINS
 
 Morning does not arrive the way it used to.
@@ -187,7 +187,7 @@ Logistics — Trxty
 RESOURCE STATUS
 Partial tools. Damaged rope. Improvised weapons. Limited food. Water stable.
 
-[[NARRATIVE]]
+[[/LOG]]
 Day 12 ends not with hope.
 
 With direction.
@@ -413,6 +413,7 @@ No injuries.
 All survivors present.
 Frodge stable.
 
+[[/LOG]]
 [[NARRATIVE]]
 [[NIGHT]]
 

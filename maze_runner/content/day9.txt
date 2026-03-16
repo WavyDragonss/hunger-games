@@ -155,7 +155,7 @@ Frodge found stationary near far wall corner during mid-afternoon. Behaviour ano
 Galaxy detected anomaly near far wall corner. Stepped back from wall. Nature of detection unclear.
 Maze completely silent throughout Day 9. No Quigg activity. No wall shifts recorded.
 
-[[NARRATIVE]]
+[[/LOG]]
 Day 9 ends without an answer.
 
 The camp is more divided than it was at sunrise. Two new Peeps have arrived and neither of them makes Aurora's Rest feel safer. One makes it feel harder. The other makes it feel watched in a different way than the Maze watches.
@@ -403,6 +403,7 @@ Maze resumed distant shifting near dawn.
 NIGHT STATUS
 No fatalities. Kiwi critical. All other Peeps present. Ninnginni status unchanged. Frodge behaviorally anomalous through night, settled at dawn.
 
+[[/LOG]]
 [[NARRATIVE]]
 [[NIGHT]]
 Night 9 ends with Kiwi breathing.

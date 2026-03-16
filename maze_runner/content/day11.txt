@@ -160,7 +160,7 @@ Mainthemainstar — Sedated. Injury stable.
 STATUS
 Population — 20 including Ninnginni as missing. Fire secured. Fortifications operational. No Quigg contact Day 11.
 
-[[NARRATIVE]]
+[[/LOG]]
 Day 11 ends with fire stored beneath trees and platforms built above fear.
 
 Aurora's Rest is no longer improvising survival.
@@ -481,6 +481,7 @@ SURVIVOR LOG
 Rally mally. Lysrix. space fan. Toad. Duccarian. SomeDucks. Galaxy. JIKOSU. Rabbit. Golden. Polaris. Trxty.
 Total — 12 Peeps surviving. 1 non-human ally. 1 duck.
 
+[[/LOG]]
 [[NARRATIVE]]
 [[NIGHT]]
 Night 11 ends with Aurora's Rest in ashes and twelve survivors in the canopy above it.
