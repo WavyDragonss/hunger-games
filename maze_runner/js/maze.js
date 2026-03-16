@@ -584,11 +584,10 @@
           readerEl.appendChild(sep);
         }
 
-        var section = document.createElement("details");
-        section.className = "day-section day-collapsible";
+        var section = document.createElement("section");
+        section.className = "day-section";
         section.setAttribute("data-day-index", String(dayIndex));
         section.setAttribute("data-day-title", dayData.title);
-        section.open = true;
         if (isImportantDay(dayData.dayNumber || (dayIndex + 1))) {
           section.classList.add("day-important");
         }
@@ -600,11 +599,11 @@
           ? dayHeadingBlock.lines[0].raw
           : dayData.title;
 
-        var summary = document.createElement("summary");
-        summary.className = "day-heading day-summary";
-        summary.textContent = stripMarkup(dayHeadingLine) || dayData.title;
-        appendImportantBadgeIfNeeded(summary, dayData.dayNumber || (dayIndex + 1));
-        section.appendChild(summary);
+        var heading = document.createElement("h2");
+        heading.className = "day-heading";
+        heading.textContent = stripMarkup(dayHeadingLine) || dayData.title;
+        appendImportantBadgeIfNeeded(heading, dayData.dayNumber || (dayIndex + 1));
+        section.appendChild(heading);
 
         var content = document.createElement("div");
         content.className = "day-content";

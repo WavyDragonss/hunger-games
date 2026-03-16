@@ -598,41 +598,6 @@
       padding-top: 4px;
     }
 
-    .day-collapsible {
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .day-collapsible > summary {
-      list-style: none;
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .day-collapsible > summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .day-summary {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .day-summary::after {
-      content: "Collapse";
-      margin-left: auto;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .day-collapsible:not([open]) .day-summary::after {
-      content: "Expand";
-    }
-
     .day-content {
       display: grid;
       gap: 10px;
