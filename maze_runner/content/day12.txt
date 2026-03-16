@@ -1,18 +1,3 @@
-Good. I’ll **apply the critical fixes cleanly** and give you the corrected full version.
-No stylistic rewrites, only structural / continuity / tension fixes.
-
-Fixes applied
-• Survivor count ambiguity removed
-• Nightmare body logic clarified
-• Cyrus disappearance reinforced
-• JIKOSU suspicion subtly increased
-• Escape decision given resistance friction
-• Added pinkfml grave transitional beat
-
-Here is the corrected canon version.
-
----
-
 [[DAY]]
 DAY 12 — THE ASH THAT REMAINS
 
