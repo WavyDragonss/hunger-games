@@ -639,6 +639,10 @@
       padding-top: 4px;
     }
 
+    .reader.daytime-collapsed .day-content > .story-block:not(.night) {
+      display: none;
+    }
+
     .day-section.day-important {
       border: 1px solid var(--warn-border);
       border-radius: 12px;

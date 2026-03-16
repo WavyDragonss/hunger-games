@@ -56,6 +56,7 @@
         fontScale: "maze_font_scale",
         width: "maze_width_mode",
         compactHeaderOnScroll: "maze_compact_header_on_scroll",
+        daytimeCollapsed: "maze_daytime_collapsed",
         povOnly: "maze_pov_only",
         lastOpenedDay: "maze_last_opened_day",
         resumeEnabled: "maze_resume_enabled",
@@ -71,6 +72,7 @@
         selectedNameLabel: "",
         povOnly: readStore(STORE.povOnly, "false") === "true",
         compactHeaderOnScroll: readStore(STORE.compactHeaderOnScroll, "true") !== "false",
+        daytimeCollapsed: readStore(STORE.daytimeCollapsed, "false") === "true",
         fontScale: clamp(parseFloat(readStore(STORE.fontScale, "1")), 0.85, 1.3),
         widthMode: readStore(STORE.width, "narrow"),
         theme: readStore(STORE.theme, "dark"),
@@ -109,8 +111,7 @@
       var compactHeaderOnScrollInput = document.getElementById("compactHeaderOnScroll");
       var resumeReadingInput = document.getElementById("resumeReading");
       var resumeResetBtn = document.getElementById("resumeReset");
-      var collapseAllDaysBtn = document.getElementById("collapseAllDays");
-      var expandAllDaysBtn = document.getElementById("expandAllDays");
+      var dayOnlyToggleBtn = document.getElementById("dayOnlyToggle");
 
       init();
 
@@ -127,9 +128,11 @@
           resumeReadingInput.checked = state.resumeEnabled;
         }
         updateResumeResetButtonState();
+        updateDayOnlyToggleButton();
         selectModeInput(state.mode);
         bindEvents();
         updateTopBarScrollState();
+        applyDaytimeCollapseState();
 
         if (RELEASE_SYSTEM && typeof RELEASE_SYSTEM.syncServerTime === "function" && RELEASE_CONFIG && RELEASE_CONFIG.serverTimeUrl) {
           statusEl.textContent = "Syncing trusted server time...";
@@ -234,15 +237,12 @@
           });
         }
 
-        if (collapseAllDaysBtn) {
-          collapseAllDaysBtn.addEventListener("click", function () {
-            setAllDaySectionsExpanded(false);
-          });
-        }
-
-        if (expandAllDaysBtn) {
-          expandAllDaysBtn.addEventListener("click", function () {
-            setAllDaySectionsExpanded(true);
+        if (dayOnlyToggleBtn) {
+          dayOnlyToggleBtn.addEventListener("click", function () {
+            state.daytimeCollapsed = !state.daytimeCollapsed;
+            writeStore(STORE.daytimeCollapsed, String(state.daytimeCollapsed));
+            updateDayOnlyToggleButton();
+            applyDaytimeCollapseState();
           });
         }
 
@@ -536,6 +536,7 @@
         nextDayBottomBtn.disabled = atLastDay;
         applyNameSelectionVisuals();
         updateCharacterPickerForActiveDay(true);
+        applyDaytimeCollapseState();
         applyFilters();
         updateProgress();
         updateNextUnlockLabel();
@@ -1208,11 +1209,15 @@
         syncCharacterPickerSelection();
       }
 
-      function setAllDaySectionsExpanded(isExpanded) {
-        var sections = readerEl.querySelectorAll(".day-collapsible");
-        sections.forEach(function (section) {
-          section.open = !!isExpanded;
-        });
+      function applyDaytimeCollapseState() {
+        readerEl.classList.toggle("daytime-collapsed", state.daytimeCollapsed);
+      }
+
+      function updateDayOnlyToggleButton() {
+        if (!dayOnlyToggleBtn) {
+          return;
+        }
+        dayOnlyToggleBtn.textContent = state.daytimeCollapsed ? "Show daytime" : "Collapse daytime";
       }
 
       function updateCharacterPickerForActiveDay(force) {
