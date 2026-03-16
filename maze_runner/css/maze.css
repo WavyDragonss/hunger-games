@@ -702,18 +702,16 @@
       border: 1px solid var(--night-border);
     }
 
-    .night-collapsible {
+    .night-section {
       padding: 0;
       overflow: hidden;
     }
 
-    .night-collapsible > summary {
-      list-style: none;
-      cursor: pointer;
-      user-select: none;
+    .night-heading {
+      margin: 0;
       padding: 7px 10px;
       border-bottom: 1px solid var(--night-border);
-      font-size: 0.82rem;
+      font-size: 0.9rem;
       font-weight: 800;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -721,18 +719,10 @@
       background: rgba(61, 74, 100, 0.12);
     }
 
-    .night-collapsible > summary::-webkit-details-marker {
-      display: none;
-    }
-
     .night-content {
       display: grid;
       gap: 2px;
       padding: 4px 6px;
-    }
-
-    .night-collapsible:not([open]) .night-content {
-      display: none;
     }
 
     .story-block.author-note {

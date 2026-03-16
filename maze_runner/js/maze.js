@@ -609,6 +609,7 @@
         content.className = "day-content";
 
         var dayLineNumber = 0;
+        var nightSectionCount = 0;
 
         dayData.blocks.forEach(function (block) {
           if (block.type === "dayHeading") {
@@ -618,14 +619,14 @@
           var blockEl;
           var blockBodyEl;
           if (block.type === "night") {
-            blockEl = document.createElement("details");
-            blockEl.className = "story-block night night-collapsible";
-            blockEl.open = true;
+            nightSectionCount += 1;
+            blockEl = document.createElement("section");
+            blockEl.className = "story-block night night-section";
 
-            var nightSummary = document.createElement("summary");
-            nightSummary.className = "night-summary";
-            nightSummary.textContent = "Night section";
-            blockEl.appendChild(nightSummary);
+            var nightHeading = document.createElement("h3");
+            nightHeading.className = "night-heading";
+            nightHeading.textContent = nightSectionCount > 1 ? ("Night " + nightSectionCount) : "Night";
+            blockEl.appendChild(nightHeading);
 
             blockBodyEl = document.createElement("div");
             blockBodyEl.className = "night-content";
