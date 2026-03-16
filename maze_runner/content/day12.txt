@@ -1,7 +1,6 @@
 [[DAY]]
 DAY 12 — THE ASH THAT REMAINS
 
-[[NARRATIVE]]
 Morning does not arrive the way it used to.
 
 It resumes. Like a system restarting after a failure it was never designed to understand. The light climbs the artificial sky in its programmed gradient, warm grey becoming pale gold becoming the same steady illumination that once meant routine. The light does not hesitate. It does not adapt. It simply continues.
@@ -154,6 +153,7 @@ Ash drifts in still air.
 
 The plan begins.
 
+[[NARRATIVE]]
 [[LOG]]
 BURIAL LOG
 Symbolic memorial system established. Traditional burial impossible.
