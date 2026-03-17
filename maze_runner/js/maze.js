@@ -47,7 +47,7 @@
       var RELEASE_SYSTEM = window.HungerReleaseSystem || null;
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
-      var IMPORTANT_DAY_NUMBER = 8;
+      var IMPORTANT_DAY_NUMBERS = [8, 14];
       var releaseIntervalId = null;
 
       var STORE = {
@@ -923,7 +923,7 @@
       }
 
       function isImportantDay(dayNumber) {
-        return dayNumber === IMPORTANT_DAY_NUMBER;
+        return IMPORTANT_DAY_NUMBERS.indexOf(dayNumber) !== -1;
       }
 
       function appendImportantBadgeIfNeeded(headingEl, dayNumber) {
