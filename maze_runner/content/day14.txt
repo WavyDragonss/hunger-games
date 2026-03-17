@@ -1,0 +1,392 @@
+[[DAY]]
+DAY 14 — THE FIRST ATTEMPT
+
+Nobody hesitates this morning.
+
+That is new. That is the thing that is different from every other morning in the fourteen days of Aurora's Rest's existence, including the ones that came after the fire. Before, hesitation was the texture of waking up here, the body's reasonable objection to the day's reasonable dangers. Now the hesitation is gone and what replaced it is not courage exactly. It is the specific absence of the part of the brain that argues with what is necessary.
+
+They check equipment the way soldiers check equipment, with hands that know what they are looking for and find it or note the gap and adapt. Rope tension. Hook teeth. Charcoal copies of the symbol plates folded into jacket pockets. Water. The remaining injectors distributed across three people so that no single loss takes the medical supply. Trxty double-checks his symbol documentation against the sketches on the flat stone. Polaris runs the team structure one more time, not because it has changed but because the repetition is itself a kind of weapon preparation.
+
+JIKOSU stands before the map and speaks last before they move.
+
+"The Maze reconfigured twice overnight while we slept. The eastern junction gap is still viable but the approach corridor has shifted roughly forty feet north. The nest chamber has a secondary exit on its western wall that we did not map yesterday. Do not enter the nest. Walk the south perimeter." He pauses. "The symbol nodes are defended. I do not know by how many or in what configuration. Assume active response."
+
+Rally mally says, "We move as one until the second junction. Then recon splits. We do not chase anything. We do not explore anything. We go to the door."
+
+Golden says, "And if something gets between us and the door."
+
+Rally mally looks at him. "Then we remove it."
+
+Golden nods. This is the Rally mally he can work with.
+
+Rabbit checks Frucket, who is at his feet, and crouches to look at the duck directly. Frucket is alert in the specific way he has been since they found him, head tilted, weight forward, the posture of something receiving information from a direction humans cannot orient toward. Rabbit says, quietly, "Stay close."
+
+Frucket makes his short precise sound.
+
+Frodge is at Duccarian's side. Duccarian does not say anything to the duck. He rests one hand on Frodge's back for a moment and then stands.
+
+SomeDucks watches this and says, "The ducks understand the stakes."
+
+Toad says, "The ducks understand something. I am not confident it is the same thing."
+
+SomeDucks says, "It does not need to be the same thing. It needs to be compatible."
+
+space fan stands at the threshold of the Maze doors with her medical kit and watches them prepare. She is not going in today. This was decided last night and she did not argue with the decision and did not accept it gracefully either, which is its own kind of argument. She says, "Injectors are in the left pocket of whoever carries the main kit. Do not wait to use them. Do not be conservative with the dose."
+
+Lysrix says, "We know."
+
+space fan says, "I know you know. I am saying it anyway."
+
+Galaxy moves through the doors first without waiting for the order, the way water moves downhill, because the direction is clear and the reason for waiting is not. The scratch from yesterday's perimeter patrol has dried to a dark line across his snout but his movement is unimpeded and his attention is completely forward.
+
+They go.
+
+The Maze receives them differently today.
+
+Not visibly. Not with a change in the stone or the light or the air temperature. But the quality of the corridor's attention is altered in a way that bypasses the visual and the auditory and reaches the part of the brain that evolved specifically to detect when something large is aware of you. The ventilation patterns are tighter and more precise, the mechanical breath of a system that has upgraded its monitoring configuration overnight. The echo has a different absorption frequency, like the walls have been adjusted to collect more than they reflect. The lighting in the deep sections is harsher and casts fewer shadows, which should be better and is instead worse, because shadows in the Maze are the places where the unknown can be contained, and fewer shadows means more of the unknown is simply present.
+
+This is no longer chaos architecture. It is precise architecture. The Maze has moved into a different operational mode and the corridors feel it the way a room feels it when the furniture has been rearranged by someone who knows exactly where you will look first.
+
+Polaris and Rabbit take point, fifteen feet ahead, moving with the coordinated efficiency of a pairing that has been calibrating since Night 12. Frodge moves between Duccarian and the forward pair, unusually active, his feet finding the corridor floor in short quick steps that carry him forward and back like a small worried navigator. Frucket stays at Rabbit's heel with the focused proximity of something that has appointed itself to a specific person and takes the appointment seriously.
+
+The first corridor run is clean.
+
+Almost too clean. The patrol silence from Night 13 has extended into the day in a way that should be reassuring and produces instead the specific dread of a surface that has not broken yet. JIKOSU tracks their position against his internal map with small confirmatory nods. Rally mally watches the formation. Golden pushes the pace fractionally faster than the designated spacing and Lysrix matches it from the rear without comment, keeping the column's integrity.
+
+Toad moves mid-column with the supply pack and his particular brand of honest fear, which is the fear that does not perform itself but is simply present and functional. He says, without stopping, "I have been in the Maze eight times now. It never feels less like being swallowed."
+
+Duccarian, beside him, says, "Perhaps that is because being swallowed is what it is."
+
+Toad says, "That is not as comforting as you think it is."
+
+Duccarian says, "It was not intended as comfort."
+
+Rabbit raises a closed fist and the column stops.
+
+Frucket has stopped at his heel and gone into the complete stillness that has come to mean something to the people behind him. Not the duck's normal alertness. Something beyond it, a frequency reception so strong it has stopped the animal entirely, his small body locked in the specific posture of something that has heard the thing before the ears have caught up.
+
+Then Frodge stops too.
+
+Both ducks. Still. Oriented toward the left wall.
+
+SomeDucks says, very quietly, "Left. Above."
+
+The Quigg drops from the upper wall junction with the silent efficiency they learned to fear in Night 9, tail mechanism engaged, body in full predator configuration, targeting already complete before it clears the drop. It had been waiting. It knew the formation. It knew the spacing. It dropped into the gap between the recon pair and the main column where the response coverage was thinnest, where the angles were worst, where the geometry of the corridor limited simultaneous reaction.
+
+The Maze had predicted them.
+
+Galaxy hits it from the right with the full mass of his body before the tail finds a target, driving it into the left wall with the impact of something that does not measure its force before applying it. The Quigg screams, the sound enormous in the narrow corridor, mechanical and biological in the specific ugly ratio that Quigg screams carry. It recovers faster than the last ones they have fought, adapting its weight distribution to the impact in real time, and the tail comes around in a wide arc that forces Galaxy back.
+
+Golden moves in from the left with a fire-hardened tool handle and drives it into the tail joint mechanism with the focused violence of someone who has been waiting for a legitimate target for days. The joint buckles but does not fail.
+
+Rabbit comes from behind the recon position with a climbing hook and finds the gap between the mechanical tail housing and the biological body and locks it there, preventing the tail from resetting.
+
+The Quigg turns toward the sound.
+
+It turns toward SomeDucks.
+
+SomeDucks is standing in the corridor with nothing in his hands. He has not reached for a weapon. He is standing with the specific stillness of someone who has already made the calculation and found the result acceptable. He looks at the Quigg orienting on him and says, clearly, to the group and not to the creature, "The story continues without the storyteller. That is how stories work."
+
+He steps forward.
+
+The tail strike takes him across the chest and left shoulder with the full mechanical force of the locked joint releasing, the impact spinning him into the right wall and driving the breath from his body before he reaches the ground. Lysrix lunges and catches his arm a half-second too late, her fingers closing on fabric that is already falling, and he goes down along the wall with the particular heaviness of a body that has made its decision and is no longer fighting the physics of it.
+
+Galaxy tears the Quigg apart in the three seconds after, the sustained violence of something that has crossed a threshold it will not come back from. The sound of it fills the corridor and then stops. Silence returns.
+
+Duccarian reaches SomeDucks before anyone else and crouches beside him and does not reach for the medical kit because the medical kit is not what is needed and he knows it and space fan is not here and there is nothing here that changes what is here.
+
+SomeDucks looks up at him with eyes that are present and clear and not afraid.
+
+He says, "The Maze did not write us. We wrote us." He breathes once, slowly, the sound of a breath that knows it is among the last ones. "Remember that when you find the door."
+
+Duccarian says, "I will remember."
+
+SomeDucks says nothing further.
+
+The corridor holds the silence for a moment.
+
+Then Rally mally says, very quietly, "We keep moving."
+
+Nobody argues. SomeDucks would not have argued. He said what he said so they would use it.
+
+They use it.
+
+They move.
+
+The second Quigg encounter comes forty minutes deeper in the Maze at a junction where four corridors meet in a chamber too wide for the tight formation tactics that saved them in the first fight. Frucket sounds the warning first this time, a sharp staccato call from Rabbit's shoulder that cuts the air three full seconds before anything is visible, and Frodge simultaneously moves sideways into Duccarian's path, physically blocking his forward momentum, redirecting the group's movement right before the first Quigg emerges from the left lateral corridor.
+
+Three of them. Not one. Positioned rather than patrolling, each one placed at a corridor entrance with the specific arrangement of a system that ran the numbers and determined the minimum effective deployment for this formation size.
+
+Polaris says, immediately, "Spread. Walls. Do not cluster."
+
+The formation dissolves into tactical spacing and the chamber becomes three simultaneous engagements with the controlled chaos of a fight where everyone is functioning but nobody has visibility on everyone else. Toad takes a corridor wall and drives a salvaged tool into the tail joint of the nearest Quigg when it passes within reach, a strike that does not disable but disrupts, buying Lysrix the angle she needs to apply the climbing hook to the mechanism housing.
+
+Galaxy takes the central Quigg and the fight between them is savage and loud and spatially enormous, the two large bodies moving through the chamber with the mutual recognition of apex systems in contact. The Quigg is faster than yesterday's. Its tail finds Galaxy's face before he can redirect, the tip catching the dried line of yesterday's scratch and opening it, and the blood that runs down from the wound is immediate and dark and drops onto the chamber floor in a rhythm that everyone in the group registers without looking directly at it.
+
+Galaxy does not slow down.
+
+But the group sees the blood and the group knows something it did not fully know before. He is not invincible. He bleeds the way the rest of them bleed. The only difference is he keeps going.
+
+Golden engages the third Quigg from the right lateral corridor with the focused fury he has been carrying since Aurora burned. He drives it back three steps, four, five, the Quigg retreating into its own corridor under the sustained pressure of Golden's attack, and then the Quigg turns and runs and Golden runs after it.
+
+He runs after it.
+
+Rally mally covers the distance between them in four steps and gets a hand on Golden's collar and pulls. "Hold."
+
+Golden's momentum carries them both forward another step before it stops. His breathing is wrong. His eyes are on the corridor where the Quigg disappeared. Rally mally steps directly into his sightline, one hand still on his collar, body between Golden and the corridor, and waits until Golden's eyes find his face.
+
+"Hold," Rally mally says again.
+
+Golden breathes. The corridor is dark and narrow and has a corner forty feet in that nobody has mapped and the Quigg is somewhere around that corner. Golden looks at it for one more second. Then he turns back.
+
+The chamber is quiet.
+
+Three Quiggs down or fled. The group is upright. Everyone is upright. space fan would count this as a success and she is not here to count it so Rally mally counts it silently and keeps the count.
+
+Galaxy stands in the center of the chamber. The wound above his eye is bleeding freely now, a thin constant line that moves down the side of his face and drips from his jaw onto the stone. He wipes it once with the back of his hand and looks at the result on his skin and then looks at Lysrix.
+
+Lysrix looks at the wound. At the depth of it. At the mark it is making on the face that has been changing in small increments since the night Galaxy walked out of the cage into the morning light of Day 7. She says, "Galaxy."
+
+Galaxy looks at her.
+
+She says, "Good."
+
+The word contains everything it needs to contain. Galaxy holds her gaze for a moment before looking forward again.
+
+Toad is breathing in the specific rhythm of someone managing fear through respiration control. He says, "Two down. Two more corridors to the door. Someone tell me I am right."
+
+JIKOSU says, "You are right."
+
+Toad says, "Good. Let's go."
+
+Trxty is examining the chamber walls while everyone recovers, his systematic attention finding the ventilation intake patterns, the wall composition variations, the floor seam density. He says, "The Maze sent three to this junction. Not two. Not four. Three. It calculated the minimum effective response to our formation size."
+
+Polaris says, "Which means it knows our formation size."
+
+Trxty says, "It has known since Day 6. What is new is the precision. It is not reacting to us anymore. It is optimizing against us."
+
+JIKOSU turns and walks. "Keep moving."
+
+The deep corridor descent is the part of the Maze that has no equivalent in any of the previous runs.
+
+The passages narrow. Not suddenly but progressively, the walls closing by degrees over the course of two hundred feet until the formation must go single file and the sound of breathing is returned by the stone at close range, personal and loud and insistent. The lighting flickers once, briefly, a half-second interruption in the corridor illumination that leaves a pure dark that the body responds to before the light returns, the survival instinct firing into the gap before the mind can assess the duration. Nobody speaks during the flicker. Nobody needs to.
+
+The air pressure changes subtly as they descend. Not enough to affect respiration but enough to register in the ears as a faint constant pressure, the sensation of a system compressing around them, the corridors becoming something more than architecture. The echo distorts at certain passages, sound arriving from directions that do not correspond to the source, a disorientation effect that makes footing less certain and attention more divided.
+
+Rabbit takes the front.
+
+He does not announce this. He simply moves to the point position when Polaris steps aside to examine a junction seam, and he reads the corridor ahead with the pattern-recognition capability that has been growing in him since Night 9, since Frucket sat on his knee in a narrow corridor and looked at him with those certain eyes. He is not Kiwi. He is something new that contains Kiwi as an influence the way living things contain everything they have survived.
+
+Frucket is at his heel, a silent dark-feathered compass.
+
+At the next junction the path branches and Rabbit stops. He looks left. He looks right. He does not consult the map. He listens to Frucket, who is oriented right, and then he looks right again and finds the micro-detail that confirms it, a seam pattern in the floor that janhk. would have named and catalogued and that Rabbit now reads without the name.
+
+He signals right.
+
+The group follows.
+
+Polaris, moving into position behind him, watches him make the call with the expression of someone finding a resource they did not expect in the location they needed it. She does not say anything. But she repositions herself in the column specifically to remain within signal range of him for the remainder of the descent, because the group needs what he is becoming and she intends to protect it.
+
+JIKOSU is visibly different in the deep section.
+
+It is not distress. It is the specific disturbance of a body in a place it recognizes through channels that are not entirely voluntary, the memory returning not as information but as physical sensation, the corridors activating something in him that he has been managing since Day 9 and that the depth of the Maze is making harder to manage. He stops twice at wall markings that carry no significance to anyone else and touches them with his fingertips and then moves on. The second time, his hand stays on the wall for three full seconds before he removes it.
+
+Trxty notices both stops. He photographs the wall markings with his eyes and says, quietly, "JIKOSU. These marks."
+
+JIKOSU says, "Node proximity indicators. We are close."
+
+Trxty says, "They are handwritten."
+
+JIKOSU removes his hand from the wall and does not answer that.
+
+Duccarian walks in the single-file column with the existential clarity that arrived sometime during the first fight and has not left. He says, to the corridor, to the stone, to the air, "The Maze is not testing whether we survive. It stopped testing that days ago." He pauses. "It is testing what we choose. When the surviving is possible, what do we choose to do with the possibility."
+
+Golden, directly behind him, says, "We choose to leave."
+
+Duccarian says, "That is the right answer."
+
+Golden says nothing further, but the exchange has done something small and structural between them, two people who have been approaching the same conclusion from opposite directions finally arriving at the same sentence.
+
+Toad says, from somewhere in the middle of the column, "I am very tired. I want everyone to know that. I am tired and I am scared and I am going to keep going because there is nothing else to do but I want the record to show."
+
+Lysrix, behind him, says, "Noted."
+
+Toad says, "Thank you."
+
+The door appears at the end of the corridor the same way it appeared yesterday, without announcement, the corridor simply ending in something that is not a wall.
+
+It is the same door. But it is not the same experience of the same door. Yesterday it was a discovery. Today it is a destination. Yesterday they found it. Today they arrived at it, which are different relationships to the same object.
+
+Polaris reaches it first and puts her palm flat against the metal surface. She says, "It is warm." Then she takes her hand away and puts it back, touching the surface twice, as if the first contact needed confirmation.
+
+Golden looks at the lock mechanisms and does not speak for a moment, which from Golden is its own form of reverence.
+
+Trxty moves immediately to the symbol plates and begins his documentation comparison. He says, "The third plate has rotated. The lower segment shifted approximately fifteen degrees from yesterday's position." He traces the mechanism housing with his eyes. "The system is cycling. The lock state changes over time."
+
+Rabbit stands before the plates with Frucket pressed against his leg. He looks at the seven symbols and does not say anything for a moment. Then he says, "The pattern is not random. The cycling follows a sequence. If we watch it long enough we can predict the alignment state."
+
+JIKOSU stands at the plates and reads them with the quality of someone reading a language they were taught. He says, "The nodes must be activated in sequence. Each activation cycles one plate. When the plates align, the system opens."
+
+Rally mally says, "How many nodes have you found."
+
+JIKOSU says, "Two. I know where two are."
+
+"Five more," Lysrix says.
+
+"Yes."
+
+Toad looks at the door and exhales once, the specific exhale of someone putting down a weight they have been carrying so long they forgot they were carrying it. He says, softly, "It is real."
+
+Duccarian stands before the door with Frodge in his arms and the duck is still, looking at the plates with the focused animal attention that no longer surprises anyone. Duccarian says, "SomeDucks would have read these better than any of us."
+
+Nobody disagrees.
+
+Rabbit says, "Then we read them as well as we can and we find the nodes and we come back and we open it."
+
+Rally mally looks at him. He nods once.
+
+Polaris marks the moment internally. Not a speech. Not a dramatic act. A clear sentence in a hard place that moves the group forward. She will remember when it happened.
+
+Then someone laughs.
+
+It is a small sound, involuntary, the kind that escapes before the person knows it is coming, and it comes from Toad, and it is not amusement exactly but is the sound of a nervous system releasing a pressure it has been holding since Night 11, the laugh of someone who did not quite believe the door was real until this moment and has just been proven wrong.
+
+Nobody joins it. But nobody stops it either. It lasts two seconds and then Toad covers his mouth with his hand and the sound stops and the door stands warm and present and real in front of all of them.
+
+The first hope Aurora's Rest has had that was physical and touchable and warm against a palm.
+
+Then the light begins its cooling shift and they run.
+
+Far above them, in the section of the architecture that the group has never seen and that does not appear on any runner map, the observation continued.
+
+I have been watching them since Day 1.
+
+Not with cameras. Cameras are a primitive conceit. I watch through the Maze itself, through every sensor array built into every corridor wall, every pressure plate that was never a trap, every ventilation intake that doubles as acoustic receiver, every surface that looks like stone but listens. The Maze does not just imprison. It observes. Every movement they make, every conversation they have in what they imagine is the privacy of the ruins, every pattern their bodies produce under stress. I have data on their nervous system responses, their social cohesion metrics, their individual decision-making signatures under escalating pressure conditions.
+
+They found the door today.
+
+I expected Day 16 at earliest.
+
+The SomeDucks variable resolved predictably. High meaning-construction tendency under terminal pressure. The last statement was interesting. I have logged it.
+
+The Galaxy variable continues to deviate. A mutation that retains full social bonding while acquiring apex predator capability. He bleeds now. They saw him bleed. I am watching what that does to the cohesion model.
+
+JIKOSU is ahead of schedule. He remembers more than he should at this stage. His disclosure rate is controlled but accelerating.
+
+They believe all seven nodes lie within reach.
+
+Belief is useful.
+
+The two duck variables remain unexplained by any model I have run. Frodge's appearance was logged as system anomaly on Day 6. Frucket has no origin record in my architecture. Two organisms that should not exist inside the experiment, forming functional bonds with key subjects, providing navigational and threat-detection assistance that the system did not design and cannot account for.
+
+I have run four separate analyses.
+
+The system did not put them there.
+
+I find this interesting. I find most things interesting. That is why I built this.
+
+What comes next will not be Quiggs. What I have prepared operates at a different register entirely. It knows this specific group the way I know them, built from fourteen days of observational data, calibrated to the exact decision signatures of each individual subject.
+
+I am curious what they will do when they understand what they are facing.
+
+They should be close enough to the door to believe.
+
+Then we see what the belief is made of.
+
+Below the main Maze architecture, in the sub-level that the runners have never accessed, the walls run warm and the air tastes of hot metal and old electricity. The lighting here is different from the corridors above, amber rather than white, the color of a system that was built to be operational rather than navigable, the light of maintenance architecture rather than experiment architecture. The floor hums constantly at a frequency just below perception, the vibration of something large running continuously in the deeper infrastructure.
+
+Ninnginni has been here long enough that the hum has become ambient, the way the waterfall became ambient in Aurora's Rest, a sound that the body stops processing as external and begins to treat as internal. He sits with his back against the warm wall, the heat of the Maze's operational core conducted through the stone and into his spine, and his notebook is open on his knees and the pen is in his hand.
+
+The speaker in the wall above him produces Schwalbe's voice with the same calm frequency it always uses. Not loud. Present.
+
+"They found the door."
+
+Ninnginni does not respond.
+
+"That means they are progressing toward the final phase faster than the primary projection. I thought you would want to know."
+
+Ninnginni says, "I do not want to know anything you are telling me."
+
+"And yet you are listening," Schwalbe says.
+
+Ninnginni closes his notebook. "What do you want."
+
+"The same thing I always want. For the experiment to complete correctly." A pause. "Your part of it is not finished."
+
+"I am not doing the thing you want me to do."
+
+"You already are," Schwalbe says. "Being here is doing it. Knowing what you know and not telling them is doing it. There is no position you can take in this structure that is outside the design."
+
+Ninnginni stands.
+
+He is taller than the space expects, which says something about the people the voice is used to speaking to.
+
+"They are my people," he says.
+
+"Yes," Schwalbe says. "That is what makes your position in the design functional."
+
+"If you—"
+
+"I am not going to use Quiggs," Schwalbe says, with the patience of a systems architect explaining a constraint to someone who does not understand the full architecture. "Quiggs are phase one instruments. What I have prepared for phase two is not a creature. It is not a biological system. It is not anything they have catalogued or built a response to. I built it for this specific group. Based on fourteen days of observational data. It knows them."
+
+The mechanical hum in the floor rises fractionally and settles. Somewhere in the deeper infrastructure, something is running that was not running yesterday.
+
+Ninnginni sits back down.
+
+"You have two choices," Schwalbe says. "Warn them. Which accelerates phase two deployment and removes the window they currently have to find the remaining nodes. Or stay here, complete your assigned function, and give them the time they need to reach the door."
+
+The hum settles.
+
+Ninnginni opens his notebook.
+
+He picks up the pen.
+
+He writes one word.
+
+Then he closes the notebook and holds it against his chest in the amber light of the sub-level with the warm wall at his back and the hum in the floor and the voice silent now in the speaker above him, and somewhere above him through layers of stone and corridor the people he has been living alongside are returning through the Maze doors into the ash of what used to be a home.
+
+He does not open the notebook again.
+
+Not yet.
+
+[[LOG]]
+DEATH LOG
+SomeDucks — Killed by Quigg tail strike in first encounter corridor. Death accepted rather than avoided. Final statement recorded by Duccarian. Memorial to be constructed.
+
+INJURY LOG
+Galaxy — Facial wound reopened and extended during second encounter. Deep mark from bridge of snout to above left eye socket. Treated by space fan on return. Functional.
+
+COMBAT LOG
+First encounter — Single Quigg, ambush configuration. Eliminated. SomeDucks killed during engagement.
+Second encounter — Three Quiggs, positioned configuration. All neutralized. Golden required restraint from Rally mally during pursuit impulse. No fatalities.
+
+DISCOVERY LOG
+Escape door reached and confirmed second time. Symbol plate cycling behavior documented by Trxty. Sequential node activation requirement confirmed by JIKOSU. Two nodes located. Five unlocated. Door system assessed as active and operational.
+
+BEHAVIORAL LOG
+Rabbit demonstrated independent navigation decision using duck guidance. Formation followed without direction. Polaris repositioned formation structure in response. Transition noted.
+Maze corridor environment shifted toward precision operational mode. Environmental pressure effects documented in deep section.
+
+ESCALATION NOTE
+Unidentified escalation predicted based on observed system behavior changes. Nature of escalation unknown. Timeline unknown.
+
+NIGHT STATUS
+All remaining Peeps present. One fatality. space fan stable. Frodge and Frucket present. Maze doors closed.
+
+[[/LOG]]
+Day 14 ends with one fewer voice and a door that is warm to the touch.
+
+In the ruins, space fan builds SomeDucks' marker alone while the others rest, her hands placing each stone with the clinical precision that is the only language available to her right now.
+
+Frodge sits beside the marker when she finishes.
+
+The waterfall runs.
+
+The symbol plates cycle in the dark, unseen, patient, counting toward an alignment that is not yet complete.
+
+Five nodes remain.
+
+And somewhere in the amber sub-levels of the Maze, a notebook is closed and a word is written inside it and the walls are warm and something is running in the deep infrastructure that was not running yesterday.
+
+Almost.
+[[NARRATIVE]]
