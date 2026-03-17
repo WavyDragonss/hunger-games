@@ -112,6 +112,7 @@
       var resumeReadingInput = document.getElementById("resumeReading");
       var resumeResetBtn = document.getElementById("resumeReset");
       var dayOnlyToggleBtn = document.getElementById("dayOnlyToggle");
+      var skipToNightBtn = document.getElementById("skipToNight");
 
       init();
 
@@ -243,6 +244,12 @@
             writeStore(STORE.daytimeCollapsed, String(state.daytimeCollapsed));
             updateDayOnlyToggleButton();
             applyDaytimeCollapseState();
+          });
+        }
+
+        if (skipToNightBtn) {
+          skipToNightBtn.addEventListener("click", function () {
+            scrollToFirstNightTag();
           });
         }
 
@@ -1224,6 +1231,30 @@
           return;
         }
         dayOnlyToggleBtn.textContent = state.daytimeCollapsed ? "Show daytime" : "Collapse daytime";
+      }
+
+      function scrollToFirstNightTag() {
+        var target = null;
+
+        if (state.mode === "paged") {
+          var currentSection = readerEl.querySelector(".day-section");
+          target = currentSection ? currentSection.querySelector(".night-section") : null;
+        } else {
+          var activeSection = getActiveDaySection();
+          target = activeSection ? activeSection.querySelector(".night-section") : null;
+          if (!target) {
+            target = readerEl.querySelector(".night-section");
+          }
+        }
+
+        if (!target) {
+          statusEl.textContent = "No night section found for this day.";
+          return;
+        }
+
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        statusEl.textContent = "Jumped to first night section.";
+        scheduleResumeSnapshotWrite(120);
       }
 
       function updateCharacterPickerForActiveDay(force) {
