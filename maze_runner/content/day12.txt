@@ -414,8 +414,6 @@ All survivors present.
 Frodge stable.
 
 [[/LOG]]
-[[NARRATIVE]]
-[[NIGHT]]
 
 Night 12 ends without peace.
 
