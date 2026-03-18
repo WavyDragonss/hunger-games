@@ -25,14 +25,10 @@
       <div class="toolbar-left">
         <button class="text-btn" id="fontDown" type="button">A-</button>
         <button class="text-btn" id="fontUp" type="button">A+</button>
-        <button class="text-btn search-toggle" id="searchToggle" type="button" aria-label="Toggle search" aria-expanded="false">⌕</button>
+        <button class="text-btn search-toggle" id="searchToggle" type="button" aria-label="Toggle search" aria-expanded="false">🔎</button>
         <input class="search" id="searchInput" type="search" placeholder="Search text..." autocomplete="off" spellcheck="false" />
-        <div class="nav-wrap" id="navWrap">
-          <button class="mode-btn" id="prevDay" type="button"><- Previous Day</button>
-          <button class="mode-btn" id="nextDay" type="button">Next Day -></button>
-        </div>
       </div>
-      <div class="toolbar-right">
+      <div class="toolbar-center">
         <div class="toolbar-right-main">
           <select class="character-picker" id="characterPicker" aria-label="Pick character from current day">
             <option value="">Character: none</option>
@@ -41,7 +37,13 @@
           <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
           <div class="toolbar-chip" id="nextUnlockLabel">Next unlock: --</div>
         </div>
-        <div class="toolbar-right-actions">
+        <div class="nav-wrap" id="navWrap">
+          <button class="mode-btn" id="prevDay" type="button"><- Previous Day</button>
+          <button class="mode-btn" id="nextDay" type="button">Next Day -></button>
+        </div>
+      </div>
+      <div class="toolbar-right">
+        <div class="toolbar-right-actions-primary">
           <details class="settings" id="settings">
             <summary>Settings</summary>
             <div class="settings-panel">
@@ -60,6 +62,8 @@
             </div>
           </details>
           <a class="text-btn" href="./feedback.html">Feedback</a>
+        </div>
+        <div class="toolbar-right-actions-secondary">
           <button class="text-btn" id="creditsBtn" type="button" aria-expanded="false" aria-controls="creditsPanel">Credits</button>
           <button class="text-btn" id="helpBtn" type="button" aria-expanded="false" aria-controls="helpPanel">Help</button>
         </div>

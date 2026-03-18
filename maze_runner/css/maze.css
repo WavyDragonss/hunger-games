@@ -213,8 +213,8 @@
     .toolbar-inner {
       min-height: 64px;
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
       align-items: start;
       padding: 10px 0;
       transition: min-height var(--ease), padding var(--ease);
@@ -249,9 +249,11 @@
     }
 
     .toolbar-left,
+    .toolbar-center,
     .toolbar-right,
     .toolbar-right-main,
-    .toolbar-right-actions {
+    .toolbar-right-actions-primary,
+    .toolbar-right-actions-secondary {
       display: flex;
       align-items: center;
       gap: 8px;
@@ -261,9 +263,15 @@
 
     .toolbar-left {
       justify-content: flex-start;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 6px;
+      width: 44px;
+      flex-wrap: nowrap;
+      position: relative;
     }
 
-    .toolbar-right {
+    .toolbar-center {
       display: grid;
       grid-template-columns: 1fr;
       gap: 8px;
@@ -274,15 +282,24 @@
       justify-content: flex-start;
     }
 
-    .toolbar-right-actions {
+    .toolbar-right {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      align-items: start;
+      justify-items: end;
+    }
+
+    .toolbar-right-actions-primary,
+    .toolbar-right-actions-secondary {
       justify-content: flex-start;
+      flex-wrap: nowrap;
     }
 
     .search-toggle {
-      min-width: 40px;
-      min-height: 40px;
+      width: 44px;
       padding: 0;
-      font-size: 1.18rem;
+      font-size: 1.06rem;
       font-weight: 800;
       line-height: 1;
       display: inline-flex;
@@ -290,10 +307,19 @@
       justify-content: center;
     }
 
+    .toolbar-left #fontDown,
+    .toolbar-left #fontUp {
+      width: 44px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     .search {
-      width: min(440px, 52vw);
-      min-width: 240px;
-      flex: 0 1 440px;
+      width: min(320px, 36vw);
+      min-width: 220px;
+      position: absolute;
+      left: calc(100% + 10px);
+      top: 84px;
       border-radius: 10px;
       border: 1px solid var(--border);
       background: var(--surface);
@@ -308,16 +334,13 @@
     }
 
     @media (min-width: 861px) {
-      .toolbar-left {
-        flex-wrap: nowrap;
-      }
-
       .toolbar-left .search {
         display: none !important;
       }
 
       .toolbar-left.search-open .search {
         display: block !important;
+        z-index: 5;
       }
 
       #focusLabel {
@@ -326,6 +349,10 @@
 
       .nav-wrap {
         flex-wrap: nowrap;
+      }
+
+      .toolbar-right-main {
+        min-height: 40px;
       }
     }
 
@@ -1192,7 +1219,7 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      margin-left: 4px;
+      margin-left: 0;
     }
 
     .nav-wrap.hidden {
@@ -1224,10 +1251,19 @@
         --header-height: 46px;
       }
 
-      .toolbar-left {
-        flex-wrap: wrap;
+      .toolbar-inner {
+        grid-template-columns: 1fr;
       }
 
+      .toolbar-left {
+        width: auto;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .toolbar-center,
       .toolbar-right {
         display: grid;
         grid-template-columns: 1fr;
@@ -1235,8 +1271,10 @@
       }
 
       .toolbar-right-main,
-      .toolbar-right-actions {
+      .toolbar-right-actions-primary,
+      .toolbar-right-actions-secondary {
         justify-content: flex-start;
+        flex-wrap: wrap;
       }
 
       #focusLabel {
@@ -1249,6 +1287,7 @@
 
       .search {
         display: block;
+        position: static;
         min-width: 100%;
         width: 100%;
         flex: 1 1 100%;
