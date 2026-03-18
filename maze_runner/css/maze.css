@@ -661,85 +661,53 @@
       vertical-align: middle;
     }
 
-    .day-credits {
-      display: grid;
-      gap: 10px;
-      padding: 12px;
+    .day-thanks-banner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 2px 0 8px;
+      padding: 10px 12px;
       border: 1px solid var(--border);
       border-radius: 12px;
-      background: linear-gradient(180deg, rgba(125, 180, 255, 0.12) 0%, rgba(125, 180, 255, 0.04) 100%);
+      background: var(--surface);
+      color: var(--text);
+      line-height: 1.35;
+      font-weight: 650;
     }
 
-    body[data-theme="light"] .day-credits {
-      background: linear-gradient(180deg, rgba(29, 99, 204, 0.11) 0%, rgba(29, 99, 204, 0.04) 100%);
-    }
-
-    .day-credits-title {
-      margin: 0;
-      font-size: 0.92rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .day-thanks-text {
       color: var(--muted);
     }
 
-    .day-credit-item {
-      display: flex;
+    .day-thanks-profile {
+      display: inline-flex;
       align-items: center;
-      gap: 12px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 10px;
-      background: var(--surface);
+      gap: 8px;
+      padding: 3px 10px 3px 4px;
+      border-radius: 999px;
+      border: 1px solid var(--name-border);
+      background: var(--name-bg);
     }
 
-    .day-credit-avatar-wrap {
-      position: relative;
-      width: 52px;
-      height: 52px;
+    .day-thanks-avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      background: var(--surface-2);
       flex: 0 0 auto;
     }
 
-    .day-credit-avatar {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid var(--surface-2);
-      box-shadow: 0 0 0 2px var(--accent);
-      background: var(--surface-2);
+    body[data-theme="light"] .day-thanks-avatar {
+      border-color: rgba(30, 42, 58, 0.18);
     }
 
-    .day-credit-status-dot {
-      position: absolute;
-      right: 1px;
-      bottom: 1px;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: #38c46a;
-      border: 2px solid var(--surface);
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-    }
-
-    .day-credit-body {
-      min-width: 0;
-      display: grid;
-      gap: 2px;
-    }
-
-    .day-credit-name {
-      margin: 0;
+    .day-thanks-name {
       font-weight: 800;
       letter-spacing: 0.02em;
       color: var(--text);
-    }
-
-    .day-credit-note {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95em;
     }
 
     .story-block {

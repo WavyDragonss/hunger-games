@@ -48,13 +48,13 @@
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
       var IMPORTANT_DAY_NUMBERS = [8, 14];
-      var DAY_CREDITS = {
-        14: [
-          {
-            name: "Rabbit",
-            avatar: "./images/rabbit_pfp.png"
-          }
-        ]
+      var DAY_THANKS = {
+        14: {
+          preface: "Thank you for the ideas and support! Credits to",
+          name: "Rabbit",
+          suffix: "for the ideas!",
+          avatar: "./images/rabbit_pfp.png"
+        }
       };
       var releaseIntervalId = null;
 
@@ -605,8 +605,14 @@
         section.className = "day-section";
         section.setAttribute("data-day-index", String(dayIndex));
         section.setAttribute("data-day-title", dayData.title);
-        if (isImportantDay(dayData.dayNumber || (dayIndex + 1))) {
+        var dayNumber = dayData.dayNumber || (dayIndex + 1);
+        if (isImportantDay(dayNumber)) {
           section.classList.add("day-important");
+        }
+
+        var dayThanks = getThanksForDay(dayNumber);
+        if (dayThanks) {
+          readerEl.appendChild(renderDayThanksBanner(dayThanks));
         }
 
         var dayHeadingBlock = dayData.blocks.find(function (block) {
@@ -619,14 +625,8 @@
         var heading = document.createElement("h2");
         heading.className = "day-heading";
         heading.textContent = stripMarkup(dayHeadingLine) || dayData.title;
-        appendImportantBadgeIfNeeded(heading, dayData.dayNumber || (dayIndex + 1));
+        appendImportantBadgeIfNeeded(heading, dayNumber);
         section.appendChild(heading);
-
-        var dayNumber = dayData.dayNumber || (dayIndex + 1);
-        var dayCredits = getCreditsForDay(dayNumber);
-        if (dayCredits.length) {
-          section.appendChild(renderDayCredits(dayCredits));
-        }
 
         var content = document.createElement("div");
         content.className = "day-content";
@@ -665,7 +665,7 @@
           blockEl.classList.add(reachedNight ? "phase-night" : "phase-day");
 
           block.lines.forEach(function (line) {
-            if (shouldSkipCreditLine(dayCredits, line.raw)) {
+            if (shouldSkipLegacyCreditLine(line.raw)) {
               return;
             }
             var lineNumber = 0;
@@ -954,87 +954,64 @@
         headingEl.appendChild(badge);
       }
 
-      function getCreditsForDay(dayNumber) {
-        var entries = DAY_CREDITS[dayNumber];
-        if (!Array.isArray(entries)) {
-          return [];
+      function getThanksForDay(dayNumber) {
+        var entry = DAY_THANKS[dayNumber];
+        if (!entry || typeof entry !== "object") {
+          return null;
         }
-        return entries.filter(function (entry) {
-          return entry && typeof entry.name === "string" && entry.name.trim();
-        });
+        if (typeof entry.name !== "string" || !entry.name.trim()) {
+          return null;
+        }
+        return entry;
       }
 
-      function shouldSkipCreditLine(credits, rawLine) {
-        if (!Array.isArray(credits) || !credits.length || typeof rawLine !== "string") {
+      function shouldSkipLegacyCreditLine(rawLine) {
+        if (typeof rawLine !== "string") {
           return false;
         }
-        var normalizedLine = normalizeCreditText(rawLine);
-        if (!normalizedLine) {
-          return false;
-        }
-        return credits.some(function (entry) {
-          return normalizeCreditText(entry.note || "") === normalizedLine;
-        });
-      }
-
-      function normalizeCreditText(text) {
-        return String(text)
+        var normalizedLine = String(rawLine)
           .toLowerCase()
           .replace(/^\s*\d+\.\s*/, "")
           .replace(/\s+/g, " ")
           .trim();
+        return normalizedLine === "credits to rabbit for the ideas given";
       }
 
-      function renderDayCredits(credits) {
-        var panel = document.createElement("section");
-        panel.className = "day-credits";
-        panel.setAttribute("aria-label", "Day credits");
+      function renderDayThanksBanner(entry) {
+        var banner = document.createElement("section");
+        banner.className = "day-thanks-banner";
+        banner.setAttribute("aria-label", "Day thank you");
 
-        var title = document.createElement("h3");
-        title.className = "day-credits-title";
-        title.textContent = "Credits";
-        panel.appendChild(title);
+        var preface = document.createElement("span");
+        preface.className = "day-thanks-text";
+        preface.textContent = (entry.preface || "").trim() + " ";
+        banner.appendChild(preface);
 
-        credits.forEach(function (entry) {
-          var item = document.createElement("article");
-          item.className = "day-credit-item";
+        var profile = document.createElement("span");
+        profile.className = "day-thanks-profile";
 
-          var avatarWrap = document.createElement("div");
-          avatarWrap.className = "day-credit-avatar-wrap";
+        var avatar = document.createElement("img");
+        avatar.className = "day-thanks-avatar";
+        avatar.src = entry.avatar || "";
+        avatar.alt = entry.name + " profile picture";
+        avatar.loading = "lazy";
+        profile.appendChild(avatar);
 
-          var avatar = document.createElement("img");
-          avatar.className = "day-credit-avatar";
-          avatar.src = entry.avatar || "";
-          avatar.alt = entry.name + " profile picture";
-          avatar.loading = "lazy";
-          avatarWrap.appendChild(avatar);
+        var name = document.createElement("span");
+        name.className = "day-thanks-name";
+        name.textContent = entry.name;
+        profile.appendChild(name);
 
-          var statusDot = document.createElement("span");
-          statusDot.className = "day-credit-status-dot";
-          statusDot.setAttribute("aria-hidden", "true");
-          avatarWrap.appendChild(statusDot);
+        banner.appendChild(profile);
 
-          var body = document.createElement("div");
-          body.className = "day-credit-body";
+        if (typeof entry.suffix === "string" && entry.suffix.trim()) {
+          var suffix = document.createElement("span");
+          suffix.className = "day-thanks-text";
+          suffix.textContent = " " + entry.suffix.trim();
+          banner.appendChild(suffix);
+        }
 
-          var name = document.createElement("p");
-          name.className = "day-credit-name";
-          name.textContent = entry.name;
-
-          body.appendChild(name);
-          if (typeof entry.note === "string" && entry.note.trim()) {
-            var note = document.createElement("p");
-            note.className = "day-credit-note";
-            note.textContent = entry.note;
-            body.appendChild(note);
-          }
-
-          item.appendChild(avatarWrap);
-          item.appendChild(body);
-          panel.appendChild(item);
-        });
-
-        return panel;
+        return banner;
       }
 
       function hasNameBoundary(text, start, end) {
