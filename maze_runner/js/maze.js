@@ -50,10 +50,13 @@
       var IMPORTANT_DAY_NUMBERS = [8, 14];
       var DAY_THANKS = {
         14: {
-          preface: "Thank you for the ideas and support! Credits to",
-          name: "Rabbit",
-          suffix: "for the ideas!",
-          avatar: "./images/rabbit_pfp.png"
+          message: "Thank you for the support and ideas!",
+          people: [
+            { name: "JIKOSU", avatar: "./images/JIKOSU_pfp.png" },
+            { name: "Lysrix", avatar: "./images/lysrix_pfp.png" },
+            { name: "Rabbit", avatar: "./images/rabbit_pfp.png" },
+            { name: "space fan", avatar: "./images/space_fan_pfp.png" }
+          ]
         }
       };
       var releaseIntervalId = null;
@@ -410,39 +413,38 @@
           return;
         }
 
-        var line = document.createElement("p");
-        line.className = "credits-message";
+        var message = document.createElement("p");
+        message.className = "credits-message";
+        message.textContent = entry.message;
+        creditsBody.appendChild(message);
 
-        var preface = document.createElement("span");
-        preface.className = "day-thanks-text";
-        preface.textContent = (entry.preface || "").trim() + " ";
-        line.appendChild(preface);
+        var list = document.createElement("div");
+        list.className = "credits-people";
 
-        var profile = document.createElement("span");
-        profile.className = "day-thanks-profile";
+        entry.people.forEach(function (person) {
+          var row = document.createElement("div");
+          row.className = "credits-person-row";
 
-        var avatar = document.createElement("img");
-        avatar.className = "day-thanks-avatar";
-        avatar.src = entry.avatar || "";
-        avatar.alt = entry.name + " profile picture";
-        avatar.loading = "lazy";
-        profile.appendChild(avatar);
+          var profile = document.createElement("span");
+          profile.className = "day-thanks-profile";
 
-        var name = document.createElement("span");
-        name.className = "day-thanks-name";
-        name.textContent = entry.name;
-        profile.appendChild(name);
+          var avatar = document.createElement("img");
+          avatar.className = "day-thanks-avatar";
+          avatar.src = person.avatar || "";
+          avatar.alt = person.name + " profile picture";
+          avatar.loading = "lazy";
+          profile.appendChild(avatar);
 
-        line.appendChild(profile);
+          var name = document.createElement("span");
+          name.className = "day-thanks-name";
+          name.textContent = person.name;
+          profile.appendChild(name);
 
-        if (typeof entry.suffix === "string" && entry.suffix.trim()) {
-          var suffix = document.createElement("span");
-          suffix.className = "day-thanks-text";
-          suffix.textContent = " " + entry.suffix.trim();
-          line.appendChild(suffix);
-        }
+          row.appendChild(profile);
+          list.appendChild(row);
+        });
 
-        creditsBody.appendChild(line);
+        creditsBody.appendChild(list);
       }
 
       function onScrollOrResize() {
@@ -1050,9 +1052,19 @@
         if (!entry || typeof entry !== "object") {
           return null;
         }
-        if (typeof entry.name !== "string" || !entry.name.trim()) {
+        if (typeof entry.message !== "string" || !entry.message.trim()) {
           return null;
         }
+        if (!Array.isArray(entry.people) || !entry.people.length) {
+          return null;
+        }
+        var validPeople = entry.people.filter(function (person) {
+          return person && typeof person.name === "string" && person.name.trim();
+        });
+        if (!validPeople.length) {
+          return null;
+        }
+        entry.people = validPeople;
         return entry;
       }
 

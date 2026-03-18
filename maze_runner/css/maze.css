@@ -731,6 +731,18 @@
       line-height: 1.45;
     }
 
+    .credits-people {
+      margin-top: 10px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .credits-person-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
     .story-block {
       display: grid;
       gap: 2px;
