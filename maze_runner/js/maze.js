@@ -48,6 +48,7 @@
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
       var IMPORTANT_DAY_NUMBERS = [8, 14];
+      var FINAL_DAY_NUMBER = 15;
       var GLOBAL_THANKS = {
         message: "Thank you for the support and ideas!",
         people: [
@@ -712,6 +713,9 @@
         if (isImportantDay(dayNumber)) {
           section.classList.add("day-important");
         }
+        if (isFinalDay(dayNumber)) {
+          section.classList.add("day-final");
+        }
 
         var dayHeadingBlock = dayData.blocks.find(function (block) {
           return block.type === "dayHeading";
@@ -724,7 +728,9 @@
         heading.className = "day-heading";
         heading.textContent = stripMarkup(dayHeadingLine) || dayData.title;
         appendImportantBadgeIfNeeded(heading, dayNumber);
+        appendFinalDayBadgeIfNeeded(heading, dayNumber);
         section.appendChild(heading);
+        appendFinalDayBannerIfNeeded(section, dayNumber);
 
         var content = document.createElement("div");
         content.className = "day-content";
@@ -797,11 +803,15 @@
         if (isImportantDay(dayData.dayNumber || (dayIndex + 1))) {
           section.classList.add("day-important");
         }
+        if (isFinalDay(dayData.dayNumber || (dayIndex + 1))) {
+          section.classList.add("day-final");
+        }
 
         var heading = document.createElement("h2");
         heading.className = "day-heading";
         heading.textContent = dayData.title || ("Day " + (dayIndex + 1));
         appendImportantBadgeIfNeeded(heading, dayData.dayNumber || (dayIndex + 1));
+        appendFinalDayBadgeIfNeeded(heading, dayData.dayNumber || (dayIndex + 1));
         section.appendChild(heading);
 
         var panel = document.createElement("div");
@@ -1041,6 +1051,10 @@
         return IMPORTANT_DAY_NUMBERS.indexOf(dayNumber) !== -1;
       }
 
+      function isFinalDay(dayNumber) {
+        return dayNumber === FINAL_DAY_NUMBER;
+      }
+
       function appendImportantBadgeIfNeeded(headingEl, dayNumber) {
         if (!isImportantDay(dayNumber)) {
           return;
@@ -1050,6 +1064,34 @@
         badge.className = "important-badge";
         badge.textContent = "IMPORTANT";
         headingEl.appendChild(badge);
+      }
+
+      function appendFinalDayBadgeIfNeeded(headingEl, dayNumber) {
+        if (!isFinalDay(dayNumber)) {
+          return;
+        }
+        headingEl.appendChild(document.createTextNode(" "));
+        var badge = document.createElement("span");
+        badge.className = "finale-badge";
+        badge.textContent = "FINALE";
+        headingEl.appendChild(badge);
+      }
+
+      function appendFinalDayBannerIfNeeded(sectionEl, dayNumber) {
+        if (!isFinalDay(dayNumber)) {
+          return;
+        }
+        var banner = document.createElement("div");
+        banner.className = "day-final-banner";
+        var title = document.createElement("p");
+        title.className = "day-final-banner-title";
+        title.textContent = "\u2550\u2550 THE FINAL DAY \u2550\u2550";
+        banner.appendChild(title);
+        var sub = document.createElement("p");
+        sub.className = "day-final-banner-sub";
+        sub.textContent = "The games come to their end. Only one path remains.";
+        banner.appendChild(sub);
+        sectionEl.appendChild(banner);
       }
 
       function getGlobalThanks() {

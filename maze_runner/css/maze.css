@@ -646,6 +646,87 @@
       background: linear-gradient(180deg, var(--warn-bg) 0%, transparent 100%);
     }
 
+    .day-section.day-final {
+      border: 2px solid #c9a227;
+      border-top: 4px solid #ffd23f;
+      border-radius: 12px;
+      padding: 10px;
+      background: linear-gradient(180deg, rgba(72, 52, 0, 0.45) 0%, transparent 40%);
+    }
+
+    body[data-theme="light"] .day-section.day-final {
+      border-color: #b8870b;
+      border-top-color: #d4a017;
+      background: linear-gradient(180deg, rgba(255, 230, 130, 0.4) 0%, transparent 40%);
+    }
+
+    .finale-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 6px;
+      min-height: 20px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid #c9a227;
+      background: linear-gradient(135deg, #453913 0%, #5e4a0a 100%);
+      color: #ffd23f;
+      font-size: 0.72em;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1;
+      vertical-align: middle;
+      text-shadow: 0 0 6px rgba(255, 210, 63, 0.5);
+    }
+
+    body[data-theme="light"] .finale-badge {
+      background: linear-gradient(135deg, #fff3bb 0%, #ffe570 100%);
+      border-color: #b8870b;
+      color: #6b4a00;
+      text-shadow: none;
+    }
+
+    .day-final-banner {
+      margin: 8px 0 4px;
+      padding: 14px 18px;
+      border: 1px solid #c9a227;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(72, 52, 0, 0.38) 0%, rgba(44, 32, 0, 0.18) 100%);
+      text-align: center;
+    }
+
+    body[data-theme="light"] .day-final-banner {
+      background: linear-gradient(135deg, rgba(255, 230, 130, 0.38) 0%, rgba(255, 248, 200, 0.2) 100%);
+      border-color: #b8870b;
+    }
+
+    .day-final-banner-title {
+      margin: 0;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: #ffd23f;
+      text-transform: uppercase;
+      text-shadow: 0 0 12px rgba(255, 210, 63, 0.4);
+    }
+
+    body[data-theme="light"] .day-final-banner-title {
+      color: #7a4a00;
+      text-shadow: none;
+    }
+
+    .day-final-banner-sub {
+      margin: 6px 0 0;
+      font-size: 0.88rem;
+      color: #ffe8a6;
+      letter-spacing: 0.04em;
+      opacity: 0.88;
+    }
+
+    body[data-theme="light"] .day-final-banner-sub {
+      color: #5e3c00;
+    }
+
     .day-section.day-locked {
       border: 1px dashed var(--lock-border);
       border-radius: 12px;
