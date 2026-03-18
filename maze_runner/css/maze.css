@@ -245,7 +245,8 @@
     }
 
     .search {
-      width: min(360px, 100%);
+      width: min(520px, 100%);
+      flex: 1 1 420px;
       min-height: 40px;
       border-radius: 10px;
       border: 1px solid var(--border);
@@ -695,16 +696,16 @@
     .day-thanks-profile {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 3px 10px 3px 4px;
+      gap: 10px;
+      padding: 5px 14px 5px 6px;
       border-radius: 999px;
       border: 1px solid var(--name-border);
       background: var(--name-bg);
     }
 
     .day-thanks-avatar {
-      width: 26px;
-      height: 26px;
+      width: clamp(34px, 4.2vw, 44px);
+      height: clamp(34px, 4.2vw, 44px);
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid rgba(255, 255, 255, 0.25);
@@ -718,6 +719,7 @@
 
     .day-thanks-name {
       font-weight: 800;
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
       letter-spacing: 0.02em;
       color: var(--text);
     }
@@ -728,13 +730,15 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 8px;
+      font-size: clamp(1.02rem, 1.5vw, 1.14rem);
+      font-weight: 700;
       line-height: 1.45;
     }
 
     .credits-people {
       margin-top: 10px;
       display: grid;
-      gap: 8px;
+      gap: 10px;
     }
 
     .credits-person-row {
