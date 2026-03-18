@@ -52,7 +52,6 @@
         14: [
           {
             name: "Rabbit",
-            note: "Credits to Rabbit for the ideas given",
             avatar: "./images/rabbit_pfp.png"
           }
         ]
@@ -1022,12 +1021,13 @@
           name.className = "day-credit-name";
           name.textContent = entry.name;
 
-          var note = document.createElement("p");
-          note.className = "day-credit-note";
-          note.textContent = entry.note || "";
-
           body.appendChild(name);
-          body.appendChild(note);
+          if (typeof entry.note === "string" && entry.note.trim()) {
+            var note = document.createElement("p");
+            note.className = "day-credit-note";
+            note.textContent = entry.note;
+            body.appendChild(note);
+          }
 
           item.appendChild(avatarWrap);
           item.appendChild(body);
