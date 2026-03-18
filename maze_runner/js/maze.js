@@ -54,6 +54,7 @@
         people: [
           { name: "JIKOSU", avatar: "./images/JIKOSU_pfp.png" },
           { name: "Lysrix", avatar: "./images/lysrix_pfp.png" },
+          { name: "Ninnginni", avatar: "./images/ninnginni_pfp.png" },
           { name: "Rabbit", avatar: "./images/rabbit_pfp.png" },
           { name: "space fan", avatar: "./images/space_fan_pfp.png" }
         ]
