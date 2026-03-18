@@ -1,6 +1,8 @@
 [[DAY]]
 DAY 14 — THE FIRST ATTEMPT
 
+Credits to Rabbit for the ideas given
+
 Nobody hesitates this morning.
 
 That is new. That is the thing that is different from every other morning in the fourteen days of Aurora's Rest's existence, including the ones that came after the fire. Before, hesitation was the texture of waking up here, the body's reasonable objection to the day's reasonable dangers. Now the hesitation is gone and what replaced it is not courage exactly. It is the specific absence of the part of the brain that argues with what is necessary.
@@ -390,3 +392,382 @@ And somewhere in the amber sub-levels of the Maze, a notebook is closed and a wo
 
 Almost.
 [[NARRATIVE]]
+
+[[NIGHT]]
+NIGHT 14 — THE ARMY OF MEMORY
+
+[[NARRATIVE]]
+The machines breathe.
+
+Not metaphorically. The infrastructure of the sub-level runs on pneumatic cycles that have a respiratory quality, a pressurized intake followed by a controlled release, repeated at intervals that the human nervous system registers as biological before the mind corrects the interpretation. The sound fills the room the way breath fills a room. The room is metal. The room is clean. The room is lit by surgical arrays positioned at angles that eliminate shadow entirely, because shadow implies hiding and nothing in this room is hidden. Everything in this room is displayed.
+
+Schwalbe stands at the center of it with his hands behind his back and the expression of someone about to explain something they find genuinely interesting.
+
+The frames are suspended from ceiling mounts at intervals across the length of the room, each one held in a hydraulic cradle that adjusts to maintain the frame's position during the active calibration cycles. The frames are roughly humanoid in proportion but not precisely humanoid, the dimensions slightly wrong in ways that are immediately legible to the eye without being immediately nameable, the shoulder width fractionally too broad, the limb articulation slightly too jointed, the head positioning fractionally too forward, the aggregate wrongness of something that was built from a description of a human rather than from a human.
+
+Cables run from the ceiling mounts into the frames like roots finding water, the bundles thicker at the torso and branching to finer lines at the extremities, and where the cables meet the frame surfaces the junctions are surgical in their precision, the integration of the mechanical and the structural done with a care that is itself disturbing because it implies that care was taken.
+
+The hydraulic hum runs underneath all of it, the sound of systems cycling through operational checks, the maintenance rhythm of something that has been running for longer than anyone in Aurora's Rest has been inside this structure.
+
+Ninnginni stands at the room's entrance and looks at the frames.
+
+He looks at them for a long time without speaking.
+
+Schwalbe says, "Phase two."
+
+Ninnginni says, very quietly, "What are they."
+
+"Continuity of function," Schwalbe says. He walks toward the nearest frame the way a curator walks toward an exhibit, with the ownership of familiarity and the pleasure of someone about to share something they made. "Identity is data. The body is hardware. Memory is executable code. The hardware fails. The code does not have to."
+
+Ninnginni takes one step into the room and stops.
+
+The frame nearest to him is wearing burned cloth.
+
+Not incorporated into the chassis. Wearing it. The fabric is fused at certain points where the heat integration process made contact but hanging freely elsewhere, the remnants of something that was on a person when the person stopped being a person and became data that could be preserved. The posture of the frame is specific. The way the shoulders sit, the angle of the head, the particular distribution of weight across the cradle that the hydraulics are compensating for. The posture is specific because it was copied.
+
+A voice module in the frame's chest housing produces a sound.
+
+It is not language. It is a fragment of something that was language, a phoneme cluster that the vocal reconstruction system has not yet assembled into coherent output, and it cycles through the fragment twice before the calibration suppresses it. The sound it makes is close enough to a laugh that the body responds before the mind refuses it.
+
+Ninnginni takes one step back.
+
+He does not leave the room.
+
+"This one is not complete," Schwalbe says, gesturing to the frame in burned cloth. "The neural core mapping is still in early integration. The behavioral library requires another twelve to fourteen hours of processing before the tactical systems become operational." He moves to the next frame. "This one is further along."
+
+The second frame is larger. The chassis is built for sustained physical engagement, the proportions adjusted for impact absorption and force generation, the limb articulation designed for close-quarters mechanics. The facial surface is incomplete, the reconstruction covering the left side but leaving the right side as exposed structural mesh, and in the gap between the two the suggestion of a face is visible in the underlying geometry. Not a face. The ghost of one. The dimensional memory of one, translated into metal and mesh at seventy-three percent fidelity.
+
+Ninnginni looks at the right side of the frame.
+
+At the underlying geometry.
+
+He recognizes the architecture of that face.
+
+He says, "Stop."
+
+Schwalbe says, "The combat frame is the most technically complex in the current array. The neural core required significant reconstruction because the source material was heavily traumatized at time of acquisition. But the behavioral signature is preserved. The aggression-toward-threat index, the spatial processing patterns, the specific combat decision tree. All of it executable."
+
+Ninnginni says, "Stop talking about it like that."
+
+Schwalbe looks at him with the specific patience of someone who has had this conversation before with different people. "Like what."
+
+"Like he is data."
+
+"He is also data," Schwalbe says. "He was also a person. Both things were true while he was alive. One of them continues to be true now that he is not. I preserved the part that continues."
+
+The third frame is smaller than the others.
+
+Its chassis is built differently, the proportions reflecting a frame designed for cognitive processing rather than physical engagement, the head housing larger relative to the body to accommodate the neural array that is visible through the transparent panel in the crown. The hands are detailed, the articulation of the fingers capturing a specific resting position that is not generic, that belonged to a specific person and the way that specific person held their hands when they were thinking.
+
+The neural core inside the head housing pulses with a slow amber light.
+
+Ninnginni looks at the amber pulse.
+
+He looks at it for a long time.
+
+Schwalbe says, "The cognitive frame is the most complete. The neural mapping was exceptionally clean. High meaning-construction tendency produces a particularly rich behavioral library. The language processing architecture alone has generated twelve hundred logged outputs during integration testing." He pauses. "The last statement before acquisition was especially useful as a baseline calibration point. The story continues without the storyteller. We used it to anchor the personality matrix."
+
+Something crosses Ninnginni's face that is not a single emotion and does not resolve into one. It is the expression of a mind receiving too many incompatible inputs simultaneously, the fascination and the horror and the grief and the fury all arriving at the same moment and finding no single channel to occupy.
+
+He does not leave the room.
+
+He should leave the room.
+
+He does not.
+
+Then the cat appears.
+
+It emerges from behind the hydraulic housing of the third frame with the unhurried confidence of something that has been in this room for longer than any of the current occupants and finds the machinery entirely unremarkable. It is fat in the specific way that animals become fat when they have found a reliable heat source and have no reason to move far from it, the operational warmth of the sub-level infrastructure apparently meeting the thermal requirements of a tabby cat with considerable efficiency. Its fur is the color of autumn leaves past their peak, orange and brown and grey in equal measure, and it walks through the surgical light with the specific dignity of something that has decided it belongs everywhere it is.
+
+It walks up to Ninnginni and sits on his foot.
+
+Ninnginni looks down at it.
+
+The cat looks up at him.
+
+He says, without thinking, "Soup."
+
+The name arrives before the decision to name anything. It arrives the way Frodge's name arrived for SomeDucks, from somewhere below the level of intention, from the part of a person that is not running calculations or managing moral frameworks or deciding what role to play in a designed experiment. The part that just responds to a fat cat on a foot.
+
+Soup blinks slowly.
+
+Ninnginni crouches and puts his hand on the cat's back and the cat tolerates this with the specific grace of something that is doing him a favor and knows it. The warmth of the animal against his palm is the first warmth that does not come from a wall in however many days he has been in this sub-level counting imprecisely.
+
+Schwalbe watches this.
+
+He says nothing for a moment. Then he says, "She came with the infrastructure. I do not know her origin. The anomaly register cannot account for her the same way it cannot account for the ducks."
+
+Ninnginni looks up from the cat. "What do you mean."
+
+Schwalbe says, "The system did not introduce her. She is simply here. As yours are simply there." He pauses. "I find it interesting."
+
+Ninnginni stands.
+
+Soup moves to his feet and walks alongside him as he moves further into the room, and he lets her, and the allowing of it is the first spontaneous human act he has performed since Aurora's Rest burned and he came down here, and it splits something open in him that he has been managing through sheer cognitive pressure for days. The split is not large. It is not visible on his face. But it is real, and it runs along the fault line between who he was in Aurora's Rest and whatever he is in the process of becoming in this room, and the crack in that fault line is the shape of a fat cat's footsteps.
+
+He does not leave.
+
+The crack does not become a fracture.
+
+He looks at the frames. He looks at Schwalbe. He looks at the neural array pulsing amber in the cognitive frame's head housing.
+
+He says, "The movement calibration on the combat frame is wrong."
+
+Schwalbe looks at him.
+
+"The shoulder articulation is compensating left on impact response. It will bias the attack vector consistently and become predictable." Ninnginni moves toward the frame and studies the joint housing without touching it. "The source material moved differently. Heavier on the right. The weight distribution needs recalibration."
+
+Schwalbe says, "You can access the calibration interface from the terminal on the left housing."
+
+Ninnginni goes to the terminal.
+
+Soup sits at his feet while he works.
+
+He tells himself he is making it more accurate to the source. He tells himself if these things are going to exist anyway they should at least be correctly built. He tells himself this is engineering, not complicity, the way a weapons designer separates the technical problem from its application, the way the person who builds the cage does not need to answer for what goes inside it.
+
+He tells himself these things and his hands move across the calibration interface and the combat frame's shoulder articulation adjusts in small precise increments toward the specific movement signature of someone who is now a chassis in a hydraulic cradle, and Soup purrs against his ankle, and the machines breathe.
+
+Far above, in the section of the Maze that is stone rather than metal, the group has gone through the safe door.
+
+The transition is not cinematic. There is no dramatic threshold moment, no change in the quality of the air or the quality of the light that would tell a body it has crossed from one world to another. There is only the door, warm against the palm, and then the corridor on the other side, and then the room at the end of the corridor, and then the room itself.
+
+The room is not stone.
+
+It is not corridor. It is not the organic mechanical horror of the nest chamber or the ancient-modern paradox of the door itself. It is a room. A built room, with dimensions that follow human architectural logic rather than Maze architectural logic, the ceiling at a height that does not require ducking and does not reach into darkness, the walls smooth and flat and finished in a grey that is neither warm nor cold but simply functional. Along each wall, at intervals, recessed beds are built into the structure, coffin-shaped in their narrowness but padded, fitted with a covering material that is not cloth but resembles it closely enough that the body does not object.
+
+The air is recycled. Filtered. Clean in the way only mechanical filtration produces clean, without the mineral content of real air or the biological complexity of outdoor air. It tastes of nothing, which in the Maze is a new experience, because every previous space has tasted of something, stone or ash or water or blood or cold.
+
+Galaxy does not like the room.
+
+He enters it last, behind the group, and stands at the entrance for a long moment with his head lowered and his eyes moving across the dimensions of the space with the assessment of something whose entire operational logic is built around territory, around the ability to read a space for exits and angles and the distances that allow effective response. The room has four walls. One entrance. The walls do not move. The ceiling does not have tunnels. There is nowhere to be above the floor except directly above the floor, which means there is nowhere to patrol from, which means the space is wrong in every direction that matters to what he is now.
+
+He paces the perimeter once. Twice. His claws find the smooth wall surface and do not have the purchase of stone so he does not climb, he simply touches and continues, moving the rectangle of the room in the confined stride of something that knows it is confined and is processing the knowledge through its body because that is where Galaxy processes things now. His breathing is audible, deeper and more effortful than his Maze breathing, the respiratory system compensating for an instinctive stress response.
+
+Toad watches him from the center of the room. He says, "Galaxy. Hey."
+
+Galaxy looks at him.
+
+Toad says, "I know. I know it is wrong. It is wrong for me too, in a different way. But it is safe."
+
+Galaxy looks at the walls.
+
+Toad says, "As safe as anything has been."
+
+Galaxy stops pacing. He does not sit on the wall bed. He goes to the corner farthest from the entrance and sits on the floor, back to two walls, eyes on the door, and his breathing gradually regularizes into something less distressed, the body finding the equilibrium that the mind has accepted.
+
+Rabbit watches this and then looks at Frucket on his arm and thinks about what it means that the duck has been calm since they came through the door, and what it means that Frodge has been calm, and whether the ducks know something about this room that the humans do not yet know.
+
+He decides to trust the ducks.
+
+He sits down on the floor near Galaxy, not in one of the wall beds, and Frucket settles in his lap and the two of them hold the corner together in a way that requires no conversation.
+
+Then Schwalbe's voice appears in the room.
+
+Not from any visible source. From the room itself, from the walls or the ceiling or the architecture of the space conducting the sound from some transmitter built into its structure. The voice is calm. It is the same voice from the notes. The same voice Ninnginni hears in the sub-level wall speakers, though nobody in this room knows that yet. It is the voice of someone who has decided that hostility would be less efficient than courtesy.
+
+"You have done well to reach this point."
+
+Nobody moves.
+
+"You should rest. Tomorrow will require what today has used. The room is safe for the night. The lock will seal at the current state and nothing will enter from the corridor side."
+
+Rally mally says, to the room, to the voice, "And the other side."
+
+A pause.
+
+"There is no other side," Schwalbe says. "Not yet."
+
+The sentence lands exactly as intended. Not a threat. An implication. The kind of statement that is more disturbing than a threat because a threat has a shape and this has only an edge.
+
+Schwalbe says, "Rest."
+
+And then the voice is gone and the room is its own silence again and the group stands in it and processes what it means to be told to rest by the person who built the place they are trapped in.
+
+Golden says, "We do not rest on his schedule."
+
+Rally mally says, "We rest on ours. Which happens to be now."
+
+Golden looks at him. "You trust this room."
+
+"I trust that we cannot function without sleep and this room has walls and a door that seals." Rally mally looks around the space, at the wall beds, at Galaxy in the corner, at Rabbit on the floor with Frucket. "I do not trust Schwalbe. I trust our need for rest."
+
+Polaris says, "He wants us functional. He has demonstrated this consistently. Non-functional subjects are not useful to him." She looks at the wall beds with the analytical calm of someone assessing a resource rather than a gift. "He will not harm us tonight."
+
+Duccarian says, "The question is not whether he will harm us tonight. The question is what he is preparing for tomorrow while we sleep." He sets Frodge down on the floor and the duck walks a slow circle of the room before returning to his feet. "A god-architect does not give his subjects rest from kindness. He gives them rest because rested subjects produce better data."
+
+Lysrix says, "Does it matter why, if the rest is real."
+
+Duccarian says, "It matters for what we do with the rest."
+
+The drone enters through a panel in the wall that was not visible as a panel until it opened, the mechanism smooth and flush with the surface, and it carries food.
+
+Real food.
+
+Not the compressed survival rations from the supply crates, not the orchard produce that was twelve days of cultivation and compromise, not anything that was designed to keep a body functional under duress. Food that was prepared. Proteins and grains and things that required heat and time and the application of something that resembles care, arranged in containers that are clinical in their packaging but whose contents belong to a world outside the Maze, a world where meals are made and not assembled.
+
+The drone sets the containers down on the floor with a precision that has no warmth in it and retreats back through the panel.
+
+The group looks at the food.
+
+space fan says, "It is real."
+
+Toad crouches beside the nearest container and opens it and the smell reaches the room before anyone speaks again. He sits there with the open container in his hands and the smell of something properly prepared rising from it and his face does something that is not any single emotion but is the aggregate of twelve people who have been surviving and have just been handed evidence that something outside the survival exists and has been existing all along, somewhere, while they were burning and running and burying and hoping.
+
+He says, very quietly, "They always had this."
+
+Nobody answers.
+
+He says, "They always had this and they were watching us eat compressed rations and drink boiled recirculated water and they always had this."
+
+The anger in his voice is not loud. It is the specific low frequency of anger that arrives after grief, after the grief has been fully occupied and the body has finished with it and found something else waiting underneath.
+
+He eats anyway.
+
+They all eat.
+
+The eating is not celebratory and is not resigned. It is the act of people who understand that the body's needs are not suspended by the circumstances of their meeting and who eat because the food is there and tomorrow requires what today has used and Schwalbe said rest and they will rest on their own terms which happen to involve eating the food.
+
+JIKOSU eats slowly and watches the panel where the drone entered and does not look away from it for a long time.
+
+Golden eats standing, facing the sealed door, as if sitting would concede something.
+
+Polaris eats efficiently, prioritizing protein content in her selections with the automatic logic of someone who has been managing physical output against nutritional input since before Aurora's Rest.
+
+Duccarian eats with Frodge at his feet and breaks a small piece off and sets it beside the duck and Frodge examines it with the philosophical attention he applies to all things before eating it.
+
+Rabbit feeds Frucket from his palm and eats with his other hand and does not speak.
+
+space fan eats last, after she has confirmed that everyone else has eaten, and she eats all of it without tasting it, which is the efficiency of someone who has externalized the act to the point where the sensory experience is irrelevant.
+
+Lysrix says, midway through the meal, "After we go through the door. What is on the other side."
+
+JIKOSU says, "I do not know with certainty."
+
+Lysrix says, "With uncertainty."
+
+JIKOSU looks at the food in his hands. "The outer architecture of the Maze connects to an external management infrastructure. Control systems. Observation stations. The machinery of whatever runs this place from the outside." He pauses. "I believe the outer architecture can be accessed from beyond the door. I believe the access points are guarded."
+
+Rally mally says, "By what."
+
+JIKOSU says, "I do not know yet."
+
+The yet lands in the room and stays there.
+
+Golden says, "Whatever it is, we go through it."
+
+Polaris says, "We go through it intelligently. Not just through it."
+
+Golden looks at her. "I said what I said."
+
+Polaris says, "I heard what you said. I am telling you what we will do."
+
+Golden holds her gaze for a moment and then something in his posture concedes the point without conceding the sentiment, which is the closest Golden gets to collaboration and has been sufficient so far.
+
+Rally mally sets his container down and looks at each person in the room, taking the count that he has taken every morning since Day 1, each face, each state, each level of function. He says, "Tomorrow we find the remaining nodes. We do not know how many trips that will take. We do not know what the Maze puts between us and them." He pauses. "We know the door is real. We know the door opens when the plates align. We know JIKOSU has knowledge that helps us. We know Galaxy can read things we cannot read. We know Rabbit is navigating better every day. We know Polaris plans better than any of us." He looks at each of them again. "We have enough."
+
+Duccarian says, "We have always had enough. The question is always enough for what."
+
+Rally mally says, "Enough to choose. That is all the Maze is testing now. Not whether we survive. What we choose when the surviving is possible."
+
+The room is quiet after that.
+
+The food is finished. The drone does not return. The panel seals back to flush and the wall is a wall again. Toad takes the empty containers and stacks them in the corner with the habitual tidiness of someone who has been maintaining supply order since the beginning and cannot stop even here, because the habits of Aurora's Rest are in his hands and his hands do not know they are somewhere else.
+
+Lysrix takes a position near the sealed door with her back to the wall and her eyes on the entrance, the same position she has occupied every night since Night 1, the choice of the tactical mind that does not turn off when the lights do.
+
+Polaris lies on one of the wall beds and looks at the ceiling and processes. Her eyes are open. She is working.
+
+JIKOSU sits upright against the wall near the entrance and closes his eyes and does not sleep and does not explain why.
+
+space fan lies down and her medical kit is within arm's reach and her eyes close and her body makes the choice her mind has been deferring for twelve hours.
+
+Golden lies on the floor near the center of the room. Not a wall bed. Not the corner with Galaxy. The center. The position of someone who refuses to be in proximity to a wall they did not choose.
+
+Duccarian lies near Frodge with one hand resting on the duck's back. Frodge breathes slowly. The rhythm is the same rhythm that has been present since Day 6, the rhythm of something that does not know it should not be here and therefore is entirely here.
+
+Rabbit sits in the corner with Galaxy and Frucket is asleep in his lap and Galaxy is not asleep but his eyes are half-closed and his breathing has settled and the two of them are holding the corner together in the specific solidarity of things that have found each other useful and have stopped needing to discuss it.
+
+Rally mally does not choose a wall bed either. He sits on the floor in the center of the room with the runner notes in his hands and the symbol plate sketches spread before him in the low ambient light of the sealed room, working through the node sequence logic one more time, looking for the pattern that tells him the order, the five remaining positions in a Maze that is now moving into a mode he does not have a complete map for.
+
+The lights do not go out on a schedule.
+
+They simply dim, slowly, over the course of several minutes, the surgical precision of the illumination softening toward something that is not dark but is darker, the room finding the ambient level that the infrastructure has decided is appropriate for the bodies inside it.
+
+The machines breathe.
+
+Somewhere below this room, in the amber light of the sub-level, Ninnginni works at the calibration terminal with Soup at his feet and the frames suspended around him in their cradles, and the neural array in the cognitive frame pulses its slow amber rhythm, and the combat frame's shoulder articulation adjusts in increments toward a movement signature that belonged to a person who is not a person anymore, and the voice module in the frame with the burned cloth cycles through its fragment of a laugh and stops and cycles again.
+
+He tells himself he is making them accurate.
+
+He tells himself accuracy is not complicity.
+
+He tells himself a lot of things and his hands continue to move and Soup purrs and the machines breathe and somewhere in the runner notes spread on the metal floor of the room above, in Kiwi's handwriting on three specific pages, the corridor logic of a person who is now a neural array waits to be read by the people who knew him and loved him and are sleeping in the room that was built for them by the man who preserved him as executable code.
+
+The room is very quiet.
+
+The ducks breathe.
+
+The group breathes.
+
+The machines breathe.
+
+And the symbol plates on the safe door cycle through their patient sequence in the sealed corridor outside, the indicator lights pulsing in the dark, counting toward an alignment that is five nodes away, five choices away, five encounters with whatever the phase two architecture contains between here and the outside.
+
+Tomorrow the nodes.
+
+Tonight the breathing.
+
+The Maze does not shift tonight.
+
+It is not resting.
+
+It is watching the data.
+
+It has all the time the experiment requires.
+
+[[LOG]]
+LOCATION STATUS
+Group secured inside safe room beyond escape door. Room sealed by internal lock system for night duration. Schwalbe confirmed room safety via room audio system. Group assessed this claim as tactically valid regardless of intent.
+
+SUPPLY LOG
+Drone food delivery received. Contents: fresh prepared food, clinical packaging, unknown origin. Group consumed. Emotional response noted. Toad psychological impact logged.
+
+SCHWALBE CONTACT LOG
+Voice contact made via room audio system. Tone: calm, welcoming, directive. Content: instruction to rest, confirmation of lock status, implication of future phase. No explicit threat. Contact terminated after brief exchange.
+
+GALAXY BEHAVIORAL LOG
+Claustrophobic stress response observed in enclosed room environment. Perimeter pacing, wall contact, respiratory elevation. Stabilized. Refused wall bed. Floor position in corner maintained with Rabbit.
+
+DUCK STATUS
+Frodge — calm since door entry. Ate food provided by Duccarian. Normal behavioral indicators.
+Frucket — calm since door entry. Sleeping in Rabbit's lap. Normal behavioral indicators.
+Anomaly note: both ducks showed immediate calm upon entering safe room. Consistent with prior pattern of anomalous threat sensing.
+
+SUB-LEVEL LOG
+Schwalbe phase two infrastructure observed by Ninnginni. Contents: suspended mechanical frames, humanoid chassis construction, neural core preservation arrays, behavioral library integration systems. Specific frames identified as reconstructed from deceased subjects. Ninnginni began calibration assistance. Moral framework: rationalized as accuracy improvement. Cat designated Soup present. Origin unknown. System anomaly.
+
+NIGHT STATUS
+All Peeps present in safe room. No Maze activity detected. No Quigg contact. No C A R L resonance. First night inside Maze infrastructurerather than Aurora's Rest ruins.
+
+[[/lo]]
+Night 14 ends in the breathing dark of a room that was built for them by someone who does not see the difference between the building and the trapping.
+
+The ducks sleep.
+
+The group sleeps.
+
+The nodes wait.
+
+And in the sub-level, the amber light pulses in a rhythm that used to belong to a person, and Ninnginni closes a calibration interface and sits down on the floor beside a fat tabby cat and does not open his notebook and does not write anything and stares at the machines breathing around him in the clean surgical silence of a room full of people who are not people anymore.
+
+Soup puts her head in his lap.
+
+He puts his hand on her back.
+
+And outside, somewhere in the corridor system between this room and the surface of the Maze and the outside world that none of them have seen in fourteen days, something that is not a Quigg and is not C A R L and has no category in any map they have made is almost finished being built.
+
+Almost.
+
+The word that has been doing the most work in this story keeps doing it.
+
+In both directions.

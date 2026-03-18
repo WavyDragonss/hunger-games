@@ -48,6 +48,15 @@
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
       var IMPORTANT_DAY_NUMBERS = [8, 14];
+      var DAY_CREDITS = {
+        14: [
+          {
+            name: "Rabbit",
+            note: "Credits to Rabbit for the ideas given",
+            avatar: "./images/rabbit_pfp.png"
+          }
+        ]
+      };
       var releaseIntervalId = null;
 
       var STORE = {
@@ -614,6 +623,12 @@
         appendImportantBadgeIfNeeded(heading, dayData.dayNumber || (dayIndex + 1));
         section.appendChild(heading);
 
+        var dayNumber = dayData.dayNumber || (dayIndex + 1);
+        var dayCredits = getCreditsForDay(dayNumber);
+        if (dayCredits.length) {
+          section.appendChild(renderDayCredits(dayCredits));
+        }
+
         var content = document.createElement("div");
         content.className = "day-content";
 
@@ -935,6 +950,67 @@
         badge.className = "important-badge";
         badge.textContent = "IMPORTANT";
         headingEl.appendChild(badge);
+      }
+
+      function getCreditsForDay(dayNumber) {
+        var entries = DAY_CREDITS[dayNumber];
+        if (!Array.isArray(entries)) {
+          return [];
+        }
+        return entries.filter(function (entry) {
+          return entry && typeof entry.name === "string" && entry.name.trim();
+        });
+      }
+
+      function renderDayCredits(credits) {
+        var panel = document.createElement("section");
+        panel.className = "day-credits";
+        panel.setAttribute("aria-label", "Day credits");
+
+        var title = document.createElement("h3");
+        title.className = "day-credits-title";
+        title.textContent = "Credits";
+        panel.appendChild(title);
+
+        credits.forEach(function (entry) {
+          var item = document.createElement("article");
+          item.className = "day-credit-item";
+
+          var avatarWrap = document.createElement("div");
+          avatarWrap.className = "day-credit-avatar-wrap";
+
+          var avatar = document.createElement("img");
+          avatar.className = "day-credit-avatar";
+          avatar.src = entry.avatar || "";
+          avatar.alt = entry.name + " profile picture";
+          avatar.loading = "lazy";
+          avatarWrap.appendChild(avatar);
+
+          var statusDot = document.createElement("span");
+          statusDot.className = "day-credit-status-dot";
+          statusDot.setAttribute("aria-hidden", "true");
+          avatarWrap.appendChild(statusDot);
+
+          var body = document.createElement("div");
+          body.className = "day-credit-body";
+
+          var name = document.createElement("p");
+          name.className = "day-credit-name";
+          name.textContent = entry.name;
+
+          var note = document.createElement("p");
+          note.className = "day-credit-note";
+          note.textContent = entry.note || "";
+
+          body.appendChild(name);
+          body.appendChild(note);
+
+          item.appendChild(avatarWrap);
+          item.appendChild(body);
+          panel.appendChild(item);
+        });
+
+        return panel;
       }
 
       function hasNameBoundary(text, start, end) {
