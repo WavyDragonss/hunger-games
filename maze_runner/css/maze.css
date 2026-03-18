@@ -244,9 +244,16 @@
       flex-wrap: wrap;
     }
 
+    .toolbar-left {
+      flex: 1 1 680px;
+      min-width: 0;
+      flex-wrap: nowrap;
+    }
+
     .search {
-      width: min(520px, 100%);
-      flex: 1 1 420px;
+      width: min(760px, 100%);
+      min-width: 360px;
+      flex: 1 1 620px;
       min-height: 40px;
       border-radius: 10px;
       border: 1px solid var(--border);
@@ -1066,6 +1073,16 @@
 
       .toolbar-inner {
         grid-template-columns: 1fr;
+      }
+
+      .toolbar-left {
+        flex-wrap: wrap;
+      }
+
+      .search {
+        min-width: 100%;
+        width: 100%;
+        flex: 1 1 100%;
       }
     }
 

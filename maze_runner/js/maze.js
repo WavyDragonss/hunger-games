@@ -48,16 +48,14 @@
       var RELEASE_CONFIG = window.HUNGER_RELEASE_CONFIG || {};
       var RELEASE_TICK_MS = 1000;
       var IMPORTANT_DAY_NUMBERS = [8, 14];
-      var DAY_THANKS = {
-        14: {
-          message: "Thank you for the support and ideas!",
-          people: [
-            { name: "JIKOSU", avatar: "./images/JIKOSU_pfp.png" },
-            { name: "Lysrix", avatar: "./images/lysrix_pfp.png" },
-            { name: "Rabbit", avatar: "./images/rabbit_pfp.png" },
-            { name: "space fan", avatar: "./images/space_fan_pfp.png" }
-          ]
-        }
+      var GLOBAL_THANKS = {
+        message: "Thank you for the support and ideas!",
+        people: [
+          { name: "JIKOSU", avatar: "./images/JIKOSU_pfp.png" },
+          { name: "Lysrix", avatar: "./images/lysrix_pfp.png" },
+          { name: "Rabbit", avatar: "./images/rabbit_pfp.png" },
+          { name: "space fan", avatar: "./images/space_fan_pfp.png" }
+        ]
       };
       var releaseIntervalId = null;
 
@@ -402,9 +400,7 @@
         }
         creditsBody.replaceChildren();
 
-        var dayIndex = getCharacterPickerDayIndex();
-        var dayNumber = Number.isFinite(dayIndex) && dayIndex >= 0 ? (dayIndex + 1) : 0;
-        var entry = getThanksForDay(dayNumber);
+        var entry = getGlobalThanks();
 
         if (!entry) {
           var empty = document.createElement("p");
@@ -1047,8 +1043,8 @@
         headingEl.appendChild(badge);
       }
 
-      function getThanksForDay(dayNumber) {
-        var entry = DAY_THANKS[dayNumber];
+      function getGlobalThanks() {
+        var entry = GLOBAL_THANKS;
         if (!entry || typeof entry !== "object") {
           return null;
         }
