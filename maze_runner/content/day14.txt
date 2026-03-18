@@ -1,8 +1,6 @@
 [[DAY]]
 DAY 14 — THE FIRST ATTEMPT
 
-Credits to Rabbit for the ideas given
-
 Nobody hesitates this morning.
 
 That is new. That is the thing that is different from every other morning in the fourteen days of Aurora's Rest's existence, including the ones that came after the fire. Before, hesitation was the texture of waking up here, the body's reasonable objection to the day's reasonable dangers. Now the hesitation is gone and what replaced it is not courage exactly. It is the specific absence of the part of the brain that argues with what is necessary.
@@ -378,7 +376,8 @@ All remaining Peeps present. One fatality. space fan stable. Frodge and Frucket 
 [[/LOG]]
 Day 14 ends with one fewer voice and a door that is warm to the touch.
 
-In the ruins, space fan builds SomeDucks' marker alone while the others rest, her hands placing each stone with the clinical precision that is the only language available to her right now.
+As the light starts to cool, space fan arrives to them after seeing they haven't yet returned.
+And in the ruins, space fan builds SomeDucks' marker alone while the others rest, her hands placing each stone with the clinical precision that is the only language available to her right now.
 
 Frodge sits beside the marker when she finishes.
 
@@ -747,7 +746,7 @@ SUB-LEVEL LOG
 Schwalbe phase two infrastructure observed by Ninnginni. Contents: suspended mechanical frames, humanoid chassis construction, neural core preservation arrays, behavioral library integration systems. Specific frames identified as reconstructed from deceased subjects. Ninnginni began calibration assistance. Moral framework: rationalized as accuracy improvement. Cat designated Soup present. Origin unknown. System anomaly.
 
 NIGHT STATUS
-All Peeps present in safe room. No Maze activity detected. No Quigg contact. No C A R L resonance. First night inside Maze infrastructurerather than Aurora's Rest ruins.
+All Peeps present in safe room. No Maze activity detected. No Quigg contact. No C A R L resonance. First night inside Maze infrastructure rather than Aurora's Rest ruins.
 
 [[/lo]]
 Night 14 ends in the breathing dark of a room that was built for them by someone who does not see the difference between the building and the trapping.
