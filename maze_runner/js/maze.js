@@ -666,6 +666,9 @@
           blockEl.classList.add(reachedNight ? "phase-night" : "phase-day");
 
           block.lines.forEach(function (line) {
+            if (shouldSkipCreditLine(dayCredits, line.raw)) {
+              return;
+            }
             var lineNumber = 0;
             if (hasLineText(line)) {
               dayLineNumber += 1;
@@ -960,6 +963,27 @@
         return entries.filter(function (entry) {
           return entry && typeof entry.name === "string" && entry.name.trim();
         });
+      }
+
+      function shouldSkipCreditLine(credits, rawLine) {
+        if (!Array.isArray(credits) || !credits.length || typeof rawLine !== "string") {
+          return false;
+        }
+        var normalizedLine = normalizeCreditText(rawLine);
+        if (!normalizedLine) {
+          return false;
+        }
+        return credits.some(function (entry) {
+          return normalizeCreditText(entry.note || "") === normalizedLine;
+        });
+      }
+
+      function normalizeCreditText(text) {
+        return String(text)
+          .toLowerCase()
+          .replace(/^\s*\d+\.\s*/, "")
+          .replace(/\s+/g, " ")
+          .trim();
       }
 
       function renderDayCredits(credits) {
