@@ -395,7 +395,6 @@ Almost.
 [[NIGHT]]
 NIGHT 14 — THE ARMY OF MEMORY
 
-[[NARRATIVE]]
 The machines breathe.
 
 Not metaphorically. The infrastructure of the sub-level runs on pneumatic cycles that have a respiratory quality, a pressurized intake followed by a controlled release, repeated at intervals that the human nervous system registers as biological before the mind corrects the interpretation. The sound fills the room the way breath fills a room. The room is metal. The room is clean. The room is lit by surgical arrays positioned at angles that eliminate shadow entirely, because shadow implies hiding and nothing in this room is hidden. Everything in this room is displayed.
@@ -748,7 +747,7 @@ Schwalbe phase two infrastructure observed by Ninnginni. Contents: suspended mec
 NIGHT STATUS
 All Peeps present in safe room. No Maze activity detected. No Quigg contact. No C A R L resonance. First night inside Maze infrastructure rather than Aurora's Rest ruins.
 
-[[/lo]]
+[[/LOG]]
 Night 14 ends in the breathing dark of a room that was built for them by someone who does not see the difference between the building and the trapping.
 
 The ducks sleep.
@@ -770,3 +769,4 @@ Almost.
 The word that has been doing the most work in this story keeps doing it.
 
 In both directions.
+[[NARRATIVE]]
