@@ -33,32 +33,36 @@
         </div>
       </div>
       <div class="toolbar-right">
-        <select class="character-picker" id="characterPicker" aria-label="Pick character from current day">
-          <option value="">Character: none</option>
-        </select>
-        <div class="toolbar-chip" id="focusLabel">Character: none</div>
-        <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
-        <div class="toolbar-chip" id="nextUnlockLabel">Next unlock: --</div>
-        <details class="settings" id="settings">
-          <summary>Settings</summary>
-          <div class="settings-panel">
-            <label class="settings-row"><input type="radio" name="viewMode" value="paged" /> Paged mode</label>
-            <label class="settings-row"><input type="radio" name="viewMode" value="infinite" /> Infinite mode</label>
-            <label class="settings-row"><input id="povOnly" type="checkbox" /> Filter to selected character POV</label>
-            <label class="settings-row"><input id="compactHeaderOnScroll" type="checkbox" /> Minimal top bar on scroll <span class="not-working-badge">NOT WORKING</span></label>
-            <div class="settings-row settings-row-beta">
-              <label class="settings-inline-toggle"><input id="resumeReading" type="checkbox" /> Resume reading <span class="beta-badge">BETA</span></label>
-              <button class="settings-mini-btn" id="resumeReset" type="button">Reset spot</button>
+        <div class="toolbar-right-main">
+          <select class="character-picker" id="characterPicker" aria-label="Pick character from current day">
+            <option value="">Character: none</option>
+          </select>
+          <div class="toolbar-chip" id="focusLabel">Character: none</div>
+          <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
+          <div class="toolbar-chip" id="nextUnlockLabel">Next unlock: --</div>
+        </div>
+        <div class="toolbar-right-actions">
+          <details class="settings" id="settings">
+            <summary>Settings</summary>
+            <div class="settings-panel">
+              <label class="settings-row"><input type="radio" name="viewMode" value="paged" /> Paged mode</label>
+              <label class="settings-row"><input type="radio" name="viewMode" value="infinite" /> Infinite mode</label>
+              <label class="settings-row"><input id="povOnly" type="checkbox" /> Filter to selected character POV</label>
+              <label class="settings-row"><input id="compactHeaderOnScroll" type="checkbox" /> Minimal top bar on scroll <span class="not-working-badge">NOT WORKING</span></label>
+              <div class="settings-row settings-row-beta">
+                <label class="settings-inline-toggle"><input id="resumeReading" type="checkbox" /> Resume reading <span class="beta-badge">BETA</span></label>
+                <button class="settings-mini-btn" id="resumeReset" type="button">Reset spot</button>
+              </div>
+              <div class="settings-actions">
+                <button class="settings-mini-btn" id="dayOnlyToggle" type="button">Collapse daytime</button>
+              </div>
+              <button class="settings-mini-btn" id="widthToggle" type="button">Width: Narrow</button>
             </div>
-            <div class="settings-actions">
-              <button class="settings-mini-btn" id="dayOnlyToggle" type="button">Collapse daytime</button>
-            </div>
-            <button class="settings-mini-btn" id="widthToggle" type="button">Width: Narrow</button>
-          </div>
-        </details>
-        <a class="text-btn" href="./feedback.html">Feedback</a>
-        <button class="text-btn" id="creditsBtn" type="button" aria-expanded="false" aria-controls="creditsPanel">Credits</button>
-        <button class="text-btn" id="helpBtn" type="button" aria-expanded="false" aria-controls="helpPanel">Help</button>
+          </details>
+          <a class="text-btn" href="./feedback.html">Feedback</a>
+          <button class="text-btn" id="creditsBtn" type="button" aria-expanded="false" aria-controls="creditsPanel">Credits</button>
+          <button class="text-btn" id="helpBtn" type="button" aria-expanded="false" aria-controls="helpPanel">Help</button>
+        </div>
       </div>
     </div>
   </section>

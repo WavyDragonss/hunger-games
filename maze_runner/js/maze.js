@@ -1361,7 +1361,7 @@
 
         var info = RELEASE_SYSTEM.getNextUnlockInfo(state.days.length, RELEASE_CONFIG);
         if (!info) {
-          nextUnlockLabel.textContent = "Next unlock: all released";
+          nextUnlockLabel.textContent = "THESE GAMES ARE FINISHED";
           return;
         }
 
