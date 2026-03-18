@@ -414,10 +414,19 @@
         message.textContent = entry.message;
         creditsBody.appendChild(message);
 
+        var note = document.createElement("p");
+        note.className = "credits-note";
+        note.textContent = "In alphabetical order";
+        creditsBody.appendChild(note);
+
         var list = document.createElement("div");
         list.className = "credits-people";
 
-        entry.people.forEach(function (person) {
+        var sortedPeople = entry.people.slice().sort(function (a, b) {
+          return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+        });
+
+        sortedPeople.forEach(function (person) {
           var row = document.createElement("div");
           row.className = "credits-person-row";
 
