@@ -27,6 +27,10 @@
         <button class="text-btn" id="fontUp" type="button">A+</button>
         <button class="text-btn search-toggle" id="searchToggle" type="button" aria-label="Toggle search" aria-expanded="false">⌕</button>
         <input class="search" id="searchInput" type="search" placeholder="Search text..." autocomplete="off" spellcheck="false" />
+        <div class="nav-wrap" id="navWrap">
+          <button class="mode-btn" id="prevDay" type="button"><- Previous Day</button>
+          <button class="mode-btn" id="nextDay" type="button">Next Day -></button>
+        </div>
       </div>
       <div class="toolbar-right">
         <select class="character-picker" id="characterPicker" aria-label="Pick character from current day">
@@ -35,10 +39,6 @@
         <div class="toolbar-chip" id="focusLabel">Character: none</div>
         <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
         <div class="toolbar-chip" id="nextUnlockLabel">Next unlock: --</div>
-        <div class="nav-wrap" id="navWrap">
-          <button class="mode-btn" id="prevDay" type="button"><- Previous Day</button>
-          <button class="mode-btn" id="nextDay" type="button">Next Day -></button>
-        </div>
         <details class="settings" id="settings">
           <summary>Settings</summary>
           <div class="settings-panel">

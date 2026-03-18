@@ -137,6 +137,7 @@
         applyTheme(state.theme);
         applyWidthMode(state.widthMode);
         applyFontScale(state.fontScale);
+        syncSearchLayoutState();
         povOnlyInput.checked = state.povOnly;
         if (compactHeaderOnScrollInput) {
           compactHeaderOnScrollInput.checked = state.compactHeaderOnScroll;
@@ -483,6 +484,7 @@
 
       function onScrollOrResize() {
         scheduleResumeSnapshotWrite(220);
+        syncSearchLayoutState();
         if (state.rafPending) {
           return;
         }
@@ -502,6 +504,20 @@
         }
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
         document.body.classList.toggle("is-scrolled", scrollTop > 8);
+      }
+
+      function syncSearchLayoutState() {
+        if (!toolbarLeft || !searchToggleBtn) {
+          return;
+        }
+        if (window.innerWidth <= 860) {
+          toolbarLeft.classList.remove("search-open");
+          searchToggleBtn.setAttribute("aria-expanded", "false");
+          return;
+        }
+        if (!toolbarLeft.classList.contains("search-open")) {
+          searchToggleBtn.setAttribute("aria-expanded", "false");
+        }
       }
 
       function loadAllDays() {
