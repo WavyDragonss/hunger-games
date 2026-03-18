@@ -25,10 +25,6 @@
       <div class="toolbar-left">
         <button class="text-btn" id="fontDown" type="button">A-</button>
         <button class="text-btn" id="fontUp" type="button">A+</button>
-        <div class="toolbar-resume">
-          <label class="settings-inline-toggle"><input id="resumeReading" type="checkbox" /> Resume reading <span class="beta-badge">BETA</span></label>
-          <button class="settings-mini-btn" id="resumeReset" type="button">Reset spot</button>
-        </div>
         <input class="search" id="searchInput" type="search" placeholder="Search text..." autocomplete="off" spellcheck="false" />
       </div>
       <div class="toolbar-right">
@@ -48,7 +44,11 @@
             <label class="settings-row"><input type="radio" name="viewMode" value="paged" /> Paged mode</label>
             <label class="settings-row"><input type="radio" name="viewMode" value="infinite" /> Infinite mode</label>
             <label class="settings-row"><input id="povOnly" type="checkbox" /> Filter to selected character POV</label>
-            <label class="settings-row"><input id="compactHeaderOnScroll" type="checkbox" /> Minimal top bar on scroll</label>
+            <label class="settings-row"><input id="compactHeaderOnScroll" type="checkbox" /> Minimal top bar on scroll <span class="not-working-badge">NOT WORKING</span></label>
+            <div class="settings-row settings-row-beta">
+              <label class="settings-inline-toggle"><input id="resumeReading" type="checkbox" /> Resume reading <span class="beta-badge">BETA</span></label>
+              <button class="settings-mini-btn" id="resumeReset" type="button">Reset spot</button>
+            </div>
             <div class="settings-actions">
               <button class="settings-mini-btn" id="dayOnlyToggle" type="button">Collapse daytime</button>
             </div>
@@ -56,6 +56,7 @@
           </div>
         </details>
         <a class="text-btn" href="./feedback.html">Feedback</a>
+        <button class="text-btn" id="creditsBtn" type="button" aria-expanded="false" aria-controls="creditsPanel">Credits</button>
         <button class="text-btn" id="helpBtn" type="button" aria-expanded="false" aria-controls="helpPanel">Help</button>
       </div>
     </div>
@@ -82,6 +83,16 @@
         <p>Use this as your Maze Runner chronicle viewer. Keep day files in the content folder with proper tags.</p>
         <p>For any technical help or bugs contact WavyDragons (wavydragons1).</p>
       </div>
+    </div>
+  </div>
+
+  <div class="help-modal hidden" id="creditsPanel" role="dialog" aria-modal="true" aria-labelledby="creditsTitle">
+    <div class="help-dialog">
+      <div class="help-header">
+        <h2 id="creditsTitle">Credits</h2>
+        <button class="text-btn help-close" id="creditsCloseBtn" type="button" aria-label="Close Credits">Close</button>
+      </div>
+      <div class="help-body" id="creditsBody"></div>
     </div>
   </div>
 

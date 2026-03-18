@@ -111,6 +111,10 @@
       var navWrap = document.getElementById("navWrap");
       var bottomNextWrap = document.getElementById("bottomNextWrap");
       var settings = document.getElementById("settings");
+      var creditsBtn = document.getElementById("creditsBtn");
+      var creditsPanel = document.getElementById("creditsPanel");
+      var creditsBody = document.getElementById("creditsBody");
+      var creditsCloseBtn = document.getElementById("creditsCloseBtn");
       var helpBtn = document.getElementById("helpBtn");
       var helpPanel = document.getElementById("helpPanel");
       var helpCloseBtn = document.getElementById("helpCloseBtn");
@@ -273,6 +277,26 @@
           goToNextDay();
         });
 
+        if (creditsBtn) {
+          creditsBtn.addEventListener("click", function () {
+            openCredits();
+          });
+        }
+
+        if (creditsCloseBtn) {
+          creditsCloseBtn.addEventListener("click", function () {
+            closeCredits();
+          });
+        }
+
+        if (creditsPanel) {
+          creditsPanel.addEventListener("click", function (event) {
+            if (event.target === creditsPanel) {
+              closeCredits();
+            }
+          });
+        }
+
         helpBtn.addEventListener("click", function () {
           openHelp();
         });
@@ -331,6 +355,7 @@
 
         document.addEventListener("keydown", function (event) {
           if (event.key === "Escape") {
+            closeCredits();
             closeHelp();
           }
         });
@@ -340,6 +365,7 @@
       }
 
       function openHelp() {
+        closeCredits();
         helpPanel.classList.remove("hidden");
         helpBtn.setAttribute("aria-expanded", "true");
       }
@@ -347,6 +373,76 @@
       function closeHelp() {
         helpPanel.classList.add("hidden");
         helpBtn.setAttribute("aria-expanded", "false");
+      }
+
+      function openCredits() {
+        if (!creditsPanel || !creditsBody || !creditsBtn) {
+          return;
+        }
+        closeHelp();
+        renderCreditsModalContent();
+        creditsPanel.classList.remove("hidden");
+        creditsBtn.setAttribute("aria-expanded", "true");
+      }
+
+      function closeCredits() {
+        if (!creditsPanel || !creditsBtn) {
+          return;
+        }
+        creditsPanel.classList.add("hidden");
+        creditsBtn.setAttribute("aria-expanded", "false");
+      }
+
+      function renderCreditsModalContent() {
+        if (!creditsBody) {
+          return;
+        }
+        creditsBody.replaceChildren();
+
+        var dayIndex = getCharacterPickerDayIndex();
+        var dayNumber = Number.isFinite(dayIndex) && dayIndex >= 0 ? (dayIndex + 1) : 0;
+        var entry = getThanksForDay(dayNumber);
+
+        if (!entry) {
+          var empty = document.createElement("p");
+          empty.textContent = "No credits configured for this day.";
+          creditsBody.appendChild(empty);
+          return;
+        }
+
+        var line = document.createElement("p");
+        line.className = "credits-message";
+
+        var preface = document.createElement("span");
+        preface.className = "day-thanks-text";
+        preface.textContent = (entry.preface || "").trim() + " ";
+        line.appendChild(preface);
+
+        var profile = document.createElement("span");
+        profile.className = "day-thanks-profile";
+
+        var avatar = document.createElement("img");
+        avatar.className = "day-thanks-avatar";
+        avatar.src = entry.avatar || "";
+        avatar.alt = entry.name + " profile picture";
+        avatar.loading = "lazy";
+        profile.appendChild(avatar);
+
+        var name = document.createElement("span");
+        name.className = "day-thanks-name";
+        name.textContent = entry.name;
+        profile.appendChild(name);
+
+        line.appendChild(profile);
+
+        if (typeof entry.suffix === "string" && entry.suffix.trim()) {
+          var suffix = document.createElement("span");
+          suffix.className = "day-thanks-text";
+          suffix.textContent = " " + entry.suffix.trim();
+          line.appendChild(suffix);
+        }
+
+        creditsBody.appendChild(line);
       }
 
       function onScrollOrResize() {
@@ -608,11 +704,6 @@
         var dayNumber = dayData.dayNumber || (dayIndex + 1);
         if (isImportantDay(dayNumber)) {
           section.classList.add("day-important");
-        }
-
-        var dayThanks = getThanksForDay(dayNumber);
-        if (dayThanks) {
-          readerEl.appendChild(renderDayThanksBanner(dayThanks));
         }
 
         var dayHeadingBlock = dayData.blocks.find(function (block) {
@@ -975,43 +1066,6 @@
           .replace(/\s+/g, " ")
           .trim();
         return normalizedLine === "credits to rabbit for the ideas given";
-      }
-
-      function renderDayThanksBanner(entry) {
-        var banner = document.createElement("section");
-        banner.className = "day-thanks-banner";
-        banner.setAttribute("aria-label", "Day thank you");
-
-        var preface = document.createElement("span");
-        preface.className = "day-thanks-text";
-        preface.textContent = (entry.preface || "").trim() + " ";
-        banner.appendChild(preface);
-
-        var profile = document.createElement("span");
-        profile.className = "day-thanks-profile";
-
-        var avatar = document.createElement("img");
-        avatar.className = "day-thanks-avatar";
-        avatar.src = entry.avatar || "";
-        avatar.alt = entry.name + " profile picture";
-        avatar.loading = "lazy";
-        profile.appendChild(avatar);
-
-        var name = document.createElement("span");
-        name.className = "day-thanks-name";
-        name.textContent = entry.name;
-        profile.appendChild(name);
-
-        banner.appendChild(profile);
-
-        if (typeof entry.suffix === "string" && entry.suffix.trim()) {
-          var suffix = document.createElement("span");
-          suffix.className = "day-thanks-text";
-          suffix.textContent = " " + entry.suffix.trim();
-          banner.appendChild(suffix);
-        }
-
-        return banner;
       }
 
       function hasNameBoundary(text, start, end) {
