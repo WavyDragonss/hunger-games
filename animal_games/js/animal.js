@@ -23,7 +23,6 @@
       core: "#DB1D2D",
       secondary: "#C7FF22",
       accent: "#050505",
-      textColor: "#FFFFFF",
       summary: "A high-speed wildcard team built around momentum spikes, disruption, and mechanical aggression.",
       focus: "On every day, run Velocity as a momentum lane in its own world. Hit fast spikes and sudden instability."
     }
@@ -99,9 +98,60 @@
   var readerFactionSelect = document.getElementById("readerFactionSelect");
   var readerCloseBtn = document.getElementById("readerCloseBtn");
 
+  var STORE_KEYS = {
+    faction: "animal_faction",
+    focused: "animal_focused",
+    readerDay: "animal_reader_day",
+    readerFaction: "animal_reader_faction",
+    readerWorld: "animal_reader_world"
+  };
+
+  function saveStore() {
+    try {
+      localStorage.setItem(STORE_KEYS.faction, state.activeFaction);
+      localStorage.setItem(STORE_KEYS.focused, state.focusedOnly ? "true" : "false");
+      localStorage.setItem(STORE_KEYS.readerDay, state.readerDay === null ? "" : String(state.readerDay));
+      localStorage.setItem(STORE_KEYS.readerFaction, state.readerFaction);
+      localStorage.setItem(STORE_KEYS.readerWorld, state.readerWorld);
+    } catch (e) {}
+  }
+
+  function restoreStore() {
+    try {
+      var savedFaction = localStorage.getItem(STORE_KEYS.faction);
+      if (savedFaction && FACTIONS[savedFaction]) {
+        state.activeFaction = savedFaction;
+      }
+
+      var savedFocused = localStorage.getItem(STORE_KEYS.focused);
+      if (savedFocused !== null) {
+        state.focusedOnly = savedFocused !== "false";
+      }
+
+      var savedReaderDay = localStorage.getItem(STORE_KEYS.readerDay);
+      if (savedReaderDay !== null && savedReaderDay !== "") {
+        var parsedDay = parseInt(savedReaderDay, 10);
+        if (!isNaN(parsedDay)) {
+          state.readerDay = parsedDay;
+        }
+      }
+
+      var savedReaderFaction = localStorage.getItem(STORE_KEYS.readerFaction);
+      if (savedReaderFaction && FACTIONS[savedReaderFaction]) {
+        state.readerFaction = savedReaderFaction;
+      }
+
+      var savedReaderWorld = localStorage.getItem(STORE_KEYS.readerWorld);
+      if (savedReaderWorld !== null) {
+        state.readerWorld = savedReaderWorld;
+      }
+    } catch (e) {}
+  }
+
   init();
 
   function init() {
+    restoreStore();
     renderFactionButtons();
     renderReaderFactionOptions();
     bindEvents();
@@ -112,6 +162,9 @@
       .finally(function () {
         renderTimeline();
         loadTaggedRosters();
+        if (state.readerDay !== null) {
+          openReader(state.readerDay, state.readerFaction, state.readerWorld);
+        }
       });
   }
 
@@ -119,11 +172,13 @@
     showAllBtn.addEventListener("click", function () {
       state.focusedOnly = false;
       renderTimeline();
+      saveStore();
     });
 
     showFocusedBtn.addEventListener("click", function () {
       state.focusedOnly = true;
       renderTimeline();
+      saveStore();
     });
 
     timeline.addEventListener("click", function (event) {
@@ -153,11 +208,13 @@
         return;
       }
       state.readerFaction = selectedFaction;
+      saveStore();
       renderReaderForSelection();
     });
 
     readerCloseBtn.addEventListener("click", function () {
       closeReader();
+      saveStore();
     });
   }
 
@@ -231,6 +288,7 @@
         applyFactionTheme(nextFaction);
         renderFactionButtons();
         renderTimeline();
+        saveStore();
       });
     });
   }
@@ -255,7 +313,7 @@
     document.documentElement.style.setProperty("--accent", faction.accent);
     document.documentElement.style.setProperty("--accent-contrast", readableTextColor(faction.accent));
     document.documentElement.style.setProperty("--glow", hexToRgba(faction.accent, 0.45));
-    document.documentElement.style.setProperty("--text", faction.textColor || readableTextColor(faction.core));
+    document.documentElement.style.setProperty("--text", "#FFFFFF");
     document.documentElement.style.setProperty("--muted", hexToRgba(faction.secondary, 0.72));
 
     detailsTitle.textContent = faction.name;
@@ -331,10 +389,12 @@
     readerFactionSelect.value = factionKey;
     readerPanel.classList.remove("hidden");
     renderReaderForSelection();
+    saveStore();
     readerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function closeReader() {
+    state.readerDay = null;
     readerPanel.classList.add("hidden");
     readerBody.innerHTML = "";
     readerMeta.textContent = "";
