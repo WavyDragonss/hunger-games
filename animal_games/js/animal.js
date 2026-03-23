@@ -23,7 +23,7 @@
       core: "#DB1D2D",
       secondary: "#C7FF22",
       accent: "#050505",
-      textColor: "#C7FF22",
+      textColor: "#FFFFFF",
       summary: "A high-speed wildcard team built around momentum spikes, disruption, and mechanical aggression.",
       focus: "On every day, run Velocity as a momentum lane in its own world. Hit fast spikes and sudden instability."
     }
