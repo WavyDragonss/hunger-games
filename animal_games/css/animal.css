@@ -366,6 +366,56 @@ h3 {
   line-height: 1.5;
 }
 
+.reader-day-title {
+  font-size: 1.18rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.reader-section {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.reader-section--system {
+  border-color: rgba(157, 178, 207, 0.2);
+}
+
+.reader-section--narrative {
+  border-color: rgba(157, 178, 207, 0.28);
+  font-style: italic;
+}
+
+.reader-section--faction {
+  border-color: var(--accent);
+  box-shadow: 0 0 14px -6px var(--glow);
+}
+
+.reader-section-label {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+}
+
+.reader-section p {
+  margin: 4px 0;
+  line-height: 1.52;
+}
+
+.reader-narrative {
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
 @media (min-width: 980px) {
   .layout {
     grid-template-columns: 1fr 1fr;

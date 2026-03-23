@@ -350,32 +350,124 @@
     var worldLabel = state.readerWorld ? (" | " + state.readerWorld) : "";
     readerTitle.textContent = phaseLabel + " Reader";
     readerMeta.textContent = FACTIONS[state.readerFaction].name + worldLabel;
-    readerBody.innerHTML = '<p class="reader-empty">Loading reader content...</p>';
+    readerBody.innerHTML = '<p class="reader-empty">Loading content...</p>';
 
     loadDayFile(state.readerDay)
       .then(function (text) {
-        var rosters = parseTaggedRosters(text);
-        var selected = rosters[state.readerFaction];
-
-        if (selected) {
-          var list = selected.members
-            .map(function (member) {
-              return "<li>" + escapeHtml(member) + "</li>";
-            })
-            .join("");
-
-          readerBody.innerHTML = "" +
-            '<p class="leader-row"><span class="leader-tag">Leader</span><span>' + escapeHtml(selected.leader || "Unknown") + "</span></p>" +
-            '<h3 class="reader-block-title">Faction Roster</h3>' +
-            '<ul class="reader-list">' + list + "</ul>";
-          return;
-        }
-
-        readerBody.innerHTML = '<pre class="reader-raw">' + escapeHtml(text) + "</pre>";
+        readerBody.innerHTML = renderStructuredDay(text, state.readerFaction);
       })
       .catch(function () {
         readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
       });
+  }
+
+  function renderStructuredDay(text, factionKey) {
+    var html = "";
+
+    // Day title from first line of [[DAY]] block
+    var dayTitleMatch = text.match(/\[\[DAY\]\]\s*([^\n\r]+)/);
+    if (dayTitleMatch) {
+      html += '<h3 class="reader-block-title reader-day-title">' + escapeHtml(dayTitleMatch[1].trim()) + "</h3>";
+    }
+
+    // System state
+    var sysStateMatch = text.match(/\[\[SYSTEM_STATE\]\]([\s\S]*?)(?=\[\[)/);
+    if (sysStateMatch) {
+      var stateLines = sysStateMatch[1].trim().split(/\r?\n/).filter(function (l) { return l.trim(); });
+      html += '<div class="reader-section reader-section--system">';
+      html += '<h4 class="reader-section-label">System State</h4>';
+      html += '<ul class="reader-list">' + stateLines.map(function (l) { return "<li>" + escapeHtml(l.trim()) + "</li>"; }).join("") + "</ul>";
+      html += "</div>";
+    }
+
+    // Narrative
+    var narrativeMatch = text.match(/\[\[NARRATIVE\]\]([\s\S]*?)(?=\[\[)/);
+    if (narrativeMatch) {
+      var narrativeLines = narrativeMatch[1].trim().split(/\r?\n/);
+      var narrativeHtml = narrativeLines.map(function (line) {
+        return line.trim() ? "<p>" + escapeHtml(line.trim()) + "</p>" : "";
+      }).join("");
+      html += '<div class="reader-section reader-section--narrative">';
+      html += '<h4 class="reader-section-label">Narrative</h4>';
+      html += narrativeHtml;
+      html += "</div>";
+    }
+
+    // Faction-specific block
+    var tagMap = {
+      "astral-wardens": "TEAM_A_ASTRAL_WARDENS",
+      "obsidian-dominion": "TEAM_B_OBSIDIAN_DOMINION",
+      "velocity-syndicate": "TEAM_C_VELOCITY_SYNDICATE"
+    };
+    var teamTag = tagMap[factionKey];
+    var teamRegex = new RegExp("\\[\\[" + teamTag + "\\]\\]([\\s\\S]*?)\\[\\[\\/" + teamTag + "\\]\\]");
+    var teamMatch = text.match(teamRegex);
+
+    if (teamMatch) {
+      var body = teamMatch[1];
+
+      // Separate out [[LEADER]] if present
+      var leaderMatch = body.match(/\[\[LEADER\]\]\s*([^\n\r]+?)\s*\[\[\/LEADER\]\]/);
+      var leader = leaderMatch ? leaderMatch[1].trim() : null;
+      var cleanBody = body.replace(/\[\[LEADER\]\][\s\S]*?\[\[\/LEADER\]\]/g, "");
+
+      // First block of lines before blank line = member names
+      var allLines = cleanBody.split(/\r?\n/);
+      var memberLines = [];
+      var contentLines = [];
+      var pastMembers = false;
+
+      for (var i = 0; i < allLines.length; i++) {
+        var line = allLines[i].trim();
+        if (!line) {
+          if (memberLines.length) {
+            pastMembers = true;
+          }
+          continue;
+        }
+        if (!pastMembers) {
+          memberLines.push(line);
+        } else {
+          contentLines.push(line);
+        }
+      }
+
+      html += '<div class="reader-section reader-section--faction">';
+      html += '<h4 class="reader-section-label">' + escapeHtml(FACTIONS[factionKey].name) + "</h4>";
+
+      if (leader || memberLines.length) {
+        html += "<div>";
+        if (leader) {
+          html += '<p class="leader-row"><span class="leader-tag">Leader</span><span>' + escapeHtml(leader) + "</span></p>";
+        }
+        if (memberLines.length) {
+          html += '<ul class="reader-list">' + memberLines.map(function (m) { return "<li>" + escapeHtml(m) + "</li>"; }).join("") + "</ul>";
+        }
+        html += "</div>";
+      }
+
+      if (contentLines.length) {
+        html += '<div class="reader-narrative">';
+        contentLines.forEach(function (line) {
+          html += "<p>" + escapeHtml(line) + "</p>";
+        });
+        html += "</div>";
+      }
+
+      html += "</div>";
+    }
+
+    // System observation
+    var obsMatch = text.match(/\[\[SYSTEM_OBSERVATION\]\]([\s\S]*?)(?=\[\[|$)/);
+    if (obsMatch) {
+      var obsLines = obsMatch[1].trim().split(/\r?\n/).filter(function (l) { return l.trim(); });
+      html += '<div class="reader-section reader-section--system">';
+      html += '<h4 class="reader-section-label">System Observation</h4>';
+      html += '<ul class="reader-list">' + obsLines.map(function (l) { return "<li>" + escapeHtml(l.trim()) + "</li>"; }).join("") + "</ul>";
+      html += "</div>";
+    }
+
+    return html || '<p class="reader-empty">No structured content found for this faction.</p>';
   }
 
   function loadDayFile(dayNumber) {

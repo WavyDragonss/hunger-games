@@ -1,0 +1,129 @@
+[[DAY]]
+DAY 1 — ORIENTATION BREACH
+
+[[SYSTEM_STATE]]
+All teams awakened.
+Phase Zero completed.
+Trial environment stabilization in progress.
+Anomaly presence minimal.
+
+[[NARRATIVE]]
+The first true cycle begins without warning.
+
+The environments that once felt controlled now shift with intention.
+Structures realign. Paths that existed collapse into void.
+The sense of observation becomes undeniable.
+
+Each leader experiences the same realization at different moments.
+
+This world reacts.
+
+Not randomly.
+Not naturally.
+But deliberately.
+
+Creatures begin to manifest across all three zones.
+Not aggressive at first.
+But persistent.
+
+They test distance.
+Reaction.
+Fear.
+
+The trials have begun.
+
+[[TEAM_A_ASTRAL_WARDENS]]
+space_fan
+CrystalWolf
+Schwalbe
+Duccarian
+Ashborn
+Shroud
+Rally Mally
+The Reddening Day
+Toad
+Orphan Annihilator
+
+Initial state stable.
+Team cohesion moderate.
+
+First objective emerges as a rescue scenario.
+A distant distress signal pulses from a fractured structure.
+
+space_fan must decide between immediate pursuit or consolidation of resources.
+
+Environmental hazard.
+Low gravity fractures.
+Medical supply scarcity introduced.
+
+First minor injury recorded.
+Team response time logged.
+
+Survival emphasis trial initiated.
+[[/TEAM_A_ASTRAL_WARDENS]]
+
+[[TEAM_B_OBSIDIAN_DOMINION]]
+Ninnginni
+CharliSpirit
+lumallie
+Galaxy
+Godly_Aura
+Polaris
+Revenant
+Elv
+Golden
+Loyal2Schwab
+
+Initial state controlled.
+Team awareness high.
+
+Environment introduces multi-path strategic puzzle.
+Three objectives appear simultaneously.
+
+Only one is real.
+
+Ninnginni must interpret incomplete data patterns while managing rising enemy pressure.
+
+First tactical split occurs.
+Outcome uncertain.
+
+System logs first instance of predictive interference.
+
+Control emphasis trial initiated.
+[[/TEAM_B_OBSIDIAN_DOMINION]]
+
+[[TEAM_C_VELOCITY_SYNDICATE]]
+Rabbit
+Drug
+janhk
+Kiwi
+Akarimmu
+JIKOSU
+Lyrix
+hollow Camillia
+NinjaFlout
+Mainthemainstar
+
+Initial state unstable.
+Team movement rapid.
+
+Zone begins active collapse cycle.
+Terrain distortion forces continuous relocation.
+
+Hostile entities spawn in pursuit formations.
+
+Rabbit must guide team through high-speed escape while identifying safe routes through visual anomalies.
+
+First time-distortion event triggered.
+
+Perception emphasis trial initiated.
+[[/TEAM_C_VELOCITY_SYNDICATE]]
+
+[[SYSTEM_OBSERVATION]]
+Leaders adapting within acceptable parameters.
+Animal entities maintaining communication integrity.
+Reality synchronization holding.
+
+Next escalation window approaching.
+
+[[END_DAY]]
