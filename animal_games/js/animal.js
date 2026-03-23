@@ -23,6 +23,7 @@
       core: "#DB1D2D",
       secondary: "#C7FF22",
       accent: "#050505",
+      textColor: "#C7FF22",
       summary: "A high-speed wildcard team built around momentum spikes, disruption, and mechanical aggression.",
       focus: "On every day, run Velocity as a momentum lane in its own world. Hit fast spikes and sudden instability."
     }
@@ -254,7 +255,7 @@
     document.documentElement.style.setProperty("--accent", faction.accent);
     document.documentElement.style.setProperty("--accent-contrast", readableTextColor(faction.accent));
     document.documentElement.style.setProperty("--glow", hexToRgba(faction.accent, 0.45));
-    document.documentElement.style.setProperty("--text", readableTextColor(faction.core));
+    document.documentElement.style.setProperty("--text", faction.textColor || readableTextColor(faction.core));
     document.documentElement.style.setProperty("--muted", hexToRgba(faction.secondary, 0.72));
 
     detailsTitle.textContent = faction.name;
