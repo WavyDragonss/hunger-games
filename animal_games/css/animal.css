@@ -1,0 +1,332 @@
+:root {
+  --bg-1: #02040b;
+  --bg-2: #0d1120;
+  --text: #e7f2ff;
+  --muted: #9db2cf;
+  --panel: rgba(14, 20, 37, 0.84);
+  --border: rgba(157, 178, 207, 0.24);
+  --core: #12326a;
+  --secondary: #f2f6ff;
+  --accent: #7ff5ff;
+  --glow: rgba(127, 245, 255, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Rajdhani", "Trebuchet MS", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 420px at 10% -15%, rgba(127, 245, 255, 0.22), transparent 55%),
+    radial-gradient(950px 380px at 90% 0%, rgba(18, 50, 106, 0.32), transparent 58%),
+    linear-gradient(140deg, var(--bg-1), var(--bg-2));
+}
+
+.hero {
+  position: relative;
+  padding: clamp(20px, 4.2vw, 48px) 16px 14px;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    conic-gradient(from 90deg at 70% 0%, transparent, var(--glow), transparent 70%),
+    repeating-linear-gradient(-25deg, rgba(255, 255, 255, 0.02) 0 12px, transparent 12px 24px);
+  transform: translateY(-8%);
+  animation: drift 9s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  from { transform: translateY(-8%) scale(1); }
+  to { transform: translateY(2%) scale(1.06); }
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.title {
+  margin: 6px 0 8px;
+  font-family: "Orbitron", "Segoe UI", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.1vw, 1.14rem);
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.meta-chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(2, 5, 16, 0.52);
+  font-weight: 700;
+}
+
+.layout {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+.faction-panel,
+.timeline-panel,
+.details-panel {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--panel);
+  padding: 14px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+h2,
+h3 {
+  margin: 0;
+  font-family: "Orbitron", "Segoe UI", sans-serif;
+}
+
+.panel-note {
+  margin: 6px 0 12px;
+  color: var(--muted);
+}
+
+.faction-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.faction-btn {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.24), rgba(255, 255, 255, 0.03));
+  color: var(--text);
+  text-align: left;
+  padding: 12px;
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.faction-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.faction-btn.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(127, 245, 255, 0.26), 0 0 30px -8px var(--glow);
+}
+
+.faction-name {
+  display: block;
+  font-size: 1.04rem;
+  font-weight: 700;
+}
+
+.faction-colors {
+  margin-top: 6px;
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.timeline-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.head-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.action-btn {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-height: 38px;
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--text);
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.action-btn.strong {
+  border-color: var(--accent);
+}
+
+.timeline {
+  margin-top: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.day-card {
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--accent);
+  border-radius: 10px;
+  padding: 9px 10px;
+  background: rgba(0, 0, 0, 0.22);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.day-card strong {
+  font-size: 1.03rem;
+}
+
+.day-tag {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.swatches {
+  margin-top: 12px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.swatch {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.swatch span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.swatch strong {
+  margin-top: 4px;
+  display: block;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.focus-card {
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.23);
+}
+
+#detailsSummary,
+#focusText {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+#rosterPanel {
+  margin-top: 8px;
+}
+
+.roster-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.leader-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.28);
+  font-weight: 700;
+}
+
+.leader-tag {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.roster-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.roster-list li {
+  margin: 2px 0;
+}
+
+@media (min-width: 980px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timeline-panel {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 680px) {
+  .day-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

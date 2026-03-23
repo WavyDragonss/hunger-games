@@ -1,0 +1,38 @@
+[[TEAM_A_ASTRAL_WARDENS]]
+[[LEADER]] space_fan [[/LEADER]]
+CrystalWolf
+Schwalbe
+Duccarian
+Ashborn
+Shroud
+Rally Mally
+The Reddening Day
+Toad
+Orphan Annihilator
+[[/TEAM_A_ASTRAL_WARDENS]]
+
+[[TEAM_B_OBSIDIAN_DOMINION]]
+[[LEADER]] Ninnginni [[/LEADER]]
+CharliSpirit
+lumallie
+Galaxy
+Godly_Aura
+Polaris
+Revenant
+Elv
+Golden
+Loyal2Schwab
+[[/TEAM_B_OBSIDIAN_DOMINION]]
+
+[[TEAM_C_VELOCITY_SYNDICATE]]
+[[LEADER]] Rabbit [[/LEADER]]
+Drug
+janhk
+Kiwi
+Akarimmu
+JIKOSU
+Lyrix
+hollow Camillia
+NinjaFlout
+Mainthemainstar
+[[/TEAM_C_VELOCITY_SYNDICATE]]

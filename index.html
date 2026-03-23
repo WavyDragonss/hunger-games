@@ -81,6 +81,13 @@
       transition: transform 120ms ease, filter 120ms ease;
     }
 
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
     .cta:hover {
       filter: brightness(1.05);
     }
@@ -99,8 +106,11 @@
         Welcome to the official entry page. This experience is for Walbe members only.
         Choose your arena below and continue the story.
       </p>
-      <a class="cta" href="./duck_games/duck.html">Open Duck Games</a>
-      <a class="cta" href="https://wavydragonss.github.io/hunger-games/maze_runner/maze.html?preview=0">Open Maze Runner</a>
+      <div class="cta-row">
+        <a class="cta" href="./duck_games/duck.html">Open Duck Games</a>
+        <a class="cta" href="./animal_games/animal.html">Open Animal Games</a>
+        <a class="cta" href="https://wavydragonss.github.io/hunger-games/maze_runner/maze.html?preview=0">Open Maze Runner</a>
+      </div>
     </section>
   </main>
 </body>
