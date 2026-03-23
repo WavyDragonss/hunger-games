@@ -70,7 +70,12 @@
   var state = {
     activeFaction: "astral-wardens",
     focusedOnly: true,
-    teamRosters: {}
+    teamRosters: {},
+    availablePlan: [],
+    dayTextByDay: {},
+    readerDay: null,
+    readerFaction: "astral-wardens",
+    readerWorld: ""
   };
 
   var factionGrid = document.getElementById("factionGrid");
@@ -86,15 +91,30 @@
   var focusModeLabel = document.getElementById("focusModeLabel");
   var showAllBtn = document.getElementById("showAllBtn");
   var showFocusedBtn = document.getElementById("showFocusedBtn");
+  var readerPanel = document.getElementById("readerPanel");
+  var readerTitle = document.getElementById("readerTitle");
+  var readerMeta = document.getElementById("readerMeta");
+  var readerBody = document.getElementById("readerBody");
+  var readerFactionSelect = document.getElementById("readerFactionSelect");
+  var readerCloseBtn = document.getElementById("readerCloseBtn");
 
   init();
 
   function init() {
     renderFactionButtons();
+    renderReaderFactionOptions();
+    bindEvents();
     applyFactionTheme(state.activeFaction);
-    renderTimeline();
-    loadTaggedRosters();
+    timeline.innerHTML = '<p class="panel-note">Checking which day files exist...</p>';
 
+    discoverAvailableDays()
+      .finally(function () {
+        renderTimeline();
+        loadTaggedRosters();
+      });
+  }
+
+  function bindEvents() {
     showAllBtn.addEventListener("click", function () {
       state.focusedOnly = false;
       renderTimeline();
@@ -104,24 +124,69 @@
       state.focusedOnly = true;
       renderTimeline();
     });
+
+    timeline.addEventListener("click", function (event) {
+      var target = event.target;
+      if (!(target instanceof HTMLElement)) {
+        return;
+      }
+      var card = target.closest(".day-action");
+      if (!card) {
+        return;
+      }
+
+      var day = parseInt(card.getAttribute("data-day") || "", 10);
+      var faction = card.getAttribute("data-faction") || state.activeFaction;
+      var world = card.getAttribute("data-world") || "";
+
+      if (isNaN(day) || !FACTIONS[faction]) {
+        return;
+      }
+
+      openReader(day, faction, world);
+    });
+
+    readerFactionSelect.addEventListener("change", function () {
+      var selectedFaction = readerFactionSelect.value;
+      if (!FACTIONS[selectedFaction] || state.readerDay === null) {
+        return;
+      }
+      state.readerFaction = selectedFaction;
+      renderReaderForSelection();
+    });
+
+    readerCloseBtn.addEventListener("click", function () {
+      closeReader();
+    });
+  }
+
+  function discoverAvailableDays() {
+    return Promise.all(
+      DAY_PLAN.map(function (entry) {
+        return loadDayFile(entry.day)
+          .then(function () {
+            return entry;
+          })
+          .catch(function () {
+            return null;
+          });
+      })
+    ).then(function (results) {
+      state.availablePlan = results.filter(function (entry) {
+        return Boolean(entry);
+      });
+    });
   }
 
   function loadTaggedRosters() {
-    fetch("./content/phase0.txt", { cache: "no-store" })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("phase0 roster file not found");
-        }
-        return response.text();
-      })
-      .catch(function () {
-        return fetch("./content/day1.txt", { cache: "no-store" }).then(function (fallbackResponse) {
-          if (!fallbackResponse.ok) {
-            throw new Error("fallback day1 roster file not found");
-          }
-          return fallbackResponse.text();
-        });
-      })
+    var preferredDay = hasDayInPlan(0) ? 0 : getFirstAvailableDay();
+    if (preferredDay === null) {
+      state.teamRosters = {};
+      renderRoster(state.activeFaction);
+      return;
+    }
+
+    loadDayFile(preferredDay)
       .then(function (text) {
         state.teamRosters = parseTaggedRosters(text);
       })
@@ -169,6 +234,14 @@
     });
   }
 
+  function renderReaderFactionOptions() {
+    readerFactionSelect.innerHTML = Object.keys(FACTIONS)
+      .map(function (key) {
+        return '<option value="' + key + '">' + escapeHtml(FACTIONS[key].name) + "</option>";
+      })
+      .join("");
+  }
+
   function applyFactionTheme(key) {
     var faction = FACTIONS[key];
     if (!faction) {
@@ -179,6 +252,7 @@
     document.documentElement.style.setProperty("--core", faction.core);
     document.documentElement.style.setProperty("--secondary", faction.secondary);
     document.documentElement.style.setProperty("--accent", faction.accent);
+    document.documentElement.style.setProperty("--accent-contrast", readableTextColor(faction.accent));
     document.documentElement.style.setProperty("--glow", hexToRgba(faction.accent, 0.45));
     document.documentElement.style.setProperty("--text", readableTextColor(faction.core));
     document.documentElement.style.setProperty("--muted", hexToRgba(faction.secondary, 0.72));
@@ -217,12 +291,12 @@
       ? "Focus Mode: Selected faction across all days"
       : "Focus Mode: All faction worlds visible";
 
-    if (!DAY_PLAN.length) {
-      timeline.innerHTML = '<p class="panel-note">No day plan configured yet.</p>';
+    if (!state.availablePlan.length) {
+      timeline.innerHTML = '<p class="panel-note">No day files were found in content. Add phase0.txt or day1.txt to begin.</p>';
       return;
     }
 
-    var html = DAY_PLAN.map(function (dayEntry) {
+    var html = state.availablePlan.map(function (dayEntry) {
       var worldTracks = dayEntry.worlds.filter(function (track) {
         if (!state.focusedOnly) {
           return true;
@@ -236,17 +310,120 @@
 
       return worldTracks
         .map(function (track) {
-          var phaseLabel = dayEntry.phase || (dayEntry.day === 0 ? "Phase Zero" : "Day " + dayEntry.day);
+          var phaseLabel = getPhaseLabel(dayEntry);
           return "" +
-            '<article class="day-card">' +
+            '<button class="day-card day-action" type="button" data-day="' + dayEntry.day + '" data-faction="' + track.faction + '" data-world="' + escapeHtml(track.world) + '">' +
               '<div><strong>' + escapeHtml(phaseLabel) + " - " + escapeHtml(track.world) + '</strong><div>' + escapeHtml(track.note) + "</div></div>" +
               '<div class="day-tag">' + escapeHtml(FACTIONS[track.faction].name) + "</div>" +
-            "</article>";
-      })
+            "</button>";
+        })
         .join("");
     }).join("");
 
     timeline.innerHTML = html || '<p class="panel-note">No world tracks matched this filter.</p>';
+  }
+
+  function openReader(day, factionKey, worldName) {
+    state.readerDay = day;
+    state.readerFaction = factionKey;
+    state.readerWorld = worldName || "";
+    readerFactionSelect.value = factionKey;
+    readerPanel.classList.remove("hidden");
+    renderReaderForSelection();
+    readerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function closeReader() {
+    readerPanel.classList.add("hidden");
+    readerBody.innerHTML = "";
+    readerMeta.textContent = "";
+  }
+
+  function renderReaderForSelection() {
+    if (state.readerDay === null) {
+      return;
+    }
+
+    var dayEntry = getPlanByDay(state.readerDay);
+    var phaseLabel = dayEntry ? getPhaseLabel(dayEntry) : (state.readerDay === 0 ? "Phase Zero" : "Day " + state.readerDay);
+    var worldLabel = state.readerWorld ? (" | " + state.readerWorld) : "";
+    readerTitle.textContent = phaseLabel + " Reader";
+    readerMeta.textContent = FACTIONS[state.readerFaction].name + worldLabel;
+    readerBody.innerHTML = '<p class="reader-empty">Loading reader content...</p>';
+
+    loadDayFile(state.readerDay)
+      .then(function (text) {
+        var rosters = parseTaggedRosters(text);
+        var selected = rosters[state.readerFaction];
+
+        if (selected) {
+          var list = selected.members
+            .map(function (member) {
+              return "<li>" + escapeHtml(member) + "</li>";
+            })
+            .join("");
+
+          readerBody.innerHTML = "" +
+            '<p class="leader-row"><span class="leader-tag">Leader</span><span>' + escapeHtml(selected.leader || "Unknown") + "</span></p>" +
+            '<h3 class="reader-block-title">Faction Roster</h3>' +
+            '<ul class="reader-list">' + list + "</ul>";
+          return;
+        }
+
+        readerBody.innerHTML = '<pre class="reader-raw">' + escapeHtml(text) + "</pre>";
+      })
+      .catch(function () {
+        readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
+      });
+  }
+
+  function loadDayFile(dayNumber) {
+    if (state.dayTextByDay[dayNumber]) {
+      return Promise.resolve(state.dayTextByDay[dayNumber]);
+    }
+
+    var filePath = getDayFilePath(dayNumber);
+    return fetch(filePath, { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error(filePath + " missing");
+        }
+        return response.text();
+      })
+      .then(function (text) {
+        state.dayTextByDay[dayNumber] = text;
+        return text;
+      });
+  }
+
+  function getDayFilePath(dayNumber) {
+    if (dayNumber === 0) {
+      return "./content/phase0.txt";
+    }
+    return "./content/day" + dayNumber + ".txt";
+  }
+
+  function getPlanByDay(dayNumber) {
+    return DAY_PLAN.find(function (entry) {
+      return entry.day === dayNumber;
+    }) || null;
+  }
+
+  function hasDayInPlan(dayNumber) {
+    return DAY_PLAN.some(function (entry) {
+      return entry.day === dayNumber;
+    });
+  }
+
+  function getFirstAvailableDay() {
+    if (!state.availablePlan.length) {
+      return null;
+    }
+    return state.availablePlan[0].day;
+  }
+
+  function getPhaseLabel(dayEntry) {
+    return dayEntry.phase || (dayEntry.day === 0 ? "Phase Zero" : "Day " + dayEntry.day);
   }
 
   function hexToRgba(hex, alpha) {

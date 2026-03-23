@@ -8,6 +8,7 @@
   --core: #12326a;
   --secondary: #f2f6ff;
   --accent: #7ff5ff;
+  --accent-contrast: #0b111d;
   --glow: rgba(127, 245, 255, 0.4);
 }
 
@@ -221,16 +222,28 @@ h3 {
   justify-content: space-between;
 }
 
+.day-action {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.day-action:hover {
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
 .day-card strong {
   font-size: 1.03rem;
 }
 
 .day-tag {
-  border: 1px solid var(--border);
+  border: 1px solid transparent;
   border-radius: 999px;
   padding: 4px 9px;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-contrast);
+  background: var(--accent);
 }
 
 .swatches {
@@ -257,7 +270,7 @@ h3 {
   margin-top: 4px;
   display: block;
   font-size: 1.05rem;
-  color: var(--accent);
+  color: var(--text);
 }
 
 .focus-card {
@@ -296,13 +309,14 @@ h3 {
 }
 
 .leader-tag {
-  border: 1px solid var(--border);
+  border: 1px solid transparent;
   border-radius: 999px;
   padding: 1px 7px;
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-contrast);
+  background: var(--accent);
 }
 
 .roster-list {
@@ -312,6 +326,44 @@ h3 {
 
 .roster-list li {
   margin: 2px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.reader-body {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+}
+
+.reader-block-title {
+  margin: 0;
+  font-family: "Orbitron", "Segoe UI", sans-serif;
+  font-size: 1.02rem;
+}
+
+.reader-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.reader-list li {
+  margin: 3px 0;
+}
+
+.reader-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.reader-raw {
+  margin: 0;
+  white-space: pre-wrap;
+  color: var(--text);
+  line-height: 1.5;
 }
 
 @media (min-width: 980px) {
