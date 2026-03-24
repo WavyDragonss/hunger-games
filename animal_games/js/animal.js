@@ -77,7 +77,7 @@
     readerFaction: "astral-wardens",
     readerWorld: "",
     readerTheme: "dark",
-    readerMode: "single-day",
+    readerMode: "paged",
     readerWidth: "narrow",
     readerFontScale: 1,
     readerQuery: "",
@@ -122,6 +122,7 @@
       localStorage.setItem(STORE_KEYS.readerFaction, state.readerFaction);
       localStorage.setItem(STORE_KEYS.readerWorld, state.readerWorld);
       localStorage.setItem(STORE_KEYS.readerTheme, state.readerTheme);
+      localStorage.setItem(STORE_KEYS.readerMode, state.readerMode);
       localStorage.setItem(STORE_KEYS.readerWidth, state.readerWidth);
       localStorage.setItem(STORE_KEYS.readerFontScale, String(state.readerFontScale));
       localStorage.setItem(STORE_KEYS.readerHidden, state.readerHidden ? "true" : "false");
@@ -163,6 +164,11 @@
         state.readerTheme = savedReaderTheme;
       }
 
+      var savedReaderMode = localStorage.getItem(STORE_KEYS.readerMode);
+      if (savedReaderMode === "paged" || savedReaderMode === "infinite") {
+        state.readerMode = savedReaderMode;
+      }
+
       var savedReaderWidth = localStorage.getItem(STORE_KEYS.readerWidth);
       if (savedReaderWidth === "narrow" || savedReaderWidth === "wide") {
         state.readerWidth = savedReaderWidth;
@@ -187,7 +193,7 @@
     renderReaderFactionOptions();
     bindEvents();
     applyReaderTheme(state.readerTheme);
-    applyReaderMode("single-day");
+    applyReaderMode(state.readerMode);
     applyReaderWidth(state.readerWidth);
     applyReaderFontScale(state.readerFontScale);
     applyReaderVisibility(state.readerHidden);
@@ -303,6 +309,17 @@
       });
     }
 
+    readerModeInputs.forEach(function (input) {
+      input.addEventListener("change", function () {
+        if (!input.checked) {
+          return;
+        }
+        applyReaderMode(input.value);
+        renderReaderForSelection();
+        saveStore();
+      });
+    });
+
 
   }
 
@@ -414,10 +431,17 @@
     }
 
     readerWorldSelect.value = state.readerWorld;
+    readerWorldSelect.disabled = state.readerMode === "infinite";
   }
 
   function updateReaderDayButtons() {
     if (!readerPrevDayBtn || !readerNextDayBtn || state.readerDay === null) {
+      return;
+    }
+
+    if (state.readerMode === "infinite") {
+      readerPrevDayBtn.disabled = true;
+      readerNextDayBtn.disabled = true;
       return;
     }
 
@@ -428,7 +452,7 @@
   }
 
   function changeReaderDay(step) {
-    if (state.readerDay === null) {
+    if (state.readerDay === null || state.readerMode === "infinite") {
       return;
     }
 
@@ -459,10 +483,16 @@
   }
 
   function applyReaderMode(mode) {
-    state.readerMode = "single-day";
+    state.readerMode = mode === "infinite" ? "infinite" : "paged";
+    document.body.setAttribute("data-reader-mode", state.readerMode);
     if (readerPanel) {
       readerPanel.setAttribute("data-reader-mode", state.readerMode);
     }
+    readerModeInputs.forEach(function (input) {
+      input.checked = input.value === state.readerMode;
+    });
+    updateReaderDayButtons();
+    syncReaderSelectors();
   }
 
   function applyReaderWidth(widthMode) {
@@ -617,6 +647,11 @@
       return;
     }
 
+    if (state.readerMode === "infinite") {
+      renderInfiniteReader();
+      return;
+    }
+
     var dayEntry = getPlanByDay(state.readerDay);
     var dayTrack = getTrackByWorld(state.readerDay, state.readerWorld) || getTrackByFaction(state.readerDay, state.readerFaction);
     if (dayTrack) {
@@ -638,6 +673,43 @@
       })
       .catch(function () {
         readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
+      });
+  }
+
+  function renderInfiniteReader() {
+    var days = getAvailableDayNumbers();
+    if (!days.length) {
+      readerTitle.textContent = "Infinite Reader";
+      readerMeta.textContent = "No available day files.";
+      readerBody.innerHTML = '<p class="reader-empty">No day content found.</p>';
+      return;
+    }
+
+    readerTitle.textContent = "Infinite Reader";
+    readerMeta.textContent = FACTIONS[state.readerFaction].name + " | All available days";
+    readerBody.innerHTML = '<p class="reader-empty">Loading all available days...</p>';
+    updateReaderDayButtons();
+
+    Promise.all(days.map(function (dayNumber) {
+      return loadDayFile(dayNumber).then(function (text) {
+        return { day: dayNumber, text: text };
+      });
+    }))
+      .then(function (entries) {
+        var html = entries.map(function (entry) {
+          var dayEntry = getPlanByDay(entry.day);
+          var phaseLabel = dayEntry ? getPhaseLabel(dayEntry) : (entry.day === 0 ? "Phase Zero" : "Day " + entry.day);
+          var world = getWorldForFaction(entry.day, state.readerFaction, "");
+          var prefix = '<article class="reader-day-block"><h3 class="reader-block-title reader-day-anchor">' + escapeHtml(phaseLabel + " | " + world) + "</h3>";
+          var body = renderStructuredDay(entry.text, state.readerFaction);
+          return prefix + body + "</article>";
+        }).join("");
+
+        readerBody.innerHTML = html || '<p class="reader-empty">No structured content found.</p>';
+        applyReaderSearch();
+      })
+      .catch(function () {
+        readerBody.innerHTML = '<p class="reader-empty">Some day files could not be loaded.</p>';
       });
   }
 

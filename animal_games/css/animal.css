@@ -42,6 +42,11 @@ body {
   backdrop-filter: blur(8px);
 }
 
+body[data-reader-mode="infinite"] .hero {
+  position: relative;
+  top: auto;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -376,6 +381,11 @@ h3 {
   z-index: 20;
 }
 
+body[data-reader-mode="infinite"] .reader-toolbar {
+  position: relative;
+  top: auto;
+}
+
 .reader-tools-left,
 .reader-tools-right {
   display: flex;
@@ -441,6 +451,25 @@ h3 {
   color: var(--reader-muted);
   font-size: 0.92rem;
   line-height: 1.4;
+}
+
+#readerPanel[data-reader-mode="infinite"] .reader-day-nav,
+#readerPanel[data-reader-mode="infinite"] .reader-world-control {
+  display: none;
+}
+
+.reader-day-block {
+  border: 1px solid var(--reader-border);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 0 0 14px;
+  background: var(--reader-section-bg);
+}
+
+.reader-day-anchor {
+  margin: 0 0 8px;
+  color: var(--accent);
+  letter-spacing: 0.05em;
 }
 
 #readerPanel {
