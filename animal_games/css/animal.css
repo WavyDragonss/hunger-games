@@ -36,6 +36,10 @@ body {
   padding: clamp(20px, 4.2vw, 48px) 16px 14px;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(8px);
 }
 
 .hero-bg {
@@ -58,6 +62,21 @@ body {
   z-index: 2;
   width: min(1120px, 100%);
   margin: 0 auto;
+}
+
+.hero-top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.back-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .eyebrow {
@@ -104,6 +123,11 @@ body {
   padding: 16px;
   display: grid;
   gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+.reader-layout {
+  width: min(1260px, 100%);
   grid-template-columns: 1fr;
 }
 
@@ -347,6 +371,9 @@ h3 {
   padding: 10px;
   display: grid;
   gap: 8px;
+  position: sticky;
+  top: 8px;
+  z-index: 20;
 }
 
 .reader-tools-left,
@@ -416,6 +443,13 @@ h3 {
   --reader-text: #eff6ff;
   --reader-muted: #9db2cf;
   --reader-section-bg: rgba(0, 0, 0, 0.18);
+}
+
+#readerPanel.reader-collapsed .reader-toolbar,
+#readerPanel.reader-collapsed #readerMeta,
+#readerPanel.reader-collapsed .reader-body,
+#readerPanel.reader-collapsed .reader-day-nav {
+  display: none;
 }
 
 #readerPanel[data-reader-theme="light"] {

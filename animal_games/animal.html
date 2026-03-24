@@ -13,43 +13,25 @@
   <header class="hero" role="banner">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-inner">
-      <p class="eyebrow">Animal Games</p>
-      <h1 class="title">Faction Focus Command Deck</h1>
-      <p class="subtitle" id="subtitle">
-        Each day runs all three factions at once on separate worlds, so you can focus one track or compare all tracks.
-      </p>
-      <div class="hero-meta">
-        <span class="meta-chip" id="activeFactionLabel">Active Faction: Astral Wardens</span>
-        <span class="meta-chip" id="focusModeLabel">Focus Mode: Selected faction across all days</span>
+      <div class="hero-top-actions">
+        <a class="action-btn back-btn" href="../index.html">Back to Main Page</a>
+        <button id="readerVisibilityBtn" class="action-btn" type="button">Hide Reader</button>
       </div>
+      <p class="eyebrow">Animal Games Reader</p>
+      <h1 class="title">Day Story Reader</h1>
+      <p class="subtitle" id="subtitle">
+        Maze-style controls with day navigation, world switching, readable text modes, and reader themes.
+      </p>
     </div>
   </header>
 
-  <main class="layout">
-    <section class="faction-panel" aria-label="Faction selector">
-      <h2>Choose Faction Track</h2>
-      <p class="panel-note">Use this to isolate strategy and writing tone for each opening phase.</p>
-      <div class="faction-grid" id="factionGrid"></div>
-    </section>
-
-    <section class="timeline-panel" aria-label="Day timeline">
-      <div class="timeline-head">
-        <h2>Day Routing</h2>
-        <div class="head-actions">
-          <button id="showAllBtn" class="action-btn" type="button">Show All Worlds</button>
-          <button id="showFocusedBtn" class="action-btn strong" type="button">Show Selected Faction</button>
-        </div>
-      </div>
-      <div class="timeline" id="timeline"></div>
-    </section>
-
-    <section class="timeline-panel hidden" id="readerPanel" aria-label="Day reader">
+  <main class="layout reader-layout">
+    <section class="timeline-panel" id="readerPanel" aria-label="Day reader">
       <div class="timeline-head">
         <h2 id="readerTitle">Day Reader</h2>
         <div class="head-actions reader-day-nav">
           <button id="readerPrevDayBtn" class="action-btn" type="button"><- Previous Day</button>
           <button id="readerNextDayBtn" class="action-btn" type="button">Next Day -></button>
-          <button id="readerCloseBtn" class="action-btn" type="button">Close</button>
         </div>
       </div>
       <div class="reader-toolbar" aria-label="Reader tools">
@@ -77,24 +59,6 @@
       </div>
       <p class="panel-note" id="readerMeta"></p>
       <div class="reader-body" id="readerBody"></div>
-    </section>
-
-    <section class="details-panel" aria-label="Faction details">
-      <h2 id="detailsTitle">Astral Wardens</h2>
-      <p id="detailsSummary"></p>
-      <div class="swatches">
-        <div class="swatch"><span>Core</span><strong id="coreColor"></strong></div>
-        <div class="swatch"><span>Secondary</span><strong id="secondaryColor"></strong></div>
-        <div class="swatch"><span>Accent</span><strong id="accentColor"></strong></div>
-      </div>
-      <div class="focus-card">
-        <h3>Early-Day Focus</h3>
-        <p id="focusText"></p>
-      </div>
-      <div class="focus-card">
-        <h3>Phase Zero Roster (Tagged)</h3>
-        <div id="rosterPanel"></div>
-      </div>
     </section>
   </main>
 
