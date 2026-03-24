@@ -46,10 +46,33 @@
     <section class="timeline-panel hidden" id="readerPanel" aria-label="Day reader">
       <div class="timeline-head">
         <h2 id="readerTitle">Day Reader</h2>
-        <div class="head-actions">
-          <label for="readerFactionSelect">View Faction</label>
-          <select id="readerFactionSelect" class="action-btn"></select>
+        <div class="head-actions reader-day-nav">
+          <button id="readerPrevDayBtn" class="action-btn" type="button"><- Previous Day</button>
+          <button id="readerNextDayBtn" class="action-btn" type="button">Next Day -></button>
           <button id="readerCloseBtn" class="action-btn" type="button">Close</button>
+        </div>
+      </div>
+      <div class="reader-toolbar" aria-label="Reader tools">
+        <div class="reader-tools-left">
+          <button id="readerFontDown" class="action-btn" type="button">A-</button>
+          <button id="readerFontUp" class="action-btn" type="button">A+</button>
+          <label for="readerSearchInput" class="reader-inline-label">Search</label>
+          <input id="readerSearchInput" class="reader-search" type="search" placeholder="Search this day..." autocomplete="off" spellcheck="false" />
+        </div>
+        <div class="reader-tools-right">
+          <label for="readerWorldSelect" class="reader-inline-label">World</label>
+          <select id="readerWorldSelect" class="action-btn"></select>
+          <label for="readerFactionSelect" class="reader-inline-label">Faction</label>
+          <select id="readerFactionSelect" class="action-btn"></select>
+          <button id="readerThemeToggle" class="action-btn" type="button">Theme: Dark</button>
+          <button id="readerWidthToggle" class="action-btn" type="button">Width: Narrow</button>
+          <details class="reader-settings" id="readerSettings">
+            <summary class="action-btn">Settings</summary>
+            <div class="reader-settings-panel">
+              <label class="reader-settings-row"><input type="radio" name="readerMode" value="paged" /> Paged mode</label>
+              <label class="reader-settings-row"><input type="radio" name="readerMode" value="infinite" /> Infinite mode</label>
+            </div>
+          </details>
         </div>
       </div>
       <p class="panel-note" id="readerMeta"></p>

@@ -75,7 +75,12 @@
     dayTextByDay: {},
     readerDay: null,
     readerFaction: "astral-wardens",
-    readerWorld: ""
+    readerWorld: "",
+    readerTheme: "dark",
+    readerMode: "paged",
+    readerWidth: "narrow",
+    readerFontScale: 1,
+    readerQuery: ""
   };
 
   var factionGrid = document.getElementById("factionGrid");
@@ -95,7 +100,16 @@
   var readerTitle = document.getElementById("readerTitle");
   var readerMeta = document.getElementById("readerMeta");
   var readerBody = document.getElementById("readerBody");
+  var readerSearchInput = document.getElementById("readerSearchInput");
+  var readerWorldSelect = document.getElementById("readerWorldSelect");
   var readerFactionSelect = document.getElementById("readerFactionSelect");
+  var readerThemeToggle = document.getElementById("readerThemeToggle");
+  var readerWidthToggle = document.getElementById("readerWidthToggle");
+  var readerFontDown = document.getElementById("readerFontDown");
+  var readerFontUp = document.getElementById("readerFontUp");
+  var readerPrevDayBtn = document.getElementById("readerPrevDayBtn");
+  var readerNextDayBtn = document.getElementById("readerNextDayBtn");
+  var readerModeInputs = document.querySelectorAll("input[name='readerMode']");
   var readerCloseBtn = document.getElementById("readerCloseBtn");
 
   var STORE_KEYS = {
@@ -103,7 +117,11 @@
     focused: "animal_focused",
     readerDay: "animal_reader_day",
     readerFaction: "animal_reader_faction",
-    readerWorld: "animal_reader_world"
+    readerWorld: "animal_reader_world",
+    readerTheme: "animal_reader_theme",
+    readerMode: "animal_reader_mode",
+    readerWidth: "animal_reader_width",
+    readerFontScale: "animal_reader_font_scale"
   };
 
   function saveStore() {
@@ -113,6 +131,10 @@
       localStorage.setItem(STORE_KEYS.readerDay, state.readerDay === null ? "" : String(state.readerDay));
       localStorage.setItem(STORE_KEYS.readerFaction, state.readerFaction);
       localStorage.setItem(STORE_KEYS.readerWorld, state.readerWorld);
+      localStorage.setItem(STORE_KEYS.readerTheme, state.readerTheme);
+      localStorage.setItem(STORE_KEYS.readerMode, state.readerMode);
+      localStorage.setItem(STORE_KEYS.readerWidth, state.readerWidth);
+      localStorage.setItem(STORE_KEYS.readerFontScale, String(state.readerFontScale));
     } catch (e) {}
   }
 
@@ -145,6 +167,26 @@
       if (savedReaderWorld !== null) {
         state.readerWorld = savedReaderWorld;
       }
+
+      var savedReaderTheme = localStorage.getItem(STORE_KEYS.readerTheme);
+      if (savedReaderTheme === "dark" || savedReaderTheme === "light") {
+        state.readerTheme = savedReaderTheme;
+      }
+
+      var savedReaderMode = localStorage.getItem(STORE_KEYS.readerMode);
+      if (savedReaderMode === "paged" || savedReaderMode === "infinite") {
+        state.readerMode = savedReaderMode;
+      }
+
+      var savedReaderWidth = localStorage.getItem(STORE_KEYS.readerWidth);
+      if (savedReaderWidth === "narrow" || savedReaderWidth === "wide") {
+        state.readerWidth = savedReaderWidth;
+      }
+
+      var savedReaderFontScale = parseFloat(localStorage.getItem(STORE_KEYS.readerFontScale) || "1");
+      if (!isNaN(savedReaderFontScale)) {
+        state.readerFontScale = clamp(savedReaderFontScale, 0.9, 1.35);
+      }
     } catch (e) {}
   }
 
@@ -156,6 +198,10 @@
     renderReaderFactionOptions();
     bindEvents();
     applyFactionTheme(state.activeFaction);
+    applyReaderTheme(state.readerTheme);
+    applyReaderMode(state.readerMode);
+    applyReaderWidth(state.readerWidth);
+    applyReaderFontScale(state.readerFontScale);
     timeline.innerHTML = '<p class="panel-note">Checking which day files exist...</p>';
 
     discoverAvailableDays()
@@ -208,8 +254,86 @@
         return;
       }
       state.readerFaction = selectedFaction;
+      state.readerWorld = getWorldForFaction(state.readerDay, selectedFaction, state.readerWorld);
+      syncReaderSelectors();
       saveStore();
       renderReaderForSelection();
+    });
+
+    if (readerWorldSelect) {
+      readerWorldSelect.addEventListener("change", function () {
+        if (state.readerDay === null) {
+          return;
+        }
+        var selectedWorld = readerWorldSelect.value;
+        var match = getTrackByWorld(state.readerDay, selectedWorld);
+        if (match) {
+          state.readerWorld = match.world;
+          state.readerFaction = match.faction;
+          syncReaderSelectors();
+          saveStore();
+          renderReaderForSelection();
+        }
+      });
+    }
+
+    if (readerSearchInput) {
+      readerSearchInput.addEventListener("input", function () {
+        state.readerQuery = readerSearchInput.value.trim().toLowerCase();
+        applyReaderSearch();
+      });
+    }
+
+    if (readerThemeToggle) {
+      readerThemeToggle.addEventListener("click", function () {
+        var nextTheme = state.readerTheme === "dark" ? "light" : "dark";
+        applyReaderTheme(nextTheme);
+        saveStore();
+      });
+    }
+
+    if (readerWidthToggle) {
+      readerWidthToggle.addEventListener("click", function () {
+        var nextWidth = state.readerWidth === "narrow" ? "wide" : "narrow";
+        applyReaderWidth(nextWidth);
+        saveStore();
+      });
+    }
+
+    if (readerFontDown) {
+      readerFontDown.addEventListener("click", function () {
+        applyReaderFontScale(clamp(state.readerFontScale - 0.05, 0.9, 1.35));
+        saveStore();
+      });
+    }
+
+    if (readerFontUp) {
+      readerFontUp.addEventListener("click", function () {
+        applyReaderFontScale(clamp(state.readerFontScale + 0.05, 0.9, 1.35));
+        saveStore();
+      });
+    }
+
+    if (readerPrevDayBtn) {
+      readerPrevDayBtn.addEventListener("click", function () {
+        changeReaderDay(-1);
+      });
+    }
+
+    if (readerNextDayBtn) {
+      readerNextDayBtn.addEventListener("click", function () {
+        changeReaderDay(1);
+      });
+    }
+
+    readerModeInputs.forEach(function (input) {
+      input.addEventListener("change", function () {
+        if (!input.checked) {
+          return;
+        }
+        applyReaderMode(input.value);
+        saveStore();
+      });
     });
 
     readerCloseBtn.addEventListener("click", function () {
@@ -301,6 +425,123 @@
       .join("");
   }
 
+  function syncReaderSelectors() {
+    if (readerFactionSelect) {
+      readerFactionSelect.value = state.readerFaction;
+    }
+
+    if (!readerWorldSelect || state.readerDay === null) {
+      return;
+    }
+
+    var dayEntry = getPlanByDay(state.readerDay);
+    var tracks = dayEntry ? dayEntry.worlds : [];
+    readerWorldSelect.innerHTML = tracks
+      .map(function (track) {
+        return '<option value="' + escapeHtml(track.world) + '">' + escapeHtml(track.world) + "</option>";
+      })
+      .join("");
+
+    var worldExists = tracks.some(function (track) {
+      return track.world === state.readerWorld;
+    });
+    if (!worldExists && tracks.length) {
+      state.readerWorld = getWorldForFaction(state.readerDay, state.readerFaction, tracks[0].world);
+    }
+
+    readerWorldSelect.value = state.readerWorld;
+  }
+
+  function updateReaderDayButtons() {
+    if (!readerPrevDayBtn || !readerNextDayBtn || state.readerDay === null) {
+      return;
+    }
+
+    var availableDays = getAvailableDayNumbers();
+    var index = availableDays.indexOf(state.readerDay);
+    readerPrevDayBtn.disabled = index <= 0;
+    readerNextDayBtn.disabled = index === -1 || index >= availableDays.length - 1;
+  }
+
+  function changeReaderDay(step) {
+    if (state.readerDay === null) {
+      return;
+    }
+
+    var availableDays = getAvailableDayNumbers();
+    var index = availableDays.indexOf(state.readerDay);
+    if (index === -1) {
+      return;
+    }
+
+    var nextIndex = clamp(index + step, 0, availableDays.length - 1);
+    if (nextIndex === index) {
+      return;
+    }
+
+    var nextDay = availableDays[nextIndex];
+    var nextWorld = getWorldForFaction(nextDay, state.readerFaction, state.readerWorld);
+    openReader(nextDay, state.readerFaction, nextWorld);
+  }
+
+  function applyReaderTheme(theme) {
+    state.readerTheme = theme === "light" ? "light" : "dark";
+    if (readerPanel) {
+      readerPanel.setAttribute("data-reader-theme", state.readerTheme);
+    }
+    if (readerThemeToggle) {
+      readerThemeToggle.textContent = "Theme: " + (state.readerTheme === "dark" ? "Dark" : "Light");
+    }
+  }
+
+  function applyReaderMode(mode) {
+    state.readerMode = mode === "infinite" ? "infinite" : "paged";
+    if (readerPanel) {
+      readerPanel.setAttribute("data-reader-mode", state.readerMode);
+    }
+    readerModeInputs.forEach(function (input) {
+      input.checked = input.value === state.readerMode;
+    });
+  }
+
+  function applyReaderWidth(widthMode) {
+    state.readerWidth = widthMode === "wide" ? "wide" : "narrow";
+    if (readerPanel) {
+      readerPanel.setAttribute("data-reader-width", state.readerWidth);
+    }
+    if (readerWidthToggle) {
+      readerWidthToggle.textContent = "Width: " + (state.readerWidth === "wide" ? "Wide" : "Narrow");
+    }
+  }
+
+  function applyReaderFontScale(scale) {
+    state.readerFontScale = clamp(scale, 0.9, 1.35);
+    if (readerPanel) {
+      readerPanel.style.setProperty("--reader-font-scale", String(state.readerFontScale));
+    }
+  }
+
+  function applyReaderSearch() {
+    if (!readerBody) {
+      return;
+    }
+
+    var query = state.readerQuery;
+    var sections = readerBody.querySelectorAll(".reader-section");
+    if (!sections.length) {
+      return;
+    }
+
+    sections.forEach(function (section) {
+      if (!query) {
+        section.classList.remove("reader-section-hidden");
+        return;
+      }
+      var text = (section.textContent || "").toLowerCase();
+      section.classList.toggle("reader-section-hidden", text.indexOf(query) === -1);
+    });
+  }
+
   function applyFactionTheme(key) {
     var faction = FACTIONS[key];
     if (!faction) {
@@ -385,9 +626,10 @@
   function openReader(day, factionKey, worldName) {
     state.readerDay = day;
     state.readerFaction = factionKey;
-    state.readerWorld = worldName || "";
-    readerFactionSelect.value = factionKey;
+    state.readerWorld = getWorldForFaction(day, factionKey, worldName);
     readerPanel.classList.remove("hidden");
+    syncReaderSelectors();
+    updateReaderDayButtons();
     renderReaderForSelection();
     saveStore();
     readerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -398,6 +640,10 @@
     readerPanel.classList.add("hidden");
     readerBody.innerHTML = "";
     readerMeta.textContent = "";
+    state.readerQuery = "";
+    if (readerSearchInput) {
+      readerSearchInput.value = "";
+    }
   }
 
   function renderReaderForSelection() {
@@ -406,15 +652,23 @@
     }
 
     var dayEntry = getPlanByDay(state.readerDay);
+    var dayTrack = getTrackByWorld(state.readerDay, state.readerWorld) || getTrackByFaction(state.readerDay, state.readerFaction);
+    if (dayTrack) {
+      state.readerFaction = dayTrack.faction;
+      state.readerWorld = dayTrack.world;
+    }
     var phaseLabel = dayEntry ? getPhaseLabel(dayEntry) : (state.readerDay === 0 ? "Phase Zero" : "Day " + state.readerDay);
     var worldLabel = state.readerWorld ? (" | " + state.readerWorld) : "";
     readerTitle.textContent = phaseLabel + " Reader";
     readerMeta.textContent = FACTIONS[state.readerFaction].name + worldLabel;
     readerBody.innerHTML = '<p class="reader-empty">Loading content...</p>';
+    syncReaderSelectors();
+    updateReaderDayButtons();
 
     loadDayFile(state.readerDay)
       .then(function (text) {
         readerBody.innerHTML = renderStructuredDay(text, state.readerFaction);
+        applyReaderSearch();
       })
       .catch(function () {
         readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
@@ -577,6 +831,59 @@
 
   function getPhaseLabel(dayEntry) {
     return dayEntry.phase || (dayEntry.day === 0 ? "Phase Zero" : "Day " + dayEntry.day);
+  }
+
+  function getTrackByFaction(dayNumber, factionKey) {
+    var dayEntry = getPlanByDay(dayNumber);
+    if (!dayEntry) {
+      return null;
+    }
+    return dayEntry.worlds.find(function (track) {
+      return track.faction === factionKey;
+    }) || null;
+  }
+
+  function getTrackByWorld(dayNumber, worldName) {
+    var dayEntry = getPlanByDay(dayNumber);
+    if (!dayEntry) {
+      return null;
+    }
+    return dayEntry.worlds.find(function (track) {
+      return track.world === worldName;
+    }) || null;
+  }
+
+  function getWorldForFaction(dayNumber, factionKey, fallbackWorld) {
+    var preferredTrack = getTrackByFaction(dayNumber, factionKey);
+    if (preferredTrack) {
+      return preferredTrack.world;
+    }
+
+    var fallbackTrack = getTrackByWorld(dayNumber, fallbackWorld || "");
+    if (fallbackTrack) {
+      return fallbackTrack.world;
+    }
+
+    var dayEntry = getPlanByDay(dayNumber);
+    if (dayEntry && dayEntry.worlds.length) {
+      return dayEntry.worlds[0].world;
+    }
+
+    return "";
+  }
+
+  function getAvailableDayNumbers() {
+    return state.availablePlan
+      .map(function (entry) {
+        return entry.day;
+      })
+      .sort(function (a, b) {
+        return a - b;
+      });
+  }
+
+  function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
   }
 
   function hexToRgba(hex, alpha) {
