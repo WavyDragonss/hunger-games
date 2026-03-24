@@ -11,7 +11,7 @@ Toad
 Orphan Annihilator
 [[/TEAM_A_ASTRAL_WARDENS]]
 
-[[TEAM_B_OBSIDIAN_DOMINION]]
+[[TEAM_B_FURIOUS_FLOOFS]]
 [[LEADER]] Ninnginni [[/LEADER]]
 CharliSpirit
 lumallie
@@ -22,7 +22,7 @@ Revenant
 Elv
 Golden
 Loyal2Schwab
-[[/TEAM_B_OBSIDIAN_DOMINION]]
+[[/TEAM_B_FURIOUS_FLOOFS]]
 
 [[TEAM_C_VELOCITY_SYNDICATE]]
 [[LEADER]] Rabbit [[/LEADER]]

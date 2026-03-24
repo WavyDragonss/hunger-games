@@ -11,12 +11,12 @@
       focus: "On every day, run Astral as a clean strategic lane on its own world map. Keep tempo measured and positional."
     },
     "obsidian-dominion": {
-      name: "Obsidian Dominion",
+      name: "Furious Floofs",
       core: "#2A123A",
       secondary: "#8B6B13",
       accent: "#A3122A",
-      summary: "A power faction with ritual authority and pressure-heavy presence. Their opening should feel inevitable.",
-      focus: "On every day, run Obsidian as a dominance lane on a separate world. Build pressure and force reactions."
+      summary: "A chaotic power faction with pressure-heavy presence and relentless momentum.",
+      focus: "On every day, run Furious Floofs as a dominance lane on a separate world. Build pressure and force reactions."
     },
     "velocity-syndicate": {
       name: "Velocity Syndicate",
@@ -66,6 +66,12 @@
       ]
     }
   ];
+
+  var FALLBACK_LEADERS = {
+    "astral-wardens": "space_fan",
+    "obsidian-dominion": "Ninnginni",
+    "velocity-syndicate": "Rabbit"
+  };
 
   var state = {
     activeFaction: "astral-wardens",
@@ -748,7 +754,7 @@
     // Faction-specific block
     var tagMap = {
       "astral-wardens": "TEAM_A_ASTRAL_WARDENS",
-      "obsidian-dominion": "TEAM_B_OBSIDIAN_DOMINION",
+      "obsidian-dominion": "TEAM_B_FURIOUS_FLOOFS",
       "velocity-syndicate": "TEAM_C_VELOCITY_SYNDICATE"
     };
     var teamTag = tagMap[factionKey];
@@ -763,7 +769,7 @@
       var leader = leaderMatch ? leaderMatch[1].trim() : null;
       var cleanBody = body.replace(/\[\[LEADER\]\][\s\S]*?\[\[\/LEADER\]\]/g, "");
 
-      // First block of lines before blank line = member names
+      // Detect leading player-name lines even when spacing in content files varies.
       var allLines = cleanBody.split(/\r?\n/);
       var memberLines = [];
       var contentLines = [];
@@ -777,11 +783,18 @@
           }
           continue;
         }
-        if (!pastMembers) {
+
+        if (!pastMembers && isLikelyPlayerName(line)) {
           memberLines.push(line);
-        } else {
-          contentLines.push(line);
+          continue;
         }
+
+        pastMembers = true;
+        contentLines.push(line);
+      }
+
+      if (!leader) {
+        leader = inferLeaderForFaction(factionKey, memberLines);
       }
 
       html += '<div class="reader-section reader-section--faction">';
@@ -793,7 +806,10 @@
           html += '<p class="leader-row"><span class="leader-tag">Leader</span><span>' + escapeHtml(leader) + "</span></p>";
         }
         if (memberLines.length) {
-          html += '<ul class="reader-list">' + memberLines.map(function (m) { return "<li>" + escapeHtml(m) + "</li>"; }).join("") + "</ul>";
+          html += '<ul class="reader-list">' + memberLines.map(function (m) {
+            var leaderClass = isSameName(m, leader) ? ' class="member-leader"' : "";
+            return "<li" + leaderClass + ">" + escapeHtml(m) + "</li>";
+          }).join("") + "</ul>";
         }
         html += "</div>";
       }
@@ -920,6 +936,58 @@
       });
   }
 
+  function normalizeName(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "");
+  }
+
+  function isSameName(a, b) {
+    return !!normalizeName(a) && normalizeName(a) === normalizeName(b);
+  }
+
+  function looksLikeSentence(text) {
+    if (!text) {
+      return false;
+    }
+    return /[.!?]$/.test(text) || /\b(initial|team|state|objective|environment|system|trial|outcome|recorded|initiated|must)\b/i.test(text);
+  }
+
+  function isLikelyPlayerName(text) {
+    var value = String(text || "").trim();
+    if (!value || value.length > 36) {
+      return false;
+    }
+    if (looksLikeSentence(value)) {
+      return false;
+    }
+
+    var words = value.split(/\s+/);
+    if (words.length > 3) {
+      return false;
+    }
+
+    return /^[A-Za-z0-9_.\- ]+$/.test(value);
+  }
+
+  function inferLeaderForFaction(factionKey, memberLines) {
+    var fromRoster = state.teamRosters && state.teamRosters[factionKey] ? state.teamRosters[factionKey].leader : "";
+    if (fromRoster) {
+      return fromRoster;
+    }
+
+    var fallback = FALLBACK_LEADERS[factionKey] || "";
+    if (fallback) {
+      for (var i = 0; i < memberLines.length; i++) {
+        if (isSameName(memberLines[i], fallback)) {
+          return memberLines[i];
+        }
+      }
+    }
+
+    return "";
+  }
+
   function clamp(value, min, max) {
     return Math.min(max, Math.max(min, value));
   }
@@ -960,7 +1028,7 @@
   function parseTaggedRosters(text) {
     var mapping = {
       TEAM_A_ASTRAL_WARDENS: "astral-wardens",
-      TEAM_B_OBSIDIAN_DOMINION: "obsidian-dominion",
+      TEAM_B_FURIOUS_FLOOFS: "obsidian-dominion",
       TEAM_C_VELOCITY_SYNDICATE: "velocity-syndicate"
     };
     var result = {};
