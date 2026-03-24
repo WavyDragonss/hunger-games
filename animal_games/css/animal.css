@@ -436,6 +436,13 @@ h3 {
   cursor: pointer;
 }
 
+.reader-settings-note {
+  margin: 0;
+  color: var(--reader-muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
 #readerPanel {
   --reader-font-scale: 1;
   --reader-surface: rgba(0, 0, 0, 0.32);
@@ -472,20 +479,12 @@ h3 {
   letter-spacing: 0.01em;
   width: min(860px, 100%);
   margin: 0 auto;
+  max-height: none;
+  overflow: visible;
 }
 
 #readerPanel[data-reader-width="wide"] .reader-body {
   width: min(1060px, 100%);
-}
-
-#readerPanel[data-reader-mode="paged"] .reader-body {
-  max-height: 72vh;
-  overflow: auto;
-}
-
-#readerPanel[data-reader-mode="infinite"] .reader-body {
-  max-height: none;
-  overflow: visible;
 }
 
 .reader-block-title {

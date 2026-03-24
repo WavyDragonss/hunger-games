@@ -77,7 +77,7 @@
     readerFaction: "astral-wardens",
     readerWorld: "",
     readerTheme: "dark",
-    readerMode: "paged",
+    readerMode: "single-day",
     readerWidth: "narrow",
     readerFontScale: 1,
     readerQuery: "",
@@ -122,7 +122,6 @@
       localStorage.setItem(STORE_KEYS.readerFaction, state.readerFaction);
       localStorage.setItem(STORE_KEYS.readerWorld, state.readerWorld);
       localStorage.setItem(STORE_KEYS.readerTheme, state.readerTheme);
-      localStorage.setItem(STORE_KEYS.readerMode, state.readerMode);
       localStorage.setItem(STORE_KEYS.readerWidth, state.readerWidth);
       localStorage.setItem(STORE_KEYS.readerFontScale, String(state.readerFontScale));
       localStorage.setItem(STORE_KEYS.readerHidden, state.readerHidden ? "true" : "false");
@@ -164,11 +163,6 @@
         state.readerTheme = savedReaderTheme;
       }
 
-      var savedReaderMode = localStorage.getItem(STORE_KEYS.readerMode);
-      if (savedReaderMode === "paged" || savedReaderMode === "infinite") {
-        state.readerMode = savedReaderMode;
-      }
-
       var savedReaderWidth = localStorage.getItem(STORE_KEYS.readerWidth);
       if (savedReaderWidth === "narrow" || savedReaderWidth === "wide") {
         state.readerWidth = savedReaderWidth;
@@ -193,7 +187,7 @@
     renderReaderFactionOptions();
     bindEvents();
     applyReaderTheme(state.readerTheme);
-    applyReaderMode(state.readerMode);
+    applyReaderMode("single-day");
     applyReaderWidth(state.readerWidth);
     applyReaderFontScale(state.readerFontScale);
     applyReaderVisibility(state.readerHidden);
@@ -309,15 +303,6 @@
       });
     }
 
-    readerModeInputs.forEach(function (input) {
-      input.addEventListener("change", function () {
-        if (!input.checked) {
-          return;
-        }
-        applyReaderMode(input.value);
-        saveStore();
-      });
-    });
 
   }
 
@@ -474,13 +459,10 @@
   }
 
   function applyReaderMode(mode) {
-    state.readerMode = mode === "infinite" ? "infinite" : "paged";
+    state.readerMode = "single-day";
     if (readerPanel) {
       readerPanel.setAttribute("data-reader-mode", state.readerMode);
     }
-    readerModeInputs.forEach(function (input) {
-      input.checked = input.value === state.readerMode;
-    });
   }
 
   function applyReaderWidth(widthMode) {
