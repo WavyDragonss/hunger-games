@@ -14,8 +14,8 @@
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-inner">
       <div class="hero-top-actions">
-        <a class="action-btn back-btn" href="../index.html">Back to Main Page</a>
-        <button id="readerVisibilityBtn" class="action-btn" type="button">Hide Reader</button>
+        <a class="action-btn text-btn back-btn" href="../index.html">Back to Main Page</a>
+        <button id="readerThemeToggle" class="action-btn icon-btn" type="button">Light</button>
       </div>
       <p class="eyebrow">Animal Games Reader</p>
       <h1 class="title">Day Story Reader</h1>
@@ -30,28 +30,29 @@
       <div class="timeline-head">
         <h2 id="readerTitle">Day Reader</h2>
         <div class="head-actions reader-day-nav">
-          <button id="readerPrevDayBtn" class="action-btn" type="button"><- Previous Day</button>
-          <button id="readerNextDayBtn" class="action-btn" type="button">Next Day -></button>
+          <button id="readerPrevDayBtn" class="action-btn mode-btn" type="button">← Previous Day</button>
+          <button id="readerNextDayBtn" class="action-btn mode-btn" type="button">Next Day →</button>
         </div>
       </div>
       <div class="reader-toolbar" aria-label="Reader tools">
         <div class="reader-tools-left">
-          <button id="readerFontDown" class="action-btn" type="button">A-</button>
-          <button id="readerFontUp" class="action-btn" type="button">A+</button>
+          <button id="readerFontDown" class="action-btn text-btn" type="button">A-</button>
+          <button id="readerFontUp" class="action-btn text-btn" type="button">A+</button>
           <label for="readerSearchInput" class="reader-inline-label">Search</label>
           <input id="readerSearchInput" class="reader-search" type="search" placeholder="Search this day..." autocomplete="off" spellcheck="false" />
         </div>
         <div class="reader-tools-right">
-          <div class="reader-world-control">
-            <label for="readerWorldSelect" class="reader-inline-label">World</label>
-            <select id="readerWorldSelect" class="action-btn"></select>
-          </div>
+          <div class="toolbar-chip" id="focusLabel">Character: none</div>
+          <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
+          <label for="characterPicker" class="reader-inline-label">Character</label>
+          <select id="characterPicker" class="action-btn text-btn">
+            <option value="">Character: none</option>
+          </select>
           <label for="readerFactionSelect" class="reader-inline-label">Faction</label>
-          <select id="readerFactionSelect" class="action-btn"></select>
-          <button id="readerThemeToggle" class="action-btn" type="button">Theme: Dark</button>
-          <button id="readerWidthToggle" class="action-btn" type="button">Width: Narrow</button>
+          <select id="readerFactionSelect" class="action-btn text-btn"></select>
+          <button id="readerWidthToggle" class="action-btn text-btn" type="button">Width: Narrow</button>
           <details class="reader-settings" id="readerSettings">
-            <summary class="action-btn">Settings</summary>
+            <summary class="action-btn text-btn">Settings</summary>
             <div class="reader-settings-panel">
               <label class="reader-settings-row"><input type="radio" name="readerMode" value="paged" /> Paged mode (single day)</label>
               <label class="reader-settings-row"><input type="radio" name="readerMode" value="infinite" /> Infinite mode (all available days)</label>

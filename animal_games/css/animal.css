@@ -10,6 +10,7 @@
   --accent: #7ff5ff;
   --accent-contrast: #0b111d;
   --glow: rgba(127, 245, 255, 0.4);
+  --surface: rgba(0, 0, 0, 0.28);
 }
 
 * {
@@ -36,10 +37,8 @@ body {
   padding: clamp(20px, 4.2vw, 48px) 16px 14px;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  backdrop-filter: blur(8px);
+  z-index: 10;
+  backdrop-filter: none;
 }
 
 body[data-reader-mode="infinite"] .hero {
@@ -221,12 +220,37 @@ h3 {
   border: 1px solid var(--border);
   border-radius: 10px;
   min-height: 38px;
-  background: rgba(0, 0, 0, 0.28);
+  background: var(--surface);
   color: var(--text);
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 12px;
   cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.icon-btn,
+.text-btn,
+.mode-btn {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: var(--surface);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.action-btn:hover,
+.icon-btn:hover,
+.text-btn:hover,
+.mode-btn:hover {
+  border-color: var(--accent);
+}
+
+.action-btn:active,
+.icon-btn:active,
+.text-btn:active,
+.mode-btn:active {
+  transform: translateY(1px);
 }
 
 .action-btn.strong {
@@ -376,9 +400,9 @@ h3 {
   padding: 10px;
   display: grid;
   gap: 8px;
-  position: sticky;
-  top: 8px;
-  z-index: 20;
+  position: relative;
+  top: auto;
+  z-index: 1;
 }
 
 body[data-reader-mode="infinite"] .reader-toolbar {
@@ -392,6 +416,18 @@ body[data-reader-mode="infinite"] .reader-toolbar {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+}
+
+.toolbar-chip {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-height: 38px;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.22);
+  color: var(--text);
+  font-weight: 700;
 }
 
 .reader-inline-label {
@@ -419,6 +455,10 @@ body[data-reader-mode="infinite"] .reader-toolbar {
 
 .reader-settings summary {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .reader-settings summary::-webkit-details-marker {
@@ -494,6 +534,18 @@ body[data-reader-mode="infinite"] .reader-toolbar {
   --reader-text: #11233f;
   --reader-muted: #345072;
   --reader-section-bg: rgba(255, 255, 255, 0.68);
+}
+
+body[data-theme="light"] #readerPanel .action-btn,
+body[data-theme="light"] #readerPanel .toolbar-chip,
+body[data-theme="light"] #readerPanel .reader-search,
+body[data-theme="light"] #readerPanel .reader-inline-label,
+body[data-theme="light"] #readerPanel .panel-note {
+  color: #11233f;
+}
+
+body[data-theme="light"] #readerPanel .reader-search {
+  background: rgba(255, 255, 255, 0.78);
 }
 
 .reader-body {
@@ -595,6 +647,47 @@ body[data-reader-mode="infinite"] .reader-toolbar {
 .reader-section p {
   margin: 4px 0;
   line-height: 1.52;
+}
+
+.story-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.story-line.is-hidden {
+  display: none;
+}
+
+.line-number {
+  min-width: 2.5em;
+  text-align: right;
+  color: var(--reader-muted);
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+
+.line-content {
+  flex: 1;
+}
+
+.name {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 58%, var(--reader-border) 42%);
+  background: color-mix(in srgb, var(--accent) 20%, transparent 80%);
+  color: color-mix(in srgb, var(--reader-text) 68%, var(--accent) 32%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.name.selected {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 34%, transparent 66%);
+  color: color-mix(in srgb, var(--reader-text) 30%, var(--accent) 70%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent 60%);
 }
 
 .reader-narrative {
