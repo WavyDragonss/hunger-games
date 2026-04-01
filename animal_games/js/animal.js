@@ -93,6 +93,28 @@
     progressByDay: {}
   };
 
+  var THEME_SONG_CONFIG = {
+    startLine: 30,
+    endLine: 50,
+    file: "songs/MXZI, Deno - FAVELA [NCS Release].mp3"
+  };
+
+  var themeSongState = {
+    audio: null,
+    toast: null,
+    message: null,
+    allowBtn: null,
+    declineBtn: null,
+    muteBtn: null,
+    isPromptVisible: false,
+    suppressUntilRefresh: false,
+    cycleArmed: true,
+    isPlaying: false,
+    lastScrollY: 0,
+    lastSectionTop: null,
+    fadeTimer: null
+  };
+
   var subtitle = document.getElementById("subtitle");
   var readerPanel = document.getElementById("readerPanel");
   var readerTitle = document.getElementById("readerTitle");
@@ -203,6 +225,7 @@
   init();
 
   function init() {
+    initThemeSongPrompt();
     restoreStore();
     renderReaderFactionOptions();
     bindEvents();
@@ -335,10 +358,12 @@
 
     window.addEventListener("scroll", function () {
       updateProgress();
+      handleThemeSongScroll();
     }, { passive: true });
 
     window.addEventListener("resize", function () {
       updateProgress();
+      handleThemeSongScroll();
     });
 
     if (readerThemeToggle) {
@@ -971,10 +996,13 @@
         applyReaderSearch();
         applyNameSelectionVisuals();
         updateProgress();
+        resetThemeSongTracking();
+        handleThemeSongScroll();
       })
       .catch(function () {
         readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
         updateProgress();
+        stopThemeSong(true);
       });
   }
 
@@ -1012,11 +1040,252 @@
         applyReaderSearch();
         applyNameSelectionVisuals();
         updateProgress();
+        resetThemeSongTracking();
+        handleThemeSongScroll();
       })
       .catch(function () {
         readerBody.innerHTML = '<p class="reader-empty">Some day files could not be loaded.</p>';
         updateProgress();
+        stopThemeSong(true);
       });
+  }
+
+  function initThemeSongPrompt() {
+    if (!document.body) {
+      return;
+    }
+
+    var toast = document.createElement("div");
+    toast.className = "theme-song-toast";
+    toast.setAttribute("hidden", "hidden");
+    toast.innerHTML = '' +
+      '<p class="theme-song-toast-text" id="themeSongToastMessage">This section has a theme song. Play it?</p>' +
+      '<div class="theme-song-toast-actions">' +
+      '<button type="button" class="theme-song-btn theme-song-btn--allow" id="themeSongAllow">Allow</button>' +
+      '<button type="button" class="theme-song-btn" id="themeSongDecline">Not now</button>' +
+      '<button type="button" class="theme-song-btn" id="themeSongMute">Don\'t show again</button>' +
+      "</div>";
+
+    document.body.appendChild(toast);
+
+    themeSongState.audio = new Audio(THEME_SONG_CONFIG.file);
+    themeSongState.audio.preload = "none";
+    themeSongState.audio.volume = 0.55;
+    themeSongState.audio.addEventListener("ended", function () {
+      themeSongState.isPlaying = false;
+      clearFadeTimer();
+    });
+
+    themeSongState.toast = toast;
+    themeSongState.message = document.getElementById("themeSongToastMessage");
+    themeSongState.allowBtn = document.getElementById("themeSongAllow");
+    themeSongState.declineBtn = document.getElementById("themeSongDecline");
+    themeSongState.muteBtn = document.getElementById("themeSongMute");
+
+    if (themeSongState.allowBtn) {
+      themeSongState.allowBtn.addEventListener("click", function () {
+        hideThemeSongPrompt();
+        playThemeSong();
+      });
+    }
+
+    if (themeSongState.declineBtn) {
+      themeSongState.declineBtn.addEventListener("click", function () {
+        hideThemeSongPrompt();
+      });
+    }
+
+    if (themeSongState.muteBtn) {
+      themeSongState.muteBtn.addEventListener("click", function () {
+        themeSongState.suppressUntilRefresh = true;
+        hideThemeSongPrompt();
+        stopThemeSong(true);
+      });
+    }
+  }
+
+  function resetThemeSongTracking() {
+    themeSongState.lastSectionTop = null;
+    themeSongState.lastScrollY = window.scrollY || 0;
+    if ((window.scrollY || 0) <= 24) {
+      themeSongState.cycleArmed = true;
+    }
+  }
+
+  function getThemeSectionBounds() {
+    if (!readerBody) {
+      return null;
+    }
+
+    var lines = Array.from(readerBody.querySelectorAll(".story-line"))
+      .filter(function (lineEl) {
+        if (lineEl.classList.contains("is-hidden")) {
+          return false;
+        }
+        var lineNumber = parseInt(lineEl.getAttribute("data-line-number") || "", 10);
+        return !isNaN(lineNumber) && lineNumber >= THEME_SONG_CONFIG.startLine && lineNumber <= THEME_SONG_CONFIG.endLine;
+      });
+
+    if (!lines.length) {
+      return null;
+    }
+
+    var top = Number.POSITIVE_INFINITY;
+    var bottom = Number.NEGATIVE_INFINITY;
+
+    lines.forEach(function (lineEl) {
+      var rect = lineEl.getBoundingClientRect();
+      if (rect.top < top) {
+        top = rect.top;
+      }
+      if (rect.bottom > bottom) {
+        bottom = rect.bottom;
+      }
+    });
+
+    var height = Math.max(1, bottom - top);
+    var visible = Math.max(0, Math.min(bottom, window.innerHeight) - Math.max(top, 0));
+    var visibleRatio = visible / height;
+
+    return {
+      top: top,
+      bottom: bottom,
+      visibleRatio: visibleRatio
+    };
+  }
+
+  function getThemePromptMessageForFaction() {
+    var key = state.readerFaction;
+    if (key === "astral-wardens") {
+      return "Celestial Bastion has a rhythm. Play it?";
+    }
+    if (key === "obsidian-dominion") {
+      return "Black Throne Expanse has a pulse. Play it?";
+    }
+    if (key === "velocity-syndicate") {
+      return "Redline Sector is heating up. Play it?";
+    }
+    return "This section has a theme song. Play it?";
+  }
+
+  function showThemeSongPrompt() {
+    if (!themeSongState.toast || themeSongState.isPromptVisible || themeSongState.suppressUntilRefresh) {
+      return;
+    }
+    if (themeSongState.message) {
+      themeSongState.message.textContent = getThemePromptMessageForFaction();
+    }
+    themeSongState.toast.hidden = false;
+    themeSongState.toast.classList.add("open");
+    themeSongState.isPromptVisible = true;
+  }
+
+  function hideThemeSongPrompt() {
+    if (!themeSongState.toast) {
+      return;
+    }
+    themeSongState.toast.classList.remove("open");
+    themeSongState.toast.hidden = true;
+    themeSongState.isPromptVisible = false;
+  }
+
+  function clearFadeTimer() {
+    if (themeSongState.fadeTimer) {
+      window.clearInterval(themeSongState.fadeTimer);
+      themeSongState.fadeTimer = null;
+    }
+  }
+
+  function stopThemeSong(immediate) {
+    if (!themeSongState.audio) {
+      return;
+    }
+
+    clearFadeTimer();
+    if (immediate || !themeSongState.isPlaying) {
+      themeSongState.audio.pause();
+      themeSongState.audio.currentTime = 0;
+      themeSongState.audio.volume = 0.55;
+      themeSongState.isPlaying = false;
+      return;
+    }
+
+    var startVolume = themeSongState.audio.volume;
+    var steps = 8;
+    var step = 0;
+    themeSongState.fadeTimer = window.setInterval(function () {
+      step += 1;
+      var nextVolume = Math.max(0, startVolume * (1 - step / steps));
+      themeSongState.audio.volume = nextVolume;
+      if (step >= steps || nextVolume <= 0.01) {
+        clearFadeTimer();
+        themeSongState.audio.pause();
+        themeSongState.audio.currentTime = 0;
+        themeSongState.audio.volume = 0.55;
+        themeSongState.isPlaying = false;
+      }
+    }, 70);
+  }
+
+  function playThemeSong() {
+    if (!themeSongState.audio) {
+      return;
+    }
+    clearFadeTimer();
+    themeSongState.audio.currentTime = 0;
+    themeSongState.audio.volume = 0.55;
+    var playPromise = themeSongState.audio.play();
+    themeSongState.isPlaying = true;
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(function () {
+        themeSongState.isPlaying = false;
+      });
+    }
+  }
+
+  function handleThemeSongScroll() {
+    var scrollY = window.scrollY || 0;
+    if (scrollY <= 24) {
+      themeSongState.cycleArmed = true;
+    }
+
+    var section = getThemeSectionBounds();
+    if (!section) {
+      hideThemeSongPrompt();
+      stopThemeSong(true);
+      themeSongState.lastScrollY = scrollY;
+      themeSongState.lastSectionTop = null;
+      return;
+    }
+
+    var scrollingDown = scrollY > themeSongState.lastScrollY + 1;
+    var triggerLine = window.innerHeight * 0.36;
+    var enteredFromAbove = themeSongState.lastSectionTop !== null && themeSongState.lastSectionTop > triggerLine && section.top <= triggerLine;
+
+    var belowStopBoundary = section.bottom < window.innerHeight * 0.33;
+    var aboveStopBoundary = section.top > window.innerHeight * 0.67;
+    var outOfActiveZone = belowStopBoundary || aboveStopBoundary;
+
+    if (outOfActiveZone) {
+      hideThemeSongPrompt();
+      if (themeSongState.isPlaying) {
+        stopThemeSong(false);
+      }
+    }
+
+    if (
+      scrollingDown &&
+      enteredFromAbove &&
+      section.visibleRatio >= 0.3 &&
+      themeSongState.cycleArmed &&
+      !themeSongState.suppressUntilRefresh
+    ) {
+      themeSongState.cycleArmed = false;
+      showThemeSongPrompt();
+    }
+
+    themeSongState.lastScrollY = scrollY;
+    themeSongState.lastSectionTop = section.top;
   }
 
   function renderStructuredDay(text, factionKey) {
