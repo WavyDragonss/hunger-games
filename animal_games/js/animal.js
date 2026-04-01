@@ -85,6 +85,7 @@
     readerWorld: "",
     readerTheme: "dark",
     readerMode: "paged",
+    themeSongMode: "ask",
     readerWidth: "narrow",
     readerFontScale: 1,
     readerQuery: "",
@@ -105,10 +106,10 @@
     message: null,
     allowBtn: null,
     declineBtn: null,
-    muteBtn: null,
     isPromptVisible: false,
-    suppressUntilRefresh: false,
     cycleArmed: true,
+    wasInActiveZone: false,
+    suppressAutoStopUntil: 0,
     isPlaying: false,
     lastScrollY: 0,
     lastSectionTop: null,
@@ -130,9 +131,17 @@
   var readerFontUp = document.getElementById("readerFontUp");
   var readerPrevDayBtn = document.getElementById("readerPrevDayBtn");
   var readerNextDayBtn = document.getElementById("readerNextDayBtn");
+  var readerSettings = document.getElementById("readerSettings");
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
   var readerModeInputs = document.querySelectorAll("input[name='readerMode']");
+  var themeSongModeInputs = document.querySelectorAll("input[name='themeSongMode']");
   var focusLabel = document.getElementById("focusLabel");
   var progressLabel = document.getElementById("progressLabel");
+
+  var scrollTopState = {
+    rafId: 0,
+    isActive: false
+  };
 
   var STORE_KEYS = {
     faction: "animal_faction",
@@ -142,6 +151,7 @@
     readerWorld: "animal_reader_world",
     readerTheme: "animal_reader_theme",
     readerMode: "animal_reader_mode",
+    themeSongMode: "animal_theme_song_mode",
     readerWidth: "animal_reader_width",
     readerFontScale: "animal_reader_font_scale",
     readerProgress: "animal_reader_progress_by_day"
@@ -156,6 +166,7 @@
       localStorage.setItem(STORE_KEYS.readerWorld, state.readerWorld);
       localStorage.setItem(STORE_KEYS.readerTheme, state.readerTheme);
       localStorage.setItem(STORE_KEYS.readerMode, state.readerMode);
+      localStorage.setItem(STORE_KEYS.themeSongMode, state.themeSongMode);
       localStorage.setItem(STORE_KEYS.readerWidth, state.readerWidth);
       localStorage.setItem(STORE_KEYS.readerFontScale, String(state.readerFontScale));
       localStorage.setItem(STORE_KEYS.readerProgress, JSON.stringify(state.progressByDay || {}));
@@ -202,6 +213,11 @@
         state.readerMode = savedReaderMode;
       }
 
+      var savedThemeSongMode = localStorage.getItem(STORE_KEYS.themeSongMode);
+      if (savedThemeSongMode === "off" || savedThemeSongMode === "ask" || savedThemeSongMode === "always") {
+        state.themeSongMode = savedThemeSongMode;
+      }
+
       var savedReaderWidth = localStorage.getItem(STORE_KEYS.readerWidth);
       if (savedReaderWidth === "narrow" || savedReaderWidth === "wide") {
         state.readerWidth = savedReaderWidth;
@@ -231,8 +247,10 @@
     bindEvents();
     applyReaderTheme(state.readerTheme);
     applyReaderMode(state.readerMode);
+    applyThemeSongMode(state.themeSongMode);
     applyReaderWidth(state.readerWidth);
     applyReaderFontScale(state.readerFontScale);
+    updateScrollTopButton();
     applyReaderFactionTheme(state.readerFaction);
     applyNameSelectionVisuals();
     updateProgress();
@@ -359,12 +377,24 @@
     window.addEventListener("scroll", function () {
       updateProgress();
       handleThemeSongScroll();
+      updateScrollTopButton();
     }, { passive: true });
 
     window.addEventListener("resize", function () {
       updateProgress();
       handleThemeSongScroll();
+      updateScrollTopButton();
     });
+
+    if (scrollToTopBtn) {
+      scrollToTopBtn.addEventListener("click", function () {
+        if (scrollTopState.isActive) {
+          abortScrollToTop();
+        } else {
+          startScrollToTop();
+        }
+      });
+    }
 
     if (readerThemeToggle) {
       readerThemeToggle.addEventListener("click", function () {
@@ -419,7 +449,91 @@
       });
     });
 
+    themeSongModeInputs.forEach(function (input) {
+      input.addEventListener("change", function () {
+        if (!input.checked) {
+          return;
+        }
+        applyThemeSongMode(input.value);
+        saveStore();
+        handleThemeSongScroll();
+      });
+    });
 
+    document.addEventListener("click", function (event) {
+      if (!readerSettings || !readerSettings.open) {
+        return;
+      }
+      var target = event.target;
+      if (!(target instanceof Node)) {
+        return;
+      }
+      if (!readerSettings.contains(target)) {
+        readerSettings.removeAttribute("open");
+      }
+    });
+
+
+  }
+
+  function updateScrollTopButton() {
+    if (!scrollToTopBtn) {
+      return;
+    }
+
+    var isDesktop = window.matchMedia("(min-width: 681px)").matches;
+    var shouldShow = isDesktop && (window.scrollY || 0) > 200;
+    scrollToTopBtn.classList.toggle("show", shouldShow);
+    if (!scrollTopState.isActive) {
+      scrollToTopBtn.textContent = "↑";
+      scrollToTopBtn.setAttribute("aria-label", "Scroll to top");
+      scrollToTopBtn.classList.remove("is-scrolling");
+    }
+
+    if (!isDesktop && scrollTopState.isActive) {
+      abortScrollToTop();
+    }
+  }
+
+  function startScrollToTop() {
+    if (!scrollToTopBtn || scrollTopState.isActive) {
+      return;
+    }
+
+    scrollTopState.isActive = true;
+    scrollToTopBtn.textContent = "×";
+    scrollToTopBtn.setAttribute("aria-label", "Stop scrolling to top");
+    scrollToTopBtn.classList.add("is-scrolling");
+    runScrollToTopFrame();
+  }
+
+  function abortScrollToTop() {
+    if (scrollTopState.rafId) {
+      window.cancelAnimationFrame(scrollTopState.rafId);
+      scrollTopState.rafId = 0;
+    }
+    scrollTopState.isActive = false;
+    if (scrollToTopBtn) {
+      scrollToTopBtn.textContent = "↑";
+      scrollToTopBtn.setAttribute("aria-label", "Scroll to top");
+      scrollToTopBtn.classList.remove("is-scrolling");
+    }
+  }
+
+  function runScrollToTopFrame() {
+    if (!scrollTopState.isActive) {
+      return;
+    }
+
+    var currentY = window.scrollY || 0;
+    if (currentY <= 0) {
+      abortScrollToTop();
+      return;
+    }
+
+    var step = Math.max(18, Math.round(currentY * 0.12));
+    window.scrollTo(0, Math.max(0, currentY - step));
+    scrollTopState.rafId = window.requestAnimationFrame(runScrollToTopFrame);
   }
 
   function discoverAvailableDays() {
@@ -609,6 +723,25 @@
     });
     updateReaderDayButtons();
     syncReaderSelectors();
+  }
+
+  function applyThemeSongMode(mode) {
+    var validMode = mode === "off" || mode === "always" ? mode : "ask";
+    state.themeSongMode = validMode;
+
+    themeSongModeInputs.forEach(function (input) {
+      input.checked = input.value === state.themeSongMode;
+    });
+
+    if (state.themeSongMode === "off") {
+      hideThemeSongPrompt();
+      stopThemeSong(true);
+      return;
+    }
+
+    // Re-arm entry detection when switching between ask/always while already in view.
+    themeSongState.cycleArmed = true;
+    themeSongState.wasInActiveZone = false;
   }
 
   function applyReaderWidth(widthMode) {
@@ -1063,7 +1196,6 @@
       '<div class="theme-song-toast-actions">' +
       '<button type="button" class="theme-song-btn theme-song-btn--allow" id="themeSongAllow">Allow</button>' +
       '<button type="button" class="theme-song-btn" id="themeSongDecline">Not now</button>' +
-      '<button type="button" class="theme-song-btn" id="themeSongMute">Don\'t show again</button>' +
       "</div>";
 
     document.body.appendChild(toast);
@@ -1080,12 +1212,11 @@
     themeSongState.message = document.getElementById("themeSongToastMessage");
     themeSongState.allowBtn = document.getElementById("themeSongAllow");
     themeSongState.declineBtn = document.getElementById("themeSongDecline");
-    themeSongState.muteBtn = document.getElementById("themeSongMute");
 
     if (themeSongState.allowBtn) {
       themeSongState.allowBtn.addEventListener("click", function () {
         hideThemeSongPrompt();
-        playThemeSong();
+        playThemeSong(true);
       });
     }
 
@@ -1094,19 +1225,13 @@
         hideThemeSongPrompt();
       });
     }
-
-    if (themeSongState.muteBtn) {
-      themeSongState.muteBtn.addEventListener("click", function () {
-        themeSongState.suppressUntilRefresh = true;
-        hideThemeSongPrompt();
-        stopThemeSong(true);
-      });
-    }
   }
 
   function resetThemeSongTracking() {
     themeSongState.lastSectionTop = null;
     themeSongState.lastScrollY = window.scrollY || 0;
+    themeSongState.wasInActiveZone = false;
+    themeSongState.suppressAutoStopUntil = 0;
     if ((window.scrollY || 0) <= 24) {
       themeSongState.cycleArmed = true;
     }
@@ -1169,7 +1294,7 @@
   }
 
   function showThemeSongPrompt() {
-    if (!themeSongState.toast || themeSongState.isPromptVisible || themeSongState.suppressUntilRefresh) {
+    if (!themeSongState.toast || themeSongState.isPromptVisible) {
       return;
     }
     if (themeSongState.message) {
@@ -1207,6 +1332,7 @@
       themeSongState.audio.currentTime = 0;
       themeSongState.audio.volume = 0.55;
       themeSongState.isPlaying = false;
+      themeSongState.suppressAutoStopUntil = 0;
       return;
     }
 
@@ -1223,27 +1349,45 @@
         themeSongState.audio.currentTime = 0;
         themeSongState.audio.volume = 0.55;
         themeSongState.isPlaying = false;
+        themeSongState.suppressAutoStopUntil = 0;
       }
     }, 70);
   }
 
-  function playThemeSong() {
+  function playThemeSong(userInitiated) {
     if (!themeSongState.audio) {
       return;
     }
+
+    themeSongState.suppressAutoStopUntil = Date.now() + (userInitiated ? 1200 : 450);
     clearFadeTimer();
     themeSongState.audio.currentTime = 0;
     themeSongState.audio.volume = 0.55;
+    if (themeSongState.audio.readyState < 2) {
+      themeSongState.audio.load();
+    }
     var playPromise = themeSongState.audio.play();
     themeSongState.isPlaying = true;
     if (playPromise && typeof playPromise.catch === "function") {
       playPromise.catch(function () {
+        themeSongState.audio.load();
+        return themeSongState.audio.play();
+      }).catch(function () {
         themeSongState.isPlaying = false;
       });
     }
   }
 
   function handleThemeSongScroll() {
+    if (state.themeSongMode === "off") {
+      hideThemeSongPrompt();
+      stopThemeSong(true);
+      themeSongState.lastScrollY = window.scrollY || 0;
+      themeSongState.wasInActiveZone = false;
+      themeSongState.suppressAutoStopUntil = 0;
+      return;
+    }
+
     var scrollY = window.scrollY || 0;
     if (scrollY <= 24) {
       themeSongState.cycleArmed = true;
@@ -1255,37 +1399,43 @@
       stopThemeSong(true);
       themeSongState.lastScrollY = scrollY;
       themeSongState.lastSectionTop = null;
+      themeSongState.wasInActiveZone = false;
+      themeSongState.suppressAutoStopUntil = 0;
       return;
     }
 
-    var scrollingDown = scrollY > themeSongState.lastScrollY + 1;
-    var triggerLine = window.innerHeight * 0.36;
-    var enteredFromAbove = themeSongState.lastSectionTop !== null && themeSongState.lastSectionTop > triggerLine && section.top <= triggerLine;
+    var activeTop = window.innerHeight * 0.67;
+    var activeBottom = window.innerHeight * 0.33;
+    var isInActiveZone = section.visibleRatio >= 0.3 && section.top <= activeTop && section.bottom >= activeBottom;
+    var enteredActiveZone = !themeSongState.wasInActiveZone && isInActiveZone;
 
-    var belowStopBoundary = section.bottom < window.innerHeight * 0.33;
-    var aboveStopBoundary = section.top > window.innerHeight * 0.67;
+    var belowStopBoundary = section.bottom < activeBottom;
+    var aboveStopBoundary = section.top > activeTop;
     var outOfActiveZone = belowStopBoundary || aboveStopBoundary;
 
     if (outOfActiveZone) {
       hideThemeSongPrompt();
-      if (themeSongState.isPlaying) {
+      if (themeSongState.isPlaying && Date.now() >= themeSongState.suppressAutoStopUntil) {
         stopThemeSong(false);
       }
     }
 
     if (
-      scrollingDown &&
-      enteredFromAbove &&
-      section.visibleRatio >= 0.3 &&
-      themeSongState.cycleArmed &&
-      !themeSongState.suppressUntilRefresh
+      (enteredActiveZone || (state.themeSongMode === "always" && isInActiveZone && !themeSongState.isPlaying)) &&
+      themeSongState.cycleArmed
     ) {
       themeSongState.cycleArmed = false;
-      showThemeSongPrompt();
+      if (state.themeSongMode === "always") {
+        hideThemeSongPrompt();
+        playThemeSong(false);
+      } else {
+        showThemeSongPrompt();
+      }
     }
 
     themeSongState.lastScrollY = scrollY;
     themeSongState.lastSectionTop = section.top;
+    themeSongState.wasInActiveZone = isInActiveZone;
   }
 
   function renderStructuredDay(text, factionKey) {

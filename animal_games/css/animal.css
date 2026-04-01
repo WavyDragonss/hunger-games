@@ -287,6 +287,51 @@ h3 {
   transform: translateY(1px);
 }
 
+.scroll-top-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 56%, var(--border) 44%);
+  background: color-mix(in srgb, var(--core) 58%, rgba(10, 16, 28, 0.92) 42%);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
+  z-index: 10040;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.96);
+  transition: opacity 180ms ease, transform 180ms ease, border-color 160ms ease;
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-top-btn:hover {
+  border-color: var(--accent);
+}
+
+.scroll-top-btn.is-scrolling {
+  background: color-mix(in srgb, #8a1c1c 70%, rgba(20, 8, 8, 0.9) 30%);
+  border-color: rgba(255, 190, 190, 0.62);
+}
+
+body[data-theme="light"] .scroll-top-btn {
+  background: color-mix(in srgb, var(--core) 66%, rgba(18, 38, 66, 0.94) 34%);
+  color: #ffffff;
+}
+
 .action-btn.strong {
   border-color: var(--accent);
 }
@@ -531,6 +576,15 @@ body[data-reader-mode="infinite"] .reader-toolbar {
   gap: 8px;
   padding: 4px 0;
   cursor: pointer;
+}
+
+.reader-settings-group-title {
+  margin: 8px 0 2px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .reader-settings-note {
@@ -783,6 +837,49 @@ body[data-theme="light"] #readerPanel .reader-search {
   .reader-tools-right,
   .reader-day-nav {
     align-items: stretch;
+  }
+
+  /* Mobile reader: keep one main reading surface and remove nested card framing */
+  #readerWidthToggle {
+    display: none;
+  }
+
+  .timeline-panel {
+    padding: 10px;
+  }
+
+  .reader-body,
+  #readerPanel[data-reader-width="wide"] .reader-body {
+    width: 100%;
+    margin: 0;
+    padding: 12px 10px;
+  }
+
+  .reader-day-block,
+  .reader-section {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 14px;
+  }
+
+  .reader-day-block {
+    margin-bottom: 14px;
+  }
+
+  .reader-section--faction {
+    box-shadow: none;
+  }
+
+  .reader-narrative {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .scroll-top-btn {
+    display: none;
   }
 }
 

@@ -86,6 +86,10 @@
             <div class="reader-settings-panel">
               <label class="reader-settings-row"><input type="radio" name="readerMode" value="paged" /> Paged mode (single day)</label>
               <label class="reader-settings-row"><input type="radio" name="readerMode" value="infinite" /> Infinite mode (all available days)</label>
+              <p class="reader-settings-group-title">Theme Song Trigger</p>
+              <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="off" /> Do not play</label>
+              <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="ask" /> ASK</label>
+              <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="always" /> Always play</label>
               <p class="reader-settings-note">Both modes use full-page scrolling, not inner-container scrolling.</p>
             </div>
           </details>
@@ -95,6 +99,8 @@
       <div class="reader-body" id="readerBody"></div>
     </section>
   </main>
+
+  <button id="scrollToTopBtn" class="scroll-top-btn" type="button" aria-label="Scroll to top" title="Back to top">↑</button>
 
   <script src="./js/music-player.js" defer></script>
   <script src="./js/animal.js" defer></script>
