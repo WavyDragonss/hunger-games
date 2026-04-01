@@ -1,0 +1,551 @@
+[[DAY]]
+DAY 2 — THE FIRST PURSUIT
+[[SYSTEM_STATE]]
+Day index: 2.
+Participant count: 30 / 30.
+Leader-animal bond status: active — early-stage communication established across all three pairs.
+Anomaly index: 0.3 — minor environmental deviations detected. Below participant awareness threshold. For now.
+Environmental stability: reduced across all zones. Degradation rate: controlled.
+Threat calibration: escalated. First structured pressure event authorized.
+Trial phase: adaptation validation — Day 1 cohesion metrics under stress testing.
+Cross-team isolation: maintained. Convergence event: authorized, scheduled for end-of-cycle.
+Observation mode: active monitoring with selective intervention.
+Host integration: pending. Reveal window: open.
+[[NARRATIVE]]
+Day 2 does not begin with panic.
+It begins with the particular wrongness of things that are almost the same.
+The camps are intact. The environments are where they were left. Nothing has collapsed, rearranged, or vanished in the night — which should be reassuring, and isn't, because in each of the three worlds there is something that cannot be precisely named. Water moving at a slightly different rate. A shadow at a slightly different angle. A smell in the air that wasn't there before but isn't quite new enough to identify. The kind of wrongness that lives in the peripheral rather than the direct — the thing that makes people glance at the same wall twice and not be able to explain why.
+All thirty participants wake into this.
+They do what people do when the threat is ambient rather than specific: they look at each other. They take inventory. They eat what they have, which is not enough, and drink what they've collected, which is also not enough but more than nothing. They talk about the previous day in the way that people talk about something when they're using the conversation to check whether the other person agrees that reality is behaving correctly.
+The animals are present in ways they weren't quite present before. Not closer, exactly — but more visible. More acknowledged. Less like something that had appeared and might leave, and more like something that had decided to stay. They move through the camps slowly. They observe individuals rather than groups. They do not speak, mostly, but they look — and the looking has a quality that is attentive in a way that feels, to some of the participants, like being remembered.
+This is the part where trust develops.
+This is also the part where trust, having developed, becomes a variable the system can act on.
+The stillness of the morning is not rest. It is calibration. The environments are measuring what the teams built on Day 1 — the structures, the relationships, the patterns of deference and decision — and preparing to apply pressure to exactly those points.
+Somewhere in the architecture of all three worlds, though none of the thirty people in them could know it, something activates. Not loudly. Not visibly. The way a machine starts: the hum beneath the surface of everything, already running by the time anyone notices it.
+The morning does not last.
+[[TEAM_A_ASTRAL_WARDENS]]
+The overhang felt more like shelter on the second morning than it had on the first.
+This was partly familiarity — the three-wall configuration that Orphan Annihilator had described from memory and that The Reddening Day had quietly reinforced overnight with stacked stone along the open face now held a specific kind of warmth that an environment earns when people have slept in it. Partly the water, which was running faster this morning — still upward against the stone, still defying sense, but faster, filling the collection fabric at almost twice the previous rate. CrystalWolf had noticed it before anyone else woke, had stood watching it for several minutes to be sure it wasn't her reading it wrong, and had concluded it was real.
+"Same vein," she told Ashborn, who was the second one up. "Different pressure. Like something downstream changed."
+"Or upstream," Ashborn said.
+"There isn't an upstream. It's going the wrong direction."
+Ashborn looked at the water thread rising against gravity and accepted this with the ease of someone who had decided on the first day that the rules here were not going to be the rules he was familiar with. "More water is good."
+"More water is useful," CrystalWolf said. "The reason for it might not be."
+This distinction would not be resolved for several hours, by which point it would no longer matter.
+The fungal clusters had also expanded overnight — same varieties, same wall sections, but broader growth. Shroud examined them with the same methodical patience he'd applied the day before, working through the expanded clusters with the attitude of someone who understood that gratitude for food and skepticism about food were not mutually exclusive. He tested three new samples. Two were acceptable. One produced a tingling in the back of his throat that he logged as uncertain and set aside. "More than yesterday," he told Rally Mally, who was cataloguing. "But the rate of growth is fast. That's worth watching."
+"Fast growth could be good," Rally Mally said.
+"Fast growth could be the environment preparing to take something away," Shroud said. "Abundance and warning look similar until one of them is over."
+Rally Mally added this to her mental record, which she kept with the careful attention of someone who had understood, instinctively, that in a place like this the difference between useful knowledge and useless anxiety was usually just timing. She distributed the food evenly — same portions, same order she'd established the day before — and nobody had to be asked to wait their turn. The system, small as it was, already held.
+The Drake had been visible since dawn.
+Not from somewhere else, not arriving — simply there when the light came, settled on the highest point of the overhang's outer face, watching the camp below with the patient, comprehensive attention of something that had no particular place to be. Its scales caught the strange ambient light of the sky and scattered it in directions that didn't quite match the angle. Duccarian had seen it first and said nothing — just noted its position, filed it, and waited to see how the rest of the team responded.
+Toad responded by walking toward it. Not with approach energy — just relocating his morning position to be closer, the way you move to a warmer spot in a room. He sat cross-legged about four meters from its landing point and ate his portion of food in companionable silence. The Drake regarded him. Toad regarded the Drake. Neither made demands of the other.
+"It's not watching the environment," Toad said eventually, to Schwalbe who had come to crouch nearby. "It's watching us. Specifically us. Individual attention."
+Schwalbe studied this. "It moves its eyes between people."
+"Slowly. Deliberately. Like it's running through a checklist."
+"What's on the checklist?"
+Toad shrugged. "Ask it."
+"You ask it."
+"I did. It didn't answer."
+The Drake's gaze had settled on Orphan Annihilator, who was sitting with their ankle elevated on a rolled piece of fabric and watching the camp with the alert attention of someone who had converted their physical limitation into a surveillance function. The look it gave was not pitying. It was, if anything, evaluative — the expression of something assessing condition, not circumstance.
+"It's looking at OA," space_fan said, from behind Schwalbe and Toad.
+"It looks at everyone," Toad said.
+"It's looking at OA differently."
+The Reddening Day was already at Orphan Annihilator's side, rebandaging the ankle from last night's improvised brace with what had become a cleaner, more structured version — they'd refined the technique overnight, worked out a better way to distribute pressure across the joint. "How does it feel this morning?" they asked.
+"Worse than last night," Orphan Annihilator said.
+"That's normal. Twelve to twenty-four hours after a sprain is often the worst inflammation window. It should plateau before it improves."
+"So it's not getting worse, it just feels worse."
+"Correct."
+Orphan Annihilator sat with this. "That is a surprisingly annoying distinction."
+"Most accurate ones are," The Reddening Day said, and something like amusement moved through the camp at this — not laughter, but the low-grade warmth of people who are beginning to know each other well enough to recognize a tone.
+space_fan moved to the edge of the overhang and looked at the sky.
+It was doing something new.
+Not dramatically — the change was subtle enough that it might have been dismissed by someone not specifically watching for it. The violet-amber gradient that had characterized the first day was still present, but the amber had deepened. And the clouds, which yesterday had moved in conflicting directions as though the sky was internally disagreeing, were beginning to move in a single direction. Slowly. Not wind-driven — purposefully, as if each cloud had received the same instruction and was executing it at its own pace.
+space_fan filed this. Did not announce it. Kept watching.
+Duccarian had been at the edge of the first plateau for the better part of an hour, looking at the gaps between platforms. He had his rough sketch from the day before — marks in the stone, a notation system he'd developed without sharing it fully — and he was revising it, adding the night's observations, aligning what he thought he'd seen with what the light of morning was confirming.
+"The gaps are asymmetric," he said, to CrystalWolf who had drifted near. "The western pair are wider than the eastern pair by a consistent margin. But not a random margin. It's the same ratio, mirrored."
+CrystalWolf studied the gaps. "What does a mirrored ratio mean?"
+"It means it wasn't erosion. Erosion is irregular. This is patterned."
+"You think it was designed."
+"I think it's consistent in a way that natural systems rarely are." Duccarian turned the sketch over in his hands. "I also think the Drake's landing points yesterday had a pattern. Not random perching. It always landed at the high point nearest the eastern edge of whatever platform it was on. Without exception."
+"You were tracking it."
+"I was watching it. I wasn't sure I was tracking anything until this morning." He looked at the current position of the Drake — high point, outer face, eastern orientation. Exactly consistent. "The east keeps coming up."
+CrystalWolf said nothing for a moment. Then: "Tell space_fan."
+"I'm still not certain enough to—"
+"Tell space_fan," she said again, gently but without room for argument. "Certainty comes later. The observation is already valuable."
+Duccarian looked at his sketch. Then at the Drake. Then at space_fan, who was still at the overhang's edge looking at the sky with the particular expression of someone who was already building a picture of their own.
+He went.
+The sky changed without warning.
+There was no gradual transition. No deepening of the amber or thickening of the clouds. One moment the light was what it had been — strange, sourceless, but familiar enough to have become background — and then it was different. Sharp. Precise. As though something had resolved a lens. The shadows on the plateau stone became hard-edged and fell in a single direction. The conflicting cloud patterns ceased completely, all motion aligned in one direction now, not slowly but immediately, as if they had been given an order.
+The wind that followed was not turbulent. It was directional. A single sustained push from the west, not fluctuating, not gusting — a continuous pressure that told you, without ambiguity, which way was forward.
+The Drake was already on its feet before the wind came.
+It had been observing. Now it was alert — the shift in posture as absolute and readable as a switch being thrown. Its head came up. The electric veins in its scales lit from muted to active, the blue deepening toward violet, pulsing faster than before. It turned away from the camp — not gradually, not with any visible hesitation — turned toward the east and the direction the wind was pushing, and every muscle in its body communicated: something is coming. Something is coming now.
+"That's new," Toad said, still seated, watching it.
+Then the Drake launched.
+No runway. No warning. It went from stillness to full flight in one movement that compressed a lot of physics into very little time — wings out and driving, a crack of pressure change against the platform stone, and then it was in the air and it was fast. Not cruising. Pursuit speed. Moving east over the platform sequence with the focused trajectory of something that had a destination and was not interested in scenic routes.
+It banked.
+And came back.
+"Oh," Rally Mally said. "Oh, it's not going somewhere."
+The Drake curved in a tight arc and drove back at the camp at speed — not directly at the group, but close, close enough that the wind of its passage moved clothing and hair, and close enough that the message was absolutely legible: move. Now. That direction.
+"East," Duccarian said, his voice carrying a quality it hadn't had before — not panic, but a sudden and complete convergence between what he'd been observing all morning and what was happening now. "It's always been east. The gaps narrow east. The Drake lands east. The wind is pushing east." He looked up from his sketch. "We were always going to go east. The terrain was already directing us there."
+"That's a problem for later," Ashborn said, already moving to Orphan Annihilator. "OA — up. Tell me your weight."
+"I can—"
+"I know you can. Tell me your weight."
+"Sixty-three kilos."
+"Fine." Ashborn was already repositioning, getting a shoulder under OA's arm with the practiced efficiency of someone for whom helping was a physical act and not a performance. "Same as yesterday on the bridge. Toad."
+"Here," Toad said, from the other side.
+The Drake banked again, faster this time. The ground behind the westernmost platform made a sound it hadn't made before — a low, structural sound, the noise of stone under stress. Then a section of the platform's rear edge was gone. Not collapsed — removed. Clean edges, sudden absence, the same architecture as the Syndicate's terrain but new here, and wrong, and absolutely unambiguous.
+"Move!" space_fan said.
+They moved.
+The thing about running with ten people through a terrain that is actively destabilizing is that it requires a kind of distributed awareness that individual urgency works against. Everyone's instinct is to go faster. Going faster and going together are, in this terrain, competing objectives. Someone has to hold the pace that the slowest functional members can maintain. Someone has to watch the ground rather than the direction. Someone has to watch the direction rather than the group. Someone has to watch the group rather than anything else.
+The team had not discussed this. It distributed anyway.
+Schwalbe went to point — reading the ground ahead, calling safe lines at junctions with the flat brevity of someone whose words had become purely functional. "Left edge, three meters — hold." "Bridge center — move fast." "Second platform — south face is gone."
+CrystalWolf and Shroud were navigating mid-group, a meter apart, covering each other's blindspots. CrystalWolf tracked path integrity. Shroud tracked the people around him — who was close, who was falling behind, who needed a redirect rather than instructions.
+Rally Mally had been at the rear organizing equipment when it started, and now she was in the worst position — she'd grabbed two containers of collected water and a cloth bundle of fungal stores because they were right at hand, and now she was running with them and losing ground and needing to make a decision she hadn't had time to make: the supplies or the pace. She ran another twenty meters trying to maintain both, and the Drake banked directly overhead in a pass that rattled the stone and Rally Mally stumbled.
+Duccarian caught her.
+Not dramatically — he was simply there, one arm out, a second of stabilization before letting her get her feet under her. "Drop the water," he said.
+"We need it."
+"We need you moving. Drop it."
+She dropped it. The pace recovered. She didn't look back.
+The bridges were the problem.
+In a standard terrain, bridges between platforms were fixed. Here, on Day 2, they had developed opinions. The first one held. The second one held for Schwalbe, CrystalWolf, Shroud, Toad, and then began a low frequency vibration under Orphan Annihilator, Ashborn, and Duccarian crossing together that communicated structural uncertainty without confirming failure.
+"Faster," Ashborn said.
+"OA's ankle," Toad said.
+"I know. Faster."
+Orphan Annihilator didn't argue. They absorbed the pain and went faster, and the bridge held, and the section behind it dropped away eight seconds after they cleared it.
+The Reddening Day had been watching this from the third platform, where they'd crossed ahead of the slower group. They made the calculation without conferring with anyone — who needed them where, what the terrain on this side offered, how long they had before the next destabilization. They found a shallow rock depression that could serve as a momentary station and called out: "Here. OA here. Thirty seconds."
+Ashborn and Toad redirected Orphan Annihilator without breaking stride. The Reddening Day checked the ankle fast — not comprehensively, there wasn't time — but with enough precision to determine that the additional stress hadn't produced structural damage. "Hold," they said. Looked at OA's face. "You're okay."
+"Okay is doing some heavy lifting right now," Orphan Annihilator said.
+"You're functional," The Reddening Day revised. "That's more accurate."
+"Much better."
+The Drake did not stop. It continued its arcing pattern — not attack runs but pressure runs, each pass calculated to keep the group moving forward rather than regrouping or holding. Duccarian, running with the sketch still somehow in his hand, was watching it between platform crossings. Not the direction of travel — the arc. The geometry of each pass. The relationship between where the Drake flew and what the terrain did after.
+"It's not random," he said, to space_fan, who had come level with him on the fourth platform — the broadest of the series, offering the most space for lateral movement. "Each pass precedes a collapse by approximately eight seconds. And the passes are targeted. It's not chasing us generally. It's pushing specific people toward specific routes."
+space_fan looked at the Drake. It had banked for another pass. "Which routes?"
+"The ones that branch to the east-northeast. Every time the path forks and the group has a choice, the Drake takes the line that makes the other choice collapse before anyone can take it. It's not a predator. It's a—"
+"Shepherd," space_fan said.
+Duccarian stopped running. Just for a fraction of a second — his feet were still moving but his attention had entirely frozen. "Yes," he said. "Exactly."
+space_fan made a decision.
+They didn't call the team together. They didn't explain the theory. There wasn't time and it wouldn't have changed what needed to happen. But they moved differently — instead of running from the Drake's passes, space_fan began anticipating them, using the geometry Duccarian had described to read the direction of the next intended route rather than waiting for the collapse to clarify it. They moved slightly ahead of the team, not leading, but orienting — a small directional cue, a gesture, a changed angle of movement that the group could read and follow without being told what it meant.
+It took four iterations before the team had calibrated to it.
+After the fourth, they weren't running from the Drake. They were running with it.
+Rally Mally noticed the shift and her chest did something complicated — relief, because the chaos had acquired a shape, and underneath the relief, the uneasy recognition that the shape had been there all along and they hadn't seen it until now. She kept the pace, kept watching the team around her, kept naming anyone who was beginning to fall behind so that the nearest person could close the gap.
+"Shroud — Toad is two seconds back."
+"Got him."
+"CrystalWolf — bridge on your right is better than center."
+"Agreed, moving."
+She didn't have the supplies anymore. She still had the function.
+The eastern terminus of the platform sequence resolved into a single large structure — a wide, elevated expanse of rock surrounded on three sides by sheer drops, the fourth accessible only from the direction they'd come. The Drake made one final pass — faster than the others, decisive — and then pulled up sharply, gaining altitude, and hung in the air above the terminus without moving.
+Waiting.
+The team arrived in segments. First Schwalbe and CrystalWolf. Then The Reddening Day, with Orphan Annihilator and Ashborn close behind. Then Shroud and Toad. Then space_fan and Duccarian. Rally Mally last, slightly winded, entirely present.
+They spread across the terminus and stood, breathing, looking at where they'd come from. The platform sequence was barely recognizable — large sections gone, gaps where there had been stone, the whole geography remade in the span of twenty minutes. The camp they'd built last night no longer had a platform under it.
+"We couldn't have gone back even if we wanted to," Ashborn said.
+"We don't want to," Orphan Annihilator said, which surprised no one and settled something.
+The Drake descended. It landed at the terminus's high point — eastern orientation, as it always did, as Duccarian had catalogued before he'd known what he was cataloguing — and folded its wings. The electric veins in its scales were still active but slower now. The urgency was gone. Something else had taken its place.
+It looked at space_fan.
+You did not control. space_fan heard it without sound. You oriented. That is the difference between a person who needs the group to follow them, and a person who needs the group to succeed. The system is noting the distinction.
+"Duccarian saw the pattern," space_fan said.
+Yes. The Drake's eyes moved briefly to Duccarian. And you used what he saw rather than needing to see it yourself. That is also being noted.
+The group rested. Not because the terrain was comfortable — it wasn't, the rock was flat and cold and exposed on three sides. But because they had survived a thing and their bodies were asking, firmly, for horizontal time. Orphan Annihilator sat with their ankle elevated on Ashborn's folded outerlayer, which Ashborn had offered without being asked. The Reddening Day made their slow rounds — checking hands, checking breathing, checking the specific quality of people's eyes that communicated how they were actually doing rather than how they said they were.
+"The water's gone," Rally Mally said, quietly, to Shroud.
+"I know."
+"I made the right call, dropping it."
+Shroud looked at her. "Yes."
+"I know I did. I just wanted someone else to confirm it."
+"Yes," Shroud said again, which was the closest he reliably came to reassurance. It was enough.
+Duccarian sat at the terminus's edge, looking east. Not at what was behind them. At what was ahead. The terrain in that direction was new — uncharted, no survey from yesterday to reference. Broad, fractured, the same geological character as everything they'd crossed but extending into a distance that the atmospheric light made difficult to read.
+"It was always going to be east," he said. "The whole thing was oriented this direction from the start."
+"Are you comfortable with that?" Schwalbe asked, coming to sit beside him.
+Duccarian thought about it honestly. "No," he said. "But I'm interested in why."
+The sky above them was doing something new. The directional wind had stopped. The hard-edged light was softening. And in the far distance — very far, at the edge of where the ambient light faded into something else — something was moving. Not a cloud. Not the Drake.
+Something else entirely.
+[[/TEAM_A_ASTRAL_WARDENS]]
+[[TEAM_B_FURIOUS_FLOOFS]]
+The labyrinth looked the same.
+This was, by Day 2, a different category of information than it would have been on Day 1. On Day 1, the labyrinth looking the same as itself was simply the labyrinth looking like itself. On Day 2, after a wall had moved, after CharliSpirit and lumallie's map had produced a discrepancy that the map had not earned, the labyrinth looking the same was a data point, and the data point required a response.
+"Everything is consistent with last night's final reading," CharliSpirit reported, moving through the junction nearest camp with her worn stylus and the dense notation system she'd developed over roughly fourteen hours of active use. She said it straightforwardly, without the relief that another person might have attached to the same words.
+"Consistent doesn't mean unchanged," lumallie said. She was one junction back, confirming the marks. "It means it looks consistent."
+"Correct. That's what I said."
+"Consistent with last night. Not necessarily consistent with this morning's actual state."
+CharliSpirit paused. Looked at the wall. Looked at her map. "You're right. I'll rephrase: the map and the environment currently agree. Whether the environment intends to continue agreeing is a separate question."
+"Soup said the labyrinth adapts," Godly_Aura said, from the center of the group where he'd been listening. He was eating a ration with the focused, attentive manner of someone who ate to maintain function rather than because the food was interesting. "That's what the wall change was. An adaptation event."
+"Soup didn't say adapt," Revenant said. He was leaning against the junction wall, arms crossed — not agitated, but precise. "Soup said the challenge wasn't navigational. That's not the same as confirming the labyrinth adapts. It could have been a one-time structural event. We shouldn't over-extrapolate."
+"We shouldn't under-extrapolate either," Polaris said. He was standing rather than leaning, facing the direction they'd be moving, already oriented toward motion. "If the environment can change and we treat it as fixed, we're operating on a broken model."
+"If the environment can change and we treat it as constantly changing, we can't commit to any route," Revenant said.
+"Then we update the model when we have update evidence."
+"That requires monitoring the model while executing it, which requires capacity we haven't allocated—"
+"Input phase," Ninnginni said.
+Both Polaris and Revenant stopped.
+This was the first use of the protocol under real conditions — not a significant decision, not a pressure event, just a morning disagreement that had begun running longer than its informational content justified. But Ninnginni had recognized the shape of it — two valid positions circling each other without resolution, energy spent rather than directed — and had called it.
+"The question is: do we treat the environment as fixed or adaptive for navigation purposes?" Ninnginni said. "One sentence each. Revenant."
+"Treat it as fixed until we have direct evidence of change. Adaptive assumption wastes energy."
+"Polaris."
+"Treat it as adaptive. If we're wrong, we've wasted caution. If Revenant is wrong, we've walked into a closed corridor."
+"CharliSpirit."
+"The map is accurate as of this moment. Flag junctions where change is possible. Maintain two options at high-risk branches."
+"lumallie."
+"Agree with CharliSpirit. Two-option planning costs little and covers the gap."
+"Galaxy."
+"Adaptive. The wall changed once. The base rate is not zero."
+"Godly_Aura."
+"Adaptive. Soup's communication implied the environment was responsive. That's close enough to confirm."
+"Elv."
+"Two-option planning as a compromise. Doesn't commit to either model."
+"Golden." A pause. Golden looked up from the ration. "Fixed model with flagged exceptions. Fastest."
+"Loyal2Schwab."
+Loyal2Schwab looked up from a junction mark he was reinforcing. "Whatever we decide, I mark junctions three ways now. Safe, flagged, confirmed. That covers both models."
+Ninnginni processed. Seven inputs, thirty seconds.
+"Two-option planning at major junctions. Fixed model as default. Adaptive as the contingency. Loyal2Schwab's three-mark system adopted immediately." A beat. "We move in two minutes."
+Revenant's expression said he'd have chosen the faster option. His mouth said nothing, which was the protocol, and after a moment his expression also came around to acceptance. He was not someone who found losing graceful — but he was someone who found process valuable enough to uphold even when it produced outcomes he'd have overridden on his own.
+"One thing," CharliSpirit said. "The center. We should see it today."
+"If the corridors cooperate," lumallie said.
+"If the corridors cooperate," CharliSpirit agreed.
+Soup was visible above them.
+It hadn't spoken. It had been present since the early morning — hovering above the wall line, close enough that its faint luminescence was visible from below as a soft, diffuse glow at the junction's upper edge. Rotating slightly slower than before. The team had noticed it and had, by some collective agreement that nobody had explicitly called, chosen not to address it. It was there. It was watching. Those two facts were allowed to exist without requiring immediate response.
+Elv was the one who finally looked up at it directly. "How long have you been there?"
+Since before you woke, Soup communicated — to the whole group this time, not just Ninnginni. The difference in this was noticeable. Its communication on Day 1 had been directed, targeted, arriving as though through a specific channel. This arrived more broadly, like a room changing temperature — not from any single point but everywhere at once.
+"You're talking to everyone today," Galaxy said.
+I was always able to. I chose not to. Today it becomes relevant for everyone to hear. The rotation had stopped entirely, which was new. Soup was perfectly still. This will be an important day for your decision system. It will be tested. I recommend attention.
+"Tested how?" Godly_Aura asked.
+But Soup had risen above the wall line, and the glow that had marked its position dissipated into the general light, and the answer, apparently, was: find out.
+They moved.
+The first three junctions were unremarkable. The map held. CharliSpirit's notation was accurate, lumallie's confirmations were clean, and the pace was better than Day 1 — the protocol had reduced the overhead of each navigational decision by removing the debate period that had preceded it. Polaris noted this with the satisfaction of someone who had been trying to describe the value of motion all along. Revenant also noted it, with the more qualified satisfaction of someone who recognized that good outcomes could come from both models and that this data point did not settle the argument as decisively as Polaris seemed to believe.
+They said neither of these things aloud.
+The fourth junction was where it started.
+Loyal2Schwab reached the junction first and crouched to mark it — then stopped. Stood. Looked at the wall to the left with the focused attention of someone who has a very good spatial memory and is currently finding it in conflict with sensory experience. "This wall," he said.
+CharliSpirit was three seconds behind him. She looked at the map. At the wall. Back at the map. "This junction should be a T. Left and straight ahead."
+The junction was a T. Left and straight ahead.
+"It is," Polaris said, from behind her.
+"The left branch is shorter than it was," CharliSpirit said. "By approximately two meters."
+Nobody said anything immediately.
+"How confident are you?" Revenant asked.
+CharliSpirit didn't answer that. She did not accept how confident as a meaningful question from herself when the answer was very, because she trusted her mapping. "The branch was six meters yesterday. It's four today."
+"Walls closed in," Galaxy said.
+"Walls moved," lumallie said. "Different claim."
+Ninnginni was already at the junction mouth, looking down the shortened left branch. What was beyond was the same — corridor, stone, junction visible at the far end. But compressed. "Input," she said.
+"This is the adaptive event," Polaris said. "We should have expected it."
+"We did flag this junction type," CharliSpirit said. "It's a flag, not a crisis. Our two-option planning applies."
+"Second option for the left branch?" Ninnginni asked.
+"Straight ahead. Longer but confirmed clear."
+"Revenant."
+"Straight ahead," Revenant said, with the tone of someone who had called this and knew it. "Unknown walls closing. Don't trust a compressed corridor until we know what compressed it."
+"Elv."
+"Left. It's still functional. We learn from taking it."
+"Golden."
+Golden looked at both branches. "Left. Less distance to unknowns."
+"Loyal2Schwab."
+"Straight ahead. If left walls are moving, the junction at the other end might not exist."
+Ninnginni absorbed this. "Straight ahead. Don't test a corridor that's already moving."
+They moved straight.
+The left branch collapsed twenty seconds after they cleared the junction. Not loudly — just the low structural sound of stone meeting stone, the corridor compressing inward until there was nothing left of it.
+Elv looked back at the closed wall. "I was wrong," they said, with the specific quality of someone making an honest accounting rather than a dramatic admission.
+"You were working with valid reasoning," CharliSpirit said.
+"Valid reasoning, wrong call. Those are allowed to coexist." Elv filed it and moved on. This was not a group that could afford prolonged self-analysis mid-corridor.
+But three junctions later, Revenant spoke.
+"We're moving too slowly," he said.
+Ninnginni kept walking. "We're moving at the pace the environment allows."
+"The environment is changing faster than we're moving through it. We need to increase decision speed or we'll be navigating a different labyrinth than the one we mapped."
+"I've made eleven decisions in the last forty minutes," Ninnginni said. "What's the time cost you're objecting to?"
+"Collective input is taking thirty seconds per junction. If the labyrinth is compressing corridors in real time, thirty seconds is significant."
+"Then make your input shorter."
+"It's not my input, it's—"
+"Revenant." Ninnginni stopped walking and turned, which she did rarely — stopping cost time, and she'd only stop if the conversation cost more without resolution. "You're raising a structural objection to the process while the process is running. That's the one thing I asked you not to do."
+"I'm raising it because the conditions have changed since we agreed on the process. Changed conditions require process review."
+"Process review at a junction," Ninnginni said, "not in a corridor under compression."
+"By the time we reach a junction—"
+"Input," Polaris said.
+Both Ninnginni and Revenant looked at him.
+Polaris looked slightly startled at himself, but continued. "Reduce input to two words per person at standard junctions. Full input only at major branches. Revenant's concern is valid but can be addressed at a junction. Can we move?"
+A beat. Ninnginni looked at Revenant. Revenant's jaw moved once. He was someone for whom being right and being wrong both required processing time, and he was doing the processing. Then: "Yes."
+"Moving," Ninnginni said.
+The modification held. Two-word inputs at standard junctions — enough to cover the critical position without the full elaboration. It was faster. Revenant had been right about the need. Ninnginni had been right about the timing. The protocol had survived its first real fracture not because it was perfect but because the people in it were willing to hold it while improving it.
+Then the labyrinth broke.
+Not subtly this time — not a two-meter compression that required close observation to detect. The corridor ahead of Polaris, who was at point, collapsed inward along both wall faces simultaneously, the left and right stone moving toward each other with the deliberate geometry of something closing rather than the structural failure of something falling. Clean, measured, total. In the time it took Polaris to reverse direction, the corridor was thirty centimeters wide and shrinking.
+"Back!" Polaris shouted — the first genuine shout of the day, and it carried.
+The group reversed. Behind them, the junction they'd just come from was still open. They poured back through it into the previous corridor, spreading, reconsolidating, breathing.
+Ahead of them and to the left, a corridor that had been wall yesterday was open. New. Clean-edged, well-lit, running north — a direction the map had not accounted for because the direction had not existed twenty minutes ago.
+"New branch," Galaxy said, unnecessarily but needing to say it.
+CharliSpirit was already looking at it. Her expression had the quality of someone whose map had just become substantially less reliable. "I can't tell you where it goes."
+"Soup said—" Godly_Aura started.
+"Not now," Ninnginni said. She was looking at the new branch, at the compressed corridor behind them, at the fourteen seconds they'd had to decide. "Input. Short."
+"New branch," Polaris said. "Only option."
+"New branch," CharliSpirit said. "Unknown."
+"New branch," lumallie said. "Agree unknown."
+"New branch," Revenant said, which surprised everyone including apparently Revenant. "We have no other viable direction."
+The rest came in variations of the same — fast, short, unanimous in conclusion if not entirely in confidence.
+"New branch," Ninnginni said. "Move."
+They moved.
+The new corridor was wider than anything else in the labyrinth — wide enough to walk four abreast, wide enough that the sound changed, expanding rather than echoing in the tight stone-pipe way they'd grown accustomed to. The walls here were smoother. The floor was more even. It felt, in a way that none of the previous corridors had felt, like arrival rather than navigation.
+Golden, walking second, said: "This was always here."
+"The branch wasn't," CharliSpirit said.
+"No," Golden said. "The branch wasn't. This was."
+The distinction hung in the air as they walked. The corridor didn't end. It widened further. The structure at the center, which they'd been catching the upper edge of for two days, was now visible ahead at the corridor's terminal point — not above them, not glimpsed, but there. Present. A structure that was large and contained and had, visible through what appeared to be an enormous archway at the corridor's end, a space inside it that was lit differently than the labyrinth — steady, clear, purposeful light, not the ambient sourceless illumination they'd been living in.
+The Floofs stopped at the archway's edge.
+Nobody walked through immediately. Not from fear, exactly — from the specific caution of people who had learned, over two days, that threshold moments mattered.
+"Soup said what we do when we arrive matters," Elv said, quietly.
+"Soup said who speaks last," lumallie said. "And why."
+"Input?" CharliSpirit asked, looking at Ninnginni.
+Ninnginni looked at the archway. At the light inside. At the ten people behind her who had held a protocol together through a labyrinth that was actively trying to make the protocol fail.
+"Not yet," she said. "We look first. We understand what we're entering before we enter it."
+Nobody disagreed. They looked.
+Inside the structure, the steady light was coming from the floor — strips of luminescence embedded in the stone, leading toward the center of the space. The space itself was large and circular and mostly empty. In its center, there was a raised platform.
+On the raised platform, there was someone standing.
+Not alone. Behind them, dimly, the shapes of other people — unfamiliar, thirty total, and then thirty minus ten Floofs, so twenty, and then twenty in configurations that were beginning to look like groups.
+"Those aren't each other," Polaris said. "Those are other teams."
+"There were other teams?" Rally Mally said — but that was Team A's voice, from Team A's direction, from somewhere to the right, which should have been impossible because Team A was in a completely different part of the world.
+Except they weren't anymore.
+[[/TEAM_B_FURIOUS_FLOOFS]]
+[[TEAM_C_VELOCITY_SYNDICATE]]
+The morning was stable.
+This was, by Day 2, worth noting explicitly — they noted it to each other and they noted it in the terse, running ledger that NinjaFlout maintained on a flat piece of stone with a sharp edge. Stable so far: yes. Duration: forty-three minutes. Previous longest stable period: nineteen minutes. The ceiling was already being challenged.
+The Killer Bunny was present at the shelf's edge, facing out, exactly as it had been when most of the team fell asleep. It might have stayed there all night. It might have dematerialized and reappeared. The Syndicate had tacitly decided not to examine this question too closely, because the answer options were all approximately equal in their implications and none of them were actionable.
+janhk was teaching.
+It had become, overnight, an assigned function — not by anyone's explicit declaration but by the logic of what the team needed. What janhk had noticed about the surface texture before collapses was useful, and what janhk had demonstrated at the shelf's edge the night before had produced results in Lyrix, who had arrived at something this morning and was now doing it correctly six out of seven practice tests on safe rock surfaces. hollow Camillia was at three out of seven. The number would go up. janhk knew this with the certainty of someone who had learned something hard and could therefore read the specific look of almost-learned.
+"Don't look for the difference," janhk said, for the fourth time, because hollow Camillia was still looking for it rather than letting it find her. "The difference presents itself when your attention isn't hunting it. You're hunting."
+"How do I stop hunting if I'm trying to see something?"
+"Look at everything in the frame, not the specific thing."
+"That sounds like not looking."
+"It sounds like that," janhk agreed, "but it isn't."
+Lyrix, three meters away, practicing on her own: "Think of it like hearing something you weren't listening for. You didn't stop hearing. You just stopped listening in a direction."
+hollow Camillia tried this. Soft focus. Full frame. The test section of rock janhk had marked — one piece with the pre-collapse texture, one without. She looked at both without looking at either.
+"...right one," she said, tentatively.
+"Yes," janhk said.
+hollow Camillia blinked. "Oh. That's — yes, I can see why—" She looked again, with the brightness of someone whose brain had just successfully installed something new. "I can see it."
+"Don't look directly at it," Lyrix said. "You'll lose it."
+"Oh." Softer again. "There. Right."
+NinjaFlout was not participating in the training session. NinjaFlout was doing math.
+The interval data from yesterday was organized in NinjaFlout's notation system in three columns — elapsed time, time since last event, location relative to formation. The columns had seemed, at the time of writing, like they were building toward something. This morning, reviewing them with fresh context, NinjaFlout was beginning to suspect the something was less interesting than it had appeared.
+"I might have been wrong about the pattern," NinjaFlout said, to Akarimmu who was nearby.
+"In what direction?"
+"The collapses weren't patterned. They were random." NinjaFlout paused. "Or they were patterned in a way I can't find. Which functionally produces the same result."
+"Does the distinction matter?" Akarimmu asked.
+"Yes. If random, we should stop trying to predict timing and instead focus entirely on spatial detection — janhk's method. If patterned and I'm just not finding the pattern, we should keep data and keep looking."
+"And if both?"
+"Then we need two parallel frameworks and I need more data."
+Akarimmu thought about this. "I think it's both. I think the timing is random but the locations are patterned. That's what I've been watching." He produced his own notation — not the formal system NinjaFlout used, but a spatial diagram, positions marked. "The collapses cluster. They don't start at random points. They start at points that are structurally similar — wider sections, or sections where two paths would intersect. Junction eliminations."
+NinjaFlout looked at the diagram. Looked at the column data. "So the timing is random but the location is selected."
+"Which means predicting timing is a dead end but predicting location is viable."
+"Which means janhk's method is the right primary tool."
+"And the interval data is secondary at best," Akarimmu said. "But not useless. If the locations are selected and we can identify the selection logic, we can anticipate which safe zones are actually safe."
+NinjaFlout sat with this. It was not a comfortable conclusion — the pattern-finding had felt productive and this revised it substantially. But the revision was true, and true was more useful than comfortable. "I'm rebuilding the data set," NinjaFlout said. "Starting now."
+"I'll help," Akarimmu said.
+Mainthemainstar had been sitting at the shelf's far edge since before most of the team was fully awake, looking at the terrain beyond. Not the immediate terrain — the middle distance. Something past the first three hundred meters, where the light got slightly different and the stone color shifted.
+Drug came and sat beside them. Drug did this with the specific generosity of someone who understood that silence next to another person was a different thing than silence alone, and that sometimes you could offer it without being asked. They sat. They both looked at the middle distance.
+"What do you see?" Drug asked eventually.
+"I don't know," Mainthemainstar said.
+"Is that unusual?"
+"Usually I know what I'm seeing when I see it. Right now I'm seeing something I don't have a word for."
+Drug looked at the same middle distance. It looked, to Drug, like stone. "Is it threatening?"
+"I can't tell yet."
+"When will you be able to tell?"
+"When it gets closer, or when we get closer to it." Mainthemainstar looked at Drug. "I don't know what I'm doing when I do it. I just want you to know that. I'm not withholding."
+"I know," Drug said. "Nobody thinks you are." A pause. "Kiwi thinks it's interesting. janhk thinks it might be learnable. NinjaFlout thinks it's upsetting their data models."
+"Which one do you think?"
+Drug thought about it honestly. "I think you're ahead of the rest of us by a distance we can't fully measure yet. And that that's useful."
+Mainthemainstar nodded once and went back to looking at the middle distance.
+The Killer Bunny turned its head.
+This was the signal — the team had calibrated, over twenty-four hours of running, to a hierarchy of the Bunny's movements: ear angle for direction, body orientation for urgency, eye focus point for distance. Head-turn was new. Head-turn meant something the Bunny was actively deciding how to process.
+Rabbit noticed it immediately. "What is it?"
+The Bunny's communication arrived with more texture than before — the bond was less new now, the channel slightly more calibrated. Ahead. Different.
+"Different how?"
+The collapse direction. A pause in which the Bunny's attention was clearly forward, reading something at the range of its perception. Yesterday, behind. Today, ahead. Prepare for the logic to reverse.
+Rabbit stood. "Everyone up."
+The team was already moving before they'd been asked — not because they'd heard, but because the Bunny's change in posture had been visible to everyone and the posture's meaning was in the team's vocabulary now.
+"What's changing?" JIKOSU asked, already at Rabbit's shoulder.
+"Collapses switch direction," Rabbit said. "They were behind us. They're going to start happening ahead of us."
+JIKOSU absorbed this. "Safe zones become traps."
+"Stable terrain ahead means danger. Instability ahead means the path is still valid."
+"That's the opposite of everything that worked yesterday."
+"Yes."
+NinjaFlout had heard this from three meters away and was already revising — not just the interval data but the entire logical framework. Yesterday's model had been: stay ahead of the collapse, the collapse is the rear threat, move forward. Today's model was: the forward is the threat, movement is still the answer but the spatial orientation of safe and unsafe has inverted. NinjaFlout's expression was the expression of someone watching a solved puzzle un-solve in real time. "My whole data set," NinjaFlout said, "is based on the wrong model."
+"So rebuild it," Akarimmu said, with perfect simplicity.
+"I built it for eighteen hours."
+"And now you know more than when you started. That's the value of the eighteen hours."
+NinjaFlout was quiet for a moment. "I hate when the right answer is that annoying."
+The ground ahead — which had been solid, which janhk had walked and confirmed and which had seemed, twenty minutes ago, to be the safest section of terrain they'd found — began the noise.
+Low. Structural. Unmistakable to anyone who'd heard it before. But from ahead of them, not behind. From the direction of their next intended movement. From the ground they'd been planning to cross.
+"Move," Rabbit said.
+"Which direction?" JIKOSU asked.
+The Killer Bunny was already running. Not toward the collapse. Not away from it. At an angle — northeast, specifically, a direction that cut across the open terrain rather than following any path they'd been using. And fast. Faster than Day 1, which had itself been fast.
+"With the Bunny," Rabbit said, and ran.
+The collapse ahead was larger than anything from the previous day — not a two-meter section but a wide span of the shelf's leading edge, the stable ground they'd been planning to use as their primary forward route dropping away in a sequence from left to right, taking its time, showing off. janhk, running hard, watched the edge collapse in the peripheral and felt the information that the peripheral produced — the same texture-read, the same soft-focus awareness — but inverted. It was stable ground that now carried the pre-collapse signature. The terrain that looked and felt safest was the terrain about to go.
+"I need to relearn everything," janhk said, running.
+"In order," Kiwi said, beside them. "You already know the method. Method stays. Application inverts. That's not starting over."
+"It feels like starting over."
+"Feelings aren't data."
+janhk looked at the ground they were crossing — the Bunny's chosen route, which looked rough and unconsolidated and wrong — and tried to apply the texture awareness to this new inverse reality. What does safe look like when everything that looked safe is dangerous? The rough sections. The cracked sections. The sections that look like they've already partially failed.
+They crossed a section that looked like it was about to go.
+It held perfectly.
+"There," janhk said, very quietly. A new data point. The first one in the rebuilt model.
+Mainthemainstar said: "Left."
+The Bunny veered left. Three seconds later, the ground where they would have been running was gone.
+Rabbit, running behind Mainthemainstar, had seen it — the moment where Mainthemainstar's direction call had preceded the Bunny's direction change by a full breath. The Bunny had heard something. Mainthemainstar had known something. They'd arrived at the same answer by different roads, and the Bunny had followed where ordinarily the group followed the Bunny.
+The Bunny noticed this. Rabbit could feel the noticing in the quality of the Bunny's attention — a brief, sharp focus on Mainthemainstar that was not alarm or confusion but something closer to recognition.
+The terrain opened without warning — one moment the collapse sequence was active and the ground was a decision every three seconds, and the next they were on a section of rock that was simply solid, simply stable, simply there. Not a shelf like yesterday's earned resting point. More like a corridor. Wide, clear, running in a single direction with the purposeful geometry of something that had been made rather than formed.
+And lit.
+Strips of light in the floor — not fire, not reflection, embedded in the stone itself, running ahead of them in a line that was absolutely unambiguous about where it wanted them to go.
+"That wasn't there before," hollow Camillia said, which was true for everyone.
+"Or we couldn't see it before," NinjaFlout said, which was also a valid model.
+The Killer Bunny had stopped running. It was standing at the lit corridor's entrance, looking down its length, and then looking back at the group with an expression that communicated something that Rabbit had to interpret as: this is not mine. This is something else.
+"Should we follow it?" Drug asked.
+Rabbit looked at the Bunny. Instinct said: wait, evaluate, this corridor is new and its light is different in a way that the terrain hasn't been different before. The Bunny's posture said: go. Not a command — an indication. The path is forward.
+Rabbit stood between instinct and indication for three seconds, which was the longest three seconds of Day 2.
+"Follow the light," Rabbit said.
+"You sure?" JIKOSU asked.
+"No," Rabbit said. "Go."
+They went.
+The corridor merged with another. Then another. The geometry was not the Syndicate's terrain — it was something new, transitional, and the light from other directions was visible at the merging points. Other footsteps audible. Other voices — not intelligible, but present.
+"There are other people," Lyrix said, with the tone of someone discovering that the world was larger than their experience of it.
+"How is that possible?" Akarimmu asked.
+Nobody had a good answer, and then the corridor opened into a space large enough that the question was replaced by the much more immediate question of what they were looking at and who they were looking at it with.
+[[/TEAM_C_VELOCITY_SYNDICATE]]
+The space was circular.
+It had been waiting for all of them — which was the only way to understand a room that exactly contained thirty people with something left over. The floor was wide, smooth, and lit from beneath with the same embedded luminescence that had directed the final corridors. The walls curved upward into a ceiling that was higher than it needed to be and clearly made to be. The sound in the room behaved differently than outside it — not an echo, but a compression, as though the room was keeping sound inside rather than letting it travel.
+They arrived from three directions, in three separate streams, and they did not know each other.
+Team A came through a wide arch on the north side, Duccarian still holding his sketch, OA moving carefully on a braced ankle, space_fan at the back rather than the front, watching the room before entering it. Team B came through the eastern corridor, CharliSpirit's map held in both hands, lumallie at her shoulder, Ninnginni counting ten before following. Team C came from the south, NinjaFlout already building a revised data framework in their head, the Killer Bunny present and close and uncommonly still.
+All three groups stopped when they saw each other.
+The moment lasted longer than it had any right to — thirty people in a circular room, in three formations, absorbing the fact of each other's existence with the specific quality of people whose world has just expanded without consent.
+Duccarian looked at the other groups. Then at the ceiling. Then at his sketch, which now had an additional annotation: other teams. He added the word not random under it.
+Rally Mally counted. Out loud, quietly: "Ten. Ten. Ten. Thirty."
+"Thirty," The Reddening Day confirmed, which answered a question that hadn't been spoken but had been hanging in the air of the room since the first group arrived.
+Ninnginni, from Team B, looked at space_fan, from Team A, with the mutual recognition of two people who are both trying to do the same kind of work and have just realized it. No words yet. Just the acknowledgment.
+The Killer Bunny sat at the precise center of the room. The Drake folded its wings above, circling once before finding a high point in the ceiling's structure. Soup descended through the ceiling without visible entry point and hovered, rotating, over all of them.
+The animals were present and they were still. That was the note on which everything that followed would be built.
+Someone stepped out of the room's geometry — not from any corridor, not through any visible entrance, but from the space between the room's organized attention and its edges. A figure who had been there before they were looking and was simply visible now. Standing on the raised platform at the room's center, which no one had been standing on a moment ago, which no one had crossed to reach, which the platform had apparently been waiting to present.
+Not hostile. Not afraid. The posture of someone who was exactly where they intended to be and had been planning this moment for longer than the participants had been aware a moment was coming.
+There was a pause that the figure allowed — not from uncertainty but from the specific use of silence as a tool.
+Then:
+"You've been surviving," the figure said, and the voice was the kind of voice that rooms like this one were apparently designed for — clear, calibrated, carrying without effort to all thirty people simultaneously. "You've been doing it well. Most of you."
+Another pause.
+"That was the warm-up."
+Nobody spoke. The figure read the room with the ease of someone who had read many rooms and found them all, in their own ways, interesting.
+"My name isn't important. What I am is: the person who knows what this is. Which makes me useful to you, because you don't." The figure's eyes moved across the three groups — not rapidly, not skimming, but with the quality of actually looking. "You've been in separate environments. You've been finding your own ways to stay alive, to stay together, to make decisions under pressure. You've been doing this under the impression that it was random. That you were in danger. That the animals were something that found you."
+A beat.
+"None of that is true."
+The room processed this in the specific way that rooms process information when the information restructures everything that came before it.
+"The animals chose you," the figure continued. "The environments were built. The pressure was calibrated. The collapses, the walls, the sky, the corridors — controlled. You were never in arbitrary danger. You were in designed danger, which is different, and which is the foundation of what this is."
+Space_fan looked at the Drake above. The Drake looked back. You are making the right choice for the wrong reason. Today it doesn't matter. Ask me again in three days. It had known. It had known the entire time.
+The Killer Bunny sat at the room's center and was still.
+"What you've been participating in is called the Animal Games," the figure said, and the name landed in the room with the weight of something that had been real before anyone had a word for it, and was now more real for having one. "You and your animals will train together. You will face challenges — one per day, each one harder than the last. Each one designed not to test the animal, but to test what the animal and its partner can build together. You'll have separate sectors. Shared world. The environments you've been in are sections of a larger structure, connected at points the system chooses to connect. Like today."
+CharliSpirit, quietly, to lumallie: "The labyrinth was built."
+"The labyrinth was built," lumallie confirmed, which was the only appropriate response.
+"Your animals will develop," the figure continued. "They will become more. Their abilities will grow through use — through your use of them together, through the relationship your team builds with them. The more you understand each other, the more becomes possible."
+Ninnginni's eyes were on the figure with the focused attention of someone taking notes in a medium that left no marks. The protocol, she was thinking. The protocol works. But it was built for the labyrinth and the labyrinth was the warm-up. What does it need to become?
+"The challenges will increase in difficulty," the figure said. The tone shifted — still controlled, but with something added that had not been in the room before. Something honest. "And in consequence."
+A beat that was longer than the others.
+"For the first four days, the consequences are injury and disadvantage. Loss. Pressure." The figure's gaze moved across the room, not landing anywhere in particular. "After Day Four, the consequences include elimination."
+Elimination.
+The word went into the room and stayed there, because there was nowhere for it to go.
+"I said this clearly so you wouldn't be surprised," the figure said. "You will be frightened. You may be angry. Both are reasonable. I'm not telling you this to be cruel. I'm telling you this because the system operates on information, and the information belongs to you."
+Drug, from somewhere in the Syndicate's formation, said — not loudly, but clearly enough: "Elimination meaning what."
+"Meaning what you think it means," the figure said.
+The silence that followed was a different kind of silence than the room had contained before.
+Thirty people in a circular room, with three animals, under calibrated light, absorbing the weight of a sentence that had rearranged everything. The survival had been real. The danger had been real. The pressure had been real. All of that had been real, and controlled, and part of something that was now going to become more.
+The figure stepped back from the platform's edge — not leaving, simply creating distance, allowing the information to exist in the space between them.
+"You have tonight," the figure said. "Separate sectors. Your animals will guide you. Tomorrow, the challenges begin."
+Then the figure was at the edge of the room's geometry again, and then not at the edge, and then not in the room, with the same silence that had marked their arrival.
+Thirty people stood in a circular room with three animals and said nothing.
+Duccarian looked at his sketch. Then he added one more word at the bottom of the page, below the notation, below all the careful observation and the pattern-finding and the two-day accumulation of useful understanding.
+He wrote: game.
+He looked at it for a moment.
+Then he closed the sketch.
+[[SYSTEM_OBSERVATION]]
+DAY 2 — END-OF-CYCLE ANALYSIS
+TEAM A — ASTRAL WARDENS
+Active members logged     : 10 / 10
+Injury status             : Orphan Annihilator — ankle, manageable. No new injuries.
+Cohesion metric           : +21% — adversity-strengthened. Distribution of function under pressure confirmed.
+Pursuit event outcomes    : Terrain navigation successful. No member isolated or abandoned.
+Orphan Annihilator integrated throughout. Ashborn — physical prioritization confirmed.
+Rally Mally — supply loss accepted, function maintained. Positive outcome.
+Notable dynamics          : Duccarian pattern recognition: Drake movement analysis, terrain orientation.
+Confirmed early-awareness classification. Monitor.
+space_fan — non-controlling leadership confirmed under stress.
+Orientation model effective. Protocol-free, instinct-based.
+The Reddening Day — fast-call performance under pressure: nominal.
+Schwalbe — environmental navigation under collapse: reliable.
+Drake assessment          : Pursuit event executed within design parameters. Leader message delivered.
+Shepherd framing registered by both leader and Duccarian.
+This was early. Acceptable.
+Warning flag              : Duccarian and space_fan both identified the "shepherding" pattern.
+Neither has identified what it implies about system architecture.
+Monitor convergence of the two observations. Do not accelerate.
+Watch condition           : Supply loss noted. Scarcity test timeline moved forward.
+Introduce resource tension by Day 3. Cooperative model under
+genuine shortage, not manageable shortage.
+TEAM B — FURIOUS FLOOFS
+Active members logged     : 10 / 10
+Cohesion metric           : +17% — protocol stress-tested. Structural integrity confirmed.
+Pursuit event outcomes    : Wall compression events navigated correctly.
+Protocol survived first fracture. Revenant mid-process objection: noted.
+Outcome: mid-course modification adopted. Protocol improved rather than broken.
+Notable dynamics          : Ninnginni — first genuine stress-test of protocol: successful.
+Modification under pressure: demonstrates adaptive process architecture.
+Revenant — post-decision objection flagged. Below critical threshold.
+Intent: process improvement, not destabilization. Assess Day 3.
+Polaris — input call during leader conflict: de-escalation instinct. Unexpected.
+Golden — two words, decisive. Efficiency/accuracy ratio: highest in group.
+Loyal2Schwab — three-mark system adopted by full team. Silent infrastructure confirmed.
+Elv — self-correction public and clean. No defensiveness. Social stabilizer.
+Soup assessment           : Group-wide communication initiated. Bond depth increasing ahead of schedule.
+Arrival at labyrinth center achieved Day 2. System had projected Day 3.
+Warning flag              : Protocol improvement under stress was not predicted at this granularity.
+Revenant's objection improved the system rather than damaging it.
+Flagging for further study. High-functioning internal dissent is rare.
+Watch condition           : Convergence event has introduced cross-team awareness.
+Floofs' response to other teams: analytical. Calibrating.
+First cross-team interaction dynamics to be assessed Day 3.
+TEAM C — VELOCITY SYNDICATE
+Active members logged     : 10 / 10
+Cohesion metric           : +23% — highest across all three teams. Second consecutive Day 1 record.
+Pursuit event outcomes    : Logic reversal successfully navigated. No member lost.
+Inverse-collapse adaptation: faster than projected. janhk method transferred.
+Notable dynamics          : Mainthemainstar — pre-Bunny direction call confirmed. Second instance.
+Preceding the bonded animal by a full breath on directional decision.
+Origin remains unclassified. Anomaly confirmed. Moving from monitoring
+to active tracking. Do not expose. Do not acknowledge.
+Rabbit — instinct-vs-bond conflict logged. Three-second hesitation.
+Decision went with bond. Correct outcome. Hesitation itself is data.
+janhk — failed call during inverse-collapse. Recovery immediate.
+Self-identified and filed. No group function disruption. Resilient.
+NinjaFlout — full model collapse and rebuild within event window.
+Completed partial rebuild under movement. Cognitive resilience: high.
+Akarimmu — spatial pattern identification independent of NinjaFlout's
+temporal analysis. Complementary framework. Convergence productive.
+Bunny assessment          : Followed Mainthemainstar's lead on one directional decision.
+This is the first recorded instance of a bonded animal deferring
+to a non-leader, non-bonded participant on a perception call.
+Flag as significant. Do not act on. Continue observation.
+Warning flag              : Mainthemainstar now flagged at highest monitoring priority.
+Anomaly is confirmed, recurring, and escalating in precision.
+System does not yet have a classification for this participant's
+perception mode. This is unusual.
+Watch condition           : Speed dependency partially broken by inverse-collapse event.
+Non-kinetic threat introduction may not be required as planned.
+Reassess Day 3 challenge design for this team.
+SYSTEM-LEVEL NOTES
+All thirty participants: active.
+False safety phase: successful.
+Pursuit events: executed within design parameters across all three zones.
+Host integration: complete.
+Game layer: successfully introduced.
+Lethality disclosure: delivered. Participant response logged.
+Resistance: Team C, Drug — direct verbal challenge to "elimination" definition. Logged.
+Team B, Godly_Aura — visible calculation, no statement. Pattern recognition active.
+Team A, space_fan — looked at Drake during disclosure. Seeking confirmation. Noted.
+Curiosity:  Team B, Elv — evaluating the figure as a system element, not a threat.
+Team C, Kiwi — processing philosophical implications in real time. Flagged.
+Team A, Schwalbe — immediate structural assessment of the space. Architecture interest.
+Denial:     Several participants across all three teams produced brief flat-affect responses
+to the elimination disclosure. Psychological protection mechanism. Expected.
+Will not last beyond Day 3.
+Mainthemainstar: anomaly now at priority tier one.
+Duccarian: pattern recognition confirmed. Escalating scope.
+Both participants: unaware of their classification. Maintain.
+The system has introduced itself.
+The participants now understand they are being watched.
+They do not yet understand that being watched and being played
+are, in this system, the same thing.
+The silence after explanation was twenty-two seconds.
+Twenty-two seconds is a long time to be thirty people
+who have just learned that everything was designed.
+The system found it appropriate.
+[[END_DAY]]

@@ -13,7 +13,7 @@
     "obsidian-dominion": {
       name: "Furious Floofs",
       core: "#2A123A",
-      secondary: "#8B6B13",
+      secondary: "#D4B56A",
       accent: "#A3122A",
       summary: "A chaotic power faction with pressure-heavy presence and relentless momentum.",
       focus: "On every day, run Furious Floofs as a dominance lane on a separate world. Build pressure and force reactions."
@@ -569,7 +569,8 @@
     document.documentElement.style.setProperty("--accent", faction.accent);
     document.documentElement.style.setProperty("--accent-contrast", readableTextColor(faction.accent));
     document.documentElement.style.setProperty("--glow", hexToRgba(faction.accent, 0.45));
-    document.documentElement.style.setProperty("--muted", hexToRgba(faction.secondary, 0.72));
+    var mutedOpacity = key === "obsidian-dominion" ? 0.86 : 0.72;
+    document.documentElement.style.setProperty("--muted", hexToRgba(faction.secondary, mutedOpacity));
   }
 
   function applyReaderMode(mode) {
@@ -1125,6 +1126,10 @@
       if (contentLines.length) {
         html += '<div class="reader-narrative">';
         contentLines.forEach(function (line) {
+          if (isVisualDivider(line)) {
+            html += renderVisualDivider();
+            return;
+          }
           lineCounter.value += 1;
           html += renderNumberedLine(lineCounter.value, line, matchers);
         });
@@ -1151,6 +1156,9 @@
       '<div class="reader-section ' + extraClass + '">' +
       '<h4 class="reader-section-label">' + escapeHtml(label) + '</h4>' +
       '<ul class="reader-list">' + lines.map(function (line) {
+        if (isVisualDivider(line)) {
+          return '<li class="reader-list-divider" aria-hidden="true"></li>';
+        }
         return "<li>" + escapeHtml(line) + "</li>";
       }).join("") + '</ul>' +
       '</div>';
@@ -1169,10 +1177,21 @@
         if (!line.trim()) {
           return "";
         }
+        if (isVisualDivider(line)) {
+          return renderVisualDivider();
+        }
         lineCounter.value += 1;
         return renderNumberedLine(lineCounter.value, line.trim(), matchers || []);
       }).join("") +
       '</div>';
+  }
+
+  function renderVisualDivider() {
+    return '<div class="reader-divider" role="separator" aria-hidden="true"></div>';
+  }
+
+  function isVisualDivider(line) {
+    return /^-{3,}$/.test(String(line || "").trim());
   }
 
   function renderNumberedLine(lineNumber, lineText, matchers) {
@@ -1618,5 +1637,51 @@
     }
 
     return result;
+  }
+
+  // ═════════════════════════════════════════════════════════════════
+  // MUSIC PLAYER INITIALIZATION
+  // To port to another game: copy this songs array, update file paths,
+  // and call initMusicPlayer(animalGamesSongs) from that game's JS
+  // ═════════════════════════════════════════════════════════════════
+  var animalGamesSongs = [
+    {
+      file: "songs/MXZI, Deno - FAVELA [NCS Release].mp3",
+      artist: "MXZI, Deno",
+      song: "FAVELA",
+      credits: {
+        title: "MXZI, Deno - FAVELA",
+        provider: "Music provided by NoCopyrightSounds",
+        download: "http://ncs.io/FAVELA",
+        watch: "http://ncs.lnk.to/FAVELAAT/youtube"
+      }
+    },
+    {
+      file: "songs/youth® - stuckinmyhead! [NCS Release].mp3",
+      artist: "Youth",
+      song: "Stuck in my head",
+      credits: {
+        title: "Song: Youth - Stuck in my head",
+        provider: "Music provided by NoCopyrightSounds",
+        download: "http://ncs.io/stuckinmyhead",
+        watch: "http://ncs.lnk.to/stuckinmyheadAT/youtube"
+      }
+    },
+    {
+      file: "songs/Alex Hagen - Superhero [NCS Release].mp3",
+      artist: "Alex Hagen",
+      song: "Superhero",
+      credits: {
+        title: "Song: Alex Hagen - Superhero",
+        provider: "Music provided by NoCopyrightSounds",
+        download: "http://ncs.io/AH_Superhero",
+        watch: "https://ncs.lnk.to/AH_SuperheroAT/youtube"
+      }
+    }
+  ];
+
+  // Initialize the music player if the function exists
+  if (typeof initMusicPlayer === "function") {
+    initMusicPlayer(animalGamesSongs);
   }
 })();

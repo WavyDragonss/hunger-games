@@ -213,8 +213,7 @@ She hoped she'd made sure of that.
 The ground had been fine when they woke up.
 It continued being fine for approximately nineteen minutes.
 Then a section of pathway eight paces behind Drug simply ceased. No sound. No warning. No gradual crumbling or audible crack. Clean edges appeared at the perimeter of a two-meter section of stone, and then the stone was gone, and below it was a depth that didn't show a bottom.
-Drug had been the last person to cross it. They stood at the far edge and stared at the gap. Twelve people, or twelve people minus wherever the path used to be.
-"That was solid thirty seconds ago," Drug said.
+Drug had been the last person to cross it. They stood at the far edge and stared at the gap. Ten people, or ten people minus wherever the path used to be.
 "Move," said Rabbit, already moving.
 They moved.
 This was not a group that needed a long conversation to reach an obvious conclusion. The conclusion was immediate and unanimous: stillness was the threat. Forward was intact. Behind was disappearing. The viable survival model was forward, fast, and paying very close attention to everything.
@@ -328,6 +327,7 @@ Do not confirm. Do not deny. Do not accelerate.
 Watch condition           : Resource pressure will escalate. Cooperative response model confirmed for Day 1.
 Introduce scarcity variable before Day 4 to test whether cooperation holds
 when the resource cannot cover all ten.
+---
 TEAM B — FURIOUS FLOOFS
 Active members logged     : 10 / 10
 Cohesion metric           : +11% — contested to structurally sound. Trajectory positive.
@@ -348,6 +348,7 @@ Do not accelerate anomaly schedule. Passive introduction only.
 Watch condition           : Labyrinth center arrival projected within two days.
 Hierarchy protocol untested under real pressure. First genuine test incoming.
 Watch whether the protocol holds or whether the person is trusted instead.
+---
 TEAM C — VELOCITY SYNDICATE
 Active members logged     : 10 / 10
 Cohesion metric           : +19% above baseline — adversity-forged, highest Day 1 metric recorded.
