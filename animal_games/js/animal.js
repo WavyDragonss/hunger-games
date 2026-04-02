@@ -114,14 +114,30 @@
     progressByDay: {}
   };
 
-  var THEME_SONG_CONFIG = {
-    startLine: 30,
-    endLine: 50,
-    file: "songs/MXZI, Deno - FAVELA [NCS Release].mp3"
-  };
+  var THEME_SONG_CONFIGS = [
+    {
+      id: "three_houses",
+      startLine: 1,
+      endLine: 167,
+      file: "songs/Fire_Emblem_Three_Houses_Shambhala_Area_17_Redux_Rain.mp3"
+    },
+    {
+      id: "stickerbush",
+      startLine: 219,
+      endLine: 338,
+      file: "songs/Stickerbush_Symphony_Restored_to_HD.mp3"
+    },
+    {
+      id: "pokemon_rejuvenation",
+      startLine: 339,
+      endLine: 368,
+      file: "songs/Pokémon_Rejuvenation_Battle_of_the_Soul_ft_CatchDalgo.mp3"
+    }
+  ];
 
   var themeSongState = {
     audio: null,
+    activeConfig: null,
     toast: null,
     message: null,
     allowBtn: null,
@@ -404,6 +420,10 @@
     }
 
     if (readerBody) {
+      readerBody.addEventListener("pointerdown", function () {
+        toggleThemeSongOnReaderPress();
+      }, { passive: true });
+
       readerBody.addEventListener("click", function (event) {
         var target = event.target;
         if (!(target instanceof HTMLElement) || !target.classList.contains("name")) {
@@ -1443,22 +1463,58 @@
 
     loadDayFile(state.readerDay)
       .then(function (text) {
-        readerBody.innerHTML = renderStructuredDay(text, state.readerFaction, state.readerDay);
-        updateCharacterPickerForFaction();
-        applyReaderSearch();
-        applyNameSelectionVisuals();
-        applyFactionHighlightVisuals();
-        updateProgress();
-        resetThemeSongTracking();
-        handleThemeSongScroll();
-        applyPendingScrollRestore();
+        try {
+          readerBody.innerHTML = renderStructuredDay(text, state.readerFaction, state.readerDay);
+          updateCharacterPickerForFaction();
+          applyReaderSearch();
+          applyNameSelectionVisuals();
+          applyFactionHighlightVisuals();
+          updateProgress();
+          resetThemeSongTracking();
+          handleThemeSongScroll();
+          applyPendingScrollRestore();
+        } catch (renderError) {
+          console.error("Reader render failed:", renderError);
+          readerBody.innerHTML = '<p class="reader-empty">Reader failed to render this day. Check console for details.</p>';
+          updateProgress();
+          stopThemeSong(true);
+          applyPendingScrollRestore();
+        }
       })
-      .catch(function () {
-        readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
+      .catch(function (error) {
+        var message = String((error && error.message) || "").toLowerCase();
+        if (message.indexOf("missing") !== -1 || message.indexOf("404") !== -1) {
+          recoverFromMissingReaderDay();
+          return;
+        }
+
+        console.error("Reader load failed:", error);
+        readerBody.innerHTML = '<p class="reader-empty">Reader failed to load this day.</p>';
         updateProgress();
         stopThemeSong(true);
         applyPendingScrollRestore();
       });
+  }
+
+  function recoverFromMissingReaderDay() {
+    var availableDays = getAvailableDayNumbers();
+    var fallbackDay = availableDays.find(function (dayNumber) {
+      return dayNumber !== state.readerDay;
+    });
+
+    if (fallbackDay === undefined) {
+      readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
+      updateProgress();
+      stopThemeSong(true);
+      applyPendingScrollRestore();
+      return;
+    }
+
+    state.readerDay = fallbackDay;
+    state.readerWorld = getWorldForFaction(fallbackDay, state.readerFaction, state.readerWorld);
+    saveStore();
+
+    renderReaderForSelection();
   }
 
   function renderInfiniteReader() {
@@ -1526,9 +1582,10 @@
 
     document.body.appendChild(toast);
 
-    themeSongState.audio = new Audio(THEME_SONG_CONFIG.file);
+    themeSongState.audio = new Audio(THEME_SONG_CONFIGS[0].file);
     themeSongState.audio.preload = "none";
     themeSongState.audio.volume = 0.55;
+    themeSongState.audio.loop = true;
     themeSongState.audio.addEventListener("ended", function () {
       themeSongState.isPlaying = false;
       clearFadeTimer();
@@ -1558,9 +1615,8 @@
     themeSongState.lastScrollY = window.scrollY || 0;
     themeSongState.wasInActiveZone = false;
     themeSongState.suppressAutoStopUntil = 0;
-    if ((window.scrollY || 0) <= 24) {
-      themeSongState.cycleArmed = true;
-    }
+    // Re-arm on each reader render so Day 3 can trigger even after prior visits.
+    themeSongState.cycleArmed = true;
   }
 
   function getThemeSongContainer() {
@@ -1575,9 +1631,9 @@
     return state.readerDay === 3 ? readerBody : null;
   }
 
-  function getThemeSectionBounds() {
+  function getThemeSectionBoundsForConfig(config) {
     var container = getThemeSongContainer();
-    if (!container) {
+    if (!container || !config) {
       return null;
     }
 
@@ -1587,7 +1643,7 @@
           return false;
         }
         var lineNumber = parseInt(lineEl.getAttribute("data-line-number") || "", 10);
-        return !isNaN(lineNumber) && lineNumber >= THEME_SONG_CONFIG.startLine && lineNumber <= THEME_SONG_CONFIG.endLine;
+        return !isNaN(lineNumber) && lineNumber >= config.startLine && lineNumber <= config.endLine;
       });
 
     if (!lines.length) {
@@ -1632,6 +1688,25 @@
     return "This section has a theme song. Play it?";
   }
 
+  function getActiveThemeSection(activeBoundaryY) {
+    for (var i = 0; i < THEME_SONG_CONFIGS.length; i += 1) {
+      var config = THEME_SONG_CONFIGS[i];
+      var bounds = getThemeSectionBoundsForConfig(config);
+      if (!bounds) {
+        continue;
+      }
+      if (bounds.top <= activeBoundaryY && bounds.bottom >= activeBoundaryY) {
+        return {
+          config: config,
+          top: bounds.top,
+          bottom: bounds.bottom,
+          visibleRatio: bounds.visibleRatio
+        };
+      }
+    }
+    return null;
+  }
+
   function showThemeSongPrompt() {
     if (!themeSongState.toast || themeSongState.isPromptVisible) {
       return;
@@ -1658,6 +1733,33 @@
       window.clearInterval(themeSongState.fadeTimer);
       themeSongState.fadeTimer = null;
     }
+  }
+
+  function toggleThemeSongOnReaderPress() {
+    var audio = themeSongState.audio;
+    if (!audio) {
+      return;
+    }
+
+    if (state.themeSongMode === "off") {
+      return;
+    }
+
+    if (!themeSongState.isPlaying || audio.ended) {
+      var activeSection = getActiveThemeSection(window.innerHeight * 0.33);
+      var resumeConfig = themeSongState.activeConfig || (activeSection ? activeSection.config : null);
+      if (!resumeConfig) {
+        return;
+      }
+      hideThemeSongPrompt();
+      playThemeSong(true, resumeConfig, true);
+      return;
+    }
+
+    clearFadeTimer();
+    audio.pause();
+    themeSongState.isPlaying = false;
+    themeSongState.suppressAutoStopUntil = 0;
   }
 
   function stopThemeSong(immediate) {
@@ -1693,16 +1795,29 @@
     }, 70);
   }
 
-  function playThemeSong(userInitiated) {
+  function playThemeSong(userInitiated, config, preservePosition) {
     if (!themeSongState.audio) {
       return;
     }
 
+    var targetConfig = config || themeSongState.activeConfig || THEME_SONG_CONFIGS[0];
+    if (!targetConfig || !targetConfig.file) {
+      return;
+    }
+
+    themeSongState.activeConfig = targetConfig;
+
     themeSongState.suppressAutoStopUntil = Date.now() + (userInitiated ? 1200 : 450);
     clearFadeTimer();
-    themeSongState.audio.currentTime = 0;
+    var isSameTrack = themeSongState.audio.src.indexOf(targetConfig.file) !== -1;
+    if (!preservePosition || !isSameTrack) {
+      themeSongState.audio.currentTime = 0;
+    }
     themeSongState.audio.volume = 0.55;
-    if (themeSongState.audio.readyState < 2) {
+    if (!isSameTrack) {
+      themeSongState.audio.src = targetConfig.file;
+      themeSongState.audio.load();
+    } else if (themeSongState.audio.readyState < 2) {
       themeSongState.audio.load();
     }
     var playPromise = themeSongState.audio.play();
@@ -1713,6 +1828,10 @@
         return themeSongState.audio.play();
       }).catch(function () {
         themeSongState.isPlaying = false;
+        // If autoplay is blocked in always mode, offer an explicit user action.
+        if (!userInitiated && state.themeSongMode === "always") {
+          showThemeSongPrompt();
+        }
       });
     }
   }
@@ -1732,20 +1851,24 @@
       themeSongState.cycleArmed = true;
     }
 
-    var section = getThemeSectionBounds();
+    var activeBottom = window.innerHeight * 0.33;
+    var section = getActiveThemeSection(activeBottom);
     if (!section) {
       hideThemeSongPrompt();
       stopThemeSong(true);
       themeSongState.lastScrollY = scrollY;
       themeSongState.lastSectionTop = null;
       themeSongState.wasInActiveZone = false;
+      themeSongState.activeConfig = null;
+      themeSongState.cycleArmed = true;
       themeSongState.suppressAutoStopUntil = 0;
       return;
     }
 
     var activeTop = window.innerHeight * 0.67;
-    var activeBottom = window.innerHeight * 0.33;
-    var isInActiveZone = section.visibleRatio >= 0.3 && section.top <= activeTop && section.bottom >= activeBottom;
+
+    // Use reader viewport crossing so large ranges (e.g. lines 1-167) still trigger.
+    var isInActiveZone = section.top <= activeBottom && section.bottom >= activeBottom;
     var enteredActiveZone = !themeSongState.wasInActiveZone && isInActiveZone;
 
     var belowStopBoundary = section.bottom < activeBottom;
@@ -1757,6 +1880,8 @@
       if (themeSongState.isPlaying && Date.now() >= themeSongState.suppressAutoStopUntil) {
         stopThemeSong(false);
       }
+      themeSongState.cycleArmed = true;
+      themeSongState.activeConfig = null;
     }
 
     if (
@@ -1766,8 +1891,9 @@
       themeSongState.cycleArmed = false;
       if (state.themeSongMode === "always") {
         hideThemeSongPrompt();
-        playThemeSong(false);
+        playThemeSong(false, section.config);
       } else {
+        themeSongState.activeConfig = section.config;
         showThemeSongPrompt();
       }
     }
