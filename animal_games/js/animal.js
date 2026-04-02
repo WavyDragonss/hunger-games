@@ -1563,12 +1563,25 @@
     }
   }
 
-  function getThemeSectionBounds() {
+  function getThemeSongContainer() {
     if (!readerBody) {
       return null;
     }
 
-    var lines = Array.from(readerBody.querySelectorAll(".story-line"))
+    if (state.readerMode === "infinite") {
+      return readerBody.querySelector('.reader-day-block[data-day-number="3"]');
+    }
+
+    return state.readerDay === 3 ? readerBody : null;
+  }
+
+  function getThemeSectionBounds() {
+    var container = getThemeSongContainer();
+    if (!container) {
+      return null;
+    }
+
+    var lines = Array.from(container.querySelectorAll(".story-line"))
       .filter(function (lineEl) {
         if (lineEl.classList.contains("is-hidden")) {
           return false;
