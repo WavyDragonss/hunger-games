@@ -420,10 +420,6 @@
     }
 
     if (readerBody) {
-      readerBody.addEventListener("pointerdown", function () {
-        toggleThemeSongOnReaderPress();
-      }, { passive: true });
-
       readerBody.addEventListener("click", function (event) {
         var target = event.target;
         if (!(target instanceof HTMLElement) || !target.classList.contains("name")) {
@@ -2596,11 +2592,18 @@
       return "";
     }
 
-    var baseHueByFaction = {
-      "astral-wardens": 210,
-      "obsidian-dominion": 43,
-      "velocity-syndicate": 351
-    };
+    var day3PaletteOverride = state.readerMode !== "infinite" && state.readerDay === 3;
+    var baseHueByFaction = day3PaletteOverride
+      ? {
+          "astral-wardens": 210,
+          "obsidian-dominion": 2,
+          "velocity-syndicate": 0
+        }
+      : {
+          "astral-wardens": 210,
+          "obsidian-dominion": 43,
+          "velocity-syndicate": 351
+        };
     var baseHue = baseHueByFaction[factionKey] || 215;
     var hash = 0;
     for (var i = 0; i < normalizedName.length; i++) {
@@ -2610,6 +2613,13 @@
     var hueOffset = (hash % 17) - 8;
     var sat = 68 + (hash % 11);
     var light = 56 + (hash % 9) - 4;
+
+    if (day3PaletteOverride && factionKey === "velocity-syndicate") {
+      sat = 6 + (hash % 6);
+      light = 82 + (hash % 10);
+      hueOffset = 0;
+    }
+
     return "hsl(" + (baseHue + hueOffset) + " " + sat + "% " + light + "%)";
   }
 
