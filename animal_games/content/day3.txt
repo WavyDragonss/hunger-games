@@ -384,7 +384,7 @@ The figure looked at the room.
 
 A pause that was different from the others.
 
-"After Day Four, the challenges will be lethal. The mechanism is not subject to your input. Someone will die. The selection is not under my control once it's running — it is a system, and the system makes its own choices within the parameters I've set. I'm telling you this now rather than on Day Five because you deserve the preparation." The figure's voice remained even, which was the detail that made it land harder than volume would have — the warmth was still in it, and the warmth was not removed by the announcement. "You will have four days before that begins. Use them."
+"After Day Four, the challenges will be lethal. The mechanism is not subject to your input. Someone will die. The selection is not under my control once it's running — it is a system, and the system makes its own choices within the parameters I've set. I'm telling you this now rather than on Day Five because you deserve the preparation." The figure's voice remained even, which was the detail that made it land harder than volume would have — the warmth was still in it, and the warmth was not removed by the announcement. "You will have two days before that begins. Use them."
 
 Twenty-two seconds. That was how long the silence after elimination had lasted last night. This silence lasted longer. This silence was thirty people and three animals and a room that was not making any noise on its own behalf, because it had already done what it needed to do.
 
@@ -420,9 +420,9 @@ The silence after lasted twenty-nine seconds, which was seven seconds longer tha
 
 Then everyone spoke at approximately the same moment, which produced a wall of sound rather than a conversation, which lasted about three seconds before resolving into separate streams.
 
-"Four days," Ashborn said. He said it quietly, to the Wardens' table, but it carried. "We have four days."
+"Two days," Ashborn said. He said it quietly, to the Wardens' table, but it carried. "We have two days."
 
-"Four days to what?" Toad said.
+"Two days to what?" Toad said.
 
 "To prepare. To understand the system. To figure out what the challenges will look like before we're in one that can kill us." Ashborn's voice was not panicked — it was practical, which was in some ways more alarming because practical acknowledgment of a lethal timeline required less processing than fear would.
 
@@ -700,7 +700,7 @@ Space_fan was at the window — the abstract pattern of light that was not a vie
 
 "Day 3 warrants it."
 
-"Every day so far has warranted it." Space_fan turned from the window. "We have four days."
+"Every day so far has warranted it." Space_fan turned from the window. "We have two days."
 
 "We do."
 
@@ -877,7 +877,7 @@ SYSTEM-LEVEL NOTES
   The system does not give the shape in advance.
   The system gives the shape during.
 
-  Thirty participants. Three animals. Four days remaining before death is a possible outcome.
+  Thirty participants. Three animals. Two days remaining before death is a possible outcome.
   The participants know this.
   The system knows this.
 

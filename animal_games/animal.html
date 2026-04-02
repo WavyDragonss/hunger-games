@@ -17,35 +17,8 @@
         <a class="action-btn text-btn back-btn" href="../index.html">Back to Main Page</a>
         <div class="hero-right-actions">
           <button id="readerThemeToggle" class="action-btn icon-btn" type="button">Light</button>
-          <button id="musicPanelToggle" class="action-btn icon-btn music-btn" type="button" aria-label="Toggle music player">♪</button>
         </div>
       </div>
-    <!-- Music Player Panel -->
-    <div id="musicPanel" class="music-panel" aria-label="Music player" role="region">
-      <div class="music-panel-inner">
-        <div class="music-info">
-          <div class="music-artist" id="musicArtist">—</div>
-          <div class="music-song" id="musicSong">—</div>
-        </div>
-        <div class="music-progress-container">
-          <span class="music-time-current" id="musicTimeCurrent">0:00</span>
-          <div class="music-progress-bar" id="musicProgressBar">
-            <div class="music-progress-fill" id="musicProgressFill"></div>
-            <div class="music-progress-dot" id="musicProgressDot"></div>
-          </div>
-          <span class="music-time-total" id="musicTimeTotal">0:00</span>
-        </div>
-        <div class="music-controls">
-          <button id="musicPrevBtn" class="music-btn-control" type="button" aria-label="Previous song">⏮</button>
-          <button id="musicPlayPauseBtn" class="music-btn-control" type="button" aria-label="Play / Pause">▶</button>
-          <button id="musicNextBtn" class="music-btn-control" type="button" aria-label="Next song">⏭</button>
-          <button id="musicCreditsBtn" class="music-btn-control music-credits-toggle" type="button" aria-label="Toggle song credits">Credits</button>
-        </div>
-        <div id="musicCredits" class="music-credits" hidden></div>
-      </div>
-    </div>
-    <!-- Audio Element -->
-    <audio id="player"></audio>
 
       <p class="eyebrow">Animal Games Reader</p>
       <h1 class="title">Day Story Reader</h1>
@@ -124,9 +97,19 @@
     </section>
   </main>
 
+  <button id="themeSongWidgetIcon" class="theme-song-widget-icon" type="button" aria-label="Theme song player" title="Theme song player hidden">♪</button>
+  <div id="themeSongWidget" class="theme-song-widget" aria-label="Currently playing theme song" hidden>
+    <div class="theme-song-widget-content">
+      <div class="theme-song-widget-info">
+        <div class="theme-song-widget-artist" id="themeSongWidgetArtist">—</div>
+        <div class="theme-song-widget-title" id="themeSongWidgetTitle">—</div>
+      </div>
+      <button id="themeSongWidgetPlayBtn" class="theme-song-widget-btn" type="button" aria-label="Play/Pause theme song">▶</button>
+    </div>
+  </div>
+
   <button id="scrollToTopBtn" class="scroll-top-btn" type="button" aria-label="Scroll to top" title="Back to top">↑</button>
 
-  <script src="./js/music-player.js" defer></script>
   <script src="./js/animal.js" defer></script>
 </body>
 </html>

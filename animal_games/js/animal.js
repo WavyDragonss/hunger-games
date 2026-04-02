@@ -119,19 +119,19 @@
       id: "three_houses",
       startLine: 1,
       endLine: 167,
-      file: "songs/Fire_Emblem_Three_Houses_Shambhala_Area_17_Redux_Rain.mp3"
+      file: "songs/day3/Fire_Emblem_Three_Houses_Shambhala_Area_17_Redux_Rain.mp3"
     },
     {
       id: "stickerbush",
       startLine: 219,
       endLine: 338,
-      file: "songs/Stickerbush_Symphony_Restored_to_HD.mp3"
+      file: "songs/day3/Stickerbush_Symphony_Restored_to_HD.mp3"
     },
     {
       id: "pokemon_rejuvenation",
       startLine: 339,
       endLine: 368,
-      file: "songs/Pokémon_Rejuvenation_Battle_of_the_Soul_ft_CatchDalgo.mp3"
+      file: "songs/day3/Pokémon_Rejuvenation_Battle_of_the_Soul_ft_CatchDalgo.mp3"
     }
   ];
 
@@ -613,6 +613,28 @@
       }
     });
 
+    var themeSongWidgetPlayBtn = document.getElementById("themeSongWidgetPlayBtn");
+    var themeSongWidgetIcon = document.getElementById("themeSongWidgetIcon");
+    var themeSongWidget = document.getElementById("themeSongWidget");
+
+    if (themeSongWidgetPlayBtn) {
+      themeSongWidgetPlayBtn.addEventListener("click", handleThemeSongWidgetPlayClick);
+    }
+
+    if (themeSongWidgetIcon) {
+      themeSongWidgetIcon.addEventListener("click", toggleThemeSongWidgetExpand);
+    }
+
+    document.addEventListener("pointerdown", function (event) {
+      if (!themeSongWidget || themeSongWidget.hasAttribute("hidden")) {
+        return;
+      }
+      var clickedIcon = themeSongWidgetIcon && themeSongWidgetIcon.contains(event.target);
+      var clickedInsideWidget = themeSongWidget.contains(event.target);
+      if (!clickedIcon && !clickedInsideWidget) {
+        closeThemeSongWidget();
+      }
+    });
 
   }
 
@@ -1760,6 +1782,7 @@
     audio.pause();
     themeSongState.isPlaying = false;
     themeSongState.suppressAutoStopUntil = 0;
+    updateThemeSongWidget();
   }
 
   function stopThemeSong(immediate) {
@@ -1773,6 +1796,7 @@
       themeSongState.audio.currentTime = 0;
       themeSongState.audio.volume = 0.55;
       themeSongState.isPlaying = false;
+      updateThemeSongWidget();
       themeSongState.suppressAutoStopUntil = 0;
       return;
     }
@@ -1791,6 +1815,7 @@
         themeSongState.audio.volume = 0.55;
         themeSongState.isPlaying = false;
         themeSongState.suppressAutoStopUntil = 0;
+        updateThemeSongWidget();
       }
     }, 70);
   }
@@ -1822,12 +1847,14 @@
     }
     var playPromise = themeSongState.audio.play();
     themeSongState.isPlaying = true;
+    updateThemeSongWidget();
     if (playPromise && typeof playPromise.catch === "function") {
       playPromise.catch(function () {
         themeSongState.audio.load();
         return themeSongState.audio.play();
       }).catch(function () {
         themeSongState.isPlaying = false;
+        updateThemeSongWidget();
         // If autoplay is blocked in always mode, offer an explicit user action.
         if (!userInitiated && state.themeSongMode === "always") {
           showThemeSongPrompt();
@@ -1901,6 +1928,95 @@
     themeSongState.lastScrollY = scrollY;
     themeSongState.lastSectionTop = section.top;
     themeSongState.wasInActiveZone = isInActiveZone;
+    updateThemeSongWidget();
+  }
+
+  function getThemeSongDisplayName(config) {
+    if (!config) {
+      return "—";
+    }
+    var nameMap = {
+      "three_houses": "Fire Emblem Three Houses",
+      "stickerbush": "Stickerbush Symphony",
+      "pokemon_rejuvenation": "Pokémon Rejuvenation"
+    };
+    return nameMap[config.id] || config.file || "—";
+  }
+
+  function getThemeSongArtist(config) {
+    if (!config) {
+      return "—";
+    }
+    var artistMap = {
+      "three_houses": "Nintendo",
+      "stickerbush": "David Wise",
+      "pokemon_rejuvenation": "CatchDalgo"
+    };
+    return artistMap[config.id] || "—";
+  }
+
+  function updateThemeSongWidget() {
+    var widget = document.getElementById("themeSongWidget");
+    var icon = document.getElementById("themeSongWidgetIcon");
+    var artistEl = document.getElementById("themeSongWidgetArtist");
+    var titleEl = document.getElementById("themeSongWidgetTitle");
+    var playBtn = document.getElementById("themeSongWidgetPlayBtn");
+
+    if (!widget || !icon || !artistEl || !titleEl || !playBtn) {
+      return;
+    }
+
+    var displayConfig = themeSongState.isPlaying ? themeSongState.activeConfig : themeSongState.activeConfig;
+    var hasActiveConfig = themeSongState.activeConfig || themeSongState.isPlaying;
+
+    if (hasActiveConfig) {
+      artistEl.textContent = getThemeSongArtist(displayConfig);
+      titleEl.textContent = getThemeSongDisplayName(displayConfig);
+      playBtn.textContent = themeSongState.isPlaying ? "⏸" : "▶";
+      icon.classList.add("active");
+    } else {
+      icon.classList.remove("active");
+      closeThemeSongWidget();
+    }
+  }
+
+  function openThemeSongWidget() {
+    var widget = document.getElementById("themeSongWidget");
+    if (widget) {
+      widget.removeAttribute("hidden");
+    }
+  }
+
+  function closeThemeSongWidget() {
+    var widget = document.getElementById("themeSongWidget");
+    if (widget) {
+      widget.setAttribute("hidden", "");
+    }
+  }
+
+  function toggleThemeSongWidgetExpand() {
+    var widget = document.getElementById("themeSongWidget");
+    if (widget && widget.hasAttribute("hidden")) {
+      openThemeSongWidget();
+    } else {
+      closeThemeSongWidget();
+    }
+  }
+
+  function handleThemeSongWidgetPlayClick() {
+    if (!themeSongState.audio || !themeSongState.activeConfig) {
+      return;
+    }
+
+    if (themeSongState.isPlaying) {
+      clearFadeTimer();
+      themeSongState.audio.pause();
+      themeSongState.isPlaying = false;
+      themeSongState.suppressAutoStopUntil = 0;
+    } else {
+      playThemeSong(true, themeSongState.activeConfig, true);
+    }
+    updateThemeSongWidget();
   }
 
   function renderStructuredDay(text, factionKey, dayNumber) {
