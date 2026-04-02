@@ -86,6 +86,30 @@
             <div class="reader-settings-panel">
               <label class="reader-settings-row"><input type="radio" name="readerMode" value="paged" /> Paged mode (single day)</label>
               <label class="reader-settings-row"><input type="radio" name="readerMode" value="infinite" /> Infinite mode (all available days)</label>
+              <p class="reader-settings-group-title">Name Color Mode</p>
+              <label class="reader-settings-row"><input type="radio" name="nameColorMode" value="none" /> No highlight</label>
+              <label class="reader-settings-row"><input type="radio" name="nameColorMode" value="color" /> Colour highlight</label>
+              <label class="reader-settings-row">
+                <input type="radio" name="nameColorMode" value="prefix" />
+                Team prefix
+                <button
+                  id="nameColorInfoBtn"
+                  type="button"
+                  class="settings-info-dot"
+                  aria-label="Open team prefix info"
+                  aria-haspopup="dialog"
+                  aria-expanded="false"
+                >i</button>
+              </label>
+              <div id="nameColorInfoPopover" class="settings-info-popover" role="dialog" aria-label="Team prefix guide" hidden>
+                <div class="settings-info-popover-head">
+                  <strong>Team Prefix Guide</strong>
+                  <button id="nameColorInfoCloseBtn" type="button" class="settings-info-close" aria-label="Close">x</button>
+                </div>
+                <p class="settings-info-popover-text">AW = Astral Wardens</p>
+                <p class="settings-info-popover-text">FF = Furious Floofs</p>
+                <p class="settings-info-popover-text">VS = Velocity Syndicate</p>
+              </div>
               <p class="reader-settings-group-title">Theme Song Trigger</p>
               <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="off" /> Do not play</label>
               <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="ask" /> ASK</label>

@@ -73,18 +73,38 @@
     "velocity-syndicate": "Rabbit"
   };
 
+  var KNOWN_BLOCK_TAGS = [
+    "TITLE",
+    "DAY",
+    "DAY END",
+    "SYSTEM_STATE",
+    "NARRATIVE",
+    "RULES",
+    "LOG",
+    "NIGHT",
+    "AUTHOR NOTE",
+    "SYSTEM_OBSERVATION",
+    "TEAM_A_ASTRAL_WARDENS",
+    "TEAM_B_FURIOUS_FLOOFS",
+    "TEAM_C_VELOCITY_SYNDICATE",
+    "LEADER"
+  ];
+
   var state = {
     activeFaction: "astral-wardens",
     focusedOnly: true,
     teamRosters: {},
     availablePlan: [],
     memberMatchers: [],
+    memberFactionLookup: {},
     dayTextByDay: {},
     readerDay: null,
     readerFaction: "astral-wardens",
+    readerHighlightFaction: "",
     readerWorld: "",
     readerTheme: "dark",
     readerMode: "paged",
+    nameColorMode: "color",
     themeSongMode: "ask",
     readerWidth: "narrow",
     readerFontScale: 1,
@@ -125,6 +145,7 @@
   var readerWorldSelect = document.getElementById("readerWorldSelect");
   var characterPicker = document.getElementById("characterPicker");
   var readerFactionSelect = document.getElementById("readerFactionSelect");
+  var readerFactionLabel = document.querySelector('label[for="readerFactionSelect"]');
   var readerThemeToggle = document.getElementById("readerThemeToggle");
   var readerWidthToggle = document.getElementById("readerWidthToggle");
   var readerFontDown = document.getElementById("readerFontDown");
@@ -132,8 +153,12 @@
   var readerPrevDayBtn = document.getElementById("readerPrevDayBtn");
   var readerNextDayBtn = document.getElementById("readerNextDayBtn");
   var readerSettings = document.getElementById("readerSettings");
+  var nameColorInfoBtn = document.getElementById("nameColorInfoBtn");
+  var nameColorInfoPopover = document.getElementById("nameColorInfoPopover");
+  var nameColorInfoCloseBtn = document.getElementById("nameColorInfoCloseBtn");
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
   var readerModeInputs = document.querySelectorAll("input[name='readerMode']");
+  var nameColorModeInputs = document.querySelectorAll("input[name='nameColorMode']");
   var themeSongModeInputs = document.querySelectorAll("input[name='themeSongMode']");
   var focusLabel = document.getElementById("focusLabel");
   var progressLabel = document.getElementById("progressLabel");
@@ -143,14 +168,20 @@
     isActive: false
   };
 
+  var pendingScrollRestoreY = null;
+
+  var PAGE_SCROLL_KEY = "animal_page_scroll_y";
+
   var STORE_KEYS = {
     faction: "animal_faction",
     focused: "animal_focused",
     readerDay: "animal_reader_day",
     readerFaction: "animal_reader_faction",
+    readerHighlightFaction: "animal_reader_highlight_faction",
     readerWorld: "animal_reader_world",
     readerTheme: "animal_reader_theme",
     readerMode: "animal_reader_mode",
+    nameColorMode: "animal_name_color_mode",
     themeSongMode: "animal_theme_song_mode",
     readerWidth: "animal_reader_width",
     readerFontScale: "animal_reader_font_scale",
@@ -163,9 +194,11 @@
       localStorage.setItem(STORE_KEYS.focused, state.focusedOnly ? "true" : "false");
       localStorage.setItem(STORE_KEYS.readerDay, state.readerDay === null ? "" : String(state.readerDay));
       localStorage.setItem(STORE_KEYS.readerFaction, state.readerFaction);
+      localStorage.setItem(STORE_KEYS.readerHighlightFaction, state.readerHighlightFaction);
       localStorage.setItem(STORE_KEYS.readerWorld, state.readerWorld);
       localStorage.setItem(STORE_KEYS.readerTheme, state.readerTheme);
       localStorage.setItem(STORE_KEYS.readerMode, state.readerMode);
+      localStorage.setItem(STORE_KEYS.nameColorMode, state.nameColorMode);
       localStorage.setItem(STORE_KEYS.themeSongMode, state.themeSongMode);
       localStorage.setItem(STORE_KEYS.readerWidth, state.readerWidth);
       localStorage.setItem(STORE_KEYS.readerFontScale, String(state.readerFontScale));
@@ -198,6 +231,13 @@
         state.readerFaction = savedReaderFaction;
       }
 
+      var savedReaderHighlightFaction = localStorage.getItem(STORE_KEYS.readerHighlightFaction);
+      if (!savedReaderHighlightFaction) {
+        state.readerHighlightFaction = "";
+      } else if (FACTIONS[savedReaderHighlightFaction]) {
+        state.readerHighlightFaction = savedReaderHighlightFaction;
+      }
+
       var savedReaderWorld = localStorage.getItem(STORE_KEYS.readerWorld);
       if (savedReaderWorld !== null) {
         state.readerWorld = savedReaderWorld;
@@ -211,6 +251,11 @@
       var savedReaderMode = localStorage.getItem(STORE_KEYS.readerMode);
       if (savedReaderMode === "paged" || savedReaderMode === "infinite") {
         state.readerMode = savedReaderMode;
+      }
+
+      var savedNameColorMode = localStorage.getItem(STORE_KEYS.nameColorMode);
+      if (savedNameColorMode === "none" || savedNameColorMode === "color" || savedNameColorMode === "prefix") {
+        state.nameColorMode = savedNameColorMode;
       }
 
       var savedThemeSongMode = localStorage.getItem(STORE_KEYS.themeSongMode);
@@ -241,12 +286,14 @@
   init();
 
   function init() {
+    pendingScrollRestoreY = getStoredPageScrollY();
     initThemeSongPrompt();
     restoreStore();
     renderReaderFactionOptions();
     bindEvents();
     applyReaderTheme(state.readerTheme);
     applyReaderMode(state.readerMode);
+    applyNameColorMode(state.nameColorMode);
     applyThemeSongMode(state.themeSongMode);
     applyReaderWidth(state.readerWidth);
     applyReaderFontScale(state.readerFontScale);
@@ -274,7 +321,7 @@
         }
 
         state.readerWorld = getWorldForFaction(state.readerDay, state.readerFaction, state.readerWorld);
-        openReader(state.readerDay, state.readerFaction, state.readerWorld);
+        openReader(state.readerDay, state.readerFaction, state.readerWorld, { scrollToReader: false });
         if (subtitle) {
           subtitle.textContent = "Use the controls to switch day, world, faction, and reader style.";
         }
@@ -284,9 +331,26 @@
   function bindEvents() {
     readerFactionSelect.addEventListener("change", function () {
       var selectedFaction = readerFactionSelect.value;
-      if (!FACTIONS[selectedFaction] || state.readerDay === null) {
+      if (state.readerDay === null) {
         return;
       }
+
+      if (isReaderFactionHighlightMode()) {
+        if (selectedFaction && !FACTIONS[selectedFaction]) {
+          return;
+        }
+        state.readerHighlightFaction = selectedFaction || "";
+        updateCharacterPickerForFaction();
+        applyFactionHighlightVisuals();
+        applyReaderSearch();
+        saveStore();
+        return;
+      }
+
+      if (!FACTIONS[selectedFaction]) {
+        return;
+      }
+
       state.readerFaction = selectedFaction;
       state.readerWorld = getWorldForFaction(state.readerDay, selectedFaction, state.readerWorld);
       applyReaderFactionTheme(state.readerFaction);
@@ -378,12 +442,17 @@
       updateProgress();
       handleThemeSongScroll();
       updateScrollTopButton();
+      storePageScrollY(window.scrollY || 0);
     }, { passive: true });
 
     window.addEventListener("resize", function () {
       updateProgress();
       handleThemeSongScroll();
       updateScrollTopButton();
+    });
+
+    window.addEventListener("beforeunload", function () {
+      storePageScrollY(window.scrollY || 0);
     });
 
     if (scrollToTopBtn) {
@@ -460,20 +529,117 @@
       });
     });
 
+    nameColorModeInputs.forEach(function (input) {
+      input.addEventListener("change", function () {
+        if (!input.checked) {
+          return;
+        }
+        applyNameColorMode(input.value);
+        renderReaderForSelection();
+        saveStore();
+      });
+    });
+
+    if (nameColorInfoBtn && nameColorInfoPopover) {
+      nameColorInfoBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        var willOpen = nameColorInfoPopover.hasAttribute("hidden");
+        if (willOpen) {
+          openNameColorInfoPopover();
+        } else {
+          closeNameColorInfoPopover();
+        }
+      });
+    }
+
+    if (nameColorInfoCloseBtn) {
+      nameColorInfoCloseBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        closeNameColorInfoPopover();
+      });
+    }
+
+    if (nameColorInfoPopover) {
+      nameColorInfoPopover.addEventListener("click", function (event) {
+        event.stopPropagation();
+        closeNameColorInfoPopover();
+      });
+    }
+
     document.addEventListener("click", function (event) {
-      if (!readerSettings || !readerSettings.open) {
-        return;
-      }
       var target = event.target;
       if (!(target instanceof Node)) {
         return;
       }
+
+      if (
+        nameColorInfoPopover &&
+        !nameColorInfoPopover.hasAttribute("hidden") &&
+        nameColorInfoBtn &&
+        !nameColorInfoPopover.contains(target) &&
+        !nameColorInfoBtn.contains(target)
+      ) {
+        closeNameColorInfoPopover();
+      }
+
+      if (!readerSettings || !readerSettings.open) {
+        return;
+      }
       if (!readerSettings.contains(target)) {
+        closeNameColorInfoPopover();
         readerSettings.removeAttribute("open");
       }
     });
 
 
+  }
+
+  function storePageScrollY(value) {
+    try {
+      sessionStorage.setItem(PAGE_SCROLL_KEY, String(Math.max(0, Math.round(value || 0))));
+    } catch (e) {}
+  }
+
+  function getStoredPageScrollY() {
+    try {
+      var raw = sessionStorage.getItem(PAGE_SCROLL_KEY);
+      if (raw === null) {
+        return null;
+      }
+      var parsed = parseInt(raw, 10);
+      return isNaN(parsed) ? null : Math.max(0, parsed);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function applyPendingScrollRestore() {
+    if (pendingScrollRestoreY === null) {
+      return;
+    }
+    var target = pendingScrollRestoreY;
+    pendingScrollRestoreY = null;
+    window.requestAnimationFrame(function () {
+      window.scrollTo(0, target);
+    });
+  }
+
+  function openNameColorInfoPopover() {
+    if (!nameColorInfoPopover || !nameColorInfoBtn) {
+      return;
+    }
+    nameColorInfoPopover.removeAttribute("hidden");
+    nameColorInfoBtn.setAttribute("aria-expanded", "true");
+  }
+
+  function closeNameColorInfoPopover() {
+    if (!nameColorInfoPopover || !nameColorInfoBtn) {
+      return;
+    }
+    nameColorInfoPopover.setAttribute("hidden", "hidden");
+    nameColorInfoBtn.setAttribute("aria-expanded", "false");
   }
 
   function updateScrollTopButton() {
@@ -612,16 +778,30 @@
   }
 
   function renderReaderFactionOptions() {
-    readerFactionSelect.innerHTML = Object.keys(FACTIONS)
+    if (!readerFactionSelect) {
+      return;
+    }
+
+    var options = Object.keys(FACTIONS)
       .map(function (key) {
         return '<option value="' + key + '">' + escapeHtml(FACTIONS[key].name) + "</option>";
-      })
-      .join("");
+      });
+
+    if (isReaderFactionHighlightMode()) {
+      options.unshift('<option value="">No faction highlight</option>');
+    }
+
+    readerFactionSelect.innerHTML = options.join("");
   }
 
   function syncReaderSelectors() {
+    renderReaderFactionOptions();
+    updateReaderFactionControl();
+
     if (readerFactionSelect) {
-      readerFactionSelect.value = state.readerFaction;
+      readerFactionSelect.value = isReaderFactionHighlightMode()
+        ? (state.readerHighlightFaction || "")
+        : state.readerFaction;
     }
 
     if (!readerWorldSelect || state.readerDay === null) {
@@ -694,6 +874,7 @@
     if (readerThemeToggle) {
       readerThemeToggle.textContent = state.readerTheme === "dark" ? "Light" : "Dark";
     }
+    applyReaderFactionTheme(state.readerFaction);
   }
 
   function applyReaderFactionTheme(key) {
@@ -702,7 +883,21 @@
       return;
     }
 
+    var useMazePalette = typeof state.readerDay === "number" && state.readerDay >= 3;
+
     document.body.setAttribute("data-faction", key);
+    if (useMazePalette) {
+      var mazeAccent = state.readerTheme === "light" ? "#1d63cc" : "#7db4ff";
+      var mazeSecondary = state.readerTheme === "light" ? "#d5dfef" : "#d7e3f5";
+      document.documentElement.style.setProperty("--core", state.readerTheme === "light" ? "#ffffff" : "#111826");
+      document.documentElement.style.setProperty("--secondary", mazeSecondary);
+      document.documentElement.style.setProperty("--accent", mazeAccent);
+      document.documentElement.style.setProperty("--accent-contrast", readableTextColor(mazeAccent));
+      document.documentElement.style.setProperty("--glow", hexToRgba(mazeAccent, 0.45));
+      document.documentElement.style.setProperty("--muted", hexToRgba(mazeSecondary, 0.72));
+      return;
+    }
+
     document.documentElement.style.setProperty("--core", faction.core);
     document.documentElement.style.setProperty("--secondary", faction.secondary);
     document.documentElement.style.setProperty("--accent", faction.accent);
@@ -723,6 +918,40 @@
     });
     updateReaderDayButtons();
     syncReaderSelectors();
+    applyFactionHighlightVisuals();
+  }
+
+  function applyNameColorMode(mode) {
+    var validMode = mode === "none" || mode === "prefix" ? mode : "color";
+    state.nameColorMode = validMode;
+    document.body.setAttribute("data-name-color-mode", validMode);
+    nameColorModeInputs.forEach(function (input) {
+      input.checked = input.value === validMode;
+    });
+  }
+
+  function shouldUseTeamTags(dayNumber) {
+    return typeof dayNumber === "number" && dayNumber < 3;
+  }
+
+  function isReaderFactionHighlightMode() {
+    return state.readerMode === "paged" && typeof state.readerDay === "number" && !shouldUseTeamTags(state.readerDay);
+  }
+
+  function updateReaderFactionControl() {
+    if (readerFactionLabel) {
+      readerFactionLabel.textContent = isReaderFactionHighlightMode() ? "Faction Focus" : "Faction";
+    }
+
+    if (readerFactionSelect) {
+      readerFactionSelect.setAttribute(
+        "aria-label",
+        isReaderFactionHighlightMode() ? "Faction highlight" : "Faction"
+      );
+      readerFactionSelect.title = isReaderFactionHighlightMode()
+        ? "Highlight faction members without filtering the story"
+        : "Choose the faction track for this day";
+    }
   }
 
   function applyThemeSongMode(mode) {
@@ -768,16 +997,34 @@
 
     var query = state.readerQuery;
     var selectedName = state.selectedName || "";
+    var activeFaction = isReaderFactionHighlightMode() ? (state.readerHighlightFaction || "") : "";
+    var useSoftFocus = isReaderFactionHighlightMode();
     var lines = readerBody.querySelectorAll(".story-line");
 
     if (lines.length) {
       lines.forEach(function (lineEl) {
         var lineText = (lineEl.getAttribute("data-text") || "").toLowerCase();
         var lineNames = (lineEl.getAttribute("data-names") || "").split("|").filter(Boolean);
+        var lineFactions = (lineEl.getAttribute("data-factions") || "").split("|").filter(Boolean);
         var matchesQuery = !query || lineText.indexOf(query) !== -1;
         var matchesSelected = !selectedName || lineNames.indexOf(selectedName) !== -1;
         var visible = matchesQuery && matchesSelected;
+
+        if (useSoftFocus) {
+          var matchesCharacter = !selectedName || lineNames.indexOf(selectedName) !== -1;
+          var matchesFaction = !activeFaction || lineFactions.indexOf(activeFaction) !== -1;
+          var hasSoftFocus = !!selectedName || !!activeFaction;
+          var softMatch = (!selectedName && !activeFaction) || matchesCharacter || matchesFaction;
+
+          lineEl.classList.toggle("is-hidden", !matchesQuery);
+          lineEl.classList.toggle("focus-dim", hasSoftFocus && !softMatch);
+          lineEl.classList.toggle("focus-match", hasSoftFocus && softMatch);
+          return;
+        }
+
         lineEl.classList.toggle("is-hidden", !visible);
+        lineEl.classList.remove("focus-dim");
+        lineEl.classList.remove("focus-match");
       });
 
       var containers = readerBody.querySelectorAll(".reader-section, .reader-day-block");
@@ -791,7 +1038,7 @@
           return;
         }
 
-        if (selectedName) {
+        if (selectedName && !useSoftFocus) {
           container.classList.add("reader-section-hidden");
           return;
         }
@@ -820,12 +1067,7 @@
       });
     }
 
-    if (focusLabel) {
-      focusLabel.textContent = "Character: " + (state.selectedNameLabel || "none");
-      if (state.selectedNameLabel) {
-        focusLabel.textContent += " (focused)";
-      }
-    }
+    updateFocusLabel();
 
     updateProgress();
   }
@@ -842,12 +1084,7 @@
       el.classList.toggle("selected", !!isSelected);
     });
 
-    if (focusLabel) {
-      focusLabel.textContent = "Character: " + (state.selectedNameLabel || "none");
-      if (state.selectedNameLabel) {
-        focusLabel.textContent += " (focused)";
-      }
-    }
+    updateFocusLabel();
 
     syncCharacterPickerSelection();
   }
@@ -857,7 +1094,7 @@
       return;
     }
 
-    var members = getFactionMembers(state.readerFaction);
+    var members = getCharacterPickerMembers();
     characterPicker.replaceChildren();
 
     var noneOption = document.createElement("option");
@@ -894,6 +1131,83 @@
       return opt.value === selected;
     });
     characterPicker.value = hasSelected ? selected : "";
+  }
+
+  function getCharacterPickerMembers() {
+    if (isReaderFactionHighlightMode()) {
+      if (state.readerHighlightFaction) {
+        return getFactionMembers(state.readerHighlightFaction);
+      }
+      return getAllKnownMembers();
+    }
+
+    return getFactionMembers(state.readerFaction);
+  }
+
+  function getAllKnownMembers() {
+    var seen = {};
+    var members = [];
+
+    Object.keys(FACTIONS).forEach(function (factionKey) {
+      getFactionMembers(factionKey).forEach(function (name) {
+        var normalized = normalizeName(name);
+        if (!normalized || seen[normalized]) {
+          return;
+        }
+        seen[normalized] = true;
+        members.push(name);
+      });
+    });
+
+    return members.sort(function (a, b) {
+      return a.localeCompare(b, undefined, { sensitivity: "base" });
+    });
+  }
+
+  function updateFocusLabel() {
+    if (!focusLabel) {
+      return;
+    }
+
+    var parts = [];
+    var characterPart = "Character: " + (state.selectedNameLabel || "none");
+    if (state.selectedNameLabel) {
+      characterPart += " (focused)";
+    }
+    parts.push(characterPart);
+
+    if (isReaderFactionHighlightMode()) {
+      parts.push(
+        "Faction: " + (
+          state.readerHighlightFaction
+            ? FACTIONS[state.readerHighlightFaction].name + " (highlighted)"
+            : "none"
+        )
+      );
+    }
+
+    focusLabel.textContent = parts.join(" | ");
+  }
+
+  function applyFactionHighlightVisuals() {
+    if (!readerBody) {
+      return;
+    }
+
+    var activeFaction = isReaderFactionHighlightMode() ? state.readerHighlightFaction : "";
+    readerBody.classList.toggle("reader-faction-highlight-active", !!activeFaction);
+    readerBody.setAttribute("data-highlight-faction", activeFaction || "");
+
+    var names = readerBody.querySelectorAll(".name");
+    names.forEach(function (el) {
+      var faction = el.getAttribute("data-faction") || "";
+      var isHighlighted = !!activeFaction && faction === activeFaction;
+      var isMuted = !!activeFaction && !!faction && faction !== activeFaction;
+      el.classList.toggle("faction-highlighted", isHighlighted);
+      el.classList.toggle("faction-muted", isMuted);
+    });
+
+    updateFocusLabel();
   }
 
   function getFactionMembers(factionKey) {
@@ -1085,16 +1399,20 @@
     timeline.innerHTML = html || '<p class="panel-note">No world tracks matched this filter.</p>';
   }
 
-  function openReader(day, factionKey, worldName) {
+  function openReader(day, factionKey, worldName, options) {
+    var shouldScroll = !options || options.scrollToReader !== false;
     state.readerDay = day;
     state.readerFaction = factionKey;
     state.readerWorld = getWorldForFaction(day, factionKey, worldName);
     applyReaderFactionTheme(state.readerFaction);
+    updateReaderEraTheme();
     syncReaderSelectors();
     updateReaderDayButtons();
     renderReaderForSelection();
     saveStore();
-    readerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (shouldScroll && readerPanel) {
+      readerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
   function renderReaderForSelection() {
@@ -1114,6 +1432,7 @@
       state.readerWorld = dayTrack.world;
       applyReaderFactionTheme(state.readerFaction);
     }
+    updateReaderEraTheme();
     var phaseLabel = dayEntry ? getPhaseLabel(dayEntry) : (state.readerDay === 0 ? "Phase Zero" : "Day " + state.readerDay);
     var worldLabel = state.readerWorld ? (" | " + state.readerWorld) : "";
     readerTitle.textContent = phaseLabel + " Reader";
@@ -1124,18 +1443,21 @@
 
     loadDayFile(state.readerDay)
       .then(function (text) {
-        readerBody.innerHTML = renderStructuredDay(text, state.readerFaction);
+        readerBody.innerHTML = renderStructuredDay(text, state.readerFaction, state.readerDay);
         updateCharacterPickerForFaction();
         applyReaderSearch();
         applyNameSelectionVisuals();
+        applyFactionHighlightVisuals();
         updateProgress();
         resetThemeSongTracking();
         handleThemeSongScroll();
+        applyPendingScrollRestore();
       })
       .catch(function () {
         readerBody.innerHTML = '<p class="reader-empty">This day file is missing.</p>';
         updateProgress();
         stopThemeSong(true);
+        applyPendingScrollRestore();
       });
   }
 
@@ -1150,6 +1472,7 @@
 
     readerTitle.textContent = "Infinite Reader";
     readerMeta.textContent = FACTIONS[state.readerFaction].name + " | All available days";
+    updateReaderEraTheme();
     readerBody.innerHTML = '<p class="reader-empty">Loading all available days...</p>';
     updateReaderDayButtons();
 
@@ -1164,7 +1487,7 @@
           var phaseLabel = dayEntry ? getPhaseLabel(dayEntry) : (entry.day === 0 ? "Phase Zero" : "Day " + entry.day);
           var world = getWorldForFaction(entry.day, state.readerFaction, "");
           var prefix = '<article class="reader-day-block" data-day-number="' + entry.day + '"><h3 class="reader-block-title reader-day-anchor">' + escapeHtml(phaseLabel + " | " + world) + "</h3>";
-          var body = renderStructuredDay(entry.text, state.readerFaction);
+          var body = renderStructuredDay(entry.text, state.readerFaction, entry.day);
           return prefix + body + "</article>";
         }).join("");
 
@@ -1172,14 +1495,17 @@
         updateCharacterPickerForFaction();
         applyReaderSearch();
         applyNameSelectionVisuals();
+        applyFactionHighlightVisuals();
         updateProgress();
         resetThemeSongTracking();
         handleThemeSongScroll();
+        applyPendingScrollRestore();
       })
       .catch(function () {
         readerBody.innerHTML = '<p class="reader-empty">Some day files could not be loaded.</p>';
         updateProgress();
         stopThemeSong(true);
+        applyPendingScrollRestore();
       });
   }
 
@@ -1438,18 +1764,19 @@
     themeSongState.wasInActiveZone = isInActiveZone;
   }
 
-  function renderStructuredDay(text, factionKey) {
+  function renderStructuredDay(text, factionKey, dayNumber) {
+    var dayScopedText = getDayScopeText(text);
     var html = "";
     var lineCounter = { value: 0 };
     var matchers = state.memberMatchers || [];
-    var dayTitle = getFirstTagLine(text, "TITLE") || getFirstTagLine(text, "DAY");
-    var systemStateText = getTagBlock(text, "SYSTEM_STATE");
-    var narrativeText = getTagBlock(text, "NARRATIVE");
-    var rulesText = getTagBlock(text, "RULES");
-    var logText = getTagBlock(text, "LOG");
-    var nightText = getTagBlock(text, "NIGHT");
-    var authorNoteText = getTagBlock(text, "AUTHOR NOTE");
-    var systemObservationText = getTagBlock(text, "SYSTEM_OBSERVATION");
+    var dayTitle = getFirstTagLine(dayScopedText, "TITLE") || getFirstTagLine(dayScopedText, "DAY");
+    var systemStateText = getTagBlock(dayScopedText, "SYSTEM_STATE");
+    var narrativeText = getTagBlock(dayScopedText, "NARRATIVE");
+    var rulesText = getTagBlock(dayScopedText, "RULES");
+    var logText = getTagBlock(dayScopedText, "LOG");
+    var nightText = getTagBlock(dayScopedText, "NIGHT");
+    var authorNoteText = getTagBlock(dayScopedText, "AUTHOR NOTE");
+    var systemObservationText = getTagBlock(dayScopedText, "SYSTEM_OBSERVATION");
 
     if (dayTitle) {
       html += '<h3 class="reader-block-title reader-day-title">' + escapeHtml(dayTitle) + "</h3>";
@@ -1479,87 +1806,94 @@
       html += renderParagraphSection("Author Note", authorNoteText, "reader-section--system", lineCounter, matchers);
     }
 
-    // Faction-specific block
-    var tagMap = {
-      "astral-wardens": "TEAM_A_ASTRAL_WARDENS",
-      "obsidian-dominion": "TEAM_B_FURIOUS_FLOOFS",
-      "velocity-syndicate": "TEAM_C_VELOCITY_SYNDICATE"
-    };
-    var teamTag = tagMap[factionKey];
-    var teamRegex = new RegExp("\\[\\[" + teamTag + "\\]\\]([\\s\\S]*?)\\[\\[\\/" + teamTag + "\\]\\]");
-    var teamMatch = text.match(teamRegex);
+    if (shouldUseTeamTags(dayNumber)) {
+      // Faction-specific block
+      var tagMap = {
+        "astral-wardens": "TEAM_A_ASTRAL_WARDENS",
+        "obsidian-dominion": "TEAM_B_FURIOUS_FLOOFS",
+        "velocity-syndicate": "TEAM_C_VELOCITY_SYNDICATE"
+      };
+      var teamTag = tagMap[factionKey];
+      var teamRegex = new RegExp("\\[\\[" + teamTag + "\\]\\]([\\s\\S]*?)\\[\\[/" + teamTag + "\\]\\]");
+      var teamMatch = dayScopedText.match(teamRegex);
 
-    if (teamMatch) {
-      var body = teamMatch[1];
+      if (teamMatch) {
+        var body = teamMatch[1];
 
-      // Separate out [[LEADER]] if present
-      var leaderMatch = body.match(/\[\[LEADER\]\]\s*([^\n\r]+?)\s*\[\[\/LEADER\]\]/);
-      var leader = leaderMatch ? leaderMatch[1].trim() : null;
-      var cleanBody = body.replace(/\[\[LEADER\]\][\s\S]*?\[\[\/LEADER\]\]/g, "");
+        // Separate out [[LEADER]] if present
+        var leaderMatch = body.match(/\[\[LEADER\]\]\s*([^\n\r]+?)\s*\[\[\/LEADER\]\]/);
+        var leader = leaderMatch ? leaderMatch[1].trim() : null;
+        var cleanBody = body.replace(/\[\[LEADER\]\][\s\S]*?\[\[\/LEADER\]\]/g, "");
 
-      // Detect leading player-name lines even when spacing in content files varies.
-      var allLines = cleanBody.split(/\r?\n/);
-      var memberLines = [];
-      var contentLines = [];
-      var pastMembers = false;
+        // Detect leading player-name lines even when spacing in content files varies.
+        var allLines = cleanBody.split(/\r?\n/);
+        var memberLines = [];
+        var contentLines = [];
+        var pastMembers = false;
 
-      for (var i = 0; i < allLines.length; i++) {
-        var line = allLines[i].trim();
-        if (!line) {
+        for (var i = 0; i < allLines.length; i++) {
+          var line = allLines[i].trim();
+          if (!line) {
+            if (memberLines.length) {
+              pastMembers = true;
+            }
+            continue;
+          }
+
+          if (!pastMembers && isLikelyPlayerName(line)) {
+            memberLines.push(line);
+            continue;
+          }
+
+          pastMembers = true;
+          contentLines.push(line);
+        }
+
+        if (!leader) {
+          leader = inferLeaderForFaction(factionKey, memberLines);
+        }
+
+        html += '<div class="reader-section reader-section--faction">';
+        html += '<h4 class="reader-section-label">' + escapeHtml(FACTIONS[factionKey].name) + "</h4>";
+
+        if (leader || memberLines.length) {
+          html += "<div>";
+          if (leader) {
+            html += '<p class="leader-row"><span class="leader-tag">Leader</span><span>' + escapeHtml(leader) + "</span></p>";
+          }
           if (memberLines.length) {
-            pastMembers = true;
+            html += '<ul class="reader-list">' + memberLines.map(function (m) {
+              var leaderClass = isSameName(m, leader) ? ' class="member-leader"' : "";
+              return "<li" + leaderClass + ">" + escapeHtml(m) + "</li>";
+            }).join("") + "</ul>";
           }
-          continue;
+          html += "</div>";
         }
 
-        if (!pastMembers && isLikelyPlayerName(line)) {
-          memberLines.push(line);
-          continue;
+        if (contentLines.length) {
+          html += '<div class="reader-narrative">';
+          contentLines.forEach(function (line) {
+            if (isVisualDivider(line)) {
+              html += renderVisualDivider();
+              return;
+            }
+            var inlineTitle = extractInlineTitle(line);
+            if (inlineTitle) {
+              html += renderInlineTitle(inlineTitle);
+              return;
+            }
+            lineCounter.value += 1;
+            html += renderNumberedLine(lineCounter.value, line, matchers);
+          });
+          html += "</div>";
         }
 
-        pastMembers = true;
-        contentLines.push(line);
-      }
-
-      if (!leader) {
-        leader = inferLeaderForFaction(factionKey, memberLines);
-      }
-
-      html += '<div class="reader-section reader-section--faction">';
-      html += '<h4 class="reader-section-label">' + escapeHtml(FACTIONS[factionKey].name) + "</h4>";
-
-      if (leader || memberLines.length) {
-        html += "<div>";
-        if (leader) {
-          html += '<p class="leader-row"><span class="leader-tag">Leader</span><span>' + escapeHtml(leader) + "</span></p>";
-        }
-        if (memberLines.length) {
-          html += '<ul class="reader-list">' + memberLines.map(function (m) {
-            var leaderClass = isSameName(m, leader) ? ' class="member-leader"' : "";
-            return "<li" + leaderClass + ">" + escapeHtml(m) + "</li>";
-          }).join("") + "</ul>";
-        }
         html += "</div>";
       }
-
-      if (contentLines.length) {
-        html += '<div class="reader-narrative">';
-        contentLines.forEach(function (line) {
-          if (isVisualDivider(line)) {
-            html += renderVisualDivider();
-            return;
-          }
-          lineCounter.value += 1;
-          html += renderNumberedLine(lineCounter.value, line, matchers);
-        });
-        html += "</div>";
-      }
-
-      html += "</div>";
     }
 
     if (systemObservationText) {
-      html += renderSimpleListSection("System Observation", systemObservationText, "reader-section--system");
+      html += renderSystemObservationSection("System Observation", systemObservationText, "reader-section--system");
     }
 
     return html || '<p class="reader-empty">No structured content found for this faction.</p>';
@@ -1599,10 +1933,75 @@
         if (isVisualDivider(line)) {
           return renderVisualDivider();
         }
+        var inlineTitle = extractInlineTitle(line);
+        if (inlineTitle) {
+          return renderInlineTitle(inlineTitle);
+        }
         lineCounter.value += 1;
         return renderNumberedLine(lineCounter.value, line.trim(), matchers || []);
       }).join("") +
       '</div>';
+  }
+
+  function renderSystemObservationSection(label, sectionText, extraClass) {
+    var lines = toLines(sectionText);
+    if (!lines.length) {
+      return "";
+    }
+
+    var rendered = lines.map(function (rawLine) {
+      return renderObservationLine(rawLine);
+    }).join("");
+
+    if (!rendered.trim()) {
+      return "";
+    }
+
+    return '' +
+      '<div class="reader-section ' + extraClass + '">' +
+      '<h4 class="reader-section-label">' + escapeHtml(label) + '</h4>' +
+      '<div class="reader-observation-block">' + rendered + '</div>' +
+      '</div>';
+  }
+
+  function renderObservationLine(rawLine) {
+    var line = String(rawLine || "");
+    if (!line.trim()) {
+      return '<div class="reader-observation-spacer" aria-hidden="true"></div>';
+    }
+
+    var indent = measureLineIndent(line);
+    var content = line.slice(indent).trim();
+    var classNames = ["reader-observation-line"];
+
+    if (/[:\u2014-]\s*$/.test(content)) {
+      classNames.push("reader-observation-line--label");
+    }
+
+    var bulletMatch = content.match(/^(\u2014|-|•)\s*(.+)$/);
+    if (bulletMatch) {
+      classNames.push("reader-observation-line--bullet");
+      content = bulletMatch[2].trim();
+    }
+
+    var level = Math.floor(indent / 2);
+    var style = '--obs-level:' + Math.max(0, Math.min(12, level)) + ';';
+    return '<p class="' + classNames.join(" ") + '" style="' + style + '">' + escapeHtml(content) + '</p>';
+  }
+
+  function measureLineIndent(line) {
+    var count = 0;
+    for (var i = 0; i < line.length; i++) {
+      var ch = line.charAt(i);
+      if (ch === " ") {
+        count += 1;
+      } else if (ch === "\t") {
+        count += 2;
+      } else {
+        break;
+      }
+    }
+    return count;
   }
 
   function renderVisualDivider() {
@@ -1613,10 +2012,28 @@
     return /^-{3,}$/.test(String(line || "").trim());
   }
 
+  function extractInlineTitle(line) {
+    var match = String(line || "").trim().match(/^\[\[([^\]]+)\]\]$/);
+    if (!match) {
+      return "";
+    }
+
+    var value = String(match[1] || "").trim();
+    if (!value || value.charAt(0) === "/") {
+      return "";
+    }
+
+    return value;
+  }
+
+  function renderInlineTitle(title) {
+    return '<p class="reader-inline-title">' + escapeHtml(title) + '</p>';
+  }
+
   function renderNumberedLine(lineNumber, lineText, matchers) {
     var highlighted = highlightKnownNames(lineText, matchers || []);
     return '' +
-      '<p class="story-line" data-line-number="' + lineNumber + '" data-text="' + escapeHtml(String(lineText || "").toLowerCase()) + '" data-names="' + escapeHtml(highlighted.names.join("|")) + '">' +
+      '<p class="story-line" data-line-number="' + lineNumber + '" data-text="' + escapeHtml(String(lineText || "").toLowerCase()) + '" data-names="' + escapeHtml(highlighted.names.join("|")) + '" data-factions="' + escapeHtml(highlighted.factions.join("|")) + '">' +
       '<span class="line-number" aria-hidden="true">' + lineNumber + '.</span>' +
       '<span class="line-content">' + highlighted.html + '</span>' +
       '</p>';
@@ -1627,7 +2044,8 @@
     if (!source || !matchers.length) {
       return {
         html: escapeHtml(source),
-        names: []
+        names: [],
+        factions: []
       };
     }
 
@@ -1635,6 +2053,7 @@
     var cursor = 0;
     var result = "";
     var foundNames = [];
+    var foundFactions = [];
 
     while (cursor < source.length) {
       var bestIndex = -1;
@@ -1665,14 +2084,24 @@
       }
 
       var matchedText = source.slice(bestIndex, bestIndex + bestMatcher.length);
-      result += '<span class="name" tabindex="0" data-name="' + escapeHtml(bestMatcher.normalized) + '">' + escapeHtml(matchedText) + '</span>';
+      var matchedFaction = getFactionForNormalizedName(bestMatcher.normalized);
+      var factionAttr = matchedFaction ? ' data-faction="' + escapeHtml(matchedFaction) + '"' : "";
+      var memberColor = state.nameColorMode === "none" ? "" : getMemberPrimaryColor(bestMatcher.normalized, matchedFaction);
+      var colorStyle = memberColor ? ' style="--member-color:' + escapeHtml(memberColor) + '"' : "";
+      var prefix = state.nameColorMode === "prefix" ? getFactionPrefix(matchedFaction) : "";
+      var displayText = prefix ? (prefix + " " + matchedText) : matchedText;
+      result += '<span class="name" tabindex="0" data-name="' + escapeHtml(bestMatcher.normalized) + '"' + factionAttr + colorStyle + '>' + escapeHtml(displayText) + '</span>';
       foundNames.push(bestMatcher.normalized);
+      if (matchedFaction) {
+        foundFactions.push(matchedFaction);
+      }
       cursor = bestIndex + bestMatcher.length;
     }
 
     return {
       html: result,
-      names: unique(foundNames)
+      names: unique(foundNames),
+      factions: unique(foundFactions)
     };
   }
 
@@ -1692,9 +2121,11 @@
   function rebuildMemberMatchersFromLoadedContent() {
     var names = [];
     var seen = {};
+    var factionLookup = {};
 
     Object.keys(FALLBACK_LEADERS).forEach(function (key) {
       pushUniqueName(names, seen, FALLBACK_LEADERS[key]);
+      factionLookup[normalizeName(FALLBACK_LEADERS[key])] = key;
     });
 
     Object.keys(state.dayTextByDay || {}).forEach(function (dayKey) {
@@ -1702,9 +2133,11 @@
       collectTeamNamesFromText(text).forEach(function (name) {
         pushUniqueName(names, seen, name);
       });
+      collectFactionNamesFromText(text, factionLookup);
     });
 
     state.memberMatchers = buildMemberMatchers(names);
+    state.memberFactionLookup = factionLookup;
   }
 
   function collectTeamNamesFromText(text) {
@@ -1743,6 +2176,54 @@
     }
 
     return out;
+  }
+
+  function collectFactionNamesFromText(text, factionLookup) {
+    var mapping = {
+      TEAM_A_ASTRAL_WARDENS: "astral-wardens",
+      TEAM_B_FURIOUS_FLOOFS: "obsidian-dominion",
+      TEAM_C_VELOCITY_SYNDICATE: "velocity-syndicate"
+    };
+    var teamRegex = /\[\[(TEAM_[A-Z_]+)\]\]([\s\S]*?)\[\[\/\1\]\]/g;
+    var match;
+
+    while ((match = teamRegex.exec(text || "")) !== null) {
+      var factionKey = mapping[match[1]];
+      if (!factionKey) {
+        continue;
+      }
+
+      var body = match[2] || "";
+      var leaderMatch = body.match(/\[\[LEADER\]\]\s*([^\n\r]+?)\s*\[\[\/LEADER\]\]/i);
+      if (leaderMatch) {
+        factionLookup[normalizeName(leaderMatch[1])] = factionKey;
+      }
+
+      var cleanBody = body.replace(/\[\[LEADER\]\][\s\S]*?\[\[\/LEADER\]\]/gi, "");
+      var lines = cleanBody.split(/\r?\n/);
+      var stopList = false;
+      var teamHasNames = false;
+
+      for (var i = 0; i < lines.length; i++) {
+        var line = lines[i].trim();
+        if (!line) {
+          if (teamHasNames) {
+            stopList = true;
+          }
+          continue;
+        }
+        if (!stopList && isLikelyPlayerName(line)) {
+          factionLookup[normalizeName(line)] = factionKey;
+          teamHasNames = true;
+          continue;
+        }
+        stopList = true;
+      }
+    }
+  }
+
+  function getFactionForNormalizedName(normalizedName) {
+    return state.memberFactionLookup[normalizedName] || "";
   }
 
   function pushUniqueName(target, seen, value) {
@@ -1804,7 +2285,15 @@
       return (closedMatch[1] || "").trim();
     }
 
-    var openPattern = new RegExp("\\[\\[" + escapedTag + "\\]\\]([\\s\\S]*?)(?=\\n\\s*\\[\\[[A-Z0-9_ \\/-]+\\]\\]|$)", "i");
+    var stopTagAlternation = KNOWN_BLOCK_TAGS
+      .map(function (name) {
+        return escapeForRegExp(name);
+      })
+      .join("|");
+    var openPattern = new RegExp(
+      "\\[\\[" + escapedTag + "\\]\\]([\\s\\S]*?)(?=\\n\\s*\\[\\[(?:" + stopTagAlternation + ")\\]\\]|$)",
+      "i"
+    );
     var openMatch = text.match(openPattern);
     if (openMatch) {
       return (openMatch[1] || "").trim();
@@ -1815,6 +2304,15 @@
 
   function toLines(value) {
     return String(value || "").split(/\r?\n/);
+  }
+
+  function getDayScopeText(text) {
+    var source = String(text || "");
+    var dayMatch = source.match(/\[\[DAY\]\]([\s\S]*?)(?:\[\[DAY END\]\]|$)/i);
+    if (dayMatch) {
+      return dayMatch[1] || "";
+    }
+    return source;
   }
 
   function toNonEmptyLines(value) {
@@ -1829,6 +2327,48 @@
 
   function escapeForRegExp(value) {
     return String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function updateReaderEraTheme() {
+    var day3Plus = state.readerMode === "infinite"
+      ? getAvailableDayNumbers().some(function (day) { return day >= 3; })
+      : (typeof state.readerDay === "number" && state.readerDay >= 3);
+    document.body.setAttribute("data-era", day3Plus ? "day3plus" : "classic");
+  }
+
+  function getMemberPrimaryColor(normalizedName, factionKey) {
+    if (!normalizedName) {
+      return "";
+    }
+
+    var baseHueByFaction = {
+      "astral-wardens": 210,
+      "obsidian-dominion": 43,
+      "velocity-syndicate": 351
+    };
+    var baseHue = baseHueByFaction[factionKey] || 215;
+    var hash = 0;
+    for (var i = 0; i < normalizedName.length; i++) {
+      hash = (hash * 31 + normalizedName.charCodeAt(i)) % 997;
+    }
+
+    var hueOffset = (hash % 17) - 8;
+    var sat = 68 + (hash % 11);
+    var light = 56 + (hash % 9) - 4;
+    return "hsl(" + (baseHue + hueOffset) + " " + sat + "% " + light + "%)";
+  }
+
+  function getFactionPrefix(factionKey) {
+    if (factionKey === "astral-wardens") {
+      return "AW";
+    }
+    if (factionKey === "obsidian-dominion") {
+      return "FF";
+    }
+    if (factionKey === "velocity-syndicate") {
+      return "VS";
+    }
+    return "";
   }
 
   function loadDayFile(dayNumber) {

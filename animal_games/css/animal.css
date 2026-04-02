@@ -51,6 +51,34 @@ body[data-theme="light"] {
     linear-gradient(140deg, var(--bg-1), var(--bg-2));
 }
 
+body[data-era="day3plus"][data-theme="dark"] {
+  --bg-1: #0f1624;
+  --bg-2: #0b0f17;
+  --text: #e5ecf5;
+  --muted: #9db0c8;
+  --panel: rgba(17, 24, 38, 0.9);
+  --border: rgba(37, 55, 80, 0.9);
+  --core: #111826;
+  --secondary: #d7e3f5;
+  --accent: #7db4ff;
+  --accent-contrast: #0f1624;
+  --glow: rgba(125, 180, 255, 0.42);
+}
+
+body[data-era="day3plus"][data-theme="light"] {
+  --bg-1: #f9fbff;
+  --bg-2: #eef2fa;
+  --text: #1e2a3a;
+  --muted: #5d6d82;
+  --panel: rgba(255, 255, 255, 0.9);
+  --border: rgba(213, 223, 239, 0.95);
+  --core: #ffffff;
+  --secondary: #d5dfef;
+  --accent: #1d63cc;
+  --accent-contrast: #f3f7ff;
+  --glow: rgba(29, 99, 204, 0.34);
+}
+
 .hero {
   position: relative;
   padding: clamp(20px, 4.2vw, 48px) 16px 14px;
@@ -578,6 +606,62 @@ body[data-reader-mode="infinite"] .reader-toolbar {
   cursor: pointer;
 }
 
+.settings-info-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--accent) 20%, transparent 80%);
+  color: color-mix(in srgb, var(--text) 58%, var(--accent) 42%);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: help;
+}
+
+.settings-info-popover {
+  margin: 6px 0 4px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--core) 74%, rgba(8, 14, 26, 0.92) 26%);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+  padding: 8px;
+}
+
+.settings-info-popover-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.settings-info-close {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.settings-info-close:hover {
+  border-color: var(--accent);
+}
+
+.settings-info-popover-text {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: var(--reader-text);
+}
+
 .reader-settings-group-title {
   margin: 8px 0 2px;
   font-size: 0.78rem;
@@ -770,10 +854,67 @@ body[data-theme="light"] #readerPanel .reader-search {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  transition: opacity 180ms ease, transform 180ms ease, filter 180ms ease;
 }
 
 .story-line.is-hidden {
   display: none;
+}
+
+.story-line.focus-dim {
+  opacity: 0.38;
+  filter: saturate(0.72);
+}
+
+.story-line.focus-dim .line-number {
+  opacity: 0.55;
+}
+
+.story-line.focus-match {
+  opacity: 1;
+}
+
+.story-line.focus-match .line-content {
+  text-shadow: 0 0 16px color-mix(in srgb, var(--glow) 30%, transparent 70%);
+}
+
+.reader-inline-title {
+  margin: 12px 0 8px;
+  color: var(--accent);
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reader-observation-block {
+  display: grid;
+  gap: 2px;
+}
+
+.reader-observation-line {
+  margin: 0;
+  line-height: 1.52;
+  padding: 4px 8px;
+  padding-left: calc(8px + var(--obs-level, 0) * 14px);
+  border-left: 1px solid color-mix(in srgb, var(--reader-border) 72%, transparent 28%);
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.reader-observation-line--label {
+  color: color-mix(in srgb, var(--reader-text) 68%, var(--accent) 32%);
+  font-weight: 700;
+}
+
+.reader-observation-line--bullet {
+  color: color-mix(in srgb, var(--reader-text) 74%, var(--accent) 26%);
+}
+
+.reader-observation-spacer {
+  height: 6px;
 }
 
 .line-number {
@@ -793,18 +934,34 @@ body[data-theme="light"] #readerPanel .reader-search {
   align-items: center;
   padding: 1px 8px;
   border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--accent) 58%, var(--reader-border) 42%);
-  background: color-mix(in srgb, var(--accent) 20%, transparent 80%);
-  color: color-mix(in srgb, var(--reader-text) 68%, var(--accent) 32%);
+  border: 1px solid color-mix(in srgb, var(--member-color, var(--accent)) 58%, var(--reader-border) 42%);
+  background: color-mix(in srgb, var(--member-color, var(--accent)) 20%, transparent 80%);
+  color: color-mix(in srgb, var(--reader-text) 68%, var(--member-color, var(--accent)) 32%);
   font-weight: 700;
   cursor: pointer;
 }
 
 .name.selected {
-  border-color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 34%, transparent 66%);
-  color: color-mix(in srgb, var(--reader-text) 30%, var(--accent) 70%);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent 60%);
+  border-color: var(--member-color, var(--accent));
+  background: color-mix(in srgb, var(--member-color, var(--accent)) 34%, transparent 66%);
+  color: color-mix(in srgb, var(--reader-text) 30%, var(--member-color, var(--accent)) 70%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--member-color, var(--accent)) 40%, transparent 60%);
+}
+
+.reader-faction-highlight-active .name.faction-muted:not(.selected) {
+  opacity: 0.5;
+  filter: saturate(0.72);
+}
+
+.name.faction-highlighted {
+  border-color: color-mix(in srgb, var(--accent) 76%, white 24%);
+  background: color-mix(in srgb, var(--accent) 42%, transparent 58%);
+  color: color-mix(in srgb, var(--reader-text) 18%, var(--accent) 82%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent 45%), 0 0 18px -8px var(--glow);
+}
+
+.name.faction-highlighted.selected {
+  background: color-mix(in srgb, var(--accent) 56%, transparent 44%);
 }
 
 .reader-narrative {
