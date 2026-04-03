@@ -95,12 +95,16 @@
               <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="off" /> Do not play</label>
               <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="ask" /> ASK</label>
               <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="always" /> Always play</label>
+              <p class="reader-settings-group-title">Story Filters</p>
+              <label class="reader-settings-row"><input id="hideSystemObservationToggle" type="checkbox" /> Hide [[SYSTEM_OBSERVATION]] on Day 3+</label>
+              <label class="reader-settings-row" id="day4CompactRow" hidden><input id="day4CompactToggle" type="checkbox" /> Day 4 compact mode (shorter version)</label>
               <p class="reader-settings-note">Both modes use full-page scrolling, not inner-container scrolling.</p>
             </div>
           </details>
         </div>
       </div>
       <p class="panel-note" id="readerMeta"></p>
+      <p class="panel-note reader-tip" id="readerTip" hidden>TIP: Open the settings, there is a shorter version of this day available!</p>
       <div class="reader-body" id="readerBody"></div>
     </section>
   </main>

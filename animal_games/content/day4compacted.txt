@@ -1,0 +1,290 @@
+[[DAY]]
+DAY 4 — THE FIRST GAME
+
+[[SYSTEM_STATE]]
+Day index: 4.
+Participant count: 30 / 30.
+Game phase: first structured challenge.
+Threat calibration: controlled — non-lethal enforced.
+Death rate: 0% locked.
+Injury system: active.
+
+[[NARRATIVE]]
+They don't wake naturally. They're pulled out of sleep all at once, abruptly, by their animals.
+
+The animals are already inside the dorms. Already speaking. Fast, urgent, overlapping — to most of the thirty people it sounds like noise. To the three leaders, it's perfectly clear.
+
+The message is the same across all three animals:
+
+*Today is the first challenge. A skill unlocks afterward. Performance matters. Not just winning — how you move through it.*
+
+The leaders listen. The others watch their leaders' faces and understand, from the expression alone, that something is being communicated that they cannot access.
+
+The information gap opens on Day 4's first minute and doesn't close.
+
+---
+
+**WARDENS' DORM**
+
+Space_fan sits up. The Drake is speaking directly to her, fast and clear. She listens, nods once, and goes to wake the others.
+
+Schwalbe is already up. He went to sleep close to ready and woke the same way.
+
+Ashborn goes straight to Orphan Annihilator's room. OA is already testing his ankle — flex, wince, accept. "It'll hold," he says. "Put me last in whatever we're doing."
+
+Rally Mally counts heads. Toad watches the Drake. The Reddening Day checks the room the way they check every room — who needs what, where, now.
+
+"What's it saying?" Shroud asks space_fan.
+
+"Challenge today. I'll explain at the meal."
+
+---
+
+**FLOOFS' DORM**
+
+Soup arrives through the ceiling faster and lower than any previous morning. Ninnginni wakes to it hovering directly above him.
+
+*Today. First challenge. The protocol will face something it wasn't designed for — a physical test, not navigation. Pay attention to how your team moves, not just whether it finishes.*
+
+"Does the protocol work in a physical challenge?" Ninnginni asks.
+
+*Today will tell you,* Soup says, and rises.
+
+CharliSpirit is at his door thirty seconds later, map-instinct already firing. "Soup spoke to you."
+
+"Yes. Brief at the meal. Wake the others."
+
+She's already moving.
+
+Godly_Aura is the only one already standing when CharliSpirit reaches his door. "The animal spoke to Ninnginni only," he says. "That's an information architecture. The system filters through the leader."
+
+"File it," CharliSpirit says. "Meal first."
+
+---
+
+**SYNDICATE'S DORM**
+
+Rabbit wakes to find the Killer Bunny sitting at the foot of his sleep surface, already watching him.
+
+*Today. First challenge. You will want to make speed the answer. It isn't. Randomness cannot be outrun — only responded to faster than it costs you.*
+
+"What's the challenge?"
+
+*You'll know when you know,* the Bunny says.
+
+JIKOSU appears at the door. "Bunny's speaking to you."
+
+"Brief at the meal," Rabbit says. "Get everyone up."
+
+Mainthemainstar is not in his room. JIKOSU finds him in the training space, standing in the dark, soft-focus attention turned toward something JIKOSU can't identify.
+
+"Challenge today," JIKOSU says.
+
+Mainthemainstar turns. "I know," he says, and follows.
+
+[[FEAST PHASE]]
+The food today is different.
+
+Same cultural spread. But specific — not the type of dish, the exact dish. The exact version a specific person ate at a specific age in a specific kitchen that no longer exists in the same form.
+
+Toad goes quiet for a full thirty seconds looking at his bowl.
+
+Rally Mally eats his bread without speaking.
+
+Ashborn says: "This is exactly what I had on my eighth birthday. Down to the texture."
+
+"They knew what we ate when we were eight," CrystalWolf says. "Before we got here. They've known our whole lives."
+
+"That's the point," Shroud says, eating steadily. "The system demonstrates its reach. Comfortable people comply better than frightened ones."
+
+Space_fan looks at her plate, takes a breath, and eats. Then she tells the Wardens what the Drake communicated.
+
+At the Floofs' table, Ninnginni delivers the same. Golden listens to all of it and says one thing at the end: "The food makes you feel. The challenge makes you act. Don't confuse the two responses." Then he's quiet again.
+
+At the Syndicate's table, Drug stares at her food for almost a minute before she eats it. Nobody comments. Kiwi watches her and says nothing, because he knows the difference between moments.
+
+Mainthemainstar eats in silence, listens to Rabbit's full briefing, and at the end says: "The grid has ninety columns."
+
+Rabbit looks at him. "The Bunny didn't give me dimensions."
+
+"Ninety columns," Mainthemainstar says again. And finishes his food.
+
+[[MOVEMENT PHASE]]
+The maze is gone.
+
+In its place: a single long corridor, straight and dark, floor-lit in team colors. No choices. No branches. One direction.
+
+The animals move differently here — more physical, more deliberate. The Drake flies low enough to redirect people with its wingspan. The Bunny runs ahead and back, checking the path in both directions. Soup lights the floor brighter than the strips alone can manage.
+
+They're not guiding. They're preparing.
+
+At four hundred meters, NinjaFlout says: "The long approach is intentional. By the time we arrive, the anticipation has already changed our state."
+
+"Are you more or less ready because of it?" Akarimmu asks.
+
+"More," NinjaFlout says. "Which means the readiness was designed for me. I'm not sure that's better than choosing it myself."
+
+Nobody has an answer to that. They walk.
+
+[[CHALLENGE ROOM]]
+The corridor opens into a grid room.
+
+Ninety by sixty. Chess-tile layout, clean and uniform. No texture variation. Nothing to read.
+
+Three hundred sixty tiles. Three teams. Thirty people. The math arranges itself before anyone says it.
+
+"Ninety columns," Mainthemainstar says quietly, to no one.
+
+Drug looks at him. Says nothing.
+
+[[HOST ANNOUNCEMENT]]
+The voice comes from the room itself. No source. Omnidirectional.
+
+"Good morning. Here's what you're doing."
+
+**Objective:** Get all ten team members to the far edge.
+
+**Tile mechanic:** Each row has one correct tile per column. The correct tile is randomly assigned. Step on the correct one — it stays correct for everyone. Step on the wrong one — you teleport back to start, freeze for ten seconds, and the entire row reshuffles for all three teams.
+
+**Rules:** No pushing. One member steps at a time. No deliberate failures. No sabotage. Violation means full team reset.
+
+**Win condition:** First team with all ten members across wins a skill unlock.
+
+"If you share information with other teams, that is a genuine advantage. Whether you do is your choice."
+
+The floor activates. Team-colored start tiles light up.
+
+"You may begin."
+
+[[GAMEPLAY — PHASE 1: TESTING]]
+Schwalbe goes first for the Wardens. Row one, column four. Wrong. He teleports back, stumbles, catches himself. "The landing is not soft," he reports, and steps aside for the next person.
+
+CharliSpirit goes first for the Floofs. Column seven — statistically center-adjacent, her instinct's default. Wrong. She returns, and Revenant catches her elbow. "The logic doesn't work," she says. "I knew it wouldn't. I needed to confirm it directly."
+
+JIKOSU goes first for the Syndicate, fast, column two. Wrong. He arrives back with enough momentum to need two steps to control. "Faster doesn't help," Rabbit says. JIKOSU nods. "Sending someone slower."
+
+janhk goes next. He uses the soft-focus technique — not hunting the answer, letting it present. Column five. Correct. He stands on the lit tile and isn't sure if that was skill or luck, and is honest enough not to decide.
+
+"Column five, row one," hollow Camillia calls out. To the room. To everyone.
+
+[[GAMEPLAY — PHASE 2: THE SHIFT]]
+The sharing starts with hollow Camillia and doesn't stop.
+
+Confirmed tiles get called out loud, cross-team, without being asked. lumallie adds a Floofs confirmation. Rally Mally adds a Wardens one. Within ten minutes, all three teams are building the same map.
+
+The Floofs spend twelve minutes trying to find a pattern in the randomness. There is no pattern. CharliSpirit's map is accurate and useless for prediction. Ninnginni calls an input round.
+
+"Two words. Go."
+
+*Truly random. Cannot predict. Eliminate wrong. Mark confirmed. Share information. Trust others. Move faster. Slower. Coordinate.*
+
+"We share everything we confirm," Ninnginni says. "Out loud. And we listen to what the others confirm. We're not the only ones building the map."
+
+"Is that allowed?" Polaris asks.
+
+"The host said sharing is a genuine advantage and left the choice to us," Ninnginni says. "We share."
+
+Revenant is quiet. Then: "The system expects competition. Sharing defeats the assumption."
+
+"Or demonstrates something the system is already measuring," Godly_Aura says.
+
+Nobody answers. They share anyway.
+
+[[GAMEPLAY — PHASE 3: INJURIES]]
+The landings get worse the further you are when you fail.
+
+**Kiwi** — row seven, wrong tile. Lands on one knee, stays there a moment. Drug checks him immediately: soft tissue, functional, will hurt tomorrow. "Genuinely fine," Kiwi says. "It hurts. I can continue."
+
+**Polaris** — row eight, moving too fast despite the input round saying *slower.* Wrong tile. Full fall, catches herself on both hands, left ankle registers a sharp complaint. She stands without help. Tests it. Workable. Ninnginni moves her to the back of the order. She doesn't argue. The protocol is the protocol.
+
+**Akarimmu** — row nine, false certainty from a tile that survived one reshuffle but not two. Arrives sideways. Worst landing yet. He's up in seconds, arm already bruising, range of motion checked quietly and confirmed intact.
+
+**Schwalbe** — row ten. Pushed into it at a pace Duccarian internally flagged and didn't say. A tile that survived four reshuffles felt like certainty. It wasn't. He goes to one knee on the return. Stands. Files it. "The pattern doesn't exist," he says. "I know. It still looked like one." "It always does," Duccarian says. "That's the design."
+
+[[FINAL APPROACH]]
+All three teams are close.
+
+Wardens slightly ahead. Floofs closer than anyone expected. Syndicate third but consistent.
+
+Orphan Annihilator moves last for the Wardens — the full map built for him by twenty-nine people who went before. He moves deliberately, ankle absorbing each step without complaint. Row ten. Confirmed column. Three tiles from the finish.
+
+The other nine Wardens are already at the far edge. Waiting.
+
+Across the grid, Galaxy is two rows back. Drug is three rows back. Close enough that the finish could be nearly simultaneous.
+
+Ashborn is at the finish line, leaning forward unconsciously — the lean of someone watching something they care about. His foot finds the tile boundary. The lean becomes a stumble. The stumble becomes a step. The step lands on a finish tile.
+
+The tile goes white.
+
+The host's voice: "Astral Wardens. Challenge complete."
+
+Ashborn looks down at his foot. Then up at his team. Then across the grid at Galaxy, who has stopped walking. "That was me," he says. "I didn't mean to — I stumbled, I was leaning and I—"
+
+"Ashborn," space_fan says. "It counts."
+
+"I'm sorry," he says, across the grid, to Galaxy.
+
+Galaxy shakes his head. "You didn't push anyone. The tile registered. That's the rule."
+
+Drug finishes her rows. Galaxy finishes his. The Floofs second, the Syndicate third, all thirty people at the far edge, the grid behind them empty and lit.
+
+[[SKILL UNLOCK]]
+The Drake lands in front of space_fan. The communication that arrives is different from every previous day — not translation-quality, not arrival-behind-the-eyes. Direct. Complete. Like the imprecision that had always been there suddenly isn't.
+
+Then the Drake turns to Schwalbe.
+
+Space_fan watches it move — deliberately, one Warden to the next, extending the channel to each of them. Schwalbe's expression changes. Rally Mally says "oh" very quietly. Toad's face goes somewhere. The Reddening Day goes still. CrystalWolf closes her eyes briefly.
+
+Ten Wardens. Full Drake communication. Granted.
+
+The other twenty watch it happen and understand what they're seeing without needing to be told.
+
+Rabbit looks at the Bunny. The Bunny looks back. Nothing added to their channel. Nothing changed. The Bunny is already thinking about tomorrow.
+
+[[TEAM REACTIONS]]
+"Significant advantage," CharliSpirit says. No bitterness. A fact.
+
+Revenant builds the full implication in about thirty seconds: the Drake had prior knowledge of the challenge. It briefed space_fan. Now it briefs all ten of them. Every future challenge is pre-briefed for the Wardens in a way it isn't for anyone else.
+
+"We earn the next unlock or we don't," Ninnginni says. "That's what Soup has been pointing at since Day One."
+
+Drug is sitting on the floor. Her knee hurts. Her shoulder hurts. The general inventory of her body is a long list.
+
+"We almost finished simultaneously," she says to Kiwi, who has sat down beside her.
+
+"Almost," Kiwi says. "They earned it. Ashborn's step was an accident. Their being close enough for an accident to matter wasn't."
+
+JIKOSU is standing, watching the Wardens. "We cooperated today," he says to Rabbit, "because the reshuffle made cooperation rational. What happens when the mechanic changes? What if tomorrow it only costs the individual?"
+
+Rabbit doesn't answer immediately. The Bunny's ear tracks something.
+
+"That's the question we need to answer before Day Five," Rabbit says.
+
+[[SYSTEM_OBSERVATION]]
+DAY 4 — END-OF-CYCLE ANALYSIS
+
+Challenge duration: 74 minutes.
+Wrong steps: 31. Reshuffles: 23. Cooperative information-sharing events: 47.
+Projected cooperative events at design: 0.
+
+Injuries — all non-lethal, all functional:
+Kiwi — left knee, soft tissue.
+Polaris — left ankle, workable.
+Akarimmu — right arm bruising, range intact.
+Schwalbe — right knee, functional with pain.
+
+Cooperation flag: significant deviation from competition model. Initiated by hollow Camillia, adopted within 4 minutes by all three teams. Duccarian correctly identified the reshuffle mechanic as the rational basis for cooperation and verbalized it. He also asked whether the cooperative architecture was designed. He framed it as a question. He is getting close.
+
+Skill unlock: Drake full-channel communication granted to all 10 Wardens. Advantage is significant. Day 5 will test whether they use it to pull ahead or to support. Both cases have been tested under pressure. The advantage case has not.
+
+Mainthemainstar: correctly stated grid dimensions before briefing, before visual access, before any available source. Third instance. Pattern is no longer attributable to inference. Origin unclassified. Monitoring at maximum.
+
+Rule compliance: complete. No violations. No team resets.
+
+Tomorrow the ceiling lifts.
+
+The system is watching to see what thirty people do when helping someone else might mean dying instead of them.
+
+That is the most important question it has asked so far.
+
+[[END_DAY]]

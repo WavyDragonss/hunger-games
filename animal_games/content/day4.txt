@@ -1,0 +1,1056 @@
+[[DAY]]
+DAY 4 — THE FIRST GAME
+
+[[SYSTEM_STATE]]
+Day index: 4.
+Participant count: 30 / 30.
+Environment state: unified.
+Game phase: first structured challenge.
+Threat calibration: controlled — non-lethal enforced. Hard ceiling active.
+Death rate: 0% locked.
+Injury system: active. Consequence without elimination.
+Observation mode: active with competitive tracking.
+Animal bond depth: increasing. Inter-animal communication: post-Day 3 realignment active.
+
+System directive (hidden):
+Introduce competition mechanics.
+Test team coordination against randomness.
+Observe rule compliance under pressure.
+Begin soft alliance emergence.
+Monitor deviation from expected competitive model.
+
+[[NARRATIVE]]
+They do not wake naturally.
+
+There is no gradual return — no slow assembly of awareness, no comfortable progression from sleep to surface. One moment there is nothing, and the next moment there is everything, all at once, too loud and too close and too immediate for the transition to be called waking up in any normal sense. It is more like being placed back into consciousness by something that did not particularly care about the gentleness of the landing.
+
+The animals are already there.
+
+[[AWAKENING PHASE]]
+
+Space_fan came awake with the Drake already speaking.
+
+It filled the sleeping area with its presence the way a storm fills a sky — not threatening, but total, the kind of presence that leaves no room for anything else. Its scales were fully lit, the electric blue running fast through its veins, and it was talking. Not the measured, deliberate communication of the previous days — this was rapid, overlapping itself, the rhythm compressed into urgency. Space_fan sat up and understood every word of it with a clarity that was startling after the ambient noise it had sounded like to everyone else for the past two days.
+
+Today. First challenge. First chance. A skill waits on the other side of it — yours if you perform, the shape of it not yet revealed, the nature of it contingent on how you move through what's coming. Performance matters. Not just winning. How you move through it.
+
+"How long do we have?" space_fan said.
+
+The Drake looked at her with the patience of something for whom time operated differently. You have the length of the meal. Move well.
+
+In the next sleeping area, Schwalbe was already on his feet, which meant he'd been awake for at least thirty seconds before the Drake's arrival and had simply been lying still in the dark doing the first inventory of the day. The Drake's sudden presence and rapid communication produced a single tight frown from him — not alarm, not frustration, but the specific expression of a person confronting a data stream they cannot process fast enough. He looked at space_fan's door, which was open, which meant space_fan was awake, which meant the leader-specific communication was already running.
+
+"What is it saying?" Schwalbe asked.
+
+"Challenge today," space_fan said, from her doorway. "First one. It's explaining the stakes."
+
+"What stakes?"
+
+"Skill unlock. Performance-dependent." She looked at him. "Wake the others."
+
+Schwalbe was already moving.
+
+The Reddening Day was the third awake, which was consistent with a pattern of being present before being summoned — they had heard the Drake's urgency through the wall and had been sitting upright in their sleeping space, listening to what they could hear, which was noise rather than language. The rhythm of it was readable even without comprehension: fast, structured, purposeful. Something was being communicated. They couldn't receive it.
+
+"Today," The Reddening Day said, when space_fan passed their doorway. Not a question.
+
+"Today," space_fan confirmed.
+
+The Reddening Day stood and pulled on their shoes with the economical motion of someone who always slept close to ready.
+
+Rally Mally woke to the Drake's presence and said "okay, okay" twice in the overlapping-noise quality of someone establishing their own comprehension before the external input could overwhelm it. He was upright and blinking, his band glowing violet-blue, his number 6 steady and unhurried while everything else in the room was the opposite. "What is it saying?" he asked.
+
+"We don't know," Toad said, from the doorway. Toad had woken to the Drake and immediately gone toward it — not from lack of sense, but from the relational instinct that had put him sitting next to it on Day 1 in comfortable silence. The Drake had not spoken to him today. It was speaking at the room in general and at space_fan specifically, and Toad could read the urgency without reading the content. "Space_fan understands it."
+
+"Just space_fan?"
+
+"Just space_fan."
+
+Rally Mally looked at the Drake. Then at space_fan's doorway. Then at his own band. "That's interesting," he said, with the tone of someone filing a structural observation before the practical implications had fully assembled.
+
+Ashborn had moved immediately to Orphan Annihilator's sleeping area when the Drake arrived — not because he'd been asked but because his first instinct in any accelerated situation was to close the distance between himself and whoever was most physically limited. Orphan Annihilator was already awake and already sitting up and already looking at his ankle with the expression of someone doing a rapid honest assessment of whether it was going to cooperate today.
+
+"How is it?" Ashborn asked.
+
+"Better than yesterday. Not good." Orphan Annihilator flexed the joint carefully, watching his own face in the assessment the way The Reddening Day had taught him. "It'll hold for movement. Running is a different conversation."
+
+"We'll have that conversation when we know what we're running from," Ashborn said. "Or toward."
+
+"Always a third option," Orphan Annihilator said.
+
+"Which?"
+
+"Through," Orphan Annihilator said, and tested his weight on the ankle, and the expression that produced was the expression of someone who has received an answer they were hoping to avoid but had been prepared for regardless.
+
+CrystalWolf was at the sector's water source — the facility had provided clean water through a simple panel in the central room, and she had identified it on Day 3 and noted it and was using it now, the first morning habit, the same instinct that had led her to the water thread in the fractured plateau terrain before anyone else had thought to look. She heard the Drake's urgent communication and came to the doorway of the sleeping area and listened to what was clearly language and what she clearly couldn't follow.
+
+"It's different today," she said.
+
+"Faster," Shroud said, beside her. He had his arms crossed and was watching the Drake with the particular attention of someone who was attempting to extract pattern from what was presenting as noise. "The rhythm is compressed. Day one and two it was — measured. Deliberate. This is different in degree."
+
+"Urgency," CrystalWolf said.
+
+"Or a different mode," Shroud said. "We're assuming urgency because we're reading human tone signatures. The Drake might not use urgency the same way."
+
+"Space_fan," CrystalWolf said, raising her voice. "What is it saying?"
+
+"Challenge briefing," space_fan called back. "Stay close. I'll explain at the meal."
+
+---
+
+In the Floofs' sector, Soup had arrived through the ceiling.
+
+Ninnginni woke to its rotation directly above his sleeping area — lower than usual, the luminescence brighter, the rotation faster. He sat up and Soup's communication arrived immediately, full-speed, in a mode it hadn't used before: not deposited gently, not the room-temperature-shift quality of previous days, but direct, immediate, the informational equivalent of someone placing both hands on your shoulders.
+
+Today. First challenge. The system will test the grid. A skill waits — yours if you earn it, the shape of it contingent on what you build during the challenge, not just whether you win. Pay attention to how your team moves, not just whether it finishes.
+
+Ninnginni was quiet for three seconds. Then: "Does the protocol work in a physical challenge?"
+
+Soup's rotation slowed briefly, which was as close to a pause for thought as Soup got. The protocol works wherever hierarchy under pressure is required. Today will tell you whether you've built it for navigation only, or for something broader. I recommend finding out.
+
+"That's not a reassuring answer," Ninnginni said.
+
+No, Soup said. It's an accurate one.
+
+In the adjacent sleeping area, CharliSpirit had woken to the urgency of Soup's presence — visible through the open doorway, the glow brighter than any previous morning — and was already at Ninnginni's doorway, map-instinct firing in the absence of mapping materials, the habit of orientation running without a surface to run on. "Soup's talking to you specifically," she said.
+
+"Yes," Ninnginni said, standing.
+
+"What's it saying?"
+
+"Challenge today. First one." He looked at CharliSpirit. "I'll brief everyone at the meal. Wake the others."
+
+CharliSpirit was already moving.
+
+lumallie woke to CharliSpirit's hand on her shoulder — not alarmed, immediately functional, the transition from sleep to utility as clean in her as it was in Schwalbe across the hall. "What is it?"
+
+"Challenge today. Get up."
+
+lumallie got up.
+
+Galaxy woke to the glow from the corridor and the sound of people moving and the specific tone of group mobilization that a team learns after four days together. He was on his feet before CharliSpirit reached his door, which she noted and registered as: useful. "Today?" he asked.
+
+"Today," CharliSpirit said.
+
+"Did Soup say anything to Ninnginni?"
+
+"Yes."
+
+"Did Ninnginni tell you what?"
+
+"Challenge briefing at the meal." CharliSpirit moved to the next door. "Godly_Aura. Up."
+
+Godly_Aura was already up. He was standing in the center of his sleeping area looking at Soup through the doorway with the expression he wore when he was naming something in his head before saying it aloud. He named it to CharliSpirit when she appeared: "The animal is only speaking to Ninnginni."
+
+"Yes."
+
+"Not to us."
+
+"Correct."
+
+"That's deliberate," Godly_Aura said. "The system designed that. Information goes to the leader. Others have to rely on the leader's account of it."
+
+"That's how it was in the labyrinth too," CharliSpirit said. "Soup spoke to all of us eventually."
+
+"It spoke to all of us when it wanted all of us to hear the same thing," Godly_Aura said. "Today it's speaking to Ninnginni alone, which means whatever it's saying is filtered through Ninnginni before it reaches us. That's an information architecture."
+
+CharliSpirit looked at him. "File it," she said. "Meal first."
+
+Polaris woke to Soup's glow from two rooms away and was in the corridor before anyone came to her door, which was consistent with Day 3 and Day 2 and every day before that — Polaris's first instinct was always already forward, already moving, the body ahead of the decision to move. She almost walked directly into Revenant, who had done the same thing from the opposite corridor.
+
+"Challenge?" Polaris said.
+
+"I assume so," Revenant said. "The animal is performing urgency."
+
+"Is it urgency or a different mode?"
+
+Revenant looked at Soup through the doorway. "I'm using urgency as the working model until something more accurate arrives."
+
+"Fair," Polaris said.
+
+Elv emerged from their sleeping area at a slower pace than the others, not from lack of urgency but from the specific process of someone who gathered themselves before entering a room — two seconds in the doorway, eyes moving across everything available, building the full picture before committing to a direction. They/them. Soup. Ninnginni's doorway open. CharliSpirit already briefing. Godly_Aura's expression: named-something mode. Polaris: already corridor-standing. Revenant: contained.
+
+"Today's the day," Elv said, to the corridor generally.
+
+"Today's the day," Polaris confirmed.
+
+Golden woke without ceremony and dressed without ceremony and appeared in the corridor without ceremony, and the absence of ceremony was itself a kind of statement — Golden's consistency was not lack of response but a different relationship to response, one that expressed itself as function rather than reaction. He looked at Soup. He looked at Ninnginni's door. He went to the central room and waited for the meal.
+
+Loyal2Schwab had been awake since Soup arrived — he had not been asleep deeply, which was consistent with someone whose instinct was to keep track of the space they were in. He had heard the quality of Soup's communication change before it began and had been sitting up in the dark for thirty seconds before anyone else moved. He came to the central room with a small piece of material already in hand, scavenged from his sleeve hem on Day 3 for exactly this purpose, and when the facility's meal surface appeared he was ready to mark whatever needed marking.
+
+---
+
+In the Syndicate's sector, the Killer Bunny had not arrived through a wall.
+
+It was simply present — had been present, apparently, for some indeterminate period before Rabbit woke. Rabbit woke to find it sitting on the floor at the foot of his sleep surface, facing him, red eyes fixed at a point approximately six seconds ahead of wherever Rabbit's attention would be, which today meant: the door, and beyond the door, and beyond that, the challenge.
+
+Today. The communication was the most direct it had ever been — faster than the canyon, faster than the shelf, faster than any previous exchange. First challenge. First unlock. Not a reward for finishing. A reward for how you finish. The Bunny's left ear tracked something at the door. The system measures more than arrival. It measures approach.
+
+"Speed," Rabbit said.
+
+Speed is one variable, the Bunny said. Not the only one. Today you will be tempted to make it the only one. Resist that.
+
+Rabbit sat with this. "What's the challenge?"
+
+The Bunny looked at him with the patience of something that had already answered this question by implication. You'll know when you know. What I can tell you is: randomness will be involved. Your instinct will be to outrun it. You cannot outrun randomness. You can only respond to it faster than it costs you.
+
+"That's a distinction I'm going to need to think about," Rabbit said.
+
+You have the length of the meal, the Bunny said, and settled into the composed stillness of something that had delivered what it came to deliver.
+
+JIKOSU woke to the Bunny's presence radiating into the adjacent sleeping area through the wall — not sound, not light, but the specific quality of something alert nearby, the kind of alert that a body trained for physical response recognizes before the mind catches up. He was on his feet, the threat-scan running, and then the threat-scan resolved as: not threat. Animal. Urgency. He went to Rabbit's door.
+
+"Bunny's speaking to you," JIKOSU said.
+
+"Yes," Rabbit said.
+
+"Can you follow it?"
+
+"Yes."
+
+"What's it saying?"
+
+"Challenge today. Brief at the meal." Rabbit was already standing. "Get everyone up."
+
+JIKOSU went. He woke NinjaFlout first, because NinjaFlout's data columns needed the most lead time, and sure enough NinjaFlout was sitting up with the expression of someone whose brain had already started a new file and was waiting for the inputs. "Challenge today," JIKOSU said.
+
+"How lethal?" NinjaFlout said immediately.
+
+"Day four. Non-lethal ceiling. Injuries allowed."
+
+NinjaFlout processed this. "I need more than that."
+
+"You'll get it at the meal," JIKOSU said, and moved to the next door.
+
+Hollow Camillia woke to JIKOSU's knock with the disorientation of someone who had been in a deep and genuinely comfortable sleep — the sleep surface was, as Toad had observed, genuinely good — and came to functional awareness in the slower way that some people came to it, which was not a disadvantage but a different timeline. "What's happening?"
+
+"Challenge," JIKOSU said. "Come eat."
+
+"Now?"
+
+"Now," JIKOSU said.
+
+Hollow Camillia came, blinking, pulling her hair back with the practiced motion of someone who had done it in harder conditions than this.
+
+Lyrix was already awake when JIKOSU reached her door — she had been lying still in the dark with her eyes open, using the soft-focus technique on the ceiling, which produced no actionable information from the ceiling but had become a way of organizing her attention before the day began. She heard the Bunny's urgency before she understood it and had been waiting for someone to come tell her what it meant. "Challenge," JIKOSU said, and she was up before he finished the word.
+
+Akarimmu woke and was immediately spatial — immediately checking the room's geometry, the exit positions, the overhead, the floor. He sat up and the Killer Bunny's urgent presence registered as information: something is happening. He went to find out what.
+
+Kiwi woke slowly and completely, which was how Kiwi did most things — not fast, but when the process finished, nothing was missing. He heard the urgency and sat with it for a moment before moving. "Challenge," Drug said, from the door. She had been awake for several minutes, which she had spent in the same way she'd spent the night before the maze shift on Day 2: not moving, but processing.
+
+"What kind?" Kiwi asked.
+
+"Don't know yet," Drug said. "Bunny's speaking to Rabbit."
+
+"But not to us."
+
+"No."
+
+Kiwi looked at the Bunny through the doorway — red eyes forward, ears in motion, every line of its body communicating something that arrived in the room as noise rather than language. "We're missing something," Kiwi said.
+
+"We're missing the direct channel," Drug said. "The leader has it. We have the leader."
+
+"That's not the same thing."
+
+"No," Drug agreed. "It isn't."
+
+Mainthemainstar was not in his sleeping area when JIKOSU came to his door.
+
+He was in the training room.
+
+JIKOSU found him there — standing in the center, in the dark, not using the floor-lights that activated on entry. Just standing, in the full dark, with the soft-focus attention turned toward something that the room contained and that JIKOSU, entering and triggering the floor-strips, could not see the object of.
+
+"Mainthemainstar," JIKOSU said.
+
+Mainthemainstar turned. His expression was not startled — it was the expression of someone returning from a distance, calibrating back to the immediate. "Challenge today," he said. Not a question.
+
+"How did you—" JIKOSU stopped. "Come eat," he said instead.
+
+Mainthemainstar came.
+
+[[FEAST PHASE — MEMORY FOOD]]
+
+The tables rose from the floor with the same smooth inevitability as the morning before, and the morning before, and the system's commitment to consistency was itself a kind of message. But the food today was different.
+
+Not culturally different — the same broad national palettes, the same Team A and Team B and Team C distributions. Different in something more specific. Something that arrived before the visual, before the identification of what was on the plate, in the smell that hit as the table fully emerged and the contained heat of the food released into the room.
+
+Toad sat down and looked at his plate and stopped moving for a moment.
+
+It was a specific soup. Not a type of soup — a specific instance of a soup, with a particular ratio of something to something else that he had never been able to recreate in adulthood because the precise variables of a childhood kitchen were not reproducible. He had tried. The smell was exactly that soup and not the category of that soup, and it arrived in his chest before it arrived in his brain.
+
+"Oh," he said. Very quietly.
+
+Rally Mally had a particular bread. He picked it up and looked at it and set it down and picked it up again and took a bite while looking straight ahead at nothing, which was the face of someone who had gone somewhere else briefly and was coming back. It tasted like a specific Sunday. He could not have explained that to anyone who hadn't experienced it. He ate in silence for a moment.
+
+"Mine is exactly like what I had on my birthday," Ashborn said, to no one in particular. He was looking at his plate with the expression of someone who found this both wonderful and specifically suspicious, in equal proportion. "Not approximately. Exactly. Down to the texture." He paused. "I was eight."
+
+"They knew what I ate when I was eight," CrystalWolf said. She said it flat, not with alarm but with the precision of someone stating the implications of a fact. "They knew this before we got here. They've known our whole lives. Or enough of them."
+
+"That's the point of it," Shroud said. He was eating — the food on his plate was clearly landing for him too, in the specific way that food you didn't expect lands harder than food you were prepared for — but he was eating while making the observation rather than pausing for it, because Shroud's processing did not generally interrupt his function. "The system is demonstrating its reach. It knows what we tasted at eight. It wants us to know it knows."
+
+"Why?" space_fan said.
+
+"Because comfortable people comply better than frightened people," Shroud said. "And because people who understand the scale of what they're inside tend to make better decisions than people who are still estimating."
+
+Space_fan looked at her plate — the food on it was something she hadn't thought about in years, and the not thinking about it had concealed how much the memory was still present, and the food had reached directly into that concealed presence and applied pressure to it. She took a breath. Filed it. Ate.
+
+"The Drake spoke to me this morning," space_fan said, to the table. All ten Wardens, plates in front of them, the memory-food eating itself in small bites around the statement. "Not to the group. To me, specifically, in clear language that I could follow."
+
+"The challenge briefing," The Reddening Day said.
+
+"Yes. And a skill unlock — first one, contingent on performance, awarded after the challenge." She looked around the table. "The others understand it as noise. We need to be aware that this information asymmetry exists. It came from the system, not from a choice I made."
+
+"But the asymmetry benefits us," Duccarian said. He said it without accusation — he was naming a structural fact.
+
+"Yes," space_fan said. "It does. And the others are going to notice."
+
+"They're already noticing," Schwalbe said. He was eating efficiently, the food not seeming to produce the same backward-pull in him as it did in others — or if it did, he had processed it in the three seconds it took him to identify and file it. "Their leaders were also spoken to. Their reaction this morning was the same as ours. Confusion in the group, clarity in the leader."
+
+"So all three leaders have briefing information," Duccarian said.
+
+"And none of the others do," Rally Mally said. His bread was half-eaten. He was looking at it. "The animals were loud enough to wake all thirty of us, clear enough for three of us, and the rest of the twenty-seven had to wait." He looked at space_fan. "What are we actually doing today?"
+
+Space_fan told them.
+
+---
+
+Across the central hub, at the Floofs' table, Ninnginni was telling his team the same information he'd received from Soup, which was less specific than what the Drake had communicated — Soup had emphasized approach over outcome, performance over winning, the protocol's applicability in physical spaces. He delivered this in the structured way he delivered all briefings: complete information, ordered, followed by the invitation for response.
+
+"A grid challenge," CharliSpirit said, immediately. "With a physical component."
+
+"Described as grid-based, yes," Ninnginni said.
+
+"Navigation plus physical coordination," lumallie said.
+
+"Randomness," Ninnginni said. "Soup emphasized randomness specifically. The element of the challenge that cannot be predicted. I want us to be clear on that before we enter: there will be something in this challenge that logic does not solve."
+
+Revenant's expression moved through something. "What does logic not solve?"
+
+"True randomness," CharliSpirit said.
+
+Revenant was quiet for a moment. He was eating — his plate held something that had produced a brief, controlled response in him when he sat down, the kind of response that he had immediately organized and put away in favor of functional engagement, but that had been there. "Soup said performance matters," he said. "Not just winning."
+
+"Yes," Ninnginni said.
+
+"Which means the system is measuring something beyond first-place," Elv said. They were watching the food in front of them with the evaluative attention they applied to rooms — processing the emotional content rather than the taste, observing what the food was doing to the people around them as much as what it was doing to them. "If the skill unlock is tied to performance, and performance isn't just winning, then what are they measuring?"
+
+"How we move through it," Ninnginni said. "Soup was specific on that point."
+
+"Process over outcome," Godly_Aura said. He was one of the ones for whom the food had hit hardest — he had been quiet for the first two minutes of the meal with an expression that was difficult to look at directly, the expression of someone in brief contact with something they missed, and had come back from it to the table. "That's consistent with what Soup has said before. The system evaluates method."
+
+"Which means the protocol is the variable," Ninnginni said. "How we use it under physical pressure, in a space we haven't navigated, against a random element that it wasn't designed to address."
+
+"First real test," CharliSpirit said.
+
+"First real test," Ninnginni agreed.
+
+Golden ate in silence. When he finished eating, he said: "One thing." The table quieted. "The food is designed to make us feel. The challenge is designed to make us act. Don't let the feeling become the response to the challenge. The challenge requires a different response." He looked at his empty plate. "That's all."
+
+Loyal2Schwab had his small marking material out. At the top of a new column, he wrote: GRID. Below it: RANDOMNESS. PHYSICAL. COORDINATION. Below that: ONE AT A TIME? TBD.
+
+---
+
+The Syndicate's table was quieter than the other two — not because they had less to say but because the food had done something to several of them that required a moment before language was available.
+
+Drug was sitting with her hands in her lap looking at a specific flatbread with a specific type of lentil preparation beside it and was visibly in two places at once. Kiwi watched her from two seats over and said nothing, because this was not a moment for words, and Kiwi knew the difference between moments.
+
+After about forty-five seconds Drug picked up the flatbread and ate it. When she was done she said: "Rabbit. Tell us."
+
+Rabbit told them. The Bunny's communication, translated and delivered: challenge, randomness, speed is not the answer, approach matters. He kept the framing close to what the Bunny had actually communicated — not editorializing, letting the message be itself.
+
+"Can't outrun randomness," NinjaFlout said, with the specific tone of someone encountering a statement that dismantles a core working assumption. He wrote something in his column. "Then the interval data doesn't apply."
+
+"New dataset," Akarimmu said.
+
+"New dataset," NinjaFlout agreed. "Starting now."
+
+JIKOSU was looking at the food in front of him. He had eaten it — half of it — and the other half he was not eating because something about it had produced a response that he hadn't been prepared for and that he was choosing not to examine in a public setting. He looked at the food and then away from it and concentrated on Rabbit's briefing.
+
+"If randomness can't be outrun," JIKOSU said, "we respond instead of predict."
+
+"That's the Bunny's model," Rabbit said.
+
+"That's the Bunny's model," JIKOSU agreed. "Which means janhk's method is the closest we have to a tool for it. Not timing. Texture. Immediate sensory data rather than pattern prediction."
+
+"The tile won't have a texture tell," janhk said. He was thoughtful about it — not dismissive of his own skill, but honest about its scope. "The grid is a different application."
+
+"Maybe not the tile," Lyrix said. "But the person walking toward it. The body language of someone who has information the rest of us don't. That's a texture."
+
+janhk looked at her. "I hadn't thought of it that way."
+
+"You taught me to think that way," Lyrix said.
+
+Hollow Camillia was watching the exchange with the expression she'd been wearing since the first morning she successfully saw the pre-collapse texture: the bright-specific expression of someone learning something that is becoming a mode rather than a skill. "So we watch each other," she said. "Not the tiles."
+
+"The tiles and each other," janhk said. "Both."
+
+Mainthemainstar ate. He didn't speak during the briefing. He looked at his food — the specific thing on his plate, which had produced in him a response he noted and put away in a place that he'd visit later, when alone — and listened to everything Rabbit said, and when Rabbit was done, Mainthemainstar said: "The grid has ninety columns."
+
+Rabbit looked at him. "The Bunny told me it was a large grid. It didn't give me dimensions."
+
+"Ninety columns," Mainthemainstar said. And ate the last of his food, and said nothing else about it.
+
+Kiwi watched this exchange and then looked at his own plate — which held something that had reached in and pressed on something he'd thought was adequately sealed — and thought about earlier. About the word Mainthemainstar had used to describe what he did. Earlier than anything I have a word for. Kiwi, who had words for most things, found that specific gap interesting in the particular way that gaps in otherwise comprehensive vocabularies tend to be interesting — which was to say, significantly.
+
+[[MOVEMENT PHASE]]
+
+The maze was gone.
+
+They walked out of the central hub and the corridors that had branched and curved and suggested labyrinthine structure the day before had resolved into a single long linear hall. Dark surroundings — walls not visible in any useful way, the edges of the corridor absorbed by a darkness that felt designed rather than incidental. The floor-lights ran ahead of them in a line, color-coded by team, each team's path a slightly different hue of the same guided luminescence. Long. Straight. The kind of straight that tells you: there is only one direction.
+
+The animals moved with them differently today.
+
+The Drake flew low — low enough that its wingtip sometimes passed within a meter of people's heads, which produced varying responses from the group depending on their relationship with large winged things at close range. Toad tracked it with something close to affection. Schwalbe tracked it with something close to professional respect. Orphan Annihilator tracked it and said, quietly, "it's herding us," and Duccarian, walking beside him, said "yes, it's done that before," which was the first time Duccarian had said that in direct terms to another team member.
+
+Orphan Annihilator looked at him. "When?"
+
+"Day two," Duccarian said. "The pursuit. The Drake wasn't chasing us. It was directing our route." He paused. "I've been thinking about it since."
+
+"You didn't say anything."
+
+"I was still building the picture," Duccarian said. "I'm saying it now."
+
+Orphan Annihilator walked in silence for a moment, testing his ankle's tolerance with each step, finding it workable. "Does that mean everything the Drake does is directional? All of it?"
+
+"I don't know yet," Duccarian said. "But I think the Drake knows what's coming better than we do."
+
+"The Drake speaks to space_fan."
+
+"Yes," Duccarian said. "She should know that."
+
+Soup moved above the Floofs' corridor-path at a height that was different from any previous positioning — lower, closer, the luminescence it cast making the floor in front of them slightly brighter than the floor-strips alone could account for. It was, Revenant noted and logged, actively supplementing the lighting rather than passively observing — supplementing specifically for the path ahead, not the path behind. "It's lighting the way," he said to CharliSpirit.
+
+"I noticed," CharliSpirit said.
+
+"It didn't do this in the labyrinth."
+
+"No."
+
+"So the illumination behavior is new, which means the situation warrants different animal behavior, which means whatever is ahead is different from what we've navigated before."
+
+"That's a long chain of inference," CharliSpirit said.
+
+"It's a sound chain," Revenant said.
+
+"It's sound," CharliSpirit agreed. "I'm noting the length, not disputing the structure."
+
+The Killer Bunny ran ahead of the Syndicate and came back and ran ahead again, covering the corridor in both directions simultaneously the way the Bunny covered everything — not from restlessness but from the specific physical expression of a perceptual mode that operated ahead of the immediate. At one point it stopped directly in front of hollow Camillia, who almost walked into it, and looked up at her with its red eyes tracking something at the correct distance ahead.
+
+"Is it telling me something?" hollow Camillia asked Rabbit.
+
+"It's checking you," Rabbit said. "Your readiness."
+
+"And?"
+
+"I'd say you passed," Rabbit said, watching the Bunny resume its forward-backward pattern. "It didn't block you."
+
+"What does blocking mean?"
+
+"I'll tell you if we find out," Rabbit said.
+
+NinjaFlout was counting paces in the corridor — not for interval data, which the Bunny had already indicated was the wrong framework, but for spatial data. Length of the corridor. Regularity of the floor-light intervals. Relationship between corridor dimensions and whatever was at the end. "We're at four hundred meters," he said to Akarimmu. "Give or take. The corridor hasn't turned."
+
+"Four hundred meters is a long approach," Akarimmu said.
+
+"The approach is the design," NinjaFlout said. "Long approach, straight corridor, no information about the destination — by the time we arrive, the anticipation has already affected our state. That's intentional."
+
+"Are you more or less ready because of it?" Akarimmu asked.
+
+NinjaFlout thought about this honestly. "More," he said. "But I'm aware that's what it was designed to produce, which means I'm ready in a way that's been shaped for me. I'm not sure that's better than choosing my own readiness."
+
+"Is there a version of readiness that isn't shaped by something?" Akarimmu said.
+
+NinjaFlout had no immediate answer to this, which was the correct response, and he filed the question in the column that was getting too long to be a column anymore and was becoming something more like a document.
+
+[[CHALLENGE ROOM]]
+
+The corridor opened.
+
+It opened the way large spaces open at the end of long corridors — by being larger than the approach suggested, by the sound changing before the visual registered, by the feet feeling a different floor surface in the first step before the eyes had confirmed what the floor was. Then the eyes confirmed.
+
+The grid room was ninety by sixty.
+
+It filled the space the way purpose fills a room — not decoratively, not incidentally, but as the explicit reason for the room's existence. Chess-like in its regularity: tile after tile after tile, each the same size, each the same color, arranged in columns and rows that were clean and uniform and absolute. The ceiling was high enough that the space felt open despite being enclosed. The lighting was even. No shadows between tiles. No texture variation visible. Nothing to read.
+
+Three hundred and sixty tiles. Thirty participants. Three teams. The math of it arranged itself before anyone spoke it aloud.
+
+The participants distributed around the edge of the grid, team by team, instinctively forming the same cluster-at-entrance arrangement they'd adopted in the main hub. Thirty people looking at a grid with their animals behind them or above them or beside them, and the room was quiet in the way that a room is quiet when everyone in it is doing the same thing, which was: computing.
+
+"Ninety columns," Mainthemainstar said, to no one in particular.
+
+Drug looked at him. Said nothing.
+
+[[HOST ANNOUNCEMENT]]
+
+The voice arrived from the room itself — no single source, omnidirectional, the acoustics of the space acting as the speaker.
+
+"Good morning."
+
+The figure was not visible. The voice was the presence.
+
+"You're looking at your first challenge. I'll explain it clearly, because clarity is what the system is offering today. What you do with clear information is the variable I'm interested in."
+
+The room listened.
+
+"The objective is simple: get every member of your team to the other side. The far edge of the grid is your finish. All ten members must step on their finishing tiles — their correct finishing tiles — before your team's completion registers. One person stepping wrong doesn't end it. It costs you. I'll explain what that cost looks like."
+
+A pause calibrated for processing.
+
+"Each column contains one correct tile per row. Which tile is correct is determined randomly at the start of each row's first attempt. When someone steps on the correct tile, that tile stays correct — for everyone, for the rest of the challenge, unless a reset is triggered. If you share information across teams, you are sharing a genuine advantage. Whether you choose to do that is not my decision."
+
+"Once a tile is confirmed correct," the voice continued, "the next row becomes active. Progress is tile by tile, row by row. You move one member at a time per team. While one member steps, the rest of your team waits."
+
+"If you step on a wrong tile: you return to your team's start position. You cannot move for ten seconds. And the row reshuffles — every team's confirmed tile in that row is invalidated and the correct tile is randomly reassigned. This affects everyone who has passed that row. They must reposition to be re-evaluated."
+
+Revenant's expression, watching this unfold from the edge of the grid, was the expression of someone running structural analysis at full speed. He said to CharliSpirit, very quietly: "The reshuffle is the mechanism. One person's wrong answer costs thirty people their confirmed progress."
+
+"In that row," CharliSpirit said.
+
+"In that row. Which means the individual risk has collective consequence. Same architecture as the dormitory rules."
+
+"Same architecture as everything," CharliSpirit said.
+
+The voice continued: "Rules. No pushing — team reset. One member at a time, no exceptions — team reset. No deliberate wrong steps to trigger reshuffles for other teams — team reset. No sabotage of any kind — team reset. These are absolute. The system has no discretion in applying them."
+
+"One last thing," the voice said, and the warmth in it did not leave but something else entered alongside it, something like the quality of honest information delivered by someone who respects the recipients. "The first team to complete the challenge receives a skill unlock. What that skill is, you'll learn when you earn it. The unlock is awarded to the team. Not the leader. Not the fastest member. The team."
+
+The room was quiet.
+
+"You may begin when the floor activates," the voice said.
+
+The floor activated.
+
+Along the near edge of the grid, thirty tiles lit in a soft baseline glow — ten per team, color-coded by band. Team A's ten start tiles glowed violet-blue. Team B's ten glowed silver. Team C's ten glowed red. The rest of the grid remained neutral, waiting.
+
+"How do we determine the order?" Rally Mally asked, to the Wardens' cluster.
+
+"Safest movers first," space_fan said. "To build information for the ones with limitations."
+
+Orphan Annihilator looked at his ankle. "Last," he said, before anyone else suggested it. "Put me last. I'll know the full path by then."
+
+"That's the logical position," Schwalbe said.
+
+"I know," Orphan Annihilator said. "I'm saying I agree with it before anyone has to navigate around telling me."
+
+The Reddening Day put a hand briefly on his shoulder. Not lingering.
+
+[[GAMEPLAY PHASE — TESTING]]
+
+Schwalbe went first for the Wardens, because Schwalbe was always the version of first that was information-gathering rather than glory-seeking. He stepped onto the grid with the measured pace of someone treating each tile as a data point — not hesitating exactly, but not committing until the step was committed. Row one, column four.
+
+Wrong.
+
+The teleport was instantaneous. No warning, no transition — Schwalbe was on the tile and then Schwalbe was at the start line, and the landing was harder than it needed to be. He arrived back at full standing but stumbled the second step, catching himself on Rally Mally's arm. His expression produced a single controlled assessment of the physical event. "The landing is not soft," he said.
+
+"Noted," said The Reddening Day, already watching his balance.
+
+"I'm fine. Different column. Somebody else go — let's gather information."
+
+CharliSpirit went first for the Floofs. She chose column seven, which was where her instinct went when given no additional information, because seven was statistically close to center without being center, and she had a long history of center-adjacent choices yielding better results than center itself. She had acknowledged, before stepping, that this reasoning was pattern-matching applied to a random system, which meant the reasoning was definitionally incorrect. She stepped anyway.
+
+Wrong.
+
+She returned to start with the same abrupt landing as Schwalbe, stumbling slightly more because she hadn't braced for it. Revenant caught her elbow. She looked at him. "The logic doesn't work," she said.
+
+"No," he said. "It doesn't."
+
+"I knew it wouldn't."
+
+"Yes," he said. "You needed to confirm it directly."
+
+"Yes," she said.
+
+JIKOSU went first for the Syndicate, because JIKOSU at point was the team's baseline. He moved fast — faster than either Schwalbe or CharliSpirit — because his instinct was always to generate data rapidly rather than carefully. Column two.
+
+Wrong.
+
+He was at start before his body had registered that it had left the tile. The landing was worse for speed — the return physics were apparently not scaled to the departing velocity, and JIKOSU arrived back with enough momentum to require two full steps to control. He was fine. His expression said he was filing the experience rather than reacting to it.
+
+"Faster doesn't help," Rabbit said.
+
+"No," JIKOSU agreed. "But I know that now from direct experience rather than inference." He looked at Rabbit. "Send someone slower."
+
+janhk went next. Column five, chosen with the soft-focus attention applied laterally — not looking at the tile but at the surrounding tiles, looking for whatever texture the choice produced in the space around it. There was no texture. The system had not given this puzzle a texture tell. He stepped on column five.
+
+Correct.
+
+The tile lit — a clean, brighter version of the baseline glow, steady and unambiguous. janhk stood on it for a moment, receiving this information with the expression of someone who didn't know if what had just worked was skill or luck and was honest enough about his own process to not be certain.
+
+"Stay there," Rabbit said. "Someone mark it."
+
+NinjaFlout marked it — a small sign from the edge, a gesture that said: column five, row one, valid.
+
+"Column five, row one," hollow Camillia called out, louder, to the room. Not just to the Syndicate.
+
+Across the grid, the Wardens' cluster heard this. Space_fan looked at hollow Camillia. The information had been offered — volunteered, not in response to a direct request. Shared across team lines.
+
+Duccarian said: "That's column five. We should try something different to build the full row map."
+
+"Column five works," Rally Mally said. "Why try something different?"
+
+"Because if we all use column five, anyone who fails in row one reshuffles column five for everyone," Duccarian said. "We need the full row's information."
+
+Space_fan heard this and acted: "CrystalWolf — column three."
+
+CrystalWolf stepped. Row one, column three.
+
+Also correct.
+
+Two confirmed tiles in row one. The information spread.
+
+[[GAMEPLAY PHASE — PATTERN ATTEMPTS]]
+
+The Floofs spent twelve minutes attempting to derive the system's logic.
+
+This was not a failure of intelligence. It was a failure of applicability — the intelligence being applied was pattern-recognition intelligence, and the system was producing true randomness, which has no pattern to recognize. CharliSpirit's map of confirmed tiles grew, was annotated, was cross-referenced with the reshuffle events that followed wrong steps, and produced no predictive value whatsoever. The map was accurate. The accuracy didn't help.
+
+Ninnginni called an input round at the edge of the grid after the fourth wrong step by various Floofs.
+
+"Two words each. Go."
+
+"Truly random," CharliSpirit said.
+
+"Cannot predict," lumallie said.
+
+"Eliminate wrong," Revenant said.
+
+"Mark confirmed," Elv said.
+
+"Share information," Galaxy said.
+
+"Trust others," Godly_Aura said.
+
+"Move faster," Polaris said.
+
+"Slower," Golden said.
+
+"Coordinate," Loyal2Schwab said.
+
+Ninnginni looked at the grid. At the thirty people on and around it. At the confirmed tiles that two other teams had called out openly, information shared without prompt. "We share everything we confirm," he said. "Out loud. And we listen to what the other teams confirm. We're not the only ones building the map."
+
+"Is that allowed?" Polaris asked.
+
+"The host said sharing information is a genuine advantage and left the choice to us," Ninnginni said. "The choice is: share."
+
+Revenant was quiet for a moment with an expression that was working through something. "The system expects competition," he said. "That's the design. And sharing defeats the design's assumption."
+
+"Does it defeat it or does it demonstrate something the system is measuring?" Godly_Aura said.
+
+Nobody answered this immediately. They shared.
+
+The Wardens had been coordinating movement as a sequence — the instinct toward formation, toward the organized advancement of a group that had spent three days learning to move together. Schwalbe organized the order. The Reddening Day placed themselves mid-sequence — not first, not last, in a position where they could assess the people ahead and behind with enough information from each direction to catch problems. This worked for the first four rows and then broke down in row five when Toad, moving third, found a wrong tile that everyone had been confident was correct based on a pattern they had convinced themselves existed.
+
+Row five reshuffled. Four people who had already passed row five returned to pre-row-five position. Toad reappeared at start, landing hard, catching himself with one knee on the tile surface, standing with the expression of someone who is honestly surprised even when the surprise was a documented possibility.
+
+"Are you all right?" Rally Mally called.
+
+"Fine," Toad said. "Embarrassed. Fine."
+
+"No embarrassment," space_fan said, immediately. "New information. We thought we had a pattern. We didn't. Now we know."
+
+Toad stood up properly and went to the back of the order. "Column seven in row five is not safe," he said. "For anybody."
+
+The information went out.
+
+[[GAMEPLAY PHASE — INJURIES]]
+
+The injuries were not catastrophic. They were the kind of injuries that a body sustains when it is returned from one point to another without transition, at a speed that the landing infrastructure was not designed to absorb gracefully — accumulated bruising, strained muscles, the specific damage of repeated abrupt redirections applied to joints that were already working hard.
+
+Kiwi triggered a wrong tile in row seven and the return was harder than any previous teleport — harder in a way that suggested the system's physical consequence calibrated to progress, the later the row the more significant the landing. He arrived at start on one knee and stayed there for a moment that was longer than a stumble. His left hand was flat on the tile surface. He looked at it.
+
+"Kiwi," Drug said, already moving toward the grid's edge near him.
+
+"I'm fine," he said, and his voice had the quality of someone establishing a status report rather than reassuring anyone. He stood. The knee had taken the impact and the knee was loudly complaining about it. He stood anyway. "Genuinely fine. It hurts. I can continue."
+
+"Let me see," Drug said.
+
+"There's no time to—"
+
+"Ten seconds," Drug said. She was already crouched beside him, not waiting for permission, looking at the knee with the specific direct attention she applied to things she'd decided to look at. "Nothing structural. Soft tissue. You can continue but you'll feel this tomorrow."
+
+"I'm going to feel all of this tomorrow," Kiwi said.
+
+"More than others," Drug said, honestly. "Your landing was harder."
+
+"Row seven," NinjaFlout said, from his position. "The landings get worse the further you are when you fail. Row seven is significant."
+
+"We're past row seven now," janhk said.
+
+"Which means any wrong step from this point is worse than what Kiwi just had," NinjaFlout said, and the column was silent with the silence of people integrating an escalating cost function into their current position.
+
+Polaris had been moving fast through the grid — faster than Ninnginni's input phase had recommended, faster than Golden's one-word answer "slower" had indicated, because Polaris's body made the decision that Polaris's mind had said was wrong and the body won. She hit a wrong tile in row eight. The landing was the worst teleport yet — she arrived at start and didn't catch herself, went fully to one knee and then caught herself on both hands, and the tile surface under her palms was cold and unyielding and her left ankle registered a protest that was somewhere between a sprain and an insult.
+
+She stood. She stood without asking for help, because that was also part of who she was — not from pride exactly but from the same forward instinct that had put her on a wrong tile going too fast. She tested the ankle. Workable. Painful.
+
+"Polaris," Ninnginni said.
+
+"I can continue," she said.
+
+"I know you can," he said. "Move to the back of our order. Let the others take the next three rows."
+
+She looked at him. The instinct said: argue. The protocol said: he made the call, the disagreement phase is over. She went to the back of the order.
+
+Akarimmu missed a tile in row nine that three people had confirmed as correct the previous attempt before a row-six reset had reshuffled everything including rows seven through nine's confirmed tiles, creating a false certainty about a tile that was no longer the right answer. The landing in row nine was significant — Akarimmu arrived at start with the full force of a nine-row teleport, which was the harshest yet, and he hit the ground sideways, which was worse than hitting it vertically. He was up in seconds but the arm he'd caught himself on was going to bruise deeply, and the disorientation from the sideways arrival took him three steps to walk through.
+
+"That was bad," hollow Camillia said.
+
+"It was manageable," Akarimmu said, moving his arm, checking the range of motion with the quiet efficiency of someone who had needed to do this before and knew how.
+
+"It was both," Drug said. She was watching him with the same attention she'd given Kiwi.
+
+"Both," Akarimmu agreed.
+
+Schwalbe had pushed into row ten at a pace that Duccarian had internally flagged as too fast and had not said because the input phase wasn't active and the flag wasn't dramatic enough to call as an emergency. Schwalbe's instinct for systematic coverage was functioning against him in a randomized system — the systematic mind kept trying to generate a grid map complete enough to move through confidently, and the confident pace generated by a nearly-complete map was faster than the grid's physics appreciated. He hit a tile that he had been ninety percent certain was correct, because the confirmed tile for that column in that row had survived four rounds of reshuffling, which statistically felt like confirmation.
+
+Row ten reshuffled.
+
+He arrived at start and the landing was hard enough that he went to one knee and felt the knee in a way that would persist for days. He stood with the controlled expression of someone who was adding this to a file rather than reacting to it, and the controlled expression was doing significant work.
+
+"Schwalbe," Rally Mally said.
+
+"I know," Schwalbe said. "The pattern doesn't exist. I know. It still looked like a pattern."
+
+"It always does," Duccarian said. "That's the design."
+
+Schwalbe looked at him. "You're very calm about this."
+
+"I've been building a map of what can't be predicted for four days," Duccarian said. "The grid is just a faster version."
+
+[[BEHAVIOR SHIFT — COOPERATION]]
+
+It started with hollow Camillia.
+
+She had been standing at her team's edge of the grid, watching janhk confirm a tile in row six — column four, row six, confirmed — and the instinct that had been building since the first wrong step, since the first reshuffle that cost everyone, since the moment that the grid's architecture had made clear that individual failure was collective cost, arrived complete. She looked at the Floofs' position. She looked at the Wardens'. She looked at row six, column four, glowing its confirmation.
+
+"Column four, row six," she called. To the room. Loud enough for all thirty to hear.
+
+And then: "Column seven, row four, also confirmed. Column two, row three."
+
+The room absorbed this. Three confirmed tiles, volunteered, no equivalent offered in return.
+
+Ninnginni looked at her from across the grid. "Thank you," he said. Simple, direct, the functional register.
+
+"Column nine, row five," lumallie called back, immediately. "Confirmed two attempts ago and survived one reshuffle."
+
+"Column one, row seven," Rally Mally said, from the Wardens' cluster. "Just confirmed."
+
+Something happened in the grid room that the system had not projected.
+
+The information sharing became active — not passive, not accidental, but a choice made by three groups of people who had looked at the grid's structure and understood that one person's wrong step reshuffled the row for everyone, and that reshuffling for everyone cost everyone, and that the most efficient way to reduce wrong steps was to share the correct answers as fast as they were found. Not because the teams had decided to cooperate. Because they had independently arrived at cooperation as the dominant strategy for a system that had been designed for competition.
+
+CharliSpirit's map, which she'd been keeping in her head, expanded to include information from the other two teams. lumallie confirmed it. Loyal2Schwab's marks on the grid edge incorporated cross-team data into the notation system. NinjaFlout's columns filled with information from Wardens and Floofs alike, organized by row and column and source, the source noted but not weighted differently from same-team confirmations because the confirmation was valid regardless of who delivered it.
+
+The grid filled faster.
+
+Not without wrong steps — the randomness was real and the reshuffle events continued, and each one sent people backward and cost everyone in the reshuffled row their confirmed progress and the harder landings in later rows continued to hurt people who fell in them. But the rate of wrong steps decreased as confirmed information spread, and the confirmed information spread because thirty people in a room had looked at a structure designed for individual competition and had noted that the structure's own mechanics made competition more costly than cooperation.
+
+Duccarian, moving through row eight on confirmed tile information from the Floofs, said to space_fan: "The system expected us to compete for the confirmed tiles. Whoever finds them first keeps them."
+
+"Instead we're treating them as shared information," space_fan said.
+
+"The reshuffle mechanism made sharing the rational choice," Duccarian said. "A wrong step from any team reshuffles for everyone. If other teams fail, we pay the cost. It was always rational to help them succeed."
+
+"The system might not have expected us to see it that way," space_fan said.
+
+Duccarian was quiet for a moment, moving carefully onto the next tile — confirmed by the Syndicate twenty minutes ago, survived two reshuffles, trustworthy. "The system," he said, "has been placing us in situations where cooperation produces better outcomes than competition for four days. I wonder if that's an accident."
+
+Space_fan looked at him.
+
+"Or a design," Duccarian said. And moved forward.
+
+[[FINAL APPROACH]]
+
+All three teams were close.
+
+Not synchronized — the Wardens had a slight lead due to Schwalbe's early information-gathering and space_fan's consistent coordination, but slight, a matter of two rows at most, and the Floofs were closer than the Syndicate expected because Ninnginni's protocol had accelerated decision-making in the later rows where the information density was highest. The Syndicate was running third but running it well — janhk's instinct and NinjaFlout's data and hollow Camillia's cross-team information-sharing had produced a pace that was consistent rather than erratic.
+
+Orphan Annihilator was in his final approach.
+
+He had the full grid map — the most complete version of the confirmed tile information that anyone had, because he had moved last and the map had been built for him by the twenty-nine people who had moved before him. He moved deliberately, each step on a confirmed tile, the ankle absorbing the required weight with a complaint that he logged and did not voice. Behind him, the ten Wardens who had already finished waited at the far edge. Ahead of him: three tiles to the finish.
+
+"Two rows left," Rally Mally said, from the finish line. "Take your time."
+
+"I'm taking it," Orphan Annihilator said.
+
+Row nine, confirmed column. He stepped. The tile held. He moved to the approach for row ten.
+
+Across the grid, the Floofs' last member — Galaxy — was two rows behind Orphan Annihilator. The Syndicate's last member — Drug — was three rows behind. The finish was close enough to see for all three teams.
+
+"We're going to finish nearly together," lumallie said, from the Floofs' finish position.
+
+"Nearly," Ninnginni said. "It won't be simultaneous."
+
+"Close," CharliSpirit said.
+
+"Close," Ninnginni agreed. "Which means whoever finishes first wins the skill, and it will be close enough that who wins matters less than the fact that all three teams are about to finish."
+
+Elv, at the finish: "That's either comforting or the setup for a very hard day four."
+
+"The skill unlock goes to one team," Revenant said. "Whichever team finishes first. That's significant regardless of how close the finish is."
+
+"Acknowledged," Ninnginni said. "We finish as well as we can. That's all we can do."
+
+Orphan Annihilator was on row ten. Last row. The confirmed tile was column six. He had verified this confirmation three times through the shared map. He set his weight to move.
+
+Someone tripped.
+
+It was one of those events that would be reviewed many times in the days that followed, examined from the angles of different people who had been watching from different positions, and each review would produce the same conclusion: it was an accident in the specific, genuine sense of an event that had no cause worth attributing. Ashborn, who had been standing at the finish line for the last twenty minutes after completing his own run early, shifted his weight to lean slightly forward — the unconscious lean of someone watching a moment they're invested in — and his foot found the edge of the tile boundary, and the lean became a stumble, and the stumble became a step forward onto the grid that he had not intended to take, and the step was on a finish tile, and the finish tile registered.
+
+Ashborn looked down at his foot.
+
+The tile glowed white — brighter than any previous confirmation, brighter than the baseline, the specific glow of a system registering a completion event.
+
+Around him, the other nine Wardens who had already finished were standing in a line on the finish tiles. Ten finish tiles. Ten Wardens. Ten registered.
+
+The host's voice arrived without delay.
+
+"Astral Wardens. Challenge complete."
+
+[[RESULT]]
+
+Ashborn looked up. He looked at his team. He looked at the two remaining teams still on the grid — Galaxy mid-row, Drug one row further, both having stopped moving at the announcement.
+
+"That was me," Ashborn said, to the room. To all thirty people. "That was — I didn't mean to do that."
+
+"You moved forward," Duccarian said, from the finish line.
+
+"I stumbled," Ashborn said. "I was leaning and I—"
+
+"Ashborn," space_fan said.
+
+He looked at her.
+
+"It counts," she said. She said it gently, and factually, and both qualities were necessary. "It was an accident. It counts."
+
+Ashborn stood on the finish tile and looked at Galaxy, two rows away on the grid, who had stopped walking and was looking back. Galaxy's expression was the expression of someone who had been very close to something and had arrived at very close.
+
+"I'm sorry," Ashborn said, across the grid.
+
+Galaxy shook his head. Not dismissively — with the specific quality of someone clearing the statement as unnecessary. "You didn't push anyone," he said. "The tile registered. That's the rule."
+
+"He's right," Ninnginni said, from the Floofs' near-finish position, with the calm of someone applying a rule he had been advocating for since Day 2. "The outcome is clean. It wasn't sabotage. It was proximity."
+
+"And proximity," Elv said, "is not a violation."
+
+Drug had started moving again — she crossed her remaining rows with the focused pace of someone who had a job to finish regardless of the job's outcome. Galaxy resumed. They both crossed their finish lines within seconds of each other, the Floofs completing second, the Syndicate third, the grid room now holding thirty people at finish positions and three animals who had watched the full event with varying qualities of attention.
+
+The grid room held all of this in its even light, and the silence after was the silence of exhaustion and arrival and the specific texture of a finish that was close enough to simultaneous that winning felt, for the first time, like something that required processing rather than celebration.
+
+[[SKILL UNLOCK]]
+
+"Astral Wardens," the host's voice said. "Your skill."
+
+The Drake descended.
+
+It landed in front of space_fan with the precision of a thing that had done this before in some form even if not in this exact form, and it looked at her with the eyes that were the color of the moment before a strike, and when it communicated now the communication was different from any previous day.
+
+Clearer. Absolutely clear. Not the translation-quality that had been developing over four days — not the arrival-behind-the-eyes comprehension that required her to do work to receive it. This was direct. Complete. The kind of clarity that makes you realize, in retrospect, how much imprecision there had always been.
+
+And then the Drake turned to Schwalbe.
+
+Space_fan watched the Drake's gaze move deliberately to Schwalbe and felt the communication extend — extend outward, include him, the same absolute clarity directed now at a second person. Schwalbe's expression changed. Something in it registered the shift.
+
+"It's speaking to me," Schwalbe said. Not with alarm. With the contained, focused quality of someone receiving data they haven't had access to before and are immediately organizing.
+
+"Yes," space_fan said.
+
+The Drake turned to Duccarian. Then to Ashborn. Then to Rally Mally, who said "oh" in a small voice and then was silent, listening. Then to Toad, whose expression went through something that was close to wonder. Then to The Reddening Day, who became very still in the way they became still when they were receiving something important. Then to CrystalWolf, who closed her eyes briefly. Then to Shroud, who opened his hands. Then to Orphan Annihilator, who had been at the finish line with his ankle aching and his weight carefully distributed, and who now stood very straight and listened.
+
+All ten Wardens. The Drake's communication, extended to all ten.
+
+The message it delivered was not a single statement but a shift — a calibration, the animal's channel widening to include the full team, the imprecision that had always existed in the bond clearing away to reveal what had always been there underneath it. It communicated what it had always communicated. They understood it the way they hadn't been able to before.
+
+The other twenty people at the edges of the grid room watched this. The Drake's attention was visible — the way it moved from person to person, the way each person responded to whatever they were receiving. The response was legible even without access to the content: something had changed, something had been given, something the Wardens now had that the other twenty people did not.
+
+Rabbit watched the Drake complete its circle of the Wardens. He watched Toad's expression and Shroud's open hands and the specific quality of CrystalWolf's closed eyes. He looked at the Killer Bunny, beside him.
+
+The Bunny looked back at him.
+
+Nothing was communicated. The channel was the channel — nothing had changed in it, nothing had been added. But the Bunny's look had a quality to it that was not disappointment and not particularly concerned, the quality of something that was watching and measuring and knew more about what today meant than the people watching today could know.
+
+"They can understand the Drake fully now," Rabbit said. Not a question.
+
+The Bunny did not confirm or deny. It simply looked at the Drake, and then at Rabbit, and the look was the look of something that was already thinking about tomorrow.
+
+[[TEAM REACTIONS]]
+
+"That's a significant advantage," CharliSpirit said.
+
+She said it without bitterness, with the clean analytical tone she applied to structural facts. She was standing at the edge of the grid room beside lumallie, who was looking at the Wardens' post-skill-unlock cluster with the same careful attention she applied to maps.
+
+"Communication advantage," lumallie said. "Not physical. Not tactical. The Drake's information, accessible in full."
+
+"Which is the most significant advantage possible in an environment where the animal has prior knowledge of what's coming," Revenant said, from behind them. He had the expression of someone who had already built the full implication chain and was waiting to see if anyone else arrived at the same endpoint. "The Drake knew the challenge before we entered the room. It communicated what it knew to space_fan. Now it communicates what it knows to all ten of them. Every future challenge is pre-briefed for the Wardens in a way that it isn't for us."
+
+"We don't know what the Drake knows," Godly_Aura said.
+
+"No," Revenant said. "We don't. Which is the problem."
+
+"It might not know everything," Polaris said.
+
+"It might not," Revenant said. "But it knew today. And today's foreknowledge — even the partial foreknowledge space_fan had — informed their approach."
+
+Ninnginni was listening to this and was also watching the Wardens, specifically watching space_fan — watching how she received the full-channel communication, how she held herself differently in the seconds after, what changed and what didn't. "This is what the system said would happen," he said. "Skills unlock progressively. The Wardens earned the first one. We earn the next one, or we don't, and the difference in what we earn shapes what comes after."
+
+"That's not comforting," Polaris said.
+
+"No," Ninnginni said. "It's clarifying."
+
+Elv looked at Ninnginni. "Are you bothered by it?"
+
+Ninnginni was quiet for a moment. "I'm bothered by what it means for Day Five," he said. "Today, no. Today we finished a challenge that we expected to compete through and instead cooperated through. The cooperation was real. The skill went to one team because of an accident. I can work with that."
+
+"And Day Five?" Elv asked.
+
+"Day Five," Ninnginni said, "will require us to have built something the Wardens haven't." He looked at Soup, floating above the room. "Which is what Soup has been pointing at since Day One."
+
+Across the room, Drug was sitting on the floor near the Syndicate's edge of the grid, because her body had requested horizontal and floor was the closest available option. Her knee was from Kiwi's landing and her shoulder was from helping Akarimmu when he'd arrived sideways from row nine and the general inventory of her body was producing a list of things that would hurt tomorrow.
+
+"We almost finished simultaneously," she said, to Kiwi, who had sat beside her with the specific companionship of someone who also needed to sit and had found the nearest person who was also sitting.
+
+"Almost," Kiwi said. His knee was elevated on his own heel, the bruising already visible.
+
+"Does almost matter?"
+
+Kiwi thought about this. "The system thinks so," he said. "One team wins, one team gets the skill, one team has the advantage. Almost doesn't factor into the structure."
+
+"But it factors into how we feel about it."
+
+"Yes," Kiwi said. "It does." He looked at the Wardens — at Toad's expression, still carrying something from the skill unlock, still in the process of receiving what the Drake was offering. "They earned it," Kiwi said. "Ashborn stepping forward was an accident. Their being close enough for an accident to matter was not."
+
+"Four days," Drug said. "They built four days of something that put them close enough to the finish that an accident counted."
+
+"Yes," Kiwi said. "That's exactly right."
+
+JIKOSU was standing. He was always standing when he was processing — stillness for JIKOSU was vertical, his body's resting state was alert and upright. He was watching the Wardens and he was watching the Bunny and he was watching Rabbit, who was standing near the Bunny, and the thing JIKOSU was thinking about was the word advantage and what it did to a room of people who had just spent an hour cooperating.
+
+"We cooperated today," he said to Rabbit.
+
+"We did," Rabbit said.
+
+"Because the reshuffle mechanic made cooperation the efficient choice."
+
+"Yes."
+
+"What happens when the mechanic changes?" JIKOSU said. "What if tomorrow's challenge doesn't have a reshuffle? What if failing individually costs only the individual? Does cooperation still happen?"
+
+Rabbit was quiet for a moment. The Bunny's ear tracked something.
+
+"That," Rabbit said, "is the question we need to answer before Day Five."
+
+[[SYSTEM_OBSERVATION]]
+DAY 4 — END-OF-CYCLE ANALYSIS
+
+CHALLENGE PERFORMANCE
+  Duration                  : 74 minutes, 12 seconds.
+  Reshuffle events          : 23 total.
+  Wrong steps               : 31 total across 30 participants.
+  Cooperative information-sharing events: 47 recorded.
+  Projected cooperative events at challenge design: 0.
+  Deviation from competition model: significant. Flagged.
+
+INJURY LOG — NON-LETHAL CEILING MAINTAINED
+  Kiwi (Team C)             : Row seven teleport. Left knee impact. Soft tissue. Functional.
+  Polaris (Team B)          : Row eight teleport, speed-aggravated. Left ankle. Workable. Pain persistent.
+  Akarimmu (Team C)         : Row nine teleport, sideways arrival. Right arm bruising. Range intact.
+  Schwalbe (Team A)         : Row ten teleport. Right knee impact. Functional with pain.
+  Secondary injuries (minor): multiple participants, rows 6–10. Accumulated bruising, strained muscles.
+  All participants: ambulatory. No structural damage. Injury system within calibrated parameters.
+
+COOPERATION ANALYSIS — CRITICAL FLAG
+  System expected:          : competitive tile-hoarding. Teams guard confirmed tiles for exclusive use.
+  System observed           : immediate cross-team information sharing. Initiated by Team C (hollow Camillia).
+                              Adopted within 4 minutes by all three teams.
+  Mechanism identified by participants: Duccarian (Team A) correctly identified that reshuffle cost
+                              made cooperation the dominant strategy. Verbalized to space_fan.
+                              space_fan has not yet fully processed the implication that this may be
+                              by design.
+  Secondary analysis        : Duccarian's comment ("I wonder if that's an accident") is the closest
+                              any participant has come to identifying the system's cooperative architecture.
+                              He framed it as a question. Flag for monitoring.
+  Assessment                : participants are beginning to outperform the system's social model.
+                              Competitive escalation mechanisms will need recalibration.
+                              Introduce mechanic that does NOT reward cooperation in Day 6 challenge.
+                              Observe whether cooperative behavior persists, adapts, or collapses.
+
+SKILL UNLOCK — ASTRAL WARDENS
+  Drake full-channel communication: granted to all 10 Wardens.
+  Previous state            : space_fan only, translation-quality, leader-exclusive.
+  Current state             : all 10 members, full clarity, animal's direct channel.
+  Advantage assessment      : significant. Pre-challenge briefing now available to full team.
+                              Future challenges will test whether the Wardens use this advantage
+                              to pull ahead or to support the other teams.
+  The choice will reveal the team's values under advantage rather than under pressure.
+  Both cases have been tested. The advantage case has not. Day 5 will begin this test.
+
+CROSS-TEAM DYNAMICS
+  Noted pairings from Day 3 deepened under challenge conditions:
+  — hollow Camillia / Loyal2Schwab: information-sharing coordination. Functional.
+  — Drug / Kiwi (intra-team): post-challenge mutual support. Established.
+  — Duccarian: cross-team structural observation. Externalized first direct statement to space_fan.
+  — Ninnginni / space_fan: silent acknowledgment in challenge room. Not verbal. Registered.
+  — JIKOSU: monitoring all teams with threat-assessment reflex. Not alliance-forming. Analyzing.
+  No alliances formalized. Social dynamics building without explicit structure. Expected timeline.
+
+LEADER PERFORMANCE
+  Space_fan (Team A)        : used Drake briefing efficiently. Non-controlling coordination.
+                              Did not over-direct. Allowed Schwalbe's systematic instinct without
+                              overriding it even when it proved incorrect. Noted.
+  Ninnginni (Team B)        : protocol held under physical challenge conditions. First application
+                              outside navigation. Two-word input format effective. Polaris redirection
+                              executed cleanly — disagreement absorbed within protocol framework.
+  Rabbit (Team C)           : Bunny's "speed is not the answer" briefing partially followed.
+                              JIKOSU sent for speed-data generation, which was appropriate. Bunny's
+                              caution applied at team level rather than individual level. Acceptable.
+  All three leaders: performing within expected range. No failure points. No outstanding moments yet.
+  Day 5 introduces lethal stakes. Leader performance will be measured differently from that point.
+
+MAINTHEMAINSTAR — PRIORITY FLAG (ESCALATING)
+  Correctly stated grid dimensions (90 columns) before any briefing or visual access to the grid.
+  Statement made at the meal table. No information source available.
+  Third instance. All three instances have preceded the relevant information by minutes or hours.
+  Pattern is now too consistent to attribute to inference or coincidence.
+  Origin remains unclassified.
+  System action: no exposure. No acknowledgment. No change to Mainthemainstar's challenge position.
+  Monitoring elevated to maximum passive observation.
+  Internal note: if Mainthemainstar's perception extends to challenge foreknowledge, his team has
+  an unregistered advantage that the system did not grant and cannot account for.
+  This possibility is being taken seriously.
+
+DUCCARIAN — ONGOING FLAG
+  Cross-team cooperation identified as potentially by design.
+  First participant to approach this level of meta-awareness.
+  Did not share with anyone outside Team A.
+  Shared with space_fan in direct terms. space_fan did not confirm or expand.
+  Current trajectory: Duccarian's model is approaching accuracy.
+  Estimated time to full structural awareness: Days 6–8 if current rate holds.
+  System action: no intervention. Monitor. The system does not accelerate exposure.
+  But the system is noting that Duccarian is approaching it anyway.
+
+SYSTEM-LEVEL NOTES
+  Rule compliance: complete. No team resets triggered. No intentional violations detected.
+  Random system integrity: maintained. No pattern in tile selection. System-generated.
+  Host authority: stable. No direct challenges. One question (Polaris, "is sharing allowed") 
+                  resolved cleanly by reference to existing rule set.
+  "Unexpected cooperation detected" — confirmed.
+  "Competition model deviation" — confirmed. Significant.
+  "Injury tolerance within expected range" — confirmed.
+  "Astral Wardens early advantage granted" — confirmed. Balance impact: monitoring.
+
+  Day 4 is complete.
+  Tomorrow the ceiling lifts.
+
+  The participants have cooperated through a system designed for competition.
+  They have shared information in a structure designed to reward hoarding.
+  They have helped the injured and called out confirmed tiles across team lines
+  and finished a challenge that was designed to produce a winner
+  in a way that looked, from the outside, more like a shared project than a race.
+
+  Tomorrow the ceiling lifts, and what happens when the cost of cooperation
+  becomes not just an ankle or a bruised knee but something that cannot be
+  walked off — that is the question Day 5 exists to ask.
+
+  The system is watching to see what thirty people do
+  when helping someone else might mean dying instead of them.
+
+  The system finds this to be the most important question it has asked so far.

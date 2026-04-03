@@ -218,6 +218,16 @@ h3 {
   color: var(--muted);
 }
 
+.reader-tip {
+  border: 1px solid var(--reader-border);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  background: var(--reader-section-bg);
+  padding: 10px 12px;
+  font-weight: 700;
+  color: var(--reader-text);
+}
+
 .faction-grid {
   display: grid;
   gap: 10px;
