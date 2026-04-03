@@ -569,6 +569,12 @@ body[data-reader-mode="infinite"] .reader-toolbar {
   font: inherit;
 }
 
+.kofi-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .reader-settings {
   position: relative;
 }
