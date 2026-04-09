@@ -1,0 +1,398 @@
+[[DAY]]
+DAY 5 — THE GLASS BRIDGE
+
+[[SYSTEM_STATE]]
+Day index: 5.
+Participant count: 30 / 30.
+Death rate: unlocked.
+Injury system: active.
+Lethality: live.
+
+[[NARRATIVE]]
+They wake up confused.
+
+Not because something is wrong — because nothing is. The dorms are the same. The bands are the same. But the animals are quiet, and the quiet is a different kind of quiet than before. Not calm. Withheld.
+
+Nobody says it out loud. They all feel it.
+
+[[MORNING]]
+The clothes are new.
+
+Not the team colors — something simpler. Plain fabric, comfortable, like something chosen rather than assigned. No number on the chest. No glow. Just clothes that fit and feel normal, which after five days of designed everything feels almost suspicious.
+
+"Why are these different?" hollow Camillia asks, turning her sleeve over.
+
+"Maybe it's a rest day," Toad says.
+
+"There are no rest days," Shroud says.
+
+"We had one," Toad says.
+
+"We had one," Shroud concedes. "Once."
+
+The food is normal. Not nostalgic, not hyper-personalized, not a demonstration of the system's reach. Just food — good food, filling food, the kind of meal that exists to fuel rather than to communicate. Eggs. Bread. Fruit. Hot drinks that taste like actual hot drinks.
+
+It should be reassuring.
+
+It isn't, quite. After four days of meals with an agenda, a meal without one feels like its own kind of message.
+
+The figure speaks during the meal. Casual, almost conversational — commenting on the clothes, asking if the food is adequate, noting that the facility's temperature regulation had been adjusted overnight. Nothing about the challenge. Nothing about what comes after breakfast. Nothing about the day.
+
+"Why isn't it telling us what today is?" Galaxy asks, quietly, to Godly_Aura.
+
+"Because whatever it is," Godly_Aura says, "it doesn't want us to prepare."
+
+The meal ends. The tables descend. The floor-lights activate.
+
+They follow.
+
+[[THE CORRIDOR]]
+The path today is different in texture — the same guided floor-strips, but slower. The light pulses at a pace that matches a resting heartbeat rather than a walking one, which is either coincidence or the system communicating: don't rush. Nobody rushes. The animals walk beside their respective teams rather than ahead of them, which is also new, and the closeness of it — the Drake's wing occasionally brushing the corridor wall, the Bunny matching pace instead of running circuits — produces in the teams a specific quality of accompaniment. Like being walked somewhere by someone who knows where you're going.
+
+They arrive together. All thirty. The corridor opens into one shared entrance, and for the first time since the convergence, the three teams enter a space simultaneously, side by side.
+
+[[THE ROOM]]
+It looks like a cinema.
+
+Tiered seating along the walls, angled downward toward the center. Soft overhead lighting. The layout designed for watching something rather than participating in something — and then you look at the center, and the watching-something feeling inverts entirely.
+
+Two rows of glass panes.
+
+Fifteen pairs, running parallel, suspended above a drop that the lighting below makes visible enough to understand and dark enough not to fully see. Each pane roughly a meter wide. The gap between the two rows is enough for one person to stand on a pane at a time. The structure runs from one platform to another — an entry platform at the near end, an exit platform at the far end, the glass bridge the only connection between them.
+
+Thirty people look at it.
+
+The recognition hits all of them at approximately the same moment — not one person first, not a slow spread, but a simultaneous arrival of the same reference. Squid Game. The glass bridge episode. The architecture is identical: two rows, one sturdy, one that breaks, move through all fifteen pairs to reach the other side.
+
+The mood in the room shifts. Some people go pale. Some go very still. Polaris's jaw tightens. JIKOSU runs a threat assessment and doesn't finish it because the threat is the structure itself. Drug looks at the drop and then away from it.
+
+"I know this," Kiwi says.
+
+"We all know this," lumallie says.
+
+"Then we know how it works," Polaris says, with the tight energy of someone converting fear into forward motion. "We know the mechanic. One pane holds, one breaks. We test, we map the pattern—"
+
+Soup makes a sound.
+
+It is not a communication. It is not the gentle temperature-shift of Soup's usual method or the direct deposit of information. It is a sound — sharp, layered, something between a hiss and a resonant tone, produced at a volume and texture that has no precedent in the previous four days. The sound moves through the room and lands on every person in it and produces in most of them a response that is approximately: what.
+
+But in Ninnginni it lands differently.
+
+He turns to look at Soup. Soup's rotation has stopped entirely. Its luminescence is brighter than he has ever seen it, a cold white rather than the usual warm glow, and the sound resolves — only for Ninnginni, only in his perception — into language.
+
+*This is not what you think it is. Tell them.*
+
+Ninnginni holds up a hand. "Stop," he says.
+
+The room stops.
+
+"Soup is talking to me." He says it without preamble, because there isn't time for preamble. "It's — it's angry. I've never heard it angry before." He looks at Soup, then back at the group. "It says this is not what we think it is."
+
+"It looks exactly like—" Polaris starts.
+
+"I know what it looks like," Ninnginni says. "Listen." He turns back to Soup and listens, and the room waits.
+
+Soup's communication comes fast and precise, stripped of the philosophical patience it usually carries:
+
+*The visual similarity is intentional. The system borrowed the shape. It did not borrow the mechanic. This is not luck. This is not a guessing game. The panes respond to sudden pressure — a jump, a hard step, a running landing. Applied gradually, with distributed weight, the weaker pane will hold longer than you expect. The difference between the two panes in each pair is not which one breaks — it is which one is sturdier. Neither is unbreakable. Both will break under sufficient force. The challenge is communication. Your team must tell each other where to step and how to step. The panes do not reward the lucky. They reward the coordinated.*
+
+Ninnginni relays this. Every word, as close to exactly as he received it.
+
+The room is quiet.
+
+"So it's not random," CharliSpirit says.
+
+"Not random," Ninnginni confirms.
+
+"Pressure-sensitive," Schwalbe says. "Gradual pressure holds longer. Sudden pressure breaks."
+
+"And one in each pair is sturdier," Duccarian says. "Not safe. Sturdier. There's still a failure threshold."
+
+"Communication," space_fan says. She says it with the weight of someone who has just understood something about a challenge that changes every assumption she brought in. "The teams that communicate best move safest."
+
+"That's the challenge," Ninnginni says.
+
+[[HOST — RULES]]
+The figure's voice arrives then, from above, as though it had been waiting for Soup's interruption to finish before continuing. The tone is the same as every morning — warm, controlled — but there is something in it today that was not present on Days 1 through 4. A quality that might be, in a human voice, described as weight.
+
+"The bridge," the figure says. "Fifteen pairs of panes. One path, one direction, entry platform to exit platform. Your team crosses together — all ten members, same as yesterday. First team with all ten members on the exit platform wins."
+
+A pause.
+
+"Sudden force breaks panes. Gradual, distributed weight holds longer. You have been given this information. What you do with it determines how you cross."
+
+Another pause. Longer.
+
+"From today, the challenge is lethal. This is not a metaphor. This is not a threat. It is the structure you agreed to be inside when you remained after Day Three's explanation. The system selects. The selection is not subject to appeal."
+
+The room produces a silence that is different from every previous silence. Denser. The kind of silence that has a physical quality, that presses against skin.
+
+"Your animals will not cross with you," the figure says. "They will wait on the entry platform. When you reach the exit platform, they will come to you."
+
+The Drake moves to the entry platform edge and settles. The Killer Bunny sits beside it. Soup descends to the platform level and stills.
+
+"You may organize your teams," the figure says. "You have ten minutes."
+
+[[TEN MINUTES]]
+Nobody wastes any of it.
+
+Space_fan calls the Wardens into a tight cluster immediately. "Gradual pressure. That means no jumping between panes — step, transfer weight slowly, let the pane register your presence before committing." She looks at Orphan Annihilator's ankle. "OA—"
+
+"Middle of the order," he says, before she finishes. "I know. I can control my steps. The ankle won't make me land hard."
+
+"The Reddening Day behind you," space_fan says. They/them nods.
+
+"How do we identify the sturdier pane?" CrystalWolf asks.
+
+"We can't from here," Schwalbe says. "We test from the first pair. One person steps gently on the left. Holds. Reports. Then the right. Whichever holds better is the line."
+
+"And we call it loud," Rally Mally says. "Every step. Every report. Everyone behind hears."
+
+"Every step," space_fan confirms.
+
+Across the room, the Floofs are faster. The protocol means no debate cycle — Ninnginni calls input and the answers come in two words each and the call comes within ninety seconds.
+
+"Order," he says. "Lightest first."
+
+"Lightest lands softest," CharliSpirit says.
+
+"Lightest and most communicative first," Ninnginni corrects. "We need the people best at calling out information in front. The information they generate is the asset."
+
+CharliSpirit goes first. lumallie second. Galaxy third. Elv fourth. The order assembles itself around who speaks clearly under pressure, who listens well while moving, who has the physical control to step without sudden force. Loyal2Schwab near the back — his function is marking and confirming, better served with the full picture. Ninnginni last, because the leader sees the whole column.
+
+"We go slow," Ninnginni says. "Slower than feels right. If it feels like we could go faster, we're going the right speed."
+
+Golden says: "Call everything. Even if it seems obvious."
+
+"Everything," Ninnginni agrees.
+
+The Syndicate organizes differently — faster, because their instinct is speed, and the effort of today is not removing speed but redirecting it. Rabbit keeps the order tight. JIKOSU goes first because his body control is the best available and his reaction time means if a pane shifts, he reads it before anyone else. janhk second, because janhk's texture-reading is the closest thing the Syndicate has to pressure-sensing. Mainthemainstar somewhere in the middle — Rabbit doesn't say why and Mainthemainstar doesn't ask. The Bunny watches Rabbit from the entry platform edge, ears tracking.
+
+"One thing," Rabbit says to the Syndicate. "Nobody rushes to help someone who's falling. You can't catch them. Trying puts two people in the fall. Call what you see. That's the help."
+
+Drug looks at the drop. "That's a hard rule."
+
+"It's the right one," Rabbit says.
+
+"I know," Drug says. "Still hard."
+
+[[THE BRIDGE — WARDENS]]
+Space_fan goes first.
+
+She steps onto the first pane of the left row. Slow. Heel first, then full foot, weight transferred in gradual stages. The pane flexes slightly under her — not a crack, a flex, the material registering load the way glass registers load when it has not yet decided to fail. She holds. Reports: "Left pane, pair one. Holding. Feels flexible but stable."
+
+She steps to the right pane. Same process. The right pane's flex is different — less give, the resistance more solid, the material communicating a different relationship with the weight above it. "Right pane is sturdier. Pair one — go right."
+
+She steps to pair two's right pane and waits.
+
+Schwalbe follows. He has spent four days converting environments into data and this is the same process applied vertically — each step a reading, each reading a report, the reports delivered in the flat precise language that Schwalbe uses for all observations that matter. "Confirming right on pair one. Moving to pair two."
+
+Behind him, each Warden steps where the previous one stepped, the path being built forward and confirmed backward simultaneously, each person both receiving the information ahead and reinforcing it for the person behind.
+
+Pair seven. Space_fan's weight goes onto the left pane and the pane answers her differently than the previous six — not breaking, not yet, but the flex has a sound to it that the others didn't. A frequency in the material. She holds her weight there for one second. "Left pane, pair seven. It's talking. Go right."
+
+She shifts. Right pane. Solid.
+
+Behind her, Schwalbe passes the information: "Left is compromised at seven. Right. Pass it back."
+
+It passes back: Rally Mally to Toad to Ashborn to CrystalWolf — each name in the chain, each voice dropping the information into the next person's ear as they approach the pair.
+
+They are halfway across.
+
+[[THE BRIDGE — FLOOFS]]
+CharliSpirit steps onto pair one with the deliberate care of someone for whom each step is also an annotation. Left pane first. She reports its behavior in three words: "flex, consistent, stable." Right pane: "less flex, more resistance." She chooses right and moves.
+
+"Right on one," she calls back. "Right feels sturdier."
+
+lumallie follows, confirming, and behind her the Floofs begin their column — slower than feels necessary, exactly as Ninnginni said, the slowness itself the discipline.
+
+They are communicating at every step. Not just the pane reports — everything. "Pair three, I'm on it, weight distributed, holding." "Moving off pair three, stepping to four, the gap is wider than it looks, adjust your stride." "Pair five right pane — there's a sound at the far edge, stay left-of-center."
+
+The information density is high. It's working.
+
+Pair nine. Loyal2Schwab is mid-column, approaching. The eight people ahead of him have all crossed pair nine on the right pane. Right on nine has been confirmed eight times. Loyal2Schwab steps onto it with the distributed weight technique, heel to toe, exactly as the technique requires.
+
+The pane breaks.
+
+Not because the technique failed. Because nine people crossing a pane — even with gradual weight — accumulates. The sturdier pane has a threshold, and eight prior crossings had brought it to the edge of that threshold, and Loyal2Schwab's crossing is the one that finds it.
+
+There is no time between the sound and the absence.
+
+Loyal2Schwab is there and then he is not, and the space where he was is open and the drop below it is the drop that was always there and the room absorbs this in the single worst second of all thirty people's time inside this facility.
+
+The column ahead of him — the six Floofs already on the exit platform — turns. The column behind him — Galaxy, Ninnginni — freezes.
+
+"Keep moving," Ninnginni says.
+
+His voice is even. It costs him something to make it even and he pays the cost without showing it.
+
+"Loyal2Schwab is gone," he says, because the column needs to hear the fact named rather than sit in the gap of it. "Pair nine right is broken. Galaxy — pair nine left. Slow. Slower than anything you've done today."
+
+Galaxy steps onto the left pane of pair nine. It holds.
+
+Ninnginni follows.
+
+They reach the exit platform.
+
+Nine Floofs. One space where the tenth was.
+
+[[THE BRIDGE — SYNDICATE]]
+The Syndicate watches the Floofs cross. They watch Loyal2Schwab fall. The column doesn't break formation — Rabbit had said call what you see, and what they see is the information they need — but something in the air of the room changes after it, the remaining twenty-three people still waiting processing the confirmation that the lethality system is not theoretical.
+
+JIKOSU goes. He reads each pane with his body before committing, the physical intelligence of someone who has spent years trusting what his feet tell him, and his feet are telling him more than most people's feet would. He calls everything.
+
+janhk follows and the texture-read he's been developing since Day 2 finds, in the bridge, a new application. The surface under his feet has a quality — not visual, tactile — that corresponds to the pane's remaining structural integrity. He can feel the difference between a pane that has absorbed previous crossings and one that hasn't. He calls it. He doesn't know if he's right. He calls it anyway.
+
+Pair eleven. Mainthemainstar steps forward and the pane under his right foot shifts — not breaks, shifts, a lateral movement rather than a vertical failure, the material responding to his weight in a way that is different from every pane before it. He adjusts his weight before anyone tells him to, redistributes it, holds.
+
+"Pair eleven right is unstable," he says. "Not breaking. Unstable. Take the left."
+
+He steps left. The right pane, released from his weight, settles. The people behind him take the left.
+
+Pair fourteen. Kiwi is moving through it and his knee — the row seven injury from the previous day, soft tissue that has spent a night becoming stiff — sends a message to his landing that he doesn't fully control. His step onto pair fourteen's left pane is slightly harder than intended. Not a jump. A flinch from the knee, a momentary loss of the gradual transfer.
+
+The pane breaks.
+
+Kiwi drops.
+
+Akarimmu is behind him and does not reach. Rabbit had said: call, don't catch. Akarimmu calls it — "fourteen left is gone, go right" — and steps right, and the column behind him steps right, and pair fourteen's right pane holds everyone who crosses after.
+
+Kiwi is gone.
+
+The column finishes. Eight Syndicate members on the exit platform. Rabbit is last and when he steps off the bridge he does not look back at it.
+
+[[THE BRIDGE — WARDENS, CONTINUED]]
+The Wardens are still crossing when Loyal2Schwab falls, and they hear it — the sound carries in the room — and space_fan, on pair eleven, has one second to decide whether the sound affects her next step. She decides it doesn't. Steps. The pane holds.
+
+Behind her, the column keeps the pace.
+
+Pair thirteen. Toad is crossing, mid-column, following the confirmed path that nine Wardens ahead of him have established — right on one, right on two, left on six, the full map called back through every set of hands and voices. He has been chatty through the whole crossing, which is both his nature and his function — he has been calling reports and adding brief reassurances and occasionally saying something that almost sounds like a joke, and the column behind him has been using his voice as an anchor, the sound of Toad talking a confirmation that the path is still intact.
+
+Pair thirteen. Right pane. Confirmed by eight people before him.
+
+Toad steps on it and it holds and he takes the next step to transfer his weight off it and his back foot — the one leaving pair thirteen — catches the pane's edge at an angle, a small slip, the kind of small slip that on solid ground produces nothing and on a glass bridge produces the small additional force that a pane at near-threshold cannot absorb.
+
+He feels it going before it goes.
+
+"Toad—" Rally Mally starts, from behind him.
+
+Toad doesn't fall backward. He pitches forward — trying, in the last available moment, to get his weight onto pair fourteen rather than into the gap, the instinct to reach the next solid surface overriding everything else. He almost makes it. His leading foot catches pair fourteen's edge.
+
+Almost.
+
+The column ahead of him — space_fan, Schwalbe, Duccarian, CrystalWolf — turns at the sound. Space_fan sees. Schwalbe sees. There is nothing either of them can do that wouldn't put them in the same drop, and they both know it, and knowing it doesn't make the not-doing it easier.
+
+Rally Mally is the closest. He extends a hand — reflex, not calculation — and catches nothing.
+
+Toad is gone.
+
+The column is silent for five seconds. Then Schwalbe says, quietly: "Pair thirteen right is at threshold. Don't step on thirteen right." He says it to the people behind him. He says it in the same flat, precise voice he uses for every observation, and it costs him the same thing it cost Ninnginni, and he pays it the same way.
+
+Orphan Annihilator is approaching pair thirteen. He heard it. He goes left.
+
+The remaining Wardens cross. They reach the exit platform. Nine of them. The Drake moves from the entry platform to them immediately, and the communication it delivers is clear and complete and none of them are able to fully receive it right now.
+
+[[RESULT]]
+Nine Floofs.
+Eight Syndicate.
+Nine Wardens.
+
+The exit platform holds twenty-six people. Four are not present. Four is the number that the room has now and will have from this point forward.
+
+The first team fully across: the Furious Floofs. Nine members, all present, crossed before the Wardens finished despite their mid-bridge loss.
+
+The host's voice: "Furious Floofs. Challenge complete."
+
+The figure does not elaborate. Today it says only what is required.
+
+[[SKILL UNLOCK — FURIOUS FLOOFS]]
+Soup moves from the entry platform to Ninnginni.
+
+The communication that arrives is different from every previous version — not the even-temperature patience of Day 1, not the cold urgent precision of this morning's interruption. Something else. Something that has the quality of a door opening inward.
+
+Ninnginni receives it. His expression changes in a way that is difficult to describe — not surprise, not awe exactly, something closer to the feeling of recognizing a word in a language you thought you didn't speak.
+
+He turns to the group. Nine Floofs on the exit platform, some sitting, some standing, all carrying the weight of the last twenty minutes.
+
+"Soup," he says. "Soup can freeze time. A short window — a few seconds, not long. At my command."
+
+The room absorbs this.
+
+"It doesn't undo what happened," he says, before anyone asks. He says it because he is already thinking it, and the thought needs to be said clearly so that it doesn't become the thing that haunts the next several hours. "It's not retroactive. It's a tool for what comes next."
+
+He looks at where Loyal2Schwab was standing in the column. The empty space between Galaxy and where the tenth person should be.
+
+"It's a tool for what comes next," he says again. Quieter.
+
+Soup's rotation resumes. Slow. Steady.
+
+[[DORMS — GRIEF]]
+They go back.
+
+The corridor back is the same corridor they walked an hour ago. The floor-lights pulse the same rhythm. The animals walk beside their teams. Everything is the same and none of it is the same.
+
+The Wardens enter their sector and nobody goes to their sleeping area immediately. They gather in the central room — not by decision, not by anyone's suggestion, just by the gravity of ten people becoming nine becoming a different configuration that none of them have language for yet. Space_fan sits on the floor. The Reddening Day sits beside her. Schwalbe stands with his back to the wall and his arms crossed and his face doing the controlled work it always does, except that tonight the work is visible in a way it usually isn't.
+
+Rally Mally says: "He was going to tell me the rest of that story. About the name."
+
+Nobody asks which story. They all know. Toad had started something on Day 1 — long and strange and involving a bet and a goat — and had been adding to it in pieces across four days, and it wasn't finished.
+
+The Reddening Day says, to no one and everyone: "The ankle was manageable. He was moving well today. He was moving well."
+
+They say it once and don't say it again because saying it again would be trying to find a version of today in which it didn't happen, and there isn't one.
+
+Orphan Annihilator is sitting with his bad ankle out in front of him and he is not thinking about his ankle. He is thinking about a bridge crossing and a slip and a gap that was there and then filled with nothing.
+
+Ashborn sits beside him without being asked.
+
+In the Floofs' sector, the silence is different — it has the quality of a room that has absorbed a specific absence. Loyal2Schwab's sleeping area is visible from the central room. The marks he made on the first day of exploration are still on the wall — small, precise, the junction notation system that nobody asked him to build and that everyone used.
+
+CharliSpirit stands in front of the wall for a long time.
+
+lumallie comes to stand beside her. They don't speak. After a while lumallie reaches up and puts one finger on the lowest mark — the first one, the starting point of the whole system — and holds it there for a moment. Then she takes her hand away.
+
+Elv sits in the center of the room with their knees pulled up, not performing the grief, not managing it, just holding it. Polaris is across from them, jaw tight, the forward-instinct fighting with something that has nowhere to go forward into tonight.
+
+Godly_Aura says: "He marked every junction. Every single one. We always knew where we were because of him."
+
+"We'll keep marking them," Galaxy says. "Same system."
+
+"It won't be the same system," Godly_Aura says. Not as a contradiction. As a fact that needed to exist in the room.
+
+"No," Galaxy says. "But it'll be his."
+
+Ninnginni is last to sit. He stands at the center of the sector for a while doing what he always does — holding the full picture, turning it. The protocol. The skill unlock. The time freeze that Soup granted, that arrived after Loyal2Schwab was already gone, that was earned by a team that is now nine. He sits.
+
+He doesn't say anything about the skill tonight. Tonight is not for tools.
+
+In the Syndicate's sector, the weight is carried differently. The Syndicate grieves in motion — not pacing, but the restless energy of a group that processes through the body. JIKOSU runs the perimeter of the sector twice without stopping, which is his version of sitting with it. janhk sits on the floor of the training room in the dark because the dark is easier than the light tonight.
+
+Drug is in the central room. She is not moving. She is very still, which is not her default, and the stillness has the quality of someone who is holding something very carefully because they are not sure what happens if they put it down.
+
+"He was on pair fourteen," she says, to hollow Camillia, who is sitting near her.
+
+"I know," hollow Camillia says.
+
+"His knee. From yesterday." Drug looks at her hands. "The landing yesterday. He couldn't fully control it today."
+
+"Drug," hollow Camillia says.
+
+"I know," Drug says. "I know."
+
+Hollow Camillia moves closer to her. Doesn't touch her, just closer, the proximity that says: you don't have to carry this alone even if you can't put it down yet.
+
+Mainthemainstar is in his sleeping area. He is awake but he is not moving. He knew pair eleven would shift before it shifted. He knew the dimensions of the grid before they were given. He did not know pair fourteen would break under Kiwi. He has been sitting with that gap for the past hour — the thing he saw and the thing he didn't see, and the question of whether the seeing could have been extended to cover it, and whether not extending it makes him responsible for what the gap contained.
+
+He doesn't arrive at an answer. He stays with the question instead, which is the only honest thing to do with it.
+
+Rabbit is the last one awake in the sector.
+
+He sits at the entry of the sleeping area in the dark, and the Killer Bunny is beside him — not on guard-mode, not running perimeters, just present, which the Bunny almost never is. Just still. Just there.
+
+Rabbit doesn't ask it anything. Tonight he doesn't need information or direction or the channel.
+
+He just needs the Bunny to stay.
+
+It stays.
+
+[[END_DAY]]
