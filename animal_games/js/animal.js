@@ -2734,18 +2734,11 @@
       return "";
     }
 
-    var day3PaletteOverride = state.readerMode !== "infinite" && state.readerDay === 3;
-    var baseHueByFaction = day3PaletteOverride
-      ? {
-          "astral-wardens": 210,
-          "obsidian-dominion": 2,
-          "velocity-syndicate": 0
-        }
-      : {
-          "astral-wardens": 210,
-          "obsidian-dominion": 43,
-          "velocity-syndicate": 351
-        };
+    var baseHueByFaction = {
+      "astral-wardens": 210,
+      "obsidian-dominion": 2,
+      "velocity-syndicate": 210
+    };
     var baseHue = baseHueByFaction[factionKey] || 215;
     var hash = 0;
     for (var i = 0; i < normalizedName.length; i++) {
@@ -2756,9 +2749,9 @@
     var sat = 68 + (hash % 11);
     var light = 56 + (hash % 9) - 4;
 
-    if (day3PaletteOverride && factionKey === "velocity-syndicate") {
-      sat = 6 + (hash % 6);
-      light = 82 + (hash % 10);
+    if (factionKey === "velocity-syndicate") {
+      sat = 0 + (hash % 4);
+      light = 65 + (hash % 9);
       hueOffset = 0;
     }
 
