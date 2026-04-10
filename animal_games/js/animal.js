@@ -1082,11 +1082,10 @@
     if (day4CompactRow) {
       day4CompactRow.hidden = !showDay4Compact;
     }
-
     if (readerTip) {
-      var showTip = showDay4Compact && !state.day4Compact;
-      readerTip.hidden = !showTip;
+      readerTip.hidden = !(showDay4Compact && !state.day4Compact);
     }
+
   }
 
   function applyReaderWidth(widthMode) {

@@ -622,6 +622,10 @@ body[data-reader-mode="infinite"] .reader-toolbar {
   cursor: pointer;
 }
 
+.reader-settings-row[hidden] {
+  display: none !important;
+}
+
 .settings-info-dot {
   display: inline-flex;
   align-items: center;

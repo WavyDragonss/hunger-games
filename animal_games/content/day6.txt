@@ -10,11 +10,11 @@ Injury system: active.
 [[NARRATIVE]]
 The cold is not a temperature.
 
-That's the first thing they notice, and it takes most of them a few minutes to find the right word for it. The dorms are the same. The air reads the same. But something in it has changed in a way that bypasses the skin entirely and arrives somewhere deeper — in the chest, behind the sternum, in the specific place where the body keeps its unexamined fears. Nobody is shivering. Nobody reaches for extra layers.
+That's the first thing they notice, and it takes most of them a few minutes to find the right word for it. The dorms are the same. The air reads the same. But something in it has changed in a way that bypasses the skin entirely and arrives somewhere deeper — behind the sternum, in the specific place where the body keeps its unexamined fears. Nobody is shivering. Nobody reaches for extra layers.
 
-They just wake up knowing that today is different, without being able to say how they know.
+They just wake up knowing that today is different.
 
-The animals feel it too. The Drake is still. The Bunny is at the room's edge facing outward, ears in constant motion, reading something that hasn't arrived yet. Soup rotates slowly, luminescence slightly dimmer, the quality of something conserving rather than resting.
+The animals feel it too. The Drake is still. The Bunny is at the room's edge facing outward, ears in constant motion, reading something that hasn't arrived yet. Soup rotates slowly, luminescence dimmer — the quality of something conserving rather than resting.
 
 Nobody says: I'm afraid.
 
@@ -29,11 +29,11 @@ No team colors. No number assignments. The usual violet, silver, and red-coded p
 
 "Same as what?" hollow Camillia asks.
 
-"Same as everyone else's," Drug says.
+"Same as everyone else's."
 
 The room looks. She's right. Every plate carries the same minimalist white markers — no team, no number, no assignment. Just a suggestion of organization without the organization itself.
 
-"Does that mean we can sit wherever?" Toad asks — then stops, because Toad is gone, and the person who asked that was Rally Mally, and the correction happens inside Rally Mally before it reaches his face.
+"Does that mean we can sit wherever?" Rally Mally asks — then stops, because the question sounded like something Toad would have said, and the correction happens inside Rally Mally before it reaches his face.
 
 "I think it means the food is shared," CrystalWolf says carefully.
 
@@ -45,13 +45,13 @@ A pause.
 
 "It seemed like a good day for it."
 
-The room sits with this for a moment. Then Polaris stands up, walks directly to the Syndicate's table, and picks up a bowl of something she's been looking at since she sat down.
+The room sits with this. Then Polaris stands up, walks directly to the Syndicate's table, and picks up a bowl of something she's been looking at since she sat down.
 
 That's all it takes.
 
-Within two minutes the formal cluster of three separate team tables has softened into something more like thirty people eating from wherever they want in a shared space, the invisible lines between violet and silver and red temporarily dissolved by the simple mechanism of good food and no rules about it. Space_fan finds something at the Floofs' table and brings it back. Galaxy samples three things from the Wardens' spread. Akarimmu and Schwalbe end up standing at the same section of the Syndicate table eating in companionable parallel without particular acknowledgment.
+Within two minutes the formal cluster of three separate team tables has softened into something more like thirty people eating from wherever they want, the invisible lines between violet and silver and red dissolved by the simple mechanism of good food and no rules about it. Space_fan finds something at the Floofs' table and brings it back. Galaxy samples three things from the Wardens' spread. Akarimmu and Schwalbe end up standing at the same section of the Syndicate table eating in companionable parallel without acknowledgment.
 
-The food is extraordinary. Not in the nostalgic way of Day 4 — not reaching back into memory — but present, wide, the sheer variety of it a kind of generosity. Someone finds injera. Someone else finds a specific type of pastry that they've encountered exactly once and thought about since. There's pho and mole and jollof rice and a lamb preparation that three different people from three different teams reach for simultaneously and then negotiate around with the wordless courtesy of people sharing something finite.
+The food is extraordinary. Not in the nostalgic way of Day 4 — not reaching back into memory — but present, wide, the sheer variety of it a kind of generosity. Someone finds injera. Someone else finds a specific type of pastry they've encountered exactly once and thought about since. There's pho and mole and jollof rice and a lamb preparation that three people from three different teams reach for simultaneously and negotiate around with the wordless courtesy of people sharing something finite.
 
 "Why today?" Ninnginni says, to no one specific. He eats slowly, watchful. "Why shared, today."
 
@@ -65,20 +65,20 @@ The food is extraordinary. Not in the nostalgic way of Day 4 — not reaching ba
 
 Kiwi is not there.
 
-The space where Kiwi would have been — his particular way of sitting, the rhythm of his observations arriving between bites — is present by its absence in the way all absences are present. Drug eats near that space anyway. She doesn't choose it consciously. She ends up there.
+The space where Kiwi would have been — his particular way of sitting, the rhythm of his observations arriving between bites — is present by its absence the way all absences are present. Drug eats near that space anyway. She doesn't choose it consciously. She ends up there.
 
 The meal ends. The cold that isn't temperature has not left. If anything, sitting still and warm has made it more legible — the contrast between the comfort of the food and the thing underneath the comfort sharpening both.
 
 [[THE PATH]]
 The floor-lights activate and immediately the path is different.
 
-Not the long straight corridor. Not the branching maze geometry of Days 3 and 4. The lights go up — literally, running along a ramp that rises steeply from the hub floor, climbing at an angle that the previous corridors didn't have. The ceiling above the ramp is high enough to accommodate the incline but only just, and the walls narrow slightly as the ramp ascends, the space becoming more intentional, more directed.
+Not the long straight corridor. Not the branching maze geometry of Days 3 and 4. The lights go up — literally, running along a ramp that rises steeply from the hub floor, climbing at an angle the previous corridors didn't have. The ceiling above the ramp accommodates the incline but only just, and the walls narrow slightly as the ramp ascends, the space becoming more intentional, more directed.
 
-Up. Only up. No choice of direction, no branch point. The ramp just climbs.
+Up. Only up.
 
-Twenty-seven people and the three animals begin ascending.
+Twenty-seven people and three animals begin ascending.
 
-The Drake flies rather than walks, which means it rises alongside them at ceiling height, its presence in the narrower space more intense than it was in the corridors below. Soup moves upward through the ceiling itself, visible in the floor-light glow as a moving luminescence above and ahead. The Bunny runs the ramp in its circuit pattern — forward, back, forward, back — but the circuits are shorter today and the pauses at the top of each circuit are longer. It is waiting rather than scouting. Reading something at the top rather than checking the path.
+The Drake flies rather than walks, rising alongside them at ceiling height, its presence in the narrower space more intense than in the corridors below. Soup moves upward through the ceiling itself, visible in the floor-light glow as a moving luminescence above and ahead. The Bunny runs the ramp in its circuit pattern — forward, back, forward, back — but the circuits are shorter today and the pauses at the top of each circuit are longer. Waiting rather than scouting. Reading something at the top rather than checking the path.
 
 "It's not scouting," janhk says, watching the Bunny.
 
@@ -86,13 +86,13 @@ The Drake flies rather than walks, which means it rises alongside them at ceilin
 
 "It knows what's up there."
 
-"Yes," Rabbit says.
+"Yes."
 
 "Is that good or bad?"
 
 "It's information," Rabbit says, which is neither and both.
 
-The ramp ends at a door — single, plain, no visible mechanism, just a seam in the wall that opens as they approach. They file through. Twenty-seven people, three animals, the door closing behind the last person with a sound like finality.
+The ramp ends at a door — single, plain, no visible mechanism, just a seam in the wall that opens as they approach. They file through. Twenty-seven people, three animals. The door closes behind the last person with a sound like finality.
 
 [[THE ROOM]]
 They look up.
@@ -103,37 +103,35 @@ They look around.
 
 There is nothing.
 
-The room is large — very large, ceiling high enough that the top of it is at the edge of legibility in the room's ambient lighting. The floor is flat and even and uninterrupted. The walls are smooth. There are no features, no structures, no visible exits. The door they came through has left no crease or seam or evidence that it existed.
+The room is large — very large, ceiling high enough that the top of it dissolves into the ambient lighting. The floor is flat, even, uninterrupted. The walls are smooth. No features, no structures, no visible exits. The door they came through has left no crease or seam.
 
-Space_fan puts her hand flat on the wall where the door was. Smooth. Continuous. If she hadn't walked through it thirty seconds ago she would have no basis for believing it was ever there.
+Space_fan puts her hand flat on the wall where the door was. Smooth. Continuous. If she hadn't walked through it thirty seconds ago she'd have no basis for believing it existed.
 
 "That's deliberate," Schwalbe says.
 
 "Everything is deliberate," Duccarian says.
 
-Across the room, Polaris is already moving — walking the perimeter, her hand trailing the wall, checking for anything that visual inspection might miss. She completes a full circuit and reports: "Nothing. The walls are completely uniform."
+Polaris is already moving — walking the perimeter, hand trailing the wall, checking for anything visual inspection might miss. She completes a full circuit: "Nothing. Completely uniform."
 
-"The floor too," NinjaFlout says. He has crouched and run his palm across a two-meter section. "Same texture throughout. No variation."
+"The floor too," NinjaFlout says, crouched, palm flat across a two-meter section. "No variation."
 
 "No exits we can identify," Akarimmu says.
 
 "No visible exits," Revenant says. "Different claim."
 
-"Correct," Akarimmu says. "No visible exits."
+"Correct. No visible exits."
 
 The animals.
 
-The Drake is present — settled at the room's far end, wings folded, watching. Soup hovers at mid-height, rotation slow, the dimmer luminescence it's been carrying all morning unchanged. The Bunny is at the room's center. Facing the ceiling.
+The Drake is at the room's far end, wings folded, watching. Soup hovers at mid-height, rotation slow. The Bunny is at the room's center. Facing the ceiling.
 
 "The Bunny is looking up," hollow Camillia says.
 
 "It's been looking up since we entered," JIKOSU says.
 
-Twenty-seven people follow the Bunny's gaze to the ceiling. Which tells them nothing. Which is, they are beginning to understand, exactly the point.
+Twenty-seven people follow the Bunny's gaze. The ceiling tells them nothing. Which is, they are beginning to understand, exactly the point.
 
 "Day 4 the Drake was the active animal," Drug says slowly. "Day 5 was Soup — it interrupted, it explained, it unlocked. That's two of three." She looks at the Bunny. "Today is the Bunny."
-
-The room sits with this.
 
 "The Bunny's domain," Rabbit says.
 
@@ -150,11 +148,11 @@ The voice arrives without preamble.
 
 "Today's lethality rate is higher than yesterday."
 
-It says this the way you say a weather report. The warm-controlled tone, unchanged. The delivery so level that the content takes a half-second extra to land, and when it lands it lands in the specific place that the morning's cold has been softening since they woke up.
+It says this the way you say a weather report. The delivery so level that the content takes a half-second extra to land, and when it lands it lands in the place that the morning's cold has been softening since they woke up.
 
 Nobody speaks.
 
-"I wanted to tell you that clearly, before the challenge begins. You know the structure. You know what Day Five established. Today that number is higher. The system has run its selection. I won't tell you the outcome — that's not information you receive in advance. What you receive in advance is the knowledge that the stakes are real."
+"I wanted to tell you that clearly, before the challenge begins. You know the structure. You know what Day Five established. Today that number is higher. The system has run its selection. I won't tell you the outcome — that's not information you receive in advance. What you receive is the knowledge that the stakes are real."
 
 A pause.
 
@@ -162,19 +160,19 @@ A pause.
 
 The Bunny moves.
 
-It crosses from the room's center to Rabbit in four seconds, which is faster than the Bunny has visibly moved indoors. It sits in front of him and the communication arrives immediately — not building, not gradual, fully formed and urgent:
+It crosses from the room's center to Rabbit in four seconds — faster than the Bunny has visibly moved indoors. It sits in front of him and the communication arrives fully formed and urgent:
 
 *Tell them. All of it. Now. There isn't much time.*
 
-Rabbit holds up a hand. "Everyone listen. The Bunny is briefing me and I'm relaying in real time. Don't interrupt."
+Rabbit holds up a hand. "Everyone listen. The Bunny is briefing me. I'm relaying in real time. Don't interrupt."
 
 The room goes quiet.
 
 *A song will play. When the song starts, watch the ceiling — a platform will cast a shadow before it falls. You have three seconds from shadow to impact. The platforms fall in a grid pattern, three by three. Each platform is twenty-five centimeters tall. When a platform lands, climb it — get above ground level and stay above it. Every platform after the first falls faster by a tenth of a second. The game ends when a platform falls in under one second. The door opens. You go home.*
 
-Rabbit relays every word as it arrives, his voice steady, his eyes on the Bunny throughout.
+Rabbit relays every word as it arrives, voice steady, eyes on the Bunny throughout.
 
-"Getting crushed," he says, at the end, and his voice carries the weight of the word before he finishes the sentence. "Getting crushed is instant. Don't be under one when it falls."
+"Getting crushed," he says at the end, and his voice carries the weight of the word before he finishes the sentence. "Getting crushed is instant. Don't be under one when it falls."
 
 The room absorbs this.
 
@@ -186,56 +184,56 @@ The room absorbs this.
 
 "The platforms are twenty-five centimeters," NinjaFlout says. "Stack them. Every time one lands, it adds height. The goal is elevation — climb everything that falls."
 
-"The grid shifts with each drop," Akarimmu says. "Or does it stay fixed?"
+"The grid shifts with each drop?" Akarimmu asks. "Or stays fixed?"
 
 Rabbit looks at the Bunny. *Fixed grid. Same nine positions. Different sequences.*
 
-"Fixed grid," Rabbit says. "Nine positions, same locations throughout. The sequence changes."
+"Fixed grid," Rabbit says. "Nine positions, same throughout. The sequence changes."
 
 "So we can learn the grid from the first few drops," CharliSpirit says.
 
 "If we survive the first few drops," Drug says.
 
-"Yes," CharliSpirit says. "If."
+"Yes. If."
 
 *The song,* the Bunny says to Rabbit. *It's starting.*
 
 [[THE SONG]]
-It begins in the walls — not from a speaker, not from a single point, but from the room itself, the way the room has produced everything it's produced. The melody is simple. Unhurried. The kind of tune that exists at the edge of recognition, familiar in its structure without being identifiable, the musical equivalent of a word in a language you studied briefly years ago. Almost known.
+It begins in the walls — not from a speaker, not from a single point, but from the room itself. The melody is simple. Unhurried. The kind of tune that exists at the edge of recognition, familiar in its structure without being identifiable, the musical equivalent of a word in a language you studied briefly years ago.
 
 It is not a threatening sound.
 
-That's the worst part. It is gentle and regular and it fills the large empty room with something that sounds almost like comfort, and below it the twenty-seven people spread out instinctively — not in formation, not by team, but by the body's own navigation algorithm, the one that says: more space between you and the nearest person means more room to move.
+That's the worst part. It is gentle and regular and fills the room with something that sounds almost like comfort, and below it twenty-seven people spread out instinctively — not in formation, not by team, but by the body's own navigation, the one that says: more space between you and the nearest person means more room to move.
 
 "Watch the ceiling," Rabbit says.
 
 They watch the ceiling.
 
-The first shadow arrives — a square of slightly darker nothing appearing at the ceiling's surface above the northeast corner of the room. Three seconds is enough time, just barely, when you know what you're looking at. The cluster near the northeast corner scatters. Space_fan moves left. Ninnginni moves forward. Akarimmu moves back.
+The first shadow arrives — a square of slightly darker nothing appearing above the northeast corner. Three seconds is enough time, just barely, when you know what you're looking at. The cluster near the northeast scatters. Space_fan moves left. Ninnginni moves forward. Akarimmu moves back.
 
 The platform hits the floor.
 
-The sound is enormous. Not explosive — percussive, deep, the sound of significant mass meeting a resistant surface at velocity, a sound that bypasses hearing and arrives directly in the chest. The floor shakes. The platform is solid — flat, square, about two meters to a side, gray, twenty-five centimeters of elevation that wasn't there before.
+The sound is enormous. Not explosive — percussive, deep, significant mass meeting a resistant surface at velocity, a sound that bypasses hearing and arrives directly in the chest. The floor shakes. The platform is solid — flat, square, about two meters to a side, gray, twenty-five centimeters of elevation that wasn't there before.
 
 In the silence after it, twenty-seven people check themselves. Present. Intact.
 
 "Climb it," Rabbit says.
 
-JIKOSU is on it in one motion. Hollow Camillia pulls herself up. The platform holds their weight without complaint.
+JIKOSU is on it in one motion. Hollow Camillia pulls herself up. The platform holds.
 
-The second shadow appears. Southwest corner. Three seconds.
+The second shadow. Southwest corner. Three seconds.
 
-Everyone who was near the southwest corner moves. The platform falls. Smaller group this time — NinjaFlout reads the shadow faster than most and is already two meters clear before the impact. The sound again, the shake again, another twenty-five centimeters of available height.
+Everyone near the southwest moves. The platform falls. NinjaFlout reads the shadow faster than most and is already two meters clear before impact. The sound again, the shake again, another twenty-five centimeters of available height.
 
-"Two platforms," NinjaFlout says, climbing. "Northeast and southwest. The grid is diagonal so far."
+"Northeast and southwest," NinjaFlout says, climbing. "Diagonal so far."
 
-"Sample size of two," Revenant says, pulling himself up. "Don't extrapolate yet."
+"Sample size of two," Revenant says, pulling himself up. "Don't extrapolate."
 
-"I'm not extrapolating, I'm noting," NinjaFlout says.
+"I'm not extrapolating, I'm noting."
 
-The third shadow. Center. The center of a room where twenty-seven people are beginning to spread across two existing platforms has more people near it than any other location. The three seconds produce movement in every direction simultaneously — a brief controlled chaos that is not panic but is adjacent to it, people reading each other's movements to avoid collision while also clearing the shadow.
+The third shadow. Center. The center of a room where people are beginning to spread across two existing platforms has more bodies near it than any other location. The three seconds produce movement in every direction — a brief controlled chaos that is not panic but adjacent to it, people reading each other's trajectories to avoid collision while clearing the shadow.
 
-Polaris moves right. Finds the first platform edge and pulls herself up rather than running to the second. Godly_Aura moves left. Galaxy moves back. Duccarian moves forward, past the shadow's edge, and turns to watch the impact from the clear zone.
+Polaris moves right, finds the first platform edge, pulls herself up rather than running. Godly_Aura moves left. Galaxy moves back. Duccarian moves forward past the shadow's edge and turns to watch the impact from the clear zone.
 
 The platform falls.
 
@@ -244,54 +242,54 @@ Center is now occupied.
 Three platforms. Three locations. The grid is beginning to be readable.
 
 [[THE ACCELERATION]]
-By the sixth platform the three-second window has become 2.5 seconds and most people have stopped consciously counting it because the body has taken over the timing. You see the shadow, you move. The analysis happens in the legs before it happens in the head.
+By the sixth platform the three-second window has become 2.5 seconds and most people have stopped counting because the body has taken over the timing. Shadow. Move. The analysis happens in the legs before it reaches the head.
 
-The room is filling. Six platforms placed, six different grid positions occupied — some clustered, some spread — and the available floor space is shrinking as each new platform eliminates both the floor it covers and the floor near it, which is now occupied by the people who fled the shadow and haven't had time to relocate.
+The room is filling. Six platforms placed across six grid positions, and the available floor is shrinking — each new platform eliminates the floor it covers and the floor near it, now occupied by people who fled the shadow and haven't had time to relocate.
 
-Climbing is continuous. Each new platform gives elevation to whoever is close enough to use it, and being high is increasingly the priority — not just for the challenge mechanic, which rewards elevation, but for the body's own survival math, which has understood that the more floor that's covered, the less safe ground remains.
+Climbing is continuous. Each new platform gives elevation to whoever is close enough to use it, and height is increasingly the priority — not just for the challenge mechanic, which rewards elevation, but for the body's own survival math, which has understood that the less safe ground remains, the more you need to be above it.
 
-NinjaFlout calls grid positions from his vantage on platform three: "Northwest shadow — northwest, everyone clear northwest—"
+NinjaFlout calls grid positions from his vantage on platform three: "Northwest shadow — northwest, everyone clear—"
 
-The platform drops. Two people who were near the northwest edge of the room are already on top of the northeast platform, having relocated during the previous drop's chaos. Clean.
+The platform drops. Two people near the northwest edge are already on top of the northeast platform, having relocated during the previous drop. Clean.
 
-"Your calls are working," hollow Camillia says to NinjaFlout, pulling herself level with him.
+"Your calls are working," hollow Camillia says.
 
-"I have height advantage," NinjaFlout says. "I can see more shadows earlier. I need to stay high."
+"I have height advantage. I can see shadows earlier. I need to stay high."
 
 "Stay high," Rabbit confirms from below. "Keep calling."
 
-The eighth platform. 2.3 seconds. The shadow appears over a position that currently has four people standing near it — Elv, Galaxy, Rally Mally, and Ashborn, all in transit between platforms, caught in the gap. Three seconds would be enough. 2.3 seconds requires immediate movement, no deliberation.
+The eighth platform. 2.3 seconds. The shadow appears over a position with four people caught in transit — Elv, Galaxy, Rally Mally, and Ashborn, all in the gap between platforms. Three seconds would be enough. 2.3 requires immediate movement, no deliberation.
 
-"Go," Elv says, already moving — not to the nearest platform, to the nearest open space, because the nearest platform has people on it and adding bodies to it narrows everyone's movement options. They/them clear the shadow by a meter and a half when the platform hits.
+"Go," Elv says, already moving — not to the nearest platform but to the nearest open space, because the nearest platform has people on it and adding bodies narrows everyone's movement options. They clear the shadow by a meter and a half.
 
-Rally Mally goes right. Ashborn goes left. Galaxy goes up — he's close enough to the second platform's edge to grab it and pull rather than running clear, and he's on top of it when the impact comes, the platform shaking under him but holding.
+Rally Mally goes right. Ashborn goes left. Galaxy goes up — close enough to the second platform's edge to grab it and pull rather than run, and he's on top when the impact comes, the platform shaking under him but holding.
 
-The room gets louder with each drop. Not from people — from the cumulative impacts, the residual vibration in the floor, the sound of twenty-seven people moving fast across surfaces that are becoming less and less available.
+The room gets louder. Not from people — from cumulative impacts, residual vibration, the sound of twenty-seven people moving fast across surfaces becoming less available with every drop.
 
 The tenth platform. 2.1 seconds.
 
-Space_fan reads the shadow and calls it before NinjaFlout does — the shadow is directly below her current platform and she sees it from above. "Below us — this platform is the shadow. Off. Everyone off this one—"
+Space_fan reads the shadow and calls it before NinjaFlout does — the shadow is directly below her current platform and she sees it from above. "Below us — this platform is the shadow. Off. Everyone off—"
 
-Four Wardens drop from the platform edges simultaneously, landing on adjacent platforms or the remaining floor, the original platform disappearing under the new one an instant after the last person clears it.
+Four Wardens drop from the platform edges simultaneously, landing on adjacent platforms or remaining floor. The original platform disappears under the new one an instant after the last person clears it.
 
-The stack is growing. Some positions now have two or three platforms stacked — the later drops falling in positions already occupied by earlier platforms, building involuntary towers. The highest point in the room is currently a three-stack in the northeast corner. JIKOSU is at the top of it. The Bunny is beside him, which is the first time the Bunny has climbed anything, and it climbed it in approximately half the time JIKOSU did.
+The stacks are growing. Some positions now have two or three platforms layered — later drops falling on positions already occupied, building involuntary towers. The highest point is a three-stack in the northeast corner. JIKOSU is at the top. The Bunny is beside him — the first time it has climbed anything, and it climbed in approximately half the time JIKOSU did.
 
 [[THE FINAL SEQUENCE]]
 The drops are at 1.4 seconds.
 
-The song continues. It has not changed tempo or volume or quality throughout — the same gentle unhurried melody, completely disconnected from the violence of the falling platforms, and this disconnection is the most unsettling thing in the room. The music says: nothing is wrong. The ceiling says: something is coming. The interval between those two messages has shrunk to less than one and a half seconds.
+The song continues. It has not changed tempo or volume or quality — the same gentle unhurried melody, completely disconnected from the violence of the falling platforms. The music says: nothing is wrong. The ceiling says: something is coming. The interval between those two messages has shrunk to less than a second and a half.
 
-Twenty-seven people are distributed across the available elevation — some on first-tier platforms, some on stacks, some still on the remaining floor space, which is now perhaps thirty percent of the original room surface. The three teams are thoroughly mixed — there is no Wardens cluster, no Floofs cluster, no Syndicate cluster, just people near the people they happened to be near when the floor started disappearing.
+Twenty-seven people are distributed across the available elevation — some on first-tier platforms, some on stacks, some on the remaining floor, now perhaps thirty percent of the original surface. The three teams are thoroughly mixed — no Wardens cluster, no Floofs cluster, no Syndicate cluster, just people near the people they happened to be near when the floor started disappearing.
 
-The Bunny, at the top of the northeast stack, begins looking at positions sequentially — its head moving in a pattern that has the quality of reading rather than watching. Rabbit, on the second tier below it, looks up.
+The Bunny, at the top of the northeast stack, begins looking at positions sequentially — its head moving in a pattern that has the quality of reading rather than watching. Rabbit, on the second tier below, looks up.
 
 "It's reading the next drop sequence," Rabbit says. Loud enough for the room. "Watch the Bunny."
 
-The Bunny's head stops on the center-south position.
+The Bunny's head stops on center-south.
 
 "Center-south," Rabbit says.
 
-Three people near center-south move. One second and a half. They clear it.
+Three people move. One and a half seconds. They clear it.
 
 The Bunny moves to northwest.
 
@@ -299,19 +297,19 @@ The Bunny moves to northwest.
 
 Two people. They move. The drop confirms it.
 
-"It's calling them," Drug says, from a mid-height platform. "Before the shadows."
+"It's calling them," Drug says from a mid-height platform. "Before the shadows."
 
 "Before the shadows," Rabbit says.
 
-The room reorganizes around the Bunny's sequence. Instead of shadow-watching, which requires being in the right position with sufficient visibility, they watch the Bunny's head. The Bunny points. People move. The drops fall on empty floor.
+The room reorganizes around the Bunny's sequence. Instead of shadow-watching, they watch the Bunny's head. The Bunny points. People move. The drops fall on empty floor.
 
 1.2 seconds.
 
-The floor is sixty percent covered. The stacks range from one to three platforms high. The room has become a landscape of gray squares at varying heights, twenty-seven people distributed across them like pieces on a board that has been partially reassembled after being knocked over.
+The floor is sixty percent covered. Stacks range from one to three platforms high. The room has become a landscape of gray squares at varying heights, twenty-seven people distributed across them like pieces on a board that's been partially reassembled after being knocked over.
 
-The Floofs are doing something specific. Ninnginni has been moving his team — not away from shadows, toward each other. The protocol in a new application: not input-synthesis-commitment, but the same underlying architecture, the same collective-over-individual logic, the same question of where the group should be rather than where any one person should be. The Floofs have been landing on the same platforms when possible, filling platforms together rather than spreading across all available surfaces.
+The Floofs are doing something specific. Ninnginni has been moving his team — not away from shadows, toward each other. The protocol in a new application: not input-synthesis-commitment, but the same underlying architecture, the same collective-over-individual logic. The Floofs have been landing on the same platforms when possible, filling them together rather than spreading across all available surfaces.
 
-They are not the highest team. The Syndicate has JIKOSU and the Bunny at the top of the northeast stack and two other members at near-equivalent height. But the Floofs, as a group, are more uniformly elevated than either other team — all nine of them within two platform-tiers of each other, the majority of the group at the second-highest tier.
+They are not the highest team. The Syndicate has JIKOSU and the Bunny at the top of the northeast stack with two others at near-equivalent height. But the Floofs, as a group, are more uniformly elevated — all nine within two platform-tiers of each other, the majority at the second-highest tier.
 
 The Syndicate has higher peaks and lower valleys.
 
@@ -319,7 +317,7 @@ The Wardens are somewhere between.
 
 1.1 seconds.
 
-The song is in its final bars — nobody announced this, but it has the quality of resolution, the melody moving toward its home note with the confidence of something approaching its end. The Bunny's sequence calls come in rapid succession now:
+The song is in its final bars — nobody announced this, but it has the quality of resolution, the melody moving toward its home note with the confidence of something approaching its end. The Bunny's calls come in rapid succession:
 
 East-center.
 
@@ -327,21 +325,21 @@ North-center.
 
 Southwest.
 
-The drops follow each call at 1.0 seconds — the window so short now that the shadow and the impact feel like the same event, the visual and the physical arriving nearly together. People are not running to clear positions. They are stepping off platform edges, dropping to adjacent surfaces, making the smallest movement possible to exit the target zone before it's not a zone anymore.
+The drops follow each call at 1.0 seconds — the window so short that shadow and impact feel like the same event. People are not running to clear positions. They are stepping off platform edges, dropping to adjacent surfaces, making the smallest movement possible to exit the target zone before it stops being a zone.
 
 The final drop.
 
 The song resolves.
 
-One second. Shadow appears — full east wall. Large. The largest shadow yet, covering a position that most of the remaining floor occupies.
+One second. Shadow appears — full east wall. Large. The largest yet, covering a position that most of the remaining floor occupies.
 
 "Up," Rabbit says. "Everyone up. Now."
 
-Twenty-seven people climb whatever they're on to the highest available point. The platforms nearest the east wall have enough climbers on them to be crowded — people bracing against each other, hands on shoulders, the logistics of twenty-seven bodies on a reduced surface area working themselves out in real time.
+Twenty-seven people climb whatever they're on to the highest available point. The platforms nearest the east wall have enough climbers to be crowded — people bracing against each other, hands on shoulders, the logistics of twenty-seven bodies on a reduced surface working themselves out in real time.
 
 The platform falls.
 
-The impact is the largest yet. The floor shakes with the force of it and the stacks sway and two people grab arms they didn't know were available and the room holds the impact and then holds the silence after it.
+The impact is the largest yet. The floor shakes and the stacks sway and two people grab arms they didn't know were available and the room holds the impact and then holds the silence after it.
 
 The song is over.
 
@@ -352,55 +350,55 @@ Twenty-seven people on a landscape of stacked platforms, at various heights, bre
 
 The figure's voice: "Challenge complete."
 
-Nobody cheers. Nobody has the bandwidth for it.
+Nobody cheers. Nobody has the bandwidth.
 
-NinjaFlout's elevation assessment comes in the specific flat tone of someone running a calculation they already know the result of: the Syndicate has two members at the highest point — JIKOSU and hollow Camillia, who pulled herself up to the northeast stack during the final drop sequence. The rest of the Syndicate is distributed across the second and third tiers. The Wardens are primarily mid-elevation, space_fan and Schwalbe having reached second-tier positions, the rest of the Wardens at first-tier.
+NinjaFlout's assessment comes in the flat tone of someone running a calculation they already know the result of: the Syndicate has two members at the highest point — JIKOSU and hollow Camillia, who pulled herself to the northeast stack during the final sequence. The rest of the Syndicate is distributed across the second and third tiers. The Wardens are primarily mid-elevation, space_fan and Schwalbe at second-tier, the rest at first.
 
-The Floofs: all nine present, all nine at second-tier or above. No member below second tier. The majority of the group at the room's second-highest elevation.
+The Floofs: all nine present, all nine at second-tier or above. No member below second tier. The majority at the room's second-highest elevation.
 
 Two Syndicate members above the Floofs.
 
-Twenty-seven minus two members: Floofs hold the majority elevation.
+Twenty-seven minus two: Floofs hold the majority elevation.
 
 "Furious Floofs," the figure says. "Challenge complete — majority elevation advantage confirmed."
 
 The door appears.
 
-Not a dramatic reveal — a seam appears in the wall at second-tier platform height, accessible without climbing down, and it opens into the ramp corridor they came up. The floor-lights below it pulse: home.
+Not a dramatic reveal — a seam in the wall at second-tier height, accessible without climbing down, opening into the ramp corridor they came up. The floor-lights below it pulse: home.
 
-Ninnginni looks at where the door appeared. Looks at his team. All nine of them. Present. Here.
+Ninnginni looks at the door. Looks at his team. All nine.
 
 "Let's go," he says.
 
 [[BACK TO CAMP]]
-They descend the ramp in the order they happen to be in, which is no order at all — twenty-seven people who spent the last forty minutes being thoroughly redistributed across a random landscape of falling platforms, mixed and interleaved in ways that the team formations of the first days wouldn't have predicted.
+They descend the ramp in the order they happen to be in, which is no order — twenty-seven people thoroughly redistributed across a random landscape of falling platforms, mixed and interleaved in ways the team formations of the first days wouldn't have predicted.
 
-Akarimmu walks beside CharliSpirit. Polaris walks behind Drug without either of them choosing it deliberately. Schwalbe and Revenant end up descending side by side, not speaking, the parallel silence of two people whose processing styles are different but whose approach to silence is similar.
+Akarimmu walks beside CharliSpirit. Polaris walks behind Drug without either choosing it. Schwalbe and Revenant descend side by side, not speaking — the parallel silence of two people whose processing styles are different but whose approach to silence is similar.
 
-Space_fan walks near the back. The Drake is above her, the corridor too narrow for flight, so it walks — an unusual sight, the Drake moving along the floor with the careful gait of something designed for air performing the compromise of ground. It puts its head near hers once, briefly, and the communication is short: *Still here. Still watching.*
+Space_fan walks near the back. The Drake is above her, the corridor too narrow for flight, so it walks — an unusual sight, the Drake on the ground with the careful gait of something designed for air performing the compromise of land. It puts its head near hers once, briefly: *Still here. Still watching.*
 
 "I know," space_fan says.
 
-The Bunny runs circuits around the whole descending group — not the Syndicate specifically, everyone, covering the full column length in both directions. It passed Ninnginni twice and both times looked at him with the specific quality of attention that is not its usual forward-focused perception. Ninnginni noted this. Filed it. The Bunny's challenge is over. Whatever it delivered today, it delivered.
+The Bunny runs circuits around the whole descending group — not the Syndicate specifically, everyone, covering the full column in both directions. It passed Ninnginni twice and both times looked at him with a quality of attention that is not its usual forward-focused perception. Ninnginni noted this. Filed it.
 
-They arrive back in the hub. The tables are gone, the meal long past. The room is exactly as they left it. Twenty-seven people in a space designed for thirty, and the three absences are present in the way absences always are — not visible, not audible, but there, the room a slightly different shape than it was on Day 3 when everyone filled it.
+They arrive back in the hub. The tables are gone, the meal long past. The room is exactly as they left it. Twenty-seven people in a space designed for thirty, and the three absences are present the way absences always are — not visible, not audible, but there, the room a slightly different shape than it was on Day 3 when everyone filled it.
 
-Elv stops in the center of the hub and looks at the full group. All twenty-seven. Some scraped, some bruised from fast platform landings, Polaris's ankle from yesterday making its presence known again. Nobody new is missing. Elv counts and the count is correct and they hold this for a moment before moving toward the sector corridor.
+Elv stops in the center and looks at the full group. All twenty-seven. Some scraped, some bruised from fast platform landings, Polaris's ankle from yesterday making its presence known. Nobody new is missing. Elv counts and the count is correct and holds this for a moment.
 
-"Still twenty-seven," Elv says. Quiet. Not announcing it — just saying it, the way you say something that needed to exist in the air.
+"Still twenty-seven," Elv says. Quiet. Not announcing — just saying it, the way you say something that needed to exist in the air.
 
 "Still twenty-seven," Godly_Aura says.
 
 They go to their sectors.
 
 [[DORMS]]
-The Syndicate's sector is the first to quiet down.
+The Syndicate's sector quiets first.
 
-They don't have the processing energy tonight that Day 5 required — Day 5 was grief's first night, raw and specific. Tonight is something different. The exhaustion is physical rather than emotional, the kind that pushes people horizontal without requiring the slow negotiation of feelings first.
+They don't have the processing energy of Day 5 — that was grief's first night, raw and specific. Tonight is different. The exhaustion is physical, the kind that pushes people horizontal without requiring the slow negotiation of feelings first.
 
-JIKOSU stretches in the corridor before going to his sleeping area, methodically, each muscle group, the inventory of a body that has been asked for a great deal. Hollow Camillia sits at the central room's edge eating something she saved from the shared meal — the jollof rice, held in a small container she'd found. She eats it slowly. It still tastes good.
+JIKOSU stretches in the corridor, methodically, each muscle group — the inventory of a body that has been asked for a great deal. Hollow Camillia sits at the central room's edge eating something she saved from the shared meal. The jollof rice, in a small container she'd found. She eats it slowly. It still tastes good.
 
-Drug is in the central room, not her sleeping area. She is sitting with her back against the wall, knees up, the specific posture of someone who is in a room because being in a smaller room doesn't appeal tonight.
+Drug is in the central room, not her sleeping area. Back against the wall, knees up — the posture of someone who is in a room because being in a smaller room doesn't appeal tonight.
 
 Mainthemainstar sits down near her. Not close, not far.
 
@@ -418,7 +416,7 @@ After a while Drug says: "Thanks for staying."
 
 "I wasn't going anywhere," Mainthemainstar says.
 
-In the Wardens' sector, the relief is quiet. Ashborn said thank you to no one specifically when they came back through the door — just into the room, a single quiet word — and nobody asked him what for because they all knew. Rally Mally is helping Orphan Annihilator with his ankle, which had held today but held loudly. The Reddening Day is making rounds, the same as every night, the same patient circuit.
+In the Wardens' sector, the relief is quiet. Ashborn said thank you to no one specifically when they came back — just into the room, a single word — and nobody asked what for because they all knew. Rally Mally is helping Orphan Annihilator with his ankle, which had held today but held loudly. The Reddening Day makes rounds, the same patient circuit as every night.
 
 "All here," The Reddening Day says, passing Schwalbe's doorway.
 
@@ -426,9 +424,9 @@ In the Wardens' sector, the relief is quiet. Ashborn said thank you to no one sp
 
 CrystalWolf is at the water panel, the same first-morning habit. She fills a container and stands holding it, looking at nothing.
 
-Space_fan is at the window — the abstract shifting light that is not a view — and the Drake is behind her, settled, its electric veins dim and slow. She watches the light move and it doesn't tell her anything and she watches it anyway.
+Space_fan is at the window — the abstract shifting light that is not a view — and the Drake is behind her, settled, its electric veins dim and slow.
 
-"The Bunny was calling drops before the shadows," she says to the Drake.
+"The Bunny was calling drops before the shadows," she says.
 
 The Drake communicates: *Yes.*
 
@@ -436,43 +434,43 @@ The Drake communicates: *Yes.*
 
 *Different skill. Different perception.* A pause. *Today was the Bunny's domain. What you saw is what the Bunny is.*
 
-"Is there anything like that for us?" space_fan asks. "Something ahead that's yours?"
+"Is there anything like that for us? Something ahead that's yours?"
 
 The Drake is quiet for a moment that is not hesitation but measurement.
 
-*Yes,* it says. *But not yet.*
+*Yes. But not yet.*
 
 Space_fan nods and watches the window.
 
-In the Floofs' sector, the win sits strangely. It is the second win. The skill unlock from Day 5 hasn't been deployed yet — the time freeze, Soup's granted ability, held in reserve since the night Loyal2Schwab's absence was established. The second win arrived on a night when nobody died, and the two facts sit next to each other in the sector with the uncomfortable quality of good news that arrived in bad weather.
+In the Floofs' sector, the win sits strangely. It is the second win. The skill unlock from Day 5 — the time freeze, Soup's granted ability — remains held in reserve. The second win arrived on a night when nobody died, and the two facts sit next to each other with the uncomfortable quality of good news in bad weather.
 
-Ninnginni is in the central room. Soup is present — lower than usual, almost at floor level, its rotation very slow. Ninnginni looks at it.
+Ninnginni is in the central room. Soup is present — lower than usual, almost at floor level, rotation very slow.
 
-"You were quieter today," he says.
+"You were quieter today," Ninnginni says.
 
-*Today was not mine,* Soup says. *I watched.*
+*Today was not mine. I watched.*
 
 "Did we do well?"
 
-*You did what you've been built to do,* Soup says. *Which is different from doing well, and more important.*
+*You did what you've been built to do. Which is different from doing well, and more important.*
 
 Ninnginni sits with this.
 
-"The time freeze," he says. "When."
+"The time freeze. When."
 
-*You'll know,* Soup says. *I'll tell you when.*
+*You'll know. I'll tell you when.*
 
 "You'll tell me when," Ninnginni repeats.
 
-*You'll feel it before I tell you,* Soup says. *You'll already know. I'll just confirm it.*
+*You'll feel it before I tell you. You'll already know. I'll just confirm it.*
 
-Ninnginni is quiet. Across the sector, he can hear CharliSpirit moving around, the sound of her building something in her head without materials, the mental cartography that never stops. He can hear Elv and Galaxy talking in low voices. He can hear Polaris's careful footstep on a tender ankle and the controlled way her breathing manages the pain of it.
+Ninnginni is quiet. Across the sector he can hear CharliSpirit moving, the sound of her building something in her head without materials, the mental cartography that never stops. He can hear Elv and Galaxy talking in low voices. He can hear Polaris's careful footstep on a tender ankle and the controlled way her breathing manages the pain.
 
 Nine people. All here.
 
 He closes his eyes.
 
-The cold that isn't temperature is still present — not gone, not lessened, just accepted now, the way the body accepts a low sound after long enough exposure. It's in the room. It will probably be in the room tomorrow too.
+The cold that isn't temperature is still present — not gone, not lessened, just accepted, the way the body accepts a low sound after long enough exposure. It's in the room. It will probably be there tomorrow too.
 
 He sleeps anyway.
 
