@@ -1,0 +1,484 @@
+[[DAY]]
+DAY 7 — THE EASTER EGG HUNT
+
+[[SYSTEM_STATE]]
+Day index: 7.
+Participant count: 27.
+Challenge type: exploration and retrieval.
+Death rate: 0% system-generated. Sacrifice vote active — team-internal, lowest-scoring team only.
+Observation mode: active. Host present in-field.
+
+[[NARRATIVE]]
+The alarm does not ask.
+
+It does not build. It does not begin softly and escalate. It arrives at full volume from the first millisecond — a sound so immediate and total that the gap between sleep and standing is removed. Twenty-seven people hit wakefulness like a wall and are on their feet before the decision to stand has been consciously made.
+
+The sound is everywhere. In the walls, in the floor, in the specific frequency that makes teeth feel wrong. Not painful. Impossible to ignore. The kind of sound the body interprets as: this is not optional.
+
+The doors open on their own.
+
+Not gently — they swing outward with the same energy as the alarm, the mechanism communicating the same message as the sound. Out. Now. The sleeping areas push their occupants into the sector corridors and the sector corridors push them toward the hub, and the whole architecture of the facility is suddenly a funnel with one direction.
+
+They spill into the hub in various states of dressed, various states of conscious, all states of unhappy about it.
+
+"Is this an emergency?" hollow Camillia asks, to anyone.
+
+"The alarm doesn't feel like an emergency alarm," Duccarian says, pressing his palms against his ears with minimal effect.
+
+"What does an emergency alarm feel like?"
+
+"Different," Duccarian says.
+
+Then the alarm stops.
+
+The silence it leaves behind is the specific silence of a sound that has been present long enough to become the baseline — its absence louder than quiet. Twenty-seven people stand in the hub blinking, the residual ring fading from their ears, looking at each other and at the room and at the absence of food on any surface.
+
+The tables have not risen.
+
+"We haven't eaten," Rally Mally says.
+
+"I noticed," Shroud says.
+
+The animals are not in the hub. The Drake is not at its ceiling position. Soup is not hovering. Twenty-seven people and no animals and no food and a silence that has replaced an alarm and an atmosphere that several people are independently describing to themselves as wrong. Not dangerous-wrong. Ominous-wrong. The specific quality of a day that has decided what it's going to be and hasn't told you yet.
+
+Then the Killer Bunny walks in from the corridor.
+
+Alone. No Drake beside it, no Soup above. Just the Bunny, moving at a pace that is purposeful without being urgent, crossing the hub floor to Rabbit with the directness of something that has a single task and is executing it.
+
+It looks up at Rabbit.
+
+*Follow me. Bring everyone. The dorms are entering maintenance — you won't be going back for a while.*
+
+Rabbit looks at the Bunny. Then at the twenty-six other people in the hub. "The Bunny says follow it. Dorms are in maintenance. We're going somewhere."
+
+"Without eating," Rally Mally says.
+
+"Without eating," Rabbit confirms.
+
+The Bunny is already moving toward a corridor none of them have used before — not the ramp, not the challenge corridors, not the maze branches. A new direction. The floor-strips activate as the Bunny reaches them, lighting the path in a neutral white rather than team colors, which means the path belongs to everyone.
+
+"It's not waiting," JIKOSU says.
+
+"No," Rabbit says. "It isn't."
+
+They follow.
+
+[[THE WALK]]
+The corridor is longer than any previous path.
+
+Not the steep climb of Day 6 or the straight darkness of Day 4 — this one winds. Gently, without sharp turns, but consistently curving, the kind of path that disorients direction without disorienting balance. After five minutes of walking nobody could say with confidence which way was north relative to where they started.
+
+The Bunny moves ahead at a pace that requires them to walk with purpose but not rush. It checks back periodically — a quick turn of the head, the count of twenty-seven verified, and forward again.
+
+"It's counting us," janhk says.
+
+"Every time it looks back," Rabbit confirms. "Making sure everyone is here."
+
+"Responsible," Elv says.
+
+"Efficient," Revenant says.
+
+"Both," Elv says.
+
+The corridor has no features — no side branches, no markings, no variation. Just the path and the floor-lights and the sound of twenty-seven pairs of feet doing the specific rhythm of a group that has walked together long enough to have unconsciously synchronized. The Wardens cluster in their natural formation — The Reddening Day central, space_fan at the edge with the outward-facing attention she maintains in unfamiliar spaces. The Floofs walk with the efficiency of the protocol translated into movement — no wasted steps, natural two-file column. The Syndicate spreads slightly, taking up more lateral space, the instinct of a team that thinks better when it has room.
+
+Nobody talks much. The hunger is present — a low background awareness that the body keeps mentioning and the mind keeps filing for later.
+
+The corridor curves and curves and eventually the floor-lights shift in color — gradually, almost imperceptibly — from neutral white to a warm gold.
+
+"Different lighting," CharliSpirit notes.
+
+"Different destination," Ninnginni says.
+
+The Bunny stops at a set of doors — double, wider than any previous entrance, the kind of width that implies the space beyond is also wider. It turns to Rabbit one more time.
+
+*Inside.* And steps aside.
+
+[[THE MAZE — ARRIVAL]]
+The doors open onto something that is not quite outside and not quite inside.
+
+The ceiling is higher than any previous room — high enough that the light from it has the quality of sky, diffuse and directionless, a warm gold that makes the air itself feel different from the facility's usual sourceless white. The space is enormous — they can't see all of it from the entrance, the outer walls lost in the distance.
+
+And it is a maze.
+
+Not the labyrinth of Day 1 — not stone corridors and systematic grid structure. This is softer. The walls are lower — chest height in places, head height in others, made from something that looks like hedgerow but is clearly manufactured, the green too uniform, the edges too clean. The paths between them are wide enough for two people side by side. There is grass underfoot. Not real grass — something that functions as grass, that gives under weight and has the smell of it. Every previous surface has been stone or tile or manufactured smoothness. This yields.
+
+The paths wind into each other in a pattern that is maze-like without being maze-difficult — the kind of structure that rewards exploration over analysis, patience over speed.
+
+And in the center — visible from the entrance because the maze is built around it like a frame — a circular clearing. Fifty meters of open space, and standing in the middle of it, with the specific posture of someone who has been waiting and found the waiting comfortable, is the figure.
+
+No platform. No elevated position. Just standing in the center of a circle, in gold light that feels like morning, looking at twenty-seven people who have just arrived hungry and disoriented.
+
+The figure smiles.
+
+It is the first time any of them have seen the figure smile — the previous days have been warm-controlled, carefully calibrated. This is different. Genuine amusement, the expression of someone who has prepared something they are pleased with and is watching its audience encounter it.
+
+"Good morning," the figure says. "Sorry about the alarm."
+
+The tone is different. Not the formal controlled delivery of challenge briefings and lethality announcements. Lighter. The tone of someone speaking to people they've been watching long enough to feel familiar with. Like talking to old friends.
+
+"Welcome," the figure says, "to the 2026 Easter Egg Hunt. Maze edition."
+
+Twenty-seven people look at the figure. At the maze. At the clearing. At the gold light.
+
+"Easter," Drug says.
+
+"Easter," the figure confirms. "You've made it to Day Seven, which is further than some groups get, and today you've earned something that isn't designed to break you." A pause. "Today is designed to feed you."
+
+At the word feed, Rally Mally makes a sound that is involuntary and does not require comment.
+
+"Thirty meals," the figure continues. "Your favorites — the specific versions you had on Day Four, each one prepared and hidden throughout this maze in camouflaged eggs. The eggs are designed to blend in. Not invisible — just hidden well enough that you'll need to actually look." The figure lets that settle. "It's easy. Every egg you find earns your team one point and gives you one meal. The meal is yours immediately. Eat it when you find it. You've earned it."
+
+"Thirty meals," NinjaFlout says, running the arithmetic. "Twenty-seven people, one each, plus three extra."
+
+"Three extras exist," the figure confirms. "Finding them counts for points. What you do with them is your choice."
+
+"The team with the most points wins," Ninnginni says. Not a question.
+
+"The team with the most points wins," the figure agrees. And the warmth in the voice shifts slightly. Still present — but with something underneath it. "The team with the fewest points chooses someone to sacrifice."
+
+The clearing holds this.
+
+"Sacrifice meaning what it meant on Day Five," the figure says. The directness is clean, not cruel. "The system won't be selecting today. The team selects. Anonymous vote. The result is immediate." A pause. "Today is still a game. It is a gentler game than the others. But the consequence exists."
+
+Nobody speaks.
+
+"The rules are simple and I'll give them to you as they become relevant. The starting rules—" The figure holds up a hand, three fingers raised. "No cross-teaming. No stealing from another team's found egg. No physical contact for competitive purposes."
+
+The figure looks at the twenty-seven faces.
+
+"Find your eggs. Eat your food. May the best team win."
+
+The Bunny, who has been sitting at the maze entrance throughout this, stands up.
+
+The figure: "Let the hunt begin."
+
+[[THE HUNT]]
+They move.
+
+Not together — the logic of an egg hunt is immediately individual, and the teams distribute into the paths with the specific energy of people who are hungry and competitive and have just been told that both problems have the same solution.
+
+The Wardens go right. Space_fan makes the call without conferring — right feels less obvious than left, which means the other teams are more likely to go left, which means the right side has a better ratio of unsearched territory to searchers. Schwalbe agrees without being asked. The Wardens fan out as the paths branch.
+
+Shroud finds the first egg.
+
+He almost walks past it — well camouflaged, nestled against the base of a hedge wall in a color that matches the manufactured grass exactly. What stops him is the smell. Whatever is inside carries the specific warmth of its contents and Shroud, who has been cataloguing environmental information since Day 1, notices it before he sees it. He crouches. Picks it up. The egg is smooth and warm in his hands, and when he opens it the food inside is exactly, precisely the thing it was always going to be — his thing, calibrated and correct.
+
+He eats it standing up, because there is no time to sit and the food is good enough to eat fast and good enough to slow down for simultaneously, and he manages both.
+
+"One," he says into the team's awareness. "Right side, third branch, base of the left wall."
+
+"Marking it," Rally Mally says, from somewhere he can't see. "Haven't found one yet but the hedge patterns on this side are different — more cover, more hiding spots."
+
+The Wardens are communicating — not the Drake's channel, just voices, calling finds and locations with the team-vocabulary they've built over seven days. Ashborn finds one near a dead end and calls it. CrystalWolf finds two in the same thirty-meter stretch, which she reports with the tone of someone who has found a pattern: "The spacing isn't random. They're roughly equidistant if you assume a grid layout underneath the maze design."
+
+"Can you map it?" Duccarian asks.
+
+"Working on it," CrystalWolf says.
+
+The Floofs go left. CharliSpirit leads, because her mapping instinct is the most useful asset in a maze regardless of the task. She begins building the structure as she walks — turns, branch points, relative distances, the spatial picture assembling at the pace of her feet. lumallie is behind her, covering sections CharliSpirit moves through too fast, the complementary system running as naturally as it did in the labyrinth.
+
+"Egg," lumallie says. Hedge wall, second left branch, half a meter up — placed in the manufactured greenery. She reaches in and takes it and the food inside is hers and she eats without stopping walking.
+
+"One," she says.
+
+CharliSpirit hasn't found one yet, but the map is building — turns, dead ends, the positions that reward placement. She'll find hers soon. The mapping instinct extends to finding things within mapped spaces, and CharliSpirit's eyes don't miss variations in uniform surfaces.
+
+Galaxy moves fast — not the Syndicate's speed, but his own version, the speed of someone who is good at looking. He finds one in the first three minutes: tucked behind a decorative curve in a hedge wall, visible only from the specific angle of someone at the right height. He opens it and stands in the maze path eating with the expression of someone addressing hunger directly and without ceremony.
+
+Golden is in the outer ring of the Floofs' territory. He has been quiet this morning — quieter than his usual quiet, which is the quiet of someone who contributes by being present rather than vocal. He checks the hedge bases, the grass, the junctions. He finds nothing. The eggs he passes have already been taken or are hidden in ways his eyes don't catch. He keeps walking, which is not like Golden — usually he would adjust, try a different approach, double back. Today he just walks, and the people who know Golden well enough to notice are not near enough to notice.
+
+Elv is methodical. They move at a pace slower than Galaxy's but with more coverage — checking both walls and the ground and the top of the lower hedge sections, the full three-dimensional survey of each path segment. They find one placed high, the kind of placement that rewards someone who looks up.
+
+"The high placements are clustered," Elv calls. "If you're in the outer ring, look up."
+
+The Syndicate spreads immediately.
+
+Rabbit lets the team distribute without directing — this is not a protocol challenge, it is find-the-thing, and the Syndicate's strength is coverage and speed and individual initiative. One instruction: "Call every find, location and height. Build the map as you go."
+
+Then they move.
+
+JIKOSU goes deep — not the outer ring, not the first branches, straight toward the center clearing via the most direct path. His theory: the eggs near the figure are the ones nobody has reached yet because everyone's instinct is to work outward from the entrance. He's right. Within four minutes he finds two eggs in the paths immediately surrounding the clearing, both at ground level, both obvious from the clearing's edge and invisible from further away.
+
+He eats the first at the clearing's edge. It tastes like the exact thing it was always going to taste like. He tucks the second under his arm and keeps moving.
+
+janhk is using texture. The manufactured hedge has a consistent tactile quality that a hidden egg slightly disrupts — the egg's surface differs from the hedge material, and janhk, running his hand along the wall as he walks, finds one by touch that he would have missed visually.
+
+"Run your hands along the walls," he tells the Syndicate. "The surface changes where the egg is."
+
+"That's actually useful," NinjaFlout says.
+
+"I know," janhk says.
+
+NinjaFlout begins touching walls. Finds one within thirty seconds.
+
+Mainthemainstar moves through the maze the way he moves through every space — the soft-focus attention covering everything without fixing on anything, the full-frame awareness that has been developing since before the challenges began. He finds eggs the way he called drop positions and navigation directions: not by looking for them, but by knowing where they are before his eyes confirm it. He turns corners into paths he hasn't been in and goes directly to the hedge section where the egg is. Two eggs in the first fifteen minutes.
+
+He eats each one standing in the path where he found it. They all taste right.
+
+Drug is in the outer ring, one hand on the hedge, covering ground at an efficient pace. She finds one in a low placement — ground level, base of the wall, half-buried. She picks it up and opens it and the food inside stops her.
+
+It's the flatbread from Day 4. The specific flatbread. The one she looked at for forty-five minutes before eating it.
+
+She stands in the maze path and eats it and doesn't move until it's finished.
+
+"Two," she says when she's done, voice carrying its usual flat calm. "Outer ring, long curve, ground level. Keep checking the grass."
+
+[[RULES, ON THE GO]]
+The figure appears at various points in the maze — not constantly, not intrusively, just present at intersections occasionally, moving through the structure with the ease of someone who designed it and knows every path.
+
+When Polaris finds an egg and automatically calls its location to the Floofs, Godly_Aura moves toward it before she can pick it up. Polaris holds it up. "I found this."
+
+"You called the location," Godly_Aura says.
+
+"I was being helpful."
+
+"The finder's possession is absolute," the figure says, appearing at the junction. "Polaris found it. The point is the Floofs' either way — same team." A beat. "Between teams, the rule against stealing is firm."
+
+Polaris takes the egg. Eats it. Nods.
+
+Later, Revenant finds an egg on the boundary between a shared path and a Warden-occupied corridor. He looks at it. CrystalWolf is twenty meters away and has not seen it.
+
+He picks it up.
+
+The figure is not at this junction. But the rule was said clearly and Revenant, who has been the most precise about rule structure since Day 2, was listening. He opens the egg. Eats the food. Calls the point for the Floofs. Keeps moving.
+
+Nobody sees this. It doesn't require an audience.
+
+The three extra eggs.
+
+JIKOSU finds the first — at the absolute center of the clearing, placed in plain sight, either the easiest find or the last depending on when you arrive. He was there early. He takes it, eats it, notes that it doesn't correspond to anyone's specific preference — simply good, generically good, excellent without being personal.
+
+Mainthemainstar finds the second extra without appearing to look for it. He walks through a junction and picks it off a low ledge without breaking stride. He doesn't eat it. He carries it.
+
+The third extra is found by Ninnginni, in the inner ring, in a placement that required moving the hedge slightly to reveal — not hidden, but layered, requiring the searcher to interact with the environment rather than scan it. He finds it because he has been noting which hedge sections are slightly irregular — the mapping eye applied to physical variation. He opens it. It's for him — his specific food. Not generic. His.
+
+He stands in the path and eats it and understands from this that the three extras were for specific people and the specificity was chosen by something that knows all twenty-seven of them.
+
+He notes this and moves.
+
+[[THE FINAL COUNT]]
+The figure's voice arrives from everywhere — not alarm, just announcement: "Time. The hunt is over."
+
+Twenty-seven people make their way back through the maze toward the clearing. The paths are familiar now — the searching has built a working picture for most of them, the maze yielding its structure to persistence.
+
+They emerge into the circle. The figure is at its center.
+
+The count:
+
+Velocity Syndicate — JIKOSU found three including one extra, Mainthemainstar found two plus the carried extra, janhk found one, NinjaFlout found one, Drug found two, Rabbit found one. Total: eleven points.
+
+Astral Wardens — Shroud found two, CrystalWolf found two, Rally Mally found one, Ashborn found one, The Reddening Day found one. Total: seven points.
+
+Furious Floofs — lumallie found one, CharliSpirit found one, Galaxy found one, Elv found one, Polaris found one, Ninnginni found one including one extra. Total: six points.
+
+Twenty-four of the thirty eggs found. Six remain somewhere in the maze, hidden well enough that hunger and competition and twenty-seven pairs of eyes weren't sufficient. The figure does not mention them.
+
+"Velocity Syndicate," the figure says. "Eleven points. Challenge winners."
+
+Rabbit looks at the Bunny. The Bunny is sitting at the maze entrance, expression neutral, which is the Bunny's version of satisfied.
+
+"Astral Wardens. Seven points."
+
+A pause that is both brief and full.
+
+"Furious Floofs. Six points."
+
+The clearing holds the math. Seven minus six is one. The Wardens beat the Floofs by a single point.
+
+CharliSpirit looks at her map — the one in her head. She knows exactly which paths she covered and which she didn't. She knows where the one point difference could have come from. She files this without speaking.
+
+"Furious Floofs," the figure says. The warmth hasn't left the voice. It doesn't make this easier. "You know what comes next."
+
+[[THE VOTE]]
+The Floofs step apart from the other teams naturally — not directed, just the instinct of nine people who have been given a private task that doesn't involve the other eighteen.
+
+The figure produces nine small objects — voting tokens, simple and anonymous. No names. Just nine tokens and a collection point.
+
+"Anonymous," the figure says. "One vote each. Majority decides."
+
+The nine Floofs stand in the clearing, tokens in hand.
+
+Nobody looks at anyone else. This is, by unspoken agreement, the kind of decision that doesn't require eye contact. The protocol doesn't govern this — there is no input phase, no synthesis, no commitment call. There is just nine people and nine votes and the specific weight of a choice that the game designed and nobody wants.
+
+There is no discussion. There is no argument. There is no visible process at all. Just nine people walking to the collection point in the order they happen to be standing, each one dropping a token with the smallest possible gesture.
+
+Ninnginni votes first.
+
+Then CharliSpirit. Then lumallie. Then Galaxy. Then Godly_Aura. Then Polaris. Then Revenant. Then Elv. Then Golden.
+
+The figure collects the tokens. Counts them.
+
+"The vote is unanimous," the figure says.
+
+The clearing is quiet. The gold light is unchanged. The maze is unchanged. The air that has been warm and almost kind all morning is unchanged. The thing that has changed is that nine people have spoken without speaking and the answer has arrived.
+
+"Golden," the figure says.
+
+Golden does not move.
+
+He is standing at the edge of the Floofs' loose circle, the same position he has occupied since the vote began — slightly outward, slightly peripheral, the position of someone who has been present since Day 1 in the specific way that presence can be invisible. He found no eggs today. He called no locations. He walked the maze alone.
+
+Eight people voted for Golden. Golden voted for Golden.
+
+The unanimity includes the person it names.
+
+Golden looks at Ninnginni. Ninnginni looks at Golden. The communication between them is not the Bunny's channel or Soup's luminescence or the Drake's electric pulse. It is older and simpler than any of those. It is two people who have been on the same team for seven days arriving at the same understanding at the same time.
+
+Golden nods.
+
+"The vote is recorded," the figure says. "Golden — please step forward."
+
+Golden steps forward. Into the center of the clearing, into the gold light, into the space where the figure has stood all morning. The figure looks at him with the specific attention of someone who has been watching all of them and is now watching one.
+
+"Thank you," the figure says. Not performative. Not warm-controlled. Just said.
+
+Golden looks at the Floofs one more time. Eight people looking back at him. CharliSpirit's jaw is set. lumallie's hands are still. Elv's eyes are steady. Ninnginni's face carries the expression that leadership puts on when it has to watch the cost of a decision it participated in making.
+
+"It's okay," Golden says.
+
+He means it. That's the part that will stay with them longest — not the vote, not the unanimity, not the mechanics of the sacrifice. The fact that Golden said it's okay and meant it.
+
+The figure places a hand on Golden's shoulder. Brief. Then the figure steps back, and the floor beneath Golden shifts — not violently, not dramatically, just a section of the clearing floor descending smoothly, carrying Golden down, the gold light still on him as he goes.
+
+He does not look away from his team.
+
+The floor closes. The clearing is continuous again. The grass is unbroken. If you hadn't watched it happen, you would have no basis for believing it had.
+
+The Floofs are eight.
+
+[[RETURN]]
+The floor-lights in the maze entrance activate — gold still, warm. The path back is the same winding corridor, and the Bunny takes point, and twenty-six people follow in the configuration that has become natural over seven days.
+
+The Syndicate's win is carried quietly. JIKOSU and Mainthemainstar exchange a look that contains: good hunt. NinjaFlout is already reviewing the distribution in his head — the spatial logic of where the eggs were placed, what the placement implies about the system's knowledge of their search patterns. Drug is full for the first time in days — genuinely full, the specific comfort of having eaten the right thing at the right time.
+
+The Wardens walk with the quality of a group that finished second and knows it and is choosing not to make much of either the second or the missing of first. Space_fan calculates the one-point gap without mentioning it. CrystalWolf thinks about the grid layout she identified too late. Schwalbe notes that systematic coverage would have recovered more eggs than intuitive searching, and notes also that intuitive searching got them seven points, so the critique is bounded.
+
+The Floofs walk with eight members and a space where nine used to be.
+
+Ninnginni walks in the middle. Soup is not present in the corridor — the animal absence consistent throughout this morning, the Bunny's day, the Bunny's domain. He doesn't need Soup right now. He knows what the protocol says. He knows what the team did. He knows that nine people independently agreed — including the one they agreed on — and that is the cleanest and saddest version of a unanimous vote.
+
+"Did we do the right thing?" Elv asks, walking beside him. Quiet enough that it's just for him.
+
+"We did the honest thing," Ninnginni says. "I don't know if they're the same."
+
+Elv walks with this. After a while: "I think they might be."
+
+"I think so too," Ninnginni says. "I just needed to say I wasn't sure."
+
+The corridor delivers them to the hub. The dorms are open again — maintenance complete. The tables are rising as they enter, the normal meal appearing belatedly, though most of them are full enough from the eggs that it's more comfort than necessity.
+
+They sit. Twenty-six people in the hub, in three clusters slightly looser than they were on Day 3 — the invisible team lines present but permeable, the morning's shared maze having done something small to the space between the groups. Not alliance. Not friendship exactly. Just the residue of having been in the same place doing the same thing, eating food that tasted like themselves, moving through a maze in gold light on a morning that was, by the facility's standards, almost kind.
+
+The Bunny sits at the hub's center and watches all of them with its forward-facing attention, red eyes at the distance that is always six seconds ahead, ears tracking what hasn't happened yet.
+
+Easter. Day 7. Twenty-six present.
+
+The figure's voice arrives once more, from nowhere, brief: "Happy Easter."
+
+The hub is quiet.
+
+Then Rally Mally says — to the table, to the room, to nobody specific: "The food was good."
+
+And it was. And that is, for today, enough.
+
+[[AFTER HOURS]]
+The hub empties slowly. The meal sits in them — the eggs, the belated table food, the cumulative weight of a day that gave generously with one hand and took with the other. Twenty-six people distribute into their sectors the way water finds the paths it's used before, automatic, gravity-assisted.
+
+The Syndicate corridor is the same. The Wardens' corridor is the same. The Floofs' corridor is the same minus one, which is a different kind of same.
+
+But the dorms are not the same.
+
+Drug notices first because Drug always notices first. She stops in the doorway of the Syndicate's central room — not dramatically, not with alarm, just the sudden stillness of someone whose body has registered something before her mind has caught up. Behind her, Mainthemainstar nearly walks into her back.
+
+"What," he says.
+
+Drug doesn't answer. She is looking at the room.
+
+Mainthemainstar looks at the room.
+
+Down the corridor, in the Wardens' sector, space_fan has stopped in the same way in the same kind of doorway. The Drake, behind her, lifts its head. Its electric veins pulse once — not the slow dim rhythm of the evening, something sharper, something that reads the room the way Shroud reads environmental data: automatically, comprehensively, and with an opinion about what it finds.
+
+*This is new,* the Drake communicates.
+
+"Yes," space_fan says.
+
+In the Floofs' sector, Ninnginni stands at the threshold of their central room and Soup descends from wherever Soup has been all day — the first appearance of the luminescent sphere since morning, arriving now, at this moment, hovering beside Ninnginni at the exact height where its glow illuminates what's in front of them.
+
+Soup says nothing.
+
+Soup does not need to say anything. The light is enough.
+
+Eight Floofs gather behind Ninnginni. Nine Wardens gather behind space_fan. Nine Syndicate members gather behind Drug. Three clusters of people standing at three thresholds looking at three versions of the same thing, which is: the dorms have changed.
+
+Maintenance.
+
+The word was the Bunny's and they accepted it the way they'd accepted every piece of information delivered by animal or figure or floor-light — as a fact of the facility, a mechanism, a thing that happened to the space they lived in while they were away doing the thing the space required them to do. Maintenance. The pipes get fixed. The lights get checked. The walls get whatever walls get when nobody is looking at them.
+
+This is not that.
+
+This is something else entirely.
+
+What it is, specifically — what has been added or removed or rearranged or revealed — twenty-six people are still standing in their doorways trying to determine. The shapes are unfamiliar. The air carries something it didn't carry this morning. The rooms have the quality of a sentence that has been rewritten while you were out of the room, the words mostly the same but the meaning shifted, and you can feel the shift before you can identify which word changed.
+
+Rabbit looks at the Bunny, which has followed the Syndicate to their sector and is sitting in the corridor behind the group with the specific posture of something that knew this was here and chose not to mention it.
+
+"You knew," Rabbit says.
+
+The Bunny's ears move. Its red eyes hold the six-second-ahead distance.
+
+*Yes.*
+
+"Were you going to tell us?"
+
+*No,* the Bunny says. *You were going to find it yourselves. Which you did.*
+
+"What is it?" Rabbit asks.
+
+The Bunny is quiet for a moment that is not processing and not hesitation and not measurement. It is something else. It is the pause of something that has an answer and is choosing not to deliver it.
+
+*Tomorrow,* the Bunny says.
+
+And walks away.
+
+In the Wardens' sector, the Drake communicates the same word at the same moment, which space_fan notes and files and does not know what to do with: *Tomorrow.*
+
+In the Floofs' sector, Soup's glow dims — not to darkness, just to the lower register, the conserving light — and it says one thing to Ninnginni before it rises back to ceiling height:
+
+*Sleep. You'll need it.*
+
+Twenty-six people in three sectors, standing at three thresholds, looking at three rooms that are no longer what they were this morning.
+
+Nobody crosses the threshold tonight.
+
+They sleep in the corridors. All of them. Without discussing it, without coordinating across teams, without any mechanism except the shared instinct of twenty-six people who have learned, over seven days, that the things the facility gives you should be examined before they are accepted.
+
+The rooms wait.
+
+The rooms are patient.
+
+The rooms have been patient all day.
+
+[[END]]
+
+[[TEAM_OVERVIEW]]
+Astral Wardens — 9 members:
+Schwalbe, Duccarian, CrystalWolf, Ashborn, Shroud,
+Rally Mally, Orphan Annihilator, The Reddening Day, space_fan.
+Bonded animal: The Drake.
+
+Furious Floofs — 8 members:
+CharliSpirit, lumallie, Galaxy, Godly_Aura, Polaris,
+Revenant, Elv, Ninnginni.
+Bonded animal: Soup.
+Lost: Loyal2Schwab (Day 5 — system selection), Golden (Day 7 — team sacrifice vote).
+
+Velocity Syndicate — 9 members:
+JIKOSU, janhk, NinjaFlout, hollow Camillia, Lyrix,
+Akarimmu, Drug, Mainthemainstar, Rabbit.
+Bonded animal: The Killer Bunny.
+Lost: Kiwi (Day 5 — system selection).
+
+Total alive: 26 / 30.
+Total lost: 4 — Toad (Wardens, Day 5), Loyal2Schwab (Floofs, Day 5),
+Kiwi (Syndicate, Day 5), Golden (Floofs, Day 7).
