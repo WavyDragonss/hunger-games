@@ -1,0 +1,506 @@
+[[DAY]]
+DAY 8 — THE ALTERED ROOMS
+
+[[SYSTEM_STATE]]
+Day index: 8.
+Participant count: 26.
+Challenge type: interior horror — altered geometry, fear-responsive environment.
+Animal presence: none inside sectors.
+Lethality: elevated. System selection active.
+
+[[NARRATIVE]]
+They wake in the corridors where they slept.
+
+Nobody decided to sleep here. Nobody coordinated it across teams. Twenty-six people independently chose the hallway over the rooms they'd lived in for seven days, and the fact that all twenty-six arrived at the same decision without discussion is its own kind of information — the collective intelligence of prey animals who have learned to read terrain.
+
+The rooms are still wrong.
+
+In the daylight — or what passes for daylight in a facility that decides its own light — the wrongness is more legible than it was last night. Through the open doorways the shapes are visible now, and for the first time since maintenance, people look.
+
+Drug stands at the Syndicate's threshold and catalogs what she sees: the central room's sleeping platforms are on the ceiling. Not collapsed, not displaced — mounted, cleanly, on the ceiling surface, exactly as they were on the floor but inverted, the bedding still in place, gravity apparently optional for furniture. The water panel is on the wrong wall — three meters left of where it has been for seven days — and the wall it's on is a wall that didn't exist yesterday. A new partition bisects the room at an angle that doesn't correspond to any structural line, creating two spaces where there was one, neither of them the right shape for anything.
+
+"The platforms are upside down," hollow Camillia says from behind her.
+
+"The platforms are on the ceiling," Drug corrects. "They're right-side up. The ceiling is wrong."
+
+In the Wardens' sector, Shroud has stepped one foot across the threshold — not entering, testing — and is looking at the corridor beyond the central room. It curves. Their sector corridor has always been straight. Now it bends to the right, gently, and where it bends a doorway has appeared that leads to a room none of them have seen before. Through that doorway: another doorway. Through that one: a wall where the corridor should continue.
+
+"There are rooms in there that weren't rooms," Shroud reports, stepping back. "At least two new spaces. The corridor geometry is completely different."
+
+"How different?" space_fan asks.
+
+"Wrong-different. The angles don't add up. The corridor turns right but the room beyond it is to the left. That's not — that shouldn't be possible in this footprint."
+
+Duccarian, behind them, is looking at the ceiling height through the doorway. "The ceiling is lower in the second room," he says. "By approximately forty centimeters. The original ceiling height was uniform throughout the sector."
+
+"So the rooms got shorter," CrystalWolf says.
+
+"One room got shorter," Duccarian says. "We don't know about the others."
+
+In the Floofs' sector, Ninnginni has not stepped across the threshold. He's standing at it, looking, the way you look at water before you know if it's deep. The central room is rearranged — sleeping platforms relocated to a configuration that suggests a different room's layout imposed on this room's dimensions. Two beds where four were. No beds where five were. The remaining platforms clustered against the far wall in a formation that looks deliberate but follows no logic anyone can name.
+
+And there's a smell. Not unpleasant — architectural, the smell of new materials, of surfaces that haven't been breathed on yet. The smell of a space that was recently built or recently changed, the chemical novelty of it present in the air the way paint smell is present in a renovated house.
+
+"It smells new," lumallie says.
+
+"It smells wrong," CharliSpirit says. She is looking at the room with the mapping instinct already active, already trying to build the spatial picture, and the picture isn't building. The room's proportions don't match what her memory says they should be, and the mismatch is not the kind that resolves with better data. It's the kind that gets worse.
+
+"I can't map it from here," she says. "The angles aren't consistent."
+
+"Can you map it from inside?" Galaxy asks.
+
+"I don't know," CharliSpirit says, and the honesty of this — CharliSpirit admitting that her primary skill might not function — sits in the group with the weight of a tool being set down.
+
+Nobody enters. Twenty-six people at three thresholds, looking at three versions of the same impossibility, the rooms they lived in rewritten into rooms they don't recognize by a process called maintenance that is not maintenance. The animals watch from their distances. The rooms wait with the patience of things that know they'll be entered eventually.
+
+Then the figure's voice arrives.
+
+No alarm. No guidance lights. No meal. Just the voice.
+
+"Your sector has been restructured."
+
+The warm-controlled tone. The weight underneath it familiar by now — not hidden, not performed, just present, the way a bridge carries load without mentioning the engineering.
+
+"Something is inside it that belongs to you. You'll know it when you find it. The space responds to your collective state — your fear, specifically. The system reads your physiological response in real time. Elevated heart rate, adrenaline, the measurable output of a body that is afraid. The higher your team's collective fear, the more aggressively the geometry shifts. Calm teams move through a difficult but navigable space. Panicking teams find the space actively working against them."
+
+A pause.
+
+"Your animals will wait here. This one is yours alone."
+
+Twenty-six people absorb this. No animals. The first challenge stripped of the Drake's navigation, Soup's luminescence, the Bunny's six-second foresight. Whatever is inside those rooms, they face it with nothing but each other and the specific quality of their collective nerve.
+
+"Lethality is active," the figure says. "The system has already run its selection. You don't know the outcome yet."
+
+The corridor holds the weight of this the way corridors hold weight — passively, structurally, without opinion.
+
+"One more thing." The figure's voice carries something that is not quite warning and not quite instruction. "There is a door in each sector that leads somewhere it shouldn't. You'll know it if you find it. Don't go through it."
+
+A beat.
+
+"First team to retrieve their object and return to their sector entrance wins."
+
+The voice is gone.
+
+[[BEFORE ENTRY]]
+Three teams at three doorways.
+
+The Wardens cluster at their sector entrance in the formation that has become instinctive — The Reddening Day near the center, space_fan at the edge, Schwalbe forward. Nine people looking at a doorway that leads to rooms they slept in for a week that are no longer the rooms they slept in.
+
+"Together," space_fan says. Not a suggestion. "Tight formation. Nobody separates. Nobody goes through a door alone."
+
+"Schwalbe on point?" Ashborn asks.
+
+"Schwalbe on point," space_fan confirms. She looks at Schwalbe. Schwalbe nods once. She doesn't need the instruction — she was already going to be on point, the same way water was already going to run downhill.
+
+Duccarian is looking at the doorway with the specific expression of someone who is thinking about the wrongness not as wrongness but as a system. "The geometry has a logic," he says. "It won't be our logic. But it has one. If we can identify the rules, we can navigate them."
+
+"And if the rules change because we're afraid?" CrystalWolf asks.
+
+"Then we identify the new rules," Duccarian says. "Rules that change are still rules."
+
+The Reddening Day moves close to Orphan Annihilator. His ankle — Day 6's inheritance, the thing that held but held loudly — is present in the way he stands. She doesn't mention it. She just positions herself where he can reach her if he needs to.
+
+"Ready?" space_fan asks.
+
+Nobody says yes. Nobody says no. They go in.
+
+The Floofs stand at their sector entrance — eight people, two fewer than they started with, the absences of Loyal2Schwab and Golden present in the formation's gaps like missing teeth. Ninnginni faces the group.
+
+"Input round," he says. "Two words each. What you're feeling. Fast."
+
+"Scared. Ready," CharliSpirit says.
+
+"Alert. Hungry," lumallie says.
+
+"Focused. Cold," Galaxy says.
+
+"Steady. Uncertain," Godly_Aura says.
+
+"Nervous. Determined," Polaris says. Her ankle has been managed to the point of background noise. It will be louder in there.
+
+"Present. Watchful," Revenant says.
+
+"Calm. Angry," Elv says.
+
+"Afraid. Committed," Ninnginni says. Then: "The protocol hasn't been tested in shifting geometry. We don't know if it holds. If it doesn't, we adapt. If it can't be adapted, we put it down and move as people, not as a system. Understood?"
+
+Eight nods.
+
+Ninnginni looks at Soup, hovering at ceiling height, glow low. Soup communicates one thing:
+
+*I'll be here when you come out.*
+
+"When," Ninnginni repeats. Not if. When.
+
+They go in.
+
+The Syndicate stands at their entrance. Rabbit has already told them the thing they need to hear: the Bunny can't come. Whatever happens inside, it's theirs.
+
+The Bunny sits three meters from the entrance, red eyes on the doorway, ears tracking something inside the sector that hasn't happened yet. It communicates to Rabbit without looking at him:
+
+*I can hear the rooms. They're moving.*
+
+"Moving how?" Rabbit asks.
+
+*Rearranging. The space is alive in a way the other challenges weren't. It's responsive. It's listening for you.*
+
+"Listening for our fear."
+
+*Listening for everything. Fear is what it acts on. But it hears all of it.*
+
+Rabbit relays this. The Syndicate absorbs it.
+
+Drug is standing at the entrance with an expression that JIKOSU notices and files. She is calm. Not performing calm, not managing visible anxiety — actually, measurably, constitutionally calm. Her breathing is even. Her hands are still. In a team about to enter a fear-responsive shifting maze, Drug's resting heart rate is the lowest in the corridor.
+
+JIKOSU notices this because JIKOSU notices everything that is tactically relevant.
+
+Mainthemainstar stands at the doorway. He has been standing there since the figure's voice ended, soft-focus attention directed into the sector, reading the altered space with the perception that has been developing since before the challenges began. The others have been preparing. Mainthemainstar has been looking.
+
+"What do you see?" Rabbit asks him.
+
+Mainthemainstar is quiet for a moment. "Five rooms that weren't there before. The first one is stable. After that—" He pauses. "After that, it depends on us."
+
+"Then let's be worth depending on," hollow Camillia says.
+
+They go in.
+
+[[INSIDE — THE WARDENS]]
+The first room is the central room they knew — the same dimensions, the same water panel on the wall, the same sleeping platforms around the edges. Except the sleeping platforms are on the ceiling. The water panel is three meters to the left of where it should be. The floor is the same floor but the room's proportions feel compressed, as if the walls have moved inward by a distance too small to measure and too large to ignore.
+
+"Breathe," Schwalbe says from the front. She says it to herself as much as to the group.
+
+The second room is through a doorway that wasn't there yesterday. It opens onto a corridor that curves the wrong way — their sector corridor curves left, this one curves right, and the difference is the specific kind of disorienting that the inner ear rejects before the mind can process it. The walls are closer together. The ceiling is lower. Not dangerously low — just enough that Ashborn, the tallest, feels it.
+
+"The ceiling dropped," Ashborn says.
+
+"Our fear response," Duccarian says immediately. "The geometry is reading us. Keep your breathing controlled."
+
+"I'm breathing fine," Ashborn says, but he adjusts, and the ceiling doesn't drop further.
+
+The third room is the first one that loops. They enter through a door on the east wall and find themselves in a room they've been in — the second room, viewed from a different angle, the curved corridor visible through a window that wasn't there when they walked through it. Shroud stops and looks at the window.
+
+"We're above where we just were," he says.
+
+"That's not possible," CrystalWolf says.
+
+"The rules aren't our rules," Duccarian says. "It's possible here."
+
+The Wardens are getting quieter. This is their fear response — not noise, not panic, silence. The more disorienting the geometry becomes, the less they speak, and the less they speak, the more the room hears their silence as fear, and the walls shift inward by increments that are felt in the chest rather than measured by the eye.
+
+Schwalbe identifies this first.
+
+"Talk," she says. Not loudly — just firmly, from the front, the instruction of someone who has recognized the feedback loop and is interrupting it. "Everyone talk. About anything. The food from Day Seven. The weather outside — whatever weather looks like. Toad's jokes. Anything."
+
+"Toad didn't tell jokes," Rally Mally says.
+
+"He told one," Orphan Annihilator says. "Day Two. It wasn't good."
+
+"What was it?" Shroud asks.
+
+"I don't remember," Orphan Annihilator says. "I remember it wasn't good."
+
+"That's the whole review," Rally Mally says.
+
+It isn't much. But it's enough. The ceiling stabilizes. The walls stop their incremental advance. The room is still wrong, still impossible, still a space that has dreamed itself into a different shape — but it holds still while nine people talk about a joke nobody remembers from a person who isn't here anymore, and the talking is the thing that keeps the walls from closing.
+
+They move forward. Talking.
+
+[[INSIDE — THE FLOOFS]]
+CharliSpirit begins mapping automatically. It's what she does — every new space gets the treatment, the mental cartography building at the pace of her feet, turns and junctions and distances assembling into a picture that she carries in her head the way other people carry their name.
+
+The first room is navigable. Altered — the sleeping platforms rearranged into a configuration that suggests a different room's layout imposed on this room's dimensions — but stable. CharliSpirit maps it in thirty seconds. The doorways are where doorways could be. The logic is strange but followable.
+
+The second room breaks the map.
+
+She enters through the north wall and the room she enters is the room she just left, but mirrored. The sleeping platforms are on the opposite side. The doorway she came through is on the wrong wall. She turns to confirm the door behind her and the door behind her isn't there.
+
+"The door is gone," CharliSpirit says.
+
+"There's a door here," lumallie says, from the other side of a wall that shouldn't be between them. "But it goes somewhere else."
+
+"Where?"
+
+"A room I haven't been in."
+
+"I haven't been in any of these rooms," Galaxy says, from a third position, his voice carrying through walls that transmit sound the way sound shouldn't travel in a space this size.
+
+CharliSpirit tries to update the map. The map won't update. The data she's receiving contradicts the data she already has — the room she's standing in cannot be where it is and also be what it is, and the cartographic instinct that has been her primary contribution since Day 1 jams on the contradiction like a gear meeting a gear that turns the wrong way.
+
+She freezes.
+
+Not dramatically — not a collapse, not a visible break. She just stops moving. Her hands, which have been gesturing the map into existence the way they always do, go still at her sides. Her eyes are open and focused on the wall in front of her and they are not seeing the wall. They are seeing the map trying to exist and failing.
+
+"CharliSpirit," Ninnginni says.
+
+She doesn't respond.
+
+"CharliSpirit." Ninnginni is beside her now. He arrived from wherever he was — the geometry let him through, or he found a path, or he simply moved toward her voice with the directness of someone who has identified the priority. "Look at me."
+
+She looks at him. Her eyes have the quality of someone who is looking at a person and looking at a broken system at the same time.
+
+"The map doesn't work here," Ninnginni says.
+
+"I know." Her voice is very controlled, which is how CharliSpirit sounds when nothing is controlled.
+
+"Then put it down."
+
+"I can't put it down. It's how I navigate. It's how I — it's the thing I do."
+
+"I know," Ninnginni says. "Put it down anyway."
+
+This is not the protocol. The protocol would have an input phase and a synthesis and a commitment call. The protocol would route CharliSpirit's data through the group's architecture and produce a collective output. But the protocol requires data, and the data is broken, and Ninnginni — standing in a room that shouldn't exist, beside a person whose primary skill has just been made useless by a space that refuses to be mapped — puts the protocol down the same way he's asking CharliSpirit to put the map down.
+
+He takes her hand.
+
+"We walk," he says. "No map. No system. Just forward. I'll be here."
+
+CharliSpirit's breathing changes. Not calms — changes. The frequency of someone who has been holding a structure in their head and has agreed to release it. The room around them responds: a doorway appears where a wall was, not aggressively, not dramatically, just present now where it wasn't, the geometry easing the way a grip eases.
+
+"Okay," CharliSpirit says.
+
+They walk. Ninnginni holding her hand. lumallie falling in behind them. Eight Floofs in a space that can't be mapped, moving forward by feel and trust and the specific agreement that sometimes the system you built isn't the system you need.
+
+The room lets them through.
+
+[[INSIDE — THE SYNDICATE]]
+The Syndicate enters fast. This is their mode — coverage, speed, forward momentum, the team that thinks better when it's moving. Rabbit at the center coordinating. JIKOSU ranging ahead. janhk and NinjaFlout flanking. Hollow Camillia and Lyrix covering the rear. Akarimmu tracking the geometry's changes, calling shifts as they happen: "Wall moved left — no, it was always there. My reference point shifted. Stay oriented to the door we came through."
+
+Drug leads.
+
+This is not how the Syndicate usually works. Drug is not the team's leader, not its fastest member, not its tactician. She is the team's observer — the one who notices, the one who names what others feel, the one who sits in the room because the room needs someone sitting in it. But today her calm is the team's most valuable asset, because the room is listening and Drug's heart rate is telling it: there is nothing to be afraid of here.
+
+The geometry around Drug is different from the geometry around the others. She walks through the altered rooms and the rooms don't shift. The walls hold their positions. The ceiling stays where ceilings belong. The doors she approaches don't close or relocate. Her section of the space is almost navigable — the difficulty of an altered room without the hostility of a room that's actively working against you.
+
+"Stay near Drug," Rabbit says, and the team adjusts, contracting their formation around the person whose body is lying to the room on everyone's behalf.
+
+Mainthemainstar is behind Drug. His soft-focus attention is covering the full space — not the room they're in, the rooms they've been through, the rooms ahead, the whole architecture of the altered sector existing in his perception as a complete shape rather than a sequence of spaces. He's navigating by the same instinct that called platform drops and found Easter eggs: not looking for the path, but knowing where it is before his eyes confirm it.
+
+"Left," he says, and they go left.
+
+"Down," he says, and there are stairs that weren't there, and they go down.
+
+"Through here," he says, and a doorway exists because he said it would, and they go through, and the room beyond is the room that has their object.
+
+The room is small. Smaller than the others — intimate, almost, the scale of a space designed for one person rather than ten. In the center of the room, on a surface that is neither table nor shelf but something that functions as both, is a small collection of fur. White and brown. Fine-textured. The specific quality of rabbit fur that has been shed naturally rather than cut.
+
+The Bunny's fur. From Day 1. The first moment the Bunny chose Rabbit — the physical remnant of that choosing, preserved and placed here by a system that keeps everything.
+
+Rabbit looks at it. Picks it up. It is lighter than anything that means this much should be.
+
+"That's it," Drug says.
+
+"That's it," Rabbit says.
+
+The room responds. The geometry around them begins to simplify — the looping rooms unraveling, the impossible angles straightening, the corridor back to the entrance assembling itself from the confusion like a sentence being edited into clarity. The way out is the way they came but also not — the space is making it easier now, the fear-response mechanic working in reverse, the team's collective relief and success telling the room that the task is done.
+
+They move toward the exit.
+
+Mainthemainstar stops.
+
+He is at the junction of two corridors — the one leading back to the entrance and one leading deeper into the sector, into the rooms they haven't explored, into the part of the altered space that they bypassed because Drug's calm and Mainthemainstar's navigation found the shortest path. He is looking at a door.
+
+It is an ordinary door in an extraordinary position. It is in a wall that shouldn't have a door. It is slightly ajar, and through the gap — not visible, not audible, but perceptible in the way Mainthemainstar perceives things — is something that is neither inside nor outside the sector. Something that is somewhere else entirely.
+
+The wrong door.
+
+Rabbit is beside him. The team has stopped. They can see the exit — the entrance they came through, the corridor beyond it, the light of the normal facility. They can also see Mainthemainstar looking at this door with the attention of someone who is not afraid and not curious but something else. Something that doesn't have a word yet.
+
+"The figure said don't," Rabbit says.
+
+"I know," Mainthemainstar says.
+
+"Do you want to?"
+
+A pause. The door sits slightly ajar. Whatever is on the other side of it breathes — not literally, not with lungs, but with the quality of a space that is alive in a way that even the altered rooms aren't. Behind it is something that the facility has not shown them. Something that the rules as they understand them don't cover.
+
+"No," Mainthemainstar says. "But I think I'm supposed to eventually."
+
+He turns from the door. They walk toward the exit.
+
+Behind them, the door remains slightly ajar. It does not close. It waits.
+
+[[INSIDE — THE FLOOFS, CONTINUED]]
+The Floofs reach their object in the fourth room.
+
+It is a mark on the wall. Not a crack, not a flaw — a deliberate notation, written in something that functions as ink on a surface that functions as stone, in handwriting that three of them recognize immediately and that the rest identify within seconds because they know whose handwriting it is even if they never studied it.
+
+Loyal2Schwab's junction mark. The first one. The original notation from Day 1 — the mark he made in the labyrinth, the systematic mind leaving its first breadcrumb, the moment before anybody knew his name or understood that the person making marks on walls was building the architecture that would save them.
+
+The system kept it. Pulled it from a wall they'll never find again and placed it here, in a room that only exists because the facility decided it should, for nine people who are now eight to find and carry out.
+
+Ninnginni is still holding CharliSpirit's hand when they reach it. He lets go gently. Steps forward. Puts his palm flat on the wall beside the mark.
+
+"Hey," he says. To the mark. To the wall. To the person who made it and isn't here to see it found.
+
+Then he carefully lifts the mark from the surface — it comes away like a decal, the ink and the stone-like surface it was written on separating cleanly, the system allowing the retrieval the way a parent allows a child to take something precious from a shelf. He holds it in both hands.
+
+"We have it," he says.
+
+The geometry eases. The rooms begin their simplification. Doorways align. The path back assembles itself with the quiet efficiency of a space that has been holding its breath and has finally been allowed to exhale.
+
+Eight Floofs walk out. CharliSpirit's mapping instinct has not returned — the space is still unmappable, still wrong — but she's walking, and the walking is enough, and Ninnginni is beside her, and the thing they came for is in his hands.
+
+[[INSIDE — THE WARDENS, CONTINUED]]
+The Wardens reach their object last.
+
+They've been talking the whole way — Schwalbe's instruction holding, the stream of conversation keeping the geometry stable if not friendly. The Reddening Day has been doing most of the talking, the patient circuitry of her nightly rounds translated into a steady narration of nothing in particular that fills the space the way her presence fills it: reliably, without asking for acknowledgment.
+
+The fifth room opens for them not because they found it but because they earned it — the collective fear response low enough, managed enough, talked-through enough that the space has decided they can have what they came for.
+
+On the floor of the fifth room is a notebook.
+
+Space_fan sees it and stops.
+
+It is her notebook. Not a notebook from the facility — a notebook from before, from whatever came before this place, from the life that existed on the other side of the door they walked through on Day 1 and haven't walked through since. She doesn't have it here. She has never had it here. It is the specific blue-covered composition book that she kept in a drawer that is not in this facility, in a room that is not in this building, in a life that the facility should not have access to.
+
+The system pulled it from her memory. Or from somewhere else. The distinction may not exist here.
+
+She picks it up. It weighs what a notebook weighs. She opens it. Inside is handwriting she recognizes — her handwriting — and she can see the shapes of letters and the logic of sentences and the meaning slides away from her like water off a surface that doesn't want to be wet. She can see the words but she cannot read them.
+
+She closes it. Holds it.
+
+"That's it," she says.
+
+The room simplifies. The Wardens walk out.
+
+[[EXIT]]
+The Syndicate emerges first.
+
+The corridor light is ordinary — facility white, sourceless, the light of a space that does not pretend to be anything other than what it is. After the altered rooms it feels like a physical substance, a thing that can be stood in and leaned against. Rabbit holds the Bunny's fur. Drug stands beside him, breathing the same measured breath she's been breathing all day. JIKOSU stretches — the same post-challenge inventory, the body's systems reporting in.
+
+The Bunny is exactly where it was. Three meters from the entrance, facing the doorway, red eyes tracking the team as they emerge. It doesn't approach Rabbit. It doesn't approach the fur. It looks at the team and counts — one, two, three, four, five, six, seven, eight, nine — and its ears settle into the position that means: complete.
+
+The Floofs emerge second. Eight people, Ninnginni carrying Loyal2Schwab's mark, CharliSpirit walking without the map she's carried in her head for eight days. Soup descends from the ceiling to hover beside Ninnginni and its luminescence shifts — brighter, for a moment, the light of something that waited and is rewarded by what it waited for.
+
+*You came back,* Soup says.
+
+"We came back," Ninnginni says.
+
+The Wardens emerge third. Nine people, space_fan carrying a notebook full of words she can't read. The Drake lifts its head as they come through the doorway and its electric veins pulse the sharp bright pulse it gave when they first entered — the same reading, the same assessment, but this time the assessment concludes differently. The team is out. The team is whole.
+
+*Still here,* the Drake communicates. *Still watching.*
+
+"Still here," space_fan says.
+
+Twenty-six people in the corridor. Three objects retrieved. Three teams present. The challenge is over.
+
+The figure's voice: "Velocity Syndicate. First retrieval. Challenge winners."
+
+A pause that has a specific weight. The weight of something that is about to be said that cannot be unsaid.
+
+"The system has completed its selection."
+
+[[THE SELECTION]]
+Nobody breathes.
+
+This is the moment. The lethality mechanic, the system's cold arithmetic, the number that was determined before they entered the rooms and has been waiting in the system's architecture while they navigated impossible geometry and managed collective fear and found objects that the facility pulled from their memories and their histories and their losses.
+
+"Mainthemainstar."
+
+Drug's head turns.
+
+The movement is involuntary — not the controlled observation she's carried all day, not the measured calm that held the room's geometry open for the team. Just the head turning, fast, the specific motion of someone whose body has received information before their mind has processed it. She looks at Mainthemainstar.
+
+Mainthemainstar is standing near the back of the Syndicate's group. He has been standing there since they emerged — not at the center, not at the front, at the back, the position he occupied naturally, the soft-focus attention facing outward the way it always faces outward, covering everything without fixing on anything. He is looking at the corridor wall. Or through it. Or at something that exists at the distance his perception operates at, which has always been further than anyone else's.
+
+He hears his name. He doesn't flinch. He doesn't close his eyes. He looks at Drug, and the look between them is not long — three seconds, four — but it contains the full weight of seven days of sitting in rooms together and staying when staying was what the room needed and saying twenty-seven when twenty-seven was the number and saying thanks for staying and hearing I wasn't going anywhere.
+
+"Mainthemainstar," the figure says again, and the repetition is not emphasis. It is confirmation. The warm-controlled tone carrying the word like a bridge carrying load.
+
+Mainthemainstar looks at Rabbit. Rabbit is holding the Bunny's fur — the remnant of a choosing, the first moment made physical. Mainthemainstar looks at the fur and then at Rabbit and the communication between them is brief and doesn't require the Bunny's channel:
+
+*Take care of it.*
+
+He looks at the rest of the Syndicate. JIKOSU, whose tactical attention has gone very still. janhk, who found eggs by touch. NinjaFlout, who called grid positions from height. Hollow Camillia, whose jaw is set the way jaws are set when setting them is the alternative to breaking. Lyrix. Akarimmu.
+
+He looks at Drug last.
+
+"I wasn't going anywhere," he says.
+
+Drug doesn't speak. Her calm — the real calm, the one that held the geometry open, the one that the room read as absence of fear — is gone. In its place is something that is not panic and not grief and not fear. It is the specific stillness of someone who is watching something end and cannot look away and would not look away if she could.
+
+The floor beneath Mainthemainstar shifts.
+
+The same mechanism as Golden — a section of the corridor floor descending smoothly, without violence, without drama, the facility's architecture performing its function with the clean efficiency it performs everything. Mainthemainstar goes down. The light stays on him. His face is the last thing they see — the soft-focus attention still active, still covering everything, still perceiving at a distance that is further than anyone else's, perceiving now whatever is below the floor and beyond the corridor and past the facility's architecture into whatever comes after.
+
+He does not look away from them.
+
+The floor closes. The corridor is continuous. The light is facility-white and sourceless and does not remember what it just illuminated.
+
+The Syndicate is eight.
+
+[[AFTER]]
+Twenty-five people in the corridor.
+
+The number arrives in the room the way all the numbers have arrived — not announced, not calculated, just present, the count adjusting itself in the space between the people who remain. Twenty-five. Not twenty-six. The number has changed and the room has changed and the specific quality of the air has changed in the way that air changes when someone who was breathing it isn't anymore.
+
+Drug sits down.
+
+Not against the wall — on the floor, in the middle of the corridor, in the space where Mainthemainstar was standing. She sits there and she doesn't cry and she doesn't speak and she doesn't move and the Syndicate forms around her the way the Syndicate forms around whatever needs forming around, the loose-tight configuration that gives space and coverage simultaneously.
+
+Rabbit sits beside her. He places the Bunny's fur — the object they retrieved, the thing that meant the Syndicate won — on the floor between them. It is very small. It is impossibly light. It is a remnant of a moment that Rabbit had with the Bunny on the first day and it was saved by a system that saves everything and returns it at the moment when the saving feels least like a gift.
+
+The Bunny approaches. For the first time since the challenge began, it crosses the three-meter boundary it set for itself and walks to Drug and sits beside her, not beside Rabbit, beside Drug, and the red eyes that are always six seconds ahead look at her at zero seconds, at right now, at this moment and no other.
+
+Drug puts her hand on the Bunny's back. The Bunny allows this. It is the first time anyone other than Rabbit has touched the Bunny. It is the specific permission of an animal that has decided that this person, right now, needs what it can give.
+
+They sit like this.
+
+Across the corridor, the Floofs are holding Loyal2Schwab's mark. The Wardens are holding space_fan's notebook. The objects sit in their bearers' hands with the weight of things that mean more than they weigh, which is the weight of every important thing.
+
+Ninnginni looks at Soup. Soup's glow is at its lowest — not dark, not conserving, just quiet, the light of something that is present and is choosing not to illuminate.
+
+*The wrong door,* Soup says. Not to Ninnginni. To the corridor. To the space. To whatever architecture is listening.
+
+*The wrong door is still inside.*
+
+Ninnginni doesn't ask what this means. He files it. The wrong door. Inside the Syndicate's sector. Mainthemainstar saw it. Mainthemainstar said: I think I'm supposed to eventually. And then Mainthemainstar became someone who doesn't get an eventually.
+
+Space_fan opens her notebook again. The handwriting is still there. The words are still illegible. She closes it.
+
+The Drake communicates to her, very quiet: *When you're ready, you'll read it.*
+
+"When will I be ready?" she asks.
+
+*When the facility decides you are.*
+
+"That's not an answer."
+
+*No,* the Drake says. *It isn't.*
+
+The corridor is quiet. Twenty-five people and three animals and three objects and the absence of the person who saw the door and chose not to go through it and is gone now, taken by a system that selected him before he ever entered the rooms, the selection running its arithmetic in parallel with his navigation and his perception and his soft-focus attention and his calm and his last four words, which were the same as the thing he said to Drug in the dorms on Day 6 when she said thanks for staying and he said—
+
+I wasn't going anywhere.
+
+The rooms are still altered behind them. The wrong door is still inside.
+
+Mainthemainstar is gone.
+
+Twenty-five remain.
+
+[[END_DAY]]
+
+[[TEAM_OVERVIEW]]
+Astral Wardens — 9 members:
+Schwalbe, Duccarian, CrystalWolf, Ashborn, Shroud,
+Rally Mally, Orphan Annihilator, The Reddening Day, space_fan.
+Bonded animal: The Drake.
+Object retrieved: space_fan's notebook (unreadable).
+
+Furious Floofs — 8 members:
+CharliSpirit, lumallie, Galaxy, Godly_Aura, Polaris,
+Revenant, Elv, Ninnginni.
+Bonded animal: Soup.
+Object retrieved: Loyal2Schwab's first junction mark.
+Lost: Loyal2Schwab (Day 5), Golden (Day 7).
+
+Velocity Syndicate — 8 members:
+JIKOSU, janhk, NinjaFlout, hollow Camillia, Lyrix,
+Akarimmu, Drug, Rabbit.
+Bonded animal: The Killer Bunny.
+Object retrieved: The Bunny's shed fur from Day 1.
+Lost: Kiwi (Day 5), Mainthemainstar (Day 8).
+
+Total alive: 25 / 30.
+Total lost: 5 — Toad (Wardens, Day 5), Loyal2Schwab (Floofs, Day 5),
+Kiwi (Syndicate, Day 5), Golden (Floofs, Day 7), Mainthemainstar (Syndicate, Day 8).
