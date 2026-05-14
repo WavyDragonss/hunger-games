@@ -1,0 +1,522 @@
+[[DAY]]
+DAY 13 — THE MILL
+
+[[SYSTEM_STATE]]
+Day index: 13.
+Participant count: 13.
+Challenge type: endurance — manual labor, sequential elimination.
+Lethality: high. Conditions: fail quota and be eliminated. Goal redistributes on each elimination.
+
+[[NARRATIVE]]
+space_fan wakes slowly.
+
+This is unusual. space_fan does not wake slowly. The watchful instinct that has kept her at the edge of every formation since Day 1 extends into sleep — she comes up from rest the way a person comes out of cold water, all at once, the body registering conditions before the mind has finished its inventory. She does not drift. She arrives.
+
+Today she drifts.
+
+The drift is its own kind of information. She lies on her sleeping platform and the rising-to-consciousness happens in layers — first a vague awareness of being warm, then a slower awareness of being heavy in a way that doesn't match the time she went to sleep, then the recognition that her body feels rested in a way that goes beyond a single night, the deep restoration of someone who has been allowed to sleep until the body chose to stop.
+
+Her hand reaches for Orchid. The cat usually sleeps against her side, the small warm body finding its spot before space_fan has even closed her eyes.
+
+Her hand finds nothing.
+
+Empty platform beside her. The blanket is undisturbed. Orchid is not there.
+
+space_fan opens her eyes.
+
+The aquarium.
+
+It is the first thing she sees and the seeing takes a long moment to translate into understanding. The aquarium she built yesterday — the tropical hillside, the moss back wall, the curved branch, the six orchids mounted in their natural positions — is not the aquarium she built yesterday. It is a version of that aquarium that has been growing for weeks. The orchids have spread. Their roots have extended along the moss wall and crawled along the branch. New flower spikes have emerged from the dendrobium — flower spikes do not emerge overnight, they take weeks, they require sustained light and water and the kind of patient development that a plant does in geological rather than personal time. The moss has thickened. The small ferns at the base have unfurled new fronds. The slipper orchid has produced a second flower beside the first.
+
+The aquarium has lived longer than space_fan slept.
+
+space_fan sits up. Her body protests in the specific way of muscles that have not moved for an extended period — not the day-after-exercise soreness, the deeper unfamiliarity of a body that has been still for so long that it has forgotten the patterns of its own movement.
+
+"Orchid," she says, quietly.
+
+Nothing. The room does not answer. The cat is not under the platform. The cat is not in the corner. The cat is not anywhere visible in the sleeping space.
+
+space_fan stands. The Wardens' sector is the same — the wrong geometry from Day 8's maintenance still wrong, the rearranged sleeping platforms in their post-altered positions, the dorm familiar in its strangeness. But the air. The air is different. It has the slightly stale quality of a space that has not been ventilated properly for a long time. The smell is faint but present — the smell of a closed room.
+
+She walks out of her sleeping space into the sector's central room.
+
+Schwalbe is awake.
+
+He is sitting on the floor against the wall, one knee drawn up, the other leg extended. His position is the position of someone who woke up and immediately needed to sit down because the standing-up part went badly. His face has the specific quality of a face that is processing something that should not be possible.
+
+"How long," he says, when space_fan walks in. He does not phrase it as a question. He says it the way you say a sentence whose ending you already know.
+
+"I don't know," space_fan says.
+
+"My platform is too soft," Schwalbe says. "The new mattress that Drug and you got — yours is the one we expected to be softer. Mine should be the same as before. It's softer too. The whole bed has — settled. It feels like it's been sat in for months."
+
+"Orchid is gone."
+
+Schwalbe looks at her. The processing in his face shifts to accommodate the new information. He stands up — slowly, the same body-protest that space_fan's body produced — and the two of them look at each other in the central room of a sector that does not feel like the sector they fell asleep in.
+
+The other Wardens emerge. Duccarian first — his face already arranging itself into the soft-surprise expression that means his categories are being tested. Then Rally Mally, helping Orphan Annihilator with his ankle, both of them moving with the same too-stiff body language as Schwalbe and space_fan.
+
+"How long," Rally Mally says.
+
+"We don't know yet," Schwalbe says.
+
+[[THE HUB]]
+The smell hits them in the corridor.
+
+Not subtle. Not faint. The full-frontal assault of rot — the specific olfactory signature of organic material that has gone past spoiled into actively decomposing, the smell that bodies recognize as wrong on a level that doesn't require thought, the kind of smell that triggers gag reflexes before it triggers comprehension.
+
+"Oh," Rally Mally says, hand to his face.
+
+"Oh no," Orphan Annihilator says, behind him.
+
+The Wardens stop in the corridor. The Floofs are emerging from their sector — Ninnginni, CharliSpirit, Polaris, three people moving with the same slow body and the same shocked expressions. The Syndicate is coming from theirs — Drug, Rabbit, JIKOSU, janhk, Lyrix, five people, same body, same expression.
+
+Thirteen people converge at the corridors leading to the hub and the smell is coming from the hub and nobody wants to look but everybody has to.
+
+They look.
+
+The food tables are still up. The food from — yesterday? a week ago? — is still on them. Eggs. Toast. The grain. The meat. All of it. The food has not been removed. The food has not been replaced. The food has been sitting on the tables for however long has actually passed, and what was once breakfast is now compost, the specific visual of decay covering surfaces that should be clean.
+
+The eggs are unrecognizable. The toast is moldy in green and black patterns. The meat — Rally Mally turns away. The grain has fermented into something liquid. The whole table is a study in time, the kind of time that the body understands viscerally even if the calendar refuses to confirm it.
+
+"Two weeks," Duccarian says. He has been calculating. The orchids in space_fan's aquarium. The mattress. The food. The body's stiffness. The smell. "Roughly two weeks. Plant growth at that rate, food decomposition at this stage. Two weeks is the order of magnitude."
+
+"We slept for two weeks," CharliSpirit says.
+
+"We did not sleep for two weeks," Drug says. "Two weeks of natural sleep would have killed us. Dehydration. Muscle atrophy. We've been sedated. The body has been maintained. Two weeks of sustained sedation."
+
+"Why."
+
+The figure's voice arrives. Different.
+
+"Good morning."
+
+The warm-controlled tone is there, but the tone has a quality it has never had before — the rough edges of a voice that has just been activated, the slight delay of a system that was offline and is now coming back. The figure sounds tired. The figure has never sounded tired.
+
+"I apologize for the conditions. There was a glitch."
+
+A pause. The figure seems to be assembling the next sentence in real time.
+
+"Approximately sixteen days ago, the facility experienced a critical malfunction in the oxygen circulation system. The error was not localized — it affected the entire underground complex. Atmospheric oxygen was reduced to levels that would have produced unconsciousness in twenty minutes and death in two hours. As a fail-safe, the facility's secondary protocol activated: full participant sedation, maintained life support, system pause. You have been sedated for sixteen days, three hours, and fourteen minutes."
+
+Thirteen people stand in a corridor that smells like rot and process this.
+
+"The oxygen circulation issue has been partially resolved by automatic systems. The remaining repair requires manual power generation. The facility's electrical infrastructure has been damaged. The pumps that maintain breathable atmosphere will fail again within the next eight hours unless they are powered. I need your assistance."
+
+The directness of this is new. Not warm-controlled. Just direct.
+
+"You will be moved to a power generation chamber. You will spin a wheel. The wheel is heavy. Two hundred fifty rotations are required to power the oxygen pumps for the next operational cycle. You have eight hours."
+
+A pause.
+
+"This is not a game. There is no team competition. There is no creative reward. The pumps either operate or they do not. The oxygen either circulates or it does not. Every member of every team must contribute. The minimum contribution per person is the total divided by the number of participants. If you do not meet your minimum, you will be eliminated, and your remaining quota will be redistributed to the survivors with an additional hour granted."
+
+Another pause.
+
+"I am sorry for the conditions. The new food will be available when the system is fully stabilized. Please proceed to the wheel chamber. The corridor is now lit."
+
+Floor-lights activate. They are dimmer than usual. The corridor visible. The smell is still present. Thirteen people on weak legs and empty stomachs begin walking.
+
+space_fan looks for Orchid one more time. Behind her. Down the Wardens' corridor. Nothing.
+
+"Have you seen the cat?" she asks Schwalbe.
+
+"No," Schwalbe says. "Not since yesterday. Not since before."
+
+"Before what?"
+
+"Before whatever this was."
+
+[[THE WHEEL]]
+The chamber is large.
+
+Larger than the orchid room. Larger than the dark maze. A massive circular space with a high ceiling, industrial-looking, the kind of architecture that the facility hasn't shown them before — exposed metal supports, dim utility lighting, the specific aesthetic of a working environment rather than a designed one. The lights flicker occasionally. Somewhere a low mechanical hum tells thirteen people that this is a real place — not a designed challenge space, the underground infrastructure of the facility itself, the part that does not exist for them but that they exist in.
+
+In the center of the chamber: the wheel.
+
+It is enormous. A vertical wheel mounted on a horizontal axle, the wheel itself perhaps four meters in diameter, the spokes thick metal, the rim wide enough to push against with hands and shoulders. The whole apparatus has the weight visible in every component — the kind of object that announces its mass before you touch it, the obvious heaviness of something that requires force to move.
+
+On the wall: a counter. Large digital display. Currently reading 0/250. Below it, a timer counting down from 8:00:00. Below that, a smaller display showing per-person quota: 19.23 rotations.
+
+"Nineteen point two-three rotations each," Duccarian says, looking at the display. "Thirteen people, two hundred fifty rotations."
+
+"Five hundred kilograms," NinjaFlout says.
+
+He has been reading a plaque on the wheel itself — a manufacturer's mark, the specifications of the apparatus. "The wheel weighs five hundred kilograms. The mechanical advantage from the radius helps, but the inertia is substantial."
+
+"Three or four people can move it," Drug says. "Two probably not. One definitely not."
+
+"Then we work in shifts," Rabbit says. "Distribute the rotations. Everyone takes their turn. Everyone hits their minimum."
+
+The figure's voice:
+
+"Begin when ready."
+
+[[THE FIRST HOURS]]
+The first push is the hardest.
+
+Schwalbe, Rally Mally, JIKOSU, and Drug all approach the wheel together. Hands on the rim. They look at each other. Schwalbe counts: "One. Two. Three." They push.
+
+The wheel doesn't move.
+
+"Harder," Schwalbe says.
+
+They push harder. Bodies leaning into it, the four strongest people in the room applying their full force to the rim, and the wheel — slowly — begins to rotate. The first inch of motion is the most expensive. The second inch is easier. By the time the wheel has moved a quarter turn, the rotation has acquired the inertia that wants to continue, and the four people pushing it can ease off their effort and let momentum help.
+
+One rotation. The counter ticks. 1/250.
+
+"Two hundred forty-nine to go," JIKOSU says.
+
+The challenge of the wheel is not the difficulty of moving it. It is the duration. Each rotation takes — they estimate — about a minute when four people are pushing fluidly. Two hundred fifty rotations is over four hours of continuous pushing. With shift rotations and breaks, eight hours is achievable but only barely.
+
+They establish a rhythm.
+
+Schwalbe organizes the shifts. Four people pushing at a time. Each shift twenty minutes. Then rotate. The other nine rest. Drink water from the chamber's panels. Sit on the floor. Stretch. Recover.
+
+The first hour produces thirty rotations. The pace is on track. The bodies, weakened by sixteen days of sedation and no food in their stomachs, are functioning at lower capacity than they would normally — but they are functioning.
+
+By the second hour, the issue becomes clear.
+
+Per-person quotas are being tracked. The wheel counts who pushes during which rotation by some mechanism nobody can identify — sensors in the rim, perhaps, reading body heat or weight distribution. The wall display has updated to show individual contributions. Schwalbe: 11 rotations. Drug: 10. JIKOSU: 11. Rally Mally: 9. Down through the list. Lyrix: 4. janhk: 4. Polaris: 3. Polaris's ankle is the limiting factor — she can push, but only briefly, the standing-still pressure on the ankle making her shifts shorter than everyone else's.
+
+"Nineteen point two-three each," NinjaFlout reminds them. "Lyrix and janhk need to be more on the wheel."
+
+"I'm trying," Lyrix says. Her voice is weaker than usual. "I push for ten minutes and my arms stop working."
+
+"You haven't eaten in two weeks," CharliSpirit says. "Your muscles are catabolizing. Same as the rest of us."
+
+"Mine more than the rest," Lyrix says. It is not an excuse. It is a fact. Some bodies recover from sedation faster than others, and Lyrix's body is one of the slower ones.
+
+[[SCHWALBE]]
+By hour three the rotations are at 92.
+
+The pace has dropped — fatigue compounding, the second hour producing fewer rotations than the first, the third hour fewer than the second. The four-person pushes are still functional but the rest periods are longer. People are sitting between shifts. Some are lying flat. The chamber is silent except for the wheel's slow grinding rotation and the occasional muttered count.
+
+Schwalbe pushes more than his share.
+
+This is not a decision. It is who Schwalbe is. He has been first across every threshold for thirteen days. He volunteered as point on the altered rooms. He spoke first in the mirror rooms, telling space_fan the cake was hers. He filled The Reddening Day's "all here" call on Day 10. He took the lead position on the wheel from the first rotation.
+
+By hour three he has logged thirty-six rotations. Almost double his minimum quota. He continues because Polaris's ankle is failing and Lyrix is having to sit out longer and longer and janhk is moving slowly and the wheel still has to make 158 more rotations before the pumps can come back online.
+
+He pushes through his fourth shift.
+
+He pushes through his fifth shift.
+
+During his sixth shift, his hand slips off the rim.
+
+Not from weakness — from sweat, from the cumulative damp of working hard for three hours, from the wheel's rim being smooth metal that grows slick when pressed against by tired hands. His hand slips and his body, leaning into the push, follows the slip — his shoulder pitches forward, his foot tries to catch his weight, his foot is on a wet patch of floor where water has been spilled from the chamber's panels.
+
+He falls.
+
+He falls into the wheel.
+
+The wheel has rotational momentum. The wheel does not stop because he has fallen against it. The four other people pushing register what is happening a fraction of a second too late — they pull back, they shout, they reach for him, but the wheel is moving and Schwalbe's body is between the wheel and the chamber wall and the geometry of the situation is not survivable.
+
+There is a sound. It is brief. Then the wheel continues.
+
+Drug pulls Schwalbe out from behind the wheel's path. JIKOSU helps. Rally Mally is shouting space_fan's name — not the warning kind of shouting, the calling kind, the specific tone that means come here now. space_fan is across the chamber, in her rest cycle, and she gets up and crosses the chamber and finds Schwalbe on the floor and his eyes are open and he is trying to say something.
+
+"Schwalbe," she says.
+
+His mouth moves. Nothing comes out. His eyes are on her. The expression is the expression of someone who has been first across every threshold and is registering, finally, the threshold he doesn't get to cross with the team.
+
+"You took too many shifts," space_fan says. It is not what she wanted to say. It comes out before she can stop it. "You did too much. You shouldn't have—"
+
+He shakes his head. Very slightly. The shake means: it doesn't matter what I should have done. It means: I would have done it again.
+
+"Schwalbe," she says again.
+
+The light in his eyes does the specific thing that light does in eyes when the person behind them is no longer accessible. Not a dimming. A departure. He is there and then the eyes are eyes and Schwalbe is not in them.
+
+The figure's voice:
+
+"Schwalbe has been eliminated. Quota redistributed. Twelve participants. Twenty point eight three rotations each. Additional hour granted."
+
+The timer adds an hour. The display recalculates. The wheel does not pause.
+
+[[THE WHEEL CONTINUES]]
+space_fan does not cry. She wants to. The crying does not arrive — her body, weakened by sedation and hunger, has not produced the necessary chemicals. The grief is in her, present, sitting in the same place that all the grief from twelve days has sat. But the body cannot perform the externalization. She stands over Schwalbe and her chest is tight and her eyes are dry and the wheel grinds on behind her.
+
+"space_fan."
+
+It is Drug. Drug has come over. The Bunny is at Drug's side — has been at Drug's side since Day 8, the constant presence — and the Bunny looks at Schwalbe with the red eyes that are always six seconds ahead, except today they are at zero seconds, at right now, at this specific moment.
+
+"You have to push," Drug says.
+
+"I know."
+
+"I'm sorry."
+
+"I know."
+
+"I'll push with you."
+
+space_fan looks at Drug. Drug has been the calmest person in the facility for thirteen days. Drug lost Mainthemainstar. Drug sat on the corridor floor in the spot where he had been standing. Drug, who never asks for anything, has just offered to push the wheel with space_fan because space_fan cannot push the wheel alone right now and Drug knows this.
+
+"Okay," space_fan says.
+
+They go to the wheel.
+
+[[JANHK]]
+By hour five the rotations are at 168.
+
+The pace is failing. The remaining twelve people are exhausted. The redistribution after Schwalbe's death has added rotations to everyone's quota and the bodies cannot produce more force just because the math demands it. Lyrix has been on the floor for thirty minutes, breathing shallowly, the catabolism that CharliSpirit named earlier visibly winning the contest with her muscle tissue. janhk has been pushing for shifts longer than his body can sustain.
+
+janhk's grip fails during his fourth shift.
+
+He has been holding the rim with his fingers wrapped around it, the texture-based grip that has been his signature on the team, but the fingers themselves are the thing that fails — the small muscles giving out, the hand opening against his will. The wheel keeps moving. He stumbles. He catches himself. He does not fall into the wheel — the lesson of Schwalbe is fresh, the chamber's people have been giving the wheel wider clearance — but his body sits down on the floor and does not get back up immediately.
+
+"I need a minute," janhk says.
+
+The minute extends. Two minutes. Five. janhk sits with his back against the chamber wall and his hands in his lap and the hands are shaking.
+
+"janhk," Rabbit says, kneeling beside him.
+
+"I can't push," janhk says. "My hands don't work."
+
+"You need to push," Rabbit says.
+
+"I know."
+
+Rabbit helps him up. janhk goes back to the wheel. He places his palms — not his fingers, palms, flat against the rim — and pushes for what he can manage. Three rotations. Then he sits down again.
+
+By hour six janhk has not added to his rotation count for over an hour. The display shows him at 14 rotations. The new quota is 22.7. He is short by eight.
+
+"janhk," NinjaFlout says. He is reading the display. "You need eight more."
+
+"I know."
+
+"In two hours."
+
+"I know."
+
+janhk tries again. Five minutes. He gets one rotation. He sits down.
+
+"He's not going to make it," CharliSpirit says, quietly, to Drug.
+
+"No."
+
+"What do we do?"
+
+"We keep pushing. The math is the math. The quota redistributes."
+
+janhk is sitting against the wall when the figure's voice arrives:
+
+"Time check. Two hours remaining. janhk is below the elimination threshold and will be eliminated in fifteen minutes unless quota is met."
+
+janhk closes his eyes. He does not try to get up again. The decision arrives in his body the way decisions sometimes do — not made consciously, just present, the body knowing what the body cannot do.
+
+Fifteen minutes later, the floor opens under him. He does not look surprised. He looks, mostly, relieved.
+
+"janhk has been eliminated. Quota redistributed. Eleven participants. Twenty-two point seven three rotations each. Additional hour granted."
+
+The timer adds another hour.
+
+[[LYRIX]]
+Lyrix is the easiest to predict.
+
+She has known since hour two. Her body was the slowest to recover from sedation and the slowest to recover has only fallen further behind as the hours have progressed. By hour six her quota is at 14 rotations. By hour seven it has dropped to 9 — janhk's elimination redistributed numbers and Lyrix's contribution has not increased, only the quota requirement.
+
+She pushes anyway.
+
+Not because she thinks she will make it. Because the pushing is the only thing she can do. Because giving up before the end is not a thing she has ever done in twelve days and she is not going to start now.
+
+She pushes through hour seven. Her contribution rises to 11. The quota is 24.
+
+She pushes through the first half of hour eight. Her contribution is 13. The quota is 26.
+
+She is on the wheel when the figure's voice arrives:
+
+"Time check. Thirty minutes remaining. Lyrix is below the elimination threshold."
+
+Lyrix keeps pushing. Her arms are shaking. Her grip is failing. She pushes anyway.
+
+space_fan is on the wheel beside her. Drug is on the other side. The two of them are adjusting their own pushes to compensate — pushing harder, contributing more rotation per turn, trying to keep the count moving even as Lyrix's contribution slows.
+
+"Lyrix," Drug says. "Step off. Let us push your share."
+
+"The display reads my rotations specifically," Lyrix says, between breaths. "The wheel knows who's pushing. You can't push my share. I have to."
+
+"How many more do you need?"
+
+"Thirteen."
+
+"In thirty minutes."
+
+"Yes."
+
+The math is impossible. Lyrix has been producing about one rotation every five minutes during her shifts. Thirteen rotations is over an hour of work at her current pace. The body she is operating with cannot do it.
+
+She pushes anyway. Three rotations in the first ten minutes. Two in the second ten. The grip is failing more aggressively now, her hands sliding off the rim, her body insisting that this is the end of what it can do.
+
+The figure's voice:
+
+"Five minutes remaining. Lyrix is at sixteen rotations. Quota is twenty-six. Elimination imminent."
+
+Lyrix steps off the wheel.
+
+Not from quitting. From understanding. She has known for several minutes that the math was unwinnable. She steps off because pushing the last five minutes will not change the outcome and she would prefer to spend them not pushing.
+
+She walks to the chamber wall. Sits down. Closes her eyes.
+
+space_fan and Drug keep pushing. The remaining quota on the display is small now — Lyrix's failure has redistributed her remaining rotations but the additional hour has not been granted yet because Lyrix is still alive, just stopped. The other ten people on the wheel are completing their contributions. By the time the timer hits zero, the count is at 250.
+
+The pumps activate.
+
+A low hum begins somewhere overhead — different from the chamber's existing mechanical hum, the specific resonance of air moving through ducts. The atmosphere in the chamber, almost imperceptibly, changes. Oxygen flow. Real oxygen flow. The bodies in the chamber respond before their minds register the change — the slow easing of effort that comes when air becomes available.
+
+The figure's voice:
+
+"Pumps online. Atmospheric stabilization commencing. Lyrix has been eliminated for failure to meet quota. The remaining survivors may return to their sectors."
+
+The floor opens under Lyrix. She has been sitting with her eyes closed and does not see it coming. She does not wake when it begins. She goes down asleep, which is the kindest thing the facility has done with the mechanism since it started using it.
+
+[[RETURN]]
+Ten people in the chamber. Three new losses.
+
+They do not speak. The talking has been pushed out of them by eight hours of pushing a 500-kilogram wheel with bodies that have been sedated for sixteen days and have not eaten in longer. The walking out of the chamber is the slowest walk of the thirteen days. The corridor is dim. The floor-lights are working at reduced capacity, the facility's electrical systems still recovering from whatever the glitch did.
+
+The hub still smells like rot. The food has not been removed. The tables have not descended. Whatever automated systems handle the meal service have not received the signal that breakfast is done because breakfast has been ongoing for sixteen days.
+
+"They said new food when the system stabilizes," Rally Mally says.
+
+"Soon," Drug says. "Maybe."
+
+"Soon," Rally Mally agrees.
+
+They reach their sectors. Ten people split into reduced groups. Wardens — three. Schwalbe gone. Rally Mally helping Orphan Annihilator. Duccarian and space_fan walking together but not speaking. Floofs — still three. CharliSpirit, Polaris, Ninnginni. Syndicate — four. JIKOSU, Drug, Rabbit, NinjaFlout. Wait. NinjaFlout's count. NinjaFlout died in the dark maze on Day 12. The Syndicate is JIKOSU, Drug, Rabbit. Three. Same as the Floofs. Same as the Wardens.
+
+Three. Three. Three. Nine total.
+
+Wait.
+
+space_fan stops in the corridor. She counts again. Nine. Not ten.
+
+She turns. Looks at the people walking. Wardens: Rally Mally, Orphan Annihilator, Duccarian, herself. That's four. Floofs: CharliSpirit, Polaris, Ninnginni. Three. Syndicate: JIKOSU, Drug, Rabbit. Three. Four plus three plus three is ten.
+
+Ten. Right. Schwalbe gone, janhk gone, Lyrix gone. Thirteen minus three is ten. Math is math.
+
+She is too tired to do math.
+
+She continues walking.
+
+[[THE DORMS]]
+The Wardens' sector is four.
+
+space_fan walks to her sleeping space without speaking. Rally Mally and Orphan Annihilator pause in the central room — they will sleep together in the same area tonight, the persistent pair, the configuration that has held since Day 6. Duccarian goes to his sleeping space. He does not say anything. The philosopher in him will process Schwalbe's death in private and produce something that resembles understanding eventually. Tonight he is just tired.
+
+space_fan reaches her sleeping space.
+
+The aquarium is there — the impossible aquarium, the one that has lived two weeks while she slept twelve hours. The orchids continue their slow growth. The moss is thick. The flowers are beautiful.
+
+Schwalbe's sleeping space across the room is empty. His aquarium from yesterday — small, honest, the sensible arrangement that looked like Schwalbe — sits beside his platform. The orchids in it have also grown. They will keep growing until someone removes them. They do not know Schwalbe is dead.
+
+space_fan sits on her platform.
+
+Orchid is not there.
+
+She stands up. Looks under the platform. Looks in every corner of the sleeping space. Looks behind the aquarium. Looks at the shelves where the morning's orchid materials had been. Nothing. The cat is not in the sleeping space.
+
+space_fan walks to the central room. "Has anyone seen Orchid?"
+
+Rally Mally and Orphan Annihilator look up. The question takes a moment to register — their brains are processing slowly — and then Rally Mally says: "Wasn't she with you?"
+
+"She wasn't with me when I woke up."
+
+"Maybe she's in the hub. Or the corridors. She might have gotten out before we did and is wandering around."
+
+"Maybe," space_fan says.
+
+She walks back to her sleeping space. She sits on her platform. She does not go look for the cat. The body cannot do it. The walking has used the body's reserves and the body is now operating on borrowed everything — borrowed energy, borrowed attention, borrowed time. To go look for Orchid she would have to stand up again and walk again and call for the cat and listen for an answer that might not come, and she does not have any of those resources right now.
+
+She will look in the morning.
+
+The aquarium glows softly in the dim lighting. The orchids she planted have outlived Schwalbe. The cat that was a gift on a happy birthday is gone. The world the facility has built is the same world it has been building for thirteen days, except today it is also a world where space_fan is alone in her sleeping space for the first time since the cat arrived.
+
+She lies down.
+
+The mattress, softer than it was yesterday — settled by two weeks of empty pressing — accepts her body. The blanket is where she left it. The aquarium continues its slow improbable growth beside her.
+
+"Orchid," she says, very quietly, to the empty room.
+
+The room does not answer.
+
+She closes her eyes. The fatigue takes her before the grief can fully arrive. The sleep is heavy and immediate. The aquarium continues to grow. Schwalbe's empty sleeping space across the room remains empty. The cat is gone.
+
+[[ELSEWHERE]]
+In the Syndicate's sector, Drug lies on her platform with the Bunny pressed against her side. The Bunny is awake. The red eyes are open and tracking the ceiling. The Bunny has not slept since the day began and may not sleep tonight at all.
+
+"Where is the cat?" Drug asks.
+
+*I don't know,* the Bunny says.
+
+"Is she alive?"
+
+*I don't know.*
+
+"Will you tell me when you know?"
+
+*Yes.*
+
+Drug closes her eyes. The Bunny does not.
+
+In the Floofs' sector, Ninnginni sits beside CharliSpirit and Polaris in the central room. Three Floofs in a room that used to hold ten. Soup is at low glow.
+
+"Two weeks," CharliSpirit says.
+
+"Two weeks," Ninnginni agrees.
+
+"We slept for two weeks."
+
+"Yes."
+
+"What were we missing while we slept?"
+
+Soup glows slightly brighter. *Everything,* it says. *And nothing. The facility paused. Outside the facility, the world continued. Inside the facility, time also continued, but only as decomposition.*
+
+"What does that mean."
+
+*It means the food rotted. The plants grew. The cat aged. We do not.*
+
+"The cat is gone," Ninnginni says.
+
+*Yes.*
+
+"Why."
+
+*I don't know.*
+
+The Floofs sleep. The Wardens sleep. The Syndicate sleeps. Ten people in three sectors after a day that began with two weeks of missing time and ended with three more empty sleeping spaces. The hub smells like rot. The new food has not arrived. The pumps hum.
+
+space_fan's aquarium grows.
+
+Orchid is somewhere. Or nowhere.
+
+The day ends.
+
+[[END_DAY]]
+
+[[TEAM_OVERVIEW]]
+Astral Wardens — 4 members:
+Duccarian, Rally Mally, Orphan Annihilator, space_fan.
+Bonded animal: The Drake.
+Companion: Orchid (cat) — missing.
+
+Furious Floofs — 3 members:
+CharliSpirit, Polaris, Ninnginni.
+Bonded animal: Soup.
+
+Velocity Syndicate — 3 members:
+JIKOSU, Drug, Rabbit.
+Bonded animal: The Killer Bunny.
+
+Total alive: 10 / 30.
+Total lost: 20 — Toad (W, Day 5), Loyal2Schwab (F, Day 5), Kiwi (S, Day 5),
+Golden (F, Day 7), Mainthemainstar (S, Day 8),
+Ashborn (W, Day 9), CrystalWolf (W, Day 9), lumallie (F, Day 9), hollow Camillia (S, Day 9),
+The Reddening Day (W, Day 10), Revenant (F, Day 10), Akarimmu (S, Day 10),
+Elv (F, Day 12 — trap), NinjaFlout (S, Day 12 — trap),
+Galaxy (F, Day 12 — not found), Godly_Aura (F, Day 12 — not found),
+Shroud (W, Day 12 — late by 0.1s),
+Schwalbe (W, Day 13 — wheel accident), janhk (S, Day 13 — quota failure),
+Lyrix (S, Day 13 — quota failure).
