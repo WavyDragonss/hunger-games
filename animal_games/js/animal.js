@@ -2634,7 +2634,7 @@
       var hunters = HUNTER_NAMES_BY_DAY[day];
       for (var i = 0; i < hunters.length; i++) {
         if (normalizeName(hunters[i]) === normalizedName) {
-          return "onyx";
+          return "hunters";
         }
       }
     }
@@ -2756,7 +2756,7 @@
       return "";
     }
 
-    if (factionKey === "onyx") {
+    if (factionKey === "hunters") {
       return HUNTER_COLOR;
     }
 
@@ -2794,8 +2794,8 @@
     if (factionKey === "velocity-syndicate") {
       return "VS";
     }
-    if (factionKey === "onyx") {
-      return "O";
+    if (factionKey === "hunters") {
+      return "H";
     }
     return "";
   }
