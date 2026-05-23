@@ -75,6 +75,12 @@
     "velocity-syndicate": "Rabbit"
   };
 
+  var HUNTER_NAMES_BY_DAY = {
+    15: ["WavyDragons", "alex_awesomeness", "Rabbit"],
+    16: ["WavyDragons", "alex_awesomeness", "Rabbit"]
+  };
+  var HUNTER_COLOR = "#a8b0bd";
+
   var KNOWN_BLOCK_TAGS = [
     "TITLE",
     "DAY",
@@ -115,7 +121,8 @@
     readerQuery: "",
     selectedName: "",
     selectedNameLabel: "",
-    progressByDay: {}
+    progressByDay: {},
+    currentRenderingDay: null
   };
 
   var THEME_SONG_CONFIGS = [
@@ -2096,6 +2103,7 @@
   }
 
   function renderStructuredDay(text, factionKey, dayNumber) {
+    state.currentRenderingDay = typeof dayNumber === "number" ? dayNumber : null;
     var dayScopedText = getDayScopeText(text);
     var html = "";
     var lineCounter = { value: 0 };
@@ -2520,6 +2528,12 @@
       factionLookup[normalizeName(FALLBACK_LEADERS[key])] = key;
     });
 
+    Object.keys(HUNTER_NAMES_BY_DAY).forEach(function (dayKey) {
+      (HUNTER_NAMES_BY_DAY[dayKey] || []).forEach(function (name) {
+        pushUniqueName(names, seen, name);
+      });
+    });
+
     Object.keys(state.dayTextByDay || {}).forEach(function (dayKey) {
       var text = state.dayTextByDay[dayKey];
       collectTeamNamesFromText(text).forEach(function (name) {
@@ -2615,6 +2629,15 @@
   }
 
   function getFactionForNormalizedName(normalizedName) {
+    var day = state.currentRenderingDay;
+    if (day != null && HUNTER_NAMES_BY_DAY[day]) {
+      var hunters = HUNTER_NAMES_BY_DAY[day];
+      for (var i = 0; i < hunters.length; i++) {
+        if (normalizeName(hunters[i]) === normalizedName) {
+          return "hunters";
+        }
+      }
+    }
     return state.memberFactionLookup[normalizedName] || "";
   }
 
@@ -2733,6 +2756,10 @@
       return "";
     }
 
+    if (factionKey === "hunters") {
+      return HUNTER_COLOR;
+    }
+
     var baseHueByFaction = {
       "astral-wardens": 210,
       "obsidian-dominion": 2,
@@ -2766,6 +2793,9 @@
     }
     if (factionKey === "velocity-syndicate") {
       return "VS";
+    }
+    if (factionKey === "hunters") {
+      return "H";
     }
     return "";
   }
