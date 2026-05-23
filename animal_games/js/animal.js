@@ -79,7 +79,7 @@
     15: ["WavyDragons", "alex_awesomeness", "Rabbit"],
     16: ["WavyDragons", "alex_awesomeness", "Rabbit"]
   };
-  var HUNTER_COLOR = "#a8b0bd";
+  var HUNTER_COLOR = "#353839";
 
   var KNOWN_BLOCK_TAGS = [
     "TITLE",
@@ -2634,7 +2634,7 @@
       var hunters = HUNTER_NAMES_BY_DAY[day];
       for (var i = 0; i < hunters.length; i++) {
         if (normalizeName(hunters[i]) === normalizedName) {
-          return "hunters";
+          return "onyx";
         }
       }
     }
@@ -2756,7 +2756,7 @@
       return "";
     }
 
-    if (factionKey === "hunters") {
+    if (factionKey === "onyx") {
       return HUNTER_COLOR;
     }
 
@@ -2794,8 +2794,8 @@
     if (factionKey === "velocity-syndicate") {
       return "VS";
     }
-    if (factionKey === "hunters") {
-      return "H";
+    if (factionKey === "onyx") {
+      return "O";
     }
     return "";
   }
