@@ -1,3 +1,3 @@
 # hunger games
 
-https://wavydragonss.github.io/hunger-games/
+https://member-games.xyz
