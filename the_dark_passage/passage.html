@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Dark Passage — Day Story Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/passage.css" />
+</head>
+<body data-faction="astral-wardens">
+  <header class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-top-actions">
+        <a class="action-btn text-btn back-btn" href="../index.html">Back to Main Page</a>
+        <div class="hero-right-actions">
+          <button id="readerThemeToggle" class="action-btn icon-btn" type="button">Light</button>
+        </div>
+      </div>
+
+      <p class="eyebrow">The Dark Passage Reader</p>
+      <h1 class="title">Day Story Reader</h1>
+      <p class="subtitle" id="subtitle">
+        Descend day by day into the dark. Navigate the nights, hunt names through the gloom, and read the record of who was left standing.
+      </p>
+    </div>
+  </header>
+
+  <main class="layout reader-layout">
+    <section class="timeline-panel" id="readerPanel" aria-label="Day reader">
+      <div class="timeline-head">
+        <h2 id="readerTitle">Day Reader</h2>
+        <div class="head-actions reader-day-nav">
+          <button id="readerPrevDayBtn" class="action-btn mode-btn" type="button">← Previous Day</button>
+          <button id="readerNextDayBtn" class="action-btn mode-btn" type="button">Next Day →</button>
+        </div>
+      </div>
+      <div class="reader-toolbar" aria-label="Reader tools">
+        <div class="reader-tools-left">
+          <button id="readerFontDown" class="action-btn text-btn" type="button">A-</button>
+          <button id="readerFontUp" class="action-btn text-btn" type="button">A+</button>
+          <label for="readerSearchInput" class="reader-inline-label">Search</label>
+          <input id="readerSearchInput" class="reader-search" type="search" placeholder="Search this day..." autocomplete="off" spellcheck="false" />
+          <div class="kofi-inline" aria-label="Support on Ko-fi">
+            <span class="reader-inline-label">Support</span>
+            <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+            <script type="text/javascript">
+              kofiwidget2.init('Support me on Ko-fi', '#ff7a3c', 'T6T21X2J3X');
+              kofiwidget2.draw();
+            </script>
+          </div>
+        </div>
+        <div class="reader-tools-right">
+          <div class="toolbar-chip" id="focusLabel">Character: none</div>
+          <div class="toolbar-chip" id="progressLabel">Day 1 - 0%</div>
+          <label for="characterPicker" class="reader-inline-label">Character</label>
+          <select id="characterPicker" class="action-btn text-btn">
+            <option value="">Character: none</option>
+          </select>
+          <button id="readerWidthToggle" class="action-btn text-btn" type="button">Width: Narrow</button>
+          <details class="reader-settings" id="readerSettings">
+            <summary class="action-btn text-btn">Settings</summary>
+            <div class="reader-settings-panel">
+              <label class="reader-settings-row"><input type="radio" name="readerMode" value="paged" /> Paged mode (single day)</label>
+              <label class="reader-settings-row"><input type="radio" name="readerMode" value="infinite" /> Infinite mode (all available days)</label>
+              <p class="reader-settings-group-title">Name Color Mode</p>
+              <label class="reader-settings-row"><input type="radio" name="nameColorMode" value="none" /> No highlight</label>
+              <label class="reader-settings-row"><input type="radio" name="nameColorMode" value="color" /> Colour highlight</label>
+              <p class="reader-settings-group-title">Theme Song Trigger</p>
+              <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="off" /> Do not play</label>
+              <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="ask" /> ASK</label>
+              <label class="reader-settings-row"><input type="radio" name="themeSongMode" value="always" /> Always play</label>
+              <p class="reader-settings-group-title">Story Filters</p>
+              <label class="reader-settings-row"><input id="hideSystemObservationToggle" type="checkbox" /> Hide [[SYSTEM_OBSERVATION]] on Day 3+</label>
+              <label class="reader-settings-row" id="day4CompactRow" hidden><input id="day4CompactToggle" type="checkbox" /> Day 4 compact mode (shorter version)</label>
+<p class="reader-settings-note">Both modes use full-page scrolling, not inner-container scrolling.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <p class="panel-note" id="readerMeta"></p>
+      <p class="panel-note reader-tip" id="readerTip" hidden>TIP: Open the settings, there is a shorter version of this day available!</p>
+      <div class="reader-body" id="readerBody"></div>
+    </section>
+  </main>
+
+  <button id="themeSongWidgetIcon" class="theme-song-widget-icon" type="button" aria-label="Theme song player" title="Theme song player hidden">♪</button>
+  <div id="themeSongWidget" class="theme-song-widget" aria-label="Currently playing theme song" hidden>
+    <div class="theme-song-widget-content">
+      <div class="theme-song-widget-info">
+        <div class="theme-song-widget-artist" id="themeSongWidgetArtist">—</div>
+        <div class="theme-song-widget-title" id="themeSongWidgetTitle">—</div>
+      </div>
+      <button id="themeSongWidgetPlayBtn" class="theme-song-widget-btn" type="button" aria-label="Play/Pause theme song">▶</button>
+    </div>
+  </div>
+
+  <button id="scrollToTopBtn" class="scroll-top-btn" type="button" aria-label="Scroll to top" title="Back to top">↑</button>
+
+  <script src="./js/passage.js" defer></script>
+</body>
+</html>
