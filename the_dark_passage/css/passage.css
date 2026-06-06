@@ -861,6 +861,7 @@ body[data-theme="light"] #readerPanel .reader-search {
 .reader-section p {
   margin: 4px 0;
   line-height: 1.52;
+}
 
 .reader-divider {
   height: 1px;
@@ -868,6 +869,14 @@ body[data-theme="light"] #readerPanel .reader-search {
   border-radius: 999px;
   background: color-mix(in srgb, var(--accent) 40%, transparent 60%);
 }
+
+.reader-end-divider {
+  height: 2px;
+  margin: 26px 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--accent) 14%, var(--accent) 86%, transparent);
+  opacity: 0.9;
+  box-shadow: 0 0 16px -4px var(--glow);
 }
 
 .story-line {

@@ -2080,6 +2080,7 @@
 
   function renderStructuredDay(text, factionKey, dayNumber) {
     state.currentRenderingDay = typeof dayNumber === "number" ? dayNumber : null;
+    state.endDayDividerEmitted = false;
     var dayScopedText = getDayScopeText(text);
     var html = "";
     var lineCounter = { value: 0 };
@@ -2204,6 +2205,18 @@
               html += renderVisualDivider();
               return;
             }
+            if (isEndDayTag(line)) {
+              state.endDayDividerEmitted = true;
+              html += renderEndDayDivider();
+              return;
+            }
+            var sectionTitle = extractSectionTitle(line);
+            if (sectionTitle !== null) {
+              if (sectionTitle) {
+                html += renderInlineTitle(sectionTitle);
+              }
+              return;
+            }
             var inlineTitle = extractInlineTitle(line);
             if (inlineTitle) {
               html += renderInlineTitle(inlineTitle);
@@ -2221,6 +2234,12 @@
 
     if (systemObservationText && !hideSystemObservation) {
       html += renderSystemObservationSection("System Observation", systemObservationText, "reader-section--system");
+    }
+
+    // Every day closes with the end-of-day delimiter line, unless the content
+    // already placed one via an explicit [[END_DAY]] tag.
+    if (html && !state.endDayDividerEmitted) {
+      html += renderEndDayDivider();
     }
 
     return html || '<p class="reader-empty">No structured content found for this day.</p>';
@@ -2259,6 +2278,14 @@
         }
         if (isVisualDivider(line)) {
           return renderVisualDivider();
+        }
+        if (isEndDayTag(line)) {
+          state.endDayDividerEmitted = true;
+          return renderEndDayDivider();
+        }
+        var sectionTitle = extractSectionTitle(line);
+        if (sectionTitle !== null) {
+          return sectionTitle ? renderInlineTitle(sectionTitle) : "";
         }
         var inlineTitle = extractInlineTitle(line);
         if (inlineTitle) {
@@ -2393,6 +2420,28 @@
 
   function isVisualDivider(line) {
     return /^-{3,}$/.test(String(line || "").trim());
+  }
+
+  function isEndDayTag(line) {
+    // [[END_DAY]] (or [[DAY END]] / [[END DAY]]) renders as a full-width
+    // delimiter line marking the end of the day, not as text.
+    return /^\[\[\s*(?:END_DAY|END DAY|DAY END)\s*\]\]$/i.test(String(line || "").trim());
+  }
+
+  function renderEndDayDivider() {
+    return '<div class="reader-divider reader-end-divider" role="separator" aria-label="End of day"></div>';
+  }
+
+  function extractSectionTitle(line) {
+    // A line beginning with [[SECTION]] turns the rest of that line into a
+    // section heading, e.g. "[[SECTION]] WAKING" -> heading "WAKING".
+    // Returns null when the line is not a section tag, or the (possibly empty)
+    // heading text when it is.
+    var match = String(line || "").trim().match(/^\[\[SECTION\]\]\s*(.*)$/i);
+    if (!match) {
+      return null;
+    }
+    return match[1].trim();
   }
 
   function extractInlineTitle(line) {
