@@ -3,11 +3,11 @@ DAY 2 — THE CAT ROOM
 
 [[SYSTEM_STATE]]
 - Day index: 2 / 20
-- Participants: 40 → 35
+- Participants: 40
 - Section: 2 of 20
 - Challenge type: Search & Recover — 5 camouflaged cats per person, 12-hour window
 - Depth / Temp: ascending; noticeably cooler; core warmth fading behind
-- Lethality: fatal (5 lost)
+- Lethality: fatal
 
 [[NARRATIVE]]
 
