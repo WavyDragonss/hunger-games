@@ -1,0 +1,281 @@
+[[DAY]]
+DAY 5 — ERROR 404: FAILED TO LOAD. TRY AGAIN LATER.
+
+[[SYSTEM_STATE]]
+- Day index: 5 / 20 (unconfirmed — system reporting fault)
+- Participants: 27
+- Section: 5 of 20
+- Challenge type: UNKNOWN — malfunction flagged, multi-phase recovery logged
+- Depth / Temp: reading unavailable
+- Status: [ERROR 404] → later [RESOLVED]
+- Lethality: unconfirmed
+
+[[NARRATIVE]]
+
+[[SECTION]] THE ALARM
+
+The alarm did not wake them gently.
+
+It came in a single flat shriek, and under it a voice — not the one they knew, not composed, not accented, something closer to a recording played through damaged speakers — repeating, over and over, without inflection:
+
+*"A malfunction has been detected in the system. Warning. This is not a drill. Please evacuate immediately."*
+
+space_fan was on her feet before the second repetition finished. The room around her was barely a room at all — a faint grey light, low and directionless, just enough to make out shapes and not enough to trust any of them. Twenty-six other silhouettes were rising in the gloom, and the sound of the alarm bounced off walls that felt closer than they should have.
+
+"It's okay—" space_fan started, moving toward the nearest shape. "Everyone stay together, stay calm—"
+
+"Twenty-six, twenty-seven, we're all here, we're all here—" CrystalWolf was already counting, voice pitched high and fast.
+
+"Quiet." Schwalbe's voice cut through, not loud, just absolute. "Everyone stop moving and listen."
+
+They stopped. The alarm did not.
+
+"There's no door," said Duccarian, from somewhere along the wall, hands still moving across stone. "I already checked. No door, no seam, nothing."
+
+"It's real stone," said Ashborn, doing the same on the opposite wall. "Solid. No gaps."
+
+"My ankle's fine, don't worry about me, worry about the exits—" Rally Mally started, then stopped. "Wait. There are no exits."
+
+"This isn't like the other rooms," said The Reddening Day, turning slowly in place. "Nothing here fits a pattern. There's nothing to read."
+
+"Great," said Toad. "Love this for us."
+
+"Is this actually a malfunction," said Retard 2.0, flat, "or is this just... the game?"
+
+"If it's a real malfunction," said Galaxy, low, testing the idea like it might be useful, "does that mean nobody's watching right now?"
+
+"Don't test that theory," said Polaris, immediately, sharp enough to end it.
+
+"The alarm's not stopping," said Revenant.
+
+"An alarm that never stops isn't warning you," said Elv. "It's just noise now."
+
+"Then let's stop listening to it and start looking," said Golden.
+
+"Looking for *what,*" said Rabbit, "there's nothing here!"
+
+"There's always something here," said Drug. "There's never nothing."
+
+"She's right," said janhk. "Feel the walls. Every wall."
+
+"Already on it," said Kiwi.
+
+"I've got a seam—" Akarimmu started, hopeful, then: "No. Just a crack. Sorry."
+
+"...Here," said JIKOSU, quietly, from a crouch near the base of the wall, one hand flat against something the others couldn't yet see.
+
+"Is anyone else's heart doing this," said Lyrix, "or is it just me—"
+
+"MINE'S DOING THAT," said NinjaFlout, too loud, then, quieter: "Sorry. Sorry. Quiet. Got it."
+
+"Okay," said Mainthemainstar, hands raised like he could physically hold the room together. "Everyone breathe. In. Out. We've survived worse than a dark room."
+
+"Have we, though," said duck179.
+
+"Relax," said Nightmare, from somewhere unbothered in the dark. "It's probably nothing. Probably."
+
+"Can we not do the 'probably' thing right now," said SomeDucks.
+
+"Guys—" WavyDragons, from the far wall, voice pitching up. "I think I found something."
+
+[[SECTION]] TEN BUTTONS
+
+It was small — no larger than a coin — set flush into the stone at chest height, cool under WavyDragons's fingers, and around it, once they knew to look, more of the same: pressed into the dark at irregular intervals across every wall, ten small circular depressions, easy to miss and impossible to un-see once found.
+
+The alarm cut out mid-shriek.
+
+Into the silence it left, a different voice arrived — not from any single point but from the ceiling itself, low and flattened, wrong in a way that took a moment to place: it sounded *almost* like the voice they knew. The same unhurried rhythm. Not quite the same accent. Close enough to be unsettling and far enough to be worse.
+
+*"Ten switches. One opens the way forward. The others do not. Choose wrong, and you will be given a question. Answer it, and you may choose again. Choose right, and this stops."*
+
+Nobody moved for a moment.
+
+"That's it?" said Drug. "Just — pick?"
+
+"Ten buttons," said Polaris, already moving along the wall, counting them under her breath. "Nine wrong. One right. No pattern given." She looked back at the group. "So we go one at a time, and we go carefully, and whoever presses accepts that it's probably going to be wrong."
+
+Nightmare was already there. "Then I'll go first," he said, and pressed one before anyone could suggest otherwise.
+
+The wall lit — a thin seam of pale light tracing itself into letters, carved fresh into the stone in front of them:
+
+*THE MORE YOU TAKE, THE MORE YOU LEAVE BEHIND. WHAT AM I?*
+
+"Oh, brilliant," said Toad.
+
+Polaris was already looking at it, arms folded, working through it in the particular stillness she brought to every problem. "Footsteps," she said, after a moment. "Every one you take, you leave one behind you."
+
+The letters dimmed. A soft mechanical give, somewhere in the wall, unlocking.
+
+"Two down, eight to go," said Kiwi.
+
+Akarimmu pressed the next one. Wrong. New letters, glowing into the stone:
+
+*I SPEAK WITHOUT A MOUTH AND HEAR WITHOUT EARS. I HAVE NO BODY, BUT I COME ALIVE WITH A WORD. WHAT AM I?*
+
+The Reddening Day was quiet for a moment, head tilted, the same stillness he'd used on the parkour wall two days ago. "An echo," he said finally. "It can only ever repeat what it's given."
+
+The seam unlocked again.
+
+Drug pressed the third. Wrong. The wall answered:
+
+*WHAT HAS KEYS BUT CANNOT OPEN A SINGLE LOCK?*
+
+Elv smiled, despite everything, despite the alarm's ghost still ringing in their ears. "A piano," they said. "Philosophically, we should've seen that coming."
+
+"Nothing about this is philosophical," said Duccarian.
+
+"Everything is, if you're bored enough," said Elv.
+
+The seam gave a fourth time. Toad pressed the next, muttering something under his breath about statistics. Wrong. The final riddle of the four came up slower than the others, the letters darker, and the room went very quiet reading it:
+
+*THE MAKER DOES NOT WANT IT. THE BUYER DOES NOT USE IT. THE ONE WHO USES IT NEVER KNOWS IT IS THERE. WHAT IS IT?*
+
+Nobody spoke for a long moment.
+
+"Coffin," said JIKOSU, quietly, from the back, and did not elaborate, and nobody asked him to.
+
+The seam unlocked a fourth time. Nine buttons tried, one correct hidden somewhere among the untouched ones. Or so they thought — four wrong down, six untested, and the room understood, without anyone saying it, that the next one they pressed could still go either way.
+
+space_fan wasn't looking at the buttons.
+
+She was looking at the floor, near the base of the fifth wall, where something small and grey moved in the low light with the unhurried confidence of something that had every right to be there. A shape she knew before she let herself know it — low, quick, a tail with a familiar grey tip catching what little light there was.
+
+She didn't call out. She didn't trust her voice not to break something.
+
+She crossed the room toward it, and the cat sat, for one full second, directly beside the fifth switch — beside it, not on it, close enough that the meaning felt obvious and stupid and undeniable all at once — and then it turned and moved, unhurried, into a dark seam of the wall that hadn't been there a moment before, and was gone before she reached it.
+
+"I found it," she said, and her voice came out steadier than she felt. "This one. I think it's this one."
+
+"You *think*?" said Rabbit.
+
+"I'm going to press it," she said.
+
+Polaris was beside her in two steps, not stopping her, just there. "Go."
+
+space_fan pressed it.
+
+The wall did not glow with new letters. It simply opened — a section of stone sliding back and up, into itself, revealing a corridor lit in a soft even white that felt, after the last hour, like the kindest thing they'd been shown all week.
+
+Nobody cheered. They were too tired for that. But Mainthemainstar exhaled something like a laugh, and CrystalWolf actually did count them one more time, and this time nobody minded.
+
+Twenty-seven. All twenty-seven.
+
+They walked through.
+
+[[SECTION]] ANOMALIES
+
+The next room was small and featureless and lit in the same soft white, and on the far wall, already carved when they arrived, was a single word:
+
+**ANOMALIES**
+
+The voice came again — and this time it did not come from the ceiling. It came from beneath their feet, rising up through the floor, and that was somehow worse than the alarm had ever been.
+
+*"Five rounds. Each round, this room. Each room, the same — except for one thing that is not. Find it. Say it. You pass. Say the wrong thing, and you begin again, from the first round. There is no danger here. Only patience."*
+
+"That's almost reassuring," said SomeDucks.
+
+"Almost," said Nightmare, "is doing a lot of work in that sentence."
+
+The room held its breath, and then reset itself around them — not visibly, not with any sound, just a felt shift, the sense of being somewhere freshly remade.
+
+Round one took three tries. The first guess — a torch that seemed to gutter oddly on the east wall — was wrong, and the room reset with a small unhurried finality that made Rabbit groan out loud. The second guess, a shadow that fell a degree off from where Ashborn stood, was also wrong. The third time through, Polaris caught it: one torch, alone among a dozen identical, burning a faint cold blue instead of amber. "There," she said. "That one." The room let them pass.
+
+Round two took one. Just one. CrystalWolf spotted it almost the instant they stepped back in — a carved spiral on a single floor tile, mirrored backward from every other spiral in the room. "There!" she said, before anyone else had finished looking. It was correct. A ripple of something like relief went through the group.
+
+Round three dragged out to four. The room seemed subtler this time, more careful with itself, and three good-faith guesses came back wrong before Elv finally found it: an extra support pillar, one too many, blending so well into the room's proportions that counting them directly was the only way to catch it. "I counted twice," Elv said. "Then I counted a third time out of spite."
+
+Round four came together in two. The second attempt: their own shadows, all twenty-seven of them, falling in a direction that didn't match the room's single light source. Golden caught it, quiet and certain: "Our shadows are wrong. Look — they don't agree with the light."
+
+Round five was the last, and by then the tiredness in the room was a physical thing, a fog behind everyone's eyes. Above the door on the far wall, the same four symbols they'd seen once before — carved into a very different door, on a much warmer day — sat waiting: wedge, circle, three strokes, spiral. Almost the same as they remembered.
+
+JIKOSU moved first, crossing the room fast, too fast, and his foot caught an uneven flagstone he hadn't accounted for — he went down hard onto one knee, a sharp intake of breath from the group, Rally Mally already half-rising to help — but JIKOSU's eyes never left the symbols above the door even as he fell, and from the floor, one hand still braced against the stone, he said it anyway:
+
+"The spiral's wrong. It's not a spiral. It's a circle."
+
+He was right.
+
+The door opened. Akarimmu and Toad pulled him up between them, and he waved off the fuss with the same flat economy he gave everything, already walking again before anyone could ask if he was hurt.
+
+[[SECTION]] THE MASKED MAN
+
+The room beyond was blank — no doors, no symbols, no texture at all, just smooth pale stone in every direction, and in the centre of it, waiting, a figure.
+
+He was not tall. He was not imposing in any way a body can be imposing. He wore a plain mask, featureless but for the smooth suggestion of a face, and he stood with his hands folded in front of him, and when he began to clap it was slow — unhurried, deliberate, almost sedated, three claps and then stillness.
+
+Nobody moved. space_fan tried to step back and found, with a cold lurch, that she couldn't — not frozen by fear alone but by something else, something that had a hand on her the way the warmth of the core once had, gentle and absolute.
+
+"Congratulations," the masked man said, and it was the voice they knew, the real one, the composed one, restored now in full — the accent unmistakable, the ease of it worse for being so genuine. "All of you. A very good morning's work."
+
+He walked the room slowly, and stopped in front of each of them in turn, and studied them the way a craftsman studies something they made.
+
+"Schwalbe," he said. "Command suits you. It always has, I think." To Polaris: "You read this place like you were born in it. I find that very interesting." To space_fan, a pause longer than the others, his masked face tilted slightly: "You follow things that ask to be followed. That will serve you. Or it won't." He moved on before she could make sense of it.
+
+"Duccarian, patient as stone itself. Ashborn, you found the seams no one else thought to check. Rally Mally — that ankle should have stopped you three days ago. It hasn't. Interesting." To The Reddening Day: "You see patterns. Most people only see chaos." To Toad: "Complaining and surviving are not mutually exclusive. You've proven that admirably." To Retard 2.0: "Sharper than you let on." To Galaxy: "Careful what you test." To Revenant: "You notice more than you say." To Elv: "Philosophy suits a place with no answers." To Golden: "Quiet, until it matters. Then, exactly enough." To Rabbit: "Fear kept you moving today. That is not nothing." To Drug: "There is never nothing. You said that yourself." To janhk: "Efficient." To Kiwi: "Same." To Akarimmu: "Generous, even under pressure. Rare, down here." To JIKOSU, he paused longest of all, tilting his masked head at the fresh scrape on his knee. "You fall, and you are still right. I admire that more than I should say." To Lyrix: "Anxious hearts still function." To NinjaFlout: "Loud, but never wrong when it counted." To Mainthemainstar: "A voice this room needed." To duck179: "You ask the questions no one wants to answer. Keep doing that." To Nightmare, longer than most, unreadable behind the mask: "You are very good at this. I wonder if you enjoy that as much as I think you do." To SomeDucks: "Steady." To WavyDragons: "You found the first switch. Don't let anyone forget that." To CrystalWolf: "You count us every time. We have both noticed."
+
+He stepped back to the centre of the room.
+
+"You have one phase left today," he said. "It will not hurt you. I promise you that, and I do not make many promises." He inclined his head, the mask catching the light strangely. "Rest, when you can. You have earned a little of it."
+
+He turned, and walked toward a section of the blank wall that gave way ahead of him without any visible mechanism, and stepped into a dark that seemed to close behind him with no seam at all, and was gone.
+
+The moment he vanished, space_fan found she could move again. Around her, twenty-six other people exhaled at once.
+
+[[SECTION]] GRAVITY HAS NO EFFECT ON ME!
+
+The title was already carved into the wall of the next chamber when they entered, in letters too cheerful for the last hour they'd had:
+
+**GRAVITY HAS NO EFFECT ON ME!**
+
+The room beyond was a mess of platforms, spinning discs, swinging bars, and long stretches of nothing at all — an obstacle course built by something with a sense of humour it hadn't shown until now. Ropes that led nowhere. Platforms that shrank the moment you stepped onto them. A section that appeared to be a straight bridge and turned out, on approach, to be angled fifteen degrees from where the eye insisted it was.
+
+*"Non-lethal,"* the voice said, warm and composed again, from everywhere. *"I want to be very clear about that. Fall as many times as you like. The first to the far door decides the temperature of tonight's dormitory, by remote, upon arrival. Everyone else simply — rests, tonight, at whatever they decide."*
+
+"That's almost a kind incentive," said Drug.
+
+"Almost," said Golden.
+
+They went in waves. Schwalbe went early and went fast, reading the course the way he read everything — cleanly, without wasted motion — but even he misjudged the shrinking platform on the third stretch and went down through it without warning.
+
+He did not fall far. He fell *up.*
+
+It happened to all of them, eventually, and it never stopped being strange: the platform gave way, gravity took hold for exactly as long as it took to register the drop — and then, instead of the floor rushing up, the ceiling did. Schwalbe landed, with a soft, undignified whump, on something impossibly soft, in a room he did not recognise, on a mattress the size of a small field, and understood, staring up at a ceiling that was very definitely below where he'd just been, that he had fallen *upward* into the new dorm.
+
+He lay there a moment. "That's new," he said, to no one, and then found the low doorway back into the obstacle chamber and climbed through it, and kept going.
+
+NinjaFlout fell twice in the same section and announced both falls at volume. Rabbit fell once and refused to try the shrinking platform again, going the long way round through a swinging-bar sequence that took three times as long but never once dropped him. Toad fell four times and complained after each one and kept climbing back in anyway. CrystalWolf made it two-thirds of the way before a rope she trusted swung the wrong direction and deposited her, laughing despite herself, onto the same enormous mattress in the same strange upside room.
+
+Schwalbe reached the far door first, by a margin nobody else came close to closing. The door opened onto a small alcove with a single object waiting on a stone shelf: a remote, palm-sized, matte black, with a single dial.
+
+He looked at it for a moment. Then he turned the dial to something comfortable — not the warmth of the core, nothing that ambitious, but warm enough, kind enough — and set it down.
+
+[[SECTION]] SYSTEM BREACH RESOLVED
+
+The words appeared on the wall of the alcove as he stepped back through, carved fresh and clean:
+
+**SYSTEM BREACH RESOLVED.**
+
+By the time the last of them had fallen — or climbed, or been swung — into the new dorm, all twenty-seven were accounted for, and the room they found themselves in was unlike any of the ones before it.
+
+The mattresses were enormous, absurdly soft, and no two were alike. Someone's bed was round. Someone's was built into a kind of nest of blankets three feet deep. space_fan's own was long and narrow and impossibly plush, angled oddly against the far wall, and at its foot, carved into a small stone plaque, was her name — just that, nothing more, the letters worn smooth as if they'd always been there.
+
+Schwalbe's temperature setting held true. The room was warm — not the honeyed warmth of the core, but close enough to remember it by.
+
+They found their names, one by one, and their strange, mismatched, deeply comfortable beds, and for the first time in five days nobody was missing, and nobody said that out loud because saying it felt like tempting something.
+
+space_fan lay down on the soft, uneven shape of her mattress and looked at the ceiling, and thought about a grey-tipped tail disappearing into a wall that had opened just for it. She thought about the way it had sat, deliberate, beside the one switch that mattered, and vanished the second she was close enough to matter to it too.
+
+She thought, unbidden, of a name. Not the gibberish from days ago — something closer this time, something that almost held its shape before it slipped: a single letter, O, sitting at the front of it like a held breath. And under the letter, absurdly, persistently, the sense of a flower. A flower's name. She didn't know why. She didn't know how she knew even that much.
+
+She turned the thought over once, twice, and could get no further than the O and the flower and the shape of a tail rounding a corner that shouldn't have existed.
+
+The room was warm. Twenty-seven breaths slowed around her, one by one, into sleep.
+
+She let the thought go, unfinished, and followed them down.
+
+[[END_DAY]]
+
+[[ROSTER]]
+Day 5 — Participants: 27 / 27 — Lost (today): 0 — Total lost: 13
+
+SURVIVORS
+space_fan (she) · CrystalWolf (she) · Schwalbe (he) · Duccarian (he) · Ashborn (he) · Rally Mally (he) [ankle] · The Reddening Day (he) · Toad (he) · Retard 2.0 (he) · Galaxy (he) · Polaris (she) · Revenant (he) · Elv (they) · Golden (he) · Rabbit (he) · Drug (she) · janhk (he) · Kiwi (he) · Akarimmu (he) · JIKOSU (he) [arm; knee] · Lyrix (she) · NinjaFlout (he) · Mainthemainstar (he) · duck179 (he) · Nightmare (he) · SomeDucks (he) · WavyDragons (he)
